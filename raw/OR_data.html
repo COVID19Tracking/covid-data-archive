@@ -96,6 +96,32 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
         
         <script src="https://apps.oregon.gov/Application/CDN/Enterprise/scripts/sharepoint/2010/template-v4x-patches.js"></script>
         <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script>
+     <script type="text/javascript">    
+                      
+        $(document).ready(function () {
+            //"/<[^\/>][^>]*><\/[^>]+>/"
+            setTimeout(function () {
+                //$('div:contains(" Column ")').remove();                
+                //$('*:empty').remove();
+                $('div.container').find('div.ms-rtestate-field').each(function (index) {
+
+                    if ($(this).prev('div') != undefined && $(this).prev('div')[0] != undefined && $(this).prev('div')[0].innerText.indexOf('Column') > -1) {
+                        $(this).prev('div')[0].remove();
+                    }
+                    if ($(this).closest('div.row') != undefined && $(this).closest('div.row')[0] != undefined && $(this).closest('div.row')[0].innerText === '') {
+                        $(this).closest('div.row')[0].remove();
+                    }
+                });
+
+                $('div.container').find('div.row').each(function (index) {
+                    if (this.innerText === '') {
+                        this.remove();
+                    }
+                });
+            }, 5000);
+        });
+    </script>
+    
 </head>
 
 
@@ -426,7 +452,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 <div id="WebPartWPQ4" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#4d885212-66a1-48d2-8f9a-c3c0c254366d" aria-controls="4d885212-66a1-48d2-8f9a-c3c0c254366d" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="cd23ae24-62dd-48e1-a0de-376747dfb8b1" role="tab">
+					<a class="collapsed" href="#ad4cb731-0f15-4dbc-b121-5cdeeb06a879" aria-controls="ad4cb731-0f15-4dbc-b121-5cdeeb06a879" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="34e5fd62-02ca-4580-bd35-4a1d69b35d81" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h2 class="panel-title">
@@ -438,7 +464,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="4d885212-66a1-48d2-8f9a-c3c0c254366d" aria-labelledby="cd23ae24-62dd-48e1-a0de-376747dfb8b1" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="ad4cb731-0f15-4dbc-b121-5cdeeb06a879" aria-labelledby="34e5fd62-02ca-4580-bd35-4a1d69b35d81" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass23E56795FBF0468C9F856CD297450134">
@@ -688,7 +714,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#9f354f94-58f5-48a5-9ffe-1a902bf91afc" aria-controls="9f354f94-58f5-48a5-9ffe-1a902bf91afc" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="78db6623-044f-44b9-95d2-9cb227d7d73e" role="tab">
+					<a class="collapsed" href="#47f472fb-3082-4a99-a036-efb80f771ca9" aria-controls="47f472fb-3082-4a99-a036-efb80f771ca9" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="fdae3987-04eb-47c1-8cec-f5e0b9b27bf8" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h2 class="panel-title">
@@ -700,7 +726,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="9f354f94-58f5-48a5-9ffe-1a902bf91afc" aria-labelledby="78db6623-044f-44b9-95d2-9cb227d7d73e" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="47f472fb-3082-4a99-a036-efb80f771ca9" aria-labelledby="fdae3987-04eb-47c1-8cec-f5e0b9b27bf8" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass87C675AE089746F2A64C32A7414A4B97">
@@ -800,13 +826,13 @@ completed monitoring without developing symptoms or were determined to have no r
 
 <div>
 <div id="WebPartWPQ3" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_81804b11_c0e0_418a_a93c_931c8b77575a" class="or-dataTablesWebPart">
-			<div id="81813685-518b-420b-8009-0fc382cea16d">
+			<div id="a3c74067-a60a-4997-9301-a1b629155657">
 				<data-tables-web-part params="webPartId: 'g_81804b11_c0e0_418a_a93c_931c8b77575a', webPartProperties: {&quot;webPartId&quot;:&quot;g_81804b11_c0e0_418a_a93c_931c8b77575a&quot;,&quot;tableCaption&quot;:&quot;&quot;,&quot;dataSource&quot;:&quot;list&quot;,&quot;socrataId&quot;:&quot;&quot;,&quot;sharePointWebUrl&quot;:&quot;/oha/ERD&quot;,&quot;sharePointListUrl&quot;:&quot;/oha/ERD/Pages&quot;,&quot;sharePointViewName&quot;:&quot;COVID-19&quot;,&quot;responsiveMode&quot;:&quot;collapse&quot;,&quot;paginationEnabled&quot;:false,&quot;searchEnabled&quot;:false,&quot;sortEnabled&quot;:false,&quot;filterEnabled&quot;:false,&quot;stateSaveEnabled&quot;:false,&quot;copyButtonEnabled&quot;:false,&quot;printButtonEnabled&quot;:false,&quot;excelButtonEnabled&quot;:false,&quot;pdfButtonEnabled&quot;:false,&quot;tableBordered&quot;:true,&quot;tableStriped&quot;:true,&quot;tableCondensed&quot;:true}">
 
 				</data-tables-web-part>
 			</div>
 <script type="text/javascript">
-				ko.applyBindings(null, document.getElementById('81813685-518b-420b-8009-0fc382cea16d'))
+				ko.applyBindings(null, document.getElementById('a3c74067-a60a-4997-9301-a1b629155657'))
 			</script>
 		</div></div>
 
@@ -826,7 +852,7 @@ completed monitoring without developing symptoms or were determined to have no r
 <div id="WebPartWPQ1" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#22661c1d-c826-40a1-b9ae-c9d7e55eab11" aria-controls="22661c1d-c826-40a1-b9ae-c9d7e55eab11" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="58bd5e74-83a5-49a0-bbc8-766fe009ac5d" role="tab">
+					<a class="collapsed" href="#9b65aa1b-3620-49f8-ab41-a8347fd10bfb" aria-controls="9b65aa1b-3620-49f8-ab41-a8347fd10bfb" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="cc84d2ef-084a-4e50-a7dc-a464894a3dd3" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -841,7 +867,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="22661c1d-c826-40a1-b9ae-c9d7e55eab11" aria-labelledby="58bd5e74-83a5-49a0-bbc8-766fe009ac5d" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="9b65aa1b-3620-49f8-ab41-a8347fd10bfb" aria-labelledby="cc84d2ef-084a-4e50-a7dc-a464894a3dd3" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClassA29423582640472699751E675002BC29">
@@ -911,7 +937,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#cd6d1ed2-c393-4bab-92ce-8cb3c0e44090" aria-controls="cd6d1ed2-c393-4bab-92ce-8cb3c0e44090" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="33810b07-ef65-450f-8ab4-2b2acac9bd5a" role="tab">
+					<a class="collapsed" href="#9a31d38a-cb29-4c25-9b72-6cb88c893608" aria-controls="9a31d38a-cb29-4c25-9b72-6cb88c893608" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="9adde479-e7af-4a5d-9255-c0facdbe2e45" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -926,7 +952,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="cd6d1ed2-c393-4bab-92ce-8cb3c0e44090" aria-labelledby="33810b07-ef65-450f-8ab4-2b2acac9bd5a" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="9a31d38a-cb29-4c25-9b72-6cb88c893608" aria-labelledby="9adde479-e7af-4a5d-9255-c0facdbe2e45" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5C0D7AD5F0FF4C299C060FFCC9290122">
@@ -981,7 +1007,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#3137e988-2dd6-453e-923f-11fee46dd106" aria-controls="3137e988-2dd6-453e-923f-11fee46dd106" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="cde38969-7de9-421d-ac95-a26cfcb28719" role="tab">
+					<a class="collapsed" href="#ba611d73-7ef4-4d4e-8f32-f92fef8b1c4d" aria-controls="ba611d73-7ef4-4d4e-8f32-f92fef8b1c4d" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="03d5195b-039a-4540-9faa-ead9379127d7" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -996,7 +1022,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="3137e988-2dd6-453e-923f-11fee46dd106" aria-labelledby="cde38969-7de9-421d-ac95-a26cfcb28719" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="ba611d73-7ef4-4d4e-8f32-f92fef8b1c4d" aria-labelledby="03d5195b-039a-4540-9faa-ead9379127d7" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
@@ -1024,7 +1050,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#ad6e5e7d-be17-417e-9980-b73bcab6ac3e" aria-controls="ad6e5e7d-be17-417e-9980-b73bcab6ac3e" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="cdf40031-a431-44d3-bda1-ff2e5b84b691" role="tab">
+					<a class="collapsed" href="#c1ca485b-2b67-4f82-bca8-4b311bd1804f" aria-controls="c1ca485b-2b67-4f82-bca8-4b311bd1804f" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="06accf74-5fdd-4ae5-aa81-1e4e8869052d" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1039,7 +1065,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="ad6e5e7d-be17-417e-9980-b73bcab6ac3e" aria-labelledby="cdf40031-a431-44d3-bda1-ff2e5b84b691" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="c1ca485b-2b67-4f82-bca8-4b311bd1804f" aria-labelledby="06accf74-5fdd-4ae5-aa81-1e4e8869052d" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass27C5BB6AB16C45B5A52F80AF11A85C42">
@@ -1125,7 +1151,7 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#e7900089-691a-42b0-8d91-af83ce1d6050" aria-controls="e7900089-691a-42b0-8d91-af83ce1d6050" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b5ac5c33-9a9b-497b-a4c7-2b1eacb1a13c" role="tab">
+					<a class="collapsed" href="#55b39cbe-46c2-4291-b12a-32747878bac4" aria-controls="55b39cbe-46c2-4291-b12a-32747878bac4" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="0287f658-df92-47dc-8865-9969fe2c16bd" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1140,7 +1166,7 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="e7900089-691a-42b0-8d91-af83ce1d6050" aria-labelledby="b5ac5c33-9a9b-497b-a4c7-2b1eacb1a13c" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="55b39cbe-46c2-4291-b12a-32747878bac4" aria-labelledby="0287f658-df92-47dc-8865-9969fe2c16bd" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass419ED99C37D2483487E2FFE8A53187D5">
@@ -1187,7 +1213,7 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#5df48a15-bad7-460e-87f4-b2b99efa65e4" aria-controls="5df48a15-bad7-460e-87f4-b2b99efa65e4" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b29d22a5-0563-45a7-85d1-08c158f575b0" role="tab">
+					<a class="collapsed" href="#08b7a03f-2b12-4862-aeed-8aa9e5d43d1d" aria-controls="08b7a03f-2b12-4862-aeed-8aa9e5d43d1d" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="ce4998b0-2cda-4cc0-86c8-35297f27c838" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1202,7 +1228,7 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="5df48a15-bad7-460e-87f4-b2b99efa65e4" aria-labelledby="b29d22a5-0563-45a7-85d1-08c158f575b0" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="08b7a03f-2b12-4862-aeed-8aa9e5d43d1d" aria-labelledby="ce4998b0-2cda-4cc0-86c8-35297f27c838" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5747483E81D44EB49F777CCF9C5CA887">
@@ -1395,9 +1421,9 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 			Oregon Health Authority
 		</h3>
 <div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3">
-<p><span class="fa fa-facebook-square blue"></span>&#160;<a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
-  <span class="fa fa-twitter-square blue"></span>&#160;<a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
-  <span class="fa fa-envelope blue">&#160;</span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>&#8203;</p>
+<p><span class="fa fa-facebook-square blue" aria-hidden="true"></span>&#160;<a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
+  <span class="fa fa-twitter-square blue" aria-hidden="true"></span>&#160;<a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
+  <span class="fa fa-envelope blue" aria-hidden="true">&#160;</span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>&#8203;</p>
 
 <ul class="list-unstyled">
   <li>
@@ -1430,7 +1456,7 @@ Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-1
 <div class="ExternalClass926DA2AB6E52485680F204CE3D47CE3E">
 <ul class="list-unstyled">
   <li>
-<a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue"></span> Language Access</a> </li>
+<a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue" aria-hidden="true"></span> Language Access</a> </li>
   <li>
 <a class="or-footer-link-oregon-gov" href="https://aix-xweb1p.state.or.us/es_xweb/DHSforms/Served/le2996.pdf" target="_blank">OHA Nondiscrimination Policy</a> </li>
   <li>
