@@ -1,0 +1,896 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Coronavirus updates and information</title>
+<meta name="description" content="South Dakota's The South Dakota Department of Health (SD-DOH) continues to monitor the emergence of the novel coronavirus. We are working with the CDC and our healthcare partners across the state to prepare for and respond to a potential case.">
+<meta name="keywords" content="South Dakota Department of Health, Coronavirus, COVID-19, Novel Coronavirus, Respiratory, healthcare">
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/user.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print">
+	
+	
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="30 days">
+
+	    
+    <meta name="viewport" content="width=1000, initial-scale=1, minimum-scale=0.45">
+    
+   	<link rel="stylesheet" type="text/css" href="/includes/css/user.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/includes/css/screen.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/form.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/search.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/print.css" media="print">
+    
+	
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+    <!--[if lt IE 8]>
+    <link href="/includes/css/screen_ie7.css" rel="stylesheet" type="text/css" media="screen"/>
+    <![endif]-->
+
+	
+    <script type="text/javascript" src="/includes/js/jquery/jquery-3.3.1.min.js"></script>
+    
+    
+	<script type="text/javascript" src="/includes/js/jquery/jquery.easing.1.3.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+
+	        if ($(window).width() > 830) {
+	            $("#middle #main").show();
+	        }
+
+	        $(window).resize(function () {
+	            if ($(window).width() > 813) {
+	                $('#main li').bind('mouseenter', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).slideDown(500, 'easeOutBounce');
+	                }).bind('mouseleave', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                });
+	                $("#middle #main").show();
+	            }
+	            else {
+	                $('#main li').bind('mouseenter', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                }).bind('mouseleave', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                });
+	                $("#middle #main").hide();
+	            }
+
+	        });
+	        //This will fire each time the window is resized:
+	        if ($(window).width() > 813) {
+
+	            $('#main li').bind('mouseenter', function () {
+	                $(this).find('.dropdown_box').stop(true, true).slideDown(500, 'easeOutBounce');
+	            }).bind('mouseleave', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            });
+	            $("#middle #main").show();
+	        }
+	        else {
+	            $('#main li').bind('mouseenter', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            }).bind('mouseleave', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            });
+	            $("#middle #main").hide();
+	        }
+
+
+
+
+	    });
+    </script>           
+	
+	<script src="/includes/js/jquery/jquery-treeview/jquery.treeview.js"></script>
+    
+	<script type="text/javascript" src="/includes/js/jquery/jquery.li-scroller.1.0.js"></script>
+	<script type="text/javascript" src="/includes/js/jquery/jquery.cookie.js"></script>
+ 
+	<script type="text/javascript">
+		$(function(){
+			$("#alerts ul").liScroll();		
+		});
+
+		$(document).ready(function(){
+			var n = $("#alerts ul li").length;
+			
+			if(n<2){
+				$('#alerts_section').hide();
+			}
+			
+			if($.cookie('alert_status') == "off"){
+				$('#alerts_section').hide();
+			}
+			
+			$('#close_btn').click(function(){
+				$.cookie('alert_status', 'off', {expires: 1}); //create cookie and set value, expires 1 day
+				$('#alerts_section').hide();
+			});
+		});
+	</script>
+    <script>
+    $(document).ready(function () {
+        $(".stateDOTsdDOTus").click(function () {
+            var domain = $(this).attr("class");
+            domain = domain.replace(/DOT/, '.');
+            domain = domain.replace(/DOT/, '.');
+            var name = $(this).children("span").attr("class");
+
+            var email = name + "@" + domain;
+            location.href = "mailto:" + email;
+        });
+    });
+</script>
+
+<script>
+       $(document).ready(function () {
+              $(".stateDOTsdDOTusSUBJECT").click(function () {
+                     var domain = $(this).attr("class");
+                     domain = domain.replace(/DOT/, '.');
+                     domain = domain.replace(/DOT/, '.');
+                     domain = domain.replace(/SUBJECT/, '?subject=' + $(this).attr("name"));
+                     var name = $(this).children("span").attr("class");
+
+                     var email = name + "@" + domain;
+                     location.href = "mailto:" + email;
+              });
+       });
+</script>
+
+
+<script language="javascript">
+	    if (top.frames.length!=0)
+    	top.location=self.document.location;
+    </script>
+<style type="text/css">
+    <!--
+p.MsoNormal {
+margin:0in;
+margin-bottom:.0001pt;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+}
+table.MsoNormalTable {
+font-size:10.0pt;
+font-family:"Times New Roman","serif";
+}
+-->
+    </style>
+<style type="text/css">
+<!--
+table.MsoTableGrid {
+border:solid windowtext 1.0pt;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.TableParagraph {
+margin:0in;
+margin-bottom:.0001pt;
+text-autospace:none;
+font-size:11.0pt;
+font-family:"Segoe UI",sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+li.MsoListParagraphCxSpFirst {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.0001pt;
+margin-left:.5in;
+line-height:105%;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;
+}
+li.MsoListParagraphCxSpMiddle {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.0001pt;
+margin-left:.5in;
+line-height:105%;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;
+}
+li.MsoListParagraphCxSpLast {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:8.0pt;
+margin-left:.5in;
+line-height:105%;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+li.MsoListParagraph {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:.0001pt;
+margin-left:.5in;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<style type="text/css">
+.container.clearfix #upper font {
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<div id="alerts_section">
+	<a id="close_btn">CLOSE<div id="alert_x"></div></a>
+    
+	<div class="tkr_container">
+		<div id="alert_box">
+			<div id="alerts">
+                                    
+                                    		
+                                    
+            </div>
+        </div>
+    </div>
+</div>
+            
+<header>
+    <div class="container clearfix">
+        <div id="logo"><a href="/" title="SD DOH Home"><img src="/images/layout/logo.png" alt="South Dakota Department of Health logo"></a></div>
+        <div id="upper" class="clearfix">
+        <!--<a href="/social/" title="Social media links" class="button">Social Media links</a>-->
+		WEBSITE OF THE STATE OF SOUTH DAKOTA DEPARTMENT OF HEALTH<br>
+		<strong><font face="Times New Roman, Times, serif">Kim Malsam-Rysdon, Secretary of Health
+            </font></strong><a href="https://www.youtube.com/user/GoodandHealthySD/videos" target="_blank">
+          <div class="YTLogo"></div></a>
+        <a href="https://twitter.com/SDDOH" target="_blank">
+        <div class="twLogo"></div></a>
+        <a href="https://www.facebook.com/SDHealthDepartment" target="_blank"><div class="fbLogo"></div></a>
+        </div>
+		
+        <div id="lower" class="clearfix">  
+            <div id="search">
+                <form id="cse-search-box" action="https://google.com/cse" target="search">
+                  <input type="hidden" name="cx" value="[removed]">
+                  <input type="hidden" name="ie" value="[removed]">
+                  <input type="text" name="q" id="search_text" style="border:none;"><input type="submit" name="sa" id="search_arrow" value="">                  
+                </form>
+                  <script type="text/javascript" src="/includes/js/brand.js"></script>            
+            </div>
+            
+            
+                
+            <a href="/contact/" title="Contact us" class="button" id="head_contact">Contact us</a>
+            <a href="https://listserv.sd.gov/scripts/wa.exe?SUBED1=SDEPI&amp;A=1" title="Subscribe to Listserv" class="button" target="_blank" id="subscribe">Subscribe to Listserv</a>
+        </div>
+        <div id="menu">
+<img src="/images/menu.png" alt="menu"><br>MENU</div>
+    </div>
+</header>
+        
+<div class="force-clear"></div>	
+
+<div id="middle" class="clearfix">
+      	<div class="container clearfix">
+				<nav id="main" class="clearfix">
+                	<div class="centerer">
+                    
+					
+                            
+                            
+					<ul>
+                    
+                    	<li>
+<a href="/a-z-topics/" title="A-Z Topics" class="">A-Z Topics</a>
+						  
+                            
+                           
+                        </li>
+                        
+						<li id="coronavirusNavItem">
+<a href="/news/Coronavirus.aspx" title="Coronavirus" class="">COVID-19</a>
+							
+						</li>
+
+                        <li>
+<a href="/news/" title="News" class="active">News</a>
+						  <br><div class="dropdown_box"><ul id="subtree" class="treeview"><li><a href="/news/recent-releases.aspx" title="Recent Releases">Recent Releases</a></li></ul></div>
+                        </li>
+                        
+                        
+                        <li>
+<a href="/local-offices/" title="Local Offices" class="">Local Offices</a>
+						  <br><div class="dropdown_box"><ul id="subtree" class="treeview">
+<li><a href="/local-offices/child-family-services/" title="Child &amp; Family Services, WIC">Child &amp; Family Services, WIC</a></li>
+<li><a href="/local-offices/family-planning/" title="Family Planning">Family Planning</a></li>
+<li><a href="/local-offices/hiv-std-testing/" title="HIV &amp; STD Testing">HIV &amp; STD Testing</a></li>
+<li><a href="/local-offices/vaccine-providers/" title="Vaccine Providers">Vaccine Providers</a></li>
+</ul></div>
+                        </li>
+                          
+                        
+                        <li>
+<a href="/boards/" title="Licensing Boards" class="">Licensing Boards</a>
+						  <br><div class="dropdown_box"><ul id="subtree" class="treeview">
+<li><a href="/boards/chiropractic/" title="South Dakota Board of Chiropractic Examiners">South Dakota Board of Chiropractic Examiners</a></li>
+<li><a href="/boards/dentistry/" title="South Dakota Board of Dentistry">South Dakota Board of Dentistry</a></li>
+<li><a href="/boards/funeral/" title="South Dakota Board of Funeral Service">South Dakota Board of Funeral Service</a></li>
+<li><a href="/boards/audiology/" title="South Dakota Board of Hearing Aid Dispensers and Audiologists">South Dakota Board of Hearing Aid Dispensers and Audiologists</a></li>
+<li><a href="/boards/massage/" title="South Dakota Board of Massage Therapy">South Dakota Board of Massage Therapy</a></li>
+<li><a href="/boards/medicine/" title="South Dakota Board of Medical and Osteopathic Examiners">South Dakota Board of Medical and Osteopathic Examiners</a></li>
+<li><a href="/boards/midwives/" title="South Dakota Board of Certified Professional Midwives">South Dakota Board of Certified Professional Midwives</a></li>
+<li><a href="/boards/nursing/" title="South Dakota Board of Nursing">South Dakota Board of Nursing</a></li>
+<li><a href="/boards/nursingfacility/" title="South Dakota Board of Nursing Facility Administrators ">South Dakota Board of Nursing Facility Administrators </a></li>
+<li><a href="/boards/optometry/" title="South Dakota Board of Examiners in Optometry">South Dakota Board of Examiners in Optometry</a></li>
+<li><a href="/boards/pharmacy/" title="South Dakota Board of Pharmacy">South Dakota Board of Pharmacy</a></li>
+<li><a href="/boards/podiatry/" title="South Dakota Board of Podiatry Examiners">South Dakota Board of Podiatry Examiners</a></li>
+<li><a href="/boards/speechpath/" title="South Dakota Board of Examiners for Speech-Language Pathology ">South Dakota Board of Examiners for Speech-Language Pathology </a></li>
+</ul></div>
+                        </li>
+                        
+                        <li>
+<a href="/calendar/" title="Event Calendar" class="">Event Calendar</a>
+							  
+                        </li>
+                        
+                        <li>
+<a href="/resources/" title="Resources and Publications" class="">Resources &amp; Publications</a>
+						  <br><div class="dropdown_box"><ul id="subtree" class="treeview">
+<li><a href="/resources/publications/" title="Publications">Publications</a></li>
+<li><a href="/resources/statute-rules/" title="Statute &amp; Rules">Statute &amp; Rules</a></li>
+<li><a href="/resources/links/" title="Links">Links</a></li>
+<li><a href="/resources/bulletin.aspx" title="SD Public Health Bulletin">SD Public Health Bulletin</a></li>
+</ul></div>
+                        </li>
+                        
+                        <li>
+<a href="/faqs/" title="FAQs" class="">FAQs</a>
+						  
+                        </li>
+                        
+                       
+                       
+                  	</ul>
+                   	</div>
+				</nav>
+            	<div class="force-clear"></div>
+<nav id="breadcrumbs" class="clearfix">
+    <div class="centerer">
+    <a href="/" title="Home">Home</a>
+    
+<img src="/images/layout/breadcrumb.png" alt="separator"><a href="/news" title="News">News</a>
+    </div>
+</nav>
+
+<div class="force-clear"></div>
+
+
+                    <div id="covidBanner">
+                        <a href="/news/coronavirus.aspx">COVID-19 Updates and Information</a>
+                    </div>
+<div class="force-clear"></div>
+				<div id="content" class="clearfix news">
+				  	<div id="sidebar">
+    	<h2><a href="/news/" title="News">News</a></h2>
+<div id="treecontrol">
+<a title="Collapse the entire tree below" href="#"> Collapse All</a> | <a title="Expand the entire tree below" href="#"> Expand All</a>
+</div>
+<ul id="subtree" class="treeview"><li class="news sub"><a href="/news/recent-releases.aspx?" title="Recent Releases">Recent Releases</a></li></ul>    
+    </div>   
+							<div id="content_block">
+                              <h1 style="text-align: center"><img src="../images/COVID_Header.jpg" alt="South Dakota Department of Health Logo and covid.sd.gov button."></h1>
+                              <h1 style="text-align: center">Novel Coronavirus  (COVID-19) updates and information </h1>
+                              <p align="center" style="text-align:center;"><a href="#SD">COVID-19 in South  Dakota</a> | <a href="#news">News</a> | <a href="#Avoid">Precautions to Avoid Illness</a> | <a href="#Providers">Information for Medical  Providers</a> | <a href="#Groups"><br>
+                              Community Guidance &amp; Resources</a> | <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank">CDC Website</a></p>
+                              <hr>
+                              <p>The South Dakota Department of Health (SD-DOH) continues to  respond to the emergence of the novel coronavirus. We are working with the CDC and  our healthcare partners across the state to protect South Dakotans from COVID-19.<a href="tel:1-800-997-2880"><img src="../images/COVID_Hotline.jpg" alt="South Dakota COVID-19 Information Line.
+Questions about COVID-19? We're here to help.
+Please Call: 1-800-997-2880"></a></p>
+                              <h2>Updates include:</h2>
+<ul>
+      <li>Cases have been identified in South Dakota.</li>
+                                <li>The number of cases and countries with  infections worldwide is increasing and can be found on the <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">WHO website</a>.</li>
+                                <li>Case counts and other information       about the novel coronavirus can be found on the <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/index.html" target="_blank">CDC website</a>.</li>
+                                <li>Travelers returning from       China, Iran, Italy and South Korea should self-monitor for 14 days for       novel coronavirus symptoms (e.g., fever, cough, or shortness of breath)       and contact SD-DOH at 800-592-1861 if they develop symptoms to aid       coordination of care.</li>
+                              </ul>
+                              <h3 id="SD">COVID-19 in South Dakota</h3>
+                              <p>On March 4, 2020, CDC updated the clinical criteria for testing a  symptomatic individual after evaluation by their healthcare provider. As a  result, the South Dakota Department of Health (SD-DOH) expects the number of  persons under investigation (PUI) being tested for COVID-19 to increase.</p>
+                              <p><strong>The number of PUI being tested does not reflect the level of risk to  the public in the state.</strong> For more information about the outbreak, potential risks, and  protective recommendations, visit the <a href="https://doh.sd.gov/news/Coronavirus.aspx" target="_blank">SD-DOH website</a> or <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">CDC website</a>.<br>
+                              This table shows the total number of positive COVID-19 cases in  South Dakota residents, the total number of persons that tested negative, and the total  number of PUIs that are pending results.</p>
+                              <h2>
+<strong>As of March 11, 2020</strong>
+                              </h2>
+                              <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+      <tr>
+                                  <td width="144" valign="top" style="width:107.75pt;border:solid windowtext 1.0pt;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-size:12.0pt;"><strong>Positive*</strong></span></p></td>
+                                  <td width="72" valign="top" style="width:.75in;border:solid windowtext 1.0pt;border-left:none;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" align="center" style="margin-bottom:.0001pt;text-align:center;line-height:normal;"><span style="font-size:12.0pt;">8</span></p></td>
+                                </tr>
+                                <tr>
+                                  <td width="144" valign="top" style="width:107.75pt;border:solid windowtext 1.0pt;border-top:none;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-size:12.0pt;"><strong>Negative</strong></span></p></td>
+                                  <td width="72" valign="top" style="width:.75in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" align="center" style="margin-bottom:.0001pt;text-align:center;line-height:normal;"><span style="font-size:12.0pt;">27</span></p></td>
+                                </tr>
+                                <tr>
+                                  <td width="144" valign="top" style="width:107.75pt;border:solid windowtext 1.0pt;border-top:none;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-size:12.0pt;"><strong>Pending</strong></span></p></td>
+                                  <td width="72" valign="top" style="width:.75in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:2.15pt 5.75pt 2.15pt 5.75pt;"><p class="MsoNormal" align="center" style="margin-bottom:.0001pt;text-align:center;line-height:normal;"><span style="font-size:12.0pt;">11</span></p></td>
+                                </tr>
+                              </table>
+                              <p><em>*Includes presumptive positives sent to CDC for final testing</em><br>
+                                Counties reporting cases: Beadle, Charles Mix, Davison, Minnehaha (3), Pennington, Bon Homme<br>
+                              This table will be updated  each weekday</p>
+                              <h3 id="news">News</h3>
+                              <ul>
+                                <li>March 5, 2020 - <a href="https://doh.sd.gov/media/COVID-19/UpdateWebinar_HealthcareProviders.mp4" target="_blank">Update Webinar for Healthcare Providers</a> | <a href="../documents/news/COVID-19_UpdateForProviders.pdf" target="_blank">Slides</a>
+</li>
+                                <li>March 4, 2020 - <a href="../documents/news/senate_health_coronavirus_03-04-2020.pdf" target="_blank">Informational Briefing for Senate  Health and Human Services Committee</a>
+</li>
+                                <li>February 27, 2020 - <a href="https://news.sd.gov/newsitem.aspx?id=26450" target="_blank">South Dakota Prepares for COVID-19</a>
+</li>
+                              </ul>
+                              <h3 id="Avoid">Precautions to avoid illness</h3>
+                              <h2>What  can you do? </h2>
+                              <ul type="disc">
+                                <li>Wash your       hands often with soap and water for at least 20 seconds or use an       alcohol-based hand sanitizer.</li>
+                                <li>Cover your       coughs and sneezes with a tissue.</li>
+                                <li>Avoid close contact with people       who are sick.</li>
+                                <li>Refraining from touching your       eyes, nose and mouth. </li>
+                                <li>Clean frequently       touched surfaces and objects.</li>
+                                <li>Individuals       at higher risk for severe COVID-19 illness, such as older adults and       people who have chronic medical conditions like heart, lung or kidney       disease, should <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html" target="_blank">take actions</a> to reduce your risk of exposure.</li>
+                                <li>Create a       family <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/home/index.html" target="_blank">plan</a> to prepare for COVID-19 and develop a <a href="https://bready.sd.gov/family/family.aspx" target="_blank">stay at home kit</a> with food, water, medication, and other necessary items.</li>
+                              </ul>
+                              <p>South  Dakota&#8217;s healthcare system is prepared to identify and treat cases of COVID-19.</p>
+                              <h2>If  you develop symptoms:</h2>
+                              <ul type="disc">
+                                <li>Call       your health care provider immediately and tell them about any recent       travel or exposure. </li>
+                                <li>Individuals       who are concerned that they have COVID-19 should contact their healthcare       provider via phone before going to a clinic or hospital to prevent spread       in healthcare facilities. </li>
+                                <li>Avoid contact with other       people.</li>
+                                <li>Follow the directions of your       provider and public health officials.</li>
+                              </ul>
+                              <p><strong><a href="https://www.communityhealthcare.net/find-a-chc-map" target="_blank">Find Federally Qualified Health Centers in South Dakota</a></strong></p>
+                              <p>CDC does not recommend that  people who are well wear a facemask to protect themselves from respiratory  illnesses, including COVID-19. You should only wear a mask if a healthcare  professional recommends it. A facemask should be used by people who have COVID-19  and are showing symptoms. This is to protect others from the risk of getting  infected. The use of facemasks also is crucial for&#160;<a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/infection-control.html" target="_blank">health workers</a>&#160;and other&#160;<a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-home-care.html" target="_blank">people who are taking care of someone infected with  COVID-19 in close settings</a>&#160;(at home or in a health care  facility).</p>
+<h3 id="Providers">information for Medical Providers</h3>
+                              <ul>
+                                <li>Medical providers who       are concerned a patient may be infected with COVID-19 should:</li>
+                                <ul type="circle">
+                                     <li>Mask the patient</li>
+                                     <li>Isolate the Patient in        a private room or separate area, and</li>
+                                     <li>Contact with SD-DOH        (800-592-1861) immediately for consultation and guidance<br>
+                                       <br>
+                                     </li>
+                                </ul>
+                                <li>Clinicians are strongly       encouraged to test for other infectious causes of respiratory illness,       such as influenza and RSV. <strong>Note</strong>: Asymptomatic patients are <strong><u>not       eligible</u></strong> for testing at the SD Public Health Laboratory. <br>
+                                  <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                      <td colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%"><strong>Priority Level</strong></td>
+                                      <td width="57%"><strong>Clinical    Features</strong></td>
+                                      <td width="26%"><strong>Risk    Exposure*</strong></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%"><strong>Low</strong></td>
+                                      <td width="57%">Fever OR Cough    OR Shortness of Breath </td>
+                                      <td width="26%">None identified </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%"><strong>Medium</strong></td>
+                                      <td width="57%">Fever OR Cough    OR Shortness of breath AND Elevated risk for severe infection** </td>
+                                      <td width="26%">None identified </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%"><strong>Medium</strong></td>
+                                      <td width="57%">Fever OR Cough    OR Shortness of Breath </td>
+                                      <td width="26%">Identified risk </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%"><strong>High</strong></td>
+                                      <td width="57%">Fever OR Cough    OR Sore Throat OR Shortness of Breath </td>
+                                      <td width="26%">Identified    healthcare risk*** </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="26" colspan="3"><hr></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="17%" height="26"><strong>High</strong></td>
+                                      <td width="57%">Fever AND Cough    OR Shortness of Breath </td>
+                                      <td width="26%">Identified risk </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="26" colspan="3"><hr></td>
+                                    </tr>
+                                  </table>
+                                  *Individual meets the risk exposure criterion if they have one of the following:
+  <ul>
+    <li>Close contact to a laboratory-confirmed case within 14 days of symptom onset.</li>
+    <li>History of travel to a geographic area with community transmission in a state within 14 days of symptom onset. <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">Visit CDC website for the current list of states</a>.</li>
+    <li>History of travel from a country under a Level 2 or Level 3 Travel Advisory. <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">Visit CDC website for the current list of countries</a>.<br>
+      <br>
+    </li>
+  </ul>
+                                  **Elevated Risk for Severe COVID-19 Infection:
+  <ul>
+    <li>Hospitalized patients </li>
+    <li>Older adults <em>(65 years of age and older) </em>
+</li>
+    <li>Individuals with certain pre-existing conditions <em>(e.g., heart disease, lung disease, diabetes, and immunosuppressed)</em><br>
+      <br>
+    </li>
+  </ul>
+                                  ***Any healthcare worker who was caring for or who had unprotected direct contact with infectious secretions or excretions of a suspected COVID-19 patient or laboratory-confirmed case within 14 days of symptoms onset. <br>
+  <hr>
+                                </li>
+                                <li>Guidance on specimen       collection and testing, infection control practices, and other       considerations are available at:
+                                  <ul>
+                                    <li>
+<a href="../documents/news/HAN_20-007_CoronavirusGuidance.pdf" target="_blank">SD-HAN 20-007:  Guidance on Evaluating Persons for COVID-19 Infection</a> <em>(Updates SD-HAN 20-003) </em>
+</li>
+                                    <li><a href="../documents/news/HAN_20-006_HealthcareChecklists.pdf" target="_blank">SD-HAN 20-006:&#160;Healthcare Facility Checklist</a></li>
+                                    <li><a href="../documents/news/HAN_20-005_CDC_COCA_Call.pdf" target="_blank">SD-HAN 20-005: CDC       COCA Call</a></li>
+                                  </ul>
+                                </li>
+                                <ul>
+                                  <li><a href="../documents/news/HAN_20-004_WebinarforHealthcare.pdf" target="_blank">SD-HAN 20-004:&#160;Webinar for Healthcare</a></li>
+                                  <li><a href="../documents/news/HAN_20-003_EvaluatingPersonsforCOVID-19.pdf" target="_blank">SD-HAN 20-003:&#160;Evaluating Persons for COVID-19</a></li>
+                                  <li><a href="../documents/news/HAN_20-002_NovelCoronavirusGuidance.pdf" target="_blank">SD-HAN 20-002: Monitoring and Movement  Guidance on Novel Coronavirus</a></li>
+                                  <li><a href="https://emergency.cdc.gov/coca/calls/2020/callinfo_030520.asp" target="_blank">CDC Clinician Call: What Clinicians Need to Know  to Prepare for COVID-19</a></li>
+                                  <li><a href="https://emergency.cdc.gov/han/han00427.asp" target="_blank">CDC HAN 427: Updated and Interim  Guidance on Outbreak of 2019 Novel Coronavirus</a></li>
+                                  <li>
+<a href="../documents/news/COVID_CMS_NursingHomeGuidance.pdf" target="_blank">CMS  - Guidance for Infection Control and Prevention of COVID-19 in nursing homes</a> <em>(Revised 03/09/20)</em><br>
+                                    <br>
+                                  </li>
+                                </ul>
+                                <li>
+<strong>COVID-19 Lab Specimen <a href="../documents/news/COVID_SubmitterForm.pdf" target="_blank">Submission Form</a></strong>
+                                  <ul>
+                                    <li>
+<a href="../lab/Medical-Microbiology/default.aspx" target="_blank">SD Public Health Lab        Specimen Guidance</a><br>
+                                      <br>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>CDC COCA Call COVID-19 Update - March 5, 2020 <a href="https://emergency.cdc.gov/coca/calls/2020/callinfo_030520.asp" target="_blank">call in information</a><br>
+                                  <br>
+                                </li>
+                                
+                                <li>SD-DOH would like to remind medical providers,  hospitals, and laboratories that cases of COVID-19, caused by the SARS-CoV-2  virus, are considered immediately <a href="../diseases/infectious/Reporting.aspx" target="_blank">reportable</a> in South Dakota (under Coronavirus Respiratory  syndromes).<br>
+                                  <br>
+                                </li>
+                                <li>CDC issued guidance to       healthcare facilities in the event that a traveler with illness is       identified.</li>
+                                <ul type="circle">
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/clinical-criteria.html" target="_blank">Evaluating and reporting persons under        investigation</a></li>
+                                  <ul type="square">
+                                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/php/guidance-evaluating-pui.html" target="_blank">Evaluating PUIs and Asymptomatic Close         Contracts</a></li>
+                                  </ul>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/infection-control/control-recommendations.html?" target="_blank">Healthcare infection control guidance</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-guidance-management-patients.html" target="_blank">Clinical care guidance</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-home-care.html" target="_blank">Home care guidance</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-for-ems.html" target="_blank">Guidance for EMS</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-risk-assesment-hcp.html" target="_blank">Healthcare personnel with potential exposure        guidance</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/inpatient-obstetric-healthcare-guidance.html" target="_blank">Inpatient Obstetrics Care</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/disposition-hospitalized-patients.html" target="_blank">Disposition of patients with novel coronavirus</a></li>
+                                  <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-postmortem-specimens.html" target="_blank">Collection and testing of postmortem samples</a></li>
+                                </ul>
+                              </ul>
+                              <h3 id="Groups">Community Guidance &amp; Resources                              </h3>
+<ul>
+      <li>
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/community-mitigation-strategy.pdf" target="_blank" class="MsoNormal">Implementation of Mitigation Strategies for Communities with  Local COVID-19 Transmission</a> (CDC, PDF)<br>
+        <br>
+      </li>
+                              <li>
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/community-mitigation-strategy.pdf" target="_blank"><img src="../images/COVID_CommunityPrevention1.jpg" alt="Local COVID-19 transmission in your community? CLICK HERE for Mitigation Strategies. CDC" align="right"></a>Community mitigation       guidance from the CDC is available for:</li>
+      <ul type="circle">
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/home/index.html" target="_blank">Households</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/index.html" target="_blank">People at Higher risk</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/guidance-business-response.html?" target="_blank">Businesses</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/index.html" target="_blank">Schools and childcare centers</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/colleges-universities.html" target="_blank">Colleges and Universities</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/index.html" target="_blank">Community and faith-based organizations</a></li>
+        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/large-events/index.html" target="_blank">Large events</a></li>
+        <li>
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-law-enforcement.html" target="_blank">Law enforcement</a><br>
+          <br>
+        </li>
+      </ul>
+      <li>
+<a href="../documents/news/COVID_school_QA.pdf" target="_blank" class="MsoNormal">COVID-19 and Schools: Information for School Administrators and Nurses</a> (PDF)
+        <ul>
+          <li>
+<a href="../documents/news/COVID_presentation4schools.pdf" target="_blank">Presentation for Schools</a> (PDF)</li>
+        </ul>
+      </li>
+      <li>
+<a href="../documents/news/COVID_business_QA.pdf" target="_blank" class="MsoNormal">Workplace and Employer Resources &amp; Recommendations</a> (PDF)</li>
+      </ul>
+                  </div>
+							<div class="force-clear">&#160;</div>
+</div>
+<nav id="quicklinks-footer">
+    <hr class="top">
+    
+    <div id="quicklinks-lnk" class="centerer clearfix">
+        <a href="/records/">
+            <img src="/images/layout/sections/records-small.png" alt="Certificates and Records"><br>
+            Certificates <br>
+            &amp; Records
+        </a>
+        
+        <a href="/statistics/">
+            <img src="/images/layout/sections/statistics-small.png" alt="Health Data and Statistics"><br>
+            Health Data <br>
+            &amp; Statistics
+        </a>
+        
+        <a href="/diseases/">
+            <img src="/images/layout/sections/diseases-small.png" alt="Diseases and Conditions"><br>
+            Diseases &amp; <br>
+            Conditions
+        </a>
+        
+        <a href="/family/">
+            <img src="/images/layout/sections/family-small.png" alt="Family and Child Development"><br>
+            Family &amp; Child <br>
+            Development
+        </a>
+        
+        <a href="/prevention/">
+            <img src="/images/layout/sections/prevention-small.png" alt="Prevention and Healthy Living"><br>
+            Prevention &amp; <br>
+            Healthy Living
+        </a>
+        
+        <a href="/food/">
+            <img src="/images/layout/sections/food-small.png" alt="Food and Lodging Safety"><br>
+            Food &amp; <br>
+            Lodging Safety
+        </a>
+        
+        <a href="/providers/">
+            <img src="/images/layout/sections/providers-small.png" alt="Healthcare Providers"><br>
+            Healthcare <br>
+            Providers
+        </a>
+    
+        <a href="/services/">
+            <img src="/images/layout/sections/services-small.png" alt="Services and Programs"><br>
+            Services &amp;<br>
+            Programs
+        </a>
+        
+        <a href="/a-z-topics/" class="quicklast">
+            <img src="/images/layout/sections/a-z-topics-small.png" alt="A-Z Topics"><br>
+            A-Z <br>
+            Topics
+        </a>
+    </div>
+    
+    <hr>
+    <hr>
+</nav>
+                
+    <nav id="outside-agencies" class="clearfix">
+        <div class="centerer clearfix">
+            <div id="left">
+              <h2>OTHER STATE AGENCY LINKS</h2>
+                <table>
+                
+                <tr>
+	                <td width="303"><a href="http://dss.sd.gov/medicaid/" target="_blank" title="Medicaid">Medicaid</a></td>
+    	            <td width="312">
+<a href="http://www.healthcare.gov" target="_blank">Federal Health Insurance Exchange</a><a href="http://dlr.sd.gov/insurance/" target="_blank" title="Consumer insurance complaints"></a>
+</td>
+                </tr>
+                <tr>
+        	        <td><a href="http://dss.sd.gov/medicaid/recipients/medicarepartD/" target="_blank" title="Medicare Prescription Drug Coverage">Medicare Prescription Drug Coverage</a></td>
+            	    <td>
+<a href="http://dlr.sd.gov/insurance/" target="_blank" title="Consumer insurance complaints">Consumer insurance complaints</a><a href="http://dlr.sd.gov/insurance/license_inquiry_service.aspx" target="_blank" title="Licensed insurance companies"></a>
+</td>
+                </tr>
+                <tr>
+                	<td><a href="http://dss.sd.gov/medicaid/generalinfo/medicalprograms.aspx#chip" target="_blank" title="Children's Health Insurance Program">Children's Health Insurance Program</a></td>
+                	<td><a href="http://dlr.sd.gov/insurance/license_inquiry_service_intro.aspx" target="_blank" title="Licensed insurance companies">Licensed insurance companies</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://dhs.sd.gov/LTSS/default.aspx" target="_blank">SD Nursing Facility Bed Availability</a></td>
+                  <td></td>
+                </tr>
+                </table>
+			</div>
+            
+            <div id="right">
+                <div class="clearfix">
+                  <h2>Featured Programs &amp; Services</h2>&#160;&#160;&#160;<a href="/programs/" class="button" title="View All">View All</a>
+</div>
+                <div id="program_slides">
+                  <div class="program_slides_container">
+                      <div class="program_single_slide"><a href="https://doh.sd.gov/prevention/carsafety/" target="_blank"><img src="/images/18_SDDOH_WebGraphic_Homepage_230x110.jpg" alt="Strategic Plan"></a></div>
+					  <div class="program_single_slide"><a href="http://doh.sd.gov/strategicplan/" target="_blank"><img src="/images/DOHSP_SliderLogo.jpg" alt="Strategic Plan"></a></div>
+                      <div class="program_single_slide"><a href="https://sdwic.org/" target="_blank"><img src="/images/WIC_Logo_Color_Tag.jpg%20" alt="South Dakota WIC Program "></a></div>
+                        <div class="program_single_slide"><a href="http://forbabysakesd.com/" target="_blank"><img src="/images/ForBabysSake.jpg" alt="For Baby's Sake South Dakota"></a></div>
+                        <div class="program_single_slide"><a href="http://www.healthysd.gov/" target="_blank"><img src="/images/healthysd.jpg" alt="Healthysd.gov"></a></div>
+<div class="program_single_slide"><a href="http://getscreened.sd.gov/" target="_blank"><img src="/images/get-screened.jpg" alt="Get Screened SD"></a></div>
+                        <div class="program_single_slide"><a href="http://sdsuicideprevention.org/" target="_blank"><img src="/images/SuicideHotline_Slider.jpg" alt="SD Suicide Hotline"></a></div>
+                        <div class="program_single_slide"><a href="https://www.avoidopioidsd.com/" target="_blank"><img src="/images/AvoidOpioids.jpg" alt="Opioid Abuse Prevention"></a></div>
+                        <div class="program_single_slide"><a href="http://www.befreesd.com/" target="_blank"><img src="/images/befree.jpg" alt="Be Free SD"></a></div>
+                        <div class="program_single_slide"><a href="http://rethinktobacco.com/" target="_blank"><img src="/images/rethink.jpg" alt="Rethink tobacco"></a></div>
+                        <div class="program_single_slide"><a href="http://www.sdquitline.com" target="_blank"><img src="/images/QuitLine.jpg" alt="QuitLine"></a></div>
+                         <div class="program_single_slide"><a href="https://doh.sd.gov/healthequity/" target="_blank"><img src="/images/layout/HealthEquity.jpg" alt="Health Equity and Cultural Competency"></a></div>
+                             <div class="program_single_slide"><a href="https://volunteers.sd.gov/" target="_blank"><img src="/images/servsd.jpg" alt="ServSD"></a></div>
+                         <div class="program_single_slide"><a href="http://doh.sd.gov/food/restaurants-lodging/inspection-scores.aspx" target="_blank"><img src="/images/FoodandLodgingInspectionResults.jpg" alt="Food and Lodging Inspection Results"></a></div>
+                        <div class="program_single_slide"><a href="http://www.sdhealthlink.org/" target="_blank"><img src="../images/SDHealthLink.jpg" alt="SDHealthLink"></a></div>
+                        <div class="program_single_slide"><a href="http://www.sim.sd.gov/" target="_blank"><img src="../images/layout/SIMSD-logo.jpg" alt="SIM-SD"></a></div> 
+                          <div class="program_single_slide"><a href="http://scrubscamps.sd.gov/" target="_blank"><img src="../images/layout/Scrubs_Camp_FINAL.jpg" alt="Scrubs Camp"></a></div>
+                                <div class="program_single_slide"><a href="http://healthcareers.sd.gov/" target="_blank"><img src="/images/hott.jpg" alt="Health Careers SD"></a></div> 
+                                      <div class="program_single_slide"><a href="https://doh.sd.gov/Lab/" target="_blank"><img src="../images/layout/Lab_StatePublicHealthLaboratory.jpg" alt="PointOfCare"></a></div>
+    
+                
+				
+
+
+<div class="force-clear">&#160;</div>
+</div>
+<!--#container-->
+</div>
+<!--#middle-->      
+	<footer>
+        <div class="container">
+            <div id="left"><a href="http://sd.gov/" target="_blank" title="State of SD Home"><img src="/images/layout/sdgov.png" alt="State of South Dakota Home" title="State of South Dakota Home"></a></div>
+            <div id="center">
+            	<p><a href="/" title="Dept of Healh Home">DOH Home</a>&#160;    <a href="http://intranet.doh.sd.gov/">DOH Intranet&#160;</a>&#160;&#160;<a href="http://sd.gov/accpolicy.aspx" target="_blank" title="Accessibility Policy">Accessibility Policy</a>&#160;&#160;&#160;<a href="http://sd.gov/privacy.aspx" target="_blank" title="Privacy Policy">Privacy Policy</a>&#160;&#160;&#160;<a href="http://sd.gov/disclaim.aspx">Disclaimer</a>&#160;&#160;&#160;<a href="/documents/HIPAANotice.pdf" title="DOH HIPAA" target="_blank">DOH HIPAA</a>	            </p>
+            	<div id="disclaimer">
+    		        &#169;2019 South Dakota Department of Health. All Rights Reserved.&#160;&#160;|&#160;&#160;<a href="mailto:DOH.info@state.sd.us">DOH.info@state.sd.us</a><br>
+            		600 East Capitol Avenue&#160;&#160;|&#160;&#160;Pierre, SD 57501-2536&#160;&#160;|&#160;&#160;605-773-3361&#160;&#160;|&#160;&#160;1-800-738-2301 (In State)<br>
+		            <div id="imd"></div>
+        	    </div>
+            </div>
+            <div id="right"><a href="/contact/" title="Contact DOH" class="button">Contact DOH</a></div>
+        </div>
+	</footer>
+
+	
+	<script src="/includes/js/jquery/slides.jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#slides').slides({				
+				preload: true, 
+				generateNextPrev: false, 
+				pagination: true, 
+				generatePagination: true, 
+				paginationClass: 'pagination', 
+				fadeSpeed: 1000, 
+				effect: 'slide', 
+				crossfade: true, 
+				play: 5000, 
+				pause: 2500, 
+				hoverPause: true, 
+				autoHeight: false, 
+				bigTarget: false 
+			});
+		});
+	</script>
+
+	
+	<script type="text/javascript">
+		$(function(){
+			$('#program_slides').slides({
+				preload: true, 
+				container: 'program_slides_container', 
+				generateNextPrev: true, 
+				pagination: false, 
+				generatePagination: false, 
+				effect: 'slide', 
+				play: 5000, 
+				pause: 2500, 
+				hoverPause: true, 
+				bigTarget: false 
+				
+				
+			});
+		});
+	</script>
+
+
+
+<script>// This 
+    var dropdown = $(".dropdown-btn");
+        dropdown.click( function() {
+            $(".active").removeClass("active")
+            $(this).toggleClass("active")
+            $(".dropdown-container").hide()
+            var dropdownContent = $(this).next();
+            if (dropdownContent.is(":visible")){
+                dropdownContent.hide()
+            }
+            else dropdownContent.show()
+        });
+</script>
+
+
+
+    
+	<script type="text/javascript">
+	    $(document).ready(function () {
+
+	        if ($(window).width() > 830) {
+	            $("#sidebar").treeview({
+	                animated: "fast",
+	                collapsed: true,
+	                control: "#treecontrol",
+	                persist: "location"
+	            });
+	        }
+	        else {
+	            $("#sidebar").treeview({
+
+	            });
+	        }
+
+	        $("#menu").click(function () {
+	            $("#middle #main").toggle();
+
+	        });
+
+	        $("#sidebar").click(function () {
+
+	            $("#sidebar #subtree").toggle();
+	            $("#sidebar h2").toggleClass("select");
+
+            });
+
+	        $("#sidebar li, #subtree, .treeview").click(function (e) {
+	           //e.stopPropagation()
+	        });
+
+            
+
+	    });
+	</script>
+    
+    
+    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41724005-1', 'auto');
+	  ga('send', 'pageview');	
+	</script>
+</div>
+</div></nav>
+</div>
+</div>
+</body>
+</html>
