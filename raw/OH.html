@@ -1520,15 +1520,23 @@ var cleanURL = outageNotificationIsCurrent.substring(indexDash+1, outageNotifica
             <!-- START: Ohio Design > Presentation Templates > Landing Page   -->
 <!-- @FIXED: SOGW-3814 - JIRA-KEY Removed validation for avoiding components from not being inserted in all landing pages -->
 
-<!--[if lt IE 11]>
-<div class="alert alert-danger margin-right-sm margin-top-sm">
-<p class="browserupgrade" dir="ltr">You are using an <strong>outdated</strong> browser. Please <a href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" title="Update your browser" target="_blank" >upgrade your browser</a> to improve your experience.</p>
 
-</div>
-<![endif]-->
-<script>
+<div id="androidchrome" class="alert alert-danger margin-right-sm margin-top-sm hidden">
     
-</script>
+    </div>
+    
+    <script type="text/javascript">
+        (function($) {
+            $(document).on('ready', function() {
+             var $androidchrome = $('#androidchrome');
+    
+        if (OHIO.Utils.actions.mobile.isAndroidAndNotChrome()); 
+       { 
+         $androidchrome.show();
+       }
+        }); // ends document.ready
+      })(jQuery);
+    </script>
 <!-- START: Ohio Design > Components> Load label translations -->
 <script>
 (function($){
@@ -1545,9 +1553,6 @@ window.currentSiteTranslations = $.extend(globalTranslations, portalLocationsTra
 })(jQuery);
 </script>
 <!-- END: Ohio Design > Components > Load label translations -->
-
-
-
 
 <div id="odx-layout-landing-page" class="odx-layout-landing-page  layout-odx-single-column-with-bottom-sidebar-and-left-nav-parent-context">
 
