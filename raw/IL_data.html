@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b1bb1b892b",applicationID:"55445753"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
 <link rel="shortcut icon" href="http://www.dph.illinois.gov/sites/all/themes/idph/favicon.ico" type="image/vnd.microsoft.icon">
-<meta name="description" content="*/ English Governor Pritzker COVID-19 Press Conferences">
+<meta name="description" content="*/ English">
 <meta name="generator" content="Drupal 7 (https://www.drupal.org)">
 <link rel="canonical" href="http://www.dph.illinois.gov/covid19">
 <link rel="shortlink" href="http://www.dph.illinois.gov/node/22076">
@@ -3313,47 +3313,38 @@
   Padding: 10px;
   Box-Shadow: 5px 10px 8px #888888;
   Margin-Top:15px;}
+.flex-container {display:flex;flex-wrap:wrap; justify-content:center;}
+.NumberHighlight { min-width:30%; border:1px solid black; border-top:3px solid black; text-align:center; border-radius:8px; color:white; flex-grow:1; flex-shrink:1;}
+@media (max-width:800px) {.NumberHighlight {width:100%}}
 
 /*--><!]]>*/
 </style>
 <dl class="ckeditor-tabber">
 <dt>English</dt>
 <dd>
-<h2><a href="http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications">Governor Pritzker COVID-19 Press Conferences</a></h2>
-<h2><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/faq">Coronavirus Disease 2019 (COVID-19) Frequently Asked Questions</a></h2>
-<p>The Illinois Department of Public Health, local health departments, and public health partners throughout Illinois, and federal agencies, including the Centers for Disease Control and Prevention (CDC), are responding to an outbreak of respiratory illness caused by a novel coronavirus called COVID-19 that was first identified in December 2019 during an outbreak in Wuhan, China. COVID-19 has spread throughout the world, including the United States, since it was detected and was declared a public health emergency for the U.S. on January 31, 2020 to aid the nation&#8217;s healthcare community in responding to the threat.&#160; The World Health Organization announced March 11, 2020 that the spread of coronavirus qualifies as a global pandemic.</p>
-<p>In addition, Gov. JB Pritzker issued a disaster proclamation March 9, 2020 regarding COVID-19 that gives the state access to federal and state resources to combat the spread of this newly emerged virus.</p>
-<p>The first case of COVID-19 in the United States was reported January 21, 2020 and the first confirmed case in Illinois was announced January 24, 2020 (a Chicago resident). The first cases outside Chicago and Cook County were reported March 11, 2020 in Kane and McHenry counties. The current count of cases of COVID-19 in the United States is available on the CDC webpage at <a href="http://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html</a>. Illinois case totals and test results are listed below.</p>
-<p>Person-to-person spread of COVID-19 appears to be mainly between people who are in close contact with one another (within about 6 feet) through respiratory droplets produced when an infected person coughs or sneezes.&#160; It also may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. Signs and symptoms of COVID-19 include fever, cough, and shortness of breath.&#160; Preliminary data suggest older adults and people with underlying health conditions or compromised immune systems seems to be at greater risk of developing serious illness from the virus.</p>
-<p>If you are sick and have respiratory symptoms, such as fever, cough, and shortness of breath, stay home unless you need medical attention.&#160; Remain in your home until you feel better and have no symptoms.&#160; Keep in mind there is no treatment for COVID-19 and people who are mildly ill can isolate at home. While at home, as much as possible, stay in a specific room and away from other people. Those who need medical attention should contact their health care provider who will evaluate whether they can be cared for at home or need to be hospitalized.</p>
+<h2><a href="http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications/daily-press-briefings">Governor Pritzker COVID-19 Press Conferences</a></h2>
 <h2>Persons Under Investigation (PUI) for COVID-19</h2>
-<table align="center" class="padded-table" style="max-width:600px;">
-<thead><tr>
-<th colspan="2">
-<h3 align="center">Coronavirus Disease 2019 (COVID-19) in Illinois Test Results</h3>
-</th>
-</tr></thead>
-<tbody>
-<tr>
-<th style="text-align:left;">Positive (confirmed)</th>
-<td style="text-align:center;">32</td>
-</tr>
-<tr>
-<th style="text-align:left;">Negative</th>
-<td style="text-align:center;">294</td>
-</tr>
-<tr>
-<th style="text-align:left;">PUIs Pending</th>
-<td style="text-align:center;">92</td>
-</tr>
-<tr>
-<th style="text-align:left;">Total PUI</th>
-<td style="text-align:center;">418</td>
-</tr>
-</tbody>
-</table>
-<p style="text-align:center;">Information regarding the number of persons under investigation updated on March 12, 2020.<br>
-	Information to be updated daily.</p>
+<h2 align="center" style="text-align: center;">Coronavirus Disease 2019 (COVID-19) in Illinois Test Results</h2>
+<div class="flex-container">
+<div class="NumberHighlight" style="background:#2ca02c;">
+<h2>Positive (Confirmed)</h2>
+<h3>46</h3>
+</div>
+<div class="NumberHighlight" style="background:#1f77b4;">
+<h2>Negative</h2>
+<h3>316</h3>
+</div>
+<div class="NumberHighlight" style="background:#ff7800;">
+<h2>PUIs Pending</h2>
+<h3>82</h3>
+</div>
+<div class="NumberHighlight" style="background:#5f5f5f; flex-grow:3;">
+<h2>Total PUI</h2>
+<h3>444</h3>
+</div>
+</div>
+<p style="text-align:center;">Information regarding the number of persons under investigation updated on March 2, 2020.<br>
+	Information to be updated on Mondays, Wednesdays, and Fridays.</p>
 <div id="myDiv" style="text-align:center;min-height:420px">&#160;</div>
 <script>
 <!--//--><![CDATA[// ><!--
@@ -3365,62 +3356,54 @@ legend: {orientation:'h'},
 
 	var dataCoronavirus= [{
 			type:'pie',
-			labels:['Positive (confirmed)','Negative','PUIs Pending'],
-			values:[32,294,92]	,
+labels:['Positive (confirmed)','Negative','PUIs Pending'],
+			values:[46,316,82]	,
+textposition:'outside',
 automargin:true,
 textinfo:'label+value',
 }];
 
 Plotly.newPlot('myDiv', dataCoronavirus, layout, {responsive:true});
 //--><!]]>
-</script><p>This is a rapidly evolving situation and information will be updated as needed here and on the CDC website at <a href="http://cdc.gov/coronavirus/2019-ncov/index.html.">cdc.gov/coronavirus/2019-ncov/index.html.</a><br>
+</script><p>The Illinois Department of Public Health, local health departments, and public health partners throughout Illinois, and federal agencies, including the Centers for Disease Control and Prevention (CDC), are responding to an outbreak of respiratory illness caused by a novel coronavirus called COVID-19 that was first identified in December 2019 during an outbreak in Wuhan, China. COVID-19 has spread throughout the world, including the United States, since it was detected and was declared a public health emergency for the U.S. on January 31, 2020 to aid the nation&#8217;s healthcare community in responding to the threat.&#160; The World Health Organization announced March 11, 2020 that the spread of coronavirus qualifies as a global pandemic.</p>
+<p>In addition, Gov. JB Pritzker issued a disaster proclamation March 9, 2020 regarding COVID-19 that gives the state access to federal and state resources to combat the spread of this newly emerged virus.</p>
+<p>The first case of COVID-19 in the United States was reported January 21, 2020 and the first confirmed case in Illinois was announced January 24, 2020 (a Chicago resident). The first cases outside Chicago and Cook County were reported March 11, 2020 in Kane and McHenry counties. The current count of cases of COVID-19 in the United States is available on the CDC webpage at <a href="http://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html</a>. Illinois case totals and test results are listed below.</p>
+<p>Person-to-person spread of COVID-19 appears to be mainly between people who are in close contact with one another (within about 6 feet) through respiratory droplets produced when an infected person coughs or sneezes.&#160; It also may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes. Signs and symptoms of COVID-19 include fever, cough, and shortness of breath.&#160; Preliminary data suggest older adults and people with underlying health conditions or compromised immune systems seems to be at greater risk of developing serious illness from the virus.</p>
+<p>If you are sick and have respiratory symptoms, such as fever, cough, and shortness of breath, stay home unless you need medical attention.&#160; Remain in your home until you feel better and have no symptoms.&#160; Keep in mind there is no treatment for COVID-19 and people who are mildly ill can isolate at home. While at home, as much as possible, stay in a specific room and away from other people. Those who need medical attention should contact their health care provider who will evaluate whether they can be cared for at home or need to be hospitalized.</p>
+<p>This is a rapidly evolving situation and information will be updated as needed here and on the CDC website at <a href="http://cdc.gov/coronavirus/2019-ncov/index.html.">cdc.gov/coronavirus/2019-ncov/index.html.</a><br>
 	For general questions about COVID-19 and Illinois&#8217; response and guidance, call 1-800-889-3931 or email <a href="mailto:DPH.SICK@ILLINOIS.GOV">DPH.SICK@ILLINOIS.GOV</a><u>.</u></p>
 <p><em>Page Last Reviewed: March 12, 2020</em></p>
 </dd>
 <dt>Espa&#241;ol</dt>
 <dd>
-<h2><a href="http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications">Gobernador Pritzker COVID-19 Conferencia de Prensa</a></h2>
-<h2><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/faq">Enfermedad del Coronavirus 2019 (COVID-19) Respuestas a las preguntas m&#225;s frecuentes</a></h2>
+<h2><a href="http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications/daily-press-briefings">Gobernador Pritzker COVID-19 Conferencia de Prensa</a></h2>
 <h2>ENFERMEDAD DEL CORONAVIRUS 2019 (COVID-19):</h2>
-<p>El Departamento de Salud P&#250;blica de Illinois, los departamentos de salud locales, socios por todo el estado, y agencias federales, incluyendo Los Centros para el Control y la Prevenci&#243;n de Enfermedades (CDC, por sus siglas en ingl&#233;s), est&#225;n respondiendo a un brote de enfermedad respiratoria causada por un nuevo coronavirus llamado COVID-19 que se identific&#243; por primera vez en diciembre del 2019 durante un brote en Wuhan, China. El COVID-19 se ha propagado por todo el mundo, incluyendo los Estados Unidos, desde que fue detectado y declarado una emergencia de salud p&#250;blica para los Estados Unidos el 31 de enero del 2020 para asistir a la comunidad de atenci&#243;n medica a responder a la amenaza.&#160; La Organizaci&#243;n de la Salud Mundial anunci&#243; el 11 de marzo del 2020 que la propagaci&#243;n del coronavirus se clasifica como una pandemia global</p>
-<p>Adem&#225;s, el Gobernador JB Pritzker emiti&#243; una proclamaci&#243;n de desastre el 9 de marzo del 2020 sobre COVID-19 que le da al estado acceso a recursos federales y estatales para combatir la propagaci&#243;n de este nuevo virus.</p>
-<p>El primer caso de COVID-19 en los Estado Unidos fue reportado el 21 de enero del 2020 y el primer caso confirmado en Illinois fue anunciado el 24 de enero del 2020 (un residente de Chicago).&#160; Los primeros casos afuera de Chicago y del Condado de Cook fueron reportados el 11 de marzo del 2020 en los condados de Kane y McHenry.&#160; Las cuentas m&#225;s recientes de casos de COVID-19 en los Estados Unidos est&#225; disponible en el sitio web de CDC, <a href="http://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html</a>. El n&#250;mero de casos en Illinois y los resultados de pruebas en Illinois aparecen a continuaci&#243;n en esta p&#225;gina.</p>
-<p>La propagaci&#243;n de COVID-19 de persona-a-persona aparece ser principalmente entre las personas que tienen contacto cercano (dentro de unos 6 pies de distancia) a mediante de gotitas respiratorias que se producen cuando una persona infectada tose o estornuda.&#160; Tambi&#233;n podr&#237;a ser posible que una persona contraiga el COVID-19 al tocar una superficie u objeto que tenga el virus y luego se toque la boca, la nariz o posiblemente los ojos.&#160; Signos y s&#237;ntomas de COVID-19 incluyen fiebre, tos, y falta de aire a respirar.&#160; Los datos preliminares sugieren que personas mayores de edad y personas con condiciones de salud subyacente o con un sistema inmune d&#233;bil aparecen tener mayor riesgo a desarrollar enfermedad grave a causa del virus.</p>
-<p>Si usted est&#225; enfermo y tiene s&#237;ntomas respiratorios, como fiebre, tos, y falta de aire a respirar, permanezca en casa a menos que necesite atenci&#243;n m&#233;dica.&#160; Permanezca en su hogar hasta que se sienta mejor y no tenga s&#237;ntomas.&#160; Tome en cuenta que no hay tratamiento para COVID-19 y las personas de enfermedad leve se pueden aislar en su casa.&#160; Mientras est&#233; en casa, lo m&#225;s posible, procure quedarse en un cuarto espec&#237;fico y mantenga su distancia de otras personas.&#160; Si necesita atenci&#243;n m&#233;dica, debe de contactar a su proveedor de servicios m&#233;dicos quien lo va evaluar para determinar si puede recibir cuidado en casa o necesita ser hospitalizado.</p>
-<p>Esta es una situaci&#243;n en evoluci&#243;n que est&#225; cambiando r&#225;pidamente y actualizaremos la informaci&#243;n aqu&#237; seg&#250;n sea necesario y tambi&#233;n en el sitio web de CDC, <a href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html">https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html</a></p>
-<p>Para preguntas generales sobre COVID-19 y gu&#237;as de &#160;espec&#237;fico a Illinois, llame a 1-800-889-3931 o mande un correo electr&#243;nico a <a href="mailto:DPH.SICK@ILLINOIS.GOV">DPH.SICK@ILLINOIS.GOV</a></p>
-<h2>Personas Abajo Investigaci&#243;n (PUI, por sus siglas en ingl&#233;s) para COVID-19</h2>
-<table align="center" class="padded-table" style="max-width:600px;">
-<thead><tr>
-<th colspan="2">
-<h3 align="center">Enfermedad del Coronavirus 2019 (COVID-19) en Illinois Resultados de Examenes</h3>
-</th>
-</tr></thead>
-<tbody>
-<tr>
-<th style="text-align:left;">Positivo (confirmados)</th>
-<td style="text-align:center;">32</td>
-</tr>
-<tr>
-<th style="text-align:left;">Negativo</th>
-<td style="text-align:center;">294</td>
-</tr>
-<tr>
-<th style="text-align:left;">PUIs Pendientes</th>
-<td style="text-align:center;">92</td>
-</tr>
-<tr>
-<th style="text-align:left;">PUI Total</th>
-<td style="text-align:center;">418</td>
-</tr>
-</tbody>
-</table>
-<p style="text-align:center;">Informaci&#243;n sobre el numero de personas abajo investigaci&#243;n actualizado el 12&#160;de Marzo del 2020.<br>
+<h2>Persons Under Investigation (PUI) for COVID-19</h2>
+<h2 align="center" style="text-align: center;">Coronavirus Disease 2019 (COVID-19) in Illinois Test Results</h2>
+<div class="flex-container">
+<div class="NumberHighlight" style="background:#2ca02c;">
+<h2>Positivo (confirmados)</h2>
+<h3>46</h3>
+</div>
+<div class="NumberHighlight" style="background:#1f77b4;">
+<h2>Negativo</h2>
+<h3>316</h3>
+</div>
+<div class="NumberHighlight" style="background:#ff7800;">
+<h2>PUIs Pendientes</h2>
+<h3>82</h3>
+</div>
+<div class="NumberHighlight" style="background:#5f5f5f; flex-grow:3;">
+<h2>PUI Total</h2>
+<h3>444</h3>
+</div>
+</div>
+<p style="text-align:center;">Informaci&#243;n sobre el numero de personas abajo investigaci&#243;n actualizado el 13 de Marzo del 2020.<br>
 	Informaci&#243;n sera actualizada a diario.</p>
 <div id="myDives" style="text-align:center;min-height:420px">&#160;</div>
 <script>
 <!--//--><![CDATA[// ><!--
-var layout = {
+var layoutes = {
 height:400,
 margin: {"t": 0, "b": 0, "l": 0, "r": 0},
 legend: {orientation:'h'},
@@ -3428,15 +3411,24 @@ legend: {orientation:'h'},
 
 	var dataCoronavirus= [{
 			type:'pie',
-			labels:['Positivo (confirmados)','Negativo','PUIs Pendientes'],
-			values:[32,294,92]	,
+labels:['Positivo (confirmados)','Negativo','PUIs Pendientes'],
+			values:[46,316,82]	,
+textposition:'outside',
 automargin:true,
 textinfo:'label+value',
 }];
 
-Plotly.newPlot('myDives', dataCoronavirus, layout, {responsive:true});
+Plotly.newPlot('myDives', dataCoronaviruses, layoutes, {responsive:true});
 //--><!]]>
-</script><h2>Enfermedad de Coronavirus (COVID-19)</h2>
+</script><p>El Departamento de Salud P&#250;blica de Illinois, los departamentos de salud locales, socios por todo el estado, y agencias federales, incluyendo Los Centros para el Control y la Prevenci&#243;n de Enfermedades (CDC, por sus siglas en ingl&#233;s), est&#225;n respondiendo a un brote de enfermedad respiratoria causada por un nuevo coronavirus llamado COVID-19 que se identific&#243; por primera vez en diciembre del 2019 durante un brote en Wuhan, China. El COVID-19 se ha propagado por todo el mundo, incluyendo los Estados Unidos, desde que fue detectado y declarado una emergencia de salud p&#250;blica para los Estados Unidos el 31 de enero del 2020 para asistir a la comunidad de atenci&#243;n medica a responder a la amenaza.&#160; La Organizaci&#243;n de la Salud Mundial anunci&#243; el 11 de marzo del 2020 que la propagaci&#243;n del coronavirus se clasifica como una pandemia global</p>
+<p>Adem&#225;s, el Gobernador JB Pritzker emiti&#243; una proclamaci&#243;n de desastre el 9 de marzo del 2020 sobre COVID-19 que le da al estado acceso a recursos federales y estatales para combatir la propagaci&#243;n de este nuevo virus.</p>
+<p>El primer caso de COVID-19 en los Estado Unidos fue reportado el 21 de enero del 2020 y el primer caso confirmado en Illinois fue anunciado el 24 de enero del 2020 (un residente de Chicago).&#160; Los primeros casos afuera de Chicago y del Condado de Cook fueron reportados el 11 de marzo del 2020 en los condados de Kane y McHenry.&#160; Las cuentas m&#225;s recientes de casos de COVID-19 en los Estados Unidos est&#225; disponible en el sitio web de CDC, <a href="http://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html</a>. El n&#250;mero de casos en Illinois y los resultados de pruebas en Illinois aparecen a continuaci&#243;n en esta p&#225;gina.</p>
+<p>La propagaci&#243;n de COVID-19 de persona-a-persona aparece ser principalmente entre las personas que tienen contacto cercano (dentro de unos 6 pies de distancia) a mediante de gotitas respiratorias que se producen cuando una persona infectada tose o estornuda.&#160; Tambi&#233;n podr&#237;a ser posible que una persona contraiga el COVID-19 al tocar una superficie u objeto que tenga el virus y luego se toque la boca, la nariz o posiblemente los ojos.&#160; Signos y s&#237;ntomas de COVID-19 incluyen fiebre, tos, y falta de aire a respirar.&#160; Los datos preliminares sugieren que personas mayores de edad y personas con condiciones de salud subyacente o con un sistema inmune d&#233;bil aparecen tener mayor riesgo a desarrollar enfermedad grave a causa del virus.</p>
+<p>Si usted est&#225; enfermo y tiene s&#237;ntomas respiratorios, como fiebre, tos, y falta de aire a respirar, permanezca en casa a menos que necesite atenci&#243;n m&#233;dica.&#160; Permanezca en su hogar hasta que se sienta mejor y no tenga s&#237;ntomas.&#160; Tome en cuenta que no hay tratamiento para COVID-19 y las personas de enfermedad leve se pueden aislar en su casa.&#160; Mientras est&#233; en casa, lo m&#225;s posible, procure quedarse en un cuarto espec&#237;fico y mantenga su distancia de otras personas.&#160; Si necesita atenci&#243;n m&#233;dica, debe de contactar a su proveedor de servicios m&#233;dicos quien lo va evaluar para determinar si puede recibir cuidado en casa o necesita ser hospitalizado.</p>
+<p>Esta es una situaci&#243;n en evoluci&#243;n que est&#225; cambiando r&#225;pidamente y actualizaremos la informaci&#243;n aqu&#237; seg&#250;n sea necesario y tambi&#233;n en el sitio web de CDC, <a href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html">https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html</a></p>
+<p>Para preguntas generales sobre COVID-19 y gu&#237;as de &#160;espec&#237;fico a Illinois, llame a 1-800-889-3931 o mande un correo electr&#243;nico a <a href="mailto:DPH.SICK@ILLINOIS.GOV">DPH.SICK@ILLINOIS.GOV</a></p>
+<h2>Personas Abajo Investigaci&#243;n (PUI, por sus siglas en ingl&#233;s) para COVID-19</h2>
+<h2>Enfermedad de Coronavirus (COVID-19)</h2>
 <p>Los virus de Corona son una familia grande de virus, algunos causan enfermedad en personas, y otros circulan entre animales, incluyendo camellos, gatos, y murci&#233;lagos. Rara vez los virus de corona en animales se desarrollanda y infectan a personas y propagan entre personas.</p>
 <p>El coronavirus en ser humanos son com&#250;n por todo el mundo y normalmente causa enfermedad leve a moderado en personas por todo el mundo. Sin embargo, la aparici&#243;n de nuevo virus de corona, como<br>
 	SARS (por sus siglas en ingl&#233;s) y MERS (por sus siglas en ingl&#233;s), han sido asociado con enfermedad respiratorio severo.</p>
@@ -3460,7 +3452,11 @@ Plotly.newPlot('myDives', dataCoronavirus, layout, {responsive:true});
 <a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus" class="menu__link is-active-trail active-trail active">Coronavirus Disease 2019 (COVID-19)</a><ul class="menu">
 <li class="menu__item is-leaf first leaf menu-mlid-137011"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/symptoms-treatment" class="menu__link">About COVID-19</a></li>
 <li class="menu__item is-leaf leaf menu-mlid-139711"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/faq" class="menu__link">Frequently Asked Questions</a></li>
-<li class="menu__item is-leaf leaf menu-mlid-137016"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/health-care-providers" class="menu__link">Health Care Providers &amp; Facilities</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-137016">
+<a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/health-care-providers" class="menu__link">Health Care Providers &amp; Facilities</a><ul class="menu">
+<li class="menu__item is-leaf first last leaf menu-mlid-139716"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/health-care-providers/PUI-decision-matrix" class="menu__link">PUI Decision Matrix</a></li>
+</ul>
+</li>
 <li class="menu__item is-expanded expanded menu-mlid-139681">
 <a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/preventing-spread-communities" class="menu__link">Preventing Spread in Communities</a><ul class="menu">
 <li class="menu__item is-leaf first leaf menu-mlid-137021"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/schools-guidance" class="menu__link">Schools Guidance</a></li>
@@ -3666,12 +3662,13 @@ Plotly.newPlot('myDives', dataCoronavirus, layout, {responsive:true});
   
       <div class="view-content">
       <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
-  <span class="views-field views-field-text">        <span class="field-content">This virus isn&#8217;t specific to any one ethnicity, nationality or population. See symptoms of COVID-19 below: <a href="https://t.co/MQrIrXLySa">https://t.co/MQrIrXLySa</a></span>  </span>  
-  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">41 min 43 sec</em> ago</span>  </span>
+  <span class="views-field views-field-text">        <span class="field-content">State of Illinois Daily COVID-19 Briefing &#8211; 46 Cases
+<a href="https://t.co/FTlHXeJj04">https://t.co/FTlHXeJj04</a></span>  </span>  
+  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">1 hour 38 min</em> ago</span>  </span>
 </li>
           <li class="views-row views-row-2 views-row-even views-row-last">  
-  <span class="views-field views-field-text">        <span class="field-content">Illinois has one of the nation&#8217;s leading public health systems, and our experts have been proactively preparing for&#8230; <a href="https://t.co/XMY4QbyMBT">https://t.co/XMY4QbyMBT</a></span>  </span>  
-  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">1 hour 46 min</em> ago</span>  </span>
+  <span class="views-field views-field-text">        <span class="field-content">"People who have general questions about COVID-19 - like symptoms, how the virus is spread, and how to protect your&#8230; <a href="https://t.co/0dfz5NaR6S">https://t.co/0dfz5NaR6S</a></span>  </span>  
+  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">1 hour 52 min</em> ago</span>  </span>
 </li>
       </ul>
 </div>    </div>

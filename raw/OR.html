@@ -96,6 +96,32 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
         
         <script src="https://apps.oregon.gov/Application/CDN/Enterprise/scripts/sharepoint/2010/template-v4x-patches.js"></script>
         <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script>
+     <script type="text/javascript">    
+                      
+        $(document).ready(function () {
+            //"/<[^\/>][^>]*><\/[^>]+>/"
+            setTimeout(function () {
+                //$('div:contains(" Column ")').remove();                
+                //$('*:empty').remove();
+                $('div.container').find('div.ms-rtestate-field').each(function (index) {
+
+                    if ($(this).prev('div') != undefined && $(this).prev('div')[0] != undefined && $(this).prev('div')[0].innerText.indexOf('Column') > -1) {
+                        $(this).prev('div')[0].remove();
+                    }
+                    if ($(this).closest('div.row') != undefined && $(this).closest('div.row')[0] != undefined && $(this).closest('div.row')[0].innerText === '') {
+                        $(this).closest('div.row')[0].remove();
+                    }
+                });
+
+                $('div.container').find('div.row').each(function (index) {
+                    if (this.innerText === '') {
+                        this.remove();
+                    }
+                });
+            }, 5000);
+        });
+    </script>
+    
 </head>
 
 
@@ -130,7 +156,7 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
 
 <script type="text/javascript">[removed]</script>
 
-<script src="/WebResource.axd?d=Dc2sAXPFk-MGW1fL6E50mC5wg8Sh2H0RIFbBdeK3YxE0IM3PLXyn8ysQ57fU8Ttc80GyE9ZyOyN2b4ZB6jiu1aVYXwY1&amp;t=636284381271971599" type="text/javascript"></script>
+<script src="/WebResource.axd?d=Dc2sAXPFk-MGW1fL6E50mC5wg8Sh2H0RIFbBdeK3YxE0IM3PLXyn8ysQ57fU8Ttc80GyE9ZyOyN2b4ZB6jiu1aVYXwY1&amp;t=636271419501517547" type="text/javascript"></script>
 <script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
 <script type="text/javascript">
 //<![CDATA[
@@ -406,7 +432,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 			<div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1_label" style="display:none">Full Width Column 1</div>
 <div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1__ControlWrapper_OregonRichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1_label">
 <p style="text-align:right"><a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank" style="width:130px;margin-bottom:10px"><span class="fa fa-external-link" aria-hidden="true"></span> CDC Website</a> <a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index-Chinese.html" target="_blank" style="width:75px;margin-bottom:10px">&#20013;&#25991;</a> <a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html" target="_blank" style="width:75px;margin-bottom:10px">Espa&#241;ol</a></p>
-<p style="text-align:right"><em>Page last updated March 12, 2020</em></p>
+<p style="text-align:right"><em>Page last updated March 13, 2020</em></p>
 <h2 class="ews-h2-orange-stripe">Novel Coronavirus Updates (COVID-19)</h2>
 
 
@@ -426,7 +452,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 <div id="WebPartWPQ4" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#ef4edce9-f01d-40cf-a073-1ce587f10f4c" aria-controls="ef4edce9-f01d-40cf-a073-1ce587f10f4c" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="e0e0d8a7-c7f5-4154-831a-d6be7af11a12" role="tab">
+					<a class="collapsed" href="#43004593-9525-4e53-9b7e-593cd8c318dc" aria-controls="43004593-9525-4e53-9b7e-593cd8c318dc" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="3587a882-95d2-436e-9307-4b469068cfbe" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h2 class="panel-title">
@@ -438,7 +464,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="ef4edce9-f01d-40cf-a073-1ce587f10f4c" aria-labelledby="e0e0d8a7-c7f5-4154-831a-d6be7af11a12" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="43004593-9525-4e53-9b7e-593cd8c318dc" aria-labelledby="3587a882-95d2-436e-9307-4b469068cfbe" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass23E56795FBF0468C9F856CD297450134">
@@ -449,27 +475,27 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
   <tr>
     <td colspan="2" rowspan="1" bgcolor="#FFFFFF" style="width:80%;height:40px">
 <strong>Test Results for Persons Under Investigation (<a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681D.pdf" target="_blank">PUI</a>)*</strong><br>
-      <em>As of 3/12/2020, 10:00 AM&#8203;</em>
+      <em>As of 3/13/&#8203;2020, 10:00 AM&#8203;</em>
 </td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%;height:31px">Positive</td>
-<td bgcolor="#cff9f3" style="width:15%;height:31px;text-align:center">24<sup>&#8225;</sup>
+<td bgcolor="#cff9f3" style="width:15%;height:31px;text-align:center">30<sup>&#8225;</sup>
 </td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%">Negative&#8203;</td>
-<td style="width:15%;text-align:center">317</td>
+<td style="width:15%;text-align:center">337</td>
 </tr>
 
 <tr>
 <td rowspan="1" colspan="1" style="width:85%">Pending</td>
-<td rowspan="1" colspan="1" style="width:15%;text-align:center">96</td>
+<td rowspan="1" colspan="1" style="width:15%;text-align:center">157</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%">Total PUI <em style="font-size:10.6667px">(Cumulative since January 24, 2020)&#8203;&#8203;</em>
 </td>
-<td rowspan="1" colspan="1" style="width:15%;text-align:center">437</td>
+<td rowspan="1" colspan="1" style="width:15%;text-align:center">524</td>
 </tr>
 
 
@@ -486,22 +512,22 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
   <tr>
     <td colspan="2" rowspan="1" bgcolor="#FFFFFF" style="width:80%;height:40px">
 <strong>Persons Under Monitoring (<a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681D.pdf" target="_blank">PUM</a>)*</strong><br>
-      <em>As of 3/12/2020, 10:00 AM</em>
+      <em>As of 3/13/2020, 10:00 AM</em>
 </td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%">Currently under monitoring</td>
-<td colspan="1" rowspan="1" style="width:15%;text-align:center">252</td>
+<td colspan="1" rowspan="1" style="width:15%;text-align:center">316</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%"><span>PUM who have
 completed monitoring without developing symptoms or were determined to have no risk</span></td>
-<td rowspan="1" colspan="1" style="width:15%;height:40px;text-align:center">328</td>
+<td rowspan="1" colspan="1" style="width:15%;height:40px;text-align:center">351</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:85%;height:40px">Total PUM&#160;<em style="font-size:10.6667px">(Cumulative since January 24, 2020)&#8203;</em>
 </td>
-<td rowspan="1" colspan="1" style="width:15%;height:40px;text-align:center">580</td>
+<td rowspan="1" colspan="1" style="width:15%;height:40px;text-align:center">667</td>
 </tr>
 <tr><td rowspan="1" colspan="2"><em>*A PUM is an individual who does not have COVID-19 symptoms but who may have been exposed to COVID-19 through close contact with a confirmed case.</em></td></tr>
 
@@ -520,62 +546,62 @@ completed monitoring without developing symptoms or were determined to have no r
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Clackamas</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">1&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%
 &#8203;</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Deschutes</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">1&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Douglas</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">1&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">Jackson</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">2</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">8.3%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">6.7%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">Klamath</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">1</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Linn</td>
-<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">2&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">&#8203;8.3%</td>
+<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">8&#8203;</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">26.7%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">Marion</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center"> 2</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">8.3%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">6.7%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Multnomah</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">1&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Polk</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">1&#8203;</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Umatilla</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">&#8203;2</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">8.3%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">6.7%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Washington</td>
 <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">10</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">41.6%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">33.3%</td>
 </tr>
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Total</td>
-<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">24</td>
+<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">30</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">100%</td>
 </tr>
 </tbody></table>
@@ -591,12 +617,12 @@ completed monitoring without developing symptoms or were determined to have no r
       <tr>
         <td rowspan="1" colspan="1" style="width:50%">17 or younger</td>
         <td rowspan="1" colspan="1" style="width:25%;text-align:center">1</td>
-        <td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+        <td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
       </tr>
       <tr>
         <td rowspan="1" colspan="1" style="width:50%">18 to 24</td>
         <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">1</td>
-        <td rowspan="1" colspan="1" style="width:25%;text-align:center">4.2%</td>
+        <td rowspan="1" colspan="1" style="width:25%;text-align:center">3.3%</td>
       </tr>
       <tr>
         <td rowspan="1" colspan="1" style="width:50%">25 to 34</td>
@@ -606,16 +632,16 @@ completed monitoring without developing symptoms or were determined to have no r
       <tr>
         <td rowspan="1" colspan="1" style="width:50%">&#8203;35 to 54</td>
         <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">7</td>
-        <td rowspan="1" colspan="1" style="width:25%;text-align:center">29.1%</td>
+        <td rowspan="1" colspan="1" style="width:25%;text-align:center">23.3%</td>
       </tr>
       <tr>
         <td height="52" colspan="1" rowspan="1" style="width:50%">55+</td>
-        <td rowspan="1" colspan="1" style="width:25%;text-align:center"> 15</td>
-        <td rowspan="1" colspan="1" style="width:25%;text-align:center">62.5%</td>
+        <td rowspan="1" colspan="1" style="width:25%;text-align:center">21</td>
+        <td rowspan="1" colspan="1" style="width:25%;text-align:center">70.0%</td>
       </tr>
       <tr>
         <td rowspan="1" colspan="1" style="width:50%">Total</td>
-        <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">24</td>
+        <td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">30&#8203;</td>
         <td rowspan="1" colspan="1" style="width:25%;text-align:center">100%</td>
       </tr>
 </tbody>
@@ -633,18 +659,18 @@ completed monitoring without developing symptoms or were determined to have no r
 <tr>
 <td rowspan="1" colspan="1" style="width:50%">Yes</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">11</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">45.8%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">36.7%</td>
 
 </tr>
 <tr>
   <td rowspan="1" colspan="1" style="width:50%">No</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">13</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">54.2%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">19</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">63.3%</td>
 </tr>
 
   <tr>
 <td rowspan="1" colspan="1" style="width:50%">&#8203;Total</td>
-<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">24</td>
+<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">30</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">100%</td>
 </tr>
 <tr><td rowspan="1" colspan="3" style="width:50%"><em>&#8203;&#8203;&#8203;*&#8203;Hospitalized at time of presumptive positive test result &#8203; &#8203;</em></td></tr>
@@ -661,17 +687,17 @@ completed monitoring without developing symptoms or were determined to have no r
 <tr>
   <td rowspan="1" colspan="1" style="width:50%">Yes</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">3</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">12.5%</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">10.0%</td>
 </tr>
 <tr>
   <td rowspan="1" colspan="1" style="width:50%">No</td>
-<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">21</td>
-<td rowspan="1" colspan="1" style="width:25%;text-align:center">87.5%</td>
+<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">27</td>
+<td rowspan="1" colspan="1" style="width:25%;text-align:center">90.0%</td>
 </tr>
 
 <tr>
   <td rowspan="1" colspan="1" style="width:50%">&#8203;Total</td>
-<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">24</td>
+<td rowspan="1" colspan="1" style="width:25%;height:40px;text-align:center">30</td>
 <td rowspan="1" colspan="1" style="width:25%;text-align:center">100%</td>
 </tr>
 
@@ -682,13 +708,13 @@ completed monitoring without developing symptoms or were determined to have no r
 
 </div>
 &#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
-&#8203;&#8203;&#8203;&#8203;
+&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
 							</div>
 						</div>
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#e16ab2d2-a8bc-4311-9bdf-f4c40b46b2eb" aria-controls="e16ab2d2-a8bc-4311-9bdf-f4c40b46b2eb" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="5b9e2aea-647c-4982-8e9c-9badee8cd390" role="tab">
+					<a class="collapsed" href="#022ab0e9-8d72-425d-a5df-a56c0a7cf5f4" aria-controls="022ab0e9-8d72-425d-a5df-a56c0a7cf5f4" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="f37be600-60e1-4eec-96b8-00733cf1fb51" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h2 class="panel-title">
@@ -700,7 +726,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="e16ab2d2-a8bc-4311-9bdf-f4c40b46b2eb" aria-labelledby="5b9e2aea-647c-4982-8e9c-9badee8cd390" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="022ab0e9-8d72-425d-a5df-a56c0a7cf5f4" aria-labelledby="f37be600-60e1-4eec-96b8-00733cf1fb51" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass87C675AE089746F2A64C32A7414A4B97">
@@ -723,7 +749,6 @@ completed monitoring without developing symptoms or were determined to have no r
 <li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2263.pdf" target="_blank">Recommendations for Events Hosting Vulnerable Populations</a></li>
 <li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2266.pdf" target="_blank">Guidance for Employers&#8203;</a></li>
 <li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2264.pdf" target="_blank">Guidance for Community and Faith-based Organizations</a></li>
-<li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2265.pdf" target="_blank">Public Health Recommendations&#160;for Oregon Schools</a></li>
 </ul>
 </div>
 
@@ -801,13 +826,13 @@ completed monitoring without developing symptoms or were determined to have no r
 
 <div>
 <div id="WebPartWPQ3" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_81804b11_c0e0_418a_a93c_931c8b77575a" class="or-dataTablesWebPart">
-			<div id="ae5bc1b6-3882-4e9f-bb12-3bf3f169bbce">
+			<div id="a0fd6c27-d720-43ea-98bb-0b427e2ff112">
 				<data-tables-web-part params="webPartId: 'g_81804b11_c0e0_418a_a93c_931c8b77575a', webPartProperties: {&quot;webPartId&quot;:&quot;g_81804b11_c0e0_418a_a93c_931c8b77575a&quot;,&quot;tableCaption&quot;:&quot;&quot;,&quot;dataSource&quot;:&quot;list&quot;,&quot;socrataId&quot;:&quot;&quot;,&quot;sharePointWebUrl&quot;:&quot;/oha/ERD&quot;,&quot;sharePointListUrl&quot;:&quot;/oha/ERD/Pages&quot;,&quot;sharePointViewName&quot;:&quot;COVID-19&quot;,&quot;responsiveMode&quot;:&quot;collapse&quot;,&quot;paginationEnabled&quot;:false,&quot;searchEnabled&quot;:false,&quot;sortEnabled&quot;:false,&quot;filterEnabled&quot;:false,&quot;stateSaveEnabled&quot;:false,&quot;copyButtonEnabled&quot;:false,&quot;printButtonEnabled&quot;:false,&quot;excelButtonEnabled&quot;:false,&quot;pdfButtonEnabled&quot;:false,&quot;tableBordered&quot;:true,&quot;tableStriped&quot;:true,&quot;tableCondensed&quot;:true}">
 
 				</data-tables-web-part>
 			</div>
 <script type="text/javascript">
-				ko.applyBindings(null, document.getElementById('ae5bc1b6-3882-4e9f-bb12-3bf3f169bbce'))
+				ko.applyBindings(null, document.getElementById('a0fd6c27-d720-43ea-98bb-0b427e2ff112'))
 			</script>
 		</div></div>
 
@@ -827,7 +852,7 @@ completed monitoring without developing symptoms or were determined to have no r
 <div id="WebPartWPQ1" class="ms-WPBody" style=""><div id="ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#3bd370ce-15e4-40de-b712-7f141b85262c" aria-controls="3bd370ce-15e4-40de-b712-7f141b85262c" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="efd1570b-8a33-4fdb-be55-3cb631e6f830" role="tab">
+					<a class="collapsed" href="#1d237720-909f-493a-958d-e2bca74dffe7" aria-controls="1d237720-909f-493a-958d-e2bca74dffe7" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="87d40bb9-abf7-4034-88ac-10263903ad9c" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -842,7 +867,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="3bd370ce-15e4-40de-b712-7f141b85262c" aria-labelledby="efd1570b-8a33-4fdb-be55-3cb631e6f830" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="1d237720-909f-493a-958d-e2bca74dffe7" aria-labelledby="87d40bb9-abf7-4034-88ac-10263903ad9c" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClassA29423582640472699751E675002BC29">
@@ -912,7 +937,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#86e72737-1f41-4ead-ab4c-0d6774031620" aria-controls="86e72737-1f41-4ead-ab4c-0d6774031620" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b816be87-b9f8-4867-ad7b-093be549f476" role="tab">
+					<a class="collapsed" href="#c5370474-3ff1-43cb-89c0-ceba5ca50d4a" aria-controls="c5370474-3ff1-43cb-89c0-ceba5ca50d4a" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="a46697a6-ef52-4792-9a6b-150af60d8bf5" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -927,17 +952,11 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="86e72737-1f41-4ead-ab4c-0d6774031620" aria-labelledby="b816be87-b9f8-4867-ad7b-093be549f476" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="c5370474-3ff1-43cb-89c0-ceba5ca50d4a" aria-labelledby="a46697a6-ef52-4792-9a6b-150af60d8bf5" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5C0D7AD5F0FF4C299C060FFCC9290122">
 
-<div class="well">
-<h3>Interim Guidance</h3>
-<ul><li>
-<a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2265.pdf" target="_blank">OHA Interim Public Health Recommendations for Response to COVID-19 Cases in Oregon Schools</a> <span style="color:rgb(255, 0, 0)">Updated 3/12/2020</span>
-</li></ul>
-</div>
 
 
 
@@ -982,13 +1001,13 @@ completed monitoring without developing symptoms or were determined to have no r
 </li></ul>
 </div>
 </div>
-&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
+&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
 							</div>
 						</div>
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#f7ba8cc0-40bb-4cba-8385-d9e1a09346ea" aria-controls="f7ba8cc0-40bb-4cba-8385-d9e1a09346ea" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="5c38b6e4-2160-4eaa-9c4a-049238dfde83" role="tab">
+					<a class="collapsed" href="#807c63df-d664-4180-a05c-783996bcf6ea" aria-controls="807c63df-d664-4180-a05c-783996bcf6ea" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="3b3b4f66-2f39-4031-9279-4beb28ac40a9" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1003,7 +1022,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="f7ba8cc0-40bb-4cba-8385-d9e1a09346ea" aria-labelledby="5c38b6e4-2160-4eaa-9c4a-049238dfde83" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="807c63df-d664-4180-a05c-783996bcf6ea" aria-labelledby="3b3b4f66-2f39-4031-9279-4beb28ac40a9" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
@@ -1031,7 +1050,7 @@ completed monitoring without developing symptoms or were determined to have no r
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#462893ca-f773-4b4a-b81d-1fbdba518fa5" aria-controls="462893ca-f773-4b4a-b81d-1fbdba518fa5" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="4436e1eb-12ab-4573-a2db-032704e5ea1e" role="tab">
+					<a class="collapsed" href="#7e445533-469c-47c8-9996-a6c96aa35fad" aria-controls="7e445533-469c-47c8-9996-a6c96aa35fad" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="2a8f2afa-3ff3-4b8d-a9a1-e239c816abe7" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1046,7 +1065,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="462893ca-f773-4b4a-b81d-1fbdba518fa5" aria-labelledby="4436e1eb-12ab-4573-a2db-032704e5ea1e" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="7e445533-469c-47c8-9996-a6c96aa35fad" aria-labelledby="2a8f2afa-3ff3-4b8d-a9a1-e239c816abe7" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass27C5BB6AB16C45B5A52F80AF11A85C42">
@@ -1103,6 +1122,8 @@ Communities</a></li>
 <li>
 <a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-EMS-guidance.pdf" target="_blank">Prehospital&#160;Guidance: EMS&#8203;</a> <span style="color:rgb(255, 0, 0)">Updated 3/5/2020 to correct links</span>
 </li>
+<li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/EMS-Risk-Managment-guidance.pdf" target="_blank">Provisional Guidance: EMS Healthcare
+Exposure and Work Exclusion &#8211; Infection Prevention and Control for COVID-19</a></li>
 </ul>
 <hr>
 <p><strong>Q&amp;A Webinar</strong></p>
@@ -1124,13 +1145,13 @@ Communities</a></li>
 </ul>
 <p>Please refer to <a href="/OHA/PH/LABORATORYSERVICES/Pages/test.aspx" target="_blank">the OSPHL Lab Test Menu</a> and the <a href="https://www.cdc.gov/coronavirus/2019-nCoV/lab/guidelines-clinical-specimens.html" target="_blank">CDC Interim Guidance for Collecting, Handling, and Testing Clinical Specimens from PUIs </a>for complete specimen collection guidance.</p>
 </div>
-&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
+&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
 							</div>
 						</div>
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#eb897071-eb59-4750-a77a-d302d1e7cc6e" aria-controls="eb897071-eb59-4750-a77a-d302d1e7cc6e" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="ec79e035-ca42-4c38-8239-13874ba73645" role="tab">
+					<a class="collapsed" href="#964e5155-c7b8-48a4-b0ab-47f124928cdd" aria-controls="964e5155-c7b8-48a4-b0ab-47f124928cdd" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="17788220-3221-4e81-abc4-5de1eee51ced" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1145,7 +1166,7 @@ Communities</a></li>
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="eb897071-eb59-4750-a77a-d302d1e7cc6e" aria-labelledby="ec79e035-ca42-4c38-8239-13874ba73645" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="964e5155-c7b8-48a4-b0ab-47f124928cdd" aria-labelledby="17788220-3221-4e81-abc4-5de1eee51ced" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass419ED99C37D2483487E2FFE8A53187D5">
@@ -1171,6 +1192,7 @@ Communities</a></li>
 <div class="well">
 <h3>Templates</h3>
 <p><strong>&#8203;Letter to Persons Under Monitoring</strong><span style="color:rgb(255, 0, 0)">&#160;Updated 2/20/2020, formatting changes for ease of customization</span></p>
+<p><span><em>If you have trouble opening the PDF files, right click the PDF link and choose "Save Link&#160;As" or "Save Target As" to&#160;save the file&#160;to your computer.</em></span></p>
 <ul><li>English:&#160;<a href="https://apps.state.or.us/forms/served/LE8821Q.pdf" target="_blank">PDF</a>
 </li></ul>
 <ul><li>
@@ -1191,7 +1213,7 @@ Communities</a></li>
 					</div>
 				</div>
 <div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#0331efe0-fc06-491a-90fa-f5adea4c3316" aria-controls="0331efe0-fc06-491a-90fa-f5adea4c3316" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="06db16af-4ce8-4ce3-a65c-c93600a2b160" role="tab">
+					<a class="collapsed" href="#8758d7d8-9f6a-4727-a184-6d1b29770a03" aria-controls="8758d7d8-9f6a-4727-a184-6d1b29770a03" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="df03284e-3be9-40a1-b67f-5a4f52e3bf0c" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon">
@@ -1206,7 +1228,7 @@ Communities</a></li>
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="0331efe0-fc06-491a-90fa-f5adea4c3316" aria-labelledby="06db16af-4ce8-4ce3-a65c-c93600a2b160" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="8758d7d8-9f6a-4727-a184-6d1b29770a03" aria-labelledby="df03284e-3be9-40a1-b67f-5a4f52e3bf0c" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5747483E81D44EB49F777CCF9C5CA887">
@@ -1399,9 +1421,9 @@ Communities</a></li>
 			Oregon Health Authority
 		</h3>
 <div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3">
-<p><span class="fa fa-facebook-square blue"></span>&#160;<a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
-  <span class="fa fa-twitter-square blue"></span>&#160;<a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
-  <span class="fa fa-envelope blue">&#160;</span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>&#8203;</p>
+<p><span class="fa fa-facebook-square blue" aria-hidden="true"></span>&#160;<a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
+  <span class="fa fa-twitter-square blue" aria-hidden="true"></span>&#160;<a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
+  <span class="fa fa-envelope blue" aria-hidden="true">&#160;</span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>&#8203;</p>
 
 <ul class="list-unstyled">
   <li>
@@ -1434,7 +1456,7 @@ Communities</a></li>
 <div class="ExternalClass926DA2AB6E52485680F204CE3D47CE3E">
 <ul class="list-unstyled">
   <li>
-<a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue"></span> Language Access</a> </li>
+<a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue" aria-hidden="true"></span> Language Access</a> </li>
   <li>
 <a class="or-footer-link-oregon-gov" href="https://aix-xweb1p.state.or.us/es_xweb/DHSforms/Served/le2996.pdf" target="_blank">OHA Nondiscrimination Policy</a> </li>
   <li>

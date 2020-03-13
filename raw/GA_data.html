@@ -4,16 +4,22 @@
 <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5360c08ecf",applicationID:"99788169"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2982645-7"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-2982645-7", {"groups":"default","anonymize_ip":true});gtag("config", "UA-24934301-1", {"groups":"default","anonymize_ip":true});</script>
-<meta name="title" content="Georgia Department of Public Health COVID-19 Daily Status Report | Georgia Department of Public Health">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report">
+<meta name="title" content="COVID-19 Daily Status Report | Georgia Department of Public Health">
+<link rel="canonical" href="https://dph.georgia.gov/covid-19-daily-status-report">
 <meta property="og:site_name" content="Georgia Department of Public Health">
-<link rel="shortlink" href="https://dph.georgia.gov/node/30526">
-<meta name="twitter:site" content="@GaDPH">
+<link rel="shortlink" href="https://dph.georgia.gov/node/30571">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="Report For: 03/13/2020.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00am 03/13/2020. A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.">
 <meta name="twitter:title" content="Georgia Department of Public Health COVID-19 Daily Status Report">
-<meta property="og:url" content="https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report">
+<meta name="twitter:site" content="@GaDPH">
+<meta name="twitter:description" content="Report For: 03/13/2020.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00am 03/13/2020. A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.">
+<meta property="og:url" content="https://dph.georgia.gov/covid-19-daily-status-report">
 <meta property="og:title" content="Georgia Department of Public Health COVID-19 Daily Status Report">
-<meta name="twitter:url" content="https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report">
+<meta name="twitter:url" content="https://dph.georgia.gov/covid-19-daily-status-report">
+<meta property="og:description" content="Report For: 03/13/2020.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00am 03/13/2020. A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.">
 <meta name="twitter:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png">
 <meta property="og:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png">
 <meta property="og:image:width" content="1201">
@@ -22,12 +28,43 @@
 <meta name="MobileOptimized" content="width">
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="ga:citation:metadata" last_updated="1584110361" internal_url="node/30526">
+<meta property="ga:citation:metadata" last_updated="1584134371" internal_url="node/30571">
 <script type="application/ld+json">{
     "@context": "https://schema.org",
     "@graph": [
         {
-            "@type": "WebPage",
+            "@type": "Article",
+            "headline": "Georgia Department of Public Health COVID-19 Daily Status Report",
+            "name": "Georgia Department of Public Health COVID-19 Daily Status Report",
+            "description": "These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health.",
+            "datePublished": "2020-03-13T14:23:00-0400",
+            "dateModified": "2020-03-13T17:19:31-0400",
+            "author": {
+                "@type": "Organization",
+                "name": "Georgia Department of Public Health",
+                "url": "https://dph.georgia.gov/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://dph.georgia.gov/themes/custom/ga_forest/orchard/assets/images/icons/logo/ga-logo--gold.svg",
+                    "width": "80",
+                    "height": "90"
+                }
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Georgia Department of Public Health",
+                "url": "https://dph.georgia.gov/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://dph.georgia.gov/themes/custom/ga_forest/orchard/assets/images/icons/logo/ga-logo--gold.svg",
+                    "width": "80",
+                    "height": "90"
+                }
+            },
+            "mainEntityOfPage": "https://dph.georgia.gov/covid-19-daily-status-report"
+        },
+        {
+            "@type": "ItemPage",
             "breadcrumb": {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
@@ -41,7 +78,7 @@
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Georgia Department of Public Health COVID-19 Daily Status Report",
-                        "item": "https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report"
+                        "item": "https://dph.georgia.gov/covid-19-daily-status-report"
                     }
                 ]
             },
@@ -60,9 +97,9 @@
     ]
 }</script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="revision" href="https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report">
+<link rel="revision" href="https://dph.georgia.gov/covid-19-daily-status-report">
 
-    <title>Georgia Department of Public Health COVID-19 Daily Status Report | Georgia Department of Public Health</title>
+    <title>COVID-19 Daily Status Report | Georgia Department of Public Health</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -245,7 +282,7 @@
   src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/var/SourceSerifVariable-Italic.woff2") format("woff2-variations"); }
 /*# sourceMappingURL=fonts.css.map */    </style>
 
-    <link rel="stylesheet" media="all" href="/sites/dph.georgia.gov/files/css/css_RHOn3n5252MNJ4yVQjx-96sr2vovPS3QJ7qHuu9bJoo.css?q72tqh">
+    <link rel="stylesheet" media="all" href="/sites/dph.georgia.gov/files/css/css_9VvI82URCC-qIz1utMQmsOQyJ07kr_ENYJx5_TkGSAo.css?q72tqh">
 <link rel="stylesheet" media="all" href="//cloud.typenetwork.com/projects/2738/fontface.css">
 <link rel="stylesheet" media="all" href="/sites/dph.georgia.gov/files/css/css_us4E3zVhrlvNf0pmUEHgHSNlDvq8kZLC_e9VEF_QbGo.css?q72tqh">
 
@@ -265,7 +302,7 @@ else{var ref=doc.getElementsByTagName("script")[0];var script=doc.createElement(
 <![endif]-->
 
   </head>
-  <body class="mq-breakpoints--hide path-node page-node-type-landing-page u-palette--stars-stripes">
+  <body class="mq-breakpoints--hide path-node page-node-type-topic-page u-palette--stars-stripes">
         <a href="#main-content" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
@@ -1162,61 +1199,109 @@ else{var ref=doc.getElementsByTagName("script")[0];var script=doc.createElement(
       
       
   
-  <div class="landing-page">
-      <div>
+  <div class="content-page" data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text">
+
+  <div class="content-page__messages">
+        <div>
     <div data-drupal-messages-fallback class="hidden"></div>
 
   </div>
 
-  <div class="layout-wrapper layout-wrapper--full">
+  </div>
+
+  <div class="content-page__top">
       
-
-<div class="layout-section" data-child-type="" data-child-has-card="false" data-child-has-hero="false" data-layout-type="thirds-two-one" data-is-super="false" data-has-transparency="false" data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text">
-    <div class="layout-section__outer-wrapper">
-        <div class="layout-section__bg">
-      <div class="layout-section__inner-wrapper">
-                <div class="layout-section__inner">
-                                      <div class="layout-section__region" data-region-type="two-thirds">
-                    
-
   
   
+    
+<nav class="breadcrumb">
+  <h2 class="breadcrumb__title visually-hidden">Breadcrumb</h2>
+  <ul class="breadcrumb__items">
+          <li class="breadcrumb__item">
+                              <a href="/" class="breadcrumb__link">
+              <span class="visually-hidden">Home</span>
+              
+                            <?xml version="1.0" encoding="UTF-8"?>
+              <svg class="breadcrumb__icon-image" width="29px" height="28px" fill="#000300" viewbox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M24.610423,27.7469443 L18.0961373,27.7469443 C17.5076201,27.7392503 17.0324028,27.264033 17.0247088,26.6755158 L17.0247088,20.6040872 L12.0247088,20.6040872 L12.0247088,26.6755158 C12.0170147,27.264033 11.5417974,27.7392503 10.9532802,27.7469443 L4.45328019,27.7469443 C3.86476295,27.7392503 3.38954563,27.264033 3.38185162,26.6755158 L3.38185162,16.5898015 C3.38185162,15.9980678 3.86154653,15.5183729 4.45328019,15.5183729 C5.04501385,15.5183729 5.52470876,15.9980678 5.52470876,16.5898015 L5.52470876,25.6040872 L9.88185162,25.6040872 L9.88185162,19.5326586 C9.88954563,18.9441414 10.364763,18.4689241 10.9532802,18.4612301 L18.0961373,18.4612301 C18.6846546,18.4689241 19.1598719,18.9441414 19.1675659,19.5326586 L19.1675659,25.6040872 L23.5389945,25.6040872 L23.5389945,16.5898015 C23.5389945,15.9980678 24.0186894,15.5183729 24.610423,15.5183729 C25.2021567,15.5183729 25.6818516,15.9980678 25.6818516,16.5898015 L25.6818516,26.6755158 C25.6741576,27.264033 25.1989403,27.7392503 24.610423,27.7469443 Z"></path>
+                <path d="M27.8961373,15.9469443 C27.5979319,15.9469805 27.3132027,15.822735 27.110423,15.6040872 L14.4675659,2.08980149 L1.95328019,15.6040872 C1.71635142,15.9473884 1.30171889,16.1219776 0.890584114,16.0515562 C0.479449342,15.9811349 0.146557289,15.6785058 0.03738749,15.2759229 C-0.0717823086,14.8733401 0.0626173909,14.4439938 0.381851615,14.1755158 L13.0247088,0.63265863 C13.4246143,0.227841413 13.969959,-3.46944695e-17 14.5389945,0 C15.10803,3.46944695e-17 15.6533746,0.227841413 16.0532802,0.63265863 L28.6675659,14.1469443 C28.8824183,14.3518353 29.0039948,14.6357717 29.0039948,14.9326586 C29.0039948,15.2295456 28.8824183,15.513482 28.6675659,15.7183729 C28.449185,15.8905469 28.1730635,15.9723607 27.8961373,15.9469443 Z"></path>
+              </svg>
+            </a>
+                        </li>
+          <li class="breadcrumb__item">
+                  Georgia Department of Public Health COVID-19 Daily Status Report
+              </li>
+      </ul>
+</nav>
 
-      <div class="layout-section__region-item layout-section__region-item--no-card" data-has-card="false" data-has-card-icon="false" data-has-promo-teaser-text="false" data-has-cta-teaser="false" data-has-layout-above="false" data-has-layout-aside="false" data-has-role-article="false">
+
+
+  </div>
+
+  <div class="content-page__mid">
+    <div class="content-page__mid-main">
+                  
+            
+      <div class="content-page__main-primary ">
+
+        <div class="content-page__main-top">
                 
-          <img src="/sites/dph.georgia.gov/files/2020-03/statusrep1.JPG" alt="Georgia Department of Public Health COVID-19 Daily Status Report For: 03/13/2020. These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00am 03/13/2020. A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus. A map of Georgia shows the distribution of confirmed COVID-19 cases by county. The highest rates are 5-8 confirmed cases in each Fulton, Cobb, and Dekalb counties.">
+
+        </div>
+
+        <main class="content-page__main" role="main">
+                <div class="topic-top">
+  <h1 class="page-title__topic">      Georgia Department of Public Health COVID-19 Daily Status Report
+  </h1>
+    </div>
+              <div class="body-content body-content--offset">
+        <p>Report For: 03/13/2020.</p>
+<p>These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00am 03/13/2020. A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.</p>
+<p>
+
+
+<article data-embed-button="image_media" data-entity-embed-display="view_mode:media.embedded" data-entity-embed-display-settings="full" data-entity-type="media" data-entity-uuid="009893ee-cfa4-489c-9706-03e3812bc978" data-langcode="en" class="embedded-entity embed embed--align-center embedded-entity--image"><img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/sstatusrep1-crop.jpeg?itok=Yoc_mKNF" width="376" height="460" alt="A map of Georgia shows the distribution of confirmed COVID-19 cases by county. The highest rates are 5-8 confirmed cases in each Fulton, Cobb, and Dekalb counties." typeof="foaf:Image"></article><br></p>
+<table class="stacked-row-plus">
+<caption>Confirmed cases and deaths in Georgia.</caption>
+<thead><tr>
+<th scope="col">COVID-19 Confirmed Cases</th>
+<th scope="col">No. Cases (%)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Total</td>
+<td>42 (100%)</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>1 (2.38%)</td>
+</tr>
+</tbody>
+</table>
+<p>
+
+
+<article data-embed-button="image_media" data-entity-embed-display="view_mode:media.embedded" data-entity-embed-display-settings="full" data-entity-type="media" data-entity-uuid="fa08c718-6fb1-4cb3-8f02-5256b3186027" data-langcode="en" class="embedded-entity embed embed--align-center embedded-entity--image"><img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/sstatusrep2-crop.jpg?itok=BSzuUSvw" width="366" height="420" alt="By age group: ages 0-17 make up 2% of cases, ages 18-59 make up 48% of cases, ages 60+ make up 45% of cases, and the remaining 5% of cases are of an unknown age. By sex: females make up 36% of cases, and males make up 64% of cases." typeof="foaf:Image"></article></p>
+<p><em>Report generated on: 03/13/2020 00:00:01</em></p>
+
   
-
-
-      
 </div>
-  
-            </div>
-
-                            <div class="layout-section__region" data-region-type="one-third">
-                    
 
   
-  
 
-      <div class="layout-section__region-item layout-section__region-item--no-card" data-has-card="false" data-has-card-icon="false" data-has-promo-teaser-text="false" data-has-cta-teaser="false" data-has-layout-above="false" data-has-layout-aside="false" data-has-role-article="false">
-                
-          <img src="/sites/dph.georgia.gov/files/2020-03/sstatusrep2.jpg" alt="There are 42 COVID-19 confirmed cases, and 1 confirmed death in Georgia. By age group: ages 0-17 make up 2% of cases, ages 18-59 make up 48% of cases, ages 60+ make up 45% of cases, and the remaining 5% of cases are of an unknown age. By sex: females make up 36% of cases, and males make up 64% of cases. Report generated on: 03/13/2020 00:00:01">
-  
+         
+        </main>
 
-
-      
-</div>
-  
-            </div>
-
-                              </div>
+        
       </div>
+
+                </div>
+    <div class="content-page__mid-side">
+        
     </div>
   </div>
-  </div>
 
-  </div>
+    
 </div>
 
 
@@ -1411,7 +1496,7 @@ else{var ref=doc.getElementsByTagName("script")[0];var script=doc.createElement(
 
     
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/30526","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"core\/html5shiv,ga_emergency\/ga_emergency,ga_forest\/global,ga_forest\/palette-stars-stripes,ga_layouts\/twocol_66_33,ga_media_download\/document_link,ga_search\/analytics,genpass\/genpass,google_translator\/disclaimer,search_api_federated_solr\/search_form_autocomplete,system\/base","theme":"ga_forest","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"google_analytics":{"account":"UA-2982645-7","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"gaEmergency":{"endpoint":"https:\/\/trunk.georgia.gov\/api\/v1\/node\/emergency?filter[status][value]=1\u0026sort=-changed","auth":"Og=="},"searchApiFederatedSolr":{"block":{"autocomplete":{"isEnabled":1,"proxyIsDisabled":1,"directUrl":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json","use_search_app_creds":0,"mode":"result","url":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json"}}},"googleTranslatorDisclaimer":{"jquerySelector":".google-translator-switch","disclaimer":"\u003Ch2\u003EAutomatic translation disclaimer\u003C\/h2\u003E\r\n\u003Cp\u003EThe State of Georgia provides automatic translation for georgia.gov into seven languages, courtesy of Google Translate. Please remember, though, that the English language version is considered the most accurate. In the event of a disagreement or discrepancy between the translation and the original English version of this web site or any notice or disclaimer, the original version will prevail.\u003C\/p\u003E","acceptText":"Accept","dontAcceptText":"Do Not Accept","element":"\u003Cspan id=\u0022google_translator_element\u0022\u003E\u003C\/span\u003E\n\u003Cscript src=\u0022\/\/translate.google.com\/translate_a\/element.js?cb=Drupal.behaviors.googleTranslatorElement.init\u0022\u003E\u003C\/script\u003E\n"},"googleTranslatorElement":{"id":"google_translator_element","languages":"zh-CN,ht,ko,pt,ru,es,vi","displayMode":"SIMPLE"},"user":{"uid":0,"permissionsHash":"07a613947f8924e7019661da310bc8b27f351e95971078f02e1b113247c7e95c"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/30571","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"core\/html5shiv,entity_embed\/caption,ga_emergency\/ga_emergency,ga_forest\/global,ga_forest\/palette-stars-stripes,ga_media_download\/document_link,ga_search\/analytics,ga_wysiwyg\/entity_embed,genpass\/genpass,google_translator\/disclaimer,search_api_federated_solr\/search_form_autocomplete,system\/base","theme":"ga_forest","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"google_analytics":{"account":"UA-2982645-7","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"gaEmergency":{"endpoint":"https:\/\/trunk.georgia.gov\/api\/v1\/node\/emergency?filter[status][value]=1\u0026sort=-changed","auth":"Og=="},"searchApiFederatedSolr":{"block":{"autocomplete":{"isEnabled":1,"proxyIsDisabled":1,"directUrl":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json","use_search_app_creds":0,"mode":"result","url":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json"}}},"googleTranslatorDisclaimer":{"jquerySelector":".google-translator-switch","disclaimer":"\u003Ch2\u003EAutomatic translation disclaimer\u003C\/h2\u003E\r\n\u003Cp\u003EThe State of Georgia provides automatic translation for georgia.gov into seven languages, courtesy of Google Translate. Please remember, though, that the English language version is considered the most accurate. In the event of a disagreement or discrepancy between the translation and the original English version of this web site or any notice or disclaimer, the original version will prevail.\u003C\/p\u003E","acceptText":"Accept","dontAcceptText":"Do Not Accept","element":"\u003Cspan id=\u0022google_translator_element\u0022\u003E\u003C\/span\u003E\n\u003Cscript src=\u0022\/\/translate.google.com\/translate_a\/element.js?cb=Drupal.behaviors.googleTranslatorElement.init\u0022\u003E\u003C\/script\u003E\n"},"googleTranslatorElement":{"id":"google_translator_element","languages":"zh-CN,ht,ko,pt,ru,es,vi","displayMode":"SIMPLE"},"user":{"uid":0,"permissionsHash":"07a613947f8924e7019661da310bc8b27f351e95971078f02e1b113247c7e95c"}}</script>
 <script src="/sites/dph.georgia.gov/files/js/js_GIoYJfmA5qaZQ8B3oY5AS__rg9sNKbxb7RS5oSwy6so.js"></script>
 <script src="//cdn.jsdelivr.net/npm/css-vars-ponyfill@1"></script>
 <script src="/sites/dph.georgia.gov/files/js/js_dtp4MOElNyan8QjGNoyT8RqFlVzcIKavnGRjR9fnuOs.js"></script>
