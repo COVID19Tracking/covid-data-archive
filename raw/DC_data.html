@@ -1,16 +1,25 @@
-<html lang="en" dir="ltr" version="HTML+RDFa 1.1" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"348872d504",applicationID:"51795785"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<meta name="description" content="March&#160;13, 2020 DC Public Health Laboratory Coronavirus Testing Metrics as of 7 pm Number of people tested overall: 69 Number of PHL positives: 8* Number of commercial lab positives: 2 Number of PHL negatives: 49 Number of PHL tests in progress: 10 *This number includes: presumptive positives (6); and CDC confirmed positives (2) As of March 11: Number of positive results: 10 As of March 9:">
-<meta name="generator" content="Drupal 7 (http://drupal.org)">
-<link rel="canonical" href="https://coronavirus.dc.gov/page/coronavirus-data">
-<link rel="shortlink" href="https://coronavirus.dc.gov/page/coronavirus-data">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://coronavirus.dc.gov/page/coronavirus-data">
-<meta name="twitter:title" content="Coronavirus Data">
-<meta name="twitter:description" content="March&#160;13, 2020 DC Public Health Laboratory Coronavirus Testing Metrics as of 7 pm Number of people tested overall: 69 Number of PHL positives: 8* Number of commercial lab positives: 2 Number of PHL negatives: 49 Number of PHL tests in progress: 10 *This number includes: presumptive positives (6); and CDC confirmed positives (2) As of March 11: Number of positive results: 10 As of March 9:">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"348872d504",applicationID:"51795785"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="description" content="March 13, 2020 DC Public Health Laboratory Coronavirus Testing Metrics as of 7 pm Number of people tested overall: 69 Number of PHL positives: 8* Number of commercial lab positives: 2 Number of PHL negatives: 49 Number of PHL tests in progress: 10 *This number includes: presumptive positives (6); and CDC confirmed positives (2) As of March 11: Number of positive results: 10 As of March 9:" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://coronavirus.dc.gov/page/coronavirus-data" />
+<link rel="shortlink" href="https://coronavirus.dc.gov/page/coronavirus-data" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://coronavirus.dc.gov/page/coronavirus-data" />
+<meta name="twitter:title" content="Coronavirus Data" />
+<meta name="twitter:description" content="March 13, 2020 DC Public Health Laboratory Coronavirus Testing Metrics as of 7 pm Number of people tested overall: 69 Number of PHL positives: 8* Number of commercial lab positives: 2 Number of PHL negatives: 49 Number of PHL tests in progress: 10 *This number includes: presumptive positives (6); and CDC confirmed positives (2) As of March 11: Number of positive results: 10 As of March 9:" />
   <title>Coronavirus Data | coronavirus</title>  
   <style type="text/css" media="all">
 @import url("https://coronavirus.dc.gov/modules/system/system.base.css?q2q9sv");
@@ -107,7 +116,7 @@ var text_resize_scope = "not-front #main, #zone-content";
 <script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dc_agency_statehood","theme_token":"PC5Xf1kMdrqJeAtUKTuucbpK5zun8TxpraoVzkb0jLY","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/text_resize\/jquery.cookie.js":1,"0":1,"sites\/all\/modules\/text_resize\/text_resize.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/dc_agency_statehood\/js\/dcAgency.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"sites\/all\/modules\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flickrgallery\/flickrgallery.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/normalize.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/global.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-24.css":1}},"extlink":{"extTarget":"_blank","extClass":"ext","extSubdomains":1,"extExclude":"http[s]*:\/\/[a-zA-Z0-9\\-\\.]*dc.gov[\\\/a-zA-Z0-9\\-\\.\\?\\=]*","extInclude":"","extAlert":0,"extAlertText":"The District government has provided links as a courtesy and is not responsible for information on websites outside the DC portal. Inquiries should be made to the sponsoring organizations.","mailtoClass":"mailto"},"better_exposed_filters":{"views":{"alerts":{"displays":{"emergency_alerts_block":{"filters":[]}}},"custom_headers_and_footers":{"displays":{"custom_agency_header":{"filters":[]},"custom_agency_footer1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dc_agency_statehood","theme_token":"PxnUI62grH5FeG6E9QAfxQdr6VdvqVuWELP6HdVokgU","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/text_resize\/jquery.cookie.js":1,"0":1,"sites\/all\/modules\/text_resize\/text_resize.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/dc_agency_statehood\/js\/dcAgency.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"sites\/all\/modules\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flickrgallery\/flickrgallery.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/normalize.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/global.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-24.css":1}},"extlink":{"extTarget":"_blank","extClass":"ext","extSubdomains":1,"extExclude":"http[s]*:\/\/[a-zA-Z0-9\\-\\.]*dc.gov[\\\/a-zA-Z0-9\\-\\.\\?\\=]*","extInclude":"","extAlert":0,"extAlertText":"The District government has provided links as a courtesy and is not responsible for information on websites outside the DC portal. Inquiries should be made to the sponsoring organizations.","mailtoClass":"mailto"},"better_exposed_filters":{"views":{"alerts":{"displays":{"emergency_alerts_block":{"filters":[]}}},"custom_headers_and_footers":{"displays":{"custom_agency_header":{"filters":[]},"custom_agency_footer1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
 //--><!]]>
 </script>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -133,16 +142,14 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
           </div>
           </div>
 </div>  </div>
-</div>
-<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
   <div id="zone-menu" class="zone zone-menu clearfix container-12">
     <div class="grid-12 region region-menu" id="region-menu">
   <div class="region-inner region-menu-inner">
           </div>
 </div>
   </div>
-</div>
-<div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
+</div><div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
   <div id="zone-header" class="zone zone-header clearfix container-24">
     <div class="grid-24 region region-header-first" id="region-header-first">
   <div class="region-inner region-header-first-inner">
@@ -150,14 +157,14 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-alerts view-id-alerts view-display-id-emergency_alerts_block view-dom-id-ba8c033dd98c3143d4028222fd4185ef">
+      <div class="view view-alerts view-id-alerts view-display-id-emergency_alerts_block view-dom-id-957b77f4c3603d51618231c7e66b0a5d">
         
   
   
       <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
       
-          <p class="rtecenter"><a href="https://mayor.dc.gov/release/mayor-bowser-adjusts-district-columbia-government%E2%80%99s-operating-status">Mayor Bowser Adjusts the District of Columbia Government&#8217;s Operating Status</a></p>
+          <p class="rtecenter"><a href="https://mayor.dc.gov/release/mayor-bowser-adjusts-district-columbia-government%E2%80%99s-operating-status">Mayor Bowser Adjusts the District of Columbia Government&rsquo;s Operating Status</a></p>
     </div>
     </div>
   
@@ -168,28 +175,593 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   
 </div>    </div>
   </div>
-</div>
-<div class="block block-views block-995d45b00eb29375765ad0295f641a94 block-views-995d45b00eb29375765ad0295f641a94 even block-without-title" id="block-views-995d45b00eb29375765ad0295f641a94">
+</div><div class="block block-views block-995d45b00eb29375765ad0295f641a94 block-views-995d45b00eb29375765ad0295f641a94 even block-without-title" id="block-views-995d45b00eb29375765ad0295f641a94">
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="[removed]">
+      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_header view-dom-id-7cc8641595b894fae532e7dcda5c68ca">
         
   
   
       <div class="view-content">
         <div>
       
-          <style type="text/css">[removed]</style>
+          <style type="text/css">/* Global Styles */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+body {
+  font-family: 'Open sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
+.zone-preface-wrapper, .zone-postscript-wrapper {
+  background-color: transparent;
+}
+#block-views-features-blocks-upcoming-events {
+  display: none;
+}
+/*Hide Events Block for now*/
+block-views-features-blocks-upcoming-events {
+  display: none;
+}
+/* Alert top Banner styles */
+.view-display-id-emergency_alerts_block {
+  background-image: linear-gradient(to right, #D93A4D, #9d0920);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.view-display-id-emergency_alerts_block a {
+  color: #fff;
+}
+.view-display-id-emergency_alerts_block p {
+  padding: 8px 0px;
+}
+#section-header {
+  background-color: transparent;
+}
+.header-agency-logo.desktop {
+  display: none;
+}
+.header {
+  padding: 0px;
+}
+.header-agency-logo.mobile {
+  position: relative;
+}
+.header-agency-logo.mobile img {
+  float: left;
+  width: 160px;
+  padding-top: 0px;
+  height: 44px;
+}
+.mobile-hammenu {
+  float: right;
+  margin-bottom: 20px;
+}
+.mobile-hammenu img {
+  height: 38px;
+}
+#block-domain-conf-domain-main-links #search_form {
+  display: none;
+}
+/* Global Menu Styles */
+#block-domain-conf-domain-main-links {
+  background-color: #9d0820;
+}
+#block-domain-conf-domain-main-links ul.menu-sub li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+#block-domain-conf-domain-main-links ul li {
+  border-bottom: 0px;
+}
+#block-domain-conf-domain-main-links ul li.expanded::before {
+  border: solid #fff;
+  margin-top: 8px;
+}
+#block-domain-conf-domain-main-links ul li.expanded .menu-sub {
+  padding-left: 20px;
+}
+#close-btn {
+  background-color: transparent;
+}
+/*hide desktop menu in mobile*/
+#desktop-head {
+  display: none;
+}
+#desktop_search_form {
+  display: none;
+}
+#block-domain-conf-domain-main-links ul li.expanded::after {
+  display: none;
+}
+#block-domain-conf-domain-main-links ul li.expanded::before {
+  display: inline-block;
+  content: ' ';
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  float: right;
+}
+.front .slideButton {
+  width: 195px;
+  text-align: center;
+  background-image: linear-gradient(to right, #6da6fc, #297bfb);
+  padding: 10px 0px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 10px; 
+}
+.front .slideButton a {
+  color: #fff;
+  text-decoration: none;
+}
+.signupBtn {
+  width: 170px;
+  background-image: linear-gradient(to right, #da3d4f, #9d0920);
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 10px;
+  float: right;
+}
+/* End of Global Menu Styles*/
+
+#region-agency-home-main-content, .grid-24.region-agency-home-main-content {
+  background-color: transparent;
+  color: #4A4A4A;
+  box-shadow: none;
+  border: 0px;
+  padding: 20px;
+  margin-top: 20px;
+  top: 0px;
+  width: auto;
+}
+/* Hide Rotator on mobile view */
+#zone-preface #region-agency-home-rotator {
+  display: none;
+}
+.owl-nav {
+  display: none;
+}
+
+/* Global Hide extra space below homepage rotator */
+#region-agency-home-main-content {
+  /*display: none;*/
+}
+.region-agency-home-main-content .views-field-field-image-link-url {
+  display: none;
+}
+/* Welcome Block D Styles */
+.region-agency-home-main-content .view-display-id-homepage_d .views-field-body {
+  width: 86%;
+  float: none;
+  min-height: inherit;
+  line-height: normal;
+  text-align: left;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.front .Homewelcome {
+  width: 82%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  margin-top: 40px;
+}
+#zone-postscript-wrapper {
+  padding: 15px;
+}
+/* Homepage Block A, B, C Styles */
+.block-views-features-blocks-homepage-a, .block-views-features-blocks-homepage-b, .block-views-features-blocks-homepage-c tr, #block-c-row2 {
+  min-height: 200px;
+  padding: 20px;
+  color: #000;
+  text-align: left;
+  clear: both;
+  display: block;
+  clear: both;
+  display: block;
+  margin-top: 10px;
+  float: none;
+  clear: both;
+  box-shadow: 1px 1px 8px #aaa;
+  border-radius: 15px;
+}
+.block-views-features-blocks-homepage-a h2.views-field-title, .block-views-features-blocks-homepage-c h2.views-field-title {
+  color: #000;
+  float: left;
+}
+.block-views-features-blocks-homepage-a, .block-views-features-blocks-homepage-c {
+  color: #000;
+  text-align: left;
+}
+.front .block-views-features-blocks-homepage-a .views-field.views-field-field-image-link-url,
+.front .block-views-features-blocks-homepage-b .views-field.views-field-field-image-link-url,
+.front .block-views-features-blocks-homepage-c .views-field.views-field-field-image-link-url {
+  float: right;
+}
+.block-views-features-blocks-homepage-a .views-field.views-field-field-image-link-url img,
+.block-views-features-blocks-homepage-b .views-field.views-field-field-image-link-url img,
+.block-views-features-blocks-homepage-c .views-field.views-field-field-image-link-url img {
+  width: 60px;
+  height: 60px;
+}
+#block-views-features-blocks-homepage-b {
+  background-color: #0569FF;
+}
+
+.block-views-features-blocks-homepage-b h2.views-field-title {
+  color: #fff;
+  float: left
+}
+.block-views-features-blocks-homepage-b {
+  color: #fff;
+  text-align: left
+}
+.blockTitle {
+  color: #000;
+  float: right;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin-bottom: 48px;
+  margin-top: 20px;
+}
+#region-agency-home-3col-a {
+  clear: both;
+}
+.front .block-views-features-blocks-homepage-a .views-field.views-field-body,
+.front .block-views-features-blocks-homepage-b .views-field.views-field-body,
+.front .block-views-features-blocks-homepage-c .views-field.views-field-body {
+  clear: both;
+}
+.front .block-views-features-blocks-homepage-a .views-field.views-field-title .field-content,
+.front .block-views-features-blocks-homepage-b .views-field.views-field-title .field-content,
+.front .block-views-features-blocks-homepage-c .views-field.views-field-title .field-content {
+  font-weight: bold;
+  font-size: 27px;
+  width: 260px;
+  display: block;
+}
+#block-views-features-blocks-homepage-c {
+  padding: 0px;
+}
+.front .block-views-features-blocks-homepage-c #block-c-row2 .views-field.views-field-title .field-content {
+  width: 300px;
+}
+.front .block-views-features-blocks-homepage-c #block-c-row2 ul {
+  margin-bottom: 0px;
+}
+.not-front #block-c-row2 {
+  display: none;
+}
+#block-views-features-blocks-homepage-c a {
+  color: #000 !important;
+}
+/* Global Home News Block */
+#block-views-030168ee923767f404d1c07c056336f5 {
+  display : none;
+}
+#block-quicktabs-agency-featured-news-home {
+  clear: both;
+  padding-top: 80px;
+}
+#quicktabs-tab-agency_featured_news_home-0,
+#quicktabs-tab-agency_featured_news_home-1,
+#quicktabs-tab-agency_featured_news_home-2,
+#quicktabs-tab-agency_featured_news_home-3 {
+  background-image: linear-gradient(to right, #da3d4f, #d23649);
+}
+#quicktabs-container-agency_featured_news_home {
+  clear: both;
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+}
+#block-quicktabs-agency-featured-news-home .block-title {
+  display: none;
+}
+#quicktabs-container-agency_featured_news_home .view-featured-news-home {
+  background-image: linear-gradient(to right, #D93A4D, #9d0920);
+  display: inline-block;
+}
+#quicktabs-container-agency_featured_news_home tr.even, #quicktabs-container-agency_featured_news_home tr.odd {
+  border-bottom: 0px;
+  background-color: transparent;
+}
+#quicktabs-container-agency_featured_news_home tr td {
+  padding: 10px;
+  border: none;
+}
+#quicktabs-container-agency_featured_news_home .view-footer {
+  padding: 0px 0px 20px 10px;
+}
+/* Interior page styles */
+#readspeaker_button1 {
+  display: block;
+}
+
+/* End of Global Styles */
+
+/* Narrow */
+@media all and (min-device-width: 740px) and (min-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape){
+
+#region-agency-home-3col-a,
+#region-agency-home-3col-b,
+#region-agency-home-3col-c {
+	width: 90%;
+}
+
+}
+/* End of Narrow */
+
+/* Normal Styles */
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape){
+
+#zone-header {
+  width: 100%;
+}
+#section-header {
+  box-shadow: none;
+  position: fixed;
+  z-index: 9;
+  background-color: #fff;
+  width: 100%;
+  top: 0px;
+}
+#region-header-first {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  float: none;
+  display: block;
+}
+.header {
+  text-align: left;
+}
+.view-display-id-emergency_alerts_block .view-content {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-agency-logo.mobile,
+.mobile-hammenu {
+  display: none;
+}
+.header-agency-logo.desktop {
+  z-index: 100;
+  display: inline-block;
+  margin-right: 0px;
+  position: relative;
+  vertical-align: top;
+  float: none;
+  margin-right: 58px;
+}
+#desktop-head {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+#desktop-main-menu-container {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+#desktop_search_form {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+#desktop_search_form input.sidenav-search {
+  width: 87px;
+  border-radius: 30px;
+  border: 1px solid #aeaeae;
+  box-shadow: inset 0 0 9px #bdbdbd;
+  line-height: 27px !important;
+  height: 27px;
+  font-style: italic;
+  font-size: 14px;
+  background: #d8d8d8;
+  min-height: 10px !important;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+.dcSearchButtonContainer {
+  padding: 0px;
+  cursor: pointer;
+}
+/* Normal Menu Styles */
+#desktop-head ul#desktop-main-menu > li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 20px;
+}
+#desktop-head ul#desktop-main-menu > li > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+#desktop-main-menu > li > ul.menu-sub {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #ebecee;
+  border: 1px solid #ccc;
+  padding:10px 20px;
+  text-align:left;
+}
+#desktop-main-menu > li.expanded ul.menu-sub > li {
+  display: block;
+  min-width: 150px;
+  padding: 10px 0px;
+  margin: 0px;
+}
+#desktop-main-menu > li.expanded ul.menu-sub > li > a {
+  white-space: break-spaces;
+  line-height: 20px;
+  display: block;
+}
+#desktop-main-menu > li > ul.menu-sub li a.active, #desktop-main-menu > li > ul.menu-sub a:link, #desktop-main-menu > li > ul.menu-sub a:visited{
+  color:#374BA1;
+  text-transform: none;
+  font-size: 14px;
+}
+#desktop-head ul > li.last > ul{
+  right: -1px;
+}
+/* Normal Rotator Styles */
+.front #zone-preface {
+  width: 100%;
+}
+/* Display Rotator on Desktop view */
+.front #zone-preface #region-agency-home-rotator {
+  display: block;
+}
+.front #region-agency-home-rotator {
+  width: 100%;
+  margin: 250px 0px 0px 0px;
+}
+.front .region-agency-home-rotator {
+  overflow: hidden;
+}
+.front #region-agency-home-rotator .owl-carousel .owl-item img {
+  float: right;
+  max-height: 100%;
+}
+.front #region-agency-home-rotator .slide #text {
+  background-color: #fff;
+  color: #000;
+  margin-top: -536px;
+  float: left;
+  box-shadow: 1px 1px 8px #aaa;
+  width: 475px;
+  margin-left: 50px;
+  padding: 25px 90px;
+}
+.front #region-agency-home-rotator .slidetitle {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
+  text-align: left;
+}
+.front .slideButton {
+  width: 195px;
+  text-align: center;
+  background-image: linear-gradient(to right, #6da6fc, #297bfb);
+  padding: 10px 0px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 10px; 
+}
+.front .slideButton a {
+  color: #fff;
+  text-decoration: none;
+}
+/* End of Rotator Styles */
+.front .Homewelcome {
+  width: 72%;
+}
+#region-agency-home-3col-a,
+#region-agency-home-3col-b,
+#region-agency-home-3col-c {
+  width: 300px;
+}
+/* Normal Interior page styles */
+.not-front #zone-content-wrapper {
+  width: 100%;
+  margin-top: 200px;
+}
+.not-front.no-sidebars .zone-content-wrapper {
+  margin-top: 70px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#region-content {
+  width: 100%;
+}
+.banner-image {
+  display: block;
+}
+.banner-image-mobile {
+  display: none;
+}
+#zone-postscript-wrapper {
+  padding: 0px;
+}
+
+#section-footer {
+  margin-top: 100px;
+}
+
+}/* End of Normal Styles */
+
+/* Wide */
+@media all and (min-width: 1220px) and (orientation:landscape){
+
+#region-header-first {
+  width: 1220px;
+}
+.header-agency-logo.desktop {
+  margin-right: 15px;
+}
+.header-agency-logo img {
+  width: 224px;
+  height: 62px;
+}
+#desktop-head {
+  margin-right: 0px;
+}
+.not-front.no-sidebars .zone-content-wrapper {
+  width: 1000px;
+}
+/* Wide Rotator Styles */
+.region-agency-home-rotator {
+  max-height: 601px;
+}
+.front #region-agency-home-rotator {
+  width: 100%;
+  margin: 150px 0px 0px 0px;
+}
+.owl-carousel .owl-item img {
+  width: 1134px;
+  float: right;
+}
+.slide #text {
+  margin-top: -536px;
+  float: left;
+  box-shadow: 1px 1px 8px #aaa;
+  width: 475px;
+  margin-left: 50px;
+  padding: 25px 90px;
+}
+/* End of Wide Rotator Styles */
+#region-agency-home-3col-a,
+#region-agency-home-3col-b,
+#region-agency-home-3col-c {
+  width: 380px;
+}
+
+}
+</style>
 <div class="header">
-<div class="header-agency-logo mobile"><a href="/" title="Home"><img alt="Corona Logo" src="/sites/default/files/dc/sites/coronavirus/Corona_Logo.png" title="Corona Logo"></a></div>
+<div class="header-agency-logo mobile"><a href="/" title="Home"><img alt="Corona Logo" src="/sites/default/files/dc/sites/coronavirus/Corona_Logo.png" title="Corona Logo" /></a></div>
 
-<div class="mobile-hammenu"><img alt="Menu" src="/sites/default/files/dc/sites/sustainable/hamburgermenu.png" title="Menu"></div>
+<div class="mobile-hammenu"><img alt="Menu" src="/sites/default/files/dc/sites/sustainable/hamburgermenu.png" title="Menu" /></div>
 
-<div class="header-agency-logo desktop"><a href="/" title="Home"><img alt="Corona Logo" src="/sites/default/files/dc/sites/coronavirus/Corona_Logo.png" title="Corona Logo"></a></div>
+<div class="header-agency-logo desktop"><a href="/" title="Home"><img alt="Corona Logo" src="/sites/default/files/dc/sites/coronavirus/Corona_Logo.png" title="Corona Logo" /></a></div>
 </div>
-<!--
-
 <div id="block-c-row2">
 <h2 class="views-field views-field-title"><span class="field-content">Report Price Gouging</span></h2>
 
@@ -202,8 +774,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </div>
 </div>
 </div>
-
---><script>
+<script>
 // Mobile menu show on click
 jQuery(".mobile-hammenu img").click(function(){
   jQuery("#block-domain-conf-domain-main-links").css("width","100%");
@@ -246,7 +817,7 @@ jQuery('.region-header-first-inner #block-domain-conf-domain-main-links div.cont
 
 // Add Search Box -Disabled
 /*
-jQuery('<form accept-charset="UTF-8" action="javascript:submitForm()" method="get" name="search_form" id="desktop_search_form"><input class="sidenav-search" placeholder="Search..." type="text" id="query" name="query"><button alt="Submit Button" class="dcSearchButtonContainer" onclick="submitForm()" title="Submit Button"><div class="dcSearchButtonIcon">&nbsp;</div></button><input type="hidden" name="affiliate" id="affiliate" value="sustainable"><input name="utf8" type="hidden" value="&#10003;"></form>').insertAfter("#desktop-head");
+jQuery('<form accept-charset="UTF-8" action="javascript:submitForm()" method="get" name="search_form" id="desktop_search_form"><input class="sidenav-search" placeholder="Search..." type="text" id="query" name="query"><button alt="Submit Button" class="dcSearchButtonContainer" onclick="submitForm()" title="Submit Button"><div class="dcSearchButtonIcon">&nbsp;</div></button><input type="hidden" name="affiliate" id="affiliate" value="sustainable"><input name="utf8" type="hidden" value="✓"></form>').insertAfter("#desktop-head");
 */
 
 // Add Signup Button -disabled for now
@@ -294,7 +865,7 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
 
 </script>
 
-<p>&#160;</p>
+<p>&nbsp;</p>
     </div>
     </div>
   
@@ -305,23 +876,18 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
   
 </div>    </div>
   </div>
-</div>
-<div class="block block-domain-conf block-domain-main-links block-domain-conf-domain-main-links odd block-without-title" id="block-domain-conf-domain-main-links">
+</div><div class="block block-domain-conf block-domain-main-links block-domain-conf-domain-main-links odd block-without-title" id="block-domain-conf-domain-main-links">
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <ul class="menu-sub">
-<li class="first leaf"><a href="/" title="Home">Home</a></li>
+      <ul class="menu-sub"><li class="first leaf"><a href="/" title="Home">Home</a></li>
 <li class="leaf"><a href="/page/what-covid-19" title="What Is COVID-19?">What Is COVID-19?</a></li>
-<li class="expanded">
-<a href="/page/healthcare-providers" title="Healthcare Providers">Healthcare Providers</a><ul class="menu-sub">
-<li class="first leaf"><a href="https://dchealth.dc.gov/page/health-notices" title="DC Health Notices">Health Notices</a></li>
+<li class="expanded"><a href="/page/healthcare-providers" title="Healthcare Providers">Healthcare Providers</a><ul class="menu-sub"><li class="first leaf"><a href="https://dchealth.dc.gov/page/health-notices" title="DC Health Notices">Health Notices</a></li>
 <li class="last leaf"><a href="/page/covid-19-testing" title="Information on COVID-19 Testing">COVID-19 Testing</a></li>
-</ul>
-</li>
+</ul></li>
 <li class="leaf active-trail"><a href="/page/coronavirus-data" title="Coronavirus Data" class="active-trail active">Coronavirus Data</a></li>
 <li class="leaf"><a href="/page/how-protect-yourself-covid-19" title="How to Protect Yourself">How to Protect Yourself</a></li>
-<li class="leaf"><a href="/page/coronavirus-resources" title="Resources">Resources</a></li>
+<li class="leaf"><a href="/page/coronavirus-covid-19-resources-tool-kit" title="Resources">Resources</a></li>
 <li class="leaf"><a href="/newsroom" title="News">News</a></li>
 <li class="last leaf"><a href="/page/stay-connected" title="Stay Connected">Stay Connected</a></li>
 </ul>    </div>
@@ -333,8 +899,7 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
   <div id="zone-preface-wrapper" class="zone-wrapper zone-preface-wrapper clearfix">  
   <div id="zone-preface" class="zone zone-preface clearfix container-24">
       </div>
-</div>
-<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+</div><div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
   <div id="zone-content" class="zone zone-content clearfix container-24">    
         
         <div class="grid-12 region region-content" id="region-content">
@@ -365,8 +930,7 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
         <span property="dc:title" content="Coronavirus Data" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    
   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dc44024632b89e6"></script> 
   <div class="content clearfix">
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
-<p><strong>March&#160;13, 2020</strong></p>
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><strong>March&nbsp;13, 2020</strong></p>
 
 <p><strong>DC Public Health Laboratory Coronavirus Testing Metrics as of 7 pm</strong></p>
 
@@ -412,8 +976,7 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
   </div>
 </div>
   </div>
-</div>
-<div id="zone-postscript-wrapper" class="zone-wrapper zone-postscript-wrapper clearfix">  
+</div><div id="zone-postscript-wrapper" class="zone-wrapper zone-postscript-wrapper clearfix">  
   <div id="zone-postscript" class="zone zone-postscript clearfix container-24">
       </div>
 </div></section>    
@@ -427,25 +990,137 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="[removed]">
+      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_footer1 view-dom-id-11bd9aef77da535fdb1fd80b2b0a6b1d">
         
   
   
       <div class="view-content">
         <div>
       
-          <style type="text/css">[removed]</style>
+          <style type="text/css">/* Global Styles */
+#section-footer,
+#zone-footer-wrapper {
+  background-color: #fff;
+}
+#zone-footer h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#region-footer-first {
+  margin: 0px;
+}
+.row1 li, .row2 li {
+  color: #000;
+  list-style: none;
+  display: block;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row1 li.first {
+  width: 95%;
+  text-align: left;
+}
+#zone-footer .row1 li.first img {
+  width: 340px;
+}
+.row1 li.second, .row1 li.third {
+  width: 40%;
+  text-align: left;
+  float: left;
+  padding-left: 20px;
+}
+.row1 li a {
+  color: #000;
+  display: block;
+  text-align: left;
+}
+.row1 li.second a, .row1 li.third a {
+  line-height: 30px;
+}
+.row2 li a {
+  color: #000;
+  display: inline-block;
+  padding-right: 20px;
+}
+.row2 li.first {
+  text-align: left;
+  width: 90%;
+  padding-top: 50px;
+  clear: both;
+}
+.row2 li.second {
+  width: 90%;
+  text-align: center;
+  padding-top: 20px;
+}
+.row2 li.second img {
+  width: 40px;
+  height: 40px;
+  text-align: right;
+}
+
+/* End of Global Styles */
+
+/* Narrow */
+@media all and (min-device-width: 740px) and (min-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape){
+
+
+
+}
+/* End of Narrow */
+
+/* Normal Styles */
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape){
+
+#zone-footer .row1 li.first img {
+  width: 400px;
+}
+.row1 li, .row2 li {
+  display: inline-block;
+}
+.row1 li a {
+  text-align: right;
+}
+.row1 li.first {
+  width: 65%;
+}
+.row1 li.second, .row1 li.third {
+  width: 15%;
+  text-align: right;
+  padding-left: 0px;
+  float: none;
+  clear: both;
+}
+.row2 li.first {
+  width: 60%;
+  padding-top: 10px;
+}
+.row2 li.second {
+  width: 30%;
+  text-align: right;
+}
+
+}/* End of Normal Styles */
+
+/* Wide */
+@media all and (min-width: 1220px) and (orientation:landscape){
+
+
+
+}
+</style>
 <div class="row1">
 <ul>
-	<li class="first"><img alt="Corona Virus Logo" src="/sites/default/files/dc/sites/coronavirus/footerlogo.png" title="Corona Virus Logo"></li>
+	<li class="first"><img alt="Corona Virus Logo" src="/sites/default/files/dc/sites/coronavirus/footerlogo.png" title="Corona Virus Logo" /></li>
 	<li class="second">
 	<h3>Additional Websites</h3>
-	<br>
-	<a href="https://www.cdc.gov/">CDC</a> <a href="https://www.state.gov/">US State Department</a> <a href="https://dchealth.dc.gov">DC Health</a> <a href="https://hsema.dc.gov">HSEMA</a> <a href="https://mayor.dc.gov">Mayor</a>
-</li>
+	<br />
+	<a href="https://www.cdc.gov/">CDC</a> <a href="https://www.state.gov/">US State Department</a> <a href="https://dchealth.dc.gov">DC Health</a> <a href="https://hsema.dc.gov">HSEMA</a> <a href="https://mayor.dc.gov">Mayor</a></li>
 	<li class="third">
 	<h3>Resources</h3>
-	<br>
+	<br />
 	<a href="/page/coronavirus-resources">Guides</a>
     <a href="/page/videos-district-columbia-covid-19-preparation">Videos</a>
   </li>
@@ -454,11 +1129,8 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
 
 <div class="row2">
 <ul>
-	<li class="first">
-<a href="https://dc.gov/page/dcgov-accessibility-policy">Accessibility</a> <a href="https://dc.gov/page/privacy-and-security">Privacy &amp; Terms</a>
-</li>
-	<li class="second" style="display:none;">&gt;<a href="#"><img alt="facebook" src="/sites/default/files/dc/sites/coronavirus/facebook.png" title="facebook"></a> <a href="#"><img alt="twitter" src="/sites/default/files/dc/sites/coronavirus/twitter.png" title="twitter"></a>
-</li>
+	<li class="first"><a href="https://dc.gov/page/dcgov-accessibility-policy">Accessibility</a> <a href="https://dc.gov/page/privacy-and-security">Privacy &amp; Terms</a></li>
+	<li class="second" style="display:none;">&gt;<a href="#"><img alt="facebook" src="/sites/default/files/dc/sites/coronavirus/facebook.png" title="facebook" /></a> <a href="#"><img alt="twitter" src="/sites/default/files/dc/sites/coronavirus/twitter.png" title="twitter" /></a></li>
 </ul>
 </div>
     </div>
@@ -476,7 +1148,5 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
 </div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
   <div class="region-inner region-page-bottom-inner">
       </div>
-</div>
-<script type="text/javascript">[removed]</script>
-</body>
+</div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"348872d504","applicationID":"51795785","transactionName":"YVYAZxQEC0EHBhVYWVgcI1ASDApcSQsOVVNpQwNUAzoTWwMS","queueTime":0,"applicationTime":195,"atts":"TREDEVweGE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
