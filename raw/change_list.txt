@@ -1,12 +1,12 @@
 STATE CHANGE LIST
 
-  start	2020-03-14 07:13:14.020567
-  end	2020-03-14 07:14:03.059005
-  previous	2020-03-14 06:29:57.259945
-  lapsed	0:00:49.038438
+  start	2020-03-14 07:40:06.416020
+  end	2020-03-14 07:40:07.854578
+  previous	2020-03-14 07:38:56.806261
+  lapsed	0:00:01.438558
 
-  changed	14
-  unchanged	92
+  changed	16
+  unchanged	90
   skipped	0
   errors	0
 
@@ -14,10 +14,12 @@ STATE CHANGE LIST
 CA.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO_data.html	CHANGED	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-IA.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
-IA_data.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
+IA_data.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IL.html	CHANGED	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	CHANGED	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
+MI.html	CHANGED	https://www.michigan.gov/coronavirus	
+MI_data.html	CHANGED	https://www.michigan.gov/coronavirus	
 OR.html	CHANGED	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	CHANGED	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 WY.html	FAILED	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -65,8 +67,6 @@ MD.html	unchanged	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx
 MD_data.html	unchanged	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
 ME.html	unchanged	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	unchanged	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
-MI.html	unchanged	https://www.michigan.gov/coronavirus	
-MI_data.html	unchanged	https://www.michigan.gov/coronavirus	
 MN.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/index.html	
 MN_data.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
