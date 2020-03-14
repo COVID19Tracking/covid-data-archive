@@ -1,13 +1,14 @@
 STATE CHANGE LIST
 
-  start	2020-03-13 23:54:55.087432
-  end	2020-03-13 23:55:48.746291
-  previous	2020-03-13 23:41:45.040040
-  lapsed	0:00:53.658859
+  start	2020-03-14 01:11:21.139529
+  end	2020-03-14 01:11:22.002259
+  previous	2020-03-13 23:54:55.087432
+  lapsed	0:00:00.862730
 
   changed	22
   unchanged	83
   skipped	0
+  errors	0
 
 ====== ITEMS THAT HAVE CHANGED ======
 CA.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
@@ -32,7 +33,6 @@ WY.html	FAILED	https://health.wyo.gov/publichealth/infectious-disease-epidemiolo
 WY_data.html	FAILED	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 mail_sheet	skip	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-
 
 ====== ITEMS HAVE NOT CHANGED ======
 main_sheet	unchanged	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -118,4 +118,7 @@ WI.html	unchanged	https://www.dhs.wisconsin.gov/disease/covid-19.htm
 WI_data.html	unchanged	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	unchanged	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
+
 ====== ITEMS WHERE SKIPPED ======
+
+====== ITEMS WITH ERROR ======
