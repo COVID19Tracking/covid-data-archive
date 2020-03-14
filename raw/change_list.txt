@@ -1,27 +1,40 @@
 STATE CHANGE LIST
 
-  start	2020-03-14 07:40:06.416020
-  end	2020-03-14 07:40:07.854578
-  previous	2020-03-14 07:38:56.806261
-  lapsed	0:00:01.438558
+  start	2020-03-14 13:18:12.054107
+  end	2020-03-14 13:18:59.397558
+  previous	2020-03-14 07:40:06.416020
+  lapsed	0:00:47.343451
 
-  changed	16
-  unchanged	90
+  changed	29
+  unchanged	77
   skipped	0
   errors	0
 
 ====== ITEMS THAT HAVE CHANGED ======
+AK.html	CHANGED	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AR.html	CHANGED	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR_data.html	CHANGED	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 CA.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO_data.html	CHANGED	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-IA.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
-IA_data.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
+DC_data.html	CHANGED	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
+GA_data.html	CHANGED	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
+IA.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA_data.html	FAILED	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IL.html	CHANGED	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	CHANGED	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
-MI.html	CHANGED	https://www.michigan.gov/coronavirus	
-MI_data.html	CHANGED	https://www.michigan.gov/coronavirus	
+MD.html	CHANGED	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
+MD_data.html	CHANGED	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
+OH.html	FAILED	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	Response is 150 bytes
+OH_data.html	FAILED	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	Response is 150 bytes
 OR.html	CHANGED	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	CHANGED	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
+SC.html	CHANGED	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
+SC_data.html	CHANGED	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
+TX.html	CHANGED	https://dshs.texas.gov/coronavirus/	
+UT.html	CHANGED	https://health.utah.gov/coronavirus	
+VT.html	CHANGED	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+VT_data.html	CHANGED	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 WY.html	FAILED	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 WY_data.html	FAILED	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 mail_sheet	skip	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -30,25 +43,20 @@ main_sheet.html	CHANGED	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq
 
 ====== ITEMS HAVE NOT CHANGED ======
 main_sheet	unchanged	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-AK.html	unchanged	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AK_data.html	unchanged	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	unchanged	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
-AR.html	unchanged	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AR_data.html	unchanged	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AZ.html	unchanged	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	unchanged	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 CO.html	unchanged	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CT.html	unchanged	https://portal.ct.gov/Coronavirus	
 CT_data.html	unchanged	https://portal.ct.gov/Coronavirus	
 DC.html	unchanged	https://coronavirus.dc.gov/	
-DC_data.html	unchanged	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	unchanged	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 FL.html	unchanged	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 GA.html	unchanged	https://dph.georgia.gov/novelcoronavirus	
-GA_data.html	unchanged	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	unchanged	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 ID.html	unchanged	https://coronavirus.idaho.gov/	
@@ -63,10 +71,10 @@ LA.html	unchanged	http://ldh.la.gov/Coronavirus/
 LA_data.html	unchanged	http://ldh.la.gov/Coronavirus/	
 MA.html	unchanged	https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19	
 MA_data.html	unchanged	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
-MD.html	unchanged	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
-MD_data.html	unchanged	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
 ME.html	unchanged	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	unchanged	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+MI.html	unchanged	https://www.michigan.gov/coronavirus	
+MI_data.html	unchanged	https://www.michigan.gov/coronavirus	
 MN.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/index.html	
 MN_data.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
@@ -91,28 +99,20 @@ NV.html	unchanged	http://dpbh.nv.gov/coronavirus/
 NV_data.html	unchanged	http://dpbh.nv.gov/coronavirus/	
 NY.html	unchanged	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	https://www.health.ny.gov/diseases/communicable/coronavirus/	
-OH.html	unchanged	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
-OH_data.html	unchanged	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
 OK.html	unchanged	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	
 OK_data.html	unchanged	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	
 PA.html	unchanged	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	unchanged	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 RI.html	unchanged	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	https://health.ri.gov/data/covid-19/	
-SC.html	unchanged	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
-SC_data.html	unchanged	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
 SD.html	unchanged	https://doh.sd.gov/news/Coronavirus.aspx	
 SD_data.html	unchanged	https://doh.sd.gov/news/Coronavirus.aspx	
 TN.html	unchanged	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	unchanged	https://www.tn.gov/health/cedep/ncov.html	
-TX.html	unchanged	https://dshs.texas.gov/coronavirus/	
 TX_data.html	unchanged	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	https://health.utah.gov/coronavirus	
 UT_data.html	unchanged	https://coronavirus.utah.gov/latest/	
 VA.html	unchanged	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
 VA_data.html	unchanged	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VT.html	unchanged	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
-VT_data.html	unchanged	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 WA.html	unchanged	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	unchanged	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WI.html	unchanged	https://www.dhs.wisconsin.gov/disease/covid-19.htm	

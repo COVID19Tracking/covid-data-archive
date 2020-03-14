@@ -623,11 +623,15 @@
 		        </div>
                 <div>
                   <div>
-		            <menu>
-	<menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option">
-
-	</menuitem>
-</menu>
+		            <table>
+	<tr>
+		<td id="MSOZoneCell_WebPartWPQ2"><table>
+			<tr>
+				<td><div haspers="false" id="WebPartWPQ2" allowdelete="false"></div></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
 	              </div>
                     </div>
             </div> </div>
@@ -674,7 +678,11 @@
 		</div>
 	</div>
     <div id="ctl00_panelZone">
-	<div id="hidZone"></div>
+	<div id="hidZone"><menu>
+		<menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option">
+
+		</menuitem>
+	</menu></div>
 </div>
 </form>
  </body>
