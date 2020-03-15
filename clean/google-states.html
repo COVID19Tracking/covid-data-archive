@@ -1,0 +1,578 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>state</th>
+      <th>dataSite</th>
+      <th>covid19Site</th>
+      <th>twitter</th>
+      <th>pui</th>
+      <th>pum</th>
+      <th>notes</th>
+      <th>source_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AK</td>
+      <td>http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx</td>
+      <td>http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx</td>
+      <td>@Alaska_DHSS</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>It's not clear if they refer to "persons tested" or "specimens tested." We are counting them as "persons tested" for now.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html</td>
+      <td>http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html</td>
+      <td>@alpublichealth</td>
+      <td>No data</td>
+      <td>False</td>
+      <td>&#226;&#128;&#156;Total people approved for testing&#226;&#128;&#157; = Total. &#226;&#128;&#156;Total unique patients tested&#226;&#128;&#157; = Positive + Negative.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AR</td>
+      <td>https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus</td>
+      <td>https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus</td>
+      <td>@adhpio</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>Pending = "PUIs"</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AZ</td>
+      <td>https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home</td>
+      <td>https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home</td>
+      <td>@azdhs</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Positive = &#226;&#128;&#156;Confirmed&#226;&#128;&#157; + &#226;&#128;&#156;Presumed&#226;&#128;&#157;.   Negative = &#226;&#128;&#156;Ruled Out&#226;&#128;&#157;.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CA</td>
+      <td>https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx</td>
+      <td>https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx</td>
+      <td>@CAPublicHealth</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Only positive counts reported regularly. We have a negative count of 916, as of 3/10.  \nDeaths reported alongside &#226;&#128;&#156;positive cases&#226;&#128;&#157;. We add deaths to the positive count.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CO</td>
+      <td>https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub</td>
+      <td>https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus</td>
+      <td>@cdphe</td>
+      <td>Positives + Negatives</td>
+      <td>False</td>
+      <td>We are currently adding up the hard numbers and ignoring the "approximate" number, though we appreciate it.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CT</td>
+      <td>https://portal.ct.gov/Coronavirus</td>
+      <td>https://portal.ct.gov/Coronavirus</td>
+      <td>@ctdph</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>CT dropped negatives on 3/14, number carried over from 3/13</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>DC</td>
+      <td>https://coronavirus.dc.gov/page/coronavirus-surveillance-data</td>
+      <td>https://coronavirus.dc.gov/</td>
+      <td>@_DCHealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Adding all positives together, regardless of lab. Negative counts dropped 3/11, back 3/13</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>DE</td>
+      <td>https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html</td>
+      <td>https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html</td>
+      <td>@Delaware_DHSS</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>FL</td>
+      <td>http://www.floridahealth.gov/diseases-and-conditions/COVID-19/</td>
+      <td>http://www.floridahealth.gov/diseases-and-conditions/COVID-19/</td>
+      <td>@HealthyFla</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>We're including both Florida residents and non-residents in the positives, but not Floridians who've tested positive but are "isolated outside Florida." Positive counts include deaths. DO NOT add or subtract deaths when calculating positives or total cases. Last update had no new negative or pending counts.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>GA</td>
+      <td>https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report</td>
+      <td>https://dph.georgia.gov/novelcoronavirus</td>
+      <td>@GaDPH</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>On 3/11 they pulled down their data. On 3/12 they started posting numbers to the DPH main site. Positive counts include deaths.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>HI</td>
+      <td>https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/</td>
+      <td>https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/</td>
+      <td>@HIgov_Health</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Data is in text.  Positive count only.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>IA</td>
+      <td>https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus</td>
+      <td>https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus</td>
+      <td>@IAPublicHealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Iowa dropped timestamps, negative and pending on 3/13. Last negative count from 3/12. Use time = 00:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>ID</td>
+      <td>https://coronavirus.idaho.gov/</td>
+      <td>https://coronavirus.idaho.gov/</td>
+      <td>@IDHW</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>We&#226;&#128;&#153;re including Oregon residents tested in Idaho in the total, as the state does in its table (noted below).</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>IL</td>
+      <td>http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus</td>
+      <td>http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus</td>
+      <td>@IDPH</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Illinois reports all data of interest. 3/13 date from Gov Pritzker announcement.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>IN</td>
+      <td>https://www.in.gov/isdh/28470.htm</td>
+      <td>https://www.in.gov/isdh/28470.htm</td>
+      <td>@statehealthin</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Negative = Total - Positive. It appears they are not including pending in the total.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>KS</td>
+      <td>http://www.kdheks.gov/coronavirus/</td>
+      <td>http://www.kdheks.gov/coronavirus/</td>
+      <td>@kdhe</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Data is in a PDF linked from the COVID-19 Public Update URL at the top. No pending counts.  The first death was reported through a separate press release - please check all press releases on the site for data.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>KY</td>
+      <td>https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx</td>
+      <td>https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx</td>
+      <td>@CHFSKy</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LA</td>
+      <td>http://ldh.la.gov/Coronavirus/</td>
+      <td>http://ldh.la.gov/Coronavirus/</td>
+      <td>@LADeptHealth</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Negative = Total - Positive. Now posting both positives and a total.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>MA</td>
+      <td>https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring</td>
+      <td>https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19</td>
+      <td>@massdph</td>
+      <td>Only positives</td>
+      <td>True</td>
+      <td>Data is in a table under the &#226;&#128;&#156;COVID-19 cases in Massachusetts&#226;&#128;&#157; header. Only positives are regularly reported. Negative count inferred from 3/13 data released to Boston Globe.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>MD</td>
+      <td>https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx</td>
+      <td>https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx</td>
+      <td>@MDHealthDept</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Last negative counts from 3/12  No pending counts.  Use time = 00:00.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>ME</td>
+      <td>https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml</td>
+      <td>https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml</td>
+      <td>@mainedhhs</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Use the timestamp at the top row of the table.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>MI</td>
+      <td>https://www.michigan.gov/coronavirus</td>
+      <td>https://www.michigan.gov/coronavirus</td>
+      <td>@MichiganHHS</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>Total = "Positive&#226;&#128;&#157; + &#226;&#128;&#156;Negative&#226;&#128;&#157; + &#226;&#128;&#156;Pending&#226;&#128;&#157;. Use time = 00:00.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>MN</td>
+      <td>https://www.health.state.mn.us/diseases/coronavirus/situation.html</td>
+      <td>https://www.health.state.mn.us/diseases/coronavirus/index.html</td>
+      <td>@mnhealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Negative = Total - Positive.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>MO</td>
+      <td>https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/</td>
+      <td>https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/</td>
+      <td>@HealthyLivingMo</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>No pending reported.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>MS</td>
+      <td>https://msdh.ms.gov/msdhsite/_static/14,0,420.html</td>
+      <td>https://msdh.ms.gov/msdhsite/_static/14,0,420.html</td>
+      <td>@msdh</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Negative = Total - Positive.   No pending counts.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>MT</td>
+      <td>https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt</td>
+      <td>https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt</td>
+      <td>@dphhsmt</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>If no time given, use time = 19:00 on the previous weekday. Our total is one more than the website, because one of their positive cases was not tested in MT.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>NC</td>
+      <td>https://www.ncdhhs.gov/covid-19-case-count-north-carolina</td>
+      <td>https://www.ncdhhs.gov/divisions/public-health/coronavirus-disease-2019-covid-19-response-north-carolina</td>
+      <td>@ncdhhs</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Providing positives and a "total test" count from the North Carolina Public Health Laboratory. It's tucked in text beneath the table and map.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>ND</td>
+      <td>https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases</td>
+      <td>https://www.health.nd.gov/diseases-conditions/coronavirus</td>
+      <td>@NDDOH</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>If no time given, use time = 13:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>NE</td>
+      <td>http://dhhs.ne.gov/Pages/Coronavirus.aspx</td>
+      <td>http://dhhs.ne.gov/Pages/Coronavirus.aspx</td>
+      <td>@NEDHHS</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>The math used for positive counts doesn't seem to add up...  If no time given, use time = 00:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>NH</td>
+      <td>https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm</td>
+      <td>https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm</td>
+      <td>@NHPubHealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Positive = &#226;&#128;&#156;Confirmed&#226;&#128;&#157; + &#226;&#128;&#156;Presumed Positive&#226;&#128;&#157;. Our Total = their "Total Number of Persons Provided Specimens&#226;&#128;&#157;</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>NJ</td>
+      <td>https://www.nj.gov/health/</td>
+      <td>https://www.nj.gov/health/cd/topics/ncov.shtml</td>
+      <td>@NJDeptofHealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Data in a table in the Spotlight section. Deaths included in their total positive count. No longer reporting negative counts. Pending = PUI.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NM</td>
+      <td>https://cv.nmhealth.org/</td>
+      <td>https://cv.nmhealth.org/</td>
+      <td>@NMDOH</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>NV</td>
+      <td>http://dpbh.nv.gov/coronavirus/</td>
+      <td>http://dpbh.nv.gov/coronavirus/</td>
+      <td>@dhhsnevada</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Very rare updates from Nevada. We rely on [the Nevada Independent's report](https://thenevadaindependent.com/article/live-blog-no-more-coronavirus-cases-in-washoe-reported-as-health-officials-identify-test-close-contacts) for numbers.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>NY</td>
+      <td>https://www.health.ny.gov/diseases/communicable/coronavirus/</td>
+      <td>https://www.health.ny.gov/diseases/communicable/coronavirus/</td>
+      <td>@healthnygov</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Only positives regularly reported. Negative number inferred from 3/13 Gov Cuomo press confernece. (Gov Cuomo said 3200 people have been tested total to that date.)</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>OH</td>
+      <td>https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/</td>
+      <td>https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/</td>
+      <td>@OHdeptofhealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Pending = "Persons Under Investigation"</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>OK</td>
+      <td>https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html</td>
+      <td>https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html</td>
+      <td>@HealthyOklahoma</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Pending = "PUIs pending results"</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>OR</td>
+      <td>https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx</td>
+      <td>https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx</td>
+      <td>@OHAOregon</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>Click to expand the Situation in Oregon section.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>PA</td>
+      <td>https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx</td>
+      <td>https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx</td>
+      <td>@PAHealthDept</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>As of 3/11, reporting all numbers we track, though approximate.  Thank you, PA!</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>RI</td>
+      <td>https://health.ri.gov/data/covid-19/</td>
+      <td>https://health.ri.gov/diseases/respiratory/?parm=163</td>
+      <td>@rihealth</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>No update time given. Use time = 00:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>SC</td>
+      <td>https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19</td>
+      <td>https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19</td>
+      <td>@scdhec</td>
+      <td>All data</td>
+      <td>True</td>
+      <td>Positive = &#226;&#128;&#156;Positive&#226;&#128;&#157; + &#226;&#128;&#156;Presumptive Positive&#226;&#128;&#157;. No pending counts.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>SD</td>
+      <td>https://doh.sd.gov/news/Coronavirus.aspx</td>
+      <td>https://doh.sd.gov/news/Coronavirus.aspx</td>
+      <td>@SDDOH</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>No update time given. Use time = 00:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>TN</td>
+      <td>https://www.tn.gov/health/cedep/ncov.html</td>
+      <td>https://www.tn.gov/health/cedep/ncov.html</td>
+      <td>@TNDeptofHealth</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Negative count only from state lab, which reported 14/32 total positives.  If no update time given, use time = 15:00.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>TX</td>
+      <td>https://dshs.texas.gov/news/updates.shtm#coronavirus</td>
+      <td>https://dshs.texas.gov/coronavirus/</td>
+      <td>@TexasDSHS</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Only positive counts. Scroll down for the data. If no time given, use time = 13:00, as per the site's guidance..</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>UT</td>
+      <td>https://coronavirus.utah.gov/latest/</td>
+      <td>https://health.utah.gov/coronavirus</td>
+      <td>@utahdepofhealth</td>
+      <td>Only positives</td>
+      <td>False</td>
+      <td>Negatives no longer reported; using last value from 3/12. We're lumping non-Utah residents into the state's total, but not all of them will show up there, per the state's guidance.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>VA</td>
+      <td>http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/</td>
+      <td>http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/</td>
+      <td>@vdhgov</td>
+      <td>Positives + Negatives</td>
+      <td>True</td>
+      <td>Negatives no longer reported; using last value from 3/12.\nIf no time given, use time = 11:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>VT</td>
+      <td>https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus</td>
+      <td>https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus</td>
+      <td>@healthvermont</td>
+      <td>Positives + Negatives</td>
+      <td>True</td>
+      <td>If no time given, use time =  13:00.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>WA</td>
+      <td>https://www.doh.wa.gov/Emergencies/Coronavirus</td>
+      <td>https://www.doh.wa.gov/Emergencies/Coronavirus</td>
+      <td>@WADeptHealth</td>
+      <td>Positives + Negatives</td>
+      <td>True</td>
+      <td>Total tests are below the tables with detail about positive cases. No pending counts. The positive count includes deaths.</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>WI</td>
+      <td>https://www.dhs.wisconsin.gov/outbreaks/index.htm</td>
+      <td>https://www.dhs.wisconsin.gov/disease/covid-19.htm</td>
+      <td>@DHSWI</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>No pending counts. Positive = &#226;&#128;&#156;Positive&#226;&#128;&#157; + &#226;&#128;&#156;Positive Recovered&#226;&#128;&#157;</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>WV</td>
+      <td>https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx</td>
+      <td>https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx</td>
+      <td>@WV_DHHR</td>
+      <td>All data</td>
+      <td>False</td>
+      <td>Pending = "Under Investigation". Data is in text.  Use time = 00:00</td>
+      <td>google-states</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>WY</td>
+      <td>https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/</td>
+      <td>https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/</td>
+      <td>@health_wyoming</td>
+      <td>No data</td>
+      <td>False</td>
+      <td>Data is in text; only positive counts.</td>
+      <td>google-states</td>
+    </tr>
+  </tbody>
+</table>
