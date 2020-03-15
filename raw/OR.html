@@ -96,7 +96,34 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
 
         
         <script src="https://apps.oregon.gov/Application/CDN/Enterprise/scripts/sharepoint/2010/template-v4x-patches.js"></script>
-        <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script></head>
+        <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script>
+     <script type="text/javascript">    
+                      
+        $(document).ready(function () {
+            //"/<[^\/>][^>]*><\/[^>]+>/"
+            setTimeout(function () {
+                //$('div:contains(" Column ")').remove();                
+                //$('*:empty').remove();
+                $('div.container').find('div.ms-rtestate-field').each(function (index) {
+
+                    if ($(this).prev('div') != undefined && $(this).prev('div')[0] != undefined && $(this).prev('div')[0].innerText.indexOf('Column') > -1) {
+                        $(this).prev('div')[0].remove();
+                    }
+                    if ($(this).closest('div.row') != undefined && $(this).closest('div.row')[0] != undefined && $(this).closest('div.row')[0].innerText === '') {
+                        $(this).closest('div.row')[0].remove();
+                    }
+                });
+
+                $('div.container').find('div.row').each(function (index) {
+                    if (this.innerText === '') {
+                        this.remove();
+                    }
+                });
+            }, 5000);
+        });
+    </script>
+    
+</head>
 
 
 
@@ -139,7 +166,7 @@ var g_wsaListTemplateId = 850;
 var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002foha\u002fPH\u002fDISEASESCONDITIONS\u002fDISEASESAZ", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{09b7b641-90ab-42d4-80f3-1d49c269f848}",pageItemId:13, alertsEnabled:true, siteServerRelativeUrl: "\u002foha", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};var _spWebPartComponents = new Object();//]]>
 </script>
 
-<script src="/WebResource.axd?d=Dc2sAXPFk-MGW1fL6E50mC5wg8Sh2H0RIFbBdeK3YxE0IM3PLXyn8ysQ57fU8Ttc80GyE9ZyOyN2b4ZB6jiu1aVYXwY1&amp;t=636284381271971599" type="text/javascript"></script>
+<script src="/WebResource.axd?d=Dc2sAXPFk-MGW1fL6E50mC5wg8Sh2H0RIFbBdeK3YxE0IM3PLXyn8ysQ57fU8Ttc80GyE9ZyOyN2b4ZB6jiu1aVYXwY1&amp;t=636271419501517547" type="text/javascript"></script>
 <script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
 <script type="text/javascript">
 //<![CDATA[
@@ -336,6 +363,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 		<div class="col-md-12">
 			<div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1_label" style='display:none'>Full Width Column 1</div><div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1__ControlWrapper_OregonRichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField1_label"><p style="text-align:right"><a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank" style="width:130px;margin-bottom:10px"><span class="fa fa-external-link" aria-hidden="true"></span> CDC Website</a> <a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index-Chinese.html" target="_blank" style="width:75px;margin-bottom:10px">中文</a> <a class="btn btn-default" href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html" target="_blank" style="width:75px;margin-bottom:10px">Español</a></p>
 <p style="text-align:right"><em>Page last updated March 14, 2020</em></p>
+
 <h2 class="ews-h2-orange-stripe">Novel Coronavirus Updates (COVID-19)</h2>
 
 
@@ -351,21 +379,23 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 <a title="Follow OHA on Twitter" href="https://twitter.com/OHAOregon" target="_blank"><img class="ms-rteImage-Thumbnail" alt="OHA Twitter" src="/oha/PH/PublishingImages/social_media/twitter-large.png" style="width:35px;height:35px;margin-right:5px;margin-left:5px" /></a><a href="https://www.youtube.com/playlist?list=PLd4xfJU3qzMXx_oEU7DzWPJB0Tl3WDUuG" target="_blank"><img class="ms-rteImage-Thumbnail" src="/oha/PH/PublishingImages/social_media/youtube-60.png" alt="" style="margin:5px;width:60px;height:35px" /></a></p>
 </div>
 
+<h2 class="ews-h2-blue-stripe">Situation in Oregon</h2>
+
 
 <div    id="WebPartWPQ4"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#68e933e0-a517-47db-9ccb-024804f3cc18" aria-controls="68e933e0-a517-47db-9ccb-024804f3cc18" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="1a1bd3a5-013f-4ab2-8c76-10feccbf12f2" role="tab">
+					<a class="collapsed" href="#2f349018-5d5b-45f1-ab99-cf87d8582b06" aria-controls="2f349018-5d5b-45f1-ab99-cf87d8582b06" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="dcbb5f51-f496-4046-a2c2-46c09a8db553" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
-								<h2 class="panel-title">
-									Situation in Oregon
-								</h2><p>Details on COVID-19 cases in Oregon</p>
+								<h3 class="panel-title">
+									COVID-19 Cases in Oregon
+								</h3><p>Click for details</p>
 							</div><div class="or-accordion-heading-collapse">
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="68e933e0-a517-47db-9ccb-024804f3cc18" aria-labelledBy="1a1bd3a5-013f-4ab2-8c76-10feccbf12f2" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="2f349018-5d5b-45f1-ab99-cf87d8582b06" aria-labelledBy="dcbb5f51-f496-4046-a2c2-46c09a8db553" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass23E56795FBF0468C9F856CD297450134">
@@ -555,17 +585,17 @@ completed monitoring without developing symptoms or were determined to have no r
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#dcc5445f-26ec-4023-8956-f23f9597cfb0" aria-controls="dcc5445f-26ec-4023-8956-f23f9597cfb0" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="bd54f118-65eb-4ed0-9170-4f7cbed00078" role="tab">
+					<a class="collapsed" href="#c1d5b204-8f7b-42ac-b2d1-96dfa8438eb9" aria-controls="c1d5b204-8f7b-42ac-b2d1-96dfa8438eb9" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01"><div class="panel-heading" id="bbb25493-26d3-4ee5-98b8-47711e468fa0" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
-								<h2 class="panel-title">
+								<h3 class="panel-title">
 									Governor Brown's Executive Orders and OHA Guidance
-								</h2><p>Guidance for large events, public gatherings, employers and more</p>
+								</h3><p>Guidance for large events, public gatherings, employers and more</p>
 							</div><div class="or-accordion-heading-collapse">
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="dcc5445f-26ec-4023-8956-f23f9597cfb0" aria-labelledBy="bd54f118-65eb-4ed0-9170-4f7cbed00078" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="c1d5b204-8f7b-42ac-b2d1-96dfa8438eb9" aria-labelledBy="bbb25493-26d3-4ee5-98b8-47711e468fa0" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass87C675AE089746F2A64C32A7414A4B97">
@@ -606,6 +636,7 @@ completed monitoring without developing symptoms or were determined to have no r
 				</div>
 			</div>
 		</div></div>
+
 
 
 
@@ -653,15 +684,15 @@ completed monitoring without developing symptoms or were determined to have no r
 
 	<div class="row">
 		<div class="col-md-12">
-			<div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label" style='display:none'>Full Width Column 2</div><div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11__ControlWrapper_OregonRichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label"><h2 class="ews-h2-blue-stripe"><span class="fa fa-newspaper-o blue" aria-hidden="true"></span> Latest Updates from OHA</h2>
+			<div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label" style='display:none'>Full Width Column 2</div><div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11__ControlWrapper_OregonRichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label"><h2 class="ews-h2-blue-stripe">Latest Updates from OHA</h2>
 
 <div><div    id="WebPartWPQ3"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_81804b11_c0e0_418a_a93c_931c8b77575a" class="or-dataTablesWebPart">
-			<div id="67e88e8b-04b1-47c8-aa01-63a9adf68e8c">
+			<div id="f1a97947-f2d7-4a24-bcd5-8331fc2865c1">
 				<data-tables-web-part params="webPartId: 'g_81804b11_c0e0_418a_a93c_931c8b77575a', webPartProperties: {&quot;webPartId&quot;:&quot;g_81804b11_c0e0_418a_a93c_931c8b77575a&quot;,&quot;tableCaption&quot;:&quot;&quot;,&quot;dataSource&quot;:&quot;list&quot;,&quot;socrataId&quot;:&quot;&quot;,&quot;sharePointWebUrl&quot;:&quot;/oha/ERD&quot;,&quot;sharePointListUrl&quot;:&quot;/oha/ERD/Pages&quot;,&quot;sharePointViewName&quot;:&quot;COVID-19&quot;,&quot;responsiveMode&quot;:&quot;collapse&quot;,&quot;paginationEnabled&quot;:false,&quot;searchEnabled&quot;:false,&quot;sortEnabled&quot;:false,&quot;filterEnabled&quot;:false,&quot;stateSaveEnabled&quot;:false,&quot;copyButtonEnabled&quot;:false,&quot;printButtonEnabled&quot;:false,&quot;excelButtonEnabled&quot;:false,&quot;pdfButtonEnabled&quot;:false,&quot;tableBordered&quot;:true,&quot;tableStriped&quot;:true,&quot;tableCondensed&quot;:true}">
 
 				</data-tables-web-part>
 			</div><script type="text/javascript">
-				ko.applyBindings(null, document.getElementById('67e88e8b-04b1-47c8-aa01-63a9adf68e8c'))
+				ko.applyBindings(null, document.getElementById('f1a97947-f2d7-4a24-bcd5-8331fc2865c1'))
 			</script>
 		</div></div>
 
@@ -669,212 +700,27 @@ completed monitoring without developing symptoms or were determined to have no r
 <br /></div>
 
 
-<h2 class="ews-h2-blue-stripe"><span class="fa fa-globe blue" aria-hidden="true"></span> Situation in the U.S. and Globally</h2>
 
-<p><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">Visit the CDC website</a> for the latest updates on novel coronavirus <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">across the U.S.</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html" target="_blank">globally</a>.</p>
-<a name="resources"></a>
-<h2 class="ews-h2-blue-stripe">COVID-19 Resources</h2>
+<h2 class="ews-h2-blue-stripe">For Healthcare Partners</h2>
+
 
 <div class="well">
-<div    id="WebPartWPQ1"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82">
-			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82_ctl01" role="tablist">
+<div    id="WebPartWPQ5"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0">
+			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#2936978c-128d-403d-b0e7-0f328c94c8a3" aria-controls="2936978c-128d-403d-b0e7-0f328c94c8a3" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="dba7568d-5241-43a3-9b64-77c7a8551fc6" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Individuals and Families
-								</h3><p>Materials in multiple languages</p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="2936978c-128d-403d-b0e7-0f328c94c8a3" aria-labelledBy="dba7568d-5241-43a3-9b64-77c7a8551fc6" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClassA29423582640472699751E675002BC29">
-
-<div class="well">
-
-<h3><span class="fa fa-file-text-o" aria-hidden="true"></span> Novel Coronavirus Fact Sheet</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2356.pdf" target="_blank" title="Fact Sheet - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2356.pdf" target="_blank" title="Fact Sheet - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2356.pdf" target="_blank" title="Fact Sheet - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2356.pdf" target="_blank" title="Fact Sheet - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42356.pdf" target="_blank" title="Fact Sheet - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2356.pdf" target="_blank" title="Fact Sheet - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2356.pdf" target="_blank" title="Fact Sheet - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2356.pdf" target="_blank" title="Fact Sheet - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2356.pdf" target="_blank" title="Fact Sheet - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
-
-<div class="well">
-
-<h3><span class="fa fa-stethoscope" aria-hidden="true"></span> What You Should Know about Testing for COVID-19</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681C.pdf" target="_blank" title="What you should know about testing- English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2681c.pdf" target="_blank" title="What you should know about testing- Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681c.pdf" target="_blank" title="What you should know about testing - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2681c.pdf" target="_blank" title="What you should know about testing - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42681c.pdf" target="_blank" title="What you should know about testing- Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681c.pdf" target="_blank" title="What you should know about testing- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2681c.pdf" target="_blank" title="What you should know about testing- Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2681c.pdf" target="_blank" title="What you should know about testing- Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2681c.pdf" target="_blank" title="What you should know about testing- Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p>
-
-</div>
-
-<div class="well">
-<h3><span class="fa fa-graduation-cap" aria-hidden="true"></span> Resources for Families and Schools FAQ</h3>
-<p><a title="School FAQ - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="School FAQ - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="School FAQ - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="School FAQ - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="School FAQ - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684.pdf" target="_blank" title="School FAQ- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="School FAQ - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="School FAQ - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="School FAQ - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a>​</p></div>
-
-<div class="well">
-<h3><span class="fa fa-hand-stop-o" aria-hidden="true"></span> Prevention Flyer</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2681.pdf" target="_blank" title="Prevention Flyer - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2681.pdf" target="_blank" title="Prevention Flyer - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681.pdf" target="_blank" title="Prevention Flyer - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2681.pdf" target="_blank" title="Prevention Flyer - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42681.pdf" target="_blank" title="Prevention Flyer - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681.pdf" target="_blank" title="Prevention Flyer - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2681.pdf" target="_blank" title="Prevention Flyer - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//Li2681.pdf" target="_blank" title="Prevention Flyer - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2681.pdf" target="_blank" title="Prevention Flyer - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
-
-
-<div class="well">
-<h3><span class="fa fa-eye" aria-hidden="true"></span> Don't Touch your Face (T-zone) Flyer</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//ls2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lN2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//l42257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lh2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lR2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lV2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
-
-
-
-<div class="well">
-<h3><span class="fa fa-plane" aria-hidden="true"></span> Traveler Information Flyer</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2681B.pdf" target="_blank" title="Traveler Information - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2681B.pdf" target="_blank" title="Traveler Information - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ha2681b.pdf" target="_blank" title="Traveler Information - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2681B.pdf" target="_blank" title="Traveler Information - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42681B.pdf" target="_blank" title="Traveler Information - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681B.pdf" target="_blank" title="Traveler Information - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2681B.pdf" target="_blank" title="Traveler Information - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//Li2681b.pdf" target="_blank" title="Traveler Information - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2681B.pdf" target="_blank" title="Traveler Information - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
-
-
-<div class="well">
-<h3><span class="fa fa-thermometer" aria-hidden="true"></span> Monitoring for COVID-19 in Oregon</h3>
-<h4>Infographic: OHA and local health officials are monitoring COVID-19 in Oregon</h4>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681D.pdf" target="_blank" title="Monitoring Infographic - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2681D.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681D.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2681D.pdf" target="_blank" title="Monitoring Infographic - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42681D.pdf" target="_blank" title="Monitoring Infographic - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681D.pdf" target="_blank" title="Monitoring Infographic - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2681D.pdf" target="_blank" title="Monitoring Infographic - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2681D.pdf" target="_blank" title="Monitoring Infographic - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2681D.pdf" target="_blank" title="Monitoring Infographic - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vi​etnamese​</a></p>
-<hr />
-<h4>Fact Sheet: People at risk for COVID-19</h4>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2685.pdf" target="_blank" title="Monitoring Infographic - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2685.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2685.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2685.pdf" target="_blank" title="Monitoring Infographic - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42685.pdf" target="_blank" title="Monitoring Infographic - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2685.pdf" target="_blank" title="Monitoring Infographic - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2685.pdf" target="_blank" title="Monitoring Infographic - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2685.pdf" target="_blank" title="Monitoring Infographic - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2685.pdf" target="_blank" title="Monitoring Infographic - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vi​etnamese​</a></p>
-
-
-
-</div>
-
-
-
-</div>
-​​​​​​​​​​​​​​​​​​​​​​​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#d541e27d-3db1-48fd-badc-89b8f783de09" aria-controls="d541e27d-3db1-48fd-badc-89b8f783de09" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="ff281277-b2af-4ae3-afd2-33a60abe3c70" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Early Child Care, Schools and Higher Education
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="d541e27d-3db1-48fd-badc-89b8f783de09" aria-labelledBy="ff281277-b2af-4ae3-afd2-33a60abe3c70" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClass5C0D7AD5F0FF4C299C060FFCC9290122">
-
-
-
-
-<div class="well">
-<h3>For Questions about School Closures and Questions from Staff</h3>
-<p><a title="School Closures and Staff Quesetions - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="School Closures and Staff Quesetions - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="School Closures and Staff Quesetions - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="School Closures and Staff Quesetions - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="School Closures and Staff Quesetions - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684B.pdf" target="_blank" title="School Closures and Staff Quesetions - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="School Closures and Staff Quesetions - Marshallese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l332684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Marshallese</a> <a title="School Closures and Staff Quesetions - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="School Closures and Staff Quesetions - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="School Closures and Staff Quesetions - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
-
-<div class="well">
-<h3>Resources for Families and Schools FAQ</h3>
-<p><a title="For Families - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="For Families - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="For Families - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="For Families - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="For Families - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684.pdf" target="_blank" title="School FAQ- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="For Families - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="For Families - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="For Families - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a>​</p></div>
-
-
-
-<div class="well"><h3>Child Care Resources from Early Learning Division</h3>
-<p>In partnership with OHA, the Early Learning Division (ELD) has created new tools for addressing concerns in child care around COVID-19. </p>
-<ul><li><a href="https://oregonearlylearning.com/COVID-19-Resources" target="_blank">ELD's COVID-19 web page</a></li></ul>
-</div>
-
-
-<div class="well"><h3>Resources from Oregon Department of Education</h3>
-
-<p></p>
-<ul>
-<a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-cases-in-Oregon-schools.pdf" target="_blank">
-</a><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-cases-in-Oregon-schools.pdf" target="_blank"></a><a href="/ode/students-and-family/healthsafety/Pages/COVID19.aspx" target="_blank">ODE's COVID-19 web page</a></li></ul>
-<p></p></div>
-
-
-
-
-<div class="well"><h3>Resources from Oregon Higher Education</h3>
-<ul><li>​<a href="/highered/about/Pages/COVID19.aspx" target="_blank">Higher Education's COVID-19 web page​</a></li></ul></div></div>
-​​​​​​​​​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#5ad096f9-7541-4cf5-96af-8f31b37c6240" aria-controls="5ad096f9-7541-4cf5-96af-8f31b37c6240" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="27ffc98b-da76-4df3-b1e2-40dbdee672da" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Housing Services and Home Care Workers
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="5ad096f9-7541-4cf5-96af-8f31b37c6240" aria-labelledBy="27ffc98b-da76-4df3-b1e2-40dbdee672da" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
-<div class="well">
-<h3>Shelter Guidance​</h3>
-
-<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Shelter-Guidance-OHA2256.pdf" target="_blank">Interim COVID-19 Shelter Guidance​</a> <span style="color:rgb(255, 0, 0)">Updated 3/9/2020</span></li></ul>
-
-</div>
-
-<div class="well">
-<h3>Home Care Workers</h3>
-
-<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Infection-Control-Guidance-Home-Care-Workers.pdf" target="_blank">OHA Interim COVID-19 Infection Control Guidance for Workers Providing In-home Personal Care​</a> <span style="color:rgb(255, 0, 0)">3/10/2020</span></li></ul>
-
-</div></div>
-​​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#125c5e3e-c726-4597-b79d-4e78960bcbc1" aria-controls="125c5e3e-c726-4597-b79d-4e78960bcbc1" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="304d1dc7-e8be-4ccf-83c1-a401b465cdd3" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Food Service
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="125c5e3e-c726-4597-b79d-4e78960bcbc1" aria-labelledBy="304d1dc7-e8be-4ccf-83c1-a401b465cdd3" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClassBB3371A79B6F402D83C36A84ABEE012C">
-
-<div class="well"><h3>Cleaning Tips for Restaurants, Food Carts and other Food Service Operations</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2272.pdf" target="_blank" title="Cleaning Tips for Food Service - English" style="margin-bottom:10px;width:230px">English</a>​</p>
-</div>
-</div>
-​​​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#b5d6e997-1047-4f1a-a444-1a9c72337891" aria-controls="b5d6e997-1047-4f1a-a444-1a9c72337891" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="867ef4b3-88a2-4a01-8eae-e173d4d51d1d" role="tab">
+					<a class="collapsed" href="#49b6c38f-ce6a-4231-bd5d-e5fbd83a439a" aria-controls="49b6c38f-ce6a-4231-bd5d-e5fbd83a439a" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="9efb0f32-9037-4982-99cb-d7670dc31273" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
 							</div><div class="or-accordion-heading-title">
 								<h3 class="panel-title">
 									Healthcare Providers, EMS, PSAPs, Clinical Laboratories and Pharmacies
-								</h3><p></p>
+								</h3>
 							</div><div class="or-accordion-heading-collapse">
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="b5d6e997-1047-4f1a-a444-1a9c72337891" aria-labelledBy="867ef4b3-88a2-4a01-8eae-e173d4d51d1d" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="49b6c38f-ce6a-4231-bd5d-e5fbd83a439a" aria-labelledBy="9efb0f32-9037-4982-99cb-d7670dc31273" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass27C5BB6AB16C45B5A52F80AF11A85C42"><div class="well"><h3>Get Approval for Testing</h3>
@@ -933,19 +779,19 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#3a5e28fb-9477-4944-bc00-e66b4ddd6b5d" aria-controls="3a5e28fb-9477-4944-bc00-e66b4ddd6b5d" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="9e84aaec-ec50-4165-afaa-83573bb635db" role="tab">
+					<a class="collapsed" href="#2fea95ab-14b7-4a58-8d2a-f7748ddc5b7d" aria-controls="2fea95ab-14b7-4a58-8d2a-f7748ddc5b7d" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="39b61526-3546-4f65-8586-d3455ada246a" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
 							</div><div class="or-accordion-heading-title">
 								<h3 class="panel-title">
 									Local Public Health Authorities and Tribes
-								</h3><p></p>
+								</h3>
 							</div><div class="or-accordion-heading-collapse">
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="3a5e28fb-9477-4944-bc00-e66b4ddd6b5d" aria-labelledBy="9e84aaec-ec50-4165-afaa-83573bb635db" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="2fea95ab-14b7-4a58-8d2a-f7748ddc5b7d" aria-labelledBy="39b61526-3546-4f65-8586-d3455ada246a" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass419ED99C37D2483487E2FFE8A53187D5"><div class="well"><h3>Investigative Guidelines</h3>
@@ -969,8 +815,243 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div></div>
+</div>
+
+
+<a name="resources"></a>
+<h2 class="ews-h2-blue-stripe">COVID-19 Resources for the Community</h2>
+
+<div class="well">
+<div    id="WebPartWPQ1"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82">
+			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82_ctl01" role="tablist">
+				<div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#9b70dbce-f59f-4c25-b951-d400d62ddcc7" aria-controls="9b70dbce-f59f-4c25-b951-d400d62ddcc7" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="bf7293d2-23af-4ab0-8fa4-3e240052a978" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Individuals and Families
+								</h3><p>Materials in multiple languages</p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="9b70dbce-f59f-4c25-b951-d400d62ddcc7" aria-labelledBy="bf7293d2-23af-4ab0-8fa4-3e240052a978" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClassA29423582640472699751E675002BC29">
+
+<div class="well">
+
+<h3><span class="fa fa-file-text-o" aria-hidden="true"></span> Novel Coronavirus Fact Sheet</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2356.pdf" target="_blank" title="Fact Sheet - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2356.pdf" target="_blank" title="Fact Sheet - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2356.pdf" target="_blank" title="Fact Sheet - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2356.pdf" target="_blank" title="Fact Sheet - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42356.pdf" target="_blank" title="Fact Sheet - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2356.pdf" target="_blank" title="Fact Sheet - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2356.pdf" target="_blank" title="Fact Sheet - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2356.pdf" target="_blank" title="Fact Sheet - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2356.pdf" target="_blank" title="Fact Sheet - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
+
+<div class="well">
+
+<h3><span class="fa fa-stethoscope" aria-hidden="true"></span> What You Should Know about Testing for COVID-19</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681C.pdf" target="_blank" title="What you should know about testing- English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2681c.pdf" target="_blank" title="What you should know about testing- Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681c.pdf" target="_blank" title="What you should know about testing - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2681c.pdf" target="_blank" title="What you should know about testing - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42681c.pdf" target="_blank" title="What you should know about testing- Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681c.pdf" target="_blank" title="What you should know about testing- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2681c.pdf" target="_blank" title="What you should know about testing- Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2681c.pdf" target="_blank" title="What you should know about testing- Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2681c.pdf" target="_blank" title="What you should know about testing- Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p>
+
+</div>
+
+<div class="well">
+<h3><span class="fa fa-graduation-cap" aria-hidden="true"></span> Resources for Families and Schools FAQ</h3>
+<p><a title="School FAQ - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="School FAQ - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="School FAQ - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="School FAQ - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="School FAQ - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684.pdf" target="_blank" title="School FAQ- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="School FAQ - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="School FAQ - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="School FAQ - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a>​</p></div>
+
+<div class="well">
+<h3><span class="fa fa-hand-stop-o" aria-hidden="true"></span> Prevention Flyer</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2681.pdf" target="_blank" title="Prevention Flyer - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2681.pdf" target="_blank" title="Prevention Flyer - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681.pdf" target="_blank" title="Prevention Flyer - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2681.pdf" target="_blank" title="Prevention Flyer - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42681.pdf" target="_blank" title="Prevention Flyer - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681.pdf" target="_blank" title="Prevention Flyer - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2681.pdf" target="_blank" title="Prevention Flyer - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//Li2681.pdf" target="_blank" title="Prevention Flyer - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2681.pdf" target="_blank" title="Prevention Flyer - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
+
+
+<div class="well">
+<h3><span class="fa fa-eye" aria-hidden="true"></span> Don't Touch your Face (T-zone) Flyer</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//ls2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lN2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//l42257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lh2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lR2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//lV2257.pdf" target="_blank" title="Don't Touch Your Face Flyer - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
+
+
+
+<div class="well">
+<h3><span class="fa fa-plane" aria-hidden="true"></span> Traveler Information Flyer</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2681B.pdf" target="_blank" title="Traveler Information - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2681B.pdf" target="_blank" title="Traveler Information - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ha2681b.pdf" target="_blank" title="Traveler Information - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2681B.pdf" target="_blank" title="Traveler Information - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42681B.pdf" target="_blank" title="Traveler Information - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681B.pdf" target="_blank" title="Traveler Information - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2681B.pdf" target="_blank" title="Traveler Information - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//Li2681b.pdf" target="_blank" title="Traveler Information - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2681B.pdf" target="_blank" title="Traveler Information - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
+
+
+<div class="well">
+<h3><span class="fa fa-thermometer" aria-hidden="true"></span> Monitoring for COVID-19 in Oregon</h3>
+<h4>Infographic: OHA and local health officials are monitoring COVID-19 in Oregon</h4>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2681D.pdf" target="_blank" title="Monitoring Infographic - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2681D.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2681D.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2681D.pdf" target="_blank" title="Monitoring Infographic - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42681D.pdf" target="_blank" title="Monitoring Infographic - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2681D.pdf" target="_blank" title="Monitoring Infographic - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2681D.pdf" target="_blank" title="Monitoring Infographic - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2681D.pdf" target="_blank" title="Monitoring Infographic - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2681D.pdf" target="_blank" title="Monitoring Infographic - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vi​etnamese​</a></p>
+<hr />
+<h4>Fact Sheet: People at risk for COVID-19</h4>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2685.pdf" target="_blank" title="Monitoring Infographic - English" style="margin-bottom:10px;width:230px">English​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2685.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2685.pdf" target="_blank" title="Monitoring Infographic - " style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2685.pdf" target="_blank" title="Monitoring Infographic - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42685.pdf" target="_blank" title="Monitoring Infographic - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese​</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2685.pdf" target="_blank" title="Monitoring Infographic - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2685.pdf" target="_blank" title="Monitoring Infographic - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2685.pdf" target="_blank" title="Monitoring Infographic - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2685.pdf" target="_blank" title="Monitoring Infographic - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vi​etnamese​</a></p>
+
+
+
+</div>
+
+
+
+</div>
+​​​​​​​​​​​​​​​​​​​​​​​
+							</div>
+						</div>
+					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#62b4950a-3a0a-4ed4-a18f-e06f9844b0e9" aria-controls="62b4950a-3a0a-4ed4-a18f-e06f9844b0e9" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="95232a23-45dd-4948-9973-ae3337e05956" role="tab">
+					<a class="collapsed" href="#f145b221-6622-4452-98f4-296a2682b10b" aria-controls="f145b221-6622-4452-98f4-296a2682b10b" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="e33ea5b8-7c4a-4447-a9b2-e8ea0fa82a62" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Discrimination and Stigma
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="f145b221-6622-4452-98f4-296a2682b10b" aria-labelledBy="e33ea5b8-7c4a-4447-a9b2-e8ea0fa82a62" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClassE868DBCEA354498D950D447FBAC1497E">
+
+<div class="well">
+
+<h3><span class="fa fa-users" aria-hidden="true"></span> Viruses don’t discriminate. Neither should we.</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2258.pdf" target="_blank" title="Anti-discrimination - English" style="margin-bottom:10px;width:230px">English</a> </p>
+
+
+</div>
+
+<div class="well">
+<h3><span class="fa fa-hand-stop-o" aria-hidden="true"></span> Stop Coronavirus Racism. Combat Fear and Misinformation with Facts.</h3>
+
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2273.pdf" target="_blank" title="Stop Coronavirus Racism - English" style="margin-bottom:10px;width:230px">English</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LS2273.pdf" target="_blank" title="Stop Coronavirus Racism - Spanish" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2273.pdf" target="_blank" title="Stop Coronavirus Racism - Arabic" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LN2273.pdf" target="_blank" title="Stop Coronavirus Racism - Simplified Chinese" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//L42273.pdf" target="_blank" title="Stop Coronavirus Racism - Traditional Chinese" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2273.pdf" target="_blank" title="Stop Coronavirus Racism - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LR2273.pdf" target="_blank" title="Stop Coronavirus Racism - Russian" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2273.pdf" target="_blank" title="Stop Coronavirus Racism - Somali" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LV2273.pdf" target="_blank" title="Stop Coronavirus Racism - Vietnamese" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p>
+
+
+</div>
+
+
+​</div>
+​​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#92947b03-d3c4-4b1b-b4ed-a648e61c811b" aria-controls="92947b03-d3c4-4b1b-b4ed-a648e61c811b" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="3c257267-2863-4ec2-a596-9de5be737a60" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Early Child Care, Schools and Higher Education
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="92947b03-d3c4-4b1b-b4ed-a648e61c811b" aria-labelledBy="3c257267-2863-4ec2-a596-9de5be737a60" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClass5C0D7AD5F0FF4C299C060FFCC9290122">
+
+
+
+
+<div class="well">
+<h3>For Questions about School Closures and Questions from Staff</h3>
+<p><a title="School Closures and Staff Quesetions - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="School Closures and Staff Quesetions - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="School Closures and Staff Quesetions - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="School Closures and Staff Quesetions - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="School Closures and Staff Quesetions - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684B.pdf" target="_blank" title="School Closures and Staff Quesetions - Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="School Closures and Staff Quesetions - Marshallese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l332684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Marshallese</a> <a title="School Closures and Staff Quesetions - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="School Closures and Staff Quesetions - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="School Closures and Staff Quesetions - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684B.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a></p></div>
+
+<div class="well">
+<h3>Resources for Families and Schools FAQ</h3>
+<p><a title="For Families - English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">English</a> <a title="For Families - Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Español / Spanish</a> <a title="For Families - Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">اللغة العربية / Arabic</a> <a title="For Families - Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">简体中文 / Simplified Chinese</a> <a title="For Families - Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l42684.pdf" target="_blank" style="margin-bottom:10px;width:230px">繁體中文 / Traditional Chinese</a> <a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2684.pdf" target="_blank" title="School FAQ- Hmong" style="margin-bottom:10px;width:230px">Lus Hmoob / Hmong</a> <a title="For Families - Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Русский / Russian</a> <a title="For Families - Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Af Soomaali / Somali</a> <a title="For Families - Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2684.pdf" target="_blank" style="margin-bottom:10px;width:230px">Tiếng Việt / Vietnamese​</a>​</p></div>
+
+
+
+<div class="well"><h3>Child Care Resources from Early Learning Division</h3>
+<p>In partnership with OHA, the Early Learning Division (ELD) has created new tools for addressing concerns in child care around COVID-19. </p>
+<ul><li><a href="https://oregonearlylearning.com/COVID-19-Resources" target="_blank">ELD's COVID-19 web page</a></li></ul>
+</div>
+
+
+<div class="well"><h3>Resources from Oregon Department of Education</h3>
+
+<p></p>
+<ul>
+<a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-cases-in-Oregon-schools.pdf" target="_blank">
+</a><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-cases-in-Oregon-schools.pdf" target="_blank"></a><a href="/ode/students-and-family/healthsafety/Pages/COVID19.aspx" target="_blank">ODE's COVID-19 web page</a></li></ul>
+<p></p></div>
+
+
+
+
+<div class="well"><h3>Resources from Oregon Higher Education</h3>
+<ul><li>​<a href="/highered/about/Pages/COVID19.aspx" target="_blank">Higher Education's COVID-19 web page​</a></li></ul></div></div>
+​​​​​​​​​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#6ef892fb-80a1-4557-8db7-1d07bc6f803d" aria-controls="6ef892fb-80a1-4557-8db7-1d07bc6f803d" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="99a24618-b5fe-42ca-9786-134608623923" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Housing Services and Home Care Workers
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="6ef892fb-80a1-4557-8db7-1d07bc6f803d" aria-labelledBy="99a24618-b5fe-42ca-9786-134608623923" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
+<div class="well">
+<h3>Shelter Guidance​</h3>
+
+<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Shelter-Guidance-OHA2256.pdf" target="_blank">Interim COVID-19 Shelter Guidance​</a> <span style="color:rgb(255, 0, 0)">Updated 3/9/2020</span></li></ul>
+
+</div>
+
+<div class="well">
+<h3>Home Care Workers</h3>
+
+<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Infection-Control-Guidance-Home-Care-Workers.pdf" target="_blank">OHA Interim COVID-19 Infection Control Guidance for Workers Providing In-home Personal Care​</a> <span style="color:rgb(255, 0, 0)">3/10/2020</span></li></ul>
+
+</div></div>
+​​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#62c07735-1483-4126-aeb9-e9a79cbf1307" aria-controls="62c07735-1483-4126-aeb9-e9a79cbf1307" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="3432bddc-a931-428e-a3ad-d2fccf0f5284" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Food Service
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="62c07735-1483-4126-aeb9-e9a79cbf1307" aria-labelledBy="3432bddc-a931-428e-a3ad-d2fccf0f5284" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClassBB3371A79B6F402D83C36A84ABEE012C">
+
+<div class="well"><h3>Cleaning Tips for Restaurants, Food Carts and other Food Service Operations</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2272.pdf" target="_blank" title="Cleaning Tips for Food Service - English" style="margin-bottom:10px;width:230px">English</a>​</p>
+</div>
+</div>
+​​​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#41b445c9-c2a6-4b2d-b415-324a45975519" aria-controls="41b445c9-c2a6-4b2d-b415-324a45975519" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="1ecbe810-abcc-45f6-bb6e-62f133b788a3" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -982,7 +1063,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="62b4950a-3a0a-4ed4-a18f-e06f9844b0e9" aria-labelledBy="95232a23-45dd-4948-9973-ae3337e05956" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="41b445c9-c2a6-4b2d-b415-324a45975519" aria-labelledBy="1ecbe810-abcc-45f6-bb6e-62f133b788a3" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5747483E81D44EB49F777CCF9C5CA887"><div class="well"><h3><span class="fa fa-microphone" aria-hidden="true"></span> Media Requests</h3>
@@ -1050,6 +1131,9 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 </div>
 
 
+<h2 class="ews-h2-blue-stripe"><span class="fa fa-globe blue" aria-hidden="true"></span> Situation in the U.S. and Globally</h2>
+
+<p><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">Visit the CDC website</a> for the latest updates on novel coronavirus <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">across the U.S.</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html" target="_blank">globally</a>.</p>
 
 </div>
 		</div>
@@ -1156,9 +1240,9 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 	<div class="col-sm-3">
 		<h3>
 			Oregon Health Authority
-		</h3><div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3"><p><span class="fa fa-facebook-square blue"></span> <a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
-  <span class="fa fa-twitter-square blue"></span> <a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
-  <span class="fa fa-envelope blue"> </span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>​</p>
+		</h3><div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3"><p><span class="fa fa-facebook-square blue" aria-hidden="true"></span> <a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br />
+  <span class="fa fa-twitter-square blue" aria-hidden="true"></span> <a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br />
+  <span class="fa fa-envelope blue" aria-hidden="true"> </span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>​</p>
 
 <ul class="list-unstyled">
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/Contact-Us.aspx">Contact Us</a> </li>
@@ -1181,7 +1265,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 			Access
 		</h3><div class="ExternalClass926DA2AB6E52485680F204CE3D47CE3E">
 <ul class="list-unstyled">
-  <li><a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue"></span> Language Access</a> </li>
+  <li><a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue" aria-hidden="true"></span> Language Access</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="https://aix-xweb1p.state.or.us/es_xweb/DHSforms/Served/le2996.pdf" target="_blank">OHA Nondiscrimination Policy</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/ADA-Notice.aspx">OHA ADA Policy and Request for Modification</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/Notice-Privacy-Practices.aspx">OHA Notice of Privacy Practices</a>
