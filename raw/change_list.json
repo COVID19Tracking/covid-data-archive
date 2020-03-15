@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-15T19:56:53.930748",
-  "end_date": "2020-03-15T19:56:56.264437",
-  "previous_date": "2020-03-15T19:56:13.908011",
-  "time_lapsed": "0:00:02.333689",
+  "start_date": "2020-03-15T20:07:54.809898",
+  "end_date": "2020-03-15T20:07:57.284995",
+  "previous_date": "2020-03-15T19:59:06.922823",
+  "time_lapsed": "0:00:02.475097",
   "complete": true,
   "error_message": null,
   "items": [
@@ -24,7 +24,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:50.550545",
-      "checked": "2020-03-15T19:50:33.176340",
+      "checked": "2020-03-15T19:59:08.108210",
       "updated": "2020-03-15T08:37:19.691316",
       "failed": null,
       "source": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx"
@@ -36,7 +36,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:50.844758",
-      "checked": "2020-03-15T19:50:33.477541",
+      "checked": "2020-03-15T19:59:08.419379",
       "updated": "2020-03-15T08:37:20.000490",
       "failed": null,
       "source": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx"
@@ -48,7 +48,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:51.159916",
-      "checked": "2020-03-15T19:50:33.834579",
+      "checked": "2020-03-15T19:59:08.721576",
       "updated": "2020-03-15T18:35:24.263343",
       "failed": null,
       "source": "http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html"
@@ -67,12 +67,12 @@
     },
     {
       "name": "AR.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:52.889297",
-      "checked": "2020-03-15T19:50:34.875798",
+      "checked": "2020-03-15T19:59:09.804303",
       "updated": "2020-03-15T19:50:34.875798",
       "failed": null,
       "source": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus"
@@ -96,7 +96,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:54.199791",
-      "checked": "2020-03-15T19:50:35.139088",
+      "checked": "2020-03-15T19:59:10.104249",
       "updated": "2020-03-15T08:37:22.306642",
       "failed": null,
       "source": "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
@@ -120,7 +120,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:56.363003",
-      "checked": "2020-03-15T19:50:38.539992",
+      "checked": "2020-03-15T19:59:10.980901",
       "updated": "2020-03-15T08:37:25.164081",
       "failed": null,
       "source": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx"
@@ -144,20 +144,20 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:57.590720",
-      "checked": "2020-03-15T19:50:39.121440",
+      "checked": "2020-03-15T19:59:11.523196",
       "updated": "2020-03-15T17:22:08.232766",
       "failed": null,
       "source": "https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus"
     },
     {
       "name": "CO_data.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:58.071434",
-      "checked": "2020-03-15T19:50:40.535653",
-      "updated": "2020-03-15T15:16:34.811358",
+      "checked": "2020-03-15T19:59:12.060447",
+      "updated": "2020-03-15T19:59:12.060447",
       "failed": null,
       "source": "https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub"
     },
@@ -168,7 +168,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:58.601017",
-      "checked": "2020-03-15T19:50:41.030329",
+      "checked": "2020-03-15T19:59:12.664828",
       "updated": "2020-03-15T17:22:09.346780",
       "failed": null,
       "source": "https://portal.ct.gov/Coronavirus"
@@ -192,7 +192,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:59.476676",
-      "checked": "2020-03-15T19:50:41.514044",
+      "checked": "2020-03-15T19:59:13.147260",
       "updated": "2020-03-15T18:05:39.694754",
       "failed": null,
       "source": "https://coronavirus.dc.gov/"
@@ -204,7 +204,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:00.016233",
-      "checked": "2020-03-15T19:50:42.144350",
+      "checked": "2020-03-15T19:59:13.777144",
       "updated": "2020-03-15T07:29:08.831647",
       "failed": null,
       "source": "https://coronavirus.dc.gov/page/coronavirus-surveillance-data"
@@ -216,7 +216,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:00.387241",
-      "checked": "2020-03-15T19:50:42.591154",
+      "checked": "2020-03-15T19:59:14.272623",
       "updated": "2020-03-15T07:29:09.289421",
       "failed": null,
       "source": "https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html"
@@ -240,7 +240,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:01.190094",
-      "checked": "2020-03-15T19:52:06.627158",
+      "checked": "2020-03-15T19:59:14.722418",
       "updated": "2020-03-15T19:05:40.972625",
       "failed": null,
       "source": "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
@@ -264,7 +264,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:01.924131",
-      "checked": "2020-03-15T19:50:47.235732",
+      "checked": "2020-03-15T19:59:15.104397",
       "updated": "2020-03-15T15:16:38.593218",
       "failed": null,
       "source": "https://dph.georgia.gov/novelcoronavirus"
@@ -276,7 +276,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.203385",
-      "checked": "2020-03-15T19:50:47.642645",
+      "checked": "2020-03-15T19:59:15.464289",
       "updated": "2020-03-15T16:35:34.179837",
       "failed": null,
       "source": "https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report"
@@ -288,7 +288,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.208400",
-      "checked": "2020-03-15T19:50:48.265976",
+      "checked": "2020-03-15T19:59:15.991294",
       "updated": "2020-03-15T08:37:34.052224",
       "failed": null,
       "source": "https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/"
@@ -336,7 +336,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.221368",
-      "checked": "2020-03-15T19:50:50.295547",
+      "checked": "2020-03-15T19:59:17.118018",
       "updated": "2020-03-15T07:29:12.899776",
       "failed": null,
       "source": "https://coronavirus.idaho.gov/"
@@ -355,12 +355,12 @@
     },
     {
       "name": "IL.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.227321",
-      "checked": "2020-03-15T19:50:52.222391",
+      "checked": "2020-03-15T19:59:18.684472",
       "updated": "2020-03-15T19:50:52.222391",
       "failed": null,
       "source": "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
@@ -379,12 +379,12 @@
     },
     {
       "name": "IN.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.236296",
-      "checked": "2020-03-15T19:50:52.629306",
+      "checked": "2020-03-15T19:59:19.082679",
       "updated": "2020-03-15T19:50:52.629306",
       "failed": null,
       "source": "https://www.in.gov/isdh/28470.htm"
@@ -408,7 +408,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.241283",
-      "checked": "2020-03-15T19:50:53.971309",
+      "checked": "2020-03-15T19:59:19.321043",
       "updated": "2020-03-15T07:29:14.746827",
       "failed": null,
       "source": "http://www.kdheks.gov/coronavirus/"
@@ -432,7 +432,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.248264",
-      "checked": "2020-03-15T19:50:54.349297",
+      "checked": "2020-03-15T19:59:19.681112",
       "updated": "2020-03-15T08:37:38.290884",
       "failed": null,
       "source": "https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx"
@@ -456,7 +456,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.258239",
-      "checked": "2020-03-15T19:50:54.599627",
+      "checked": "2020-03-15T19:59:19.911463",
       "updated": "2020-03-15T07:29:15.406663",
       "failed": null,
       "source": "http://ldh.la.gov/Coronavirus/"
@@ -475,24 +475,24 @@
     },
     {
       "name": "MA.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.266217",
-      "checked": "2020-03-15T19:50:54.866914",
+      "checked": "2020-03-15T19:59:20.146214",
       "updated": "2020-03-15T19:50:54.866914",
       "failed": null,
       "source": "https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19"
     },
     {
       "name": "MA_data.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.280179",
-      "checked": "2020-03-15T19:50:55.101288",
+      "checked": "2020-03-15T19:59:20.311823",
       "updated": "2020-03-15T19:50:55.101288",
       "failed": null,
       "source": "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring"
@@ -504,7 +504,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.283171",
-      "checked": "2020-03-15T19:50:55.693704",
+      "checked": "2020-03-15T19:59:20.837396",
       "updated": "2020-03-15T08:37:39.580435",
       "failed": null,
       "source": "https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx"
@@ -528,7 +528,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.292149",
-      "checked": "2020-03-15T19:50:56.546424",
+      "checked": "2020-03-15T19:59:21.711057",
       "updated": "2020-03-15T16:35:42.164474",
       "failed": null,
       "source": "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
@@ -552,7 +552,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.299165",
-      "checked": "2020-03-15T19:50:56.787774",
+      "checked": "2020-03-15T19:59:22.005272",
       "updated": "2020-03-15T08:37:40.588914",
       "failed": null,
       "source": "https://www.michigan.gov/coronavirus"
@@ -576,7 +576,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.304139",
-      "checked": "2020-03-15T19:50:56.985248",
+      "checked": "2020-03-15T19:59:22.257607",
       "updated": "2020-03-15T08:37:40.833261",
       "failed": null,
       "source": "https://www.health.state.mn.us/diseases/coronavirus/index.html"
@@ -588,7 +588,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.306150",
-      "checked": "2020-03-15T19:50:57.216634",
+      "checked": "2020-03-15T19:59:22.490971",
       "updated": "2020-03-15T15:16:47.989107",
       "failed": null,
       "source": "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
@@ -600,7 +600,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.311096",
-      "checked": "2020-03-15T19:50:57.453004",
+      "checked": "2020-03-15T19:59:22.748287",
       "updated": "2020-03-15T17:22:20.709183",
       "failed": null,
       "source": "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/"
@@ -624,7 +624,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.316083",
-      "checked": "2020-03-15T19:50:57.803061",
+      "checked": "2020-03-15T19:59:23.106712",
       "updated": "2020-03-15T18:05:51.072318",
       "failed": null,
       "source": "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
@@ -648,7 +648,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.323064",
-      "checked": "2020-03-15T19:50:58.399464",
+      "checked": "2020-03-15T19:59:23.632306",
       "updated": "2020-03-15T08:37:42.377741",
       "failed": null,
       "source": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt"
@@ -672,7 +672,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.329083",
-      "checked": "2020-03-15T19:50:58.805378",
+      "checked": "2020-03-15T19:59:24.086090",
       "updated": "2020-03-15T16:35:44.755087",
       "failed": null,
       "source": "https://www.ncdhhs.gov/divisions/public-health/coronavirus-disease-2019-covid-19-response-north-carolina"
@@ -684,7 +684,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.331079",
-      "checked": "2020-03-15T19:50:59.196330",
+      "checked": "2020-03-15T19:59:24.714410",
       "updated": "2020-03-15T15:16:50.253030",
       "failed": null,
       "source": "https://www.ncdhhs.gov/covid-19-case-count-north-carolina"
@@ -696,7 +696,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.334126",
-      "checked": "2020-03-15T19:50:59.864544",
+      "checked": "2020-03-15T19:59:25.529230",
       "updated": "2020-03-15T08:37:43.843819",
       "failed": null,
       "source": "https://www.health.nd.gov/diseases-conditions/coronavirus"
@@ -708,7 +708,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.340019",
-      "checked": "2020-03-15T19:51:00.481895",
+      "checked": "2020-03-15T19:59:26.243321",
       "updated": "2020-03-15T08:37:44.502059",
       "failed": null,
       "source": "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
@@ -720,7 +720,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.342053",
-      "checked": "2020-03-15T19:51:01.366529",
+      "checked": "2020-03-15T19:59:26.963394",
       "updated": "2020-03-15T08:37:45.349858",
       "failed": null,
       "source": "http://dhhs.ne.gov/Pages/Coronavirus.aspx"
@@ -744,7 +744,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.346044",
-      "checked": "2020-03-15T19:51:02.261136",
+      "checked": "2020-03-15T19:59:27.809132",
       "updated": "2020-03-15T18:35:47.393424",
       "failed": null,
       "source": "https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm"
@@ -763,24 +763,24 @@
     },
     {
       "name": "NJ.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.362958",
-      "checked": "2020-03-15T19:51:02.852556",
+      "checked": "2020-03-15T19:59:28.302811",
       "updated": "2020-03-15T19:51:02.852556",
       "failed": null,
       "source": "https://www.nj.gov/health/cd/topics/ncov.shtml"
     },
     {
       "name": "NJ_data.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.364952",
-      "checked": "2020-03-15T19:51:03.224555",
+      "checked": "2020-03-15T19:59:28.692767",
       "updated": "2020-03-15T19:51:03.224555",
       "failed": null,
       "source": "https://www.nj.gov/health/"
@@ -792,7 +792,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.370936",
-      "checked": "2020-03-15T19:51:03.509796",
+      "checked": "2020-03-15T19:59:28.998952",
       "updated": "2020-03-15T17:22:26.916974",
       "failed": null,
       "source": "https://cv.nmhealth.org/"
@@ -816,7 +816,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.374926",
-      "checked": "2020-03-15T19:51:06.986037",
+      "checked": "2020-03-15T19:59:32.325010",
       "updated": "2020-03-15T08:37:52.227105",
       "failed": null,
       "source": "http://dpbh.nv.gov/coronavirus/"
@@ -835,12 +835,12 @@
     },
     {
       "name": "NY.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.381907",
-      "checked": "2020-03-15T19:51:07.389957",
+      "checked": "2020-03-15T19:59:32.743891",
       "updated": "2020-03-15T19:51:07.389957",
       "failed": null,
       "source": "https://www.health.ny.gov/diseases/communicable/coronavirus/"
@@ -859,12 +859,12 @@
     },
     {
       "name": "OH.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.387892",
-      "checked": "2020-03-15T19:51:08.072131",
+      "checked": "2020-03-15T19:59:33.584642",
       "updated": "2020-03-15T19:51:08.072131",
       "failed": null,
       "source": "https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/"
@@ -888,7 +888,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.393917",
-      "checked": "2020-03-15T19:51:08.456106",
+      "checked": "2020-03-15T19:59:33.974599",
       "updated": "2020-03-15T18:35:54.962403",
       "failed": null,
       "source": "https://coronavirus.health.ok.gov"
@@ -907,12 +907,12 @@
     },
     {
       "name": "OR.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.401876",
-      "checked": "2020-03-15T19:51:10.245318",
+      "checked": "2020-03-15T19:59:35.666073",
       "updated": "2020-03-15T19:51:10.245318",
       "failed": null,
       "source": "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx"
@@ -936,7 +936,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.406873",
-      "checked": "2020-03-15T19:51:11.774229",
+      "checked": "2020-03-15T19:59:36.136814",
       "updated": "2020-03-15T16:36:01.695770",
       "failed": null,
       "source": "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
@@ -960,7 +960,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.425791",
-      "checked": "2020-03-15T19:51:12.175165",
+      "checked": "2020-03-15T19:59:36.497867",
       "updated": "2020-03-15T08:37:57.106380",
       "failed": null,
       "source": "https://health.ri.gov/diseases/respiratory/?parm=163"
@@ -972,7 +972,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.427823",
-      "checked": "2020-03-15T19:51:12.562128",
+      "checked": "2020-03-15T19:59:36.841945",
       "updated": "2020-03-15T02:24:53.316905",
       "failed": null,
       "source": "https://health.ri.gov/data/covid-19/"
@@ -984,7 +984,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.435763",
-      "checked": "2020-03-15T19:51:12.925150",
+      "checked": "2020-03-15T19:59:37.215926",
       "updated": "2020-03-15T16:36:02.964377",
       "failed": null,
       "source": "https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19"
@@ -996,7 +996,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.447731",
-      "checked": "2020-03-15T19:51:13.223354",
+      "checked": "2020-03-15T19:59:37.519115",
       "updated": "2020-03-15T18:06:05.700186",
       "failed": null,
       "source": "https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19"
@@ -1008,7 +1008,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.456707",
-      "checked": "2020-03-15T19:51:13.942428",
+      "checked": "2020-03-15T19:59:38.054721",
       "updated": "2020-03-15T17:22:37.398208",
       "failed": null,
       "source": "https://doh.sd.gov/news/Coronavirus.aspx"
@@ -1032,7 +1032,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.471667",
-      "checked": "2020-03-15T19:51:14.406190",
+      "checked": "2020-03-15T19:59:38.561367",
       "updated": "2020-03-15T19:06:08.622351",
       "failed": null,
       "source": "https://www.tn.gov/health/cedep/ncov.html"
@@ -1056,7 +1056,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.478648",
-      "checked": "2020-03-15T19:51:16.152519",
+      "checked": "2020-03-15T19:59:39.921729",
       "updated": "2020-03-15T08:38:01.727021",
       "failed": null,
       "source": "https://dshs.texas.gov/coronavirus/"
@@ -1068,7 +1068,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.480643",
-      "checked": "2020-03-15T19:51:18.612935",
+      "checked": "2020-03-15T19:59:41.857553",
       "updated": "2020-03-15T17:22:41.450457",
       "failed": null,
       "source": "https://dshs.texas.gov/news/updates.shtm#coronavirus"
@@ -1080,19 +1080,19 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.482638",
-      "checked": "2020-03-15T19:51:19.813723",
+      "checked": "2020-03-15T19:59:42.916715",
       "updated": "2020-03-15T18:06:12.047486",
       "failed": null,
       "source": "https://health.utah.gov/coronavirus"
     },
     {
       "name": "UT_data.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.487625",
-      "checked": "2020-03-15T19:51:20.407134",
+      "checked": "2020-03-15T19:59:43.532070",
       "updated": "2020-03-15T19:51:20.407134",
       "failed": null,
       "source": "https://coronavirus.utah.gov/latest/"
@@ -1104,7 +1104,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.489654",
-      "checked": "2020-03-15T19:51:20.787118",
+      "checked": "2020-03-15T19:59:43.935988",
       "updated": "2020-03-15T07:29:50.967972",
       "failed": null,
       "source": "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
@@ -1123,12 +1123,12 @@
     },
     {
       "name": "VT.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.494606",
-      "checked": "2020-03-15T19:51:21.263845",
+      "checked": "2020-03-15T19:59:44.319964",
       "updated": "2020-03-15T19:51:21.263845",
       "failed": null,
       "source": "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus"
@@ -1152,7 +1152,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.513555",
-      "checked": "2020-03-15T19:51:21.714646",
+      "checked": "2020-03-15T19:59:44.785719",
       "updated": "2020-03-15T02:25:08.250961",
       "failed": null,
       "source": "https://www.doh.wa.gov/Emergencies/Coronavirus"
@@ -1176,19 +1176,19 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.520537",
-      "checked": "2020-03-15T19:51:22.246214",
+      "checked": "2020-03-15T19:59:45.409068",
       "updated": "2020-03-15T08:38:06.209031",
       "failed": null,
       "source": "https://www.dhs.wisconsin.gov/disease/covid-19.htm"
     },
     {
       "name": "WI_data.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.524527",
-      "checked": "2020-03-15T19:51:22.531452",
+      "checked": "2020-03-15T19:59:45.738168",
       "updated": "2020-03-15T19:51:22.531452",
       "failed": null,
       "source": "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
@@ -1200,7 +1200,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.527519",
-      "checked": "2020-03-15T19:51:23.138829",
+      "checked": "2020-03-15T19:59:46.208913",
       "updated": "2020-03-15T08:38:07.105638",
       "failed": null,
       "source": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx"
@@ -1282,8 +1282,8 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-15T08:37:19.375162",
-      "checked": "2020-03-15T19:56:55.008796",
-      "updated": "2020-03-15T19:56:55.008796",
+      "checked": "2020-03-15T20:07:55.789306",
+      "updated": "2020-03-15T20:07:55.789306",
       "failed": null
     },
     {
