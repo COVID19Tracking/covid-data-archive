@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-15T19:05:33.207708",
-  "end_date": "2020-03-15T19:06:17.688100",
-  "previous_date": "2020-03-15T18:35:22.552918",
-  "time_lapsed": "0:00:44.480392",
+  "start_date": "2020-03-15T19:50:31.954608",
+  "end_date": "2020-03-15T19:51:23.414090",
+  "previous_date": "2020-03-15T19:05:33.207708",
+  "time_lapsed": "0:00:51.459482",
   "complete": true,
   "error_message": null,
   "items": [
@@ -24,7 +24,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:50.550545",
-      "checked": "2020-03-15T19:05:34.334692",
+      "checked": "2020-03-15T19:50:33.176340",
       "updated": "2020-03-15T08:37:19.691316",
       "failed": null,
       "source": "google-states"
@@ -36,7 +36,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:50.844758",
-      "checked": "2020-03-15T19:05:34.627909",
+      "checked": "2020-03-15T19:50:33.477541",
       "updated": "2020-03-15T08:37:20.000490",
       "failed": null,
       "source": "google-states"
@@ -48,7 +48,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:51.159916",
-      "checked": "2020-03-15T19:05:34.977319",
+      "checked": "2020-03-15T19:50:33.834579",
       "updated": "2020-03-15T18:35:24.263343",
       "failed": null,
       "source": "google-states"
@@ -67,13 +67,13 @@
     },
     {
       "name": "AR.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:52.889297",
-      "checked": "2020-03-15T19:05:36.100322",
-      "updated": "2020-03-15T16:35:26.381697",
+      "checked": "2020-03-15T19:50:34.875798",
+      "updated": "2020-03-15T19:50:34.875798",
       "failed": null,
       "source": "google-states"
     },
@@ -96,7 +96,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:54.199791",
-      "checked": "2020-03-15T19:05:36.328753",
+      "checked": "2020-03-15T19:50:35.139088",
       "updated": "2020-03-15T08:37:22.306642",
       "failed": null,
       "source": "google-states"
@@ -120,7 +120,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:56.363003",
-      "checked": "2020-03-15T19:05:37.156974",
+      "checked": "2020-03-15T19:50:38.539992",
       "updated": "2020-03-15T08:37:25.164081",
       "failed": null,
       "source": "google-states"
@@ -144,7 +144,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:57.590720",
-      "checked": "2020-03-15T19:05:37.740928",
+      "checked": "2020-03-15T19:50:39.121440",
       "updated": "2020-03-15T17:22:08.232766",
       "failed": null,
       "source": "google-states"
@@ -156,7 +156,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:58.071434",
-      "checked": "2020-03-15T19:05:38.206682",
+      "checked": "2020-03-15T19:50:40.535653",
       "updated": "2020-03-15T15:16:34.811358",
       "failed": null,
       "source": "google-states"
@@ -168,7 +168,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:58.601017",
-      "checked": "2020-03-15T19:05:38.726292",
+      "checked": "2020-03-15T19:50:41.030329",
       "updated": "2020-03-15T17:22:09.346780",
       "failed": null,
       "source": "google-states"
@@ -192,7 +192,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:17:59.476676",
-      "checked": "2020-03-15T19:05:39.190336",
+      "checked": "2020-03-15T19:50:41.514044",
       "updated": "2020-03-15T18:05:39.694754",
       "failed": null,
       "source": "google-states"
@@ -204,7 +204,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:00.016233",
-      "checked": "2020-03-15T19:05:39.787552",
+      "checked": "2020-03-15T19:50:42.144350",
       "updated": "2020-03-15T07:29:08.831647",
       "failed": null,
       "source": "google-states"
@@ -216,7 +216,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:00.387241",
-      "checked": "2020-03-15T19:05:40.238861",
+      "checked": "2020-03-15T19:50:42.591154",
       "updated": "2020-03-15T07:29:09.289421",
       "failed": null,
       "source": "google-states"
@@ -235,14 +235,14 @@
     },
     {
       "name": "FL.html",
-      "status": "CHANGED",
+      "status": "FAILED",
       "url": "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
-      "msg": null,
+      "msg": "Empty Response",
       "complete": true,
       "added": "2020-03-13T06:18:01.190094",
       "checked": "2020-03-15T19:05:40.972625",
       "updated": "2020-03-15T19:05:40.972625",
-      "failed": null,
+      "failed": "2020-03-15T19:50:46.825858",
       "source": "google-states"
     },
     {
@@ -264,7 +264,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:01.924131",
-      "checked": "2020-03-15T19:05:41.387517",
+      "checked": "2020-03-15T19:50:47.235732",
       "updated": "2020-03-15T15:16:38.593218",
       "failed": null,
       "source": "google-states"
@@ -276,7 +276,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.203385",
-      "checked": "2020-03-15T19:05:41.805548",
+      "checked": "2020-03-15T19:50:47.642645",
       "updated": "2020-03-15T16:35:34.179837",
       "failed": null,
       "source": "google-states"
@@ -288,7 +288,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.208400",
-      "checked": "2020-03-15T19:05:42.373562",
+      "checked": "2020-03-15T19:50:48.265976",
       "updated": "2020-03-15T08:37:34.052224",
       "failed": null,
       "source": "google-states"
@@ -336,7 +336,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.221368",
-      "checked": "2020-03-15T19:05:43.376274",
+      "checked": "2020-03-15T19:50:50.295547",
       "updated": "2020-03-15T07:29:12.899776",
       "failed": null,
       "source": "google-states"
@@ -355,13 +355,13 @@
     },
     {
       "name": "IL.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.227321",
-      "checked": "2020-03-15T19:05:44.588283",
-      "updated": "2020-03-15T18:35:38.293695",
+      "checked": "2020-03-15T19:50:52.222391",
+      "updated": "2020-03-15T19:50:52.222391",
       "failed": null,
       "source": "google-states"
     },
@@ -379,13 +379,13 @@
     },
     {
       "name": "IN.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.in.gov/isdh/28470.htm",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.236296",
-      "checked": "2020-03-15T19:05:44.948545",
-      "updated": "2020-03-15T08:37:37.594749",
+      "checked": "2020-03-15T19:50:52.629306",
+      "updated": "2020-03-15T19:50:52.629306",
       "failed": null,
       "source": "google-states"
     },
@@ -408,7 +408,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.241283",
-      "checked": "2020-03-15T19:05:45.207851",
+      "checked": "2020-03-15T19:50:53.971309",
       "updated": "2020-03-15T07:29:14.746827",
       "failed": null,
       "source": "google-states"
@@ -432,7 +432,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.248264",
-      "checked": "2020-03-15T19:05:45.601931",
+      "checked": "2020-03-15T19:50:54.349297",
       "updated": "2020-03-15T08:37:38.290884",
       "failed": null,
       "source": "google-states"
@@ -456,7 +456,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.258239",
-      "checked": "2020-03-15T19:05:45.886172",
+      "checked": "2020-03-15T19:50:54.599627",
       "updated": "2020-03-15T07:29:15.406663",
       "failed": null,
       "source": "google-states"
@@ -475,25 +475,25 @@
     },
     {
       "name": "MA.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.266217",
-      "checked": "2020-03-15T19:05:46.282113",
-      "updated": "2020-03-15T18:05:47.964633",
+      "checked": "2020-03-15T19:50:54.866914",
+      "updated": "2020-03-15T19:50:54.866914",
       "failed": null,
       "source": "google-states"
     },
     {
       "name": "MA_data.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.280179",
-      "checked": "2020-03-15T19:05:46.490556",
-      "updated": "2020-03-15T18:05:48.167091",
+      "checked": "2020-03-15T19:50:55.101288",
+      "updated": "2020-03-15T19:50:55.101288",
       "failed": null,
       "source": "google-states"
     },
@@ -504,7 +504,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.283171",
-      "checked": "2020-03-15T19:05:47.118875",
+      "checked": "2020-03-15T19:50:55.693704",
       "updated": "2020-03-15T08:37:39.580435",
       "failed": null,
       "source": "google-states"
@@ -528,7 +528,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.292149",
-      "checked": "2020-03-15T19:05:47.956634",
+      "checked": "2020-03-15T19:50:56.546424",
       "updated": "2020-03-15T16:35:42.164474",
       "failed": null,
       "source": "google-states"
@@ -552,7 +552,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.299165",
-      "checked": "2020-03-15T19:05:48.250855",
+      "checked": "2020-03-15T19:50:56.787774",
       "updated": "2020-03-15T08:37:40.588914",
       "failed": null,
       "source": "google-states"
@@ -576,7 +576,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.304139",
-      "checked": "2020-03-15T19:05:48.541077",
+      "checked": "2020-03-15T19:50:56.985248",
       "updated": "2020-03-15T08:37:40.833261",
       "failed": null,
       "source": "google-states"
@@ -588,7 +588,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.306150",
-      "checked": "2020-03-15T19:05:48.775450",
+      "checked": "2020-03-15T19:50:57.216634",
       "updated": "2020-03-15T15:16:47.989107",
       "failed": null,
       "source": "google-states"
@@ -600,7 +600,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.311096",
-      "checked": "2020-03-15T19:05:49.000849",
+      "checked": "2020-03-15T19:50:57.453004",
       "updated": "2020-03-15T17:22:20.709183",
       "failed": null,
       "source": "google-states"
@@ -624,7 +624,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.316083",
-      "checked": "2020-03-15T19:05:49.387806",
+      "checked": "2020-03-15T19:50:57.803061",
       "updated": "2020-03-15T18:05:51.072318",
       "failed": null,
       "source": "google-states"
@@ -648,7 +648,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.323064",
-      "checked": "2020-03-15T19:05:49.950301",
+      "checked": "2020-03-15T19:50:58.399464",
       "updated": "2020-03-15T08:37:42.377741",
       "failed": null,
       "source": "google-states"
@@ -672,7 +672,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.329083",
-      "checked": "2020-03-15T19:05:50.333277",
+      "checked": "2020-03-15T19:50:58.805378",
       "updated": "2020-03-15T16:35:44.755087",
       "failed": null,
       "source": "google-states"
@@ -684,7 +684,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.331079",
-      "checked": "2020-03-15T19:05:50.806009",
+      "checked": "2020-03-15T19:50:59.196330",
       "updated": "2020-03-15T15:16:50.253030",
       "failed": null,
       "source": "google-states"
@@ -696,7 +696,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.334126",
-      "checked": "2020-03-15T19:05:51.497160",
+      "checked": "2020-03-15T19:50:59.864544",
       "updated": "2020-03-15T08:37:43.843819",
       "failed": null,
       "source": "google-states"
@@ -708,7 +708,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.340019",
-      "checked": "2020-03-15T19:05:52.155404",
+      "checked": "2020-03-15T19:51:00.481895",
       "updated": "2020-03-15T08:37:44.502059",
       "failed": null,
       "source": "google-states"
@@ -720,7 +720,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.342053",
-      "checked": "2020-03-15T19:05:52.983191",
+      "checked": "2020-03-15T19:51:01.366529",
       "updated": "2020-03-15T08:37:45.349858",
       "failed": null,
       "source": "google-states"
@@ -744,7 +744,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.346044",
-      "checked": "2020-03-15T19:05:54.031387",
+      "checked": "2020-03-15T19:51:02.261136",
       "updated": "2020-03-15T18:35:47.393424",
       "failed": null,
       "source": "google-states"
@@ -763,25 +763,25 @@
     },
     {
       "name": "NJ.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.nj.gov/health/cd/topics/ncov.shtml",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.362958",
-      "checked": "2020-03-15T19:05:54.554982",
-      "updated": "2020-03-15T08:37:46.997633",
+      "checked": "2020-03-15T19:51:02.852556",
+      "updated": "2020-03-15T19:51:02.852556",
       "failed": null,
       "source": "google-states"
     },
     {
       "name": "NJ_data.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.nj.gov/health/",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.364952",
-      "checked": "2020-03-15T19:05:54.898068",
-      "updated": "2020-03-15T18:35:48.369823",
+      "checked": "2020-03-15T19:51:03.224555",
+      "updated": "2020-03-15T19:51:03.224555",
       "failed": null,
       "source": "google-states"
     },
@@ -792,7 +792,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.370936",
-      "checked": "2020-03-15T19:05:55.214219",
+      "checked": "2020-03-15T19:51:03.509796",
       "updated": "2020-03-15T17:22:26.916974",
       "failed": null,
       "source": "google-states"
@@ -816,7 +816,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.374926",
-      "checked": "2020-03-15T19:05:58.345841",
+      "checked": "2020-03-15T19:51:06.986037",
       "updated": "2020-03-15T08:37:52.227105",
       "failed": null,
       "source": "google-states"
@@ -835,13 +835,13 @@
     },
     {
       "name": "NY.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.health.ny.gov/diseases/communicable/coronavirus/",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.381907",
-      "checked": "2020-03-15T19:05:58.794643",
-      "updated": "2020-03-15T15:33:32.279308",
+      "checked": "2020-03-15T19:51:07.389957",
+      "updated": "2020-03-15T19:51:07.389957",
       "failed": null,
       "source": "google-states"
     },
@@ -864,8 +864,8 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.387892",
-      "checked": "2020-03-15T19:05:59.845830",
-      "updated": "2020-03-15T19:05:59.845830",
+      "checked": "2020-03-15T19:51:08.072131",
+      "updated": "2020-03-15T19:51:08.072131",
       "failed": null,
       "source": "google-states"
     },
@@ -888,7 +888,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.393917",
-      "checked": "2020-03-15T19:06:00.282662",
+      "checked": "2020-03-15T19:51:08.456106",
       "updated": "2020-03-15T18:35:54.962403",
       "failed": null,
       "source": "google-states"
@@ -907,13 +907,13 @@
     },
     {
       "name": "OR.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.401876",
-      "checked": "2020-03-15T19:06:03.384365",
-      "updated": "2020-03-15T17:22:34.617966",
+      "checked": "2020-03-15T19:51:10.245318",
+      "updated": "2020-03-15T19:51:10.245318",
       "failed": null,
       "source": "google-states"
     },
@@ -936,7 +936,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.406873",
-      "checked": "2020-03-15T19:06:04.200188",
+      "checked": "2020-03-15T19:51:11.774229",
       "updated": "2020-03-15T16:36:01.695770",
       "failed": null,
       "source": "google-states"
@@ -960,7 +960,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.425791",
-      "checked": "2020-03-15T19:06:05.620384",
+      "checked": "2020-03-15T19:51:12.175165",
       "updated": "2020-03-15T08:37:57.106380",
       "failed": null,
       "source": "google-states"
@@ -972,7 +972,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.427823",
-      "checked": "2020-03-15T19:06:06.005357",
+      "checked": "2020-03-15T19:51:12.562128",
       "updated": "2020-03-15T02:24:53.316905",
       "failed": null,
       "source": "google-states"
@@ -984,7 +984,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.435763",
-      "checked": "2020-03-15T19:06:06.388327",
+      "checked": "2020-03-15T19:51:12.925150",
       "updated": "2020-03-15T16:36:02.964377",
       "failed": null,
       "source": "google-states"
@@ -996,7 +996,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.447731",
-      "checked": "2020-03-15T19:06:06.690518",
+      "checked": "2020-03-15T19:51:13.223354",
       "updated": "2020-03-15T18:06:05.700186",
       "failed": null,
       "source": "google-states"
@@ -1008,7 +1008,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.456707",
-      "checked": "2020-03-15T19:06:07.482401",
+      "checked": "2020-03-15T19:51:13.942428",
       "updated": "2020-03-15T17:22:37.398208",
       "failed": null,
       "source": "google-states"
@@ -1027,12 +1027,12 @@
     },
     {
       "name": "TN.html",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://www.tn.gov/health/cedep/ncov.html",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.471667",
-      "checked": "2020-03-15T19:06:08.622351",
+      "checked": "2020-03-15T19:51:14.406190",
       "updated": "2020-03-15T19:06:08.622351",
       "failed": null,
       "source": "google-states"
@@ -1056,7 +1056,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.478648",
-      "checked": "2020-03-15T19:06:11.246335",
+      "checked": "2020-03-15T19:51:16.152519",
       "updated": "2020-03-15T08:38:01.727021",
       "failed": null,
       "source": "google-states"
@@ -1068,7 +1068,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.480643",
-      "checked": "2020-03-15T19:06:12.976705",
+      "checked": "2020-03-15T19:51:18.612935",
       "updated": "2020-03-15T17:22:41.450457",
       "failed": null,
       "source": "google-states"
@@ -1080,7 +1080,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.482638",
-      "checked": "2020-03-15T19:06:14.065791",
+      "checked": "2020-03-15T19:51:19.813723",
       "updated": "2020-03-15T18:06:12.047486",
       "failed": null,
       "source": "google-states"
@@ -1092,8 +1092,8 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.487625",
-      "checked": "2020-03-15T19:06:14.700101",
-      "updated": "2020-03-15T19:06:14.700101",
+      "checked": "2020-03-15T19:51:20.407134",
+      "updated": "2020-03-15T19:51:20.407134",
       "failed": null,
       "source": "google-states"
     },
@@ -1104,7 +1104,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.489654",
-      "checked": "2020-03-15T19:06:15.084066",
+      "checked": "2020-03-15T19:51:20.787118",
       "updated": "2020-03-15T07:29:50.967972",
       "failed": null,
       "source": "google-states"
@@ -1123,13 +1123,13 @@
     },
     {
       "name": "VT.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.494606",
-      "checked": "2020-03-15T19:06:15.495963",
-      "updated": "2020-03-15T18:36:06.401787",
+      "checked": "2020-03-15T19:51:21.263845",
+      "updated": "2020-03-15T19:51:21.263845",
       "failed": null,
       "source": "google-states"
     },
@@ -1152,7 +1152,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.513555",
-      "checked": "2020-03-15T19:06:15.944762",
+      "checked": "2020-03-15T19:51:21.714646",
       "updated": "2020-03-15T02:25:08.250961",
       "failed": null,
       "source": "google-states"
@@ -1176,20 +1176,20 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.520537",
-      "checked": "2020-03-15T19:06:16.493295",
+      "checked": "2020-03-15T19:51:22.246214",
       "updated": "2020-03-15T08:38:06.209031",
       "failed": null,
       "source": "google-states"
     },
     {
       "name": "WI_data.html",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.524527",
-      "checked": "2020-03-15T19:06:16.819422",
-      "updated": "2020-03-15T08:38:06.524187",
+      "checked": "2020-03-15T19:51:22.531452",
+      "updated": "2020-03-15T19:51:22.531452",
       "failed": null,
       "source": "google-states"
     },
@@ -1200,7 +1200,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.527519",
-      "checked": "2020-03-15T19:06:17.406853",
+      "checked": "2020-03-15T19:51:23.138829",
       "updated": "2020-03-15T08:38:07.105638",
       "failed": null,
       "source": "google-states"
@@ -1282,8 +1282,8 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-15T08:37:19.375162",
-      "checked": "2020-03-15T19:05:33.918804",
-      "updated": "2020-03-15T19:05:33.918804",
+      "checked": "2020-03-15T19:50:32.863178",
+      "updated": "2020-03-15T19:50:32.863178",
       "failed": null
     },
     {
