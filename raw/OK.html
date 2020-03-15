@@ -1,452 +1,811 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+
+
+
+
+ <!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
-<meta name="keywords" content="Oklahoma, Novel Coronavirus, Coronavirus">
-<meta name="description" content="Oklahoma Response to Coronavirus Disease 2019">
-
-<title>Oklahoma Response to Coronavirus Disease 2019 -
-	Oklahoma State Department of Health</title>
-
-<style type="text/css">
-<!--
-@media print {
-	body {
-		margin-left: 20px;
-		margin-top: 0px;
-		margin-right: 20px;
-		margin-bottom: 0em;
-		margin-bottom: 0em;
-		background-position: left top;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 85%;
-	}
-	.leftnav {
-		display: none;
-	}
-	.rightnav {
-		display: none;
-	}
-	.leftnavtop {
-		display: none;
-	}
-	.topbox {
-		display: none;
-	}
-	html {
-		font-size: 10pt;
-		background: white;
-		width: 100%;
-	}
-	.breadcrumb {
-		display: none;
-	}
-	.right_nav {
-		display: none;
-		width: 1px;
-	}
-}
-
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	background-color: #CCFFCC;
-}
-
-.title_pic {
-	height: 80px;
-	width: 80px;
-	float: left;
-}
-
-.title_pic2 {
-	height: 7.5em;
-	width: 27.8em;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-image:
-		url(https://www.ok.gov/health/images/SOSH .jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-
-.title_pic3 {
-	height: 7.5em;
-	width: 27.8em;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-image:
-		url(https://www.ok.gov/health/images/CHO logo capture.JPG);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-
-.title_pic4 {
-	height: 7.5em;
-	width: 27.8em;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-image:
-		url(https://www.ok.gov/health/images/ProposedRules.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-
-.title_pic5 {
-	height: 7.5em;
-	width: 27.8em;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-image:
-		url(https://www.ok.gov/health/images/AD-InfluenzaThumbnail.gif);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
--->
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"4883a0c1ff",applicationID:"472734638"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://coronavirus.health.ok.gov/" />
+<link rel="shortlink" href="https://coronavirus.health.ok.gov/" />
+  <title>COVID-19 | Oklahoma State Department of Health |</title>
+  <link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" />
+<link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_LMf7pD0EkMMcn3GAMYbwP6wuVKRzm8nRQeNddrkHg0Y.css" />
+<link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_HUkHW-fBJD3roZLMBjkv_e_FtQlmM45HoSBD0vmEoqw.css" />
+<link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_bF1QB-GCCRFyl92_QaOuH7RhmdG2Mxn991VqwPGovl0.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_YLWdW6wV7Ski57_eSxMdUCyO9zKEBlsYDkC-PNa2_KM.css" />
+<style>.tb-megamenu.animate .mega > .mega-dropdown-menu,.tb-megamenu.animate.slide .mega > .mega-dropdown-menu > div{transition-delay:0ms;-webkit-transition-delay:0ms;-ms-transition-delay:0ms;-o-transition-delay:0ms;transition-duration:500ms;-webkit-transition-duration:500ms;-ms-transition-duration:500ms;-o-transition-duration:500ms;}
 </style>
-<!--BEGIN STYLE SWITCHER-->
-<script language="Javascript" type="text/JavaScript"
-	src="/triton/assets/js/styleswitcher.js"></script>
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/x-large.css" title="A+++" />
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/large.css" title="A++" />
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/medium.css" title="A+" />
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/small.css" title="A" />
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/x-small.css" title="A-" />
-<link rel="alternate stylesheet" type="text/css"
-	href="/triton/assets/css/xx-small.css" title="A--" />
-<!--END STYLE SWITCHER-->
-<style type="text/css" media="all">
-@import "/triton/assets/css/print.css";
-</style>
-
-<script language="javascript" type="text/javascript">
-	//EMAIL LINK SCRIPT    
-	u = window.location;
-	m = "I thought this might interest you....";
-
-	function mailThisUrl() {
-		window.location = "mailto:?subject=" + m + "&body=" + u;
-	}
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-	function MM_jumpMenu(targ, selObj, restore) { //v3.0
-		eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value
-				+ "'");
-		if (restore)
-			selObj.selectedIndex = 0;
-	}
-//-->
-</script>
-<link href="/triton/skins/health/css/agency_temp.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css"
-	href="/triton/modules/calendar/css/health_calendar.css">
-<style type="text/css">
-<!--
-.style1 {
-	color: #009933;
-	font-size: 80%;
-}
--->
-</style>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '171076959954769'); // Insert your pixel ID here.
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=171076959954769&ev=PageView&noscript=1"
-/></noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
-
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '804042289733018');
-fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=804042289733018&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-<!-- Google Tag Manager -->
-<script type="text/javascript" src="/health/stepup/js/ga.js"></script>
-
+<link rel="stylesheet" href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/css/css_kJ-MPWJiIGdOMiVqRumxq5d5USKyMZZV1NQgmINH_JY.css" />
+  <script src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/js/js_iNAOkEESozL_iYM5wM6IpXxKWlfzWF3WfXXR59vwSo8.js"></script>
+<script src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/js/js_T6C65Wm4IvpDv4x2Emtkghdklr_7If1-9PTjC4RVCo8.js"></script>
+<script src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/js/js_hLVTyK09B0IXG4-HqCVMfyD9BmcxEE_y_JtkqL0GFoc.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-160673539-1", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");</script>
+<script src="https://s7.addthis.com/js/300/addthis_widget.js"></script>
+<script src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/js/js_ksfSIlSt9hWVJKsMnyr2f4JEybzfOufGguHzXBMk-Po.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"covid19","theme_token":"1b_BlaqRF3QMwAbPUffvLhtiwQQbHjSJ6fjDuaWT9J8","jquery_version":"1.7","js":{"":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/easing\/jquery.easing.min.js":1,"sites\/all\/libraries\/slick\/slick\/slick.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/slick\/js\/slick.load.min.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"https:\/\/s7.addthis.com\/js\/300\/addthis_widget.js":1,"sites\/all\/themes\/contrib\/zurb_foundation\/js\/vendor\/modernizr.js":1,"sites\/all\/themes\/custom\/okgov\/js\/foundation.min.js":1,"sites\/all\/themes\/custom\/okgov\/js\/libs.min.js":1,"sites\/all\/themes\/custom\/okgov\/js\/app.min.js":1,"sites\/all\/themes\/custom\/okgov\/js\/okgovcustomcode.js":1,"sites\/all\/themes\/custom\/okgov\/js\/jquery.easing.js":1,"sites\/all\/themes\/custom\/okgov\/js\/jquery.easing.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/slick\/slick\/slick.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/libraries\/slick\/slick\/slick-theme.css":1,"sites\/all\/modules\/contrib\/slick\/css\/theme\/slick.theme.css":1,"sites\/all\/modules\/contrib\/slick\/css\/theme\/slick.theme--default.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/custom\/okgov\/layouts\/lcms_drupal\/lcms_drupal.css":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.4.0\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"0":1,"sites\/all\/themes\/custom\/okgov\/css\/normalize.css":1,"sites\/all\/themes\/custom\/okgov\/css\/foundation.min.css":1,"sites\/all\/themes\/custom\/okgov\/css\/okgov.css":1,"sites\/g\/files\/gmc786\/themes\/site\/covid19\/css\/covid19.css":1}},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"autoplaySpeed":3000,"pauseOnHover":true,"pauseOnDotsHover":false,"arrows":true,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mousewheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.34999999999999998,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:3acde980d1094a911214e83db651e8fe":{"view_name":"covid19_articles","view_display_id":"panel_pane_1","view_args":"pr+advisory","view_path":"home","view_base_path":null,"view_dom_id":"3acde980d1094a911214e83db651e8fe","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackUrlFragments":1}});</script>
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N45SV29"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-	<div class="wrapper">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
-			<tr>
-				<td height="85" valign="top"
-					background="/triton/skins/health/images/headerback.jpg"><a
-					href="http://www.ok.gov" target="_blank" tabindex="1"><img
-						src="https://www.ok.gov/images/OklaX/OklaX-Logo-White.png" alt="Oklahoma, www.OK.gov"
-						width="300px" height="70" border="0" style="padding-top:12px;">
-				</a>
-				</td>
-				<td width="290" valign="top"><a
-					href="https://www.ok.gov/health/index.html"><img
-						src="/triton/defaults/images/right_health.jpg" alt="&lt;{$map[0].NAME}&gt;" border="0"
-						width="290" height="85">
-				</a>
-				</td>
-
-			</tr>
-		</table>
-		<table width="100%" height="10" border="0" cellpadding="0"
-			cellspacing="0">
-			<tr>
-				<td width="180" height="25" class="leftnavtop"><a
-					href="#skipnav" style="color: 000066" class="skipnav_link"
-					tabindex="2"> <img src="/triton/skins/health/images/spacer.gif" alt=" "
-						width="210" height="3" border="0"> </a> <a href="#skipsearch"
-					style="color: 000066" class="skipnav_link" tabindex="3"> <img
-						src="/triton/skins/health/images/spacer.gif" alt=" " width="210" height="2"
-						border="0"> </a> <br /></td>
-				<td width="100%" align="center" valign="top" bgcolor="#006699"
-					class="topbox">   <a
-					class="topnav_link" href="/triton/contact.php?ac=174&id=150">Contact</a>
-					  &nbsp;|&nbsp;    <a
-					class="topnav_link" href="/triton/modules/siteindex/siteindex.php?id=174">A-Z Health Index</a>
-					  &nbsp;|&nbsp;    <a
-					class="topnav_link" href="/triton/modules/calendar/calendar.php?calendar_seq=32">Events & Meetings</a>
-					   </td>
-
-				<td width="160" align="right" valign="top" bgcolor="#009933"
-					class="rightnav"><table width="160" border="0" cellspacing="0"
-						cellpadding="0">
-						<tr>
-							<td align="right" valign="middle"><form
-									action="https://www.ok.gov/triton/search.php"
-									method="GET" name="form1" class="dropDownBar">
-									<label> <a name="skipsearch"></a> <input name="q"
-										type="text" class="SearchBox"
-										value="Search Site"
-										onfocus="this.value='';"> <input name="Submit"
-										type="submit" class="submitButton" value="Go"> <input
-										type="hidden" name="sitesearch" value="https://www.ok.gov/health/">
-										&nbsp; </label>
-
-								</form>
-							</td>
-						</tr>
-					</table>
-				</td>
-
-			</tr>
-		</table>
-		<table width="100%" height="85%" border="0" cellpadding="0"
-			cellspacing="0">
-			<tr valign="top">
-				<td width="210" class="leftnav" rowspan="2"><div align="center">
-						<img src="/triton/skins/health/images/spacer.gif" width="210" height="10"><br>
-					</div>  					<div class="leftnav_line">
-						<div align="right" style="padding-right: 20px;">
-							  <a class="leftnav_link"
-								title="view Oklahoma Response to Coronavirus Disease 2019"
-								href="https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html">Oklahoma Response to Coronavirus Disease 2019</a>
-							 						</div>
-					</div> 					<div class="leftnav_line">
-						<div align="right" style="padding-right: 20px;">
-							  <a class="leftnav_link"
-								title="view COVID-19 Resources"
-								href="https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/COVID-19_Resources/index.html">COVID-19 Resources</a>
-							 						</div>
-					</div>   					<div class="post_nav_wrapper">
-								<span class="included_object" id="included_adobe">
-								    <a href="http://get.adobe.com/reader/" target="_new">
-								        <img src="/triton/assets/images/get_adobe_reader.jpg" alt="get adobe reader">
-								    </a>
-								</span></div>
-				</td>
-				<td width="100%" colspan=2 height="0px">
-					<div class="breadcrumb" style="height: 15px;">
-						<a name="skipnav"></a> <a
-							title="click to navigate to https://www.ok.gov/health/index.html"
-							href="https://www.ok.gov/health/index.html"
-							class="breadcrumb">OSDH Home</a><span class="breadcrumb">
-							&gt; </span><a
-							title="click to navigate to https://www.ok.gov/health/Prevention_and_Preparedness/index.html"
-							href="https://www.ok.gov/health/Prevention_and_Preparedness/index.html"
-							class="breadcrumb">Prevention and Preparedness</a><span class="breadcrumb">
-							&gt; </span><a
-							title="click to navigate to https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/index.html"
-							href="https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/index.html"
-							class="breadcrumb">Acute Disease Service</a><span class="breadcrumb">
-							&gt; </span><a
-							title="click to navigate to https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/index.html"
-							href="https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/index.html"
-							class="breadcrumb">Disease Information</a><span class="breadcrumb">
-							&gt; </span><a
-							title="click to navigate to https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/index.html"
-							href="https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/index.html"
-							class="breadcrumb">Coronavirus Disease 2019</a><span class="breadcrumb">
-							&gt; </span><span class="breadcrumb">Oklahoma Response to Coronavirus Disease 2019</span>					</div>
-				</td>
-			</tr>
-			<tr>
-				<td valign=top>
-					<!--
-   <tr>
-   <td valign="top" align="left" width="100%" height="100%">
-   <table cellspacing="3" cellpadding="0" border="0" width="100%" height="100%">
-   <tr>
-   <td width="100%" height="100%" valign="top">
--->
-
-
-
-					<div class="body_copy">
-						 						<div align="right" class="style1" style="">
-							<a href="javascript:mailThisUrl();"> email</a> | <a
-								href="javascript:window.print();"> print</a>
-						</div>
-						    
-  <div class="cms_editor_content">
-    <h1>Coronavirus Disease 2019 (COVID-19)</h1><p><span style="font-size: 12pt;">The Coronavirus Disease 2019 (COVID-19) is a new virus identified as the cause of an outbreak of respiratory illness first detected in Wuhan City, Hubei Province, China and which continues to expand. Chinese health officials have reported thousands of infections with&nbsp;COVID-19 in China, with the virus reportedly spreading from person-to-person in many parts of that country. Infections with COVID-19, most of them associated with travel from Wuhan, also are being reported in a growing number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html#map">international locations</a>, including the <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">United States</a>. <br /></span></p><table style="width: 100%; height: 100%; float: left;" cellpadding="7"><tbody><tr style="height: 251.5px;"><td style="width: 50%;"><table class="null" style="height: 186px; width: 446px;" border="1"><tbody><tr><td style="width: 50%;" colspan="2"><h3 style="text-align: center;">Coronavirus Disease 2019 (COVID-19)</h3><h3 style="text-align: center;">Oklahoma Test Results</h3></td></tr><tr><td style="width: auto;">Positive (Confirmed)</td><td style="width: 50%; text-align: center;">1</td></tr><tr><td style="width: auto;">Positive (Presumptive*)</td><td style="width: auto; text-align: center;">3</td></tr><tr><td style="width: auto;">Negative</td><td style="width: auto; text-align: center;">36</td></tr><tr><td style="width: 50%;">PUIs Pending Results</td><td style="width: auto; text-align: center;">37</td></tr></tbody></table><p><em>*Tested positive at the OSDH Public Health Laboratory, pending confirmatory testing at the Centers for Disease Control and Prevention. Following confirmation at CDC, the case will change to Positive (Confirmed).</em></p></td><td style="vertical-align: top; height: 251.5px;">&nbsp;<h3>COVID-19 Call Center: 877-215-8336</h3>Call Center Hours: Monday - Friday: 9:00 a.m. - 7:00 p.m. and Saturday: 9:00 a.m. - 3:00 p.m.<br /><p>Our Call Center has the capability to connect callers to Spanish speaking interpreters.</p></td></tr></tbody></table><p><iframe src="https://www.youtube.com/embed/gbtWiSNLQo8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p><p>If you are unable to view the video above, please click here: <a href="https://youtu.be/gbtWiSNLQo8">https://youtu.be/gbtWiSNLQo8</a>.</p><h3>What are the symptoms of COVID-19?</h3><p><span style="font-size: 12pt;">For confirmed COVID-19 infections, reported illnesses have ranged from people being mildly sick to people being severely ill and dying. Symptoms can include:</span></p><ul><li><span style="font-size: 12pt;">Fever</span></li><li><span style="font-size: 12pt;">Cough</span></li><li><span style="font-size: 12pt;">Shortness of breath</span></li></ul><p><span style="font-size: 12pt;">The Centers for Disease Control and Prevention (CDC) believes at this time that symptoms of COVID-19 may appear in as few as 2 days or as long as 14 after exposure. This is based on what has been seen previously as the incubation period of <a href="https://www.cdc.gov/coronavirus/mers/index.html">MERS</a> viruses.</span></p><h3>How do people become infected with COVID-19?</h3><p><span style="font-size: 12pt;">The exact way the virus is spread is not fully known. With similar coronaviruses (such as MERS and SARS) person-to-person spread is thought to have happened mainly via respiratory droplets produced when an infected person coughs or sneezes, similar to how influenza and other viruses that cause respiratory illness spread. The persons at greatest risk are close contacts of an infected case such as those who are in the same room for a long period of time, such as healthcare personnel or household members.</span></p><h3>How can I help protect myself and my family?</h3><p><span style="font-size: 12pt;">Per recommendations from the CDC, nonessential travel to China is not recommended at this time to prevent U.S. travelers from getting the virus during a visit to China.&nbsp; It is important to understand this virus is not spreading in the United States right now, so aside from avoiding nonessential travel the best steps to avoid contracting respiratory viruses include:&nbsp;</span></p><ul><li><span style="font-size: 12pt;">Avoid close contact with people who are sick.</span></li><li><span style="font-size: 12pt;">Avoid touching your eyes, nose, and mouth with unwashed hands.</span></li><li><span style="font-size: 12pt;">Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer.</span></li></ul><h3>What should I do if I recently traveled to China and got sick?</h3><p><span style="font-size: 12pt;">&nbsp;If you were in China within the past 14 days and feel sick with fever, cough, or difficulty breathing, you should get medical care. Call the office of your healthcare provider before you go and tell them about your travel and your symptoms. They will give you instructions on how to get care without exposing other people to your illness. While sick, avoid contact with people, don&rsquo;t go out and delay any travel to reduce the possibility of spreading illness to others.</span></p><h3>Are persons in the United States at risk to get COVID-19?</h3><p><span style="font-size: 12pt;">Imported cases of COVID-19 infection in people have been detected in the U.S. Person-to-person spread has been detected among close household contacts,&nbsp;but this virus is NOT currently spreading in the community in the United States. While CDC and the Oklahoma State Department of Health (OSDH) considers this is a very serious public health threat, based on current information, the immediate health risk from COVID-19 to the general American public is considered low at this time.</span></p><h3>What is the Oklahoma State Department of Health doing to prepare for COVID-19?</h3><p><span style="font-size: 12pt;">The OSDH is working with our federal partners at the CDC in monitoring the developing outbreak. The OSDH is providing information to local health departments and healthcare providers across Oklahoma on how to safely and effectively evaluate ill people who have been to China. The OSDH will continue to monitor the situation, work with partners to identify any possible cases, provide information and consultation to ensure that possible cases are managed safely, support laboratory testing, and implement recommendations from the CDC.</span></p><h3>For Additional Information and Guidance:</h3><ul><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank" rel="noopener noreferrer">General information from CDC</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/clinical-criteria.html" target="_blank" rel="noopener noreferrer">Interim Guidance for Healthcare Professionals</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6905e1.htm?s_cid=mm6905e1_e&amp;deliveryName=USCDC_921-DM19328" target="_blank" rel="noopener noreferrer">Initial Public Health Response and Interim Clinical Guidance for the 2019 Novel Coronavirus Outbreak &mdash; United States, December 31, 2019&ndash;February 4, 2020</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/identify-assess-flowchart.html" target="_blank" rel="noopener noreferrer">Flowchart to Identify and Assess 2019 Novel Coronavirus</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/infection-control.html" target="_blank" rel="noopener noreferrer">Infection Control Guidance from CDC</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-nCoV/lab/index.html" target="_blank" rel="noopener noreferrer">Laboratory Guidance</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank" rel="noopener noreferrer">Travel Guidance</a></span></li><li><span style="font-size: 12pt;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/php/risk-assessment.html" target="_blank" rel="noopener noreferrer">Interim US Guidance for Risk Assessment and Public Health Management of Persons with Potential 2019 Novel Coronavirus (2019-nCoV) Exposure in Travel-associated or Community Settings</a></span></li></ul><p><span style="font-size: 12pt;">For healthcare providers, infection preventionists, laboratorians, and public health personnel wanting to stay informed, please email <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;%4f%4b%48%41%4e%40%68%65%61%6c%74%68%2e%6f%6b%2e%67%6f%76">&#x4f;&#x4b;&#x48;&#x41;&#x4e;&#x40;&#x68;&#x65;&#x61;&#x6c;&#x74;&#x68;&#x2e;&#x6f;&#x6b;&#x2e;&#x67;&#x6f;&#x76;</a> to subscribe to the Oklahoma Health Alert Network (OK-HAN).&nbsp;</span></p><p style="text-align: center;"><span style="font-size: 12pt;">This page last updated 2020-03-13*21:30:55<br /></span></p>
+<body class="html front not-logged-in one-sidebar sidebar-first page-home panels-page" >
+  <div class="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
   </div>
+    <!--.page -->
+<div role="document" class="page">
+
+  <!--.l-header -->
+  <header role="banner" class="l-header has-top-bar">
+
+          <!--.top-bar -->
+            <nav class="top-bar" data-topbar  data-options="custom_back_text:false; is_hover:false">
+        <ul class="title-area">
+          <li class="name"><h1><a href="http://www.ok.gov"><img id="oklogo" src="/sites/all/themes/custom/okgov/images/top-bar-ok-logo.png"></a></h1></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+                 </section>
+      </nav>
+            <!--/.top-bar -->
+    
+    <!-- Title, slogan and menu -->
+      <!-- End title, slogan and menu -->
+    <!--.l-header-region -->
+      <!-- <section class="l-header-region row">
+        <div class="columns">  -->
+        <section class="okgov-header">
+          <div class="okgov-header-div">
+            <!-- Header left region -->
+              <div class="okgov-header-left">
+                <!-- Printing the theme logo -->
+                <a href="/" rel="home" title="COVID-19 | Oklahoma State Department of Health Home" class="active"><img class="logo" typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/themes/site/covid19/logo.png" alt="COVID-19 | Oklahoma State Department of Health logo" title="COVID-19 | Oklahoma State Department of Health Home" /></a>                <!-- End of print logo -->
+                                <!-- Printing Site name from site information -->
+                                                  <h1 id="site-name">
+                  <a href="/" title="Home" rel="home"><span>COVID-19 | Oklahoma State Department of Health</span></a>
+                </h1>
+                                                <!-- End of site name -->
+              </div>
+            <!-- End Header left region -->
+            <!-- Header right region -->
+                          <div class="okgov-header-right">
+                  <section class="block block-tb-megamenu block-tb-megamenu-main-menu">
+  
+      
+    <div  data-duration="500" data-delay="0" id="tb-megamenu-main-menu" class="tb-megamenu tb-megamenu-main-menu animate slide">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="fa fa-reorder"></i>
+    </button>
+    <div class="nav-collapse ">
+    <ul  class="tb-megamenu-nav nav level-0 items-7">
+  
+<li  data-id="1136" data-level="1" data-type="menu_item" data-class="" data-xicon="fa fa-home fa-2x" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega active active-trail">
+  <a href="/" >
+          <i class="fa fa-home fa-2x"></i>
+        
+    <none>          </a>
+  </li>
+
+
+<li  data-id="6596" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="/what-you-should-know" >
+        
+    What You Should Know          </a>
+  </li>
+
+
+<li  data-id="6601" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="/what-do-if-you-are-sick" >
+        
+    What To Do If You Are Sick          </a>
+  </li>
+
+
+<li  data-id="6606" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="/resources-recommendations"  class="dropdown-toggle">
+        
+    Resources & Recommendations          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  
+<li  data-id="6621" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="/cdc-microsite" >
+        
+    CDC Microsite          </a>
+  </li>
+</ul>
   </div>
-</td>
-
-<!--<td bgcolor="#AAFFFF">-->
-<script type="text/javascript">function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length)  {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<body onLoad="MM_preloadImages('../../skins/health/images/a_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/b_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/c_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/d_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/e_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/f_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/g_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/h_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/i_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/j_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/k_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/l_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/m_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/n_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/o_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/p_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/q_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/r_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/s_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/t_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/u_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/v_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/w_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/x_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/y_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/z_over.gif')">
-<body onload="MM_preloadImages('../../skins/health/images/0_over.gif')">
+</div>
+</div>
+  </div>
+</div>
+</li>
 
 
-			<td></td>
-			</tr>
+<li  data-id="6646" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="/travel" >
+        
+    Travel          </a>
+  </li>
 
-	<tr width="100%">
-		<td class=leftnav></td>
-		<td colspan="2" height="55">
-			<div style="margin-left: 25px; margin-top: 10px; float: left;">
-				<a href="/health"><img src="/triton/skins/health/images/OSDH-Logo.gif" alt="Creating a State of Health Logo" width="95" height="52"></a>
-				<a href="https://www.phaboard.org/"><img src="/triton/skins/health/images/PHB_logo.png" alt="PHB seal" ></a>
-				<a href="https://oklahomaworks.gov/"><img src="/triton/skins/health/images/osdh-logo-2.png" alt="Oklahoma Works Logo" /></a>
-				<a href="https://oklahomasupports.com/"><img src="/triton/skins/health/images/osdh-logo-3.png" alt="Oklahoma Supports Logo" /></a>
-			</div>  <!--
-  </td></tr>
-  </table>
---> </td>
-	</tr>
-	<tr valign="middle" bgcolor="#000066">
-		<td height="25" width="210" colspan="1" align="center" class="footer">&nbsp;
 
-		</td>
-		<td align="left" class="footer" colspan=2>
-			<div style="margin-left: 25px; float: left;">
-				Copyright &copy;
-				<SCRIPT LANGUAGE="JavaScript">    today=new Date();
-    yr=today.getFullYear();
-    document.write(yr);
--->
-     </SCRIPT>
-				State of Oklahoma
-			</div>
-			<div style="float: right; margin-right: 30px;" align="right">
-				<a href="http://ok.gov/helpdesk.php" class="footer_link"
-					id="footer_link" tabindex="16">Help Desk</a> | <a
-					href="http://ok.gov/policy_disclaimers.html" class="footer_link"
-					id="footer_link" tabindex="17">Policies</a> | <a
-					href="http://www.about.ok.gov" class="footer_link" id="footer_link"
-					tabindex="18">About Oklahoma's Web Portal</a> | <a
-					href="http://ok.gov/feed_back.php" class="footer_link"
-					id="footer_link" tabindex="19">Feedback</a> | <a
-					href="/health/Accessibility.html" class="footer_link"
-					id="footer_link" tabindex="20">Accessibility</a>
-			</div>
-		</td>
+<li  data-id="6641" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="/fact-or-fiction-%E2%80%93-covid-19" >
+        
+    Fact or Fiction – COVID-19          </a>
+  </li>
 
-	</tr>
-	</table>
-	</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha256-vOtzmT0JTEyCHHVxkhEDvcjAXpCCxPxRPSRDWNU1k9s=" crossorigin="anonymous"></script>
-<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-74460428-23', 'auto'); ga('send', 'pageview'); ga('require', 'eventTracker')</script>
-</body>
+
+<li  data-id="6616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="/faqs" >
+        
+    FAQs          </a>
+  </li>
+</ul>
+      </div>
+  </div>
+  
+  </section>              </div>
+                      <!-- End Header right region -->
+          <!-- Header region -->
+                    <!-- End of header region -->
+        </div>
+      </section>
+      <!--/.l-header-region -->
+
+  </header>
+  <!--/.l-header -->
+
+  
+  
+  
+  <!--.l-main -->
+  <div id="darkness"></div>
+<a id="main-content"></a>
+
+ <main role="main" class="row l-main">
+    <!-- .l-main region -->
+    <div class="main columns">
+      
+      
+            
+                            
+      
+        
+      
+    <div class="panel-display lcms clearfix" >
+  <div class="row full-width">
+    <div class="panel-panel columns full-column-1 small-12">
+      <div class="inside"><div class="panel-pane pane-views-panes pane-covid19-home-slider-panel-pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-covid19-home-slider view-id-covid19_home_slider view-display-id-panel_pane_1 view-featured-content view-dom-id-867c7c8d95bf47c3475f554abf64a3dc">
+        
+  
+  
+      <div class="view-content">
+            <div class="slick slick--view--covid19-home-slider slick--view--covid19-home-slider--panel-pane-1 slick--skin--default slick--optionset--default" id="slick-views-covid19-home-slider-1">
+      <div class="slick__slider" id="slick-views-covid19-home-slider-1-slider" data-slick="{&quot;autoplay&quot;:true,&quot;arrows&quot;:false,&quot;dots&quot;:true,&quot;draggable&quot;:false}">
+  
+          <div class="slick__slide slide slide--0">      <div class="slide__content">              
+  <div class="views-field views-field-field-image">        <div class="field-content"><div class="darken"></div><a href="/what-you-should-know" title="Current Situation"><div class="slideshow-image"><img typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/styles/slider_image/public/slider-images/home-positive031420.jpg?itok=_6hN4qK1" width="1300" height="400" alt="" /><div class="slide-info-contain"><div class="slide-title">Current Situation</div><div class="slide-body"></div></div></div></a></div>  </div>            
+      
+    </div>  </div>          <div class="slick__slide slide slide--1">      <div class="slide__content">              
+  <div class="views-field views-field-field-image">        <div class="field-content"><div class="darken"></div><a href="/" title="COVID-19 Call Center"><div class="slideshow-image"><img typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/styles/slider_image/public/slider-images/1column-1300x400callcenter.jpg?itok=dnP5Jvgx" width="1300" height="400" alt="" /><div class="slide-info-contain"><div class="slide-title">COVID-19 Call Center</div><div class="slide-body"></div></div></div></a></div>  </div>            
+      
+    </div>  </div>          <div class="slick__slide slide slide--2">      <div class="slide__content">              
+  <div class="views-field views-field-field-image">        <div class="field-content"><div class="darken"></div><a href="/resources-recommendations" title="Resources &amp; Recommendations"><div class="slideshow-image"><img typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/styles/slider_image/public/slider-images/top-coronavirus10.jpg?itok=oHqnj4ew" width="1300" height="400" alt="" /><div class="slide-info-contain"><div class="slide-title">Resources &amp; Recommendations</div><div class="slide-body"></div></div></div></a></div>  </div>            
+      
+    </div>  </div>    
+      </div>
+    <nav class="slick__arrow">
+      <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>            <button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>    </nav>
+  </div>
+      </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  </div>
+ 
+  <div class="row four-column">
+    <div class="panel-panel columns four-column-1 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-2 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-3 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-4 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row three-column">
+    <div class="panel-panel columns three-column-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-3 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-column">
+    <div class="panel-panel columns two-column-1 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-column-2 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-left">
+    <div class="panel-panel columns two-thirds-left-1 small-12 large-8">
+      <div class="inside"><div class="panel-pane pane-custom pane-1"  >
+  
+        <h3 class="pane-title">
+      Current Situation    </h3>
+    
+  
+  <div class="pane-content">
+    <div class="page-generator__output js-generator-output" id="output">
+<p><span style="font-size: 12pt;">COVID-19 is a new virus identified as the cause of an outbreak of respiratory illness first detected in Wuhan City, Hubei Province, China and which continues to expand. Chinese health officials have reported thousands of infections with COVID-19 in China, with the virus reportedly spreading from person-to-person in many parts of that country. Infections with COVID-19, most of them associated with travel from Wuhan, also are being reported in a growing number of <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html#map">international locations</a>, including the <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">United States</a>.</span></p>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2"  >
+  
+      
+  
+  <div class="pane-content">
+    <table style="width:500px;" summary="COVID-19 Oklahoma Test Results" cellspacing="1" cellpadding="5" border="1">
+<caption>
+<h3><strong>COVID-19 Oklahoma Test Results</strong></h3>
+</caption>
+<tbody>
+<tr>
+<td><strong>County</strong></td>
+<td><strong>COVID-19 Cases by County</strong></td>
+</tr>
+<tr>
+<td>Cleveland</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Jackson</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Oklahoma</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Payne</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tulsa</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family:&quot;Open Sans&quot;,tahoma,serif;font-style:Inherit;font-weight:Inherit;"> </p>
+<table style="width:500px;" summary="COVID-19 Cases by Age Grouping" cellspacing="1" cellpadding="5" border="1">
+<caption>
+<h3><strong>COVID-19 Cases by Age Grouping</strong></h3>
+</caption>
+<tbody>
+<tr>
+<td><strong>Age Group, Years</strong></td>
+<td><strong>COVID-19 Cases*</strong></td>
+</tr>
+<tr>
+<td>00-04</td>
+<td>0</td>
+</tr>
+<tr>
+<td>05-17</td>
+<td>0</td>
+</tr>
+<tr>
+<td>18-49</td>
+<td>3</td>
+</tr>
+<tr>
+<td>50-64</td>
+<td>3</td>
+</tr>
+<tr>
+<td>65+</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Age Range</td>
+<td>20-69 yrs</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="width:500px;" summary="COVID-19 Cases by Gender" cellspacing="1" cellpadding="5" border="1">
+<caption>
+<h3><strong>COVID-19 Cases by Gender</strong></h3>
+</caption>
+<tbody>
+<tr>
+<td> </td>
+<td><strong>COVID-19 Cases by Gender</strong></td>
+</tr>
+<tr>
+<td>Female</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Male</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>Data Source: Acute Disease Service, Oklahoma State Department of Health.<br />*As of <em>2020-03-15 at 03:15:55.</em></p>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-3"  >
+  
+        <h3 class="pane-title">
+      Response    </h3>
+    
+  
+  <div class="pane-content">
+    <p>The Oklahoma public health system has activated the Incident Command System and stands ready with a multitude of statewide and national partners to treat and minimize further spread. Public health officials will continue to work with health care providers and medical facilities to ensure proper assessment, testing and treatment protocols. State and local public health officials will continue to monitor travelers and any individuals who test positive for COVID-19.</p>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-covid19-articles-panel-pane-1 view-omes-newsroom"  >
+  
+        <h2 class="pane-title">
+      Latest News    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-covid19-articles view-id-covid19_articles view-display-id-panel_pane_1 view-dom-id-3acde980d1094a911214e83db651e8fe">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/articles/situation-update-covid-19-03152020">SITUATION UPDATE: COVID-19 03/15/2020</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><ul style="font:13px/1.5 Arial,Helvetica,sans-serif"><li data-ogsc="rgb(0, 0, 0)" style="color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; text-align: left; margin-bottom: 4px;">Three additional individuals have tested positive for COVID-19. The cases are in Cleveland, Payne and Tulsa counties. There are currently seven cases in Oklahoma.</li></ul></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/articles/situation-update-covid-19-03142020">SITUATION UPDATE: COVID-19 03/14/2020</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><ul><li>We continue to work with our health care partners to ensure individuals who need to be tested for COVID-19 will receive access to testing. </li>
+<li>The OSDH has authorized hospitals, nursing facilities, assisted living centers, adult day care centers, jails and detention centers to restrict visitors as they deem necessary to protect those they serve.</li></ul></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/articles/situation-update-covid-19-03132020">SITUATION UPDATE: COVID-19 03/13/2020</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><ul><li>Oklahoma’s public health officials have announced the first presumptive positive COVID-19 case in Oklahoma County. The individual is a woman in her 60s who had recent travel to Florida. She is in isolation at home and public health officials have commenced contact investigation. Officials noted the presumptive case is unrelated to other COVID -19 cases in Oklahoma.</li>
+<li>There are now four cases of COVID-19 in Oklahoma.</li></ul></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/articles/covid-19-information-regarding-testing">COVID-19: Information Regarding Testing</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>For Release: March 12, 2020 – Jamie Dukes, Office of Communications (405) 271-5601</p>
+<p>County health departments, including OKC-County and Tulsa Health Departments, do not offer testing for COVID-19 (coronavirus).</p>
+<p>Any individual who develops symptoms such as fever, cough, and/or difficulty breathing, and has been in close contact with a person known to have COVID-19 or has recently traveled from an area with ongoing spread of COVID-19 should contact their health care provider or the COVID-19 hotline at 877-215-8336 for recommendations.</p></div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/articles/nba-player-tests-positive-while-oklahoma-city-no-immediate-threat-public">NBA Player Tests Positive While in Oklahoma City; No Immediate Threat to the Public</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><div class="cms_newsroom_article_body">
+<div>
+<p style="text-align:left">For Release: March 11, 2020 – Jamie Dukes, Office of Communications (405) 271-5601</p>
+<p style="text-align:left">The NBA has announced that a player on the Utah Jazz has been tested for COVID-19 and received a presumptive positive result. Public health officials were able to obtain the test result before the game’s tip off. This is still an ongoing investigation as public health officials are testing other players and staff who have been in contact with the player.  </p></div></div></div>  </div>  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="pagination-centered"><div class="item-list"><ul class="pagination pager"><li class="current first"><a href="">1</a></li>
+<li><a title="Go to page 2" href="/home?page=1">2</a></li>
+<li class="arrow"><a title="Go to next page" href="/home?page=1">next ›</a></li>
+<li class="arrow last"><a title="Go to last page" href="/home?page=1">last »</a></li>
+</ul></div></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-left-2 small-12 large-4">
+      <div class="inside"><div class="panel-pane pane-custom pane-4"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="media-p">
+<div class="media media-element-container media-default">
+<div id="file-276" class="file file-image file-image-jpeg">
+<h2 class="element-invisible"><a href="/files/3column-430x100jpg">3column-430x100.jpg</a></h2>
+<div class="content">
+    <img alt="Call Center Information" height="125" width="430" class="media-element file-default" data-delta="3" typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/3column-430x100.jpg" />  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-5"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="media-p">
+<div class="media media-element-container media-default">
+<div id="file-296" class="file file-image file-image-jpeg">
+<h2 class="element-invisible"><a href="/files/sub-blog-factorfictionjpg">sub-blog-factorfiction.jpg</a></h2>
+<div class="content">
+          <a href="/fact-or-fiction-–-covid-19"><img alt="Fact or Fiction - COVID-19 BLOG" class="media-element file-default" data-delta="2" typeof="foaf:Image" src="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/sub-blog-factorfiction.jpg" width="430" height="125" /></a>
+        </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-6"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="media-p">
+<div class="media media-element-container media-default">
+<div id="file-86" class="file file-video file-video-oembed">
+<h2 class="element-invisible"><a href="/files/3aozunfbyjs">COVID-19: What is novel coronavirus?</a></h2>
+<div class="content">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/3AozUnFbYJs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+</div>
+</div>
+<p> </p>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-7 gov-delivery-sub"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="gov-delivery-sub">
+<h3>Get Email Updates</h3>
+<form id="GD-snippet-form" action="https://public.govdelivery.com/accounts/OKSDH/subscribers/qualify" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" /><input type="hidden" name="authenticity_token" value="YlPq9H3/bRn4arMTiqH4zMIHjrlSxOhz3yQ1AfKN5o3Ycz3PEEOYc0P3pGJHdRAzx5qxeiXV87sNWE33ExUFBw==" /><input type="hidden" name="topic_id" id="topic_id" value="OKSDH_192" /><label for="email" style="&#10;    display: block;&#10;    margin-bottom: 7px;&#10;    font-size: 14px;&#10;color: #fff;&#10;">Sign up here for the latest COVID-19 news and updates from OSDH.</label><br />
+<input type="text" name="email" id="email" placeholder="Email Address" style="&#10;    padding: 6px;&#10;    width: 60%;&#10;" /><input type="submit" name="commit" value="Submit" style="&#10;    background: #009966;&#10;    color: #fff;&#10;    border: none;&#10;    border-radius: 4px;&#10;    padding: 8px 20px;&#10;" /></form>
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-8"  >
+  
+      
+  
+  <div class="pane-content">
+    <p><a class="twitter-timeline" data-height="800" href="https://twitter.com/HealthyOklahoma?ref_src=twsrc%5Etfw">Tweets by HealthyOklahoma</a> </p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </div>
+
+  
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-right">
+    <div class="panel-panel columns two-thirds-right-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-right-2 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row full-width">
+    <div class="panel-panel columns full-column-1 small-12">
+      <div class="inside"></div>
+    </div>
+  </div>
+ 
+  <div class="row four-column">
+    <div class="panel-panel columns four-column-1 small-6 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-2 small-6 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-3 small-6 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-4 small-6 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row three-column">
+    <div class="panel-panel columns three-column-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-3 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-column">
+    <div class="panel-panel columns two-column-1 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-column-2 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-left">
+    <div class="panel-panel columns two-thirds-left-1 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-left-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-right">
+    <div class="panel-panel columns two-thirds-right-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-right-2 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row full-width">
+    <div class="panel-panel columns full-column-1 small-12">
+      <div class="inside"></div>
+    </div>
+  </div>
+ 
+  <div class="row four-column">
+    <div class="panel-panel columns four-column-1 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-2 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-3 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-4 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row three-column">
+    <div class="panel-panel columns three-column-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-3 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-column">
+    <div class="panel-panel columns two-column-1 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-column-2 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-left">
+    <div class="panel-panel columns two-thirds-left-1 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-left-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-right">
+    <div class="panel-panel columns two-thirds-right-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-right-2 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row full-width">
+    <div class="panel-panel columns full-column-1 small-12">
+      <div class="inside"></div>
+    </div>
+  </div>
+ 
+  <div class="row four-column">
+    <div class="panel-panel columns four-column-1 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-2 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-3 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns four-column-4 small-12 medium-6 large-3">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row three-column">
+    <div class="panel-panel columns three-column-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns three-column-3 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-column">
+    <div class="panel-panel columns two-column-1 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-column-2 small-12 medium-6">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-left">
+    <div class="panel-panel columns two-thirds-left-1 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-left-2 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+  </div>
+
+  <div class="row two-thirds-right">
+    <div class="panel-panel columns two-thirds-right-1 small-12 large-4">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel columns two-thirds-right-2 small-12 large-8">
+      <div class="inside"></div>
+    </div>
+  </div>
+</div>
+  
+      </div>
+    <!--/.l-main region -->
+
+  </main>
+  <!--/.l-main -->
+
+  
+  
+  <!--.l-footer -->
+  <footer class="l-footer panel row" role="contentinfo">
+          <div class="footer columns">
+          <section class="block block-menu block-menu-menu-okgov-footer-links-menu">
+  
+      
+    <ul class="menu"><li class="first leaf"><a href="http://www.ok.gov/about">About</a></li>
+<li class="leaf"><a href="https://www.ok.gov/health/Accessibility.html">Accessibility</a></li>
+<li class="leaf"><a href="/contact-us">Contact</a></li>
+<li class="last leaf"><a href="http://www.ok.gov/policy_disclaimers.html">Policies</a></li>
+</ul>  
+  </section>      </div>
+    
+          <div class="copyright columns">
+        Copyright &copy; 2020 State of Oklahoma      </div>
+      </footer>
+  <!--/.l-footer -->
+
+  </div>
+
+<!-- GovDelivery Subscription Overlay -->
+<script src="https://content.govdelivery.com/overlay/js/8609.js"></script>
+<!-- End GovDelivery Overlay -->
+<!--/.page -->
+  <script src=""></script>
+    <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4883a0c1ff","applicationID":"472734638,8505027","transactionName":"Z11bMBQEChAHAUQLC14XeAcSDAsNSRJRBQFvVVgKBwIBETkSUQUBb11BAQUQEAY=","queueTime":0,"applicationTime":258,"atts":"SxpYRlweGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
-
-
-
