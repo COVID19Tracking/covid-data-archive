@@ -1,29 +1,52 @@
 STATE CHANGE LIST
 
-  start	2020-03-15 01:49:36.327879
-  end	2020-03-15 01:50:36.199721
-  previous	2020-03-14 23:02:50.683486
-  lapsed	0:00:59.871842
+  start	2020-03-15 02:13:39.539640
+  end	2020-03-15 02:14:05.613012
+  previous	2020-03-15 01:49:36.327879
+  lapsed	0:00:26.073372
 
 STATUS COUNTS:
-  CHANGED	17
+  CHANGED	40
   FAILED	2
   duplicate	37
   skip	1
-  unchanged	49
+  unchanged	26
 
 ====== CHANGED ======
+AK.html	CHANGED	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
+AL.html	CHANGED	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AR.html	CHANGED	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AZ.html	CHANGED	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 CA.html	CHANGED	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
-DC.html	CHANGED	https://coronavirus.dc.gov/	
+CO.html	CHANGED	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
+CT.html	CHANGED	https://portal.ct.gov/Coronavirus	
 DC_data.html	CHANGED	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	CHANGED	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 FL.html	CHANGED	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
+GA.html	CHANGED	https://dph.georgia.gov/novelcoronavirus	
+GA_data.html	CHANGED	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
+HI.html	CHANGED	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 ID.html	CHANGED	https://coronavirus.idaho.gov/	
+IL.html	CHANGED	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
+IN.html	CHANGED	https://www.in.gov/isdh/28470.htm	
+KY.html	CHANGED	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+LA.html	CHANGED	http://ldh.la.gov/Coronavirus/	
+MA.html	CHANGED	https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19	
+MA_data.html	CHANGED	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
+MD.html	CHANGED	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
+ME.html	CHANGED	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 MI.html	CHANGED	https://www.michigan.gov/coronavirus	
+MN.html	CHANGED	https://www.health.state.mn.us/diseases/coronavirus/index.html	
+MN_data.html	CHANGED	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MO.html	CHANGED	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MS.html	CHANGED	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MT.html	CHANGED	https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt	
+NC.html	CHANGED	https://www.ncdhhs.gov/divisions/public-health/coronavirus-disease-2019-covid-19-response-north-carolina	
+NC_data.html	CHANGED	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	https://www.health.nd.gov/diseases-conditions/coronavirus	
+ND_data.html	CHANGED	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 NE.html	CHANGED	http://dhhs.ne.gov/Pages/Coronavirus.aspx	
+NH.html	CHANGED	https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm	
 NY.html	CHANGED	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 OR.html	CHANGED	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 TX.html	CHANGED	https://dshs.texas.gov/coronavirus/	
@@ -79,33 +102,10 @@ mail_sheet	skip	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163
 
 ====== unchanged ======
 main_sheet	unchanged	https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-AK.html	unchanged	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AK_data.html	unchanged	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AL.html	unchanged	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
-AZ.html	unchanged	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
-CO.html	unchanged	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	unchanged	https://portal.ct.gov/Coronavirus	
-GA.html	unchanged	https://dph.georgia.gov/novelcoronavirus	
-GA_data.html	unchanged	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-IL.html	unchanged	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
-IN.html	unchanged	https://www.in.gov/isdh/28470.htm	
+DC.html	unchanged	https://coronavirus.dc.gov/	
+DE.html	unchanged	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 KS.html	unchanged	http://www.kdheks.gov/coronavirus/	
-KY.html	unchanged	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
-LA.html	unchanged	http://ldh.la.gov/Coronavirus/	
-MA.html	unchanged	https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19	
-MA_data.html	unchanged	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
-MD.html	unchanged	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
-ME.html	unchanged	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
-MN.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/index.html	
-MN_data.html	unchanged	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	unchanged	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
-MS.html	unchanged	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
-NC.html	unchanged	https://www.ncdhhs.gov/divisions/public-health/coronavirus-disease-2019-covid-19-response-north-carolina	
-NC_data.html	unchanged	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
-ND_data.html	unchanged	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
-NH.html	unchanged	https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm	
 NJ.html	unchanged	https://www.nj.gov/health/cd/topics/ncov.shtml	
 NJ_data.html	unchanged	https://www.nj.gov/health/	
 NM.html	unchanged	https://cv.nmhealth.org/	
