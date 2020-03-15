@@ -1,25 +1,24 @@
 STATE CHANGE LIST
 
-  start	2020-03-15 15:33:05.027660
-  end	2020-03-15 15:33:50.158784
-  previous	2020-03-15 15:29:22.973481
-  lapsed	0:00:45.131124
+  start	2020-03-15 15:52:20.412661
+  end	2020-03-15 15:53:02.468678
+  previous	2020-03-15 15:33:05.027660
+  lapsed	0:00:42.056017
 
 STATUS COUNTS:
-  CHANGED	4
+  CHANGED	3
   FAILED	3
   duplicate	37
   skip	1
-  unchanged	63
+  unchanged	64
 
 ====== CHANGED ======
-NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
-VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 
 ====== FAILED ======
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 
@@ -75,7 +74,6 @@ AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-
 CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
@@ -109,6 +107,7 @@ NJ.html	unchanged	google-states	https://www.nj.gov/health/cd/topics/ncov.shtml
 NJ_data.html	unchanged	google-states	https://www.nj.gov/health/	
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
+NY.html	unchanged	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
 OK.html	unchanged	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	age < 15 mins	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
@@ -124,6 +123,7 @@ TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#co
 UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
 UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
 VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
 WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
