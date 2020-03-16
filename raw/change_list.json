@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-16T11:23:24.055031",
-  "end_date": "2020-03-16T11:23:28.614269",
-  "previous_date": "2020-03-16T11:21:03.802513",
-  "time_lapsed": "0:00:04.559238",
+  "start_date": "2020-03-16T11:26:15.123297",
+  "end_date": "2020-03-16T11:26:17.154740",
+  "previous_date": "2020-03-16T11:23:24.055031",
+  "time_lapsed": "0:00:02.031443",
   "complete": true,
   "error_message": null,
   "items": [
@@ -236,14 +236,14 @@
     {
       "name": "FL.html",
       "status": "CHANGED",
-      "url": "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:01.190094",
       "checked": "2020-03-16T11:23:25.473361",
       "updated": "2020-03-16T11:23:25.473361",
       "failed": null,
-      "source": "google-states"
+      "source": "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
     },
     {
       "name": "FL_data.html",
@@ -836,14 +836,14 @@
     {
       "name": "NY.html",
       "status": "CHANGED",
-      "url": "https://www.health.ny.gov/diseases/communicable/coronavirus/",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.381907",
       "checked": "2020-03-16T11:23:26.317046",
       "updated": "2020-03-16T11:23:26.317046",
       "failed": null,
-      "source": "google-states"
+      "source": "https://www.health.ny.gov/diseases/communicable/coronavirus/"
     },
     {
       "name": "NY_data.html",
@@ -1148,14 +1148,14 @@
     {
       "name": "WA.html",
       "status": "CHANGED",
-      "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.513555",
       "checked": "2020-03-16T11:23:26.926671",
       "updated": "2020-03-16T11:23:26.926671",
       "failed": null,
-      "source": "google-states"
+      "source": "https://www.doh.wa.gov/Emergencies/Coronavirus"
     },
     {
       "name": "WA_data.html",
@@ -1172,38 +1172,38 @@
     {
       "name": "WI.html",
       "status": "CHANGED",
-      "url": "https://www.dhs.wisconsin.gov/disease/covid-19.htm",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.520537",
       "checked": "2020-03-16T11:23:27.463808",
       "updated": "2020-03-16T11:23:27.463808",
       "failed": null,
-      "source": "google-states"
+      "source": "https://www.dhs.wisconsin.gov/disease/covid-19.htm"
     },
     {
       "name": "WI_data.html",
       "status": "CHANGED",
-      "url": "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.524527",
       "checked": "2020-03-16T11:23:27.754270",
       "updated": "2020-03-16T11:23:27.754270",
       "failed": null,
-      "source": "google-states"
+      "source": "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
     },
     {
       "name": "WV.html",
       "status": "CHANGED",
-      "url": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx",
+      "url": "age < 15 mins",
       "msg": null,
       "complete": true,
       "added": "2020-03-13T06:18:02.527519",
       "checked": "2020-03-16T11:23:28.333063",
       "updated": "2020-03-16T11:23:28.333063",
       "failed": null,
-      "source": "google-states"
+      "source": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx"
     },
     {
       "name": "WV_data.html",
@@ -1282,7 +1282,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-15T08:37:19.375162",
-      "checked": "2020-03-16T11:23:24.832404",
+      "checked": "2020-03-16T11:26:15.886585",
       "updated": "2020-03-16T11:21:04.655909",
       "failed": null
     },
