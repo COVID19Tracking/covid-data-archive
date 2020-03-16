@@ -1,23 +1,24 @@
 STATE CHANGE LIST
 
-  start	2020-03-16 04:06:10.981077
-  end	2020-03-16 04:06:57.616032
-  previous	2020-03-16 04:03:46.526124
-  lapsed	0:00:46.634955
+  start	2020-03-16 04:35:22.828214
+  end	2020-03-16 04:36:19.071854
+  previous	2020-03-16 04:06:10.981077
+  lapsed	0:00:56.243640
 
 STATUS COUNTS:
-  CHANGED	2
+  CHANGED	3
   FAILED	5
   duplicate	35
   skip	1
-  unchanged	67
+  unchanged	66
 
 ====== CHANGED ======
+HI.html	CHANGED	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 
 ====== FAILED ======
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
@@ -80,7 +81,6 @@ DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novel
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 IL.html	unchanged	google-states	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm	
