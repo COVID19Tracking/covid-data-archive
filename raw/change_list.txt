@@ -1,9 +1,9 @@
 STATE CHANGE LIST
 
-  start	2020-03-16 05:05:28.742398
-  end	2020-03-16 05:06:16.135264
-  previous	2020-03-16 04:35:22.828214
-  lapsed	0:00:47.392866
+  start	2020-03-16 05:35:25.804445
+  end	2020-03-16 05:36:09.056206
+  previous	2020-03-16 05:05:28.742398
+  lapsed	0:00:43.251761
 
 STATUS COUNTS:
   CHANGED	3
@@ -13,9 +13,9 @@ STATUS COUNTS:
   unchanged	66
 
 ====== CHANGED ======
-HI.html	CHANGED	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
+google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 
 ====== FAILED ======
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
@@ -81,6 +81,7 @@ DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novel
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
+HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 IL.html	unchanged	google-states	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm	
@@ -130,5 +131,4 @@ WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus
 WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
 WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
-google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 
