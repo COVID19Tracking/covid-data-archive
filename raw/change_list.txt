@@ -1,18 +1,19 @@
 STATE CHANGE LIST
 
-  start	2020-03-16 10:35:32.756343
-  end	2020-03-16 10:36:15.730291
-  previous	2020-03-16 10:05:33.823492
-  lapsed	0:00:42.973948
+  start	2020-03-16 11:05:24.899841
+  end	2020-03-16 11:06:05.772863
+  previous	2020-03-16 10:35:32.756343
+  lapsed	0:00:40.873022
 
 STATUS COUNTS:
-  CHANGED	2
+  CHANGED	3
   FAILED	5
   duplicate	35
   skip	1
-  unchanged	67
+  unchanged	66
 
 ====== CHANGED ======
+MA_data.html	CHANGED	google-states	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 
@@ -88,7 +89,6 @@ KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/
 KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 MA.html	unchanged	google-states	https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19	
-MA_data.html	unchanged	google-states	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states	https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx	
 ME.html	unchanged	google-states	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 MI.html	unchanged	google-states	https://www.michigan.gov/coronavirus	
