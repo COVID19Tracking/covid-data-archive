@@ -1,19 +1,18 @@
 STATE CHANGE LIST
 
-  start	2020-03-16 07:05:21.787698
-  end	2020-03-16 07:06:09.497141
-  previous	2020-03-16 06:35:29.489893
-  lapsed	0:00:47.709443
+  start	2020-03-16 07:35:34.467503
+  end	2020-03-16 07:36:22.640746
+  previous	2020-03-16 07:05:21.787698
+  lapsed	0:00:48.173243
 
 STATUS COUNTS:
-  CHANGED	4
+  CHANGED	3
   FAILED	5
   duplicate	35
   skip	1
-  unchanged	65
+  unchanged	66
 
 ====== CHANGED ======
-HI.html	CHANGED	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 NV.html	CHANGED	google-states	http://dpbh.nv.gov/coronavirus/	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -82,6 +81,7 @@ DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novel
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
+HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 IL.html	unchanged	google-states	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm	
