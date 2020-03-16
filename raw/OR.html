@@ -96,7 +96,34 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
 
         
         <script src="https://apps.oregon.gov/Application/CDN/Enterprise/scripts/sharepoint/2010/template-v4x-patches.js"></script>
-        <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script></head>
+        <script src="https://apps.oregon.gov/Application/CDN/Assets/bundle.min.js?b=jquery,moment.js,dataTables_bs,fed-assets_datepicker,knockout"></script><script src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/_layouts/OID.SharePoint.StarterTemplate/scripts/data-tables-web-part.js"></script>
+     <script type="text/javascript">    
+                      
+        $(document).ready(function () {
+            //"/<[^\/>][^>]*><\/[^>]+>/"
+            setTimeout(function () {
+                //$('div:contains(" Column ")').remove();                
+                //$('*:empty').remove();
+                $('div.container').find('div.ms-rtestate-field').each(function (index) {
+
+                    if ($(this).prev('div') != undefined && $(this).prev('div')[0] != undefined && $(this).prev('div')[0].innerText.indexOf('Column') > -1) {
+                        $(this).prev('div')[0].remove();
+                    }
+                    if ($(this).closest('div.row') != undefined && $(this).closest('div.row')[0] != undefined && $(this).closest('div.row')[0].innerText === '') {
+                        $(this).closest('div.row')[0].remove();
+                    }
+                });
+
+                $('div.container').find('div.row').each(function (index) {
+                    if (this.innerText === '') {
+                        this.remove();
+                    }
+                });
+            }, 5000);
+        });
+    </script>
+    
+</head>
 
 
 
@@ -358,7 +385,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 <div    id="WebPartWPQ4"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_2a7f9ad0_f400_4cc4_aeb9_7df658351051_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#5b335d01-8cd7-4255-adb6-fd772ba9a7dd" aria-controls="5b335d01-8cd7-4255-adb6-fd772ba9a7dd" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="e56eb649-f9e3-4c5e-a642-169f4a39447a" role="tab">
+					<a class="collapsed" href="#c044754c-f7bc-4994-a514-39e03f16ef25" aria-controls="c044754c-f7bc-4994-a514-39e03f16ef25" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="f3aa476e-bcb7-47e8-b73d-eda52d6421c6" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h3 class="panel-title">
@@ -368,7 +395,7 @@ if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();/
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="5b335d01-8cd7-4255-adb6-fd772ba9a7dd" aria-labelledBy="e56eb649-f9e3-4c5e-a642-169f4a39447a" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="c044754c-f7bc-4994-a514-39e03f16ef25" aria-labelledBy="f3aa476e-bcb7-47e8-b73d-eda52d6421c6" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass23E56795FBF0468C9F856CD297450134">
@@ -534,7 +561,7 @@ completed monitoring without developing symptoms or were determined to have no r
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#d1380106-3826-4fb8-98a4-aa0fc5548c74" aria-controls="d1380106-3826-4fb8-98a4-aa0fc5548c74" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b4804e06-cf39-43c3-b5e9-3599761a2a4a" role="tab">
+					<a class="collapsed" href="#e26017f4-58b3-46ec-88f4-d0768058d350" aria-controls="e26017f4-58b3-46ec-88f4-d0768058d350" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="21e6c6ae-4673-4a50-9c81-3519449ee571" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-title">
 								<h3 class="panel-title">
@@ -544,7 +571,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="d1380106-3826-4fb8-98a4-aa0fc5548c74" aria-labelledBy="b4804e06-cf39-43c3-b5e9-3599761a2a4a" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="e26017f4-58b3-46ec-88f4-d0768058d350" aria-labelledBy="21e6c6ae-4673-4a50-9c81-3519449ee571" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass87C675AE089746F2A64C32A7414A4B97">
@@ -638,12 +665,12 @@ completed monitoring without developing symptoms or were determined to have no r
 			<div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label" style='display:none'>Full Width Column 2</div><div id="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11__ControlWrapper_OregonRichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_ctl00_MainContentPlaceHolder_PageContentPlaceHolder_PageContentPlaceHolder_RichHtmlField11_label"><h2 class="ews-h2-blue-stripe">Latest Updates from OHA</h2>
 
 <div><div    id="WebPartWPQ3"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_81804b11_c0e0_418a_a93c_931c8b77575a" class="or-dataTablesWebPart">
-			<div id="b74dd3da-695d-4ea8-bbbd-ee90d4114907">
+			<div id="a20111cb-c533-4888-8a62-50c50acfef5e">
 				<data-tables-web-part params="webPartId: 'g_81804b11_c0e0_418a_a93c_931c8b77575a', webPartProperties: {&quot;webPartId&quot;:&quot;g_81804b11_c0e0_418a_a93c_931c8b77575a&quot;,&quot;tableCaption&quot;:&quot;&quot;,&quot;dataSource&quot;:&quot;list&quot;,&quot;socrataId&quot;:&quot;&quot;,&quot;sharePointWebUrl&quot;:&quot;/oha/ERD&quot;,&quot;sharePointListUrl&quot;:&quot;/oha/ERD/Pages&quot;,&quot;sharePointViewName&quot;:&quot;COVID-19&quot;,&quot;responsiveMode&quot;:&quot;collapse&quot;,&quot;paginationEnabled&quot;:false,&quot;searchEnabled&quot;:false,&quot;sortEnabled&quot;:false,&quot;filterEnabled&quot;:false,&quot;stateSaveEnabled&quot;:false,&quot;copyButtonEnabled&quot;:false,&quot;printButtonEnabled&quot;:false,&quot;excelButtonEnabled&quot;:false,&quot;pdfButtonEnabled&quot;:false,&quot;tableBordered&quot;:true,&quot;tableStriped&quot;:true,&quot;tableCondensed&quot;:true}">
 
 				</data-tables-web-part>
 			</div><script type="text/javascript">
-				ko.applyBindings(null, document.getElementById('b74dd3da-695d-4ea8-bbbd-ee90d4114907'))
+				ko.applyBindings(null, document.getElementById('a20111cb-c533-4888-8a62-50c50acfef5e'))
 			</script>
 		</div></div>
 
@@ -659,7 +686,7 @@ completed monitoring without developing symptoms or were determined to have no r
 <div    id="WebPartWPQ5"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#0340d8b8-deb6-431c-8350-2c7694a8036f" aria-controls="0340d8b8-deb6-431c-8350-2c7694a8036f" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="fc9bfbd2-df18-4e4a-8c6c-616d82bf1394" role="tab">
+					<a class="collapsed" href="#824c25aa-eb44-457d-8c73-0fc90af89853" aria-controls="824c25aa-eb44-457d-8c73-0fc90af89853" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="24a74ca4-b98d-451b-973d-a019f2ba0de7" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -671,7 +698,7 @@ completed monitoring without developing symptoms or were determined to have no r
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="0340d8b8-deb6-431c-8350-2c7694a8036f" aria-labelledBy="fc9bfbd2-df18-4e4a-8c6c-616d82bf1394" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="824c25aa-eb44-457d-8c73-0fc90af89853" aria-labelledBy="24a74ca4-b98d-451b-973d-a019f2ba0de7" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass27C5BB6AB16C45B5A52F80AF11A85C42"><div class="well">
@@ -742,7 +769,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#e8c20d68-3e1d-41c7-9375-b6f292d4e89c" aria-controls="e8c20d68-3e1d-41c7-9375-b6f292d4e89c" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="549f3ac5-b584-4bd0-a1b7-cb3c615b66ef" role="tab">
+					<a class="collapsed" href="#49d1ac5d-f7d4-4295-b0ae-eb7df86edd87" aria-controls="49d1ac5d-f7d4-4295-b0ae-eb7df86edd87" tabindex="0" data-toggle="collapse" data-parent="#accordion-ctl00_ctl00_ctl25_g_8e8616c7_531f_427a_9c3a_ee7d76e678c0_ctl01"><div class="panel-heading" id="8f2aa68a-78a9-4fc1-ad51-5a5fdc084297" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -754,7 +781,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="e8c20d68-3e1d-41c7-9375-b6f292d4e89c" aria-labelledBy="549f3ac5-b584-4bd0-a1b7-cb3c615b66ef" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="49d1ac5d-f7d4-4295-b0ae-eb7df86edd87" aria-labelledBy="8f2aa68a-78a9-4fc1-ad51-5a5fdc084297" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass419ED99C37D2483487E2FFE8A53187D5"><div class="well"><h3>Investigative Guidelines</h3>
@@ -791,7 +818,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 <div    id="WebPartWPQ1"  class="ms-WPBody"   style="" ><div id="ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82">
 			<div class="list-unstyled panel-group or-accordion-list" id="accordion-ctl00_ctl00_ctl25_g_a3feef12_d0b6_4c10_904d_9c726d142a82_ctl01" role="tablist">
 				<div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#7a634451-7115-4ae6-b07c-9b547138f536" aria-controls="7a634451-7115-4ae6-b07c-9b547138f536" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="8473e9ab-4b1a-47ee-bc9e-22eded0eea92" role="tab">
+					<a class="collapsed" href="#969d6d77-7c62-4a3c-95d4-b93cf8ad54d9" aria-controls="969d6d77-7c62-4a3c-95d4-b93cf8ad54d9" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="9835820d-f382-41b6-bdb1-8b615c24a70e" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -803,7 +830,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="7a634451-7115-4ae6-b07c-9b547138f536" aria-labelledBy="8473e9ab-4b1a-47ee-bc9e-22eded0eea92" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="969d6d77-7c62-4a3c-95d4-b93cf8ad54d9" aria-labelledBy="9835820d-f382-41b6-bdb1-8b615c24a70e" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClassA29423582640472699751E675002BC29">
@@ -860,7 +887,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#e013ad1a-a698-4f3b-b827-9926768460b3" aria-controls="e013ad1a-a698-4f3b-b827-9926768460b3" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="8608d6b1-34f5-44dd-9054-f8c86cd42fdd" role="tab">
+					<a class="collapsed" href="#2d3af8ca-2d16-4778-9e30-11adc687f867" aria-controls="2d3af8ca-2d16-4778-9e30-11adc687f867" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="48885ccf-dad0-4d0e-b9b5-4fb337e48a02" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -872,7 +899,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="e013ad1a-a698-4f3b-b827-9926768460b3" aria-labelledBy="8608d6b1-34f5-44dd-9054-f8c86cd42fdd" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="2d3af8ca-2d16-4778-9e30-11adc687f867" aria-labelledBy="48885ccf-dad0-4d0e-b9b5-4fb337e48a02" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5C0D7AD5F0FF4C299C060FFCC9290122">
@@ -914,7 +941,87 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#c4f8ca44-75fb-47ae-8266-a2de8691fb18" aria-controls="c4f8ca44-75fb-47ae-8266-a2de8691fb18" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="fb7a3b69-f7f7-4db7-b6c8-dfd74805f20c" role="tab">
+					<a class="collapsed" href="#1f51ceb5-312d-49a3-b636-5f6d1ca7d07a" aria-controls="1f51ceb5-312d-49a3-b636-5f6d1ca7d07a" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="0d0552b7-da43-4417-9ec7-e95d4443bd93" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Food Service
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="1f51ceb5-312d-49a3-b636-5f6d1ca7d07a" aria-labelledBy="0d0552b7-da43-4417-9ec7-e95d4443bd93" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClassBB3371A79B6F402D83C36A84ABEE012C">
+
+<div class="well"><h3>Cleaning Tips for Restaurants, Food Carts and other Food Service Operations</h3>
+<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2272.pdf" target="_blank" title="Cleaning Tips for Food Service - English" style="margin-bottom:10px;width:230px">English</a>​</p>
+</div>
+</div>
+​​​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#9a5fdc9b-1b24-4c3e-86e4-0a569efd82c0" aria-controls="9a5fdc9b-1b24-4c3e-86e4-0a569efd82c0" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="9347fd09-d3aa-4c77-a41d-7ceae9bd2d3d" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Home Care Workers
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="9a5fdc9b-1b24-4c3e-86e4-0a569efd82c0" aria-labelledBy="9347fd09-d3aa-4c77-a41d-7ceae9bd2d3d" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClass6563B7B4699C409C99D4CEFA252F19F2"><div class="well">
+<h3>Home Care Workers</h3>
+
+<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Infection-Control-Guidance-Home-Care-Workers.pdf" target="_blank">OHA Interim COVID-19 Infection Control Guidance for Workers Providing In-home Personal Care​</a> <span style="color:rgb(255, 0, 0)">3/10/2020</span></li></ul>
+
+</div>
+​</div>
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#f338c7f7-2020-436d-bc42-86da2d208860" aria-controls="f338c7f7-2020-436d-bc42-86da2d208860" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="26a1b064-f486-4fdf-bd7a-d1fa70c6bfbf" role="tab">
+						<div class="or-accordion-heading">
+							<div class="or-accordion-heading-thumb">
+								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
+							</div><div class="or-accordion-heading-title">
+								<h3 class="panel-title">
+									Housing Services and Homeless Camps
+								</h3><p></p>
+							</div><div class="or-accordion-heading-collapse">
+
+							</div>
+						</div>
+					</div></a><div class="panel-collapse collapse" id="f338c7f7-2020-436d-bc42-86da2d208860" aria-labelledBy="26a1b064-f486-4fdf-bd7a-d1fa70c6bfbf" aria-expanded="false" role="tabpanel">
+						<div class="panel-body">
+							<div class="or-accordion-content-field">
+								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
+<div class="well">
+<h3>Shelter Guidance​</h3>
+
+<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Shelter-Guidance-OHA2256.pdf" target="_blank">Interim COVID-19 Shelter Guidance​</a> <span style="color:rgb(255, 0, 0)">Updated 3/9/2020</span></li></ul></div>
+<div class="well"><h3>Homeless Camps​</h3>
+
+<ul><li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2278.pdf" target="_blank">Recommendations for Homeless Camps</a> <span style="color:rgb(255, 0, 0)">3/11/2020</span>​</li></ul></div></div>
+​
+							</div>
+						</div>
+					</div>
+				</div><div class="panel panel-default or-accordion-panel">
+					<a class="collapsed" href="#bb28290c-b574-4832-b059-154401ed8cb0" aria-controls="bb28290c-b574-4832-b059-154401ed8cb0" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b6430530-3e95-447a-8465-f620946cb17b" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -926,7 +1033,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="c4f8ca44-75fb-47ae-8266-a2de8691fb18" aria-labelledBy="fb7a3b69-f7f7-4db7-b6c8-dfd74805f20c" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="bb28290c-b574-4832-b059-154401ed8cb0" aria-labelledBy="b6430530-3e95-447a-8465-f620946cb17b" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClassE868DBCEA354498D950D447FBAC1497E">
@@ -954,87 +1061,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 						</div>
 					</div>
 				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#097d16ba-848a-4103-9ac8-f43343311b1e" aria-controls="097d16ba-848a-4103-9ac8-f43343311b1e" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="b62a0a74-1cdc-4b79-b830-585fadef2236" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Food Service
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="097d16ba-848a-4103-9ac8-f43343311b1e" aria-labelledBy="b62a0a74-1cdc-4b79-b830-585fadef2236" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClassBB3371A79B6F402D83C36A84ABEE012C">
-
-<div class="well"><h3>Cleaning Tips for Restaurants, Food Carts and other Food Service Operations</h3>
-<p><a class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served//LE2272.pdf" target="_blank" title="Cleaning Tips for Food Service - English" style="margin-bottom:10px;width:230px">English</a>​</p>
-</div>
-</div>
-​​​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#3c5640e7-7f5d-4b20-9ab7-a05c07949ccc" aria-controls="3c5640e7-7f5d-4b20-9ab7-a05c07949ccc" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="7c2353fe-8494-4d91-b46d-516e367b97c9" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Home Care Workers
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="3c5640e7-7f5d-4b20-9ab7-a05c07949ccc" aria-labelledBy="7c2353fe-8494-4d91-b46d-516e367b97c9" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClass6563B7B4699C409C99D4CEFA252F19F2"><div class="well">
-<h3>Home Care Workers</h3>
-
-<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Infection-Control-Guidance-Home-Care-Workers.pdf" target="_blank">OHA Interim COVID-19 Infection Control Guidance for Workers Providing In-home Personal Care​</a> <span style="color:rgb(255, 0, 0)">3/10/2020</span></li></ul>
-
-</div>
-​</div>
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#bd687872-2ba4-47b2-a9b0-74422b5b3871" aria-controls="bd687872-2ba4-47b2-a9b0-74422b5b3871" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="72f687fc-9ac9-4f95-8cf1-0cf3c706616c" role="tab">
-						<div class="or-accordion-heading">
-							<div class="or-accordion-heading-thumb">
-								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
-							</div><div class="or-accordion-heading-title">
-								<h3 class="panel-title">
-									Housing Services and Homeless Camps
-								</h3><p></p>
-							</div><div class="or-accordion-heading-collapse">
-
-							</div>
-						</div>
-					</div></a><div class="panel-collapse collapse" id="bd687872-2ba4-47b2-a9b0-74422b5b3871" aria-labelledBy="72f687fc-9ac9-4f95-8cf1-0cf3c706616c" aria-expanded="false" role="tabpanel">
-						<div class="panel-body">
-							<div class="or-accordion-content-field">
-								<div class="ExternalClass99BD721024554CC3ABBE5317742A46D7">
-<div class="well">
-<h3>Shelter Guidance​</h3>
-
-<ul><li><a href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19-Interim-Shelter-Guidance-OHA2256.pdf" target="_blank">Interim COVID-19 Shelter Guidance​</a> <span style="color:rgb(255, 0, 0)">Updated 3/9/2020</span></li></ul></div>
-<div class="well"><h3>Homeless Camps​</h3>
-
-<ul><li><a href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2278.pdf" target="_blank">Recommendations for Homeless Camps</a> <span style="color:rgb(255, 0, 0)">3/11/2020</span>​</li></ul></div></div>
-​
-							</div>
-						</div>
-					</div>
-				</div><div class="panel panel-default or-accordion-panel">
-					<a class="collapsed" href="#289aaa45-ee2b-4cf4-8abb-873bb77ccc6e" aria-controls="289aaa45-ee2b-4cf4-8abb-873bb77ccc6e" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="be24734d-1bac-452c-8adf-fe1bc9a94120" role="tab">
+					<a class="collapsed" href="#00a29b6b-9768-476c-b1fc-b242c8b910b1" aria-controls="00a29b6b-9768-476c-b1fc-b242c8b910b1" tabindex="0" data-toggle="collapse"><div class="panel-heading" id="c9489a91-0f18-4789-a37f-6b24baab14d0" role="tab">
 						<div class="or-accordion-heading">
 							<div class="or-accordion-heading-thumb">
 								<img class="img-responsive" src="https://www.oregon.gov/oha/PH/PublishingImages/icons/look.png" alt="icon" />
@@ -1046,14 +1073,13 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 
 							</div>
 						</div>
-					</div></a><div class="panel-collapse collapse" id="289aaa45-ee2b-4cf4-8abb-873bb77ccc6e" aria-labelledBy="be24734d-1bac-452c-8adf-fe1bc9a94120" aria-expanded="false" role="tabpanel">
+					</div></a><div class="panel-collapse collapse" id="00a29b6b-9768-476c-b1fc-b242c8b910b1" aria-labelledBy="c9489a91-0f18-4789-a37f-6b24baab14d0" aria-expanded="false" role="tabpanel">
 						<div class="panel-body">
 							<div class="or-accordion-content-field">
 								<div class="ExternalClass5747483E81D44EB49F777CCF9C5CA887"><div class="well"><h3><span class="fa fa-microphone" aria-hidden="true"></span> Media Requests</h3>
 <p>Media should contact <a href="/oha/ERD/Pages/Media-Contacts.aspx" target="_blank">OHA External Relations Division</a> with requests. </p></div>
 <div class="well"><h3><span class="fa fa-newspaper-o" aria-hidden="true"></span> Press Releases</h3>
-<p><a class="btn btn-primary" href="/oha/ERD/Pages/News-Releases.aspx" target="_blank" style="width:200px">OHA News Page</a></p>
-<p><a class="btn btn-primary" href="https://www.cdc.gov/media/dpk/diseases-and-conditions/coronavirus/coronavirus-2020.html" target="_blank" style="width:200px">CDC Newsroom</a>​​​​</p></div>
+<p><a class="btn btn-primary" href="/oha/ERD/Pages/News-Releases.aspx" target="_blank" style="width:200px;margin-bottom:10px">OHA News</a> <a class="btn btn-primary" href="/newsroom/Pages/Agency.aspx?agency=GOV&amp;category=" target="_blank" style="width:200px;margin-bottom:10px">Governor's Office News</a> <a class="btn btn-primary" href="https://www.cdc.gov/media/dpk/diseases-and-conditions/coronavirus/coronavirus-2020.html" target="_blank" style="width:200px;margin-bottom:10px">CDC Newsroom</a>​​​​</p></div>
 
 
 <div class="well"><h3><span class="fa fa-file-video-o" aria-hidden="true"></span> Agency Operations Center SOT (1080, 60fps, H.264)</h3>
@@ -1091,7 +1117,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 <br /> <br />
 
 <a title="View larger" href="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19school4.png" target="_blank"><img class="ms-rteImage-Thumbnail" alt="Coronavirus prevention social media card" src="/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Emerging%20Respitory%20Infections/COVID-19school4.png" style="width:90%;margin:5px" /></a><br /></div></div>
- ​​​​
+ ​​​​​​
 							</div>
 						</div>
 					</div>
@@ -1210,9 +1236,9 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 	<div class="col-sm-3">
 		<h3>
 			Oregon Health Authority
-		</h3><div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3"><p><span class="fa fa-facebook-square blue"></span> <a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br>
-  <span class="fa fa-twitter-square blue"></span> <a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br>
-  <span class="fa fa-envelope blue"> </span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>​</p>
+		</h3><div class="ExternalClassBE5632A92CD04295B1405EBDB9334BF3"><p><span class="fa fa-facebook-square blue" aria-hidden="true"></span> <a href="https://www.facebook.com/OregonHealthAuthority/" target="_blank">Find us on Facebook</a><br />
+  <span class="fa fa-twitter-square blue" aria-hidden="true"></span> <a href="https://twitter.com/OHAOregon" target="_blank">Follow us on Twitter</a><br />
+  <span class="fa fa-envelope blue" aria-hidden="true"> </span><a class="or-footer-link-oregon-gov" href="/oha/Pages/WebsiteFeedback.aspx" target="_blank">Website Feedback</a>​</p>
 
 <ul class="list-unstyled">
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/Contact-Us.aspx">Contact Us</a> </li>
@@ -1235,7 +1261,7 @@ Exposure and Work Exclusion – Infection Prevention and Control for COVID-19</a
 			Access
 		</h3><div class="ExternalClass926DA2AB6E52485680F204CE3D47CE3E">
 <ul class="list-unstyled">
-  <li><a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue"></span> Language Access</a> </li>
+  <li><a class="or-footer-link-oregon-gov" href="/oha/Documents/OHA-Language-Access-Policy.pdf" target="_blank"><span class="fa fa-globe blue" aria-hidden="true"></span> Language Access</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="https://aix-xweb1p.state.or.us/es_xweb/DHSforms/Served/le2996.pdf" target="_blank">OHA Nondiscrimination Policy</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/ADA-Notice.aspx">OHA ADA Policy and Request for Modification</a> </li>
   <li><a class="or-footer-link-oregon-gov" href="/oha/Pages/Notice-Privacy-Practices.aspx">OHA Notice of Privacy Practices</a>
