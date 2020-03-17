@@ -1,9 +1,9 @@
 STATE CHANGE LIST
 
-  start	2020-03-17 09:35:23.895275
-  end	2020-03-17 09:36:11.923634
-  previous	2020-03-17 09:05:27.613052
-  lapsed	0:00:48.028359
+  start	2020-03-17 10:05:24.797769
+  end	2020-03-17 10:06:08.244294
+  previous	2020-03-17 09:35:23.895275
+  lapsed	0:00:43.446525
 
 STATUS COUNTS:
   CHANGED	6
@@ -21,7 +21,7 @@ PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 
 ====== FAILED ======
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
