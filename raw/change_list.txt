@@ -1,9 +1,9 @@
 STATE CHANGE LIST
 
-  start	2020-03-17 11:05:55.037620
-  end	2020-03-17 11:06:44.817404
-  previous	2020-03-17 10:35:35.439934
-  lapsed	0:00:49.779784
+  start	2020-03-17 11:35:26.676457
+  end	2020-03-17 11:36:10.659635
+  previous	2020-03-17 11:05:55.037620
+  lapsed	0:00:43.983178
 
 STATUS COUNTS:
   CHANGED	6
@@ -13,15 +13,15 @@ STATUS COUNTS:
   unchanged	69
 
 ====== CHANGED ======
-KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 SC_data.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
+TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 
 ====== FAILED ======
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
@@ -96,6 +96,7 @@ ID.html	unchanged	google-states	https://coronavirus.idaho.gov/
 IL.html	unchanged	google-states	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
+KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 MA.html	unchanged	google-states	https://www.mass.gov/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19	
 MA_data.html	unchanged	google-states	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
@@ -128,7 +129,6 @@ RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx	
-TN.html	unchanged	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
 TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
 UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
