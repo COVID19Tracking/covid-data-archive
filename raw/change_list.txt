@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 03:05:25.585632+00:00
-  end	2020-03-18 03:05:33.218361+00:00
-  previous	2020-03-18 02:35:34.723728+00:00
-  lapsed	0:00:07.632729
+  start	2020-03-18 03:36:05.166064+00:00
+  end	2020-03-18 03:36:16.860993+00:00
+  previous	2020-03-18 03:05:25.585632+00:00
+  lapsed	0:00:11.694929
 
 STATUS COUNTS:
-  CHANGED	23
+  CHANGED	25
   FAILED	7
   duplicate	37
   skip	1
-  unchanged	54
+  unchanged	52
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -18,17 +18,17 @@ AK.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19
 AK_data.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	google-states	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	duplicate	google-states	duplicate of AL	
-AR.html	unchanged	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR.html	CHANGED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	duplicate	google-states	duplicate of AR	
 AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states	duplicate of AZ	
-CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
+CA.html	CHANGED	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	duplicate	google-states	duplicate of CA	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states	duplicate of CT	
-DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
+DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
@@ -142,17 +142,17 @@ AK.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19
 AK_data.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	google-states	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	duplicate	google-states	duplicate of AL	
-AR.html	unchanged	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR.html	CHANGED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	duplicate	google-states	duplicate of AR	
 AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states	duplicate of AZ	
-CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
+CA.html	CHANGED	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	duplicate	google-states	duplicate of CA	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states	duplicate of CT	
-DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
+DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
@@ -266,17 +266,17 @@ AK.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19
 AK_data.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	google-states	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	duplicate	google-states	duplicate of AL	
-AR.html	unchanged	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR.html	CHANGED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	duplicate	google-states	duplicate of AR	
 AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states	duplicate of AZ	
-CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
+CA.html	CHANGED	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	duplicate	google-states	duplicate of CA	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states	duplicate of CT	
-DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
+DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
@@ -390,17 +390,17 @@ AK.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19
 AK_data.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	google-states	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	duplicate	google-states	duplicate of AL	
-AR.html	unchanged	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR.html	CHANGED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	duplicate	google-states	duplicate of AR	
 AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states	duplicate of AZ	
-CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
+CA.html	CHANGED	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	duplicate	google-states	duplicate of CA	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states	duplicate of CT	
-DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
+DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
@@ -514,17 +514,17 @@ AK.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19
 AK_data.html	unchanged	google-states	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AL.html	unchanged	google-states	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html	
 AL_data.html	duplicate	google-states	duplicate of AL	
-AR.html	unchanged	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
+AR.html	CHANGED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	duplicate	google-states	duplicate of AR	
 AZ.html	unchanged	google-states	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states	duplicate of AZ	
-CA.html	unchanged	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
+CA.html	CHANGED	google-states	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	duplicate	google-states	duplicate of CA	
 CO.html	unchanged	google-states	https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus	
 CO_data.html	unchanged	google-states	https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub	
-CT.html	CHANGED	google-states	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states	duplicate of CT	
-DC.html	unchanged	google-states	https://coronavirus.dc.gov/	
+DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
