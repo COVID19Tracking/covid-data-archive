@@ -1,331 +1,2416 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'html' -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--front.html.twig
+   * html--node--9999.html.twig
+   * html--node--%.html.twig
+   * html--node.html.twig
+   x html.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/html.html.twig' -->
 <!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="fb: http://ogp.me/ns/fb# og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <script src="https://use.typekit.net/vvp7pty.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6ac1f040bb",applicationID:"55470286"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-154159004-45", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="Home | Colorado COVID-19 Updates" />
+<link rel="shortlink" href="https://covid19.colorado.gov/" />
+<link rel="canonical" href="https://covid19.colorado.gov/" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/ci_xy/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="https://covid19.colorado.gov/home" />
 
-<head>
-  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQ4BUVJQGwsCUVNSDwI=",licenseKey:"36d2a422d8",applicationID:"8252083"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||"document"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
-<link rel="shortcut icon" href="https://www.colorado.gov/pacific/sites/default/files/favicon_3.ico" type="image/vnd.microsoft.icon" />
-<meta name="description" content="Colorado COVID19 case summary (Due to the high volume of traffic, it may take several minutes for updates to appear." />
-<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
-<link rel="canonical" href="https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus" />
-<link rel="shortlink" href="https://www.colorado.gov/pacific/node/302966" />
-<meta property="og:site_name" content="Department of Public Health and Environment" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus" />
-<meta property="og:title" content="Coronavirus Disease 2019 (COVID-19) in Colorado" />
-<meta property="og:description" content="Colorado COVID19 case summary (Due to the high volume of traffic, it may take several minutes for updates to appear." />
-<meta property="og:updated_time" content="2020-03-17T14:45:28-06:00" />
-<meta property="article:published_time" content="2020-01-24T08:48:00-07:00" />
-<meta property="article:modified_time" content="2020-03-17T14:45:28-06:00" />
-  <title>Coronavirus Disease 2019 (COVID-19) in Colorado | Department of Public Health and Environment</title>
+    <title>Home | Colorado COVID-19 Updates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" media="all" href="/libraries/superfish/css/superfish.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/libraries/slick/slick/slick.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/custom/ci_admin_tweaks/css/ci_at_style.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/custom/ci_layouts/css/ci_layout_style.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/custom/ci_search_form/css/searchToggle_style.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/custom/ci_views_tweaks/css/ci_reference_recent.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/custom/ci_theme_options/css/ci_theme_style.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/datepicker.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs.min.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-colors.min.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/modules/views/css/views.module.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-tabs.min.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-columns-two.min.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-columns.min.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blazy/css/components/blazy.loading.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/anchor_link/css/anchor_link.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar_multiday.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/webform/modules/webform_bootstrap/css/webform_bootstrap.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/ckeditor_accordion/css/ckeditor-accordion.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/themes/ci_xy/css/style.css?q6zxp4" />
+<link rel="stylesheet" media="all" href="/themes/ci_xy/css/colors.css?q6zxp4" />
 
-      <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="cleartype" content="on">
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/libraries/blazy/blazy.min.js?v=1.x"></script>
 
-  <link type="text/css" rel="stylesheet" href="https://www.colorado.gov/pacific/sites/default/files/css/css_8CURIveejVuSK5PuIHhtsKI3cBOsVSS4SeOOhI1Pcwc.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.colorado.gov/pacific/sites/default/files/css/css_0B39PzeEWWan_HyZsBtE8-Pq5tGbdhtgGFvEY0gNsAg.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.colorado.gov/pacific/sites/default/files/css/css_xhVlLByqGQKx-dFmV1yv6Jtpe53eny4WjbOQ2ke0tTQ.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.colorado.gov/pacific/sites/default/files/css/css_pTA6hxqzBO64XsmZD68Up5c6CfyLqPSmtQlGMUJzalw.css" media="all" />
-<style>body{background-color:#efefef;}
-body #page{background-color:#efefef;}
-body #page-wrapper{background-color:#efefef;}
-body #top-bar{background-color:#4e5758;}
-</style>
-  <script src="https://www.colorado.gov/pacific/sites/default/files/js/js_EebRuRXFlkaf356V0T2K_8cnUVfCKesNTxdvvPSEhCM.js"></script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_g0r14t83CyFOie9dtTvScCfDLjFx09CaftsI4p5WL58.js"></script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_aCaSeYrxEdHI5H8_PBONDaqR_yBFJrBRgmozfhhBRQc.js"></script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_XM6FGscwzxY0dQSz2bN-lEeyZZnt81TfJTIBIop5oA0.js"></script>
-<script src="//platform.twitter.com/widgets.js"></script>
-<script src="//apis.google.com/js/plusone.js"></script>
-<script src="//platform.linkedin.com/in.js"></script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_SnmCvMHhENy5hf3zve3dxY53DRz0F12EYjhjaccAWqE.js"></script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-15981586-2", {"cookieDomain":"auto"});ga("require", "displayfeatures");ga("send", "pageview");</script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_nF3vLonH0Xb6qjMzFrR3hFBQn8izspvhrr6D4QQsvOs.js"></script>
-<script src="https://www.colorado.gov/pacific/sites/default/files/js/js_FtZ2ql6C8aVaOvUuo3Or1LWYxbs03Jgpwnsc6wnxQL0.js"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/pacific\/","pathPrefix":"cdphe\/","ajaxPageState":{"theme":"e3_zen","theme_token":"4BCEBUsZypo3Vo1glPJhwp7iLz3JafhCb3oNSKXiykI","js":{"sites\/all\/modules\/browserclass\/browserclass.js":1,"sites\/all\/themes\/e3_zen\/js\/youtube_resizer.js":1,"sites\/all\/themes\/e3_zen\/js\/menu_overlap.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"misc\/form.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/custom\/ci_dv\/js\/ci_dv.js":1,"sites\/all\/modules\/custom\/ci_icons\/js\/ci_icons.js":1,"sites\/all\/modules\/custom\/ci_og_files\/js\/file_tabs.js":1,"sites\/all\/modules\/custom\/ci_tabs\/js\/ci_tabs.js":1,"sites\/all\/modules\/google_cse\/google_cse.js":1,"sites\/all\/modules\/resp_img\/resp_img.js":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.js":1,"sites\/all\/modules\/scald_file\/scald_file.js":1,"sites\/all\/modules\/scald\/modules\/providers\/scald_image\/scald_image.js":1,"\/\/platform.twitter.com\/widgets.js":1,"\/\/apis.google.com\/js\/plusone.js":1,"\/\/platform.linkedin.com\/in.js":1,"sites\/all\/modules\/e3\/js\/e3_gtranslate.js":1,"sites\/all\/modules\/responsive_menus\/styles\/meanMenu\/jquery.meanmenu.min.js":1,"sites\/all\/modules\/responsive_menus\/styles\/meanMenu\/responsive_menus_mean_menu.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"misc\/collapse.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/e3_zen\/js\/aria-roles.js":1,"sites\/all\/themes\/e3_zen\/js\/go-to-advanced-search.js":1,"sites\/all\/themes\/e3_zen\/js\/footer-fixing.js":1,"sites\/all\/themes\/e3_zen\/js\/block-1.js":1,"sites\/all\/themes\/e3_zen\/js\/nolink.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_cse\/google_cse.css":1,"sites\/all\/modules\/scald\/modules\/fields\/mee\/css\/editor-global.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/scald_file\/scald_file.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/custom\/ci_dv\/css\/ci_dv.css":1,"sites\/all\/modules\/custom\/ci_icons\/css\/ci_icons.css":1,"sites\/all\/modules\/custom\/ci_minisite_fh\/ci_minisite_fh.css":1,"sites\/all\/modules\/custom\/ci_tabs\/css\/ci_tabs.css":1,"sites\/all\/modules\/custom\/wysiwyg_ckeditor_plugins\/css\/wysiwyg_fix.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.css":1,"sites\/all\/modules\/easy_social\/css\/easy_social.css":1,"sites\/all\/modules\/e3\/css\/e3_gtranslate.css":1,"sites\/all\/modules\/e3\/css\/e3_menu.css":1,"sites\/all\/modules\/responsive_menus\/styles\/meanMenu\/meanmenu.min.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/e3_zen\/system.menus.css":1,"sites\/all\/themes\/e3_zen\/system.messages.css":1,"sites\/all\/themes\/e3_zen\/css\/style.css":1,"0":1,"1":1,"2":1,"3":1}},"dhtmlMenu":{"nav":"bullet","animation":{"effects":{"height":"height","width":0,"opacity":0},"speed":"1000"},"effects":{"siblings":"none","children":"none","remember":""},"filter":{"type":"blacklist","list":{"main-menu":"main-menu","management":"management","menu-content-manager-menu":"menu-content-manager-menu","navigation":"navigation","user-menu":"user-menu","menu-home":0,"menu-home-link":0,"menu-og-1":0,"menu-og-10796":0,"menu-og-10801":0,"menu-og-11091":0,"menu-og-11111":0,"menu-og-11831":0,"menu-og-120":0,"menu-og-123":0,"menu-og-12361":0,"menu-og-12796":0,"menu-og-14601":0,"menu-og-14676":0,"menu-og-14691":0,"menu-og-14701":0,"menu-og-14706":0,"menu-og-14711":0,"menu-og-14716":0,"menu-og-14726":0,"menu-og-15911":0,"menu-og-16361":0,"menu-og-16371":0,"menu-og-16391":0,"menu-og-16396":0,"menu-og-183":0,"menu-og-184":0,"menu-og-185":0,"menu-og-186":0,"menu-og-187":0,"menu-og-188":0,"menu-og-189":0,"menu-og-190":0,"menu-og-21671":0,"menu-og-25301":0,"menu-og-25306":0,"menu-og-25311":0,"menu-og-25316":0,"menu-og-25321":0,"menu-og-25941":0,"menu-og-25961":0,"menu-og-32":0,"menu-og-33":0,"menu-og-38":0,"menu-og-4781":0,"menu-og-53":0,"menu-og-58":0,"menu-og-61":0,"menu-og-62":0,"menu-og-63":0,"menu-og-65":0,"menu-og-6711":0,"menu-og-6806":0,"menu-og-6816":0,"menu-og-69":0,"menu-og-6956":0,"menu-og-77":0,"menu-og-7966":0,"menu-og-7971":0,"menu-og-7976":0,"menu-og-7981":0,"menu-og-8636":0,"menu-og-9356":0,"menu-og-9516":0,"shortcut-set-1":0}}},"googleCSE":{"cx":"005331801672446424340:ez_lb3j5c34","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":true},"respImg":{"default_suffix":"_narrow","current_suffix":"_wide","forceRedirect":"0","forceResize":"1","reloadOnResize":"0","useDevicePixelRatio":0,"suffixes":{"_wide":1220,"_normal":980,"_narrow":1}},"scaldFile":{"path":"sites\/all\/modules\/scald_file\/scald_file.css"},"facetapi":{"view_args":{"view_home_banner:block":["10801"],"secondary_footer_view:block":["10801","10801"],"brand_colorado_footer_logo:block":["10801"],"view_footer_links:block":["10801"],"view_social_links:block":["10801"]},"exposed_input":{"view_home_banner:block":[],"secondary_footer_view:block":[],"brand_colorado_footer_logo:block":[],"view_footer_links:block":[],"view_social_links:block":[]},"view_path":{"view_home_banner:block":null,"secondary_footer_view:block":null,"brand_colorado_footer_logo:block":null,"view_footer_links:block":null,"view_social_links:block":null},"view_dom_id":{"view_home_banner:block":"86b3c8b491caf9289e6baf7933a4aa29","secondary_footer_view:block":"70e1b4b8e46e83999e1199059acf72f2","brand_colorado_footer_logo:block":"9ef65a52ba615fe73b189921e37c9307","view_footer_links:block":"053c3e96561855db06d4825ea5c5e226","view_social_links:block":"548cbba4a7e66b6efdbf319f4bea1803"}},"responsive_menus":[{"selectors":"#block-e3-e3-og-menu","container":"body","trigger_txt":"\u003Cp\u003EMenu\u003C\/p\u003E\u003Cspan \/\u003E\u003Cspan \/\u003E\u003Cspan \/\u003E","close_txt":"X","close_size":"18px","position":"right","media_size":"480","show_children":"1","expand_children":"1","expand_txt":"+","contract_txt":"-","remove_attrs":"1","responsive_menus_style":"mean_menu"}],"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"superfish":[{"id":0,"sf":{"animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":true,"disableHI":false},"plugins":{"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}],"ogContext":{"groupType":"node","gid":"10801"}});</script>
-      <!--[if lt IE 9]>
-    <script src="/pacific/sites/all/themes/zen/js/html5-respond.js"></script>
-    <![endif]-->
   </head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-302966 node-type-minisite-page role-id-1 role-anonymous-user user-uid-0 og-context og-context-node og-context-node-10801 section-2019-novel-coronavirus layout-sidebar-both" >
-      <p id="skip-link">
-      <a href="#block-e3-e3-og-menu" class="element-invisible element-focusable">Jump to navigation</a>
-    </p>
-      
-
-  <div id="top-bar">
-          <a href="http://www.colorado.gov" title="Colorado The Official Web Portal" rel="home" class="header--logo" id="logo"><img src="https://www.colorado.gov/pacific/sites/default/files/co_C_state_web_portal_reverse_rgb.png" alt="Colorado The Official Web Portal" class="header--logo--image" /></a>
-                        <div class="go-to-search-wrap">
-        <form class="site-search" method="get" role="search">
-            <input aria-label="Site search" type="text" name="search_term" id="search-query" value="">
-        </form>
-    </div>
-            <div class="region region-top-bar-right">
-  <div class="region-inner">
-
-    <nav id="block-e3-e3-gtranslate" class="block block-e3 first last odd block-e3-e3-gtranslate" role="navigation">
-
-      
-  <div class="translate-tab"><button class="translate-toggle" role="button">Translate</button><div class="translate-content"><div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,includedLanguages: 'en,af,sq,ar,hy,az,eu,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,et,tl,fi,fr,gl,ka,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,ur,vi,cy,yi'}, 'google_translate_element');}</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div></div>
-</nav><!-- /.block -->
-  </div>
-  </div>
+  <body class="path-frontpage page-node-type-landing-page has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
     
-  </div>
+    
 
-<div id="page-wrapper">
-  <div id="page" class="page page-layout-sidebar-both">
-  <div id="page-inner">
-    <header id="header" role="banner">
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
 
-        <div class="header__region region region-header">
-  <div class="region-inner">
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--covid19--landing-page.html.twig
+   x page--landing-page.html.twig
+   * page--front.html.twig
+   * page--node--9999.html.twig
+   * page--node--%.html.twig
+   * page--node.html.twig
+   * page.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/page--landing-page.html.twig' -->
 
-    <div id="block-views-view-home-banner-block" class="block block-views first last odd block-views-view-home-banner-block">
 
-      
-  <div class="view view-view-home-banner view-id-view_home_banner view-display-id-block view-dom-id-86b3c8b491caf9289e6baf7933a4aa29">
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--co-branding.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-co-branding">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--sitebranding.html.twig
+   x block--system-branding-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig' -->
+    <header class="co-brand" role="banner">
+    <div class="co-brand__wrap container-fluid">
+        <div class="row">
+            <div class="co-brand__logo col-sm-6">
+                <a href="https://www.colorado.gov/" rel="home">
+                    <img class="co-brand__logo--image" src="/themes/ci_xy/logos/co_C_state_web_portal.svg" alt="Colorado: Official State Web Portal"/>
+                </a>
+            </div>
+            <div class="co-brand__services col-sm-6">
+                <a href="https://www.colorado.gov/online-services">Online Services</a>
+                <a href="https://www.colorado.gov/state-agencies">State Agencies</a>
+            </div>
+        </div>
+    </div>
+</header>
+
         
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-field-url-of-banner">        <div class="field-content"><a href="https://www.colorado.gov/pacific/cdphe"><img typeof="foaf:Image" src="https://www.colorado.gov/pacific/sites/default/files/styles/img_banner_941_x_148/public/CDPHEbanner-2019.png?itok=1-H0SdRZ"   alt="cdphe banner image" /></a></div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>
-</div>
-  </div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig' -->
+
+
   </div>
 
-    </header>
-    <div id="skip-nav" class="invisible">
-      <a href="#content">Skip to main content</a>
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--global-header.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-global-header">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   x block--ci-xy-branding.html.twig
+   * block--system-branding-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig' -->
+              <a class="header__logo navbar-btn" href="/" title="Home" rel="home">
+        <img class="header__logo--image" src="/sites/covid19/files/logo.svg" alt="Home" />
+      </a>
+      
+<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+        </div>
+        <div class="col-sm-5">
+          <div class="header__search">
+          <form class="search__form" role="search" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8">
+            <div class="form-group">
+              <div class="input-group">
+                <label for="edit-search">Search</label>
+                <input data-drupal-selector="edit-search" class="search__form--input" type="text" id="edit-search" name="search"/>
+                <div class="input-group-btn">
+                  <button data-drupal-selector="edit-submit-acquia-search-fields" class="search__form--button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name="" aria-label="Search the website"></button>
+                </div>
+              </div>
+            </div>
+          </form>            
+          </div>
+        </div>
+      </div>
     </div>
-  
+  </header>
+    
+
+   
+                                                                      <div class="top-nav color__brand-dark-blue " role="navigation">
+            <nav class="container">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--navigation.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
   <div class="region region-navigation">
-  <div class="region-inner">
-
-    <nav id="block-e3-e3-og-menu" class="block block-e3 first last odd block-e3-e3-og-menu" role="navigation">
-
-      
-  <ul id="superfish-0" class="menu sf-menu sf-menu-og-10801 sf-horizontal sf-style-default sf-total-items-7 sf-parent-items-0 sf-single-items-7"><li id="menu-7551-0" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/categories/services-and-information" title="" class="sf-depth-1">Services &amp; information</a></li><li id="menu-8646-0" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/categories/boards-and-commissions" title="" class="sf-depth-1">Boards &amp; commissions</a></li><li id="menu-8651-0" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/divisions" title="" class="sf-depth-1">Divisions</a></li><li id="menu-11061-0" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/categories/concerns-and-emergencies" title="" class="sf-depth-1">Concerns &amp; emergencies</a></li><li id="menu-14311-0" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/data" title="" class="sf-depth-1">Data</a></li><li id="menu-46541-0" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe/cdphenews" title="" class="sf-depth-1">News</a></li><li id="menu-62971-0" class="last odd sf-item-7 sf-depth-1 sf-no-children"><a href="https://www.colorado.gov/pacific/cdphe-lpha" title="Local public health agencies minisite" class="sf-depth-1">LPHAs</a></li></ul>
-</nav><!-- /.block -->
-  </div>
-  </div>
- 
-
-
-  <div id="content-btth">
-      
-                           
-      <a id="main-menu"></a> 
-      
-                      
-      
-      
-                      
-                      
-      
-    </div><!--/#content-btth-->
-
-
-
- 
-
-
-
-<section id="content" class="column" role="main">
-    <div id="content-inner">
-             
-
-
-<div  about="/pacific/cdphe/2019-novel-coronavirus" typeof="sioc:Item foaf:Document" class="ds-1col node node-minisite-page view-mode-full clearfix">
-
-  
-  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even" property="dc:title"><h1>Coronavirus Disease 2019 (COVID-19) in Colorado</h1></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p dir="ltr"><span style="font-size:22px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;"><span style="background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><a href="https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub" target="_blank">Colorado COVID19 case summary</a> (Due to the high volume of traffic, it may take several minutes for updates to appear. Try clearing your cache &amp; cookies, and refresh the webpage.)</span></span></span><br /><span style="font-size: 12px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;"><span style="background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">All cases are presumptive positive, but this status does not delay public health response. The CDC provides official confirmation.</span></span></span></p>
-
-<div dir="ltr">
-	<table border="1" cellpadding="5" style="width:100%;"><colgroup><col /></colgroup><tbody><tr><td>
-					<p dir="ltr"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">CO-HELP is Colorado’s call line for the novel coronavirus (COVID-19). People who have general questions about COVID-19 can call CO HELP at 303-389-1687 or 1-877-462-2911, for answers in many languages, or email them at <a href="mailto:COHELP@RMPDC.org">COHELP@RMPDC.org</a> for answers in English.</span></span></p>
-				</td>
-			</tr></tbody></table></div>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">Statewide Community Mitigation and Large Event Guidance</span></span></p>
-
-<div><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="color:#800000;">NOTE:</span> As of March 15, the Colorado Department of Public Health and Environment<span id="docs-internal-guid-29e938e5-7fff-0fce-ad82-efbe05a49fe0"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">, following Centers for Disease Control and Prevention (CDC) guidance, recommends that event organizers (groups or individuals) cancel or postpone in-person events that consist of <span style="color:#800000;">50</span> people or more. <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/large-events/mass-gatherings-ready-for-covid-19.html">Read more</a></span></span></span></span></div>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">UPDATED: <a href="https://drive.google.com/open?id=1pXAFPXCTLqBZvTJpuqrH45YeLB_Jc2wP">Guidance for restaurant establishments</a> | <a href="https://drive.google.com/open?id=1aWNwJVB2F_YTFwY_32-aaeXJC7MhAEq-">Spanish</a> | <a href="https://drive.google.com/open?id=1s5Myc_Gd006kfnvt0uQHhDm1YSvXGMmg">Simplified Chinese</a> | <a href="https://drive.google.com/open?id=1HSr9mn3YnJuwMqphcPBk3b_M17rY4asB">Vietnamese</a></span></span></p>
-
-<p><a href="https://docs.google.com/document/d/e/2PACX-1vR3k5M_b5qlWErKhPcpntllypqhul5y3HN02meT61gCzoasUt20K8oGEImQarmF27wlUbkMVGe_nQgU/pub"><span style="font-size: 18px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">NEW: School closed? Recommendations for parents</span></span></a><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;"> | </span><a href="https://drive.google.com/open?id=1bHjztXeoMFJpRaGUg1n8AZoHzovXct4v" style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;">Spanish</a><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;"> | </span><a href="https://drive.google.com/open?id=1nmKlZOWfK9DxF6U0DqJ5DR9V2WFFDD5S" style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;">Simplified Chinese</a><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;"> | </span><a href="https://drive.google.com/open?id=1YtMW08vL1L65Ss6qAjU6IxgXWcflqUDY" style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 18px;">Vietnamese</a></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://docs.google.com/document/d/e/2PACX-1vTzDE3MD-iGBguZy-W7QEuHJJLa9cwez-iToYdf2EOaK-bHQOz_wY3TXROMOyPZMY1B2fxSdkaLdj0v/pub">Guidance for school and child care closure</a></span></span></p>
-
-<p><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:18px;"><a href="https://docs.google.com/document/d/e/2PACX-1vSXHB102mQo3LRv_4RqcRmC-somCLS4q0KpI1qHo0MhCCfGPVVDiL6VyjDhykPmXuT4nNsneuhXwCsm/pub">What to do if you were exposed to COVID-19</a></span></span></p>
-
-<p><a href="https://docs.google.com/document/d/e/2PACX-1vSTK44KYsr2wStVKySFseWByfUsa_wqpazIfK7TnGHU0auMUwHgYOUtQpMDWWAcUZsAByGrWzD8IpKu/pub"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:18px;">I have symptoms of COVID-19. What should I do?</span></span></a></p>
-
-<p><a href="https://docs.google.com/document/d/e/2PACX-1vR-MPdnHKeLnD2LBHpagyBTL3rlbP3YyTNFVza-ImL9eqHWfDDj04z0D1NEAwVqe_RAbcWdsrWtOxNn/pub"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:18px;">Instructions for people waiting on test results</span></span></a></p>
-
-<p><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:18px;"><a href="https://docs.google.com/document/d/e/2PACX-1vTb5B9z1YBeDq7XEpbeqhE5CBOMF88RR1zceXKe6NHNNZdxLYXq40ucRWKav5_ntk9tsEtveyyIB_d9/pub">Instructions for people who have COVID-19</a> | <a href="https://drive.google.com/open?id=1gqjqYkvC41wDp35R5pXFkqqzPzteQMBx">Spanish</a> | <a href="https://drive.google.com/open?id=1x4Hj9b70y7xAQulM_T54QUz5XYiRfzif">Simplified Chinese</a> | <a href="https://drive.google.com/open?id=1GvwOdd3bT_2HkEp8nlZS1Z2LE1pJb_1Y">Vietnamese</a></span></span></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://www.colorado.gov/pacific/cdphe/covid-19-recommendations">Public health recommendations to protect our communities</a> </span></span><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">(includes schools, child care, restaurants, and other businesses)</span></span></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://docs.google.com/document/d/e/2PACX-1vSVg-k6iMNKnJMk6BGTtfUiQ2D_q_hLPsPYBr23FF_Dbnr6ZZdENsFM4Bi8tAqN6AS4_ufYuvXkQTqS/pub">Learn about community spread</a> | <a href="https://drive.google.com/open?id=1dUanqLxI5ckjYZyn65vieUKyZlPn-u7-">Spanish</a> | <a href="https://drive.google.com/open?id=1fCrKYCuGZP4lO-bj8Oalq_7i_ZE2O8DQ">Simplified Chinese</a> | <a href="https://drive.google.com/open?id=1DB1dT_QrH6ql_RTZRWLxjSKM3sHXWFQT">Vietnamese</a></span></span></p>
-
-<p><a href="https://www.colorado.gov/pacific/cdphe/COVID-19-Facts-for-Coloradans"><span style="font-size: 18px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">COVID-19 Facts for Coloradans</span></span></a></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://www.colorado.gov/pacific/cdphe/covid-19-testing">COVID-19 testing</a> </span></span><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; font-size: 16px;">(for the public)</span></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://www.colorado.gov/pacific/cdphe/resources-local-public-health-agencies-and-healthcare-providers">Resources for local public health agencies and health care providers</a></span></span></p>
-
-<p><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><a href="https://docs.google.com/document/d/e/2PACX-1vSMeOLVZJs9LZRxy6eaYNFXUtBAM7GTnYbbnDCd94HFs5vwLVG7Nur3Cw62T8xOw44v_2KNTk8epAZH/pub">Frequently Asked Questions</a></span></span></p>
-
-<p><br /><br /><span style="font-size:18px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">Recent media releases</span></span></p>
-
-<ul dir="ltr"><li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 17, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/additional-covid-19-case-connected-long-term-care-facility-larimer-county">Additional COVID-19 Case Connected to Long Term Care Facility in Larimer County</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 16, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/state-health-department-issues-public-health-order-closing-colorado-bars-restaurants-gyms">State health department issues public health order closing Colorado bars, restaurants, gyms, theaters, and casinos-- still allowing takeout and delivery</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 16, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/state-colorado-further-amplifies-covid-19-response-welcomes-50-new-nurses-expand-capacity">State of Colorado further amplifies COVID-19 response, welcomes 50 new nurses to expand capacity</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 16, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-29-additional-new-positive-cases-colorado">CDPHE confirms 29 additional new positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 16, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/state-health-department-provides-recommendations-parents-and-guardians">State health department provides recommendations for parents and guardians</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 15, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-recommends-colorado-follow-cdc-guidance-cancel-or-postpone-person-events-50-people-or">CDPHE recommends that Colorado follow CDC guidance to cancel or postpone in-person events of 50 people or more</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 15, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-strongly-advises-all-visitors-and-residents-eagle-summit-pitkin-and-gunnison-counties">CDPHE strongly advises all visitors and residents of Eagle, Summit, Pitkin, and Gunnison counties to minimize social contact</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 15, 2020:<a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-30-additional-new-positive-cases-colorado"> CDPHE confirms 30 additional new positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 14, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/public-health-alert-people-who-visited-colorado-springs-bridge-center-late-february-early-march">Public health alert for people who visited Colorado Springs Bridge Center from late February to early March and may have been exposed to COVID-19</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 14, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/drive-testing-site-will-close-day-because-high-volume-people-who-need-covid-19-tests-can-obtain">Drive-up testing site will close for the day because of high volume. People who need COVID-19 tests can obtain them through private providers</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 14, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-24-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 24 additional new presumptive positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 14, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/state-health-department-restricts-visitors-skilled-nursing-assisted-living-and-intermediate">State health department restricts visitors at skilled nursing, assisted living, and intermediate care facilities</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 13, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-reopens-drive-testing-site-denver-coliseum-saturday-support-national-guard">CDPHE reopens drive-up testing site at the Denver Coliseum Saturday with support from the National Guard</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 13, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-5-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 5 additional new presumptive positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 13, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/colorado-has-first-death-covid-19-el-paso-county">Colorado has first death from COVID-19 in El Paso County</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 13, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-23-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 23 additional new presumptive positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 13, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/correction-drive-testing-lab-will-be-postponed-tomorrow-due-weather-related-safety-concerns">CORRECTION: Drive-up Testing Lab Will be Postponed to Tomorrow Due to Weather-Related Safety Concerns. People Who Need COVID-19 Tests Can Obtain Them Through Private Providers. </a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 12, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/lab-implement-changes-drive-cdphe-drive-covid-19-testing-site-lowry-tested-more-650-coloradans">Lab to implement changes to drive-up. CDPHE drive-up COVID-19 testing site in Lowry tested more than 650 Coloradans in 2 days.</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 12, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-4-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 4 additional new presumptive positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 12, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-drive-lab-experiencing-high-volume-line-will-be-closed-today-those-line-already-will-have">CDPHE drive-up lab experiencing high volume. Line will be closed today; those in line already will have priority for tomorrow.</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 12, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-11-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 11 additional new presumptive positive cases in Colorado</a> </span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 12, 2020: <a href="https://www.colorado.gov/governor/news/update-states-response-covid-19"><span style="box-sizing: border-box;">Update on State’s Response to COVID-19</span></a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 11, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-confirms-6-additional-new-presumptive-positive-cases-colorado">CDPHE confirms 6 additional new presumptive positive cases in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 11, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/10-new-presumptive-positive-cases-colorado-cdphe-confirms-limited-community-spread-covid-19">10 new presumptive positive cases in Colorado CDPHE confirms limited community spread of COVID-19 in Colorado</a></span></span> </li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 10, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/cdphe-open-first-drive-testing-center-state-lab-lowry">CDPHE to open first drive-up testing center at State Lab in Lowry</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 10, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/two-presumptive-positive-cases-covid-19-identified-colorado-afternoon">Two presumptive positive cases of COVID-19 identified in Colorado this afternoon</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 10, 2020: <a href="https://www.colorado.gov/governor/news/gov-polis-provides-update-states-response-covid-19">Gov. Polis provides update on state's response to COVID-19</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 10, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/three-presumptive-positive-cases-covid-19-identified-colorado-today">Three presumptive positive cases of COVID-19 identified in Colorado today</a></span></span></li>
-	<li role="presentation"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size:16px;">March 9, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/update-covid-19-colorado">Update on COVID-19 in Colorado</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 9, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/two-new-presumptive-positive-cases-covid-19-identified-colorado-today">Two new presumptive positive cases of COVID-19 identified in Colorado today</a></span></span></li>
-	<li role="presentation"><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">March 9, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/one-presumptive-positive-case-covid-19-identified-colorado-today">One presumptive positive case of COVID-19 identified in Colorado today</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 8, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/no-additional-presumptive-positive-cases-covid-19-identified-colorado-today-1">No additional presumptive positive cases of COVID-19 identified in Colorado today</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 7, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/no-additional-presumptive-positive-cases-covid-19-identified-colorado-today-0">No additional presumptive positive cases of COVID-19 identified in Colorado today</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 7, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/update-covid-19">Update on coronavirus</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 6, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/six-additional-presumptive-positive-cases-covid-19-identified-colorado-least-five-have-recently">Six additional presumptive positive cases of COVID-19 identified in Colorado, at least five have recently traveled internationally</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 5, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/updated-information-covid-19">Updated information on COVID-19</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 5, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/colorado-has-first-positive-case-covid-19">Colorado has first positive case of COVID-19</a></span></span></li>
-	<li role="presentation"><span style="font-size: 16px;"><span style="font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif;">March 2, 2020: <a href="https://www.colorado.gov/pacific/cdphe/news/state-lab-tests-for-covid-19">Colorado now able to test for COVID-19</a></span></span></li>
-</ul><hr /><p> </p>
-</div></div></div><div class="easy_social_box clearfix vertical easy_social_lang_und">
-            <div class="easy_social-widget easy_social-widget-facebook first"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&amp;href=https%3A//www.colorado.gov/pacific/cdphe/2019-novel-coronavirus&amp;send=false&amp;layout=box_count&amp;width=48&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=&amp;height=90&amp;appId=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:48px; height:90px;" allowTransparency="true"></iframe></div>
-          <div class="easy_social-widget easy_social-widget-twitter"><a href="http://twitter.com/share" class="twitter-share-button"
-data-url="https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus"
-data-count="vertical"
-data-lang = "en"
-data-via=""
-data-related=":Check it out!"
-data-text="Coronavirus Disease 2019 (COVID-19) in Colorado">Tweet</a></div>
-          <div class="easy_social-widget easy_social-widget-googleplus"><div class="g-plusone" data-size="tall" data-annotation="bubble" data-href="https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus"></div></div>
-          <div class="easy_social-widget easy_social-widget-linkedin last"><script type="in/share" data-url="https://www.colorado.gov/pacific/cdphe/2019-novel-coronavirus" data-counter=""></script></div>
-  </div> <!-- /.easy_social_box --></div>
-
-    </div>
-    
-</section>
-
     
 
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   x block--mainnavigation-2.html.twig
+   * block--superfish--main.html.twig
+   * block--superfish.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig' -->
+<nav role="navigation" class="top--menu" aria-labelledby="block-mainnavigation-2-menu" id="block-mainnavigation-2">
+      
 
-</div><!-- /#page-inner -->
-</div><!-- /#page -->
-</div><!-- /#page-wrapper -->
-  <footer id="footer" class="region region-footer">
-    <div class="region-inner">
-    <div id="block-views-view-footer-links-block" class="block block-views first odd block-views-view-footer-links-block">
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'superfish' -->
+<!-- BEGIN OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig' -->
+
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'superfish_menu_items' -->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' -->
+
+<li id=""
+     class=" color__brand-dark-blue"><a href="/home" class="is-active">Home</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/about-covid-19" class="menuparent">COVID-19 in Colorado</a><ul><!-- THEME DEBUG --><!-- THEME HOOK: 'superfish_menu_items' --><!-- BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' --><li id=""
+     class=" color__brand-dark-blue"><a href="/about-covid-19">About COVID-19</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/how-get-tested">How to get tested</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/prevention-community-spread">Prevention &amp; community spread</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/schools-workplaces-community">Schools, workplaces &amp; the community</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/frequently-asked-questions-faq">Frequently asked questions</a></li><!-- END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' --></ul></li><li id=""
+     class=" color__brand-dark-blue"><a href="/covid-19-resources-healthcare-providers-and-local-public-health-agencies">LPHAs &amp; healthcare providers</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/data" title="COVID-19 data dashboards">Data</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/news-0">News</a></li><li id=""
+     class=" color__brand-dark-blue"><a href="/state-recovery-assistance">State recovery &amp; assistance</a></li>
+<!-- END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' -->
+
+
+</ul>
+
+<!-- END OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig' -->
+
+
+  </nav>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+            </nav>
+        </div>
+          <div class="jumbotron">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--jumbotron.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-jumbotron">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--contentfield.html.twig
+   * block--fieldblock--node.html.twig
+   * block--fieldblock.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
+<section id="block-contentfield" class="block block-fieldblock block-fieldblocknode clearfix">
+  
+    
 
       
-  <div class="view view-view-footer-links view-id-view_footer_links view-display-id-block view-dom-id-053c3e96561855db06d4825ea5c5e226">
-        
-  
-  
-      <div class="view-content">
-      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/about">About us</a></span>  </div></li>
-          <li class="views-row views-row-2 views-row-even">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/careers">Careers</a></span>  </div></li>
-          <li class="views-row views-row-3 views-row-odd">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/contact-cdphe">Contact us</a></span>  </div></li>
-          <li class="views-row views-row-4 views-row-even">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/cdphenews">News</a></span>  </div></li>
-          <li class="views-row views-row-5 views-row-odd views-row-last">  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.colorado.gov/pacific/cdphe/categories/services-and-information/health/find-health-care-and-health-insurance">Find health care and health insurance</a></span>  </div></li>
-      </ul></div>    </div>
-  
-  
-  
-  
-  
-  
-</div>
-</div>
-<div id="block-views-view-social-links-block" class="block block-views even block-views-view-social-links-block">
 
-      
-  <div class="view view-view-social-links view-id-view_social_links view-display-id-block view-dom-id-548cbba4a7e66b6efdbf319f4bea1803">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div class="views-field views-field-field-minisite-social-link-url">        <div class="field-content"><a href="https://instagram.com/cdphe/" class="instagram" target="_blank">https://instagram.com/cdphe/</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div class="views-field views-field-field-minisite-social-link-url">        <div class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/shares" class="twitter" target="_blank">https://www.colorado.gov/pacific/cdphe/shares</a></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd views-row-last">
-      
-  <div class="views-field views-field-field-minisite-social-link-url">        <div class="field-content"><a href="https://www.colorado.gov/pacific/cdphe/shares" class="facebook" target="_blank">https://www.colorado.gov/pacific/cdphe/shares</a></div>  </div>  </div>
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'slick_wrapper' -->
+<!-- BEGIN OUTPUT from 'modules/contrib/slick/templates/slick-wrapper.html.twig' -->
+
+
+<!-- THEME DEBUG --><!-- THEME HOOK: 'slick' --><!-- BEGIN OUTPUT from 'modules/contrib/slick/templates/slick.html.twig' --><div id="slick-node-9999-jumbo-custom-1" data-blazy="" class="slick unslick blazy slick--optionset--jumbo slick--less"><!-- THEME DEBUG --><!-- THEME HOOK: 'slick_vanilla' --><!-- BEGIN OUTPUT from 'modules/contrib/slick/templates/slick-vanilla.html.twig' --><div class="slick__slide slide slide--0"><!-- THEME DEBUG --><!-- THEME HOOK: 'paragraph' --><!-- FILE NAME SUGGESTIONS:
+   * paragraph--jumbo--default.html.twig
+   x paragraph--jumbo.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+--><!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--jumbo.html.twig' --><div class="jumbo_image" style="background-image:url('/sites/covid19/files/styles/flexslider_full/public/images/covid19_microscopic.png');"><div class= "container-fluid color__black-50"><div class="main-content"><div  class="paragraph paragraph--type--jumbo paragraph--view-mode--default"><div class="paragraph__column"><div class="container"><div class="jumbo_paragraph_title"><!-- THEME DEBUG --><!-- THEME HOOK: 'field' --><!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-banner-title--jumbo.html.twig
+   * field--paragraph--field-banner-title.html.twig
+   * field--paragraph--jumbo.html.twig
+   * field--field-banner-title.html.twig
+   * field--string.html.twig
+   x field.html.twig
+--><!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' --><div class="field field--name-field-banner-title field--type-string field--label-hidden field--item">Information on the Outbreak of Coronavirus Disease 2019 (COVID-19)</div><!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' --></div></div><div class="container"><div class="jumbo_paragraph_body"><!-- THEME DEBUG --><!-- THEME HOOK: 'field' --><!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-banner-body--jumbo.html.twig
+   * field--paragraph--field-banner-body.html.twig
+   * field--paragraph--jumbo.html.twig
+   * field--field-banner-body.html.twig
+   * field--string-long.html.twig
+   x field.html.twig
+--><!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' --><div class="field field--name-field-banner-body field--type-string-long field--label-hidden field--item">The Colorado Department of Public Health and Environment is working closely with the Centers for Disease Control and Prevention (CDC), our Local Public Health Agencies (LPHA) and our communities to provide updated information about the novel coronavirus.</div><!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' --></div></div></div></div></div></div></div><!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--jumbo.html.twig' --></div><!-- END OUTPUT from 'modules/contrib/slick/templates/slick-vanilla.html.twig' --></div><!-- END OUTPUT from 'modules/contrib/slick/templates/slick.html.twig' -->
+<!-- END OUTPUT from 'modules/contrib/slick/templates/slick-wrapper.html.twig' -->
+
+
+  </section>
+
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
     </div>
   
-  
-  
-  
-  
-  
-</div>
-</div>
-<div id="block-block-1" class="block block-block odd block-block-1">
 
+  
+        <div role="main" class="js-quickedit-main-content">
+                                <div class="container">
+            </div>
+                                                        <div class="col-sm-12">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-header">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--ci-xy-page-title.html.twig
+   x block--page-title-block.html.twig
+   * block--core.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page_title' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
+  <h1 class="page-header">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--title--landing-page.html.twig
+   x field--node--title.html.twig
+   * field--node--landing-page.html.twig
+   * field--title.html.twig
+   * field--string.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+<span>Home</span>
+
+<!-- END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+
+</h1>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+              </div>
+                      
+                                        <section>
+                                                      <div class="highlighted">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--highlighted.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-highlighted">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--ci-xy-messages.html.twig
+   x block--system-messages-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
+<div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+</div>
+                                                                                                        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--help.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+                                                                <a id="main-content"></a>
+<figure class="image-container">
+
+
+  
+
+</figure>
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   x region--content.html.twig
+   * region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig' -->
+
+
+  <div class="region region-content" >
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--ci-xy-content.html.twig
+   * block--system-main-block.html.twig
+   x block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--9999--full.html.twig
+   * node--9999.html.twig
+   * node--landing-page--full.html.twig
+   x node--landing-page.html.twig
+   * node--full.html.twig
+   * node.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/node--landing-page.html.twig' -->
+
+<article role="article" about="/home" class="landing-page full clearfix">
+
+  
+    
+
+  
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'links__node' -->
+<!-- FILE NAME SUGGESTIONS:
+   * links--node.html.twig
+   x links.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-rows--landing-page.html.twig
+   * field--node--field-rows.html.twig
+   * field--node--landing-page.html.twig
+   * field--field-rows.html.twig
+   x field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns-two-uneven--default.html.twig
+   x paragraph--bp-columns-two-uneven.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns-two-uneven.html.twig' -->
+
+
+
+
+
+    
+
+    
+
+  
+
+  
+<!-- Color Conditionals -->
+    <div class="paragraph paragraph--type--bp-columns-two-uneven paragraph--view-mode--default paragraph--width--wide paragraph--style--66-33">
+     <div class="paragraph__column">
+       
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content-2--bp-columns-two-uneven.html.twig
+   x field--paragraph--bp-column-content-2.html.twig
+   * field--paragraph--bp-columns-two-uneven.html.twig
+   * field--bp-column-content-2.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content-2.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__2col">
       
-  <p><a href="http://www.colorado.gov/">© 2019 State of Colorado</a> | <a href="https://www.colorado.gov/apps/oit/transparency/index.html">Transparency Online</a> | <a href="https://www.colorado.gov/accessibility-standards">Accessibility</a></p>
 
-</div>
-<div id="block-block-16" class="block block-block last even block-block-16">
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-block--default.html.twig
+   * paragraph--bp-block.html.twig
+   x paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
 
+
+
+    
+    
+
+    
+    
+    <div class="paragraph paragraph--type--bp-block paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>            
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-custom-block-reference--bp-block.html.twig
+   * field--paragraph--field-custom-block-reference.html.twig
+   * field--paragraph--bp-block.html.twig
+   * field--field-custom-block-reference.html.twig
+   * field--entity-reference.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-custom-block-reference field--type-entity-reference field--label-hidden field--item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--field-row--row-block.html.twig
+   * field--block-content--field-row.html.twig
+   * field--block-content--row-block.html.twig
+   * field--field-row.html.twig
+   x field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+
+
+
+
+
+
+<!-- Color Conditionals -->
+ <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+  <div class="paragraph__column">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__1col">
       
-  <p><a href="https://demography.dola.colorado.gov/census_2020/"><img alt="Colorado Cenus 2020" src="/pacific/sites/default/files/u/376/CO_Census2020_white_bg.png" style="width: 125px; height: 47px;" /></a></p>
 
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+        
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_shadow paragraph--view-mode--default color__grey-sand">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><h5><span class="fontawesome-icon-inline"><i class="fas fa-chart-bar"></i> </span>  <a href="https://covid19.colorado.gov/data"><u>Cases in Colorado: Data Visualization</u></a></h5>
+
+<p>Data is updated daily by about 4 p.m.</p>
 </div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
     </div>
-  </footer>
 
-  <script src="https://www.colorado.gov/pacific/sites/default/files/js/js_VG0j93V4HgZG78xK6sj4qxbGL6JgehjHLJfkVREOCOA.js"></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"36d2a422d8","applicationID":"8252083","transactionName":"YgFTYhYFWhVSUxZYCltLZEQNS0QHUFkEWAYaDV9SARwaFltA","queueTime":0,"applicationTime":23,"atts":"TkZQFF4fSRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+  </div>
+</div>
+   
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+
+
+
+
+
+
+<!-- Color Conditionals -->
+ <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+  <div class="paragraph__column">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__1col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+        <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title title_color color__pacific-blue ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p><span style="font-family:Trebuchet MS,Helvetica,sans-serif;"></span><br /><span class="fontawesome-icon-inline"></span></p>
+
+<p><a href="https://covid19.stg.colorado.gov/about-covid-19"><span class="fontawesome-icon-inline"><i style="color:#009add;" class="fas fa-long-arrow-alt-right"></i></span></a><span style="color:#6ec4ed;"><span class="fontawesome-icon-inline">   </span></span><span class="fontawesome-icon-inline"><a href="/about-covid-19" title="About COVID-19"><strong><span class="fontawesome-icon-inline">About COVID-19</span></strong></a></span></p>
+
+<p><a href="/how-get-tested" title="How to get tested"><strong><strong><span class="fontawesome-icon-inline"><i style="color: #062f4f;" class="fas fa-long-arrow-alt-right"></i></span></strong></strong></a><strong><strong><span class="fontawesome-icon-inline"> </span><span class="fontawesome-icon-inline"><span class="fontawesome-icon-inline"> </span></span><span class="fontawesome-icon-inline"> </span></strong></strong><a href="/how-get-tested"><span class="fontawesome-icon-inline"></span></a><strong><a href="/how-get-tested">How to get tested</a></strong></p>
+
+<p><a href="/prevention-community-spread" title="Prevention and community spread"><span class="fontawesome-icon-inline"><i style="color:#009add;" class="fas fa-long-arrow-alt-right"></i></span></a><span class="fontawesome-icon-inline">   </span><a href="/prevention-community-spread" title="Prevention and community spread"><span class="fontawesome-icon-inline"></span></a><a href="/prevention-community-spread" title="Prevention and community spread"><strong><strong>Prevention and community spread</strong></strong></a></p>
+
+<p><strong><a href="/schools-workplaces-community" title="Schools, workplaces &amp;amp; community"><strong><span class="fontawesome-icon-inline"><i style="color:#009add;" class="fas fa-long-arrow-alt-right"></i></span></strong></a><strong><span class="fontawesome-icon-inline"> </span><span class="fontawesome-icon-inline">  </span><a href="https://covid19.stg.colorado.gov/schools-workplaces-community">Recommendations for schools, workplaces &amp; the community</a></strong></strong></p>
+
+<p><a href="/frequently-asked-questions-faq" title="Frequently asked questions (FAQ)"><strong><strong><span class="fontawesome-icon-inline"><span class="fontawesome-icon-inline"><i style="color:#009add;" class="fas fa-long-arrow-alt-right"></i></span></span></strong></strong></a><strong><strong><span class="fontawesome-icon-inline"><span class="fontawesome-icon-inline"> </span>  </span></strong></strong><strong><strong><a href="/frequently-asked-questions-faq" title="Frequently asked questions (FAQ)"><span class="fontawesome-icon-inline"></span></a><a href="/frequently-asked-questions-faq" title="Frequently asked questions (FAQ)"><span class="fontawesome-icon-inline">Frequently asked questions</span></a></strong></strong></p>
+
+<p><a href="/covid-19-resources-healthcare-providers-and-local-public-health-agencies" title="COVID-19 resources for healthcare providers and local public health agencies"><strong><strong><span class="fontawesome-icon-inline"><i style="color:#009add;" class="fas fa-long-arrow-alt-right"></i></span></strong></strong></a><strong><strong><span class="fontawesome-icon-inline"> </span><span class="fontawesome-icon-inline">  </span><span class="fontawesome-icon-inline"></span></strong></strong><strong><strong><a href="/covid-19-resources-healthcare-providers-and-local-public-health-agencies" title="COVID-19 resources for healthcare providers and local public health agencies">Resources for LPHAs and healthcare providers</a></strong></strong></p>
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+  </div>
+</div>
+   
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+
+
+
+
+
+
+<!-- Color Conditionals -->
+ <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+  <div class="paragraph__column">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__2col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-icon--default.html.twig
+   x paragraph--card-icon.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+
+    
+        
+
+    
+    
+
+
+
+    <div class="icon-card-top"> <div class="paragraph__card paragraph paragraph--type--card-icon paragraph--view-mode--default color__ink">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+            <a class="paragraph__card--icon-link" href="/about-covid-19">
+                <div class="paragraph__card--icon">
+                    
+                </div>
+                <div class="paragraph__card--icon-text">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-text--card-icon.html.twig
+   * field--paragraph--field-text.html.twig
+   * field--paragraph--card-icon.html.twig
+   * field--field-text.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-text field--type-string field--label-hidden field--item">I have symptoms of COVID-19</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__2col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-icon--default.html.twig
+   x paragraph--card-icon.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+
+    
+        
+
+    
+    
+
+
+
+    <div class="icon-card-top"> <div class="paragraph__card paragraph paragraph--type--card-icon paragraph--view-mode--default color__grey-sand">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+            <a class="paragraph__card--icon-link" href="/schools-workplaces-community">
+                <div class="paragraph__card--icon">
+                    
+                </div>
+                <div class="paragraph__card--icon-text">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-text--card-icon.html.twig
+   * field--paragraph--field-text.html.twig
+   * field--paragraph--card-icon.html.twig
+   * field--field-text.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-text field--type-string field--label-hidden field--item">What&#039;s closed or cancelled?</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+  </div>
+</div>
+   
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+
+
+
+
+
+
+<!-- Color Conditionals -->
+ <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+  <div class="paragraph__column">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-icon--default.html.twig
+   x paragraph--card-icon.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+
+    
+        
+
+    
+    
+
+
+
+    <div class="icon-card-top"> <div class="paragraph__card paragraph paragraph--type--card-icon paragraph--view-mode--default color__grey-sand">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+            <a class="paragraph__card--icon-link" href="/prevention-community-spread">
+                <div class="paragraph__card--icon">
+                    
+                </div>
+                <div class="paragraph__card--icon-text">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-text--card-icon.html.twig
+   * field--paragraph--field-text.html.twig
+   * field--paragraph--card-icon.html.twig
+   * field--field-text.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-text field--type-string field--label-hidden field--item">What&#039;s community spread?</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-icon--default.html.twig
+   x paragraph--card-icon.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+
+    
+        
+
+    
+    
+
+
+
+    <div class="icon-card-top"> <div class="paragraph__card paragraph paragraph--type--card-icon paragraph--view-mode--default color__grey-sand">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+            <a class="paragraph__card--icon-link" href="https://covid19.stg.colorado.gov/about-covid-19">
+                <div class="paragraph__card--icon">
+                    
+                </div>
+                <div class="paragraph__card--icon-text">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-text--card-icon.html.twig
+   * field--paragraph--field-text.html.twig
+   * field--paragraph--card-icon.html.twig
+   * field--field-text.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-text field--type-string field--label-hidden field--item">I was exposed to someone with COVID-19</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-icon--default.html.twig
+   x paragraph--card-icon.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+
+    
+        
+
+    
+    
+
+
+
+    <div class="icon-card-top"> <div class="paragraph__card paragraph paragraph--type--card-icon paragraph--view-mode--default color__grey-sand">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+            <a class="paragraph__card--icon-link" href="/how-get-tested">
+                <div class="paragraph__card--icon">
+                    
+                </div>
+                <div class="paragraph__card--icon-text">
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-text--card-icon.html.twig
+   * field--paragraph--field-text.html.twig
+   * field--paragraph--card-icon.html.twig
+   * field--field-text.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-text field--type-string field--label-hidden field--item">COVID-19 testing</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-icon.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+  </div>
+</div>
+   
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+  
+<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__2col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><h6>CONTACT</h6>
+
+<hr style="border-top: 1px solid #efefef;margin-top: 10px;margin-bottom: 22px;border-top-width: 3px;transform: skew(-0.53rad);" /><p><span class="fontawesome-icon-inline"><i class="fas fa-phone-volume"></i> </span><strong>CO-HELP</strong></p>
+
+<p>Colorado’s call line for general questions about the novel coronavirus (COVID-19), providing answers in many languages including English, Spanish (Español), Mandarin (普通话) and more</p>
+
+<p>303-389-1687 or<br />
+1-877-462-2911<br />
+ </p>
+
+<p><a href="tel:+62896706255135"><span class="fontawesome-icon-inline"><i class="fas fa-desktop"></i> </span></a><a href="mailto:COHELP@RMPDC.org">COHELP@RMPDC.org</a><br /><br /><br /><span class="fontawesome-icon-inline"><i class="fas fa-stethoscope"></i> If you have symptoms and think you have been exposed, call a health care provider</span></p>
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content-2.html.twig' -->
+
+
+     </div>
+   </div>
+  
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns-two-uneven.html.twig' -->
+
+</div>
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+    
+
+
+  
+
+
+<!-- Color Conditionals -->
+ <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default paragraph--width--wide" style="background-color:#FFFFFF;">
+  <div class="paragraph__column">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__1col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><hr style="border-top: 1px solid #efefef;margin-top: 10px;margin-bottom: 22px;border-top-width: 3px;transform: skew(-0.53rad);" /></div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+  </div>
+</div>
+   
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns-two-uneven--default.html.twig
+   x paragraph--bp-columns-two-uneven.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns-two-uneven.html.twig' -->
+
+
+
+
+
+    
+
+    
+
+  
+
+  
+<!-- Color Conditionals -->
+    <div class="paragraph paragraph--type--bp-columns-two-uneven paragraph--view-mode--default paragraph--width--wide paragraph--style--66-33">
+     <div class="paragraph__column">
+       
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content-2--bp-columns-two-uneven.html.twig
+   x field--paragraph--bp-column-content-2.html.twig
+   * field--paragraph--bp-columns-two-uneven.html.twig
+   * field--bp-column-content-2.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content-2.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__2col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-tabs--default.html.twig
+   x paragraph--bp-tabs.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/paragraph--bp-tabs.html.twig' -->
+
+
+
+
+
+
+
+
+
+
+<div class="paragraph paragraph--type--bp-tabs paragraph--view-mode--default paragraph--id--1966" id="tab-1966" role="tablist" aria-multiselectable="true">
+  <div class="paragraph__column">
+    <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab-1966-1" aria-controls="Press releases" role="tab" data-toggle="tab">Press releases</a></li>
+              <li role="presentation" class=""><a href="#tab-1966-2" aria-controls="Latest news" role="tab" data-toggle="tab">Latest news</a></li>
+          </ul>
+    <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-1966-1">
+                                                                                                                                                                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-view--default.html.twig
+   x paragraph--bp-view.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-view.html.twig' -->
+
+
+
+    
+    
+
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--bp-view card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-dynamic-views--bp-view.html.twig
+   * field--paragraph--field-dynamic-views.html.twig
+   * field--paragraph--bp-view.html.twig
+   * field--field-dynamic-views.html.twig
+   * field--viewsreference.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-dynamic-views field--type-viewsreference field--label-hidden field--item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+<div class="views-element-container form-group">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/views/views-view.html.twig' -->
+<div class="view view-article-blocks view-id-article_blocks view-display-id-block_3 js-view-dom-id-3a991e99dadd2b28fe8fa1a99b0c5d70a0b214a59afe6e0a43b15a7646365f9f">
+  
+    
+  
+    
+    
+
+      <div class="view-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_unformatted' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-unformatted.html.twig' -->
+    <div class="views-row">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-created"><span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+March 17, 2020
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</span></div><div class="views-field views-field-title"><h4 class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/press-release/additional-covid-19-case-connected-long-term-care-facility-larimer-county" hreflang="en">Additional COVID-19 Case Connected to Long Term Care Facility in Larimer County</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h4></div><div class="views-field views-field-body"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+Case investigation is in process to identify people who have been in close contact with the individuals who tested positive so that public health workers can reach out to those contacts in the next few days.
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+    <div class="views-row">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-created"><span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+March 16, 2020
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</span></div><div class="views-field views-field-title"><h4 class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/press-release/state-health-department-issues-public-health-order-closing-colorado-bars-restaurants" hreflang="en">State health department issues public health order   closing Colorado bars, restaurants, gyms, theaters, and casinos-- still allowing takeout and delivery</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h4></div><div class="views-field views-field-body"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+The Colorado Department of Public Health and Environment issued a public health order to close bars, restaurants, gyms, theaters, and casinos to slow the spread of the COVID-19 virus, effective at 8:00 a.m. on March 17 for the duration of 30 days. The public health order will help the state slow and limit the spread of COVID-19 in Colorado communities.
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+    <div class="views-row">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-created"><span class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+March 16, 2020
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</span></div><div class="views-field views-field-title"><h4 class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/press-release/state-colorado-further-amplifies-covid-19-response-welcomes-50-new-nurses-expand" hreflang="en">State of Colorado further amplifies COVID-19 response, welcomes 50 new nurses to expand capacity</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h4></div><div class="views-field views-field-body"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+FOR IMMEDIATE RELEASE
+
+CONTACT: 
+
+COVID-19 MEDIA LINE: 303-900-2849 (Please leave a message)
+
+Email: media_info@state.co.us 
+
+ 
+
+ 
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-unformatted.html.twig' -->
+
+
+    </div>
+  
+            <div class="view-footer">
+      
+
+
+
+
+<a href="/category/press-release">View All</a>
+
+
+
+    </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/views/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+        </div>
+    </div>
+
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-view.html.twig' -->
+
+
+                  </div>
+              <div role="tabpanel" class="tab-pane" id="tab-1966-2">
+                                                                                                                                                                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-view--default.html.twig
+   x paragraph--bp-view.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-view.html.twig' -->
+
+
+
+    
+    
+
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--bp-view card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-dynamic-views--bp-view.html.twig
+   * field--paragraph--field-dynamic-views.html.twig
+   * field--paragraph--bp-view.html.twig
+   * field--field-dynamic-views.html.twig
+   * field--viewsreference.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-dynamic-views field--type-viewsreference field--label-hidden field--item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+<div class="views-element-container form-group">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/views/views-view.html.twig' -->
+<div class="view view-article-blocks view-id-article_blocks view-display-id-block_1 js-view-dom-id-2761de262b9de24c8a6bed3aaa82ac99c17c318a189affd40642eac829e59559">
+  
+    
+  
+    
+    
+
+  
+          </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/views/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/container.html.twig' -->
+
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+        </div>
+    </div>
+
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-view.html.twig' -->
+
+
+                  </div>
+          </div>
+  </div>
+</div>
+
+<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/paragraph--bp-tabs.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__2col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-open-embed--default.html.twig
+   * paragraph--card-open-embed.html.twig
+   x paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
+
+
+
+    
+    
+
+    
+    
+    <div class="paragraph paragraph--type--card-open-embed paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title">
+                <h3>
+                    
+                </h3>
+            </div>            
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-open-embed--card-open-embed.html.twig
+   * field--paragraph--field-open-embed.html.twig
+   * field--paragraph--card-open-embed.html.twig
+   * field--field-open-embed.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+  <div class="field field--name-field-open-embed field--type-text-long field--label-visually_hidden">
+    <div class="field--label sr-only">Open Embed</div>
+              <div class="field--item"><a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/CDPHE?ref_src=twsrc%5Etfw">Tweets by CDPHE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+          </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content-2.html.twig' -->
+
+
+     </div>
+   </div>
+  
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns-two-uneven.html.twig' -->
+
+</div>
+  
+<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+
+  </div>
+
+</article>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/system/node--landing-page.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig' -->
+
+
+                      </section>
+
+                  </div>
+      </div>
+            
+                  <footer class="footer__content-footer color__silver">
+            <div class="container">
+                
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+  <div class="region region-footer">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   x block--sharethis.html.twig
+   * block--sharethis-block.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig' -->
+
+<!-- END OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--blockmainfooter.html.twig
+   * block--block-content--8e0f4fc5-1848-4e37-892d-08efb5472307.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
+<section id="block-blockmainfooter" class="block block-block-content block-block-content8e0f4fc5-1848-4e37-892d-08efb5472307 clearfix">
+  
+    
+
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--field-row--row-block.html.twig
+   * field--block-content--field-row.html.twig
+   * field--block-content--row-block.html.twig
+   * field--field-row.html.twig
+   x field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+      <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--bp-columns--default.html.twig
+   x paragraph--bp-columns.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+
+
+
+    
+
+
+  
+
+<!-- Color Conditionals -->
+    <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default color__slate">
+     <div class="paragraph__column">
+       
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--bp-column-content--bp-columns.html.twig
+   x field--paragraph--bp-column-content.html.twig
+   * field--paragraph--bp-columns.html.twig
+   * field--bp-column-content.html.twig
+   * field--entity-reference-revisions.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+<div class="paragraph__column--container-wrapper">
+  <div class="container"><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-title--card-basic.html.twig
+   * field--paragraph--field-card-title.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-title.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CO-HELP</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p>Colorado’s call line for general questions about the novel coronavirus (COVID-19), providing answers in many languages including English, Spanish (Español), Mandarin (普通话) and more.</p>
+
+<p>303-389-1687 or<br />
+1-877-462-2911<br /><a href="mailto:COHELP@RMPDC.org">COHELP@RMPDC.org</a></p>
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-title--card-basic.html.twig
+   * field--paragraph--field-card-title.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-title.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CDPHE Information</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p>Media line: 303-691-7870</p>
+
+<p><a href="https://colorado.gov/cdphe">CDPHE main website</a></p>
+
+<p><a href="http://www.coemergency.com/">Colorado Emergency Management</a></p>
+
+<p><a href="https://www.colorado.gov/pacific/cdphe/contact-cdphe">Contact us</a></p>
+
+<p><a href="https://sites.google.com/state.co.us/helpcoloradonow">Register to volunteer</a> <span class="fontawesome-icon-inline"><i class="fas fa-external-link-alt"></i> </span></p>
+
+<p><a href="https://forms.gle/PLiDz5cQ4tjA3Q2R9">Request a website change</a></p>
+
+<p>If you have symptoms and think you have been exposed, call a health care provider.</p>
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div><div class="paragraph--type--bp-columns__3col">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'paragraph' -->
+<!-- FILE NAME SUGGESTIONS:
+   * paragraph--card-basic--default.html.twig
+   x paragraph--card-basic.html.twig
+   * paragraph--default.html.twig
+   * paragraph.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+        <div class="paragraph__column">
+            <div class="paragraph__title ">
+                <h3>
+                    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-title--card-basic.html.twig
+   * field--paragraph--field-card-title.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-title.html.twig
+   * field--string.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">Follow us</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+                </h3>
+            </div>
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--paragraph--field-card-body--card-basic.html.twig
+   * field--paragraph--field-card-body.html.twig
+   * field--paragraph--card-basic.html.twig
+   * field--field-card-body.html.twig
+   * field--text-long.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p><strong>CDPHE</strong> <a class="btn btn-link" href="https://www.facebook.com/CDPHE/"><span class="text"></span>    <i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook"> </i> </a> <a class="btn btn-link" href="https://twitter.com/CDPHE"><span class="text"></span>    <i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter"> </i> </a> <a class="btn btn-link" href="https://www.instagram.com/cdphe/"><span class="text"></span>    <i style="word-spacing: -1em;" class="fa fa-icon-right fa-instagram"> </i> </a> </p>
+
+<p><strong>Colorado Emergency Management</strong> <a class="btn btn-link" href="https://www.facebook.com/COEmergency/?__xts__[0]=68.ARAHzlPINUNeZ27ayQDMfbLehNYVIMrg7xfT8j-8aN98mdPRoBbPnmktcLMtTkL-wokLnQaemEUD3PdU-0DQcGtcfOugK42ccAs0yv41mGs59OoCAVg0S9C98Ausn-4USITeJddgI5K-ipewsdTqb3XlAv4xK7yjZnv4r7A8AG4dzw5rz_0eDuZ4_hf1ncWlyM50sLjBs8HDQLXZaGTioqMC58gY1_CEPaK-zEzkzQmU-zAMRHdUk7QegLVllNZey-pgfkbBa5UFDKWE6BJ7x4PFxqHb-LZZlI20VTjyd7FGnKKgnHJjwfhZ7HDmhMiqJBQU-Ji_sodLedjkigg4HFK8es8"><span class="text"></span> <i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook"> </i> </a>  <a class="btn btn-link" href="https://twitter.com/COEmergency"><span class="text"></span> <i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter"> </i> </a></p>
+</div>
+      
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
+
+
+            
+        </div>
+    </div>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
+
+
+    </div></div>
+</div>
+<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
+
+
+     </div>
+   </div>
+  
+<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
+
+</div>
+  
+<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
+
+
+  </section>
+
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
+
+
+            </div>
+        </footer>
+    
+    <div class="global__footer-color color__silver">
+        <div class="footer__global-footer" role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ul class="footer__global-footer--links">
+                            <li>&#169; 2019 State of Colorado</li>
+                            <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
+                            <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
+                            <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
+                            <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
+                            <a class="logo--2020census" href="https://demography.dola.colorado.gov/census_2020/">Colorado Census 2020</a>
+                            <a class="logo--cogov" href="https://www.colorado.gov">Colorado Official State Web Portal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/system/page--landing-page.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/9999","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ckeditorAccordion":{"accordionStyle":{"collapseAll":null}},"bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","dropShadows":false},"plugins":{"smallscreen":{"mode":"window_width","breakpoint":1025,"title":"Menu"},"supposition":true}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"autoplaySpeed":3000,"pauseOnHover":true,"pauseOnDotsHover":false,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.34999999999999998,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"user":{"uid":0,"permissionsHash":"44627f6a04582f86b6202320ac3f3a7efa60a9a4d76c21d887274be85609adaa"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.4.1"></script>
+<script src="/core/assets/vendor/underscore/underscore-min.js?v=1.8.3"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.8.1"></script>
+<script src="/core/misc/drupal.js?v=8.8.1"></script>
+<script src="/core/misc/drupal.init.js?v=8.8.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/jquery-1-7-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/tabbable-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/escape-selector-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=1.12.1"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=1.12.1"></script>
+<script src="/modules/contrib/blazy/js/dblazy.min.js?q6zxp4"></script>
+<script src="/libraries/slick/slick/slick.min.js?v=1.x"></script>
+<script src="/modules/contrib/blazy/js/blazy.load.min.js?q6zxp4"></script>
+<script src="/modules/custom/ci_admin_tweaks/js/ci_at_actions.js?v=1.x"></script>
+<script src="/modules/custom/ci_article_setup/js/article_setup.js?v=1.x"></script>
+<script src="/modules/custom/ci_js/js/superfish_insert.js?v=1.x"></script>
+<script src="/modules/custom/ci_js/js/form_manipulations.js?v=1.x"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/datepicker-min.js?v=1.12.1"></script>
+<script src="/modules/custom/ci_search_form/js/ci_search_forms.js?v=1.x"></script>
+<script src="/modules/custom/ci_views_tweaks/js/ci_reference_recent.js?v=1.x"></script>
+<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.1.0/js/v4-shims.js"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.8.1"></script>
+<script src="/themes/contrib/bootstrap/js/drupal.bootstrap.js?q6zxp4"></script>
+<script src="/themes/contrib/bootstrap/js/attributes.js?q6zxp4"></script>
+<script src="/themes/contrib/bootstrap/js/theme.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/affix.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/alert.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/button.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/carousel.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/collapse.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/dropdown.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/modal.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tooltip.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/popover.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/scrollspy.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tab.js?q6zxp4"></script>
+<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/transition.js?q6zxp4"></script>
+<script src="/core/misc/states.js?v=8.8.1"></script>
+<script src="/themes/contrib/bootstrap/js/misc/states.js?q6zxp4"></script>
+<script src="/modules/contrib/webform/js/webform.states.js?v=8.8.1"></script>
+<script src="/modules/contrib/webform/modules/webform_bootstrap/js/webform_bootstrap.states.js?v=8.8.1"></script>
+<script src="/themes/ci_xy/js/scripts.js?v=1.x"></script>
+<script src="/themes/contrib/bootstrap/js/popover.js?q6zxp4"></script>
+<script src="/themes/contrib/bootstrap/js/tooltip.js?q6zxp4"></script>
+<script src="//platform-api.sharethis.com/js/sharethis.js#property=5d07ef084351e90012651044&amp;product=sticky-share-button"></script>
+<script src="/modules/custom/ci_theme_options/js/ci_theme_options.js?v=1.x"></script>
+<script src="/libraries/superfish/superfish.js?q6zxp4"></script>
+<script src="/libraries/superfish/jquery.hoverIntent.minified.js?q6zxp4"></script>
+<script src="/libraries/superfish/sfsmallscreen.js?q6zxp4"></script>
+<script src="/libraries/superfish/supposition.js?q6zxp4"></script>
+<script src="/modules/contrib/superfish/js/superfish.js?v=2.0"></script>
+<script src="/core/misc/debounce.js?v=8.8.1"></script>
+<script src="/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
+<script src="/core/misc/form.js?v=8.8.1"></script>
+<script src="/themes/contrib/bootstrap/js/misc/form.js?q6zxp4"></script>
+<script src="/modules/contrib/slick/js/slick.load.min.js?v=8.8.1"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6ac1f040bb","applicationID":"55470286","transactionName":"YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QWVVQCW0IJawgJUAZkIFNVAUdDOGMDBFIMSgx+WQBRcQdXAxVHTgYCWFMHX2cBVgAJRg5qBENDCEBDJVcFA0cQ","queueTime":0,"applicationTime":930,"atts":"T0FZQwpNGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      document.querySelector('#google_translate_element') !== null ? document.querySelector('#google_translate_element') : '';
+    }
+    (function() {
+      var script = document.createElement('script');
+      script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      script.async = true;
+      element = document.getElementsByTagName('body')[0];
+      element.append(script);
+    })();
+  </script>
 </html>
+
+<!-- END OUTPUT from 'themes/ci_xy/templates/system/html.html.twig' -->
+
