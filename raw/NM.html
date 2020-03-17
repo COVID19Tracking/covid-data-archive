@@ -64,7 +64,19 @@ jQuery(function($){
 
 });
 
-</script><link rel="stylesheet" id="et-core-unified-14-cached-inline-styles" href="https://cv.nmhealth.org/wp-content/et-cache/1/1/14/et-core-unified-14-15843147309102.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
+</script>
+<script>
+jQuery(function($){
+    $('.et_pb_accordion .et_pb_toggle_open').addClass('et_pb_toggle_close').removeClass('et_pb_toggle_open');
+
+    $('.et_pb_accordion .et_pb_toggle').click(function() {
+      $this = $(this);
+      setTimeout(function(){
+         $this.closest('.et_pb_accordion').removeClass('et_pb_accordion_toggling');
+      },700);
+    });
+});
+</script><link rel="stylesheet" id="et-core-unified-14-cached-inline-styles" href="https://cv.nmhealth.org/wp-content/et-cache/1/1/14/et-core-unified-14-15844006946576.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
 <body class="home page-template-default page page-id-14 et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
 	<div id="page-container">
 
@@ -131,68 +143,19 @@ jQuery(function($){
 			
 		<div class="et-l et-l--post">
 			<div class="et_builder_inner_content et_pb_gutters3">
-		<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular" >
+		<div class="et_pb_section et_pb_section_0 et_clickable et_pb_with_background et_section_regular" >
 				
 				
 				
 				
 					<div class="et_pb_row et_pb_row_0 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_2_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
 				
 				
-				<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_custom_button_icon et_pb_button_0 et_pb_bg_layout_light" href="/travel-recommendations/" data-icon="&#x73;">TRAVEL RECOMMENDATIONS</a>
-			</div><div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_dark">
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark">
 				
 				
-				<div class="et_pb_text_inner"><h1>2019 Novel Coronavirus Disease (COVID-19)</h1>
-<p>A new coronavirus is causing an outbreak of pneumonia. The virus was first identified in December 2019, among people who visited a seafood and animal market in Wuhan City, China. Health authorities have confirmed that the virus is able to spread from person to person. Cases have been identified in the United States.</p></div>
-			</div> <!-- .et_pb_text --><div class="et_pb_button_module_wrapper et_pb_button_1_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="/newsroom/">Latest Updates</a>
-			</div><div class="et_pb_button_module_wrapper et_pb_button_2_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light" href="tel:1-855-600-3453">Coronavirus Hotline: 1-855-600-3453</a>
-			</div><div class="et_pb_button_module_wrapper et_pb_button_3_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_button_3 et_pb_bg_layout_light" href="/faq/">Frequently Asked Questions</a>
-			</div>
-			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				<div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
-				
-				
-				<div class="et_pb_blurb_content">
-					
-					<div class="et_pb_blurb_container">
-						<h2 class="et_pb_module_header"><span>17</span></h2>
-						<div class="et_pb_blurb_description"><h2 style="text-align: center">Positive Cases of COVID-19 in New Mexico</h2></div>
-					</div>
-				</div> <!-- .et_pb_blurb_content -->
-			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_dark">
-				
-				
-				<div class="et_pb_text_inner"><h2>COVID-19 Test Results in NM</h2>
-<table>
-<tbody>
-<tr>
-<td>Presumptive Positive *</td>
-<td style="text-align: right">17</td>
-</tr>
-<tr>
-<td>Confirmed Positive</td>
-<td style="text-align: right">0</td>
-</tr>
-<tr>
-<td>Negative</td>
-<td style="text-align: right">566</td>
-</tr>
-<tr>
-<td>Total Tests **</td>
-<td style="text-align: right">583</td>
-</tr>
-</tbody>
-</table>
-<p><em style="font-size: .8em">*Cases are presumptive positive until confirmed positive by the Centers for Disease Control and Prevention (CDC)</em></p>
-<p><em style="font-size: .8em">**Numbers are cumulative persons tested through March 15, 2020. Test results are from the state Scientific Laboratory Division of the New Mexico Department of Health and TriCore Reference Laboratories.</em></p></div>
+				<div class="et_pb_text_inner"><p style="text-align: center">Please Stay Home &#8211; Click Here for More Isolation Guidance</p></div>
 			</div> <!-- .et_pb_text -->
 			</div> <!-- .et_pb_column -->
 				
@@ -206,30 +169,102 @@ jQuery(function($){
 				
 				
 					<div class="et_pb_row et_pb_row_1 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+				<div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
 				
 				
-				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_text_inner"><h1>2019 Novel Coronavirus Disease (COVID-19)</h1>
+<p>A new coronavirus is causing an outbreak of pneumonia. The virus was first identified in December 2019, among people who visited a seafood and animal market in Wuhan City, China. Health authorities have confirmed that the virus is able to spread from person to person. Cases have been identified in the United States.</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_blurb_content">
+					
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><span>More Resources</span></h4>
+						<div class="et_pb_blurb_description"><ul class="bannerLinks">
+<li><a href="https://cv.nmhealth.org/public-health-orders-and-executive-orders/" target="_blank" rel="noopener noreferrer">Executive Orders and Public Health Orders</a></li>
+<li><a href="https://cv.nmhealth.org/newsroom/" target="_blank" rel="noopener noreferrer">Latest Updates</a></li>
+<li><a href="tel:1-855-600-3453">Coronavirus Hotline: 1-855-600-3453</a></li>
+<li><a href="https://cv.nmhealth.org/faq/">Frequently Asked Questions</a></li>
+</ul></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_blurb_content">
+					
+					<div class="et_pb_blurb_container">
+						<h2 class="et_pb_module_header"><span>21</span></h2>
+						<div class="et_pb_blurb_description"><h2 style="text-align: center">Positive Cases of COVID-19 in New Mexico</h2></div>
+					</div>
+				</div> <!-- .et_pb_blurb_content -->
+			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_text_inner"><h2>COVID-19 Test Results in NM</h2>
+<table>
+<tbody>
+<tr>
+<td><span>Positive *</span></td>
+<td style="text-align: right">21</td>
+</tr>
+<tr>
+<td>Negative</td>
+<td style="text-align: right">1,249</td>
+</tr>
+<tr>
+<td>Total Tests **</td>
+<td style="text-align: right">1,270</td>
+</tr>
+</tbody>
+</table>
+<p><em style="font-size: 0.8em">*<span>Tests no longer need to be verified positive by the CDC. The Department of Health reporting has been amended to reflect this change.</span></em></p>
+<p><em style="font-size: 0.8em">**Numbers are cumulative persons tested through March 16, 2020. Test results are from the state Scientific Laboratory Division of the New Mexico Department of Health and TriCore Reference Laboratories.</em></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_2 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_text_inner"><h2>Could I have COVID-19?</h2>
 <p>If any of the following are true, call the New Mexico Department of Health (NMDOH) at (505) 827-0006:<br /> <span> </span></p>
 <ul style="padding: 0 0 0 30px">
-<li>You have fever, cough, or shortness of breath, <strong>and</strong> in the 14 days before your symptoms started, you visited China, Iran, Italy, South Korea, <strong>or</strong> were in contact with a person known to have COVID-19</li>
-<li>You do not have fever, cough, or shortness of breath, but you did travel to China, Iran, Italy, or South Korea, in the last 14 days, <strong>or</strong> were in contact with a person known to have COVID-19</li>
+<li>You have fever, cough, or shortness of breath, <strong>and</strong> in the 14 days before your symptoms started, you visited Europe, mainland China, South Korea, or Iran <strong>or</strong> were in contact with a person known to have COVID-19</li>
+<li>You do not have fever, cough, or shortness of breath, but you did travel to Europe, mainland China, South Korea, or Iran, in the last 14 days, <strong>or</strong> were in contact with a person known to have COVID-19</li>
 </ul></div>
-			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_text_inner"><h2 style="text-align: left"><strong>Are there cases confirmed in the United States?</strong></h2>
 <p style="text-align: left">The number of confirmed cases in the United States is available at the CDC&#8217;s COVID-19 web page.</p></div>
-			</div> <!-- .et_pb_text --><div class="et_pb_button_module_wrapper et_pb_button_4_wrapper et_pb_button_alignment_left et_pb_module ">
-				<a class="et_pb_button et_pb_button_4 et_pb_bg_layout_light" href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">Learn More</a>
+			</div> <!-- .et_pb_text --><div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module ">
+				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">Learn More</a>
 			</div>
-			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
 				
 				
-				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_text_inner"><h2>What can I do to protect myself from COVID-19?</h2>
@@ -240,14 +275,14 @@ jQuery(function($){
 				<div class="et_pb_video_box"><iframe title="COVID-19 Stop the Spread of Germs" width="1080" height="608" src="https://www.youtube.com/embed/7-lW0s2yJA0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 				
 			</div>
-			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
 				
 				
-				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				<div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_text_inner"><h2>Resources:</h2></div>
-			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_blurb_content">
@@ -257,7 +292,7 @@ jQuery(function($){
 						<div class="et_pb_blurb_description"><p><i>Coronavirus Hotline</i></p></div>
 					</div>
 				</div> <!-- .et_pb_blurb_content -->
-			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_2 et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_3 et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_blurb_content">
@@ -269,7 +304,7 @@ jQuery(function($){
 <p>Click Here to Download</p></div>
 					</div>
 				</div> <!-- .et_pb_blurb_content -->
-			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_3 et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+			</div> <!-- .et_pb_blurb --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_4 et_clickable  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_blurb_content">
@@ -285,11 +320,11 @@ jQuery(function($){
 			</div> <!-- .et_pb_column -->
 				
 				
-			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_2 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_3 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
 				
 				
-				<div class="et_pb_module et_pb_divider et_pb_divider_2 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				<div class="et_pb_module et_pb_divider et_pb_divider_2 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				<div class="et_pb_text_inner"><h2>What we are doing at NMDOH</h2>
@@ -297,17 +332,17 @@ jQuery(function($){
 <p>The New Mexico Department of Health (NMDOH) is actively responding to the novel coronavirus that is causing community spread in many countries around the world, and a small number of cases in the United States. Since late January, NMDOH began publishing weekly press releases and information on our website to help New Mexicans keep updated on the current situation and on professional guidance to stay healthy.</p>
 <p>We have also held multiple web conferences with hospitals, emergency medical services, childcare organizations, universities, and schools to provide updates, guidance for preparing and responding to the possibility of cases in New Mexico, and to answer questions that our response stakeholders have. We have used the Health Alert Network for the healthcare community to update them on current response activities and guidelines for diagnosis, infection control, and notification procedures should they identify a suspect case.</p>
 <p><strong>Monitoring and Screening</strong></p>
-<p>There are confirmed presumptive positive COVID-19 cases in New Mexico. We are currently working to identify cases as early as possible and implement isolation procedures to prevent further spread of the virus, should we have a case. Those procedures currently focus on 1) monitoring asymptomatic travelers from China, South Korea, Iran, and Italy during the time when they might develop disease if they were exposed to the virus and 2) supporting screening and infection control procedures in healthcare settings to identify illness in travelers or contacts of known COVID-19 patients. We have also begun to test symptomatic individuals with a negative flu test to ensure that the virus causing COVID-19 is not circulating in New Mexico.</p>
-<p>NMDOH is being notified of returning travelers through our 24/7 call line by both travelers and healthcare providers. Returning China and Iran travelers are also being screened by Customs and Border Protection and the Centers for Disease Control and Prevention and we are notified when they arrive in the U.S. These travelers are asked to stay home for 14 days from the time they left China, South Korea, Iran, or Italy, and refrain from unnecessary interactions with other people until this period is completed. NMDOH is in daily contact to confirm the absence of fever or respiratory symptoms.</p>
-<p>We are also actively monitoring the hospital bed capacity in New Mexico and the availability of facemasks, respirators, and other personal protective equipment needed for infection control. We are working with healthcare facilities to be prepared if there are shortages and to implement alternative sites for healthcare if needed, and to increase the supply of personal protective equipment.</p>
+<p>New Mexico has identified cases of COVID-19. We are currently working to continue identifying cases as early as possible and implement isolation procedures to prevent further spread of the virus. Those procedures currently focus on 1) monitoring asymptomatic travelers from Europe, China, South Korea, and Iran during the time when they might develop disease if they were exposed to the virus and 2) supporting screening and infection control procedures in healthcare settings to identify illness in travelers or contacts of known COVID-19 patients. We are also testing many symptomatic individuals to monitor the possibility of community spread of the virus in New Mexico.</p>
+<p>NMDOH is being notified of returning travelers through our 24/7 call line by both travelers and healthcare providers.  Returning China, Iran, and some cruise ship travelers are also being screened by Customs and Border Protection and the Centers for Disease Control and Prevention and we are notified when they arrive in the U.S. These travelers are asked to stay home for 14 days from the time they left Europe, China, South Korea, Iran, or cruise ship and refrain from unnecessary interactions with other people until this period is completed. NMDOH is in daily contact to confirm the absence of fever or respiratory symptoms. We are also actively monitoring the hospital bed capacity in New Mexico and the availability of facemasks, respirators, and other personal protective equipment needed for infection control. We are working with healthcare facilities to be prepared if there are shortages and to implement alternative sites for healthcare if needed, and to increase the supply of personal protective equipment.</p>
+<p><span style="font-size: 17px">On March 12, 2020, New Mexico Governor Michelle Lujan Grisham announced <a href="https://cv.nmhealth.org/wp-content/uploads/2020/03/COVID-19-Travel-Recommendations.pdf" target="_blank" rel="noopener noreferrer">COVID-19 Self-Isolation Recommendations</a> in an effort to mitigate the widespread community transmission of COVID-19. A 14-day self-isolation is recommended for individuals based on criteria that includes previous or planned international or domestic travel or contact with a person known to be positive for COVID-19. These recommendations are being enforced among all state employees known to have traveled and we encourage others to follow the same guidance.  </span></p>
 <p><strong>Emergency Response Planning</strong></p>
-<p>We have also begun to refresh emergency response plans should this virus become a global pandemic and community spread occurs in New Mexico. Based on years of planning for the next influenza pandemic, a virus that is similar to the novel coronavirus, we have adapted our plans based on current knowledge of the novel coronavirus that causes COVID-19. We have focused on measures to track the cases identified in New Mexico, to prevent spread of infections through social distancing, to ensure continuity of the healthcare system where patient volumes may require supplemental care sites, and to anticipate special approaches to effectively manage the needs that New Mexicans have for information and healthcare services. We are also stepping up our efforts to communicate what we know about COVID-19.</div>
+<p>Based on years of planning for the next influenza pandemic, a virus that is similar to the novel coronavirus, we have adapted our plans based on current knowledge of the novel coronavirus that causes COVID-19.  We have focused on measures to track the cases identified in New Mexico, to prevent spread of infections through social distancing, to ensure continuity of the healthcare system where patient volumes may require supplemental care sites, and to anticipate special approaches to effectively manage the needs that New Mexicans have for information and healthcare services. We are also stepping up our efforts to communicate what we know about COVID-19.</p></div>
 			</div> <!-- .et_pb_text -->
 			</div> <!-- .et_pb_column -->
 				
 				
-			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_3 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_4 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
 				
 				
 				<div class="et_pb_module et_pb_divider et_pb_divider_3 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
@@ -317,16 +352,16 @@ jQuery(function($){
 			</div> <!-- .et_pb_row -->
 				
 				
-			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular" >
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular" >
 				
 				
 				
 				
-					<div class="et_pb_row et_pb_row_4 et_pb_equal_columns">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+					<div class="et_pb_row et_pb_row_5 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
 				
 				
-				<div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_dark">
+				<div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_dark">
 				
 				
 				<div class="et_pb_text_inner"><p style="text-align: center;">Copyright New Mexico Department of Health</p></div>
@@ -403,7 +438,7 @@ jQuery(function($){
 	</div> <!-- #page-container -->
 
 		<script type="text/javascript">
-				var et_link_options_data = [{"class":"et_pb_blurb_2","url":"https:\/\/cv.nmhealth.org\/wp-content\/uploads\/2020\/03\/Coronavirus-stop-the-spread-of-germs-NMDOH-Bilingual.pdf","target":"_blank"},{"class":"et_pb_blurb_3","url":"https:\/\/cv.nmhealth.org\/wp-content\/uploads\/2020\/03\/Hand_Washing_Poster_Letter_NMDOH.pdf","target":"_blank"}];
+				var et_link_options_data = [{"class":"et_pb_section_0","url":"https:\/\/cv.nmhealth.org\/travel-recommendations\/","target":"_self"},{"class":"et_pb_blurb_3","url":"https:\/\/cv.nmhealth.org\/wp-content\/uploads\/2020\/03\/Coronavirus-stop-the-spread-of-germs-NMDOH-Bilingual.pdf","target":"_blank"},{"class":"et_pb_blurb_4","url":"https:\/\/cv.nmhealth.org\/wp-content\/uploads\/2020\/03\/Hand_Washing_Poster_Letter_NMDOH.pdf","target":"_blank"}];
 			</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160705917-1"></script>
@@ -452,7 +487,7 @@ ga('send', 'pageview');
 /* <![CDATA[ */
 var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
 var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
-var et_pb_custom = {"ajaxurl":"https:\/\/cv.nmhealth.org\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/cv.nmhealth.org\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/cv.nmhealth.org\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"60f1fe6850","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"0e87624dd4","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"14","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/cv.nmhealth.org\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/cv.nmhealth.org\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/cv.nmhealth.org\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"d1b4d9a882","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"831b4fbd88","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"14","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
 var et_pb_box_shadow_elements = [];
 var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
 /* ]]> */
