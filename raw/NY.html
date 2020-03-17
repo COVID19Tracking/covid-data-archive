@@ -1,91 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- INCLUDE HEADER Version 1.05 7/26/2007 PAGE LAST MODIFIED Tuesday, 17-Mar-2020 13:51:04 EDT
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head>
-<title>Novel Coronavirus (COVID-19)</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<!-- THE FOLLOWING STYLE TAG IS FOR IMPORTING STYLE ONLY -->
-<style type="text/css">
-<!--
-@import url("/diseases/communicable/coronavirus/style/style.css");
 
-.pop_out_box{
-background-color: #d3d5e3;
-padding:10px 20px;
-text-align: center;
-}
-.pop_out_content{
-margin:0px auto;
-max-width:900px;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"a873d11659",applicationID:"626833103"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-160877650-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="Novel Coronavirus (COVID-19) | Department of Health" />
+<link rel="shortcut icon" href="/profiles/custom/webny/themes/custom/webny_theme/favicon.ico" />
+<meta property="og:site_name" content="Department of Health" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="description" content="Stay home and Keep a Safe Distance from others in public. It’s the only way to help slow the spread of Coronavirus." />
+<meta name="twitter:description" content="Stay home and Keep a Safe Distance from others in public. It’s the only way to help slow the spread of Coronavirus." />
+<link rel="icon" sizes="16x16" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-32x32.png" />
+<meta property="og:title" content="Novel Coronavirus (COVID-19)" />
+<link rel="icon" sizes="96x96" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-192x192.png" />
+<meta property="og:description" content="Stay home and Keep a Safe Distance from others in public. It’s the only way to help slow the spread of Coronavirus." />
+<meta name="twitter:image" content="https://coronavirus.health.ny.gov/sites/g/files/oee1146/files/media/2020/03/drzuckerwashinghands.png" />
+<link rel="apple-touch-icon" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76.png" />
+<meta property="og:image" content="https://coronavirus.health.ny.gov/sites/g/files/oee1146/files/media/2020/03/drzuckerwashinghands.png" />
+<meta property="og:image:url" content="https://coronavirus.health.ny.gov/profiles/custom/webny/themes/custom/webny_theme/images/nys-default.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-57x57-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180-precomposed.png" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://coronavirus.health.ny.gov/home" />
+<link rel="shortlink" href="https://coronavirus.health.ny.gov/node/1" />
+<link rel="revision" href="https://coronavirus.health.ny.gov/home" />
 
--->
-</style>
+    <title>Novel Coronavirus (COVID-19) | Department of Health</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_F-qKM0HT1zcr19frJ7D57NQ9mnRvK2p0ZlBmrUHgBao.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_fZ5ZAreI05sVY9K-MAOh8xFPQRZkid06EVT7kaT7L1o.css" />
+<link rel="stylesheet" media="print" href="/sites/g/files/oee1146/files/css/css_zMJSiCCVIgmvArV4vWSupHGzZ9mJKD5wKHkhSB2svT0.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_hDsqhFadU1k4CFfjH-jKODJZVymHHy-DP3Eb2hcn4D4.css" />
 
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/oee1146/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/g/files/oee1146/files/js/js_EPRM1MB5PA_zLkCDTPWtwJFxfSmzfG7dEVgjNXp8r90.js"></script>
 
-<!-- -->
-
-<!-- -->
-
-
-<!-- -->
-
-
-
-
-
-
-
-
-<!-- -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta http-equiv="x-ua-compatible" content="IE=edge" />
-
-
-<link rel="stylesheet" media="screen" href="/style/twenty16/main.css" />
-<link rel="stylesheet" media="screen" href="/style/twenty16/visualizations.css" />
-<link rel="stylesheet" media="screen" href="/style/twenty16/nys-global-nav.css" />
-<link rel="stylesheet" media="screen" href="/style/twenty16/nys-global-nav-fonts.css" />
-
-
-
-
-<link rel="stylesheet" media="print" href="/style/twenty16/print.css" />
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1038576-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-
-
-
-</head>
-
-
-
-<body id="home">
-
-
-<div id="banner">
-<a href="#content" id="skipnav" tabindex="1">skip to main content</a>
-	<div id="bannercontainerone">
-
-<div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true" data-updated="2014-11-07 08:30">
+  </head>
+  <body class="body-sidebars-none">
+        <div class="nygov-logo">
+      <img src="/profiles/custom/webny/themes/custom/webny_theme/images/nygov-logo.png" alt="nygov-logo" />
+    </div>
+    <a href="#main-content" class="visually-hidden focusable skip-to-main">
+      Skip to main content
+    </a>
+    <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true" data-updated="2014-11-07 08:30">
     <noscript>
         <iframe width="100%" height="86px" src="//static-assets.ny.gov/load_global_menu/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:86px;" scrolling="no">
             Your browser does not support iFrames
@@ -96,7 +74,7 @@ max-width:900px;
             HOST: "static-assets.ny.gov",
             BASE_HOST: "www.ny.gov",
             hideSettings: false,
-            hideSearch: true
+            hideSearch: false
         };
         (function (document, bundle, head) {
             head = document.getElementsByTagName('head')[0];
@@ -107,594 +85,1069 @@ max-width:900px;
             head.appendChild(bundle);
         }(document));
     </script>
-</div><!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T4FP6H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T4FP6H');</script>
-<!-- End Google Tag Manager -->
-    </div>
-
-<div class="nys-global-header horizontal unstacked" role="navigaton" aria-label="Primary">
-    <div class="nav-toggle">
-      <a id="nys-menu-control" role="button" href="#">Navigation menu</a>
-    </div>
-    <h1><a href="/"><span>Department of</span> <span>Health</span></a></h1>
-    <ul id="nys-global-nav">
-      <li><a href="#">Individuals/Families</a>
-        <ul>
-          <li><a href="/vital_records/">Birth, Death, Marriage &amp; Divorce Records</a></li>
-          <li><a href="/health_care/">Health Insurance Programs</a></li>
-          <li><a href="/health_care/consumer_information/">Consumer Health Care Information</a></li>
-          <li><a href="/community/">Community Health</a></li>
-          <li><a href="/prevention/">Healthy Lifestyles</a></li>
-          <li><a href="/environmental/">Health &amp; Safety in the Home, Workplace &amp; Outdoors</a></li>
-          <li><a href="/diseases/">Diseases &amp; Conditions</a></li>
-          <li><a href="/statistics/">Data &amp; Reports</a></li>
-          <li><a href="/healthaz/">Health Topics A to Z</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Providers/Professionals</a>
-        <ul>
-          <li><a href="/professionals/narcotic/">Narcotic Enforcement</a></li>
-          <li><a href="/professionals/ems/">EMS</a></li>
-          <li><a href="/professionals/health_initiatives.htm">Health Initiatives</a></li>
-          <li><a href="/statistics/">Data &amp; Reports</a></li>
-          <li><a href="/diseases/">Diseases &amp; Conditions</a></li>
-          <li><a href="/professionals/patient_resources.htm">Patient Resources</a></li>
-          <li><a href="/professionals/reporting.htm">Disease Reporting</a></li>
-          <li><a href="/professionals/protocols_and_guidelines/">Clinical Guidelines, Standards & Quality of Care</a></li>
-          <li><a href="/permits/">Permits, Licenses & Certification</a></li>
-          <li><a href="/professionals/">All Health Care Professionals &amp; Patient Safety</a></li>
-          <li><a href="/healthaz/">Health Topics A to Z</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Health Facilities</a>
-        <ul>
-          <li><a href="/facilities/adult_care/">Adult Care Facilities/Assisted Living</a></li>
-          <li><a href="/facilities/home_care/">Home Care &amp; Hospice</a></li>
-          <li><a href="/facilities/hospital/">Hospitals &amp; Clinics</a></li>
-          <li><a href="/facilities/nursing/">Nursing Homes</a></li>
-          <li><a href="/facilities/school_based_health_centers/">School Based Health Centers</a></li>
-          <li><a href="/facilities/">All Health Care Facilities</a></li>
-          <li><a href="/healthaz/">Health Topics A to Z</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Search</a>
-        <ul>
-          <li>
-		  		<!-- <form id="site_search_form" method="get" action="http://search.nyhealth.gov/search" onsubmit="javascript:urchinTracker('/outgoing/search_engine');" role="search"> -->
-		<form id="site_search_form" method="get" action="https://search.health.ny.gov/search" onsubmit="javascript:urchinTracker('/outgoing/search_engine');" role="search">
-			<div>
-				<label for="search">Search:</label>
-				<input type="text" name="q" id="search" value="" tabindex="101" />
-				<input alt="search" type="submit" title="search" name="btnG" value="Search" id="searchbutton" tabindex="102" />
-				<input type="hidden" name="site" value="doh_collection" />
-				<input type="hidden" name="client" value="default_frontend" />
-				<input type="hidden" name="proxystylesheet" value="default_frontend" />
-				<input type="hidden" name="output" value="xml_no_dtd" />
-			</div>
-		</form>
-		  </li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- End .nys-global-header -->
-</div><!-- End #banner -->
-
-<div id="torso">
-
-
-
-<div id="main">
-<div id="breadcrumbs">
-
-
-<span id="bcYAH">You are Here: </span><span id="bcHomePageLink"><a href="/">Home Page</a>
-
-
-<strong>&gt;</strong></span>
-<a href="/diseases/"> Diseases and Conditions</a>
-
-<strong>&gt;</strong> <span id="bcPageTitle">Novel Coronavirus (COVID-19)</span>
-
 </div>
-<div id="content" role="main">
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
 
+  <header role="banner">
+                        <nav id="webny-global-header" class="webny-global-header horizontal unstacked" aria-label="primary-site" >
+            <div class="nav-toggle">
+            <a href="#" role="button" id="webny-menu-control">Navigation menu</a>
+        </div>
+            <h1><a href="/">Department of Health</a></h1>
+        <ul class="gnav-ul"><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Individuals/Families</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/vital_records/">Birth, Death, Marriage &amp; Divorce Records</a></li><li><a href="https://health.ny.gov/health_care/">Health Insurance Programs</a></li><li><a href="https://health.ny.gov/health_care/consumer_information/">Consumer Health Care Information</a></li><li><a href="https://health.ny.gov/community/">Community Health</a></li><li><a href="https://health.ny.gov/prevention/">Healthy Lifestyles</a></li><li><a href="https://health.ny.gov/environmental/">Health &amp; Safety in the Home, Workplace and Outdoors</a></li><li><a href="https://health.ny.gov/diseases/">Diseases &amp; Conditions</a></li><li><a href="https://health.ny.gov/statistics/">Data &amp; Reports</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li></ul></li><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Providers/Professionals</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/professionals/narcotic/">Narcotic Enforcement</a></li><li><a href="https://health.ny.gov/professionals/ems/">EMS</a></li><li><a href="https://health.ny.gov/professionals/health_initiatives.htm">Health Initiatives</a></li><li><a href="https://health.ny.gov/statistics/">Data &amp; Reports</a></li><li><a href="https://health.ny.gov/diseases/">Diseases &amp; Conditions</a></li><li><a href="https://health.ny.gov/professionals/patient_resources.htm">Patient Resources</a></li><li><a href="https://health.ny.gov/professionals/reporting.htm">Disease Reporting</a></li><li><a href="https://health.ny.gov/professionals/protocols_and_guidelines/">Clinical Guidelines, Standards &amp; Quality of Care</a></li><li><a href="https://health.ny.gov/permits/">Permits, Licenses &amp; Certification</a></li><li><a href="https://health.ny.gov/professionals/">All Health Care Professionals &amp; Patient Safety</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li></ul></li><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Health Facilities</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/facilities/adult_care/">Adult Care Facilities/Assisted Living</a></li><li><a href="https://health.ny.gov/facilities/home_care/">Home Care &amp; Hospice</a></li><li><a href="https://health.ny.gov/facilities/hospital/">Hospitals &amp; Clinics</a></li><li><a href="https://health.ny.gov/facilities/nursing/">Nursing Homes</a></li><li><a href="https://health.ny.gov/facilities/school_based_health_centers/">School-Based Health Centers</a></li><li><a href="https://health.ny.gov/facilities/">All Health Care Facilities</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li></ul></li></ul>
+    </nav>
 
+    
 
+    
 
+                
+        
+                                        
+    
+        
+        <nav role="navigation" aria-label="Secondary Navigation Menu" id="secondary-navigation">
 
+                
+                        <div class="secnav-secone secnav-equal-space" aria-label="Secondary Navigation - Information Section One">
+                <p><strong>Have a Question? Call the Novel Coronavirus Hotline 24/7 at&nbsp;1-888-364-3065</strong></p>
 
-
-
-
-<h1 id="pagetitle">Novel Coronavirus (COVID-19)</h1>
-
-
-<div class="top_box" style="">
-
-<div class="left_side">
-<h4>Novel Coronavirus</h4>
-<p><strong><span class="alert">Last updated:</span> March 17, 2020 | 11:00AM</strong></p>
-<p><strong>1,374 Positive Cases in New York State</strong></p>
-</div><!--Closes .left_side-->
-
-
-<div class="right_side">
-<p><strong><span class="alert">Novel Coronavirus (COVID-19) Hotline:</span><br /><span class="hotline">1-888-364-3065</span></strong><br /><p>
-<div class="navigation_div">
-<ul class="expandable_image_div_nav inline_nav_list noborder" id="nav_list">
-<li><a href="/diseases/communicable/coronavirus/providers.htm">Information for Providers</a></li>
-<li class="last-child"><a href="/diseases/communicable/coronavirus/prepare.htm">Prepare</a></li>
-</ul>
-</div>
-</div><!--Closes .right_side-->
-
-
-</div><!--Closes .top_box-->
-
-
-
-<div class="max-width-area">
-
-<h2>Latest Updates</h2>
-<ul>
-<li>Governor Andrew M. Cuomo today signed an executive order directing all schools in New York to close by Wednesday, March 18 for two weeks ending April 1</li>
-<li>No gatherings of 50 people or more in New York, Connecticut and New Jersey</li>
-<li>Casinos, gyms, theaters will be closed as of 8:00 pm on Monday, March 16 until further notice</li>
-<li>Bars and restaurants will be closed as of 8:00 pm on Monday, March 16, but takeout can be ordered during the period of closure</li>
-<li>Strongly advise only services and businesses that are essential stay open after 8:00 pm
-	<ul>
-	<li>Groceries</li>
-	<li>Gas stations</li>
-	<li>Pharmacies</li>
-	<li>Medical facilities</li>
-	</ul></li>
-<li>Non essential state workers will work from home</li>
-<li>All local governments must reduce their workforce by at least 50%</li>
-<li>New York State will waive all park fees in state, local and county parks</li>
-</ul>
- <table class="no_highlight alt_row" id="case_count_table">
-<tr class="total_row">
-<th>County</th>
-<th>Positive Cases</th>
-</tr>
-<tr>
-<td>Albany</td>
-<td>23</td>
-</tr>
-<tr>
-<td>Allegany</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Broome</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Clinton</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Delaware</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Dutchess</td>
-<td>16</td>
-</tr>
-<tr>
-<td>Erie</td>
-<td>7</td>
-</tr>
-<tr>
-<td>Greene</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Herkimer</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Monroe</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Montgomery</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Nassau</td>
-<td>131</td>
-</tr>
-<tr>
-<td>Onondaga</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Ontario</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Orange</td>
-<td>15</td>
-</tr>
-<tr>
-<td>Putnam</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Rensselaer</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Rockland</td>
-<td>22</td>
-</tr>
-<tr>
-<td>Saratoga</td>
-<td>9</td>
-</tr>
-<tr>
-<td>Schenectady</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Suffolk</td>
-<td>84</td>
-</tr>
-<tr>
-<td>Sullivan</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Tioga</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Tompkins</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Ulster</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Westchester</td>
-<td>380</td>
-</tr>
-<tr>
-<td>Wyoming</td>
-<td>1</td>
-</tr>
-<tr class="total_row">
-<td>New York State (Outside of NYC)</td>
-<td>730</td>
-</tr><tr>
-<td>New York City:</td>
-<td>644</td>
-</tr><tr class="total_row">
-<td>Total Positive Cases (Statewide)</td>
-<td>1,374</td>
-</tr>
-</table>
-</div>
-
-
-<div class="pop_out_box">
-
-<div class="pop_out_content">
- <h2>Retired Health Professionals</h2>
- <p><strong>With your help, New York State is working to protect our residents and strengthen our public health system.  Qualified retired health professionals and related professionals who are interested in supporting the state’s response please <a href="https://apps.health.ny.gov/pubpal/builder/survey/retired-health-professional">complete this survey</a></strong></p>
- 
-  <h2>School of Public Health, School of Medicine, or School of Nursing Administrators</h2>
- <p><strong>We appreciate your commitment to the health and safety of all New Yorkers and look forward to building on our partnership. Qualified individuals who are interested in supporting the state’s response please <a href="https://apps.health.ny.gov/pubpal/builder/survey/assistance-of-medical-prof">complete this survey</a></strong></p>
- 
-</div>
-</div>
-
-<div class="max-width-area">
-
-<h2>What You Need to Know</h2>
-<ul><li>Coronavirus was first detected in China is now spreading worldwide.</li>
-	<li>The symptoms may cause mild to severe respiratory symptoms like
-		<ul><li>cough</li>
-			<li>fever</li>
-			<li>trouble breathing and/or</li>
-			<li>pneumonia</li>
-		</ul></li>
-	<li>The CDC believes at this time that symptoms may appear in as few as 2 days or as long as 14 days after exposure to the virus.</li>
-	<li>Individuals who are experiencing symptoms and may have traveled to areas of concern, or have been in contact with somebody who has traveled to these areas, should call ahead to their health care provider before seeking treatment in person.</li>
-	<li>Most cases are now likely to be spread from person to person by droplets when coughing.</li>
-	<li>The status for required mandatory quarantine is a person that has been in close contact (6 ft.) with someone who is positive, but is not displaying symptoms for COVID-19; or person has traveled to China, Iran, Japan, South Korea or Italy and is displaying symptoms of COVID-19.</li>
-	<li>The status for required mandatory isolation is a person that has tested positive for COVID-19, whether or not displaying symptoms for COVID-19.</li>
-</ul>
-</div>
-
-
-<div class="video_box">
-
-<div class="embed-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ht7kFVj-5Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-</div><!--closes .video_box"-->
-
-
-<div class="middle_box">
-<h4>Help Stop the Spread of This and Other Respiratory Viruses</h4>
-<h2>Prevention</h2>
-
-<div class="tip_box_container">
-<div class="tip_box"><p>Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer.</p></div>
-
-<div class="tip_box"><p>Avoid touching your face with unwashed hands.</p>
-<p>Avoid close contact with people who are sick.</p>
-<p>Stay home when you are sick</p></div>
-
-<div class="tip_box"><p>Cover your cough or sneeze with a tissue, then throw the tissue in the garbage.</p><p>Clean and disinfect frequently touched objects and surfaces.</p></div>
-</div>
-
-<p class="middle_box_standout_link"><a href="/diseases/communicable/coronavirus/prepare.htm">Prepare</a></p>
-</div><!-- closes .middle_box-->
-
-<div class="video_box">
-
-<div class="embed-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LQ2_4GlB_yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-</div><!--closes .video_box"-->
-
-<div class="alligned_div_wrapper">
-
-<div class="alligned_div_color list_only scroll">
-<h2>Additional Information</h2>
-<ul>
-
-<li><a href="/diseases/communicable/coronavirus/docs/managing_stress_anxiety.pdf">Feeling Stressed About Coronavirus (COVID-19)? Managing Anxiety in an Anxiety-Provoking Situation</a> (PDF)</li>
-<li>Protect yourself from COVID-19 and stop the spread of germs: <a href="/publications/13067.pdf">English</a>, <a href="/publications/13067_es.pdf">Spanish</a>, <a href="/publications/13067_be.pdf">Bengali</a>, <a href="/publications/13067_ch.pdf">Chinese</a>, <a href="/publications/13067_ha.pdf">Haitian</a>, <a href="/publications/13067_ko.pdf">Korean</a>, <a href="/publications/13067_ru.pdf">Russian</a> (PDF)</li>
-<li><a href="/diseases/communicable/coronavirus/docs/guidance_for_large_gatherings.pdf">Interim Guidance for Large Gatherings and Public Spaces During the COVID-19 Outbreak</a> (PDF)</li>
-<li><a href="/diseases/communicable/coronavirus/docs/guidance_for_employers.pdf">Interim Guidance for Procedures When Identifying an Employee with Concerns for COVID-19 Exposures</a> (PDF)</li>
-<li>Cleaning and Disinfection Guidance
-	<ul>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_food_retail_manufacturers.pdf">Food Manufacturing Facilities or Food Retail Stores</a></li>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_houses_of_worship.pdf">Houses of Worship</a> </li>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_general_building.pdf">Public and Private Facilities</a></li>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_schools.pdf">Schools</a></li>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_non-healthcare_settings.pdf">Non-Healthcare Settings</a></li>
-	<li><a href="/diseases/communicable/coronavirus/docs/cleaning_guidance_public_transportation.pdf">Public Transportation</a></li>
-	<li><a href="http://www.dec.ny.gov/docs/materials_minerals_pdf/covid19.pdf">DEC List of Products to Disinfect COVID-19</a></li>
-	</ul></li>
-<li><a href="https://www.youtube.com/watch?v=uqYkA7fwhxA">A message from New York State's Health Commissioner</a>
-	<ul>
-	<li>Also available in: <a href="https://youtu.be/n8zlGqImR9s">Chinese</a>, <a href="https://youtu.be/kbbQpvJQEVk">Simplified Chinese</a>, <a href="https://youtu.be/8015gFufrJw">Korean</a></li>
-	</ul></li>
-<li><a href="https://www.youtube.com/watch?v=QZnYfqqhMk0">New York State is Ready</a>
-	<ul>
-	<li>available in: <a href="https://www.youtube.com/watch?v=QZnYfqqhMk0">English</a>, <a href="https://youtu.be/hfLVDOFF0f4">Cantonese</a>, <a href="https://youtu.be/vZbIxKvbhPk">Mandarin</a>, <a href="https://youtu.be/rmgHtq0884Q">Korean</a></li>
-	</ul></li>
-<li><a href="/diseases/communicable/coronavirus/docs/faqs_monitoring.pdf">Frequently Asked Questions About Monitoring and Movement Restrictions</a> - February 17, 2020 (PDF)</li>
-<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/index.html ">CDC: 2019 Novel Coronavirus</a></li>
-<li><a href="https://www.who.int/health-topics/coronavirus">World Health Organization: Coronavirus</a></li>
-<li><a href="/contact/contact_information/">Local NYS County Health Departments</a></li>
-</ul>
-</div><!--closes alligned_div -->
-
-
-<div class="alligned_div_color list_only">
-<h2>Child Care Providers and Schools</h2>
-<ul>
-<li><a href="http://www.p12.nysed.gov/sss/schoolhealth/schoolhealthservices/coronavirus/covid-19-p-12-school-guidance.pdf">Coronavirus (COVID-19) Guidance for P-12 Schools (March 9, 2020)</a> (PDF)</li>
-<li><a href="/diseases/communicable/coronavirus/docs/2020-03-02_k-12_webinar.pdf">Update on COVID-19 for New York State Schools (Pre-K – 12) (March 3, 2020)</a> (PDF)</li>
-<li><a href="https://www.youtube.com/watch?v=r-Q1j7phq-o">Update on COVID-19 for Higher Education Institutions in New York State (March 2, 2020)</a>
-	<ul>
-	<li><a href="/diseases/communicable/coronavirus/docs/2020-03-02_higher_ed_webinar.pdf">Presentation</a> (PDF)</li>
-	</ul></li>
-<li><a href="https://youtu.be/qe0WlXIiwNc">Webinar: Update on the 2019 Novel Coronavirus (2019-nCoV) for Schools (February 7, 2020)</a>
-	<ul>
-	<li><a href="/diseases/communicable/coronavirus/docs/2020-02-07_k-12_webinar.pdf">Presentation</a> (PDF)</li>
-	</ul></li>
-<li><a href="https://ocfs.ny.gov/main/childcare/letters.php">Dear Child Care Provider Letter (February 6, 2020)</a> (ocfs.ny.gov)</li>
-<li><a href="/diseases/communicable/coronavirus/docs/2020-02-05_nysdoh_nysed_letter.pdf">Joint NYSDOH NYSED Letter (February 5, 2020)</a> (PDF)</li>
-
-</ul>
-</div><!--closes alligned_div -->
-
-<div class="alligned_div_color list_only scroll">
-<h2>Press Releases</h2>
-<ul>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-calls-president-trump-take-comprehensive-federal-action-combat-novel-coronavirus">Governor Cuomo Calls on President Trump to Take Comprehensive Federal Action to Combat Novel Coronavirus Now - March 15, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/during-coronavirus-briefing-governor-cuomo-announces-department-financial-services-will-require">During Coronavirus Briefing, Governor Cuomo Announces Department of Financial Services Will Require Insurance Companies to Waive Co-payments for Tele-health Visits - March 14, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/after-weeks-demanding-approval-governor-cuomo-announces-fda-gives-new-york-state-authority">After Weeks of Demanding Approval, Governor Cuomo Announces FDA Gives New York State Authority to Conduct All Covid-19 Testing at Public and Private Labs - March 13, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-opens-states-first-drive-through-covid-19-mobile-testing-center-new-rochelle-0">Governor Cuomo Opens the State's First Drive-through COVID-19 Mobile Testing Center in New Rochelle - March 13, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-accepts-recommendation-state-health-commissioner-new-emergency-measures-contain">Governor Cuomo Accepts Recommendation of State Health Commissioner for New Emergency Measures to Contain Novel Coronavirus Cluster in New Rochelle - March 10, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/novel-coronavirus-briefing-governor-cuomo-announces-state-will-provide-alcohol-based-hand">At Novel Coronavirus Briefing, Governor Cuomo Announces State Will Provide Alcohol-Based Hand Sanitizer to New Yorkers Free of Charge - March 9, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-confirms-16-additional-coronavirus-cases-new-york-state-bringing-statewide-total">Governor Cuomo Confirms 16 Additional Coronavirus Cases in New York State - Bringing Statewide Total to 105 - March 8, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-confirms-13-additional-coronaviruses-cases-new-york-state-bringing-statewide">Governor Cuomo Confirms 13 Additional Coronaviruses Cases In New York State - Bringing Statewide Total to 89 - March 7, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/novel-coronavirus-briefing-governor-cuomo-declares-state-emergency-contain-spread-virus">At Novel Coronavirus Briefing, Governor Cuomo Declares State of Emergency to Contain Spread of Virus - March 7, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/statement-new-york-state-department-health-commissioner-doctor-howard-zucker">Statement from New York State Department of Health Commissioner Doctor Howard Zucker - March 6, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/novel-coronavirus-briefing-governor-cuomo-confirms-11-additional-cases-bringing-statewide-tot-0">At Novel Coronavirus Briefing, Governor Cuomo Confirms 11 Additional Cases - Bringing Statewide Total to 44 - March 6, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/novel-coronavirus-briefing-governor-cuomo-confirms-11-additional-cases-bringing-statewide-total">At Novel Coronavirus Briefing, Governor Cuomo Confirms 11 Additional Cases - Bringing Statewide Total to 33 - March 6, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-novel-coronavirus-briefing-governor-cuomo-confirms-11">Video, Audio, Photos &amp; Rush Transcript: At Novel Coronavirus Briefing, Governor Cuomo Confirms 11 Additional Cases - Bringing New York State Total to 22 - March 5, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/coronavirus-briefing-governor-cuomo-announces-suny-and-cuny-study-abroad-programs-china-italy">At Coronavirus Briefing, Governor Cuomo Announces SUNY and CUNY Study Abroad Programs in China, Italy, Japan, Iran, South Korea Suspended Effective Immediately in Response to Novel Coronavirus Concerns - March 4, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/during-coronavirus-briefing-governor-cuomo-signs-40-million-emergency-management-authorization">During Coronavirus Briefing, Governor Cuomo Signs $40 Million Emergency Management Authorization for Coronavirus Response - March 3, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-issues-statement-regarding-novel-coronavirus-new-york">Governor Cuomo Issues Statement Regarding Novel Coronavirus in New York - March 1, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/statement-governor-andrew-m-cuomo-coronavirus">Statement from Governor Andrew M. Cuomo on Coronavirus - February 29, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-announces-40-million-emergency-appropriation-support-doh-staffing-and-equipment">Governor Cuomo Announces $40 Million Emergency Appropriation to Support DOH Staffing and Equipment to Respond to Potential Novel Coronavirus Pandemic - February 26, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-updates-new-yorkers-novel-coronavirus">Governor Cuomo Updates New Yorkers on Novel Coronavirus - February 10, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-updates-new-yorkers-novel-coronavirus-and-urges-continued-awareness-while-flu">Governor Cuomo Updates New Yorkers on Novel Coronavirus and Urges Continued Awareness While Flu is Still Prevalent - February 7, 2020</a></li>
-<li><a href="/press/releases/2020/2020-02-05_coronavirus_statement.htm">Statement from New York State Health Commissioner Dr. Howard Zucker on Coronavirus Testing - February 5, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-issues-update-novel-coronavirus">Governor Cuomo Issues Update on Novel Coronavirus - February 4, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-issues-update-novel-coronavirus-and-announces-new-hotline-staffed-state-health">Governor Cuomo Issues Update on Novel Coronavirus and Announces New Hotline Staffed by State Health Department Experts - February 2, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-provides-update-novel-coronavirus-while-reminding-new-yorkers-flu-still">Governor Cuomo Provides Update on Novel Coronavirus While Reminding New Yorkers Flu is Still Prevalent - January 30, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-issues-update-novel-coronavirus-one-more-new-yorker-identified-testing-bringing">Governor Cuomo Issues Update on Novel Coronavirus as One More New Yorker is Identified for Testing Bringing Total to 10 - January 28, 2020</a></li>    
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-issues-update-novel-coronavirus-two-more-new-yorkers-identified-testing-bringing">Governor Cuomo Issues Update on Novel Coronavirus as Two More New Yorkers Identified for Testing Bringing Total to Nine - January 27, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-announces-states-continued-response-novel-coronavirus-three-more-individuals-are">Governor Cuomo Announces State's Continued Response to Novel Coronavirus as Three More Individuals are Identified for Testing in New York State - January 26, 2020</a></li>
-<li><a href="https://www.governor.ny.gov/news/governor-cuomo-outlines-state-response-first-two-confirmed-cases-novel-coronavirus-united">Governor Cuomo Outlines State Response to First Two Confirmed Cases of Novel Coronavirus in United States - January 24, 2020</a></li>
-</ul>
-</div><!--closes alligned_div -->
-
-</div><!--closes alligned_div_wrapper -->
-
-
-</div> <!-- End #content -->
-</div> <!-- End #main -->
-
-</div> <!-- End #torso -->
-
-<div id="footer">
-	<div id="footer_container">
-		
-		
+            </div>
 
         
-		<div id="reviseddate">Revised: March 2020</div>
-		
-	</div><!-- End #footer_container -->
-	
-  <div class="nys-global-footer">
-    <div class="footer-container">
-      <h3>Department of Health</h3>
-        <div class="footer-col">
-          <h4>About</h4>
-          <ul>
-            <li><a href="/commissioner/">Howard Zucker, M.D., Commissioner</a></li>
-            <li><a href="/contact/">Contact</a></li>
-            <li><a href="/employment/">Employment Opportunities</a></li>
-            <li><a href="/funding/">Grants &amp; Funding Opportunities</a></li>
-			<li><a href="/regulations/">Laws &amp; Regulations</a></li>
-            <li><a href="/press/">Press Releases, Reports &amp; Publications</a></li>
-            <li><a href="/publications/4208/">Publications and Educational Material</a></li>
-            <li><a href="/regulations/foil/">Freedom of Information Law (FOIL)</a></li>
-            <li><a href="/forms/">Forms</a></li>
-            <li><a href="/related/">Related Sites</a></li>
-	        <li><a href="/healthaz/">Health Topics A to Z</a></li>
-            <li><a href="/es/">A to Z en Espa&ntilde;ol</a></li>
-          </ul>
-        </div>
-      <div class="footer-col">
-        <h4>Events</h4>
-        <ul>
-          <li><a href="/events/meetings/">Meetings, Hearings and Special Events</a></li>
-          <li><a href="/events/webcasts/">Webcasts</a></li>
-          <li><a href="/events/">Other Events</a></li>
-        </ul>
-      </div>
-		<div class="footer-col">
-		<h4>Current Issues</h4>
-<ul>
-<li><a href="http://www.nysmokefree.com/">1-866-NY-QUITS - NYS Smokers' Quit Line</a></li>
-<li><a href="/community/opioid_epidemic/">Addressing the Opioid Epidemic in New York State</a></li>
-<li><a href="https://donatelife.ny.gov/register/">Become an Organ Donor - Enroll Today</a></li>
-<li><a href="/environmental/investigations/drinkingwaterresponse/">Drinking Water Response Activities</a></li>
-<li><a href="/diseases/aids/ending_the_epidemic/">Ending the Epidemic</a></li>
-<li><a href="/professionals/narcotic/synthetic_cannabinoids/">Learn About the Dangers of "Synthetic Marijuana"</a></li>
-<li><a href="/health_care/medicaid/redesign/">Medicaid Redesign</a></li>
-<li><a href="/regulations/medical_marijuana/">Medical Marijuana Program</a></li>
-<li><a href="https://www.ny.gov/programs/new-york-state-breast-cancer-programs">New York State Breast Cancer Programs</a></li>
-<li><a href="/health_care/medicaid/program/update/notices.htm">Notice to Medicaid Recipients</a></li>
-<li><a href="/regulations/regulated_marijuana/">Regulated Marijuana</a></li>
-</ul>
+                    <span class="secnav-pipe"></span>
+            <hr class="secnav-hr" />
 
-      </div>
-      <div class="footer-col">
-        <h4>Help</h4>
-        <ul>
-          <li><a href="/help/text_size.htm">Help Increasing the Text Size in Your Web Browser</a></li>
-          <li><a href="/help/file_types.htm">File Formats Used on this Web Site</a></li>
-          <li><a href="/about/disclaim.htm">Disclaimer</a></li>
-          <li><a href="/about/privacy.htm">Privacy Policy</a></li>
-          <li><a href="/contact/accessibility.htm">Accessibility</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Language Assistance</h4>
-        <ul>
-			<li><a href="/contact/translate.htm#english">English</a></li>
-			<li><a href="/contact/translate.htm#spanish">Espa&ntilde;ol (Spanish)</a></li>
-			<li><a href="/contact/translate.htm#chinese">&#20013;&#25991; (Chinese)</a></li>
-			<li><a href="/contact/translate.htm#russian">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian)</a></li>
-			<li><a href="/contact/translate.htm#bengali">ইংরেজি (Bengali)</a></li>
-			<li><a href="/contact/translate.htm#haitian-creole">Krey&ograve;l Ayisyen (Haitian-Creole) </a></li>
-			<li><a href="/contact/translate.htm#korean">&#54620;&#44397;&#50612; (Korean)</a>	</li>        </ul>
-      </div>
 
-      <div class="social-media">
-        <div class="social-media-title">
-          <h4>CONNECT WITH US</h4>
-        </div>
-        <div class="social-media-links">
-          <ul>
-            <li>
-              <a href="http://www.facebook.com/NYSDOH">
-                <span class="icon-social-facebook"></span>
-                <span>FACEBOOK</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com/healthnygov">
-                <span class="icon-social-twitter"></span>
-                <span>TWITTER</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.youtube.com/user/NYSDOH">
-                <span class="icon-social-youtube"></span>
-                <span>YOUTUBE</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://pinterest.com/nysdoh/">
-                <span class="icon-social-pinterest"></span>
-                <span>PINTEREST</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+                
+            <div class="secnav-sectwo secnav-equal-space">
+
+            
+                                <div class="secondary-nav-wysiwygtwo" aria-label="Secondary Navigation - Information Section Two">
+                    <p><a href="/information-providers"><strong>Information for Providers</strong></a></p>
+
+                </div>
+
+            
+            
+            </div>
+
+        
+    </nav>
+
+
+
+
+  </header>
+
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+
+
+
+
+        
     
+
+
+                    
+
+                    
+
+    
+
+
+<article  data-history-node-id="1" role="article" about="/home" class="title-layout">
+
+    
+    <div class="landing-title-area">
+
+        <!-- HEADLINE LABEL -->
+        <div class="landing-title">
+            <h1><span>Novel Coronavirus (COVID-19)</span>
+</h1>
+        </div>
+
+        <!-- SUBTITLE LABEL -->
+        <div class="landing-subtitle">
+            <span>
+            <div>Last Updated: March 17, 2020 at 2:03 PM</div>
+      </span>
+        </div>
+
+    </div>
+
+    
+</article>
+
+
+<!-- Logic to Display or Not to Display the Hero section -->
+
+<article  data-history-node-id="1" role="article" about="/home" class="title-layout hero-layout">
+
+        
+    
+            <div class="hero-header hero-has-image hero-landing">
+                <div class="hero-image">
+            
+            <div><article>
+  
+      
+            <div>    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/g/files/oee1146/files/styles/wide_lead/public/media/2020/03/drzuckerwashinghands.png?h=b5f6a62e&amp;itok=niKtVFhd 1x" media="all and (min-width: 769px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1146/files/styles/narrow_lead/public/media/2020/03/drzuckerwashinghands.png?h=b5f6a62e&amp;itok=PC5NrcGO 1x" media="all and (min-width: 461px) and (max-width: 768px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1146/files/styles/mobile_lead/public/media/2020/03/drzuckerwashinghands.png?h=b5f6a62e&amp;itok=BD6l2nKI 1x" type="image/png"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/g/files/oee1146/files/styles/mobile_lead/public/media/2020/03/drzuckerwashinghands.png?h=b5f6a62e&amp;itok=BD6l2nKI" alt="Health Commissioner Dr. Howard Zucker washing his hands." title="Health Commissioner Dr. Howard Zucker washing his hands." typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+            </div>
+        <!-- BACKGROUND GRAD -->
+            <div class="hero-bkg"></div>
+        </div>
+
+            <div class="hero-inner hero-landing-inner hero-has-image-content">
+    
+            <!-- LIVE NOW FOR BRIGHTCOVE -->
+            
+            <!-- HEADLINE LABEL -->
+                            <h2>Protect Yourself and Your Family</h2>
+            
+            <div class="hero-summary">
+                
+            <div class="webny-card-teaser">Stay home and Keep a Safe Distance from others in public. It’s the only way to help slow the spread of Coronavirus.</div>
+      
+            </div>
+
+            <!-- HERO BUTTONS -->
+            <div class="hero-buttons">
+
+                                    <div class="video_hero_button">
+                        <a href="javascript:" alt="Watch Video" title="Watch Video">  Watch Video</a>
+                    </div>
+                
+                
+            <div><a href="/protect-yourself-and-your-family-coronavirus-covid19">Symptoms</a></div>
+      
+
+                
+            </div>
+        </div>
+
+    <!-- VIDEO PLACEMENT -->
+
+         
+             <div id="hero-video-frame" class="hero-video-frame  hero-video-hide hero-vid-noimage heroplayer-youtube">
+                <div class="hero-video-inner">
+                    <div class="hero-video-close">
+                        <a href="javascript:" alt="Close Video" title="Close Video"></a>
+                    </div>
+
+                                            <video id="videojs-heroplayer-youtube"
+                               class="video-js  hero-video-player hero-type-youtube"
+                                
+                               data-setup='{
+                                     "techOrder": ["youtube"],
+                                     "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Ht7kFVj-5Bc"}],
+                                     "fluid": false
+                                                                              , "youtube": { "ytControls": 2 }
+                                      
+                                      }'>
+                        </video>
+
+                    
+                </div>
+            </div>
+        
+
+
+    
+
+</article>
+
+
+        <div class="actions">
+  <div class="webny-action-bar">
+    <div class="webny-action-top"><a href="#top">TOP<span class="icon-arrow-up"></span></a></div>
+    <div class="webny-action-label">Novel Coronavirus (COVID-19)</div>
+    <div class="webny-share">
+      <div class="webny-action-share-label">SHARE</div>
+      <div class="webny-action-share-button">
+        <a href="/cdn-cgi/l/email-protection#08375b7d6a626d6b7c354c6d78697a7c656d667c28676e28406d69647c60322846677e6d64284b677a6766697e617a7d7b28204b475e414c253931212e4a676c7135607c7c787b3227276b677a6766697e617a7d7b26606d69647c60266671266f677e276067656d"><span class="icon-email"></span></a>
+      </div>
+      <div class="webny-action-share-button">
+        <a href="http://www.facebook.com/share.php?u=https://coronavirus.health.ny.gov/home" target="_blank"><span class="icon-facebook"></span></a>
+      </div>
+      <div class="webny-action-share-button">
+        <a href="https://twitter.com/intent/tweet?text=Novel Coronavirus (COVID-19)&url=https://coronavirus.health.ny.gov/home" target="_blank"><span class="icon-twitter"></span></a>
+      </div>
     </div>
   </div>
-	
-	
-</div> <!-- End #FOOTER --> 
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-if (!window.jQuery) {
-	document.write('<script src="/script/js/jquery/jquery-3.3.1.min.js"><\/script>');
-}
-//]]>
-</script>
-
-<script type="text/javascript" src="/script/js/jquery/jquery.metadata.js"></script>
-<script type="text/javascript" src="/script/js/jquery/jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="/script/js/jquery/jquery_v5.js"></script>
-<script type="text/javascript" src="/script/js/jquery/analytics_v2.js"></script>
-<script type="text/javascript" src="/script/js/jquery/commonModules.js"></script>
-<script type="text/javascript" src="/script/js/jquery/nys-global-nav-header.js"></script>
-<script type="text/javascript" src="/script/js/jquery/jquery.blockUI.js"></script>
-  <!--[if lte IE 8]><script src="/script/js/jquery/respond.min.js"></script><![endif]-->
-
-<script type="text/javascript" src="/script/js/d3/d3.min.js"></script>
-<script type="text/javascript" src="/script/js/d3/d3.tip.v0.6.3.js"></script>
-<script type="text/javascript" src="/script/js/d3/d3.legend.js"></script>
+</div>
 
 
 
-<noscript class="jstest"><div><img src="/images/noscript.png" alt="" /></div></noscript>
+<div class="page-paragraphs landing-paragraphs">
+    <div class="page-paragraphs-in">
+    
+      <div>
+              <div>  <div class="paragraph paragraph--type--webny-wysiwyg-pgtype paragraph--view-mode--default">
+          
+            <div class="wysiwyg--field-webny-wysiwyg-title">Last Updated: March 17, 2020 1:30 PM</div>
+      
+            <div class="wysiwyg--field-webny-wysiwyg-headline">What You Need to Know</div>
+      
+            <div class="wysiwyg--field-webny-wysiwyg-body"><ul><li>The Governor and Legislature have an agreement on a bill guaranteeing job protection and pay for New Yorkers who have been quarantined as a result of novel coronavirus. </li>
+	<li>The bill also includes the permanent comprehensive paid sick leave policy</li>
+	<li>Governor Cuomo signed an executive order directing all schools in New York to close by Wednesday, March 18 for two weeks ending April 1.</li>
+	<li><span><span><span><span><span><span>Casinos, gyms, theaters are closed until further notice.</span></span></span></span></span></span></li>
+	<li><span><span><span><span><span><span>Bars and restaurants are closed, but takeout can be ordered during the period of closure.</span></span></span></span></span></span></li>
+	<li><span><span><span><span><span><span>Strongly advise only services and businesses that are essential stay open after 8:00PM</span></span></span></span></span></span>
+	<ul><li><span><span><span><span><span><span>Groceries</span></span></span></span></span></span></li>
+		<li><span><span><span><span><span><span>Gas stations</span></span></span></span></span></span></li>
+		<li><span><span><span><span><span><span>Pharmacies</span></span></span></span></span></span></li>
+		<li><span><span><span><span><span><span>Medical facilities</span></span></span></span></span></span></li>
+	</ul></li>
+	<li><span><span><span><span><span><span>All local governments must reduce their workforce by at least 50%. Non-essential state workers are working from home.</span></span></span></span></span></span></li>
+	<li>New York State is waiving all park fees in state, local and county parks.</li>
+	<li>Testing is free for all eligible New Yorkers as ordered by a health care provider.</li>
+	<li>Your <a href="https://www.nysacho.org/directory/" target="_blank">local health department</a> is your community contact for COVID-19 concerns.  </li>
+</ul><div class="custom-layout-chat-bot">
+<div class="custom-layout-chat-bot__text">
+<p class="text-align-center"><span class="button"><a href="/latest-news">Latest News</a></span></p>
+</div>
+</div></div>
+      
+      </div>
+</div>
+              <div>    <div class="paragraph paragraph--type--webny-card-paragraph-type paragraph--view-mode--default">
+        
+            <div class="webny-card-frame-inner">
+                                
+            </div>
 
-<div id="nygov-universal-footer" class="nygov-universal-container">
+            <div>
+                                                                            <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="896" role="article" about="/three-way-agreement-paid-sick-leave-bill" class="webny-card">
+
+                            <a target="_self" href="/three-way-agreement-paid-sick-leave-bill">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/paidsickleave-card.png?h=0710dec7&amp;itok=ylEuDTN1');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/three-way-agreement-paid-sick-leave-bill" rel="bookmark">
+                                                    Three-Way Agreement on Paid Sick Leave Bill
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>The Governor and Legislature have an agreement on a bill guaranteeing job protection and pay for New Yorkers who have been quarantined as a result of novel coronavirus. </p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="https://www.governor.ny.gov/news/governor-cuomo-announces-three-way-agreement-legislature-paid-sick-leave-bill-provide-immediate" title="Read More">Read More</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="881" role="article" about="/call-retired-health-professionals" class="webny-card">
+
+                            <a target="_self" href="/call-retired-health-professionals">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/medicaid_stethescope.jpg?h=c673cd1c&amp;itok=MSylm3Um');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/call-retired-health-professionals" rel="bookmark">
+                                                    Call for Retired Health Professionals
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>In the event that the COVID-19 crisis worsens, we need the help of qualified retired health professionals to supplement our hospital capacity on a temporary basis.</p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="https://apps.health.ny.gov/pubpal/builder/survey/retired-health-professional" title="Complete the Questionnaire">Complete the Questionnaire</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="861" role="article" about="/closing-schools-statewide-two-weeks" class="webny-card">
+
+                            <a target="_self" href="/closing-schools-statewide-two-weeks">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/coronavirus-event-3-16.jpg?h=b5f6a62e&amp;itok=ZAK2AWuw');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/closing-schools-statewide-two-weeks" rel="bookmark">
+                                                    Closing Schools Statewide for Two Weeks
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>Governor Cuomo signed an executive order directing all schools in New York to close by Wednesday, March 18 for two weeks ending April 1. </p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="https://www.governor.ny.gov/news/governor-cuomo-signs-executive-order-closing-schools-statewide-two-weeks" title="Read More">Read More</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                        </div>
+
+            </div>
+</div>
+              <div>    
+
+  <div class="summary-frame paragraph paragraph--type--webny-summary-pgtype paragraph--view-mode--default primary">
+          <div class="summaryframe-inner">
+        
+            <div class="keypoint--field-webny-summary-title">Help Stop the Spread of the Novel Coronavirus</div>
+      
+            <div class="keypoint--field-webny-summary-headline">Protect Yourself and Others</div>
+      
+<div  class="keypoints">
+      
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint1">Practice Social Distancing</div>
+      
+            <div class="keypoint--field-webny-summary-argument1"><p>Even if you feel well, stay at home as much as possible. In public, keep at least 6 feet distance from others. Avoid unnecessary appointments.</p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint2">Wash Your Hands. Cover Your Cough</div>
+      
+            <div class="keypoint--field-webny-summary-argument2"><p>Cover your cough and sneezes. Use your elbow or a tissue. Avoid touching your eyes, nose and mouth.</p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint3">Take Caution with New Yorkers At-Risk</div>
+      
+            <div class="keypoint--field-webny-summary-argument3"><p>Take special caution to avoid exposing the elderly and people with underlying health conditions. Avoid visiting those most at risk, call instead.  Offer help with groceries and other goods.</p></div>
+      
+  </div>
+  </div>
+<div>
+            <div class="keypoint--field-webny-summary-cta">
+            <a title="Make a Plan &amp; Be Prepared" href="/protect-yourself-and-your-family-coronavirus-covid19">Make a Plan &amp; Be Prepared</a>
+        </div>
+    </div>
+
+      </div>
+      </div>
+</div>
+              <div>    <div class="paragraph paragraph--type--webny-card-paragraph-type paragraph--view-mode--default">
+        
+            <div class="webny-card-frame-inner">
+                                
+            </div>
+
+            <div>
+                                                                            <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="761" role="article" about="/symptoms" class="webny-card">
+
+                            <a target="_self" href="/symptoms">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/wadsworthlab_covid19_8.png?h=b5f6a62e&amp;itok=8cQ9Yykt');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/symptoms" rel="bookmark">
+                                                    Symptoms
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>The 2019 novel coronavirus may cause mild to severe respiratory symptoms.</p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="/protecting-you-and-your-family-coronavirus-covid-19#symptoms" title="What to Look For">What to Look For</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="571" role="article" about="/covid-19-testing" class="webny-card">
+
+    
+            <a href="/covid-19-testing">
+            <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/wadsworth_lab_coronavirus_research3_1280.jpg?h=b5f6a62e&amp;itok=I9OPafyE');">
+            </div>
+        </a>
+    
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                    <a href="/covid-19-testing" rel="bookmark">
+                                                COVID-19 Testing
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-teaser">
+            <div>Learn more about testing protocol now that the FDA has approved New York to begin its own testing.</div>
+      </div>
+        
+            <div class="generic-card-links">
+            <div class="generic-card-links-in">
+                <ul>
+                    <li class="first-card-link"><a href="/covid-19-testing#overview">Overview</a></li><li class=""><a href="/covid-19-testing#mobile-testing">Mobile Testing</a></li><li class="last-card-link"><a href="/covid-19-testing#protocal-for-testing">Protocal for Testing</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                    <a href="https://coronavirus.health.ny.gov/covid-19-testing" title="COVID-19 Testing">LEARN MORE</a>
+                                                                            </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="801" role="article" about="/know-your-rights" class="webny-card">
+
+    
+            <a href="/know-your-rights">
+            <div class="card-image" style="background-image: url('/sites/g/files/oee1146/files/styles/card_vertical/public/media/2020/03/wadsworthlab_covid19_3.png?h=b5f6a62e&amp;itok=M6uEK3zR');">
+            </div>
+        </a>
+    
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                    <a href="/know-your-rights" rel="bookmark">
+                                                Know Your Rights
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-teaser">
+            <div>The health and safety of New Yorkers is the top priority, co-pays for telehealth visits have been waived. </div>
+      </div>
+        
+            <div class="generic-card-links">
+            <div class="generic-card-links-in">
+                <ul>
+                    <li class="first-card-link"><a href="/know-your-rights#testing">Testing</a></li><li class=""><a href="/know-your-rights#insurance">Insurance</a></li><li class="last-card-link"><a href="/know-your-rights#unemployment">Unemployment</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                    <a href="https://coronavirus.health.ny.gov/know-your-rights" title="Know Your Rights">LEARN MORE</a>
+                                                                            </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                        </div>
+
+            </div>
+</div>
+              <div>
+
+    <article  class="category-tiles-layout">
+
+                
+
+        <div class="category-tiles-layout paragraph paragraph--type--webny-category-tiles-frame paragraph--view-mode--default">
+                                                <div class="category-tiles-no-image category-tiles-landing" style="">
+                                                                                                <h2>
+                        <span class="frame-title">
+            <div>protecting the public health of all New Yorkers</div>
+      </span>
+                        <span class="frame-headline"></span>
+                    </h2>
+                                                                                <div class="category-tiles-link-content">
+                        <ul  class="category-tile-link-flex">
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Mandatory and Precautionary Quarantine" href="/international-travel-mass-gatherings-and-quarantines#quarantines">Mandatory and Precautionary Quarantine</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Mass Gatherings" href="/international-travel-mass-gatherings-and-quarantines#mass-gatherings">Mass Gatherings</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Healthcare Providers" href="/information-providers">Healthcare Providers</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Nursing Homes" href="/protecting-public-health-all-new-yorkers#nursing-homes">Nursing Homes</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Schools" href="/protecting-public-health-all-new-yorkers#schools">Schools</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Childcare Providers" href="/protecting-public-health-all-new-yorkers#child-care-providers">Childcare Providers</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Employees &amp; Employers" href="/protecting-public-health-all-new-yorkers#employees">Employees &amp; Employers</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Insurance" href="/know-your-rights#insurance">Insurance</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Voting" href="/protecting-public-health-all-new-yorkers#voting">Voting</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="International Travel" href="/international-travel-mass-gatherings-and-quarantines">International Travel</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Cyber Security" href="/stay-cyber-safe">Cyber Security</a>
+        </li>
+            <li class="category-tiles-link--field-webny-cat-button-link">
+            <a title="Price Gouging" href="/know-your-rights#price-gouging">Price Gouging</a>
+        </li>
+    </ul>
+
+                    </div>
+                </div>
+
+        </div>
+                
+    </article>
+
+</div>
+              <div>
+    
+  <div class="paragraph paragraph--type--webny-get-involved-pgtype paragraph--view-mode--default monochrome">
+          
+
+
+            <div class="get-involved--field-webny-get-involved-title">County-by-County Breakdown of Positive Cases Around New York State</div> 
+      
+
+
+            <div class="get-involved--field-webny-get-inv-description">The are 1,374 confirmed positive cases in New York York State.</div> 
+      
+<div  class="get-involved--cta-wrapper">
+      
+<div>
+            <div class="get-involved--field-webny-get-inv-cta">
+            <a title="View Confirmed Cases" href="/county-county-breakdown-positive-cases">View Confirmed Cases</a>
+        </div>
+    </div>
+
+  </div>
+      </div>
+</div>
+              <div>    <div class="quick-links-frame paragraph paragraph--type--webny-ql-pgtype paragraph--view-mode--default">
+                	        				    <div class="qlframe-inner">
+			          
+                
+                        <div class="ql--field-webny-ql-title">Cleaning &amp; Disinfecting</div>
+            
+<div  class="ql-col-group">
+      
+<div  class="ql--group-1">
+      
+<div  class="ql--group-1-items">
+      
+            <div>
+                            <div>    
+<article data-history-node-id="556" role="article" about="/interim-guidance-houses-worship" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/interim-guidance-houses-worship">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/interim-guidance-houses-worship">
+                                            Interim Guidance for Houses of Worship
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>For any local or state public or private facility to incorporate into their...</p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                            <div>    
+<article data-history-node-id="546" role="article" about="/interim-guidance-public-and-private-facilities-0" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/interim-guidance-public-and-private-facilities-0">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/interim-guidance-public-and-private-facilities-0">
+                                            Interim Guidance for Public and Private Facilities
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>For any local or state public or private facility to incorporate into their...</p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                            <div>    
+<article data-history-node-id="541" role="article" about="/interim-guidance-schools" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/interim-guidance-schools">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/interim-guidance-schools">
+                                            Interim Guidance for Schools
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>Schools should continue to educate about proper hand and respiratory hygiene.</p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                    </div>
+    
+  </div>
+  </div>
+<div  class="ql--group-2">
+      
+<div  class="ql--group-2-items">
+      
+            <div>
+                            <div>    
+<article data-history-node-id="536" role="article" about="/interim-guidance-non-healthcare-settings" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/interim-guidance-non-healthcare-settings">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/interim-guidance-non-healthcare-settings">
+                                            Interim Guidance for Non-Healthcare Settings
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>Cleaning of areas occupied by an individual under movement restriction should...</p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                            <div>    
+<article data-history-node-id="526" role="article" about="/interim-guidance-public-transportation" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/interim-guidance-public-transportation">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/interim-guidance-public-transportation">
+                                            Interim Guidance for Public Transportation
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>Public transportation officials should ensure staff continue to perform routine...</p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                            <div>    
+<article data-history-node-id="521" role="article" about="/dec-list-products-disinfect-covid-19-0" class="webny-quick-links">
+
+    <div>
+        <div class="webny-quick-links-image"><a href="/dec-list-products-disinfect-covid-19-0">
+                                    <div class="fallback-image"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M61.8,34.6v18.2c0,5.3-4.3,9.6-9.6,9.6H12.6c-5.3,0-9.6-4.3-9.6-9.6V23.7c0-5.3,4.3-9.6,9.6-9.6h28.7"/>
+<polyline class="st0" points="60.2,21.7 69,30.5 69,6.7 45.1,6.7 53.3,14.8 "/>
+<polyline class="st0" points="60.2,21.7 38,43.9 31.1,37.1 53.3,14.8 "/>
+</svg>
+</div>
+                
+            </a></div>
+        <div class="webny-quick-links-card-text">
+            <div class="webny-quick-links-title"><a href="/dec-list-products-disinfect-covid-19-0">
+                                            DEC List of Products to Disinfect COVID-19
+                                    </a></div>
+            <div class="webny-quick-links-description"><div class="webny-card-description"><p>Products registered in New York for use against COVID-19.</p>
+
+<p> </p></div>
+</div>
+        </div>
+    </div>
+
+</article></div>
+                    </div>
+    
+  </div>
+  </div>
+  </div> 
+            </div>
+            </div>
+</div>
+              <div>
+    
+  <div class="paragraph paragraph--type--webny-get-involved-pgtype paragraph--view-mode--default secondary">
+          
+
+
+            <div class="get-involved--field-webny-get-involved-title">Stay Informed</div> 
+      
+<div  class="get-involved--cta-wrapper">
+      
+<div>
+            <div class="get-involved--field-webny-get-inv-cta">
+            <a title="List of NYS County Health Departments" href="https://www.nysacho.org/directory/">List of NYS County Health Departments</a>
+        </div>
+            <div class="get-involved--field-webny-get-inv-cta">
+            <a title="Centers for Disease Control &amp; Prevention" href="https://www.cdc.gov/coronavirus/2019-ncov/">Centers for Disease Control &amp; Prevention</a>
+        </div>
+    </div>
+
+  </div>
+      </div>
+</div>
+          </div>
+  
+    </div>
+</div>
+
+<!-- VIEWFIELD -->
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+  
+</div>
+  </div>
+
+     
+
+<div class="webny-global-footer">
+
+    <div id="block-sitebranding">
+        <div class="agency-name">
+            <a href="/" title="Home" rel="home">Department of Health</a>
+        </div>
+    </div>
+    <nav id="block-global-footer-menu"  class="footer-menu footer-vertical">
+            
+        <ul class="global-footer-top-links">
+                        <li>
+                <span>About</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/commissioner/">Howard Zucker, M.D., Commissioner</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/">Contact</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/employment/">Employment Opportunities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/funding/">Grants &amp; Funding Opportunities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/">Laws &amp; Regulations</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/press/">Press Releases, Reports &amp; Publications</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/publications/4208/">Publications and Educational Material</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/foil/">Freedom of Information Law (FOIL)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/forms/">Forms</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/related/">Related Sites</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/es/">A to Z en Español</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Events</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/events/meetings/">Meetings, Hearings and Special Events</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/events/webcasts/">Webcasts</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/events/">Other Events</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Current Issues</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="http://www.nysmokefree.com/">1-866-NY-QUITS - NYS Smokers&#039; Quit Line</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/community/opioid_epidemic/">Addressing the Opioid Epidemic in New York State</a>
+                            </li>
+                    <li>
+                <a href="https://donatelife.ny.gov/register/">Become an Organ Donor - Enroll Today</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/environmental/investigations/drinkingwaterresponse/">Drinking Water Response Activities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/diseases/aids/ending_the_epidemic/">Ending the Epidemic</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/professionals/narcotic/synthetic_cannabinoids/">Learn About the Dangers of &quot;Synthetic Marijuana&quot;</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/health_care/medicaid/redesign/">Medicaid Redesign</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/medical_marijuana/">Medical Marijuana Program</a>
+                            </li>
+                    <li>
+                <a href="https://www.ny.gov/programs/new-york-state-breast-cancer-programs">New York State Breast Cancer Programs</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/health_care/medicaid/program/update/notices.htm">Notice to Medicaid Recipients</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/regulated_marijuana/">Regulated Marijuana</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Help</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/help/text_size.htm">Help Increasing the Text Size in Your Web Browser</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/help/file_types.htm">File Formats Used on this Web Site</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/about/disclaim.htm">Disclaimer</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/about/privacy.htm">Privacy Policy</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/accessibility.htm">Accessibility</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Language Assistance</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/contact/translate.htm#english">English</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#spanish">Español (Spanish)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#chinese">中文 (Chinese)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#russian">Русский (Russian)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#bengali">ইংরেজি (Bengali)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#haitian-creole">Kreyòl Ayisyen (Haitian-Creole)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#korean">한국어 (Korean)</a>
+                            </li>
+            </ul>
+        
+                            </li>
+            </ul>
+        
+
+
+    </nav>
+
+        <nav id="block-global-footer-social-menu" class="social-media">
+        <h2>CONNECT WITH US</h2>
+        <ul><li><a class="imgico_facebook" href="http://www.facebook.com/NYSDOH">FACEBOOK</a></li><li><a class="imgico_pinterest" href="http://pinterest.com/nysdoh/">PINTEREST</a></li><li><a class="imgico_twitter" href="http://twitter.com/healthnygov">TWITTER</a></li><li><a class="imgico_youtube" href="http://www.youtube.com/user/NYSDOH">YOUTUBE</a></li></ul>
+    </nav>
+    
+</div>
+<!-- uNav interactive footer -->
+<div id="nygov-universal-footer">
     <noscript>
-        <iframe id="nygov-universal-footer-frame" class="nygov-universal-container" width="100%" height="200px" src="//static-assets.ny.gov/load_global_footer/ajax?iframe=true" data-updated="2014-11-07 08:30" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" scrolling="no">
+        <iframe width="100%" height="200px" src="//static-assets.ny.gov/load_global_footer/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" scrolling="no">
             Your browser does not support iFrames
         </iframe>
     </noscript>
 </div>
+<!-- end uNav interactive footer -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"label":"Key Point 1","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast","id":"","classes":"keypoint"}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50},"user":{"uid":0,"permissionsHash":"27642e0f5ee545c2e1bbacdbe0cdc48b35d9ebbdd7c196f4f05fbd709dc574be"}}</script>
+<script src="/sites/g/files/oee1146/files/js/js_X3N_v5D73AmnZWcE1dD-bfpfiOz_KPHl0vyO3KTtW90.js"></script>
 
-</body>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a873d11659","applicationID":"626833103,141443075","transactionName":"YANVY0BRC0tQW01fW1lJdlRGWQpWHnxLQ0RWCmt0XUIAZHxdV0NocwNRVkdcEXVUVkx6XVkNY0VXVShZX1FJQ1hWElhFQR1bX1RWXERVQwN+WVZVHXlfXGpZRkM=","queueTime":0,"applicationTime":1706,"atts":"TERWFQhLGEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
-
-
-
