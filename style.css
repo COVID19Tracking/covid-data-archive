@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    border-bottom: 3px double black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+/* ----------- */
+div.data {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+div.div.data {
+  border: 1px solid blue;
+}
+
+div.content {
+  border: 1px solid black;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+
+/* ----------- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 1000px;
+    background-color: lightgray;
+    text-align: left;
+    padding: 2px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
