@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 06:22:30.039270+00:00
-  end	2020-03-18 06:23:12.723376+00:00
-  previous	2020-03-18 05:35:24.011916+00:00
-  lapsed	0:00:42.684106
+  start	2020-03-18 06:35:26.276471+00:00
+  end	2020-03-18 06:35:44.150427+00:00
+  previous	2020-03-18 06:22:30.039270+00:00
+  lapsed	0:00:17.873956
 
 STATUS COUNTS:
-  CHANGED	23
+  CHANGED	30
   FAILED	7
-  duplicate	37
+  duplicate	36
   skip	1
-  unchanged	54
+  unchanged	48
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -38,7 +38,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	duplicate	google-states	duplicate of HI	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	CHANGED	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -100,18 +100,18 @@ SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx
 SD_data.html	duplicate	google-states	duplicate of SD	
 TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	duplicate	google-states	duplicate of TN	
-TX.html	CHANGED	google-states	https://dshs.texas.gov/coronavirus/	
-TX_data.html	CHANGED	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
-UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
-VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VA_data.html	duplicate	google-states	duplicate of VA	
-VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
+TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
+UT.html	CHANGED	google-states	https://health.utah.gov/coronavirus	
+UT_data.html	CHANGED	google-states	https://coronavirus.utah.gov/latest/	
+VA.html	CHANGED	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VA_data.html	CHANGED	google-states	https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no	
+VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 VT_data.html	duplicate	google-states	duplicate of VT	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	duplicate	google-states	duplicate of WA	
-WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
-WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
+WI.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
+WI_data.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	duplicate	google-states	duplicate of WV	
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -126,11 +126,11 @@ NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavi
 AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states	duplicate of PR	
-VI.html	unchanged	google-states	https://doh.vi.gov/	
+VI.html	CHANGED	google-states	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states	duplicate of VI	
 GU.html	unchanged	google-states	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states	duplicate of GU	
-MP.html	unchanged	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
+MP.html	CHANGED	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states	duplicate of MP	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 AS_data.html	duplicate	google-states	duplicate of AS	
@@ -162,7 +162,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	duplicate	google-states	duplicate of HI	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	CHANGED	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -224,18 +224,18 @@ SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx
 SD_data.html	duplicate	google-states	duplicate of SD	
 TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	duplicate	google-states	duplicate of TN	
-TX.html	CHANGED	google-states	https://dshs.texas.gov/coronavirus/	
-TX_data.html	CHANGED	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
-UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
-VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VA_data.html	duplicate	google-states	duplicate of VA	
-VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
+TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
+UT.html	CHANGED	google-states	https://health.utah.gov/coronavirus	
+UT_data.html	CHANGED	google-states	https://coronavirus.utah.gov/latest/	
+VA.html	CHANGED	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VA_data.html	CHANGED	google-states	https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no	
+VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 VT_data.html	duplicate	google-states	duplicate of VT	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	duplicate	google-states	duplicate of WA	
-WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
-WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
+WI.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
+WI_data.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	duplicate	google-states	duplicate of WV	
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -250,11 +250,11 @@ NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavi
 AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states	duplicate of PR	
-VI.html	unchanged	google-states	https://doh.vi.gov/	
+VI.html	CHANGED	google-states	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states	duplicate of VI	
 GU.html	unchanged	google-states	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states	duplicate of GU	
-MP.html	unchanged	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
+MP.html	CHANGED	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states	duplicate of MP	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 AS_data.html	duplicate	google-states	duplicate of AS	
@@ -286,7 +286,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	duplicate	google-states	duplicate of HI	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	CHANGED	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -348,18 +348,18 @@ SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx
 SD_data.html	duplicate	google-states	duplicate of SD	
 TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	duplicate	google-states	duplicate of TN	
-TX.html	CHANGED	google-states	https://dshs.texas.gov/coronavirus/	
-TX_data.html	CHANGED	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
-UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
-VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VA_data.html	duplicate	google-states	duplicate of VA	
-VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
+TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
+UT.html	CHANGED	google-states	https://health.utah.gov/coronavirus	
+UT_data.html	CHANGED	google-states	https://coronavirus.utah.gov/latest/	
+VA.html	CHANGED	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VA_data.html	CHANGED	google-states	https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no	
+VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 VT_data.html	duplicate	google-states	duplicate of VT	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	duplicate	google-states	duplicate of WA	
-WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
-WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
+WI.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
+WI_data.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	duplicate	google-states	duplicate of WV	
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -374,11 +374,11 @@ NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavi
 AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states	duplicate of PR	
-VI.html	unchanged	google-states	https://doh.vi.gov/	
+VI.html	CHANGED	google-states	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states	duplicate of VI	
 GU.html	unchanged	google-states	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states	duplicate of GU	
-MP.html	unchanged	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
+MP.html	CHANGED	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states	duplicate of MP	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 AS_data.html	duplicate	google-states	duplicate of AS	
@@ -410,7 +410,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	duplicate	google-states	duplicate of HI	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	CHANGED	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -472,18 +472,18 @@ SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx
 SD_data.html	duplicate	google-states	duplicate of SD	
 TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	duplicate	google-states	duplicate of TN	
-TX.html	CHANGED	google-states	https://dshs.texas.gov/coronavirus/	
-TX_data.html	CHANGED	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
-UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
-VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VA_data.html	duplicate	google-states	duplicate of VA	
-VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
+TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
+UT.html	CHANGED	google-states	https://health.utah.gov/coronavirus	
+UT_data.html	CHANGED	google-states	https://coronavirus.utah.gov/latest/	
+VA.html	CHANGED	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VA_data.html	CHANGED	google-states	https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no	
+VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 VT_data.html	duplicate	google-states	duplicate of VT	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	duplicate	google-states	duplicate of WA	
-WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
-WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
+WI.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
+WI_data.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	duplicate	google-states	duplicate of WV	
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -498,11 +498,11 @@ NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavi
 AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states	duplicate of PR	
-VI.html	unchanged	google-states	https://doh.vi.gov/	
+VI.html	CHANGED	google-states	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states	duplicate of VI	
 GU.html	unchanged	google-states	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states	duplicate of GU	
-MP.html	unchanged	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
+MP.html	CHANGED	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states	duplicate of MP	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 AS_data.html	duplicate	google-states	duplicate of AS	
@@ -534,7 +534,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	duplicate	google-states	duplicate of HI	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	CHANGED	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -596,18 +596,18 @@ SD.html	unchanged	google-states	https://doh.sd.gov/news/Coronavirus.aspx
 SD_data.html	duplicate	google-states	duplicate of SD	
 TN.html	CHANGED	google-states	https://www.tn.gov/health/cedep/ncov.html	
 TN_data.html	duplicate	google-states	duplicate of TN	
-TX.html	CHANGED	google-states	https://dshs.texas.gov/coronavirus/	
-TX_data.html	CHANGED	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
-UT.html	unchanged	google-states	https://health.utah.gov/coronavirus	
-UT_data.html	unchanged	google-states	https://coronavirus.utah.gov/latest/	
-VA.html	unchanged	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
-VA_data.html	duplicate	google-states	duplicate of VA	
-VT.html	unchanged	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
+TX.html	unchanged	google-states	https://dshs.texas.gov/coronavirus/	
+TX_data.html	unchanged	google-states	https://dshs.texas.gov/news/updates.shtm#coronavirus	
+UT.html	CHANGED	google-states	https://health.utah.gov/coronavirus	
+UT_data.html	CHANGED	google-states	https://coronavirus.utah.gov/latest/	
+VA.html	CHANGED	google-states	http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/	
+VA_data.html	CHANGED	google-states	https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no	
+VT.html	CHANGED	google-states	https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus	
 VT_data.html	duplicate	google-states	duplicate of VT	
 WA.html	unchanged	google-states	https://www.doh.wa.gov/Emergencies/Coronavirus	
 WA_data.html	duplicate	google-states	duplicate of WA	
-WI.html	unchanged	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
-WI_data.html	unchanged	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
+WI.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	
+WI_data.html	CHANGED	google-states	https://www.dhs.wisconsin.gov/outbreaks/index.htm	
 WV.html	unchanged	google-states	https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx	
 WV_data.html	duplicate	google-states	duplicate of WV	
 WY.html	FAILED	google-states	https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/	Response is 146 bytes
@@ -622,11 +622,11 @@ NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavi
 AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
 PR.html	CHANGED	google-states	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states	duplicate of PR	
-VI.html	unchanged	google-states	https://doh.vi.gov/	
+VI.html	CHANGED	google-states	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states	duplicate of VI	
 GU.html	unchanged	google-states	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states	duplicate of GU	
-MP.html	unchanged	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
+MP.html	CHANGED	google-states	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states	duplicate of MP	
 AS.html	CHANGED	google-states	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	
 AS_data.html	duplicate	google-states	duplicate of AS	
