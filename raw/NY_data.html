@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"a873d11659",applicationID:"626833103"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-160877650-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="County by County Breakdown of Positive Cases | Department of Health" />
+<link rel="shortcut icon" href="/profiles/custom/webny/themes/custom/webny_theme/favicon.ico" />
+<meta property="og:site_name" content="Department of Health" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="description" content="" />
+<meta name="twitter:description" content="" />
+<link rel="icon" sizes="16x16" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-32x32.png" />
+<meta property="og:title" content="County by County Breakdown of Positive Cases" />
+<link rel="icon" sizes="96x96" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-192x192.png" />
+<link rel="apple-touch-icon" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76.png" />
+<meta property="og:image:url" content="https://coronavirus.health.ny.gov/profiles/custom/webny/themes/custom/webny_theme/images/nys-default.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-57x57-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180-precomposed.png" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases" />
+<link rel="shortlink" href="https://coronavirus.health.ny.gov/node/851" />
+<link rel="revision" href="https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases" />
+
+    <title>County by County Breakdown of Positive Cases | Department of Health</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_qfabf9JnQe47YOnz99yKGe76_0-f7_RjWCmQHpthGMU.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_fZ5ZAreI05sVY9K-MAOh8xFPQRZkid06EVT7kaT7L1o.css" />
+<link rel="stylesheet" media="print" href="/sites/g/files/oee1146/files/css/css_zMJSiCCVIgmvArV4vWSupHGzZ9mJKD5wKHkhSB2svT0.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1146/files/css/css_hDsqhFadU1k4CFfjH-jKODJZVymHHy-DP3Eb2hcn4D4.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/oee1146/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/g/files/oee1146/files/js/js_MVso1WGxGvqlxI3OBIGjQonJPKPBEZP7UVwlExH07u4.js"></script>
+
+  </head>
+  <body class="body-sidebars-none">
+        <div class="nygov-logo">
+      <img src="/profiles/custom/webny/themes/custom/webny_theme/images/nygov-logo.png" alt="nygov-logo" />
+    </div>
+    <a href="#main-content" class="visually-hidden focusable skip-to-main">
+      Skip to main content
+    </a>
+    <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true" data-updated="2014-11-07 08:30">
+    <noscript>
+        <iframe width="100%" height="86px" src="//static-assets.ny.gov/load_global_menu/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:86px;" scrolling="no">
+            Your browser does not support iFrames
+        </iframe>
+    </noscript>
+    <script type="text/javascript">
+        var _NY = {
+            HOST: "static-assets.ny.gov",
+            BASE_HOST: "www.ny.gov",
+            hideSettings: false,
+            hideSearch: false
+        };
+        (function (document, bundle, head) {
+            head = document.getElementsByTagName('head')[0];
+            bundle = document.createElement('script');
+            bundle.type = 'text/javascript';
+            bundle.async = true;
+            bundle.src = "//static-assets.ny.gov/sites/all/widgets/universal-navigation/js/dist/global-nav-bundle.js";
+            head.appendChild(bundle);
+        }(document));
+    </script>
+</div>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header role="banner">
+                        <nav id="webny-global-header" class="webny-global-header horizontal unstacked" aria-label="primary-site" >
+            <div class="nav-toggle">
+            <a href="#" role="button" id="webny-menu-control">Navigation menu</a>
+        </div>
+            <h1><a href="/">Department of Health</a></h1>
+        <ul class="gnav-ul"><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Individuals/Families</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/vital_records/">Birth, Death, Marriage &amp; Divorce Records</a></li><li><a href="https://health.ny.gov/health_care/">Health Insurance Programs</a></li><li><a href="https://health.ny.gov/health_care/consumer_information/">Consumer Health Care Information</a></li><li><a href="https://health.ny.gov/community/">Community Health</a></li><li><a href="https://health.ny.gov/prevention/">Healthy Lifestyles</a></li><li><a href="https://health.ny.gov/environmental/">Health &amp; Safety in the Home, Workplace and Outdoors</a></li><li><a href="https://health.ny.gov/diseases/">Diseases &amp; Conditions</a></li><li><a href="https://health.ny.gov/statistics/">Data &amp; Reports</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li><li><a href="https://health.ny.gov/">DOH Homepage</a></li></ul></li><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Providers/Professionals</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/professionals/narcotic/">Narcotic Enforcement</a></li><li><a href="https://health.ny.gov/professionals/ems/">EMS</a></li><li><a href="https://health.ny.gov/professionals/health_initiatives.htm">Health Initiatives</a></li><li><a href="https://health.ny.gov/statistics/">Data &amp; Reports</a></li><li><a href="https://health.ny.gov/diseases/">Diseases &amp; Conditions</a></li><li><a href="https://health.ny.gov/professionals/patient_resources.htm">Patient Resources</a></li><li><a href="https://health.ny.gov/professionals/reporting.htm">Disease Reporting</a></li><li><a href="https://health.ny.gov/professionals/protocols_and_guidelines/">Clinical Guidelines, Standards &amp; Quality of Care</a></li><li><a href="https://health.ny.gov/permits/">Permits, Licenses &amp; Certification</a></li><li><a href="https://health.ny.gov/professionals/">All Health Care Professionals &amp; Patient Safety</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li><li><a href="https://health.ny.gov/">DOH Homepage</a></li></ul></li><li class="gnav-mitems gnav-topli" aria-expanded="false"><span>Health Facilities</span><ul class="gnav-items-ul" aria-hidden="true"><li><a href="https://health.ny.gov/facilities/adult_care/">Adult Care Facilities/Assisted Living</a></li><li><a href="https://health.ny.gov/facilities/home_care/">Home Care &amp; Hospice</a></li><li><a href="https://health.ny.gov/facilities/hospital/">Hospitals &amp; Clinics</a></li><li><a href="https://health.ny.gov/facilities/nursing/">Nursing Homes</a></li><li><a href="https://health.ny.gov/facilities/school_based_health_centers/">School-Based Health Centers</a></li><li><a href="https://health.ny.gov/facilities/">All Health Care Facilities</a></li><li><a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a></li><li><a href="https://health.ny.gov/">DOH Homepage</a></li></ul></li></ul>
+    </nav>
+
+    
+
+    
+
+                
+        
+                                        
+    
+        
+        <nav role="navigation" aria-label="Secondary Navigation Menu" id="secondary-navigation">
+
+                
+                        <div class="secnav-secone secnav-equal-space" aria-label="Secondary Navigation - Information Section One">
+                <p><strong>Have a Question? Call the Novel Coronavirus Hotline 24/7 at&nbsp;1-888-364-3065</strong></p>
+
+            </div>
+
+        
+                    <span class="secnav-pipe"></span>
+            <hr class="secnav-hr" />
+
+
+                
+            <div class="secnav-sectwo secnav-equal-space">
+
+            
+                                <div class="secondary-nav-wysiwygtwo" aria-label="Secondary Navigation - Information Section Two">
+                    <p><a href="/information-providers"><strong>Information for Providers</strong></a></p>
+
+                </div>
+
+            
+            
+            </div>
+
+        
+    </nav>
+
+
+
+
+  </header>
+
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+
+
+
+
+
+  
+
+
+                    
+
+    
+
+
+<article  data-history-node-id="851" role="article" about="/county-county-breakdown-positive-cases" class="title-layout">
+
+                    
+    
+    <div class="landing-title-area">
+
+        <!-- HEADLINE LABEL -->
+        <div class="landing-title">
+            <h1><span>County by County Breakdown of Positive Cases</span>
+</h1>
+        </div>
+
+        <!-- SUBTITLE LABEL -->
+        <div class="landing-subtitle">
+            <span></span>
+        </div>
+
+    </div>
+
+                    
+    
+</article>
+
+
+<!-- Logic to Display or Not to Display the Hero section -->
+
+<div class="page-paragraphs landing-paragraphs">
+    <div class="page-paragraphs-in">
+    
+      <div>
+              <div>  <div class="paragraph paragraph--type--webny-wysiwyg-pgtype paragraph--view-mode--default">
+          
+            <div class="wysiwyg--field-webny-wysiwyg-title">Last Update: March 18, 2020 | 10:00AM</div>
+      
+            <div class="wysiwyg--field-webny-wysiwyg-body"><table><tbody><tr><th>County</th>
+			<th>Positive Cases</th>
+		</tr><tr><td>Westchester</td>
+			<td>380</td>
+		</tr><tr><td>Nassau</td>
+			<td>131</td>
+		</tr><tr><td>Suffolk</td>
+			<td>84</td>
+		</tr><tr><td>Albany</td>
+			<td>23</td>
+		</tr><tr><td>Rockland</td>
+			<td>22</td>
+		</tr><tr><td>Dutchess</td>
+			<td>16</td>
+		</tr><tr><td>Orange</td>
+			<td>15</td>
+		</tr><tr><td>Monroe</td>
+			<td>10</td>
+		</tr><tr><td>Saratoga</td>
+			<td>9</td>
+		</tr><tr><td>Ulster</td>
+			<td>8</td>
+		</tr><tr><td>Erie</td>
+			<td>7</td>
+		</tr><tr><td>Schenectady</td>
+			<td>5</td>
+		</tr><tr><td>Allegany</td>
+			<td>2</td>
+		</tr><tr><td>Greene</td>
+			<td>2</td>
+		</tr><tr><td>Putnam</td>
+			<td>2</td>
+		</tr><tr><td>Onondaga</td>
+			<td>2</td>
+		</tr><tr><td>Tompkins</td>
+			<td>2</td>
+		</tr><tr><td>Broome</td>
+			<td>1</td>
+		</tr><tr><td>Clinton</td>
+			<td>1</td>
+		</tr><tr><td>Delaware</td>
+			<td>1</td>
+		</tr><tr><td>Herkimer</td>
+			<td>1</td>
+		</tr><tr><td>Tioga</td>
+			<td>1</td>
+		</tr><tr><td>Montgomery</td>
+			<td>1</td>
+		</tr><tr><td>Ontario</td>
+			<td>1</td>
+		</tr><tr><td>Rensselaer</td>
+			<td>1</td>
+		</tr><tr><td>Sullivan</td>
+			<td>1</td>
+		</tr><tr><td>Wyoming</td>
+			<td>1</td>
+		</tr><tr><td><strong>New York State (Outside of NYC)</strong></td>
+			<td><strong>730</strong></td>
+		</tr><tr><td>New York City</td>
+			<td>644</td>
+		</tr><tr><td><strong>Total Positive Cases (Statewide)</strong></td>
+			<td><strong>1,374</strong></td>
+		</tr></tbody></table><p> </p></div>
+      
+      </div>
+</div>
+          </div>
+  
+    </div>
+</div>
+
+<!-- VIEWFIELD -->
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+  
+</div>
+  </div>
+
+     
+
+<div class="webny-global-footer">
+
+    <div id="block-sitebranding">
+        <div class="agency-name">
+            <a href="/" title="Home" rel="home">Department of Health</a>
+        </div>
+    </div>
+    <nav id="block-global-footer-menu"  class="footer-menu footer-vertical">
+            
+        <ul class="global-footer-top-links">
+                        <li>
+                <span>About</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/commissioner/">Howard Zucker, M.D., Commissioner</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/">Contact</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/employment/">Employment Opportunities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/funding/">Grants &amp; Funding Opportunities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/">Laws &amp; Regulations</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/press/">Press Releases, Reports &amp; Publications</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/publications/4208/">Publications and Educational Material</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/foil/">Freedom of Information Law (FOIL)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/forms/">Forms</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/related/">Related Sites</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/healthaz/">Health Topics A to Z</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/es/">A to Z en Español</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Events</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/events/meetings/">Meetings, Hearings and Special Events</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/events/webcasts/">Webcasts</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/events/">Other Events</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Current Issues</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="http://www.nysmokefree.com/">1-866-NY-QUITS - NYS Smokers&#039; Quit Line</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/community/opioid_epidemic/">Addressing the Opioid Epidemic in New York State</a>
+                            </li>
+                    <li>
+                <a href="https://donatelife.ny.gov/register/">Become an Organ Donor - Enroll Today</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/environmental/investigations/drinkingwaterresponse/">Drinking Water Response Activities</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/diseases/aids/ending_the_epidemic/">Ending the Epidemic</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/professionals/narcotic/synthetic_cannabinoids/">Learn About the Dangers of &quot;Synthetic Marijuana&quot;</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/health_care/medicaid/redesign/">Medicaid Redesign</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/medical_marijuana/">Medical Marijuana Program</a>
+                            </li>
+                    <li>
+                <a href="https://www.ny.gov/programs/new-york-state-breast-cancer-programs">New York State Breast Cancer Programs</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/health_care/medicaid/program/update/notices.htm">Notice to Medicaid Recipients</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/regulations/regulated_marijuana/">Regulated Marijuana</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Help</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/help/text_size.htm">Help Increasing the Text Size in Your Web Browser</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/help/file_types.htm">File Formats Used on this Web Site</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/about/disclaim.htm">Disclaimer</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/about/privacy.htm">Privacy Policy</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/accessibility.htm">Accessibility</a>
+                            </li>
+            </ul>
+        
+                            </li>
+                    <li>
+                <span>Language Assistance</span>
+                                                <ul class="global-footer-inner-links">
+                            <li>
+                <a href="https://health.ny.gov/contact/translate.htm#english">English</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#spanish">Español (Spanish)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#chinese">中文 (Chinese)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#russian">Русский (Russian)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#bengali">ইংরেজি (Bengali)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#haitian-creole">Kreyòl Ayisyen (Haitian-Creole)</a>
+                            </li>
+                    <li>
+                <a href="https://health.ny.gov/contact/translate.htm#korean">한국어 (Korean)</a>
+                            </li>
+            </ul>
+        
+                            </li>
+            </ul>
+        
+
+
+    </nav>
+
+        <nav id="block-global-footer-social-menu" class="social-media">
+        <h2>CONNECT WITH US</h2>
+        <ul><li><a class="imgico_facebook" href="http://www.facebook.com/NYSDOH">FACEBOOK</a></li><li><a class="imgico_pinterest" href="http://pinterest.com/nysdoh/">PINTEREST</a></li><li><a class="imgico_twitter" href="http://twitter.com/healthnygov">TWITTER</a></li><li><a class="imgico_youtube" href="http://www.youtube.com/user/NYSDOH">YOUTUBE</a></li></ul>
+    </nav>
+    
+</div>
+<!-- uNav interactive footer -->
+<div id="nygov-universal-footer">
+    <noscript>
+        <iframe width="100%" height="200px" src="//static-assets.ny.gov/load_global_footer/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" scrolling="no">
+            Your browser does not support iFrames
+        </iframe>
+    </noscript>
+</div>
+<!-- end uNav interactive footer -->
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/851","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"user":{"uid":0,"permissionsHash":"27642e0f5ee545c2e1bbacdbe0cdc48b35d9ebbdd7c196f4f05fbd709dc574be"}}</script>
+<script src="/sites/g/files/oee1146/files/js/js_GYGJel4m7uRynvXIzzjT9lfP4mAJxaf-zrRqC8gXBgQ.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a873d11659","applicationID":"626833103,141443075","transactionName":"YANVY0BRC0tQW01fW1lJdlRGWQpWHnxLQ0RWCmt0XUIAZHxdV0NocwNRVkdcEXVUVkx6XVkNY0VXVShZX1FJQ1hWElhFQR1bX1RWXERVQwN+WVZVHXlfXGpZRkM=","queueTime":0,"applicationTime":214,"atts":"TERWFQhLGEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
