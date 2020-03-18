@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 19:35:34.028652+00:00
-  end	2020-03-18 19:36:26.432037+00:00
-  previous	2020-03-18 19:05:26.492759+00:00
-  lapsed	0:00:52.403385
+  start	2020-03-18 19:39:34.552473+00:00
+  end	2020-03-18 19:39:37.526466+00:00
+  previous	2020-03-18 19:35:34.028652+00:00
+  lapsed	0:00:02.973993
 
 STATUS COUNTS:
-  CHANGED	23
+  CHANGED	24
   FAILED	9
   duplicate	35
   skip	1
-  unchanged	56
+  unchanged	55
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -30,7 +30,7 @@ CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus
 CT_data.html	duplicate	google-states	duplicate of CT	
 DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
+DE.html	CHANGED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
@@ -38,7 +38,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -156,7 +156,7 @@ CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus
 CT_data.html	duplicate	google-states	duplicate of CT	
 DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
+DE.html	CHANGED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
@@ -164,7 +164,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -282,7 +282,7 @@ CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus
 CT_data.html	duplicate	google-states	duplicate of CT	
 DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
+DE.html	CHANGED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
@@ -290,7 +290,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -408,7 +408,7 @@ CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus
 CT_data.html	duplicate	google-states	duplicate of CT	
 DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
+DE.html	CHANGED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
@@ -416,7 +416,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -534,7 +534,7 @@ CT.html	unchanged	google-states	https://portal.ct.gov/Coronavirus
 CT_data.html	duplicate	google-states	duplicate of CT	
 DC.html	CHANGED	google-states	https://coronavirus.dc.gov/	
 DC_data.html	unchanged	google-states	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
-DE.html	unchanged	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
+DE.html	CHANGED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states	duplicate of DE	
 FL.html	unchanged	google-states	http://www.floridahealth.gov/diseases-and-conditions/COVID-19/	
 FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
@@ -542,7 +542,7 @@ GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
