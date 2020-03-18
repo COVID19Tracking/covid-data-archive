@@ -1,14 +1,14 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 16:05:33.907470+00:00
-  end	2020-03-18 16:06:10.761469+00:00
-  previous	2020-03-18 15:35:34.297234+00:00
-  lapsed	0:00:36.853999
+  start	2020-03-18 16:35:34.050456+00:00
+  end	2020-03-18 16:36:07.331430+00:00
+  previous	2020-03-18 16:05:33.907470+00:00
+  lapsed	0:00:33.280974
 
 STATUS COUNTS:
-  CHANGED	13
+  CHANGED	14
   FAILED	7
-  duplicate	35
+  duplicate	34
   skip	1
   unchanged	66
 
@@ -48,7 +48,7 @@ IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states	duplicate of IN	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states	duplicate of KS	
-KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states	duplicate of KY	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states	duplicate of LA	
@@ -81,7 +81,7 @@ NJ_data.html	unchanged	google-states	https://www.nj.gov/health/
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NM_data.html	duplicate	google-states	duplicate of NM	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
-NV_data.html	duplicate	google-states	duplicate of NV	
+NV_data.html	CHANGED	google-states	https://thenevadaindependent.com/article/coronavirus-live-blog-week-two	
 NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	google-states	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
@@ -90,7 +90,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -172,7 +172,7 @@ IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states	duplicate of IN	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states	duplicate of KS	
-KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states	duplicate of KY	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states	duplicate of LA	
@@ -205,7 +205,7 @@ NJ_data.html	unchanged	google-states	https://www.nj.gov/health/
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NM_data.html	duplicate	google-states	duplicate of NM	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
-NV_data.html	duplicate	google-states	duplicate of NV	
+NV_data.html	CHANGED	google-states	https://thenevadaindependent.com/article/coronavirus-live-blog-week-two	
 NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	google-states	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
@@ -214,7 +214,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -296,7 +296,7 @@ IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states	duplicate of IN	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states	duplicate of KS	
-KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states	duplicate of KY	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states	duplicate of LA	
@@ -329,7 +329,7 @@ NJ_data.html	unchanged	google-states	https://www.nj.gov/health/
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NM_data.html	duplicate	google-states	duplicate of NM	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
-NV_data.html	duplicate	google-states	duplicate of NV	
+NV_data.html	CHANGED	google-states	https://thenevadaindependent.com/article/coronavirus-live-blog-week-two	
 NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	google-states	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
@@ -338,7 +338,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -420,7 +420,7 @@ IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states	duplicate of IN	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states	duplicate of KS	
-KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states	duplicate of KY	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states	duplicate of LA	
@@ -453,7 +453,7 @@ NJ_data.html	unchanged	google-states	https://www.nj.gov/health/
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NM_data.html	duplicate	google-states	duplicate of NM	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
-NV_data.html	duplicate	google-states	duplicate of NV	
+NV_data.html	CHANGED	google-states	https://thenevadaindependent.com/article/coronavirus-live-blog-week-two	
 NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	google-states	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
@@ -462,7 +462,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -544,7 +544,7 @@ IN.html	unchanged	google-states	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states	duplicate of IN	
 KS.html	unchanged	google-states	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states	duplicate of KS	
-KY.html	unchanged	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	CHANGED	google-states	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states	duplicate of KY	
 LA.html	unchanged	google-states	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states	duplicate of LA	
@@ -577,7 +577,7 @@ NJ_data.html	unchanged	google-states	https://www.nj.gov/health/
 NM.html	unchanged	google-states	https://cv.nmhealth.org/	
 NM_data.html	duplicate	google-states	duplicate of NM	
 NV.html	unchanged	google-states	http://dpbh.nv.gov/coronavirus/	
-NV_data.html	duplicate	google-states	duplicate of NV	
+NV_data.html	CHANGED	google-states	https://thenevadaindependent.com/article/coronavirus-live-blog-week-two	
 NY.html	CHANGED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	
 NY_data.html	unchanged	google-states	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 OH.html	unchanged	google-states	https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/	
@@ -586,7 +586,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
