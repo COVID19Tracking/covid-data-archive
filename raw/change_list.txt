@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 15:35:34.297234+00:00
-  end	2020-03-18 15:36:06.347135+00:00
-  previous	2020-03-18 15:05:30.776309+00:00
-  lapsed	0:00:32.049901
+  start	2020-03-18 16:05:33.907470+00:00
+  end	2020-03-18 16:06:10.761469+00:00
+  previous	2020-03-18 15:35:34.297234+00:00
+  lapsed	0:00:36.853999
 
 STATUS COUNTS:
-  CHANGED	11
+  CHANGED	13
   FAILED	7
-  duplicate	36
+  duplicate	35
   skip	1
-  unchanged	67
+  unchanged	66
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -37,7 +37,7 @@ FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-HI_data.html	duplicate	google-states	duplicate of HI	
+HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
@@ -90,7 +90,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -161,7 +161,7 @@ FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-HI_data.html	duplicate	google-states	duplicate of HI	
+HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
@@ -214,7 +214,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -285,7 +285,7 @@ FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-HI_data.html	duplicate	google-states	duplicate of HI	
+HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
@@ -338,7 +338,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -409,7 +409,7 @@ FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-HI_data.html	duplicate	google-states	duplicate of HI	
+HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
@@ -462,7 +462,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -533,7 +533,7 @@ FL_data.html	unchanged	google-states	https://experience.arcgis.com/experience/96
 GA.html	unchanged	google-states	https://dph.georgia.gov/novelcoronavirus	
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
-HI_data.html	duplicate	google-states	duplicate of HI	
+HI_data.html	CHANGED	google-states	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
@@ -586,7 +586,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
