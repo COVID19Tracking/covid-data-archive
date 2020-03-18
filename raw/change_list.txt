@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-18 12:35:29.183278+00:00
-  end	2020-03-18 12:36:06.823574+00:00
-  previous	2020-03-18 12:05:24.975503+00:00
-  lapsed	0:00:37.640296
+  start	2020-03-18 13:05:33.988589+00:00
+  end	2020-03-18 13:06:11.912872+00:00
+  previous	2020-03-18 12:35:29.183278+00:00
+  lapsed	0:00:37.924283
 
 STATUS COUNTS:
-  CHANGED	10
+  CHANGED	11
   FAILED	7
   duplicate	36
   skip	1
-  unchanged	68
+  unchanged	67
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -90,7 +90,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -214,7 +214,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -338,7 +338,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -462,7 +462,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
@@ -586,7 +586,7 @@ OK.html	unchanged	google-states	https://coronavirus.health.ok.gov
 OK_data.html	unchanged	google-states	https://coronavirus.health.ok.gov/	
 OR.html	unchanged	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	
 OR_data.html	duplicate	google-states	duplicate of OR	
-PA.html	unchanged	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
+PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
 RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
