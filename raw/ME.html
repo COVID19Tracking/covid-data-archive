@@ -40,6 +40,11 @@
 <!-- InstanceBeginEditable name="head" -->
 <meta name="Description" content="Information about the 2019 coronavirus, or COVID-19, including Maine CDC's response and resources for Maine people and health providers." />
 <meta name="Keywords" content="coronavirus, coronavirus disease 2019, COVID-19, airborne disease" />
+<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
 <style>
 div.keyInfo, p.keyInfo {
 	margin: 0 0 18px;
@@ -66,6 +71,7 @@ body table.travelAdvisories {
 	width: 99%;
 	border: 1px solid #333;
 	border-collapse: collapse;
+	background: #ffffff;
 }
 table.travelAdvisories tr td {
 	border: 1px solid #333;
@@ -113,7 +119,19 @@ BUT MAY BE USEFUL LATER */
 
 
 a#covid-19 {display: none;}
+
+/* OVERRIDES FOR JQUERY ACCORDION */
+body .ui-state-default, body .ui-widget-content .ui-state-default, 
+body .ui-widget-header .ui-state-default, body .ui-widget-content  {background-image: none;}
+
+.ui-state-default, .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color: #446CBD;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {color: #6B4000; border: 1px solid #6B4000;}
+
+
+#Accordion1 {margin-top: 1.7em;}
+
 </style>
+
 <!-- InstanceEndEditable -->
 <!-- InstanceParam name="crumbtrail" type="boolean" value="true" -->
 <!-- InstanceParam name="rightcol" type="boolean" value="true" -->
@@ -257,282 +275,250 @@ function googleTranslateElementInit() {
     <div id="maincontent3" class="article" role="main"> <!-- InstanceBeginEditable name="maincontent2" -->
       <h1>Novel Coronavirus 2019 (COVID-19)</h1>
       <p style="padding: 4px; background: #F8E38D; font-style: italic;">Maine CDC will continue to regularly update this page. For additional resources and up-to-date information, please visit the <a href="https://www.cdc.gov/coronavirus/2019-nCoV/summary.html" style="color: #2F5EBC;" target="_blank">U.S. CDC's COVID-19 website</a>.</p>
-      <p>The Maine CDC is preparing for the potential spread in Maine of the respiratory illness called COVID-19, caused by a novel (new) coronavirus. We urge Maine people to practice good hand hygiene, cover coughs and sneezes, and stay home if you are sick. If you are concerned that you have been exposed to COVID-19, call your health care provider, who will determine whether you should be tested and, as appropriate, submit a sample for testing.</p>
-      
-      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+      <p>The Maine CDC is preparing for the potential spread in Maine of the respiratory illness called COVID-19, caused by a novel (new) coronavirus. We urge Maine people to practice good hand hygiene, cover coughs and sneezes, and stay home if you are sick. If you are concerned that you have been exposed to COVID-19, call your health care provider, who will determine whether you should be tested and, as appropriate, submit a sample for testing.      </p>
       <h2 class="h1">Situation in Maine</h2>
       <p>The table below is updated once each day Monday through Friday by 12 PM EDT. </p>
       <table class="travelAdvisories">
         <thead>
           <tr>
-            <th colspan="5" class="advisory">Maine COVID-19 Testing Data</th>
+            <th colspan="7" class="advisory">Maine COVID-19  Testing Data</th>
           </tr>
           <tr>
-            <th colspan="5" class="advisoryDt">Updated: March 17, 2020 at 12:00 PM</th>
+            <th colspan="7" class="advisoryDt">Updated: March 18, 2020 at 12:00 PM</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="width: 33%;"><b>Total Confirmed Cases<sup>1</sup></b></td>
-            <td style="width: 33%;"><b>Total Presumptive Positive Cases<sup>2</sup></b></td>
-            <td style="width: 33%;"><b>Persons With Negative Tests<sup>3</sup></b></td>
+            <td style="width: 33%;"><b> Confirmed Cases<sup>1</sup></b></td>
+            <td style="width: 33%;"><b> Presumptive Positive Cases<sup>2</sup></b></td>
+            <td style="width: 33%;"><b>Negative Tests<sup>3</sup></b></td>
           </tr>
           <tr>
-            <td style="width: 33%;">23</td>
-            <td style="width: 33%;">9</td>
-			  <td style="width: 33%;">1,303</td>
+            <td style="width: 33%;">30</td>
+            <td style="width: 33%;">13</td>
+			  <td style="width: 33%;">1,670</td>
           </tr>
         </tbody>
+		  
       </table>
-		<p><sup>1</sup><b>Confirmed Cases:</b> This now includes cases formerly identified as presumptive positive. This classification applies to samples sent by a health provider directly to HETL that test positive and to samples from non-governmental labs for which HETL validates positive results. </p>
-	  <p><sup>2</sup><b>Presumptive Positive Cases:</b> These are samples that test positive at non-governmental labs and are sent to HETL for validation.      </p>
-      <p><sup>3</sup><b>Negative Tests: </b>This number represents negative tests from state, reference, or commerical laboratories, or at US CDC. </p>
-      <p>&nbsp;</p>
-	   <table class="travelAdvisories">
+
+	  <div id="Accordion1">
+      
+         
+      
+<h3><a href="#">View  Cases  by County</a></h3>
+<div>
+  <table class="travelAdvisories">
         <thead>
           <tr>
-            <th colspan="7" class="advisory">Maine COVID-19 Case Tracker</th>
-          </tr>
-          <tr>
-            <th colspan="7" class="advisoryDt">Updated: March 17, 2020 at 6:00 PM</th>
+            <th colspan="5" class="advisoryDt">Confirmed, Presumptive and Recovered Case Counts by County</th>
           </tr>
         </thead>
+		
         <tbody>
           <tr>
-			  <td style="width: 10;">&nbsp;</td>
-			  <td style="width: 10%;"><b>Sex</b></td>
-			  <td style="width: 10%;"><b>Age</b></td>
-			  <td style="width: 30%;"><b>County of Residence</b></td>
-            <td style="width: 40%;"><b>Classification</b></td>
+			  <td style="width: 25%;"><b>County</b></td>
+			  <td style="width: 25%;"><b>Confirmed</b></td>
+		    <td style="width: 25%;"><b>Presumptive Positive</b></td>
+			      <td style="width: 25%;"><b>Recovered</b></td>
           </tr>
-          <tr>
-            <td style="width: 10%;">1</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Androscoggin</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">2</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">3</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">40s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">4</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">5</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">20s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">6</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">20s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">7</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">80s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">8</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">70s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">9</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">70s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">10</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">30s</td>
-            <td style="width: 40%;">Lincoln</td>
-            <td style="width: 15%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">11</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">40s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">12</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">&lt;20</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">13</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-			      <td style="width: 10%;">14</td>
-			      <td style="width: 10%;">F</td>
-			      <td style="width: 10%;">80s</td>
-			      <td style="width: 30%;">Cumberland</td>
-			      <td style="width: 40%;">Confirmed</td>
-	      </tr>
-			    <tr>
-			      <td style="width: 10%;">15</td>
-			      <td style="width: 10%;">M</td>
-			      <td style="width: 10%;">30s</td>
-			      <td style="width: 30%;">Knox</td>
-			      <td style="width: 40%;">Confirmed</td>
-	      </tr>
-			    <tr>
-			      <td style="width: 10%;">16</td>
-			      <td style="width: 10%;">M</td>
-			      <td style="width: 10%;">70s</td>
-			      <td style="width: 30%;">Cumberland</td>
-			      <td style="width: 40%;">Confirmed</td>
-	      </tr>
-			    <tr>
-            <td style="width: 10%;">17</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">40s</td>
-            <td style="width: 30%;">Lincoln</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">18</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">19</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Oxford</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">20</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">York</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">21</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">&lt;20</td>
-            <td style="width: 30%;">Androscoggin</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">22</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">23</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">24</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">25</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			    <tr>
-            <td style="width: 10%;">26</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">30s</td>
-            <td style="width: 30%;">Out of State</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">27</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">40s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">28</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Out of State</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">29</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">60s</td>
-            <td style="width: 30%;">Cumberland</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">30</td>
-            <td style="width: 10%;">M</td>
-            <td style="width: 10%;">40s</td>
-            <td style="width: 30%;">&nbsp;</td>
-            <td style="width: 40%;">Confirmed</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">31</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">30s</td>
-            <td style="width: 30%;">Kennebec</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			<tr>
-            <td style="width: 10%;">32</td>
-            <td style="width: 10%;">F</td>
-            <td style="width: 10%;">50s</td>
-            <td style="width: 30%;">Androscoggin</td>
-            <td style="width: 40%;">Presumptive Positive</td>
-		  </tr>
-			
-        </tbody>
+			  <tr>
+			  <td style="width: 25%;">Androscoggin</td>
+			  <td style="width: 25%;">1</td>
+		    <td style="width: 25%;">3</td>
+				  <td style="width: 25%;">1</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Aroostook</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Cumberland</td>
+			  <td style="width: 25%;">12</td>
+		    <td style="width: 25%;">11</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Franklin</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Hancock</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Kennebec</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">1</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Knox</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Lincoln</td>
+			  <td style="width: 25%;">2</td>
+		    <td style="width: 25%;">1</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Oxford</td>
+			  <td style="width: 25%;">1</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Penobscot</td>
+			  <td style="width: 25%;">1</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Piscataquis</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Sagadahoc</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Somerset</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Waldo</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Washington</td>
+			  <td style="width: 25%;">0</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">York</td>
+			  <td style="width: 25%;">1</td>
+		    <td style="width: 25%;">1</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+				  <tr>
+			  <td style="width: 25%;">Unknown</td>
+			  <td style="width: 25%;">8</td>
+		    <td style="width: 25%;">0</td>
+					  <td style="width: 25%;">&nbsp;</td>
+          </tr>
+	    </tbody>
       </table>
-		<p>&nbsp;</p>
+</div>
+<h3><a href="#">View Confirmed and Presumptive Cases by Age</a></h3>
+<div>
+  <table class="travelAdvisories">
+    <thead>
+      <tr>
+        <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width: 33%;"><b> Age Range<sup></sup></b></td>
+        <td style="width: 33%;"><b>Count<sup></sup></b></td>
+        <td style="width: 33%;"><b>Percentage<sup></sup></b></td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">&lt;20</td>
+        <td style="width: 33%;">2</td>
+        <td style="width: 33%;">4.65%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">20s</td>
+        <td style="width: 33%;">2</td>
+        <td style="width: 33%;">4.65%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">30s</td>
+        <td style="width: 33%;">5</td>
+        <td style="width: 33%;">11.63%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">40s</td>
+        <td style="width: 33%;">7</td>
+        <td style="width: 33%;">16.28%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">50s</td>
+        <td style="width: 33%;">8</td>
+        <td style="width: 33%;">18.60%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">60s</td>
+        <td style="width: 33%;">10</td>
+        <td style="width: 33%;">23.26%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">70s</td>
+        <td style="width: 33%;">5</td>
+        <td style="width: 33%;">11.63%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">80+</td>
+        <td style="width: 33%;">4</td>
+        <td style="width: 33%;">9.30%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3><a href="#">View Confirmed and Presumptive Cases by Sex</a></h3>
+		  <div>
+		   
+			  <table class="travelAdvisories">
+    <thead>
+      <tr>
+        <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Sex</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width: 33%;"><b> Sex<sup></sup></b></td>
+        <td style="width: 33%;"><b> Count<sup></sup></b></td>
+        <td style="width: 33%;"><b>Percentage<sup></sup></b></td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">Male</td>
+        <td style="width: 33%;">19</td>
+        <td style="width: 33%;">44.19%</td>
+      </tr>
+      <tr>
+        <td style="width: 33%;">Female</td>
+        <td style="width: 33%;">24</td>
+        <td style="width: 33%;">55.81%</td>
+      </tr>
+    </tbody>
+  </table>
+			 
+	    </div>
+	  </div>
+		&nbsp;
+
+				<p><sup>1</sup><b>Confirmed Cases:</b> This now includes cases formerly identified as presumptive positive. This classification applies to samples sent by a health provider directly to HETL that test positive and to samples from non-governmental labs for which HETL validates positive results. </p>
+	  <p><sup>2</sup><b>Presumptive Positive Cases:</b> These are samples that test positive at non-governmental labs and are sent to HETL for validation.      </p>
+      <p><sup>3</sup><b>Negative Tests: </b>This number represents negative tests from state, reference, or commerical laboratories, or at US CDC. </p>
             
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
       <h2 class="h1">News Releases</h2>
@@ -548,7 +534,7 @@ function googleTranslateElementInit() {
             <th colspan="2" class="advisory">Travel Advisories</th>
           </tr>
           <tr>
-            <th colspan="2" class="advisoryDt">Updated: March 17, 2020 at 12:00 PM</th>
+            <th colspan="2" class="advisoryDt">Updated: March 18, 2020 at 12:00 PM</th>
           </tr>
         </thead>
         <tbody>
@@ -587,7 +573,7 @@ function googleTranslateElementInit() {
       
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
       <h2 class="h1">Frequently Asked Questions</h2>
-      <p><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-16March2020.pdf">Read the full list of Frequently Asked Questions (PDF).</a></p>
+      <p><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-16March2020.pdf">Read the full List of Frequently Asked Questions(PDF).</a></p>
       
 
 
@@ -653,14 +639,14 @@ function googleTranslateElementInit() {
 
 <h3>Additional Coronavirus Resources for the Public</h3>
       <ul>
-        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf" target="_blank">Maine CDC COVID-19 Fact Sheet (PDF)</a> </li>
-        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-for-Large-Gatherings.pdf" target="_blank">Maine CDC Guidance on Non-Essential Large Gatherings (PDF)</a></li>
-      <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a></li>
+        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf" target="_blank">Maine CDC COVID-19 Fact Sheet</a> </li>
+        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-for-Large-Gatherings.pdf" target="_blank">Maine CDC Guidance on Non-Essential Large Gatherings</a> </li>
+		   <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a></li>
       </ul>
       
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
       <h2 class="h1">Interim   Guidance for Healthcare Professionals</h2>
-      <p>Healthcare providers should obtain a <strong>detailed travel history</strong> for patients with fever and acute respiratory illness. Healthcare providers in Maine should <strong>immediately</strong> notify Maine CDC (1-800 821-5821). On February 28, U.S. CDC issued a Health Alert Network (HAN): <a href="https://emergency.cdc.gov/han/2020/han00428.asp" target="_blank">Update and Interim Guidance on Outbreak of COVID-19</a>.</p>
+      <p>Healthcare providers should obtain a detailed travel history for patients with fever and acute respiratory illness. Healthcare providers <strong>no longer need to call Maine CDC about when they test a patient</strong> for COVID-19.  On February 28, U.S. CDC issued a Health Alert Network (HAN): <a href="https://emergency.cdc.gov/han/2020/han00428.asp" target="_blank">Update and Interim Guidance on Outbreak of COVID-19</a>.</p>
       <p>Limited information is available to characterize the spectrum of clinical illness associated with COVID-2019. No vaccine or specific treatment for COVID-19 infection is available; care is supportive.</p>
       <p>For more information, visit <a href="https://www.cdc.gov/coronavirus/2019-nCoV/clinical-criteria.html" target="_blank">U.S. CDC's webpage on evaluating and reporting a PUI</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control.html" target="_blank">U.S. CDC's webpage on infection control</a>.</p>
       
@@ -671,7 +657,7 @@ function googleTranslateElementInit() {
             <th colspan="5" class="advisory">Additional Resources for Providers</th>
           </tr>
           <tr>
-            <th colspan="5" class="advisoryDt">Updated: March 17, 2020 at 12:00 PM</th>
+            <th colspan="5" class="advisoryDt">Updated: March 18, 2020 at 12:00 PM</th>
           </tr>
         </thead>
         <tbody>
@@ -787,11 +773,21 @@ function googleTranslateElementInit() {
         <li><a href="https://www.maine.gov/doe/covid-19" target="_blank">Maine Department of Education Coronavirus Updates</a></li>
         <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">Fact Sheet (PDF)</a></li>
 		     <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-16March2020.pdf">Full List of Frequently Asked Questions (PDF)</a></li>
-		    <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a></li>
+		   <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a></li>
       </ul>
       <p>If you are a Maine health care professional and have questions about COVID-19, call: <b>1-800-821-5821</b></p>
       <p>If you are a Maine school professional and have questions about COVID-19, call (207) 624-6694 or email <a href="mailto:DOESchoolandStudentSupports@maine.gov">DOESchoolandStudentSupports@maine.gov</a>.</p>
-      <!-- InstanceEndEditable --> </div>
+      <script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion({
+		heightStyle:"content",
+		collapsible:true,
+		icons:{activeHeader: "ui-icon-minus", header: "ui-icon-plus"},
+		animate:{easing: "swing"}
+	}); 
+});
+      </script>
+    <!-- InstanceEndEditable --> </div>
     <!-- end pageaside --> 
   </div>
   <!-- end content id --> 
