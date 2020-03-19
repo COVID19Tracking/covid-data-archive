@@ -11,16 +11,16 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"348872d504",applicationID:"51795785"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
-<link rel="alternate" type="application/rss+xml" title="coronavirus RSS" href="https://coronavirus.dc.gov/rss.xml" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="description" content="March 18, 2020 DC Public Health Laboratory and Outside Laboratory Coronavirus Testing Metrics as of 7 pm. Number of people tested overall: 203 Number of PHL positives: 14 Number of commercial lab positives: 25 Number of PHL negatives:90 Number of commercial lab negatives: 63 Number of PHL tests in progress: 11 Details on New Cases from 3/18:" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="https://coronavirus.dc.gov/node" />
-<link rel="shortlink" href="https://coronavirus.dc.gov/node" />
+<link rel="canonical" href="https://coronavirus.dc.gov/page/coronavirus-data" />
+<link rel="shortlink" href="https://coronavirus.dc.gov/page/coronavirus-data" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:url" content="https://coronavirus.dc.gov/node" />
-<meta name="twitter:title" content="coronavirus" />
-<meta name="twitter:description" content="Coronavirus" />
-  <title>| coronavirus</title>  
+<meta name="twitter:url" content="https://coronavirus.dc.gov/page/coronavirus-data" />
+<meta name="twitter:title" content="Coronavirus Data" />
+<meta name="twitter:description" content="March 18, 2020 DC Public Health Laboratory and Outside Laboratory Coronavirus Testing Metrics as of 7 pm. Number of people tested overall: 203 Number of PHL positives: 14 Number of commercial lab positives: 25 Number of PHL negatives:90 Number of commercial lab negatives: 63 Number of PHL tests in progress: 11 Details on New Cases from 3/18:" />
+  <title>Coronavirus Data | coronavirus</title>  
   <style type="text/css" media="all">
 @import url("https://coronavirus.dc.gov/modules/system/system.base.css?q2q9sv");
 @import url("https://coronavirus.dc.gov/modules/system/system.menus.css?q2q9sv");
@@ -49,11 +49,6 @@
 @import url("https://coronavirus.dc.gov/sites/all/modules/rate/rate.css?q2q9sv");
 @import url("https://coronavirus.dc.gov/sites/all/modules/text_resize/text_resize.css?q2q9sv");
 @import url("https://coronavirus.dc.gov/sites/all/modules/extlink/extlink.css?q2q9sv");
-@import url("https://coronavirus.dc.gov/sites/all/themes/dc_agency_statehood/js/bxslider/jquery.bxslider.css?q2q9sv");
-@import url("https://coronavirus.dc.gov/sites/all/themes/dc_agency_statehood/js/owlcarousel/assets/owl.carousel.min.css?q2q9sv");
-@import url("https://coronavirus.dc.gov/sites/all/themes/dc_agency_statehood/js/owlcarousel/assets/owl.theme.default.min.css?q2q9sv");
-@import url("https://coronavirus.dc.gov/sites/all/modules/quicktabs/css/quicktabs.css?q2q9sv");
-@import url("https://coronavirus.dc.gov/sites/all/modules/quicktabs/quicktabs_tabstyles/tabstyles/sky/sky.css?q2q9sv");
 </style>
 <style type="text/css" media="all">
 @import url("https://coronavirus.dc.gov/sites/all/themes/omega/alpha/css/alpha-reset.css?q2q9sv");
@@ -100,7 +95,7 @@
 </style>
 <!--<![endif]-->
   <script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_ri60QNjcazMKdlAmWmDsmRb0iKaVkkXUQxH2MsgpmVo.js"></script>
-<script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_lOzc2uNLtLXoZQc7dI3_XbUQPpStTXQjvkQg32rDzYc.js"></script>
+<script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_xpcUaefRF16dGRM12CceyhwGxO2jTZMKo_3milCSqpk.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 var text_resize_scope = "not-front #main, #zone-content";
@@ -117,17 +112,16 @@ var text_resize_scope = "not-front #main, #zone-content";
 (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-2638726-1", {"cookieDomain":"auto"});ga("send", "pageview");
 //--><!]]>
 </script>
-<script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_C7YV5CuAlgKFkOIxq44UqdJraCwYkX0Xf15LCpoGXww.js"></script>
 <script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_EZPDFNECKQAflD2399FdP8q5qlxG-PXWffqI0_tY8iw.js"></script>
 <script type="text/javascript" src="https://coronavirus.dc.gov/sites/default/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dc_agency_statehood","theme_token":"SPfYLLBrrhwRbEUUPBBp4D5Ts1-8i9fUm7iB4z9Nrf4","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/progress.js":1,"sites\/all\/modules\/text_resize\/jquery.cookie.js":1,"0":1,"sites\/all\/modules\/text_resize\/text_resize.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/dc_agency_statehood\/js\/bxslider\/jquery.bxslider.js":1,"sites\/all\/themes\/dc_agency_statehood\/js\/owlcarousel\/owl.carousel.js":1,"sites\/all\/modules\/quicktabs\/js\/quicktabs.js":1,"sites\/all\/themes\/dc_agency_statehood\/js\/dcAgency.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"sites\/all\/modules\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flickrgallery\/flickrgallery.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/themes\/dc_agency_statehood\/js\/bxslider\/jquery.bxslider.css":1,"sites\/all\/themes\/dc_agency_statehood\/js\/owlcarousel\/assets\/owl.carousel.min.css":1,"sites\/all\/themes\/dc_agency_statehood\/js\/owlcarousel\/assets\/owl.theme.default.min.css":1,"sites\/all\/modules\/quicktabs\/css\/quicktabs.css":1,"sites\/all\/modules\/quicktabs\/quicktabs_tabstyles\/tabstyles\/sky\/sky.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/normalize.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/global.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-24.css":1}},"extlink":{"extTarget":"_blank","extClass":"ext","extSubdomains":1,"extExclude":"http[s]*:\/\/[a-zA-Z0-9\\-\\.]*dc.gov[\\\/a-zA-Z0-9\\-\\.\\?\\=]*","extInclude":"","extAlert":0,"extAlertText":"The District government has provided links as a courtesy and is not responsible for information on websites outside the DC portal. Inquiries should be made to the sponsoring organizations.","mailtoClass":"mailto"},"better_exposed_filters":{"views":{"featured_news_home":{"displays":{"page":{"filters":[]}}},"agency_responsive_featured_news_home":{"displays":{"campaign_home_news_block":{"filters":[]}}},"features_blocks":{"displays":{"upcoming_events":{"filters":[]},"homepage_d":{"filters":[]},"homepage_a":{"filters":[]},"homepage_b":{"filters":[]},"homepage_c":{"filters":[]}}},"featured_homepage_events":{"displays":{"block":{"filters":[]}}},"agency_home_responsive":{"displays":{"block_hero_image":{"filters":[]},"block_mobile_hero_image":{"filters":[]}}},"alerts":{"displays":{"emergency_alerts_block":{"filters":[]}}},"custom_headers_and_footers":{"displays":{"custom_agency_header":{"filters":[]},"custom_agency_footer1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"quicktabs":{"qt_agency_featured_news_home":{"name":"agency_featured_news_home","tabs":[{"vid":"featured_news_home","display":"page","args":"12","view_path":"node","view_dom_id":1,"ajax_args":"12","actual_args":["12"]},{"vid":"featured_news_home","display":"page","args":"13","view_path":"node","view_dom_id":2,"ajax_args":"13","actual_args":["13"]}],"better_exposed_filters":{"views":{"featured_news_home":{"displays":{"page":{"filters":[]}}}}}}},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dc_agency_statehood","theme_token":"fCJVG5gehV8fqCQ01DxDsRoLDA_pVDfq-q5iAvpt9QQ","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/text_resize\/jquery.cookie.js":1,"0":1,"sites\/all\/modules\/text_resize\/text_resize.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/dc_agency_statehood\/js\/dcAgency.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"sites\/all\/modules\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flickrgallery\/flickrgallery.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/normalize.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/dc_agency_statehood\/css\/global.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"ie::normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"narrow::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"normal::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default.css":1,"wide::sites\/all\/themes\/dc_agency_statehood\/css\/dc-agency-statehood-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-24.css":1}},"extlink":{"extTarget":"_blank","extClass":"ext","extSubdomains":1,"extExclude":"http[s]*:\/\/[a-zA-Z0-9\\-\\.]*dc.gov[\\\/a-zA-Z0-9\\-\\.\\?\\=]*","extInclude":"","extAlert":0,"extAlertText":"The District government has provided links as a courtesy and is not responsible for information on websites outside the DC portal. Inquiries should be made to the sponsoring organizations.","mailtoClass":"mailto"},"better_exposed_filters":{"views":{"alerts":{"displays":{"emergency_alerts_block":{"filters":[]}}},"custom_headers_and_footers":{"displays":{"custom_agency_header":{"filters":[]},"custom_agency_footer1":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
 //--><!]]>
 </script>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body class="html front not-logged-in no-sidebars page-node domain-coronavirus-dc-gov i18n-en">
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1464296 node-type-page domain-coronavirus-dc-gov i18n-en context-page">
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
   </div>
@@ -142,8 +136,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <div class="region-inner region-branding-inner">
         <div class="branding-data clearfix">
                         <hgroup class="site-name-slogan">        
-                                
-        <h1 class="site-name"><a href="/" title="Home" class="active">coronavirus</a></h1>
+                                <h2 class="site-name"><a href="/" title="Home">coronavirus</a></h2>
                                         <h6 class="site-slogan">Coronavirus</h6>
               </hgroup>
           </div>
@@ -164,7 +157,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-alerts view-id-alerts view-display-id-emergency_alerts_block view-dom-id-cf89f13c713c5e662e26f0fee5907e31">
+      <div class="view view-alerts view-id-alerts view-display-id-emergency_alerts_block view-dom-id-2f8e6388e894bb401fc53024847ced56">
         
   
   
@@ -186,7 +179,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_header view-dom-id-36e48cbd039140332580d49b12b739ac">
+      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_header view-dom-id-4d4a99da346db470ef48b3cba9e6d297">
         
   
   
@@ -903,11 +896,11 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <ul class="menu-sub"><li class="first leaf"><a href="/" title="Home" class="active">Home</a></li>
+      <ul class="menu-sub"><li class="first leaf"><a href="/" title="Home">Home</a></li>
 <li class="leaf"><a href="/recovery" title="Information on Small Business Assistance">Recovery</a></li>
 <li class="leaf"><a href="/mealsites" title="Locations of Meal Sites Across DC">Meal Sites</a></li>
 <li class="leaf"><a href="/page/coronavirus-covid-19-resources" title="Resources">Resources</a></li>
-<li class="leaf"><a href="/page/coronavirus-data" title="Coronavirus Data">Data</a></li>
+<li class="leaf active-trail"><a href="/page/coronavirus-data" title="Coronavirus Data" class="active-trail active">Data</a></li>
 <li class="expanded"><a href="/page/healthcare-providers" title="Healthcare Providers">Healthcare Providers</a><ul class="menu-sub"><li class="first leaf"><a href="https://dchealth.dc.gov/page/health-notices" title="DC Health Notices">Health Notices</a></li>
 <li class="last leaf"><a href="/page/covid-19-testing" title="Information on COVID-19 Testing">COVID-19 Testing</a></li>
 </ul></li>
@@ -921,379 +914,153 @@ jQuery("#block-quicktabs-agency-featured-news-home").insertAfter("#region-agency
       <section id="section-content" class="section section-content">
   <div id="zone-preface-wrapper" class="zone-wrapper zone-preface-wrapper clearfix">  
   <div id="zone-preface" class="zone zone-preface clearfix container-24">
-    <div class="grid-24 region region-agency-home-rotator" id="region-agency-home-rotator">
-  <div class="region-inner region-agency-home-rotator-inner">
-    <div class="block block-views block-4d50ae80f7a4168738e4c9980d80a9d6 block-views-4d50ae80f7a4168738e4c9980d80a9d6 odd block-without-title" id="block-views-4d50ae80f7a4168738e4c9980d80a9d6">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-agency-home-responsive view-id-agency_home_responsive view-display-id-block_hero_image view-dom-id-d3b4859aa6e50836287045782c45b65e">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last 1">
-      
-  <div class="views-field views-field-title-1">        <span class="field-content"><div class="slide"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/featured_content/images/hand-washing.jpg" width="3000" height="1686" alt="" /><div id="text"><span class="caption-text"><div class="caption-text-wrapper"><div style="white-space: pre-line;text-align: left;font-size: 18px;font-weight: 400;min-height:350px;">
-<div class="slidetitle">Keep up to date on the coronavirus within the DC area</div>
-Public health authorities are learning more about COVID-19 every day, but here are&nbsp;answers to frequently asked questions with the most up to date information. We will continue to update this information as we learn more.</div>
-
-<div class="slideButton"><a href="/node/1464356">Learn More</a></div>
-
-<div class="slideButton"><a href="/page/coronavirus-resources">Resources For You</a></div>
-</div></span></div></div></span>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div><div class="block block-views block-8ccf6c212087901c07069fe6263d4bce block-views-8ccf6c212087901c07069fe6263d4bce even block-without-title" id="block-views-8ccf6c212087901c07069fe6263d4bce">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-agency-home-responsive view-id-agency_home_responsive view-display-id-block_mobile_hero_image view-dom-id-4d95e8a5e4a2267fb2c2873b16b1c781">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last 1">
-      
-  <div class="views-field views-field-title-1">        <span class="field-content"><div class="slide"><div id="text"><span class="caption-text"><div class="caption-text-wrapper"><div style="white-space: pre-line;text-align: left;font-size: 18px;font-weight: 400;min-height:350px;">
-<div class="slidetitle">Keep up to date on the coronavirus within the DC area</div>
-Public health authorities are learning more about COVID-19 every day, but here are&nbsp;answers to frequently asked questions with the most up to date information. We will continue to update this information as we learn more.</div>
-
-<div class="slideButton"><a href="/node/1464356">Learn More</a></div>
-
-<div class="slideButton"><a href="/page/coronavirus-resources">Resources For You</a></div>
-</div></span></div></div></span>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</div>  </div>
+      </div>
 </div><div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
   <div id="zone-content" class="zone zone-content clearfix container-24">    
         
-        <div class="grid-24 region region-agency-home-main-content" id="region-agency-home-main-content">
-  <div class="region-inner region-agency-home-main-content-inner">
-    <div class="block block-views block-features-blocks-homepage-d block-views-features-blocks-homepage-d odd block-without-title" id="block-views-features-blocks-homepage-d">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-features-blocks view-id-features_blocks view-display-id-homepage_d view-dom-id-a20a8f83116af85beab6cd44116375e0">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-view-grid cols-1" class="views-view-grid">
-  
-  <tbody>
-          <tr class="row-1 row-first row-last">
-                  <td class="col-1 col-first 1">
-              
-  <h2 class="views-field views-field-title">        <span class="field-content">Coronavirus Homepage Welcome</span>  </h2>  
-  <div class="views-field views-field-field-image-link-url">        <div class="field-content"></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Prevention is our priority at this time, especially during cold and flu season.</p>
-</div>  </div>  
-  <div class="views-field views-field-field-related">        <div class="field-content"></div>  </div>  
-  <div class="views-field views-field-field-external-link-url">        <div class="field-content"></div>  </div>          </td>
-              </tr>
-      </tbody>
-</table>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</div><div class="grid-12 region region-content" id="region-content">
+        <div class="grid-12 region region-content" id="region-content">
   <div class="region-inner region-content-inner">
+          <script src="//cdn1.readspeaker.com/script/6295/webReader/webReader.js?pids=wr" type="text/javascript"></script>
+            <style>
+        .readspeaker_button1 i {
+          color: #333
+        }
+        .readspeaker_button1 {
+          display: none;
+        }
+      </style>
+      <div id="readspeaker_button1" class="readspeaker_button1 rs_skip rsbtn rs_preserve">
+        <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker webReader" href="//app-na.readspeaker.com/cgi-bin/rsent?customerid=6295&amp;lang=en_us&amp;readid=content-start&amp;url=https://coronavirus.dc.gov/page/coronavirus-data">
+          <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+          <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+      </div>
     
     <a id="main-content"></a>
-                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+                  <h1 class="title" id="page-title">Coronavirus Data</h1>
+                          <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <article about="/release/mayor%E2%80%99s-order-2020-048-prohibition-mass-gatherings-during-public-health-emergency" typeof="sioc:Item foaf:Document" class="node node-release node-promoted node-teaser node-published node-not-sticky author-elizabethbrooks odd clearfix" id="node-release-1467306">
-        <header>
-    <h2 class="node-title"><a href="/release/mayor%E2%80%99s-order-2020-048-prohibition-mass-gatherings-during-public-health-emergency" title="Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)">Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)</a></h2>
-  </header>
-    <span property="dc:title" content="Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    
-  
+      <article about="/page/coronavirus-data" typeof="foaf:Document" class="node node-page node-published node-not-promoted node-not-sticky author-elizabethbrooks odd clearfix" id="node-page-1464296">
+        <span property="dc:title" content="Coronavirus Data" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dc44024632b89e6"></script> 
   <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><strong>March 18, 2020<br />
+DC Public Health Laboratory and Outside Laboratory Coronavirus Testing Metrics as of 7 pm.</strong><u1:p></u1:p></p>
 
-      <div class="field field-name-field-date field-type-date field-label-above"><div class="field-label">Date Released:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-16T00:00:00-04:00">Mon, 03/16/2020</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Mayor Bowser announces modified DC Government Operations, Prohibition on Mass Gatherings During Public Health Emergency</p>
+<ul>
+	<li>Number of people tested overall: 203<u1:p></u1:p></li>
+	<li>Number of PHL positives: 14<u1:p></u1:p></li>
+	<li>Number of commercial lab positives: 25<u1:p></u1:p></li>
+	<li>Number of PHL negatives:90<u1:p></u1:p></li>
+	<li>Number of commercial lab negatives: 63<u1:p></u1:p></li>
+	<li>Number of PHL tests in progress: 11</li>
+</ul>
 
-<p><a href="https://coronavirus.dc.gov/">Learn the latest on the District&rsquo;s coronavirus (COVID-19) response</a></p>
-</div></div></div>    
-  </div>
+<p>Details on New Cases from 3/18:</p>
+
+<ul>
+	<li>22-year-old female</li>
+	<li>23-year-old male</li>
+	<li>25-year-old female&nbsp;</li>
+	<li>30-year-old male</li>
+	<li>36-year-old male</li>
+	<li>50-year-old male</li>
+	<li>59-year-old male</li>
+	<li>65-year-old female</li>
+</ul>
+
+<p><strong>March 17, 2020</strong></p>
+
+<ul>
+	<li>Number of people tested overall: 170</li>
+	<li>Number of PHL positives: 11</li>
+	<li>Number of commercial lab positives: 20</li>
+	<li>Number of PHL negatives: 75</li>
+	<li>Number of commercial lab negatives: 63</li>
+	<li>Number of PHL tests in progress: 1</li>
+</ul>
+
+<p><u1:p></u1:p></p>
+
+<p><strong>March 16, 2020</strong></p>
+
+<ul>
+	<li>Number of people tested overall: 126</li>
+	<li>Number of PHL positives: 10</li>
+	<li>Number of commercial lab positives: 12</li>
+	<li>Number of PHL negatives: 70</li>
+	<li>Number of commercial lab negatives: 34</li>
+	<li>Number of PHL tests in progress: 0</li>
+</ul>
+
+<p><strong>As of March 15, 2020</strong></p>
+
+<ul>
+	<li>Number of people tested overall: 120</li>
+	<li>Number of PHL positives: 10</li>
+	<li>Number of commercial lab positives: 7</li>
+	<li>Number of PHL negatives: 65</li>
+	<li>Number of commercial lab negatives: 31</li>
+	<li>Number of PHL tests in progress: 7</li>
+</ul>
+
+<p><strong>As of March 14, 2020</strong></p>
+
+<ul>
+	<li>Number of people tested overall: 115</li>
+	<li>Number of PHL positives: 9</li>
+	<li>Number of commercial lab positives: 7</li>
+	<li>Number of PHL negatives: 49</li>
+	<li>Number of commercial lab negatives: 30</li>
+	<li>Number of PHL tests in progress: 20</li>
+</ul>
+
+<p><strong>As of March&nbsp;13:</strong></p>
+
+<ul>
+	<li>Number of people tested overall: 69</li>
+	<li>Number of PHL positives: 8*</li>
+	<li>Number of commercial lab positives: 2</li>
+	<li>Number of PHL negatives: 49</li>
+	<li>Number of PHL tests in progress: 10</li>
+	<li>*This number includes: presumptive positives (6); and CDC confirmed positives (2)</li>
+</ul>
+
+<p><strong>As of March 11:</strong></p>
+
+<ul>
+	<li>Number of positive results: 10</li>
+</ul>
+
+<p><strong>As of March 9:</strong></p>
+
+<ul>
+	<li>Number of positive results: 4</li>
+</ul>
+
+<p><strong>As of March 7:</strong></p>
+
+<ul>
+	<li>Number of positive results: 2</li>
+</ul>
+</div></div></div>  </div>
   
   <div class="clearfix">
-          <nav class="links node-links clearfix"><ul class="links inline"><li class="node-readmore first last"><a href="/release/mayor%E2%80%99s-order-2020-048-prohibition-mass-gatherings-during-public-health-emergency" rel="tag" title="Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)">Read more<span class="element-invisible"> about Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)</span></a></li></ul></nav>
+          <nav class="links node-links clearfix"></nav>
     
-    
-</article><h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager clearfix"><li class="pager-current first">1</li><li class="pager-item"><a title="Go to page 2" href="/node?page=1">2</a></li><li class="pager-item"><a title="Go to page 3" href="/node?page=2">3</a></li><li class="pager-item"><a title="Go to page 4" href="/node?page=3">4</a></li><li class="pager-item"><a title="Go to page 5" href="/node?page=4">5</a></li><li class="pager-item"><a title="Go to page 6" href="/node?page=5">6</a></li><li class="pager-item"><a title="Go to page 7" href="/node?page=6">7</a></li><li class="pager-item"><a title="Go to page 8" href="/node?page=7">8</a></li><li class="pager-item"><a title="Go to page 9" href="/node?page=8">9</a></li><li class="pager-ellipsis">…</li><li class="pager-next"><a title="Go to next page" href="/node?page=1">next ›</a></li><li class="pager-last last"><a title="Go to last page" href="/node?page=48">last »</a></li></ul></div>    </div>
-  </div>
-</div><section class="block block-quicktabs block-agency-featured-news-home block-quicktabs-agency-featured-news-home even" id="block-quicktabs-agency-featured-news-home">
-  <div class="block-inner clearfix">
-              <h2 class="block-title">Featured News</h2>
-            
-    <div class="content clearfix">
-      <div  id="quicktabs-agency_featured_news_home" class="quicktabs-wrapper quicktabs-style-sky"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-sky"><li class="active first"><a href="/node?qt-agency_featured_news_home=0#qt-agency_featured_news_home" id="quicktabs-tab-agency_featured_news_home-0" class="active">Press Releases</a></li><li class="last"><a href="/node?qt-agency_featured_news_home=1#qt-agency_featured_news_home" id="quicktabs-tab-agency_featured_news_home-1" class="active">Newsletters</a></li></ul></div><div id="quicktabs-container-agency_featured_news_home" class="quicktabs_main quicktabs-style-sky"><div  id="quicktabs-tabpage-agency_featured_news_home-0" class="quicktabs-tabpage "><div class="view view-featured-news-home view-id-featured_news_home view-display-id-page view-dom-id-c2e3f220a1bcaee14ba6955111a8d067">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-table cols-0"  class="views-table cols-0">
-       <tbody>
-          <tr class="odd views-row-first">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-18T00:00:00-04:00">03/18/2020</span>&nbsp;&nbsp;<a href="/release/coronavirus-data-update-march-18" title="Coronavirus Data Update: March 18 ">Coronavirus Data Update: March 18</a>          </td>
-              </tr>
-          <tr class="even">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-18T00:00:00-04:00">03/18/2020</span>&nbsp;&nbsp;<a href="/release/ddot-suspends-dc-circulator-fares" title="DDOT Suspends DC Circulator Fares ">DDOT Suspends DC Circulator Fares</a>          </td>
-              </tr>
-          <tr class="odd">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-17T00:00:00-04:00">03/17/2020</span>&nbsp;&nbsp;<a href="/release/mayor-bowser-announces-dc-businesses-can-now-apply-sba-disaster-assistance-loans" title="Mayor Bowser Announces DC Businesses Can Now Apply for SBA Disaster Assistance Loans  ">Mayor Bowser Announces DC Businesses Can Now Apply for SBA Disaster Assistance Loans </a>          </td>
-              </tr>
-          <tr class="even">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-17T00:00:00-04:00">03/17/2020</span>&nbsp;&nbsp;<a href="/release/coronavirus-data-update-march-17" title="Coronavirus Data Update: March 17 ">Coronavirus Data Update: March 17</a>          </td>
-              </tr>
-          <tr class="odd views-row-last">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-16T00:00:00-04:00">03/16/2020</span>&nbsp;&nbsp;<a href="/release/coronavirus-data-update-march-16" title="Coronavirus Data Update: March 16 ">Coronavirus Data Update: March 16</a>          </td>
-              </tr>
-      </tbody>
-</table>
+      </div>
+</article>
     </div>
-  
-  
-  
-  
-      <div class="view-footer">
-      <div class="view_more_right"><a href="/newsroom" title="More News Items">More »</a></div>    </div>
-  
-  
-</div></div><div  id="quicktabs-tabpage-agency_featured_news_home-1" class="quicktabs-tabpage quicktabs-hide"><div class="view view-featured-news-home view-id-featured_news_home view-display-id-page view-dom-id-0d6d8705a28d6a061adabc7fa0451750">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-table cols-0"  class="views-table cols-0">
-       <tbody>
-          <tr class="odd views-row-first views-row-last">
-                  <td class="views-field views-field-field-date views-align-left" >
-            <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-05T00:00:00-05:00">03/05/2020</span>&nbsp;&nbsp;<a href="/release/mayors-newsletter-volume-6-issue-10-news-mayor-muriel-bowser" title="Mayor&#039;s Newsletter, Volume 6, Issue 10: News from Mayor Muriel Bowser ">Mayor&#039;s Newsletter, Volume 6, Issue 10: News from Mayor Muriel Bowser</a>          </td>
-              </tr>
-      </tbody>
-</table>
-    </div>
-  
-  
-  
-  
-      <div class="view-footer">
-      <div class="view_more_right"><a href="/newsroom" title="More News Items">More »</a></div>    </div>
-  
-  
-</div></div></div></div>    </div>
   </div>
-</section><section class="block block-views block-features-blocks-upcoming-events block-views-features-blocks-upcoming-events odd" id="block-views-features-blocks-upcoming-events">
-  <div class="block-inner clearfix">
-              <h2 class="block-title">Upcoming Events</h2>
-            
-    <div class="content clearfix">
-      <div class="view view-features-blocks view-id-features_blocks view-display-id-upcoming_events view-dom-id-ee6c2d600578dacb902b5af0829710d9">
-        
-  
-  
-      <div class="view-empty">
-      There are no events at this time.
-
-<p><a href="/events?type=All&field_date_time_value[value][date]=now&field_date_time_value2[value][date]=&=Search" title="View Past Events">View Past Events ></a></p>    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</section><div class="block block-views block-030168ee923767f404d1c07c056336f5 block-views-030168ee923767f404d1c07c056336f5 even block-without-title" id="block-views-030168ee923767f404d1c07c056336f5">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-agency-responsive-featured-news-home view-id-agency_responsive_featured_news_home view-display-id-campaign_home_news_block view-dom-id-1036da8984e16a5089642448db0461d7">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/release/mayor%E2%80%99s-order-2020-048-prohibition-mass-gatherings-during-public-health-emergency" title="Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19) ">Mayor’s Order 2020-048: Prohibition on Mass Gatherings During Public Health Emergency - Coronavirus (COVID-19)</a></span>  </div>  
-  <div class="views-field views-field-field-image">        <div class="field-content"><a href="/release/mayor%E2%80%99s-order-2020-048-prohibition-mass-gatherings-during-public-health-emergency"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/sites/default/files/styles/large/public/dc/sites/mayormb/release_content/images/Modified%20Schedule%20Announcement1.jpg?itok=5pJGeHEA" width="418" height="268" alt="Mayor Bowser announces modified DC Government Operations, Prohibition on Mass Gatherings During Public Health Emergency" title="Mayor Bowser announces modified DC Government Operations, Prohibition on Mass Gatherings During Public Health Emergency" /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Mayor Bowser announces modified DC Government Operations, Prohibition on Mass Gatherings During Public Health Emergency</p>
-
-<p><a href="https://coronavirus.dc.gov/">Learn the latest on the District&rsquo;s coronavirus (COVID-19) response</a></p>
-</div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-      <div class="view-footer">
-      <div class="learn-more"><a href="/newsroom" title="More News Items">More News</a></div>    </div>
-  
-  
-</div>    </div>
-  </div>
-</div>    <div class="feed-icon clearfix"><a href="/rss.xml" class="feed-icon" title="Subscribe to coronavirus RSS"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/misc/feed.png" width="16" height="16" alt="Subscribe to coronavirus RSS" /></a></div>
+</div>    
   </div>
 </div>
   </div>
 </div><div id="zone-postscript-wrapper" class="zone-wrapper zone-postscript-wrapper clearfix">  
   <div id="zone-postscript" class="zone zone-postscript clearfix container-24">
-    <div class="grid-8 region region-agency-home-3col-a" id="region-agency-home-3col-a">
-  <div class="region-inner region-agency-home-3col-a-inner">
-    <div class="block block-views block-features-blocks-homepage-a block-views-features-blocks-homepage-a odd block-without-title" id="block-views-features-blocks-homepage-a">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-features-blocks view-id-features_blocks view-display-id-homepage_a view-dom-id-98e759a338cd7e01499c2eda9696262e">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-view-grid cols-1" class="views-view-grid">
-  
-  <tbody>
-          <tr class="row-1 row-first row-last">
-                  <td class="col-1 col-first 1">
-              
-  <h2 class="views-field views-field-title">        <span class="field-content">How to Protect Yourself</span>  </h2>  
-  <div class="views-field views-field-field-image-link-url">        <div class="field-content"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/sites/default/files/styles/callout_home_graphic/public/dc/sites/coronavirus/featured_content/images/hw.png?itok=zd0KMZqn" width="204" height="206" alt="Hand Washing" /></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><ul>
-	<li>Wash hands with soap and water for at least 20 seconds multiple times a day. An alcohol-based hand sanitizer can be used if soap and water are not available</li>
-	<li>Avoid touching eyes, nose and mouth with unwashed hands</li>
-	<li>Avoid close contact with people who are sick</li>
-	<li>Stay home when feeling sick</li>
-	<li>Cover your cough or sneeze with a tissue, then throw the tissue in the trash</li>
-	<li>Clean and disinfect frequently touched objects and surfaces</li>
-</ul>
-
-<div class="slideButton" style="display: block;margin-left: auto;margin-right: auto;"><a href="/node/1464356">Learn More</a></div>
-</div>  </div>  
-  <div class="views-field views-field-field-external-link-url">        <div class="field-content"></div>  </div>          </td>
-              </tr>
-      </tbody>
-</table>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</div><div class="grid-8 region region-agency-home-3col-b" id="region-agency-home-3col-b">
-  <div class="region-inner region-agency-home-3col-b-inner">
-    <div class="block block-views block-features-blocks-homepage-b block-views-features-blocks-homepage-b odd block-without-title" id="block-views-features-blocks-homepage-b">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-features-blocks view-id-features_blocks view-display-id-homepage_b view-dom-id-e9bf14ad758920f3e4e677c533eb0b95">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-view-grid cols-1" class="views-view-grid">
-  
-  <tbody>
-          <tr class="row-1 row-first row-last">
-                  <td class="col-1 col-first 1">
-              
-  <h2 class="views-field views-field-title">        <span class="field-content">I Have Symptoms What Should I Do? </span>  </h2>  
-  <div class="views-field views-field-field-image-link-url">        <div class="field-content"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/sites/default/files/styles/callout_home_graphic/public/dc/sites/coronavirus/featured_content/images/cough.png?itok=ZnxhCXqb" width="206" height="206" alt="" /></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>The symptoms that are currently being seen with COVID-19 are fever and respiratory symptoms such as cough and shortness of breath.</p>
-
-<ul>
-	<li>Stay home from work or school until you are free of fever, signs of a fever, and any other symptoms for at least 24 hours and without the use of fever-reducing or other symptom-altering medications.</li>
-	<li>Seek medical attention if you have reason to believe you have been exposed to coronavirus or influenza. Call your healthcare provider before visiting a healthcare facility.</li>
-</ul>
-
-<div class="slideButton" style="display: block;margin-left: auto;margin-right: auto;background-image: none;background-color: #fff;"><a href="/page/coronavirus-resources" style="color: #297bfb;">COVID-19 Toolkit</a></div>
-</div>  </div>  
-  <div class="views-field views-field-field-related">        <div class="field-content"></div>  </div>  
-  <div class="views-field views-field-field-external-link-url">        <div class="field-content"></div>  </div>          </td>
-              </tr>
-      </tbody>
-</table>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</div><div class="grid-8 region region-agency-home-3col-c" id="region-agency-home-3col-c">
-  <div class="region-inner region-agency-home-3col-c-inner">
-    <div class="block block-views block-features-blocks-homepage-c block-views-features-blocks-homepage-c odd block-without-title" id="block-views-features-blocks-homepage-c">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-features-blocks view-id-features_blocks view-display-id-homepage_c view-dom-id-0463c41199e9c47a29627ea371c8d9ce">
-        
-  
-  
-      <div class="view-content">
-      <table class="views-view-grid cols-1" class="views-view-grid">
-  
-  <tbody>
-          <tr class="row-1 row-first row-last">
-                  <td class="col-1 col-first 1">
-              
-  <h2 class="views-field views-field-title">        <span class="field-content">FAQ’s (Frequently Asked Questions)</span>  </h2>  
-  <div class="views-field views-field-field-image-link-url">        <div class="field-content"><img typeof="foaf:Image" src="https://coronavirus.dc.gov/sites/default/files/styles/callout_home_graphic/public/dc/sites/coronavirus/featured_content/images/FAQ_0.png?itok=V3ybRfpK" width="198" height="206" alt="" /></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p><a href="/node/1464356" title="COVID-19 FAQs">Get answers to the most frequently asked questions here.</a></p>
-</div>  </div>  
-  <div class="views-field views-field-field-related">        <div class="field-content"></div>  </div>  
-  <div class="views-field views-field-field-external-link-url">        <div class="field-content"></div>  </div>          </td>
-              </tr>
-      </tbody>
-</table>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</div>  </div>
+      </div>
 </div></section>    
   
       <footer id="section-footer" class="section section-footer">
@@ -1305,7 +1072,7 @@ Public health authorities are learning more about COVID-19 every day, but here a
   <div class="block-inner clearfix">
                 
     <div class="content clearfix">
-      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_footer1 view-dom-id-dd7a36263583df643947c6d9c21580e3">
+      <div class="view view-custom-headers-and-footers view-id-custom_headers_and_footers view-display-id-custom_agency_footer1 view-dom-id-41f2f58ee812a76f5f8bfedb00250862">
         
   
   
@@ -1463,5 +1230,5 @@ Public health authorities are learning more about COVID-19 every day, but here a
 </div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
   <div class="region-inner region-page-bottom-inner">
       </div>
-</div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"348872d504","applicationID":"51795785","transactionName":"YVYAZxQEC0EHBhVYWVgcI1ASDApcSQsOVVNpQwNUAzoBVwAEFF1C","queueTime":0,"applicationTime":558,"atts":"TREDEVweGE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"348872d504","applicationID":"51795785","transactionName":"YVYAZxQEC0EHBhVYWVgcI1ASDApcSQsOVVNpQwNUAzoTWwMS","queueTime":0,"applicationTime":325,"atts":"TREDEVweGE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
