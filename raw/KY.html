@@ -194,14 +194,13 @@ footer.footer {
 </style>    
     	    	<style>
 body { font-size:17.5px; }
+.btn-primary {color: #FFF !important; font-weight: 700; padding: 15px 8px; background-color:#531fff !important}
 /*header.masthead { margin-bottom:0 !important;}
 .ribbon-message { padding:10px; background-color:#eee; margin-bottom:3rem;}
 .ribbon-message p { margin:0; text-align:center;}*/
 h2 { margin:30px 0 10px 0; }
 a { color:#068854 !important; display:inline-block; }
 p.lead { font-size:24px; }
-.btn-primary { background-color:#531fff !important; }
-.btn { color:#FFF !important; font-weight:700; padding:15px 8px; }
 .agencyTable-default td { width:50%; padding-right:25px; }
 .agencyTable-default a { padding:4px 0; display:inline-block; }
 .alert-success { background-color:#3fe6a4 !important; color:#000 !important; }
@@ -210,6 +209,35 @@ p.lead { font-size:24px; }
 .btn { margin-bottom:10px; }
     }
 footer { background:#eee; padding-top:1rem; margin-top: 2rem; }
+.accordion .card {
+  margin-bottom:12px;
+}
+.accordion .btn {
+  background:#FFF;
+  position:relative;
+  display:block;
+  width:100%;
+  text-align:left;
+  padding:15px 40px 15px 20px;
+  font-weight:600;
+  font-size:20px;
+  color:#222;
+}
+.accordion .btn:after {
+  font-family:'fontawesome';
+  position:absolute;
+  right:15px;
+  top:15px;
+}
+.accordion .btn.collapsed:after {
+  content:'\f067';
+}
+.accordion .btn:not(.collapsed):after {
+  content:'\f068';
+}
+.accordion .card-header {
+  padding:0;
+}
 </style>    
     <title>kycovid19.ky.gov</title>
     
@@ -309,7 +337,7 @@ footer { background:#eee; padding-top:1rem; margin-top: 2rem; }
 			
 		<div class="row mt-5 mb-3" id="updated-date">
 			<div class="col-sm-12 text-center">
-				<small class="text-muted">Updated on March 19th, 2020 01:35PM</small>
+				<small class="text-muted">Updated on March 19th, 2020 02:32PM</small>
 			</div>
 		</div>
 	</div>

@@ -203,15 +203,15 @@ footer.footer {
   	
 	
   <!-- Masthead -->
-  <header class="masthead text-white text-center mb-5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 mx-auto">
-          <h1 class="mb-5">Oregon Health Authority | COVID-19 Updates</h1>
+  <header class="masthead text-white text-center mb-5" id="masthead">
+    <div class="overlay" id="overlay"></div>
+    <div class="container" id="header-container">
+      <div class="row" id="header-row">
+        <div class="col-xl-12 mx-auto" id="header-title-column">
+          <h1 class="mb-5" id="title">Oregon Health Authority | COVID-19 Updates</h1>
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <div class="form-row">
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="header-btn-column">
+            <div class="form-row" id="subscribe">
               <div class="col-md-12 text-center">
 	                                            </div>
             </div>
@@ -227,7 +227,7 @@ footer.footer {
    	<div class="container">
 	   	
 	   	   		
-   		<div class="row">
+   		<div class="row" id="google-translate">
 		    <div class="col-md-4 offset-md-8 text-right">
 		        <div id="google_translate_element"></div>
 		    </div>
@@ -254,7 +254,7 @@ footer.footer {
 </div>
 <div class="jumbotron">
     <div class="container text-center">
-        <p autocomplete="off" class="lead">For general information on COVID-19 in Oregon, <b>call 211</b>. If you are having a medical emergency, call 911.</p>
+        <p class="lead" autocomplete="off">For general information on COVID-19 in Oregon, <b>call 211</b>. If you are having a medical emergency, call 911.</p>
         <p class="text-center">
             <a title="Follow OHA on Facebook" href="https://www.facebook.com/OregonHealthAuthority" target="_blank">
                 <i class="fa fa-facebook-square blue fa-lg" aria-hidden="true"></i>
@@ -266,7 +266,7 @@ footer.footer {
                 <i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i>
             </a>
         </p>
-        <p class="text-center" autocomplete="off">
+        <p autocomplete="off" class="text-center">
             <a class="btn btn-primary" href="https://public.govdelivery.com/accounts/ORDHS/subscriber/new?topic_id=ORDHS_816" role="button" target="_blank">
                 <i class="fa fa-bell" aria-hidden="true"></i>&nbsp;Sign up for Updates
             </a>
@@ -283,14 +283,14 @@ footer.footer {
 </div>
 <div class="row">
     <div class="col-sm-6">
-        <p class="text-center" autocomplete="off">
+        <p autocomplete="off" class="text-center">
             <a class="btn btn-block btn-warning btn-lg" href="https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/COVID19-FAQ.aspx" role="button" target="_blank">&nbsp;
 					<i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Frequently Asked Questions
 				</a>
         </p>
     </div>
     <div class="col-sm-6">
-        <p autocomplete="off" class="text-center">
+        <p class="text-center" autocomplete="off">
             <a class="btn btn-block btn-warning btn-lg" href="https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/COVID-19.aspx" target="_blank">
                 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;For Healthcare and Local Public Health
             </a>
@@ -316,7 +316,7 @@ footer.footer {
  
 
 
-<table class="table table-bordered"><thead class="thead-light"><tr><th autocomplete="off">﻿Oregon Test Results as of 3/18/2020, 8:00 a.m. Updated daily.<!--EndFragment--></th><th></th></tr></thead><tbody><tr><td autocomplete="off">Positive</td><td style="text-align: center;" class="table-warning" autocomplete="off"><b>75</b></td></tr><tr><td>Negative</td><td style="text-align: center;">1,118</td></tr><tr><td>Pending</td><td style="text-align: center;">361</td></tr><tr><td>Total <i>(Cumulative since January 24, 2020)</i><!--EndFragment--></td><td style="text-align: center;" autocomplete="off">1,554</td></tr></tbody></table>
+<table class="table table-bordered"><thead class="thead-light"><tr><th autocomplete="off">﻿Oregon Test Results as of 3/19/2020, 8:00 a.m. Updated daily.<!--EndFragment--></th><th></th></tr></thead><tbody><tr><td autocomplete="off">Positive</td><td style="text-align: center;" class="table-warning" autocomplete="off"><b>88</b></td></tr><tr><td>Negative</td><td style="text-align: center;">1,329</td></tr><tr><td>Pending</td><td style="text-align: center;">437</td></tr><tr><td>Total <i>(Cumulative since January 24, 2020)</i><!--EndFragment--></td><td style="text-align: center;" autocomplete="off">1,854</td></tr></tbody></table>
 
 
 </div>
@@ -324,7 +324,7 @@ footer.footer {
     </div><br><div class="card">
         <div class="card-header" id="headingOne">
             <h3 autocomplete="off">
-						<button class="btn btn-block btn-link text-left" style="color: #222; font-size: .7em; font-weight: bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<button class="btn btn-block btn-link text-left collapsed" style="color: #222; font-size: .7em; font-weight: bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 							Demographic Information for Positive Cases
 <i class="fas fa-plus float-right" aria-hidden="true"></i>
 						</button>
@@ -335,7 +335,7 @@ footer.footer {
  
 
 
-<table class="table table-bordered"><thead class="thead-light"><tr><th>County</th><th style="text-align: center;">Number of cases</th><th style="text-align: center;">Deaths</th></tr></thead><tbody><tr><td><!--StartFragment-->Benton<!--EndFragment--></td><td style="text-align: center;">3</td><td style="text-align: center;">0</td></tr><tr><td>Clackamas</td><td style="text-align: center;">6</td><td style="text-align: center;">0</td></tr><tr><td>Deschutes</td><td style="text-align: center;">6</td><td style="text-align: center;">0</td></tr><tr><td>Douglas</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Jackson</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td>Klamath</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Lane</td><td style="text-align: center;" autocomplete="off">2</td><td style="text-align: center;" autocomplete="off">1</td></tr><tr><td>Linn</td><td style="text-align: center;">15</td><td style="text-align: center;">0</td></tr><tr><td>Marion</td><td style="text-align: center;">8</td><td style="text-align: center;">0</td></tr><tr><td>Multnomah</td><td style="text-align: center;">3</td><td style="text-align: center;">1</td></tr><tr><td>Polk</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Umatilla</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td>Washington</td><td style="text-align: center;">23</td><td style="text-align: center;">1</td></tr><tr><td>Yamhill</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td><b>Total</b></td><td style="text-align: center;"><b>75</b></td><td style="text-align: center;"><b>3</b></td></tr></tbody></table><table class="table table-bordered"><thead class="thead-light"><tr><th>Age group</th><th style="text-align: center;">Number of cases</th></tr></thead><tbody><tr><td>17 or younger</td><td style="text-align: center;">4</td></tr><tr><td>18 to 24</td><td style="text-align: center;">4</td></tr><tr><td>25 to 34</td><td style="text-align: center;">1</td></tr><tr><td>35 to 54</td><td style="text-align: center;">19</td></tr><tr><td>55 +</td><td style="text-align: center;" autocomplete="off">47</td></tr><tr><td><b>Total</b></td><td style="text-align: center;" autocomplete="off"><b>75</b></td></tr></tbody></table>
+<table class="table table-bordered"><thead class="thead-light"><tr><th>County</th><th style="text-align: center;">Number of cases</th><th style="text-align: center;">Deaths</th></tr></thead><tbody><tr><td><!--StartFragment-->Benton<!--EndFragment--></td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td>Clackamas</td><td style="text-align: center;">6</td><td style="text-align: center;">0</td></tr><tr><td>Deschutes</td><td style="text-align: center;">6</td><td style="text-align: center;">0</td></tr><tr><td>Douglas</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Jackson</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td>Klamath</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Lane</td><td style="text-align: center;" autocomplete="off">2</td><td style="text-align: center;" autocomplete="off">1</td></tr><tr><td>Linn</td><td style="text-align: center;">18</td><td style="text-align: center;">0</td></tr><tr><td>Marion</td><td style="text-align: center;">13</td><td style="text-align: center;">0</td></tr><tr><td>Multnomah</td><td style="text-align: center;">7</td><td style="text-align: center;">1</td></tr><tr><td>Polk</td><td style="text-align: center;">1</td><td style="text-align: center;">0</td></tr><tr><td>Umatilla</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td>Washington</td><td style="text-align: center;">25</td><td style="text-align: center;">1</td></tr><tr><td>Yamhill</td><td style="text-align: center;">2</td><td style="text-align: center;">0</td></tr><tr><td><b>Total</b></td><td style="text-align: center;"><b>88</b></td><td style="text-align: center;"><b>3</b></td></tr></tbody></table><table class="table table-bordered"><thead class="thead-light"><tr><th>Age group</th><th style="text-align: center;">Number of cases</th></tr></thead><tbody><tr><td>17 or younger</td><td style="text-align: center;">4</td></tr><tr><td>18 to 24</td><td style="text-align: center;">4</td></tr><tr><td>25 to 34</td><td style="text-align: center;">3</td></tr><tr><td>35 to 54</td><td style="text-align: center;">23</td></tr><tr><td>55 +</td><td style="text-align: center;" autocomplete="off">54</td></tr><tr><td><b>Total</b></td><td style="text-align: center;" autocomplete="off"><b>88</b></td></tr></tbody></table>
 
 <div class="alert alert-info">
 
@@ -859,9 +859,9 @@ footer.footer {
     </a>
 </p>
 			
-		<div class="row mt-5 mb-3">
+		<div class="row mt-5 mb-3" id="updated-date">
 			<div class="col-sm-12 text-center">
-				<small class="text-muted">Updated on March 19th, 2020 09:13AM</small>
+				<small class="text-muted">Updated on March 19th, 2020 11:32AM</small>
 			</div>
 		</div>
 	</div>
