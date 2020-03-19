@@ -1,16 +1,16 @@
 STATE CHANGE LIST
 
-  start	2020-03-19 19:52:52.249186+00:00
-  end	2020-03-19 19:54:04.391495+00:00
-  previous	2020-03-19 06:05:23.525843+00:00
-  lapsed	0:01:12.142309
+  start	2020-03-19 20:05:34.028733+00:00
+  end	2020-03-19 20:05:58.714057+00:00
+  previous	2020-03-19 19:52:52.249186+00:00
+  lapsed	0:00:24.685324
 
 STATUS COUNTS:
-  CHANGED	54
-  FAILED	11
+  CHANGED	53
+  FAILED	10
   duplicate	35
   skip	1
-  unchanged	24
+  unchanged	26
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -38,7 +38,7 @@ GA.html	CHANGED	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://hawaiicovid19.com/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -92,7 +92,7 @@ OR.html	CHANGED	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/D
 OR_data.html	duplicate	google-states	duplicate of OR	
 PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
-RI.html	FAILED	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	Empty Response
+RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SC_data.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
@@ -119,7 +119,7 @@ WY_data.html	duplicate	google-states	duplicate of WY
 mail_sheet	skip		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
+google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
@@ -165,7 +165,7 @@ GA.html	CHANGED	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://hawaiicovid19.com/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -219,7 +219,7 @@ OR.html	CHANGED	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/D
 OR_data.html	duplicate	google-states	duplicate of OR	
 PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
-RI.html	FAILED	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	Empty Response
+RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SC_data.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
@@ -246,7 +246,7 @@ WY_data.html	duplicate	google-states	duplicate of WY
 mail_sheet	skip		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
+google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
@@ -292,7 +292,7 @@ GA.html	CHANGED	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://hawaiicovid19.com/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -346,7 +346,7 @@ OR.html	CHANGED	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/D
 OR_data.html	duplicate	google-states	duplicate of OR	
 PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
-RI.html	FAILED	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	Empty Response
+RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SC_data.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
@@ -373,7 +373,7 @@ WY_data.html	duplicate	google-states	duplicate of WY
 mail_sheet	skip		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
+google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
@@ -419,7 +419,7 @@ GA.html	CHANGED	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://hawaiicovid19.com/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -473,7 +473,7 @@ OR.html	CHANGED	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/D
 OR_data.html	duplicate	google-states	duplicate of OR	
 PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
-RI.html	FAILED	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	Empty Response
+RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SC_data.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
@@ -500,7 +500,7 @@ WY_data.html	duplicate	google-states	duplicate of WY
 mail_sheet	skip		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
+google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
@@ -546,7 +546,7 @@ GA.html	CHANGED	google-states	https://dph.georgia.gov/novelcoronavirus
 GA_data.html	unchanged	google-states	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states	https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/	
 HI_data.html	CHANGED	google-states	https://hawaiicovid19.com/	
-IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Response is 210 bytes
+IA.html	FAILED	google-states	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Site uses Incapsula
 IA_data.html	duplicate	google-states	duplicate of IA	
 ID.html	unchanged	google-states	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states	duplicate of ID	
@@ -600,7 +600,7 @@ OR.html	CHANGED	google-states	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/D
 OR_data.html	duplicate	google-states	duplicate of OR	
 PA.html	CHANGED	google-states	https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx	
 PA_data.html	duplicate	google-states	duplicate of PA	
-RI.html	FAILED	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	Empty Response
+RI.html	unchanged	google-states	https://health.ri.gov/diseases/respiratory/?parm=163	
 RI_data.html	unchanged	google-states	https://health.ri.gov/data/covid-19/	
 SC.html	CHANGED	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19	
 SC_data.html	unchanged	google-states	https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19	
@@ -627,7 +627,7 @@ WY_data.html	duplicate	google-states	duplicate of WY
 mail_sheet	skip		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
-google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
+google-states.html	unchanged	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
