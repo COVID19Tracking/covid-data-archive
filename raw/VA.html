@@ -215,9 +215,11 @@ img.emoji {
 
         </header><!-- #masthead -->
 
-                <div class="separator-bar clear print-none">
-                    </div>
-        
+        <div class="emergency-system-notification">
+        <div class="emergency-system-banner">
+            <a href="/">                A State of Emergency Has Been Declared for Virginia in Response to COVID-19            </a>        </div>
+        </div>
+
                 <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
             <!-- Breadcrumb NavXT 5.3.1 -->
 <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Virginia Department of Health." href="http://www.vdh.virginia.gov" class="main-home"><span property="name">Virginia Department of Health</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Surveillance and Investigation." href="http://www.vdh.virginia.gov/surveillance-and-investigation" class="home"><span property="name">Surveillance and Investigation</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">Coronavirus Disease 2019 (COVID-19)</span><meta property="position" content="3"></span>        </div>
@@ -281,6 +283,17 @@ setTimeout(function() {jQuery('.pt-tabs').find('a:eq('+ tabID +')').trigger('cli
 
 });
 
+function VDHEmergencySetting(){
+jQuery(".emergency-system-notification-bg, .notification-footer").css("display", "none");
+
+jQuery(".emergency-system-banner").empty();
+
+var link = "<a href='/'>A State of Emergency Has Been Declared for Virginia in Response to COVID-19</a>";
+
+jQuery(".emergency-system-banner").html(link);
+}
+
+VDHEmergencySetting();
 </script>
     
 </div><!-- #content -->
