@@ -1,20 +1,20 @@
 {
-  "start_date": "2020-03-19T22:35:21.358660+00:00",
-  "end_date": "2020-03-19T22:35:25.277149+00:00",
-  "previous_date": "2020-03-19T20:56:26.902963+00:00",
-  "time_lapsed": "0:00:03.918489",
+  "start_date": "2020-03-19T23:05:31.078125+00:00",
+  "end_date": "2020-03-19T23:05:33.492817+00:00",
+  "previous_date": "2020-03-19T22:35:21.358660+00:00",
+  "time_lapsed": "0:00:02.414692",
   "complete": true,
   "error_message": null,
   "items": [
     {
       "name": "google-states-csv",
       "source": "source",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://covid.cape.io/states/info.csv",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-19T22:35:22.343915+00:00",
+      "checked": "2020-03-19T23:05:32.362635+00:00",
       "updated": "2020-03-19T22:35:22.343915+00:00",
       "failed": null
     },
@@ -26,21 +26,21 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-19T22:35:22.815251+00:00",
+      "checked": "2020-03-19T23:05:32.709193+00:00",
       "updated": "2020-03-19T20:41:34.941000+00:00",
       "failed": null
     },
     {
       "name": "cds",
       "source": "source",
-      "status": "FAILED",
+      "status": "unchanged",
       "url": "http://blog.lazd.net/coronadatascraper/data.json",
-      "msg": "no local cache",
+      "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-19T20:56:28.603945+00:00",
+      "checked": "2020-03-19T23:05:33.298408+00:00",
       "updated": "2020-03-19T20:41:35.783554+00:00",
-      "failed": "2020-03-19T22:35:25.277149+00:00"
+      "failed": null
     }
   ]
 }
