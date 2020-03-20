@@ -1,107 +1,116 @@
-<html lang="en-us">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<html lang="en-us"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-    <title>Experience</title>
-    <link rel="shortcut icon" href="assets/exb.ico">
-    <style>
-  html, body{
-  				width: 100%;
-  				height: 100%;
-  				margin: 0;
-  			}
-  			#app{
-  				width: 100%;
-  				height: 100%;
-  			}
-  </style>
-    <!--
-  * Be default, we'll use structural URL pattern.
-  			* When download, to simplify the deployment, we'll not use the structural URL, which means will put
-  				app id and page id in URL query parameter. So, when download, we'll:
-  				* Comment out baseURI
-  				* Change to: ROOT_PATH = getPath();
-  				* Change to: PACKAGES_IN_APP_FOLDER = true;
-  				* Change to: USE_STRUCTURAL_URL = false;
-  -->
-    <!--
-  This will be commented out when downloaded.
-  			Please change this when you want to use structrual URL, this path should point to the experience folder you deployed
-  -->
-    <base href="/experience/">
-    <script>
-  /*
-  			Please make sure the script is in <head>, this can help dojo to find the correct "insertPointSibling"
-  			See dojo/dojo.js line 1724-1728
-  			*/
-  			var MOUNT_PATH = '/';
-  
-  			/** Please change this when you want to use structrual URL, this path should point to the experience folder you deployed */
-  			var ROOT_PATH = MOUNT_PATH + 'experience/';
-  
-  			/**
-  			 * if true, means all packages(widgets, jimu-core, ...) are in app folder.
-  			 * if false, means packages and app are in the same root folder
-  			 *
-  			 * When download, we will change this value to "true" to put all packages in the same folder
-  			 * */
-  			var PACKAGES_IN_APP_FOLDER = false;
-  
-  			/**
-  			 * true means :appId/page/:pageId
-  			 * false means ?id=:appId&page=:pageId
-  			 */
-  			var USE_STRUCTURAL_URL = true;
-  
-  
-  			/**
-  			 * experience is designed to be able to be deployed in/out portal/AGOL.
-  			 * Whether it's in portal impact how to get the portalUrl.
-  			 *
-  			 * If it's in portal/AGOL:
-  			 * 	get portalUrl from window.location, we don't consider the portalUrl in app config
-  			 * If it's not in portal/AGOL:
-  			 * 	* If user has signed in, use user signed in portal
-  			 * 	* if not signed in, use portalUrl in app config.
-  			*/
-  			var IS_IN_PORTAL = false;
-  
-  			var arcgisApiUrl = 'https://js.arcgis.com/4.14/';
-  
-  			/*
-  			* By default, hostEnv will be set in the build time, but the server can override it.
-  			*/
-  			var hostEnv = 'prod';
-                          var isDevEdition = false;
-  
-  			function getPath() {
-  				var fullPath, path;
-  
-  				fullPath = window.location.pathname;
-  				if (fullPath === '/' || fullPath.substr(fullPath.length - 1) === '/') {
-  					path = fullPath;
-  				}else{
-  					var sections = fullPath.split('/');
-  					var lastSection = sections.pop();
-  					if (/\.html$/.test(lastSection) || /\.aspx$/.test(lastSection) ||
-  						/\.jsp$/.test(lastSection) || /\.php$/.test(lastSection)) {
-  						//index.html may be renamed to index.jsp, etc.
-  						path = sections.join('/') + '/';
-  					} else {
-  						return false;
-  					}
-  				}
-  				return path;
-  			}
-  </script>
-  </head>
-  <body>
-    <div id="loading"></div>
-    <div id="app"></div>
-    <!--When download, the src will be changed to "./jimu-core/systemjs.js"-->
-    <script type="text/javascript" src="../jimu-core/systemjs.js"></script>
-    <script type="text/javascript" src="./init.js"></script>
-    <script>SystemJS.import('./index.js');</script>
-    <script type="text/javascript" src="../service-worker-registration.js"></script>
-  </body>
-</html>
+		<title>Experience</title>
+		<link rel="shortcut icon" href="assets/exb.ico">
+		<style>
+			html, body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+			#app{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
+		<!--
+			* Be default, we'll use structural URL pattern.
+			* When download, to simplify the deployment, we'll not use the structural URL, which means will put
+				app id and page id in URL query parameter. So, when download, we'll:
+				* Comment out baseURI
+				* Change to: ROOT_PATH = getPath();
+				* Change to: PACKAGES_IN_APP_FOLDER = true;
+				* Change to: USE_STRUCTURAL_URL = false;
+		-->
+
+
+		<!--
+			This will be commented out when downloaded.
+			Please change this when you want to use structrual URL, this path should point to the experience folder you deployed
+		-->
+		<base href="/experience/">
+		<script>
+			/*
+			Please make sure the script is in <head>, this can help dojo to find the correct "insertPointSibling"
+			See dojo/dojo.js line 1724-1728
+			*/
+			var MOUNT_PATH = '/';
+
+			/** Please change this when you want to use structrual URL, this path should point to the experience folder you deployed */
+			var ROOT_PATH = MOUNT_PATH + 'experience/';
+
+			/**
+			 * if true, means all packages(widgets, jimu-core, ...) are in app folder.
+			 * if false, means packages and app are in the same root folder
+			 *
+			 * When download, we will change this value to "true" to put all packages in the same folder
+			 * */
+			var PACKAGES_IN_APP_FOLDER = false;
+
+			/**
+			 * true means :appId/page/:pageId
+			 * false means ?id=:appId&page=:pageId
+			 */
+			var USE_STRUCTURAL_URL = true;
+
+
+			/**
+			 * experience is designed to be able to be deployed in/out portal/AGOL.
+			 * Whether it's in portal impact how to get the portalUrl.
+			 *
+			 * If it's in portal/AGOL:
+			 * 	get portalUrl from window.location, we don't consider the portalUrl in app config
+			 * If it's not in portal/AGOL:
+			 * 	* If user has signed in, use user signed in portal
+			 * 	* if not signed in, use portalUrl in app config.
+			*/
+			var IS_IN_PORTAL = false;
+
+			var arcgisApiUrl = 'https://js.arcgis.com/4.14/';
+
+			/*
+			* By default, hostEnv will be set in the build time, but the server can override it.
+			*/
+			var hostEnv = 'prod';
+                        var isDevEdition = false;
+
+			function getPath() {
+				var fullPath, path;
+
+				fullPath = window.location.pathname;
+				if (fullPath === '/' || fullPath.substr(fullPath.length - 1) === '/') {
+					path = fullPath;
+				}else{
+					var sections = fullPath.split('/');
+					var lastSection = sections.pop();
+					if (/\.html$/.test(lastSection) || /\.aspx$/.test(lastSection) ||
+						/\.jsp$/.test(lastSection) || /\.php$/.test(lastSection)) {
+						//index.html may be renamed to index.jsp, etc.
+						path = sections.join('/') + '/';
+					} else {
+						return false;
+					}
+				}
+				return path;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="loading">
+		</div>
+		<div id="app">
+
+		</div>
+		<!-- When download, the src will be changed to "./jimu-core/systemjs.js" -->
+		<script type="text/javascript" src="../jimu-core/systemjs.js"></script>
+		<script type="text/javascript" src="./init.js"></script>
+		<script>
+			SystemJS.import('./index.js');
+		</script>
+		<script type="text/javascript" src="../service-worker-registration.js"></script>
+	
+
+</body></html>
