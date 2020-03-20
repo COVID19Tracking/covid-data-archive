@@ -225,6 +225,103 @@
    + '<select id="subscribe_county"><option>Optional: county of residence</option><option>Adams</option><option>Adams</option><option>Alcorn</option><option>Amite</option><option>Attala</option><option>Benton</option><option>Bolivar</option><option>Calhoun</option><option>Carroll</option><option>Chickasaw</option><option>Choctaw</option><option>Claiborne</option><option>Clarke</option><option>Clay</option><option>Coahoma</option><option>Copiah</option><option>Covington</option><option>Desoto</option><option>Forrest</option><option>Franklin</option><option>George</option><option>Greene</option><option>Grenada</option><option>Hancock</option><option>Harrison</option><option>Hinds</option><option>Holmes</option><option>Humphrey</option><option>Issaquena</option><option>Itawamba</option><option>Jackson</option><option>Jasper</option><option>Jefferson</option><option>Jefferson Davis</option><option>Jones</option><option>Kemper</option><option>Lafayette</option><option>Lamar</option><option>Lauderdale</option><option>Lawrence</option><option>Leake</option><option>Lee</option><option>Leflore</option><option>Lincoln</option><option>Lowndes</option><option>Madison</option><option>Marion</option><option>Marshall</option><option>Monroe</option><option>Montgomery</option><option>Neshoba</option><option>Newton</option><option>Noxubee</option><option>Oktibbeha</option><option>Panola</option><option>Pearl River</option><option>Perry</option><option>Pike</option><option>Pontotoc</option><option>Prentiss</option><option>Quitman</option><option>Rankin</option><option>Scott</option><option>Sharkey</option><option>Simpson</option><option>Smith</option><option>Stone</option><option>Sunflower</option><option>Tallahatchie</option><option>Tate</option><option>Tippah</option><option>Tishomingo</option><option>Tunica</option><option>Union</option><option>Walthall</option><option>Warren</option><option>Washington</option><option>Wayne</option><option>Webster</option><option>Wilkinson</option><option>Winston</option><option>Yalobusha</option><option>Yazoo</option>'
    + '</select></div>');
   </script>
+        <div id="newsletterSignup">
+          <p>Get the public health news you need.</p>
+          <p class="smaller light">Disease updates
+            <span class="colored">&#8226;</span>Facility inspections
+            <span class="colored">&#8226;</span>
+          </p>
+          <span class="smaller emphasized">Subscribe to our e-newsletter:</span>
+          <input id="subscribe_email" type="email" value="&#160;email address" onfocus="if ((this.value).indexOf ('.') &lt; 0) this.value =''">
+          <button type="submit" id="submitSubscription" name="commit" onclick="sendNewsletterSubscriptionData(); setCookie ('alreadySubscribed', 'Y', 999); ga('send', 'event', 'SignupForm', 'Clicked', 'MobilePageTopSignup');">+</button>
+          <br>
+          <select id="subscribe_county">
+            <option>Optional: county of residence</option>
+            <option>Adams</option>
+            <option>Adams</option>
+            <option>Alcorn</option>
+            <option>Amite</option>
+            <option>Attala</option>
+            <option>Benton</option>
+            <option>Bolivar</option>
+            <option>Calhoun</option>
+            <option>Carroll</option>
+            <option>Chickasaw</option>
+            <option>Choctaw</option>
+            <option>Claiborne</option>
+            <option>Clarke</option>
+            <option>Clay</option>
+            <option>Coahoma</option>
+            <option>Copiah</option>
+            <option>Covington</option>
+            <option>Desoto</option>
+            <option>Forrest</option>
+            <option>Franklin</option>
+            <option>George</option>
+            <option>Greene</option>
+            <option>Grenada</option>
+            <option>Hancock</option>
+            <option>Harrison</option>
+            <option>Hinds</option>
+            <option>Holmes</option>
+            <option>Humphrey</option>
+            <option>Issaquena</option>
+            <option>Itawamba</option>
+            <option>Jackson</option>
+            <option>Jasper</option>
+            <option>Jefferson</option>
+            <option>Jefferson Davis</option>
+            <option>Jones</option>
+            <option>Kemper</option>
+            <option>Lafayette</option>
+            <option>Lamar</option>
+            <option>Lauderdale</option>
+            <option>Lawrence</option>
+            <option>Leake</option>
+            <option>Lee</option>
+            <option>Leflore</option>
+            <option>Lincoln</option>
+            <option>Lowndes</option>
+            <option>Madison</option>
+            <option>Marion</option>
+            <option>Marshall</option>
+            <option>Monroe</option>
+            <option>Montgomery</option>
+            <option>Neshoba</option>
+            <option>Newton</option>
+            <option>Noxubee</option>
+            <option>Oktibbeha</option>
+            <option>Panola</option>
+            <option>Pearl River</option>
+            <option>Perry</option>
+            <option>Pike</option>
+            <option>Pontotoc</option>
+            <option>Prentiss</option>
+            <option>Quitman</option>
+            <option>Rankin</option>
+            <option>Scott</option>
+            <option>Sharkey</option>
+            <option>Simpson</option>
+            <option>Smith</option>
+            <option>Stone</option>
+            <option>Sunflower</option>
+            <option>Tallahatchie</option>
+            <option>Tate</option>
+            <option>Tippah</option>
+            <option>Tishomingo</option>
+            <option>Tunica</option>
+            <option>Union</option>
+            <option>Walthall</option>
+            <option>Warren</option>
+            <option>Washington</option>
+            <option>Wayne</option>
+            <option>Webster</option>
+            <option>Wilkinson</option>
+            <option>Winston</option>
+            <option>Yalobusha</option>
+            <option>Yazoo</option>
+          </select>
+        </div>
         <!--category handler 2-->
         <div id="assetNow_pageTitle">
           <h1>Coronavirus Disease 2019 (COVID-19)</h1>
@@ -932,7 +1029,7 @@
         <!--end article (main content of page)-->
         <div style="margin-top: 10px">
           <div id="signup">
-            <span id="signupCaption">Get weekly restaurant inspections and more by e-mail:</span>
+            <span id="signupCaption">Get health alerts and our free newsletter by e-mail:</span>
             <form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/MSDH/subscribers/qualify" method="post" target="_blank" style="margin: 0; padding: 0; display: inline">
               <input type="hidden" name="subscription_type" value="email">
               <input name="utf8" type="hidden" value="&#226;&#339;&#8220;">
@@ -971,10 +1068,11 @@
         </ul>
         <div style="clear: both"></div>
         <div class="footerPromotion">
-          <a href="/msdhsite/_static/14,0,420.html" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'Coronavirus2019');">
-            <img src="/msdhsite/theme/slides/Coronavirus2019_slide.jpg" alt="" style="border: 0">
+          <a href="https://www.instagram.com/healthy.ms/" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'InstagramPromo');" target="_blank" rel="noopener noreferrer">
+            <img src="/msdhsite/theme/slides/InstagramPromo.png" alt="" style="border: 0">
           </a>
         </div>
+        <!--<div class="footerPromotion"><a href="https://twitter.com/msdh/" onClick="ga('send', 'event', 'FooterSlides', 'Clicked', 'TwitterPromo');"><img src="/msdhsite/theme/slides/TwitterPromo.png" alt="" style="border: 0"></a></div>-->
       </div>
       <!--end pageContent-->
       <div id="footer">
