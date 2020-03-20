@@ -1,10 +1,10 @@
-<html lang="en-us">
+<html class="size-mode-LARGE esriLtr jimu-ltr en-us en" dir="ltr" lang="en-us">
   <base ref="https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/">
   <head>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-    <title>Experience</title>
+    <title>Florida's COVID-19 Data and Map Dashboard</title>
     <link rel="shortcut icon" href="assets/exb.ico">
     <style>
   html, body{
@@ -96,10 +96,34 @@
   				return path;
   			}
   </script>
+    <link id="jimu-base-style" rel="stylesheet" type="text/css" href="/experience/../jimu-ui/styles/base.css">
+    <style data-emotion="css-global"></style>
+    <style data-emotion="css"></style>
   </head>
   <body>
     <div id="loading"></div>
-    <div id="app"></div>
+    <div id="app">
+      <div class="page-renderer d-flex flex-column css-6bl119">
+        <div id="page_0" data-pageid="page_0" class="page flex-grow-1" style="display: flex; background-color: transparent;">
+          <div class="fixed-layout d-flex w-100 flex-grow-1" style="position: relative; height: auto; min-height: 0px; margin: 0px auto; background-color: transparent; width: 100%; overflow: hidden;" data-layoutid="layout_0">
+            <div style="position: absolute; inset: 0px;" class="d-flex layout-item is-widget css-e4non3" data-layoutitemid="0" data-layoutid="layout_0">
+              <div class="widget-renderer w-100 d-flex css-ds7esq" data-widgetid="widget_3">
+                <div class="w-100 d-flex widget-wrapper">
+                  <div class="w-100 widget-content">
+                    <div style="width: 100%; height: 100%; position: relative;" class="jimu-widget widget-embed">
+                      <iframe class="iframe-widget_3" style="width: 100%; height: 100%;" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation" allowfullscreen="" src="https://arcg.is/0nHO11" frameborder="0"></iframe>
+                      <div class="jimu-secondary-loading"></div>
+                      <div style="display: none;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="helper-nodes-container"></div>
+    </div>
     <!--When download, the src will be changed to "./jimu-core/systemjs.js"-->
     <script type="text/javascript" src="../jimu-core/systemjs.js"></script>
     <script type="text/javascript" src="./init.js"></script>
