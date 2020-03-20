@@ -1,13 +1,13 @@
 CHANGE LIST
 
-  start	2020-03-20 09:51:19 EDT
-  end	2020-03-20 09:55:38 EDT
-  previous	2020-03-20 09:48:45 EDT
-  lapsed	0:04:19.506004
+  start	2020-03-20 11:33:53 EDT
+  end	2020-03-20 11:34:02 EDT
+  previous	2020-03-20 11:31:29 EDT
+  lapsed	0:00:09.083540
 
 STATUS COUNTS:
   CHANGED	60
-  FAILED	10
+  FAILED	17
   duplicate	33
   skip	1
   unchanged	23
@@ -123,7 +123,7 @@ google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
-AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
+AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states-csv	duplicate of PR	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
@@ -139,7 +139,14 @@ DE	FAILED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavi
 TN	FAILED	google-states	https://www.tn.gov/health/cedep/ncov.html	Exception in code
 WI	FAILED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	HTTP status 403
 CA_data	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
-CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
+CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	Exception in code
+AK	FAILED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	Exception in code
+AL	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Exception in code
+AS	FAILED	google-states-csv	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	Exception in code
+AZ	FAILED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	Exception in code
+CO	FAILED	google-states-csv	https://covid19.colorado.gov/data	Exception in code
+CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
+DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -252,7 +259,7 @@ google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
-AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
+AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states-csv	duplicate of PR	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
@@ -268,7 +275,14 @@ DE	FAILED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavi
 TN	FAILED	google-states	https://www.tn.gov/health/cedep/ncov.html	Exception in code
 WI	FAILED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	HTTP status 403
 CA_data	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
-CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
+CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	Exception in code
+AK	FAILED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	Exception in code
+AL	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Exception in code
+AS	FAILED	google-states-csv	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	Exception in code
+AZ	FAILED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	Exception in code
+CO	FAILED	google-states-csv	https://covid19.colorado.gov/data	Exception in code
+CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
+DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -381,7 +395,7 @@ google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
-AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
+AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states-csv	duplicate of PR	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
@@ -397,7 +411,14 @@ DE	FAILED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavi
 TN	FAILED	google-states	https://www.tn.gov/health/cedep/ncov.html	Exception in code
 WI	FAILED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	HTTP status 403
 CA_data	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
-CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
+CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	Exception in code
+AK	FAILED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	Exception in code
+AL	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Exception in code
+AS	FAILED	google-states-csv	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	Exception in code
+AZ	FAILED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	Exception in code
+CO	FAILED	google-states-csv	https://covid19.colorado.gov/data	Exception in code
+CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
+DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -510,7 +531,7 @@ google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
-AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
+AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states-csv	duplicate of PR	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
@@ -526,7 +547,14 @@ DE	FAILED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavi
 TN	FAILED	google-states	https://www.tn.gov/health/cedep/ncov.html	Exception in code
 WI	FAILED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	HTTP status 403
 CA_data	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
-CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
+CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	Exception in code
+AK	FAILED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	Exception in code
+AL	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Exception in code
+AS	FAILED	google-states-csv	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	Exception in code
+AZ	FAILED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	Exception in code
+CO	FAILED	google-states-csv	https://covid19.colorado.gov/data	Exception in code
+CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
+DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -639,7 +667,7 @@ google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv
 OK	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
 NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
-AR	FAILED	google-states	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	HTTP status 503
+AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 PR_data.html	duplicate	google-states-csv	duplicate of PR	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
@@ -655,5 +683,12 @@ DE	FAILED	google-states	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavi
 TN	FAILED	google-states	https://www.tn.gov/health/cedep/ncov.html	Exception in code
 WI	FAILED	google-states	https://www.dhs.wisconsin.gov/disease/covid-19.htm	HTTP status 403
 CA_data	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
-CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	HTTP status 403
+CA	FAILED	google-states-csv	https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/	Exception in code
+AK	FAILED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	Exception in code
+AL	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Exception in code
+AS	FAILED	google-states-csv	http://www.samoagovt.ws/2020/03/ministry-of-health-coronavirus-covid-19-update-14-march-2020/	Exception in code
+AZ	FAILED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	Exception in code
+CO	FAILED	google-states-csv	https://covid19.colorado.gov/data	Exception in code
+CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
+DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 
