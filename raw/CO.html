@@ -1,1427 +1,1729 @@
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'html' -->
-<!-- FILE NAME SUGGESTIONS:
-   * html--node--10081.html.twig
-   * html--node--%.html.twig
-   * html--node.html.twig
-   x html.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/html.html.twig' -->
-<!DOCTYPE html>
-<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="js fontawesome-i2svg-active fontawesome-i2svg-complete wf-museosans-n3-active wf-museoslab-n7-active wf-museoslab-n8-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-n9-active wf-museoslab-n3-active wf-museoslab-n5-active wf-active" style="height: 100%;" lang="en">
+  <base ref="https://covid19.colorado.gov/data">
   <head>
+    <script type="text/javascript" src="https://bam.nr-data.net/1/6ac1f040bb?a=55470286&amp;v=1167.2a4546b&amp;to=YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QWVVQCW0IJawgJUAZkIFNVAUdDOGMDBFIMSgx%2BWQBRcQdXAxVHTgYCWFMHX2cBVgAJRg5qBENDCEBDJVcFA0cQ&amp;rst=3141&amp;ref=https://covid19.colorado.gov/data&amp;ap=1789&amp;be=586&amp;fe=2717&amp;dc=1132&amp;perf=%7B%22timing%22:%7B%22of%22:1584712312795,%22n%22:0,%22f%22:1,%22dn%22:13,%22dne%22:37,%22c%22:38,%22s%22:93,%22ce%22:206,%22rq%22:206,%22rp%22:314,%22rpe%22:314,%22dl%22:316,%22di%22:1088,%22ds%22:1111,%22de%22:1214,%22dc%22:2716,%22l%22:2716,%22le%22:2719%7D,%22navigation%22:%7B%7D%7D&amp;at=T0FZQwpNGUk%3D&amp;jsonp=NREUM.setToken"></script>
+    <script async="" src="https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb4&amp;url=https%3A%2F%2Fcovid19.colorado.gov%2Fdata"></script>
+    <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script>
+    <script async="" src="https://buttons-config.sharethis.com/js/5d07ef084351e90012651044.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script src="https://use.typekit.net/vvp7pty.js"></script>
+    <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+    <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}.tk-museo-slab{font-family:"museo-slab",serif;}</style>
+    <style type="text/css">@font-face{font-family:tk-museo-sans-n3;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-museo-sans-n5;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:tk-museo-sans-n7;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-museo-sans-n9;src:url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}@font-face{font-family:tk-museo-slab-n3;src:url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:tk-museo-slab-n5;src:url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:tk-museo-slab-n7;src:url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-museo-slab-n8;src:url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;}</style>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6ac1f040bb",applicationID:"55470286"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-154159004-45", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
-<meta name="title" content="Data | Colorado COVID-19 Updates" />
-<link rel="canonical" href="https://covid19.colorado.gov/data" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="/themes/ci_xy/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="revision" href="https://covid19.colorado.gov/data" />
-
+    <meta charset="utf-8">
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6ac1f040bb",applicationID:"55470286"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-154159004-45", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+    <meta name="title" content="Data | Colorado COVID-19 Updates">
+    <link rel="canonical" href="https://covid19.colorado.gov/data">
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/themes/ci_xy/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="revision" href="https://covid19.colorado.gov/data">
     <title>Data | Colorado COVID-19 Updates</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
-    <link rel="stylesheet" media="all" href="/libraries/superfish/css/superfish.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/custom/ci_admin_tweaks/css/ci_at_style.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/custom/ci_layouts/css/ci_layout_style.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/custom/ci_search_form/css/searchToggle_style.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/custom/ci_views_tweaks/css/ci_reference_recent.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/custom/ci_theme_options/css/ci_theme_style.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/datepicker.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs.min.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-columns.min.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-colors.min.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/anchor_link/css/anchor_link.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar_multiday.css?q7f355" />
-<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/webform/modules/webform_bootstrap/css/webform_bootstrap.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/ckeditor_accordion/css/ckeditor-accordion.css?q7f355" />
-<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?q7f355" />
-<link rel="stylesheet" media="all" href="/themes/ci_xy/css/style.css?q7f355" />
-<link rel="stylesheet" media="all" href="/themes/ci_xy/css/colors.css?q7f355" />
-
-    
-<!--[if lte IE 8]>
-<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
-<![endif]-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" media="all" href="/libraries/superfish/css/superfish.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/custom/ci_admin_tweaks/css/ci_at_style.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/custom/ci_layouts/css/ci_layout_style.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/custom/ci_search_form/css/searchToggle_style.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/custom/ci_views_tweaks/css/ci_reference_recent.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/custom/ci_theme_options/css/ci_theme_style.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/datepicker.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs.min.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-columns.min.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/bootstrap_paragraphs/css/bootstrap-paragraphs-colors.min.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/anchor_link/css/anchor_link.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/calendar/css/calendar_multiday.css?q7f355">
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/webform/modules/webform_bootstrap/css/webform_bootstrap.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/ckeditor_accordion/css/ckeditor-accordion.css?q7f355">
+    <link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?q7f355">
+    <link rel="stylesheet" media="all" href="/themes/ci_xy/css/style.css?q7f355">
+    <link rel="stylesheet" media="all" href="/themes/ci_xy/css/colors.css?q7f355">
+    <!--
+  [if lte IE 8]>
+  <script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+  <![endif]
+  -->
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
+    <style type="text/css">@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/a09522/00000000000000000000ec0b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;}</style>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
+    <style type="text/css">
+  #st-el-1 {
+    font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+    direction: ltr;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    z-index: 94034;
+  }
+  #st-el-1.st-animated {
+    -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+  }
+  #st-el-1.st-hidden {
+    opacity: 0;
+  }
+  #st-el-1.st-hide {
+    display: none;
+  }
+  #st-el-1 .st-btn {
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+    -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+    -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 8px;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  #st-el-1 .st-btn:last-child {
+    margin-right: 0;
+  }
+  #st-el-1 .st-btn > svg {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 8px;
+    vertical-align: top;
+  }
+  #st-el-1 .st-btn > img {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 8px;
+    vertical-align: top;
+  }
+  #st-el-1 .st-btn > span {
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    min-width: 60px;
+    opacity: 1;
+    padding: 0 6px;
+    position: relative;
+    vertical-align: top;
+  }
+  #st-el-1.st-has-labels .st-btn {
+    min-width: 120px;
+  }
+  #st-el-1.st-has-labels .st-btn.st-remove-label {
+    min-width: 50px;
+  }
+  #st-el-1.st-has-labels .st-btn.st-remove-label > span {
+    display: none;
+  }
+  #st-el-1.st-has-labels .st-btn.st-hide-label > span {
+    display: none;
+  }
+  #st-el-1 .st-total {
+    color: #555;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 12px;
+    margin-right: 0;
+    max-width: 80px;
+    padding: 4px 8px;
+    text-align: center;
+  }
+  #st-el-1 .st-total.st-hidden {
+    display: none;
+  }
+  #st-el-1 .st-total > span {
+    font-size: 16px;
+    line-height: 17px;
+    display: block;
+    padding: 0;
+  }
+  #st-el-1 .st-total > span.st-shares {
+    font-size: 9px;
+    line-height: 9px;
+  }
+  #st-el-1.st-justified {
+    display: flex;
+    text-align: center;
+  }
+  #st-el-1.st-justified .st-btn {
+    -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  }#st-el-1 .st-btn:hover {
+    opacity: .8;
+    top: -4px;
+  }#st-el-1 .st-btn[data-network='facebook'] {
+    background-color: #4267B2;
+  }
+  #st-el-1 .st-btn[data-network='facebook'] svg {
+    fill: #fff;
+  }
+  #st-el-1 .st-btn[data-network='facebook'] > span {
+    color: #fff;
+  }
+  #st-el-1 .st-btn[data-network='twitter'] {
+    background-color: #55acee;
+  }
+  #st-el-1 .st-btn[data-network='twitter'] svg {
+    fill: #fff;
+  }
+  #st-el-1 .st-btn[data-network='twitter'] > span {
+    color: #fff;
+  }
+  #st-el-1 .st-btn[data-network='pinterest'] {
+    background-color: #CB2027;
+  }
+  #st-el-1 .st-btn[data-network='pinterest'] svg {
+    fill: #fff;
+  }
+  #st-el-1 .st-btn[data-network='pinterest'] > span {
+    color: #fff;
+  }
+  #st-el-1 .st-btn[data-network='email'] {
+    background-color: #7d7d7d;
+  }
+  #st-el-1 .st-btn[data-network='email'] svg {
+    fill: #fff;
+  }
+  #st-el-1 .st-btn[data-network='email'] > span {
+    color: #fff;
+  }
+  </style>
+    <style type="text/css">
+  #st-3 {
+    font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    backface-visibility: hidden;
+    display: block;
+    position: fixed;
+    opacity: 1;
+    text-align: left;
+    top: 160px;
+    z-index: 94034;
+  }
+  #st-3.st-right {
+    right: 0px;
+  }
+  #st-3.st-hidden.st-right {
+    right: -48px;
+  }
+  #st-3.st-hidden {
+    width: 96px;
+  }
+  #st-3 > div {
+    clear: right;
+    float: right;
+  }
+  #st-3 .st-btn {
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: NaNpx;
+    height: 48px;
+    line-height: 24px;
+    margin-bottom: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 12px;
+    position: relative;
+    text-align: left;
+    top: 0;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 48px;
+  }
+  #st-3 .st-btn.st-first {
+    border-top: none;
+    border-top-left-radius: 4px;
+  }
+  #st-3 .st-btn.st-last {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+  }
+  #st-3 .st-btn > svg {
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    height: 24px;
+    margin-left: 0;
+    vertical-align: top;
+    width: 24px;
+  }
+  #st-3 .st-btn > img {
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    height: 24px;
+    margin-left: 0;
+    vertical-align: top;
+    width: 24px;
+  }
+  #st-3 .st-btn > span {
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    left: -35px;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    padding: 0 6px;
+    position: relative;
+    vertical-align: top;
+    filter: alpha(opacity=0);
+  }
+  #st-3 .st-btn.st-hide-label > span {
+    display: none !important;
+  }
+  #st-3 .st-total {
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    background: #fff;
+    color: #555;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 0;
+    min-height: 34px;
+    max-width: 80px;
+    opacity: 1;
+    padding: 4px 0;
+    text-align: center;
+    width: 48px;
+  }
+  #st-3 .st-total.st-hidden {
+    display: none;
+  }
+  #st-3 .st-total > span {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+  }
+  #st-3 .st-total > span.st-shares {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  #st-3 .st-toggle {
+    right: -48px;
+    -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+    background: #ccc;
+    border-bottom-left-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    width: 48px;
+  }
+  #st-3.st-hidden .st-toggle {
+    border-top-left-radius: 4px;
+  }
+  #st-3.st-right .st-toggle .st-right {
+    display: inline-block;
+  }
+  #st-3.st-right.st-hidden .st-toggle .st-right {
+    display: none;
+  }
+  #st-3.st-right .st-toggle .st-left {
+    display: none;
+  }
+  #st-3.st-right.st-hidden .st-toggle .st-left {
+    display: inline-block;
+  }#st-3:hover .st-toggle {
+    right: 0;
+  }
+  #st-3.st-hidden:hover .st-toggle {
+    right: 48px;
+  }
+  #st-3.st-toggleable:hover .st-btn.st-last {
+    border-bottom-left-radius: 0;
+  }
+  #st-3.st-toggleable:hover .st-btn.st-last:hover {
+    border-bottom-left-radius: 4px;
+  }
+  #st-3 .st-btn:hover {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  #st-3.st-has-labels .st-btn:hover {
+    width: 120px;
+  }
+  #st-3:not(.st-has-labels) .st-btn:hover {
+    width: 62px;
+  }
+  #st-3 .st-btn.st-hide-label:hover {
+    width: 62px;
+  }
+  #st-3 .st-btn:hover > svg {
+    margin-left: 5px;
+  }
+  #st-3 .st-btn:hover > img {
+    margin-left: 5px;
+  }
+  #st-3 .st-btn:hover > span {
+    opacity: 1;
+    display: inline-block;
+    left: 0;
+    filter: alpha(opacity=100);
+  }
+  @media (max-width: 1024px) {
+    #st-3 .st-btn:hover > svg {
+      margin-left: 0;
+    }
+    #st-3 .st-btn:hover > span {
+      display: none;
+    }
+  }@media (max-width: 1024px) {
+    #st-3 {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+  }
+  #st-3.st-hidden {
+    bottom: -48px;
+    width: 100%;
+  }
+  #st-3.st-hidden.st-left {
+    left: 0;
+  }
+  #st-3.st-hidden.st-right {
+    right: 0;
+  }
+  #st-3 > div {
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    clear: none;
+    flex: 1;
+    float: none;
+  }
+  #st-3 .st-total {
+    background: #fff;
+    padding: 6px 8px;
+  }
+  #st-3 .st-btn {
+    -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+    text-align: center;
+    width: auto;
+  }
+  #st-3 .st-btn > span {
+    display: none;
+  }
+  #st-3 .st-toggle {
+    display: none;
+  }body { padding-bottom: 48px; }
+  }#st-3 .st-btn[data-network='facebook'] {
+    background-color: #4267B2;
+  }
+  #st-3 .st-btn[data-network='facebook'] svg {
+    fill: #fff;
+  }
+  #st-3 .st-btn[data-network='facebook'] > span {
+    color: #fff;
+  }
+  #st-3 .st-btn[data-network='twitter'] {
+    background-color: #55acee;
+  }
+  #st-3 .st-btn[data-network='twitter'] svg {
+    fill: #fff;
+  }
+  #st-3 .st-btn[data-network='twitter'] > span {
+    color: #fff;
+  }
+  #st-3 .st-btn[data-network='pinterest'] {
+    background-color: #CB2027;
+  }
+  #st-3 .st-btn[data-network='pinterest'] svg {
+    fill: #fff;
+  }
+  #st-3 .st-btn[data-network='pinterest'] > span {
+    color: #fff;
+  }
+  #st-3 .st-btn[data-network='sharethis'] {
+    background-color: #95D03A;
+  }
+  #st-3 .st-btn[data-network='sharethis'] svg {
+    fill: #fff;
+  }
+  #st-3 .st-btn[data-network='sharethis'] > span {
+    color: #fff;
+  }
+  #st-3 .st-btn[data-network='email'] {
+    background-color: #7d7d7d;
+  }
+  #st-3 .st-btn[data-network='email'] svg {
+    fill: #fff;
+  }
+  #st-3 .st-btn[data-network='email'] > span {
+    color: #fff;
+  }
+  </style>
   </head>
-  <body class="path-node page-node-type-page has-glyphicons">
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      Skip to main content
-    </a>
-    
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
-<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'page' -->
-<!-- FILE NAME SUGGESTIONS:
-   * page--covid19--page.html.twig
-   * page--page.html.twig
-   * page--node--10081.html.twig
-   * page--node--%.html.twig
-   * page--node.html.twig
-   x page.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/page.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--co-branding.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-co-branding">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--sitebranding.html.twig
-   x block--system-branding-block.html.twig
-   * block--system.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig' -->
-    <header class="co-brand" role="banner">
-    <div class="co-brand__wrap container-fluid">
-        <div class="row">
-            <div class="co-brand__logo col-sm-6">
+  <body class="path-node page-node-type-page has-glyphicons" style="position: relative; min-height: 100%; top: 0px;">
+    <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+    <!--THEME DEBUG-->
+    <!--THEME HOOK: 'off_canvas_page_wrapper'-->
+    <!--BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig'-->
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+      <!--THEME DEBUG-->
+      <!--THEME HOOK: 'page'-->
+      <!--
+  FILE NAME SUGGESTIONS:
+     * page--covid19--page.html.twig
+     * page--page.html.twig
+     * page--node--10081.html.twig
+     * page--node--%.html.twig
+     * page--node.html.twig
+     x page.html.twig
+  -->
+      <!--BEGIN OUTPUT from 'themes/ci_xy/templates/system/page.html.twig'-->
+      <!--THEME DEBUG-->
+      <!--THEME HOOK: 'region'-->
+      <!--
+  FILE NAME SUGGESTIONS:
+     * region--co-branding.html.twig
+     x region.html.twig
+  -->
+      <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+      <div class="region region-co-branding">
+        <!--THEME DEBUG-->
+        <!--THEME HOOK: 'block'-->
+        <!--
+  FILE NAME SUGGESTIONS:
+     * block--sitebranding.html.twig
+     x block--system-branding-block.html.twig
+     * block--system.html.twig
+     * block.html.twig
+  -->
+        <!--BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig'-->
+        <header class="co-brand" role="banner">
+          <div class="co-brand__wrap container-fluid">
+            <div class="row">
+              <div class="co-brand__logo col-sm-6">
                 <a href="https://www.colorado.gov/" rel="home">
-                    <img class="co-brand__logo--image" src="/themes/ci_xy/logos/co_C_state_web_portal.svg" alt="Colorado: Official State Web Portal"/>
+                  <img class="co-brand__logo--image" src="/themes/ci_xy/logos/co_C_state_web_portal.svg" alt="Colorado: Official State Web Portal">
                 </a>
-            </div>
-            <div class="co-brand__services col-sm-6">
+              </div>
+              <div class="co-brand__services col-sm-6">
                 <a href="https://www.colorado.gov/online-services">Online Services</a>
                 <a href="https://www.colorado.gov/state-agencies">State Agencies</a>
-            </div>
-        </div>
-    </div>
-</header>
-
-        
-<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--global-header.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-global-header">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   x block--ci-xy-branding.html.twig
-   * block--system-branding-block.html.twig
-   * block--system.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig' -->
-              <a class="header__logo navbar-btn" href="/" title="Home" rel="home">
-        <img class="header__logo--image" src="/sites/covid19/files/logo.svg" alt="Home" />
-      </a>
-      
-<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
-        </div>
-        <div class="col-sm-5">
-          <div class="header__search">
-          <form class="search__form" role="search" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8">
-            <div class="form-group">
-              <div class="input-group">
-                <label for="edit-search">Search</label>
-                <input data-drupal-selector="edit-search" class="search__form--input" type="text" id="edit-search" name="search"/>
-                <div class="input-group-btn">
-                  <button data-drupal-selector="edit-submit-acquia-search-fields" class="search__form--button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name="" aria-label="Search the website"></button>
-                </div>
               </div>
             </div>
-          </form>            
+          </div>
+        </header>
+        <!--END OUTPUT from 'themes/ci_xy/templates/block/block--system-branding-block.html.twig'-->
+      </div>
+      <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7">
+              <!--THEME DEBUG-->
+              <!--THEME HOOK: 'region'-->
+              <!--
+  FILE NAME SUGGESTIONS:
+     * region--global-header.html.twig
+     x region.html.twig
+  -->
+              <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+              <div class="region region-global-header">
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'block'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     x block--ci-xy-branding.html.twig
+     * block--system-branding-block.html.twig
+     * block--system.html.twig
+     * block.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig'-->
+                <a class="header__logo navbar-btn" href="/" title="Home" rel="home">
+                  <img class="header__logo--image" src="/sites/covid19/files/logo.svg" alt="Home">
+                </a>
+                <!--END OUTPUT from 'themes/ci_xy/templates/block/block--ci-xy-branding.html.twig'-->
+              </div>
+              <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+            </div>
+            <div class="col-sm-5">
+              <div class="header__search">
+                <form class="search__form" role="search" action="/search" method="get" id="views-exposed-form-acquia-search-fields-search-block" accept-charset="UTF-8" data-drupal-form-fields="edit-search,edit-submit-acquia-search-fields">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <label for="edit-search">Search</label>
+                      <input data-drupal-selector="edit-search" class="search__form--input input-lg" type="text" id="edit-search" name="search" placeholder="Search">
+                      <div class="input-group-btn">
+                        <button data-drupal-selector="edit-submit-acquia-search-fields" class="search__form--button js-form-submit form-submit icon-before" type="submit" id="edit-submit-acquia-search-fields" value="Search" name="" aria-label="Search the website"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
-    
-
-   
-                                                                            <div class="top-nav color__brand-dark-blue " role="navigation">
-            <nav class="container">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--navigation.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-navigation">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   x block--mainnavigation-2.html.twig
-   * block--superfish--main.html.twig
-   * block--superfish.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig' -->
-<nav role="navigation" class="top--menu" aria-labelledby="block-mainnavigation-2-menu" id="block-mainnavigation-2">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'superfish' -->
-<!-- BEGIN OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig' -->
-
-<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none">
-  
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'superfish_menu_items' -->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' -->
-
-<li id=""
-     class=" color__brand-dark-blue"><a href="/home">Home</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/about-covid-19" class="menuparent">COVID-19 in Colorado</a><ul><!-- THEME DEBUG --><!-- THEME HOOK: 'superfish_menu_items' --><!-- BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' --><li id=""
-     class=" color__brand-dark-blue"><a href="/about-covid-19">About COVID-19</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/telehealth-and-nurselines">Telehealth and nurselines</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/testing">Testing</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/prevention-community-spread">Prevention &amp; community spread</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/isolation-and-quarantine" title="What&#039;s the difference between isolation &amp; quarantine?">Isolation &amp; quarantine</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/schools-workplaces-community">Schools, workplaces &amp; the community</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/frequently-asked-questions-faq">Frequently asked questions</a></li><!-- END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' --></ul></li><li id=""
-     class=" color__brand-dark-blue"><a href="/covid-19-resources-health-care-providers-and-local-public-health-agencies">LPHAs &amp; healthcare providers</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/data" title="COVID-19 data dashboards" class="is-active">Case Data</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/news-0">News</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/reducing-fear-and-taking-care-yourself">Reducing fear and stress</a></li><li id=""
-     class=" color__brand-dark-blue"><a href="/state-recovery-assistance">State recovery &amp; assistance</a></li>
-<!-- END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig' -->
-
-
-</ul>
-
-<!-- END OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig' -->
-
-
-  </nav>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
+      </header>
+      <div class="top-nav color__brand-dark-blue " role="navigation">
+        <nav class="container">
+          <!--THEME DEBUG-->
+          <!--THEME HOOK: 'region'-->
+          <!--
+  FILE NAME SUGGESTIONS:
+     * region--navigation.html.twig
+     x region.html.twig
+  -->
+          <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+          <div class="region region-navigation">
+            <!--THEME DEBUG-->
+            <!--THEME HOOK: 'block'-->
+            <!--
+  FILE NAME SUGGESTIONS:
+     x block--mainnavigation-2.html.twig
+     * block--superfish--main.html.twig
+     * block--superfish.html.twig
+     * block.html.twig
+  -->
+            <!--BEGIN OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig'-->
+            <nav role="navigation" class="top--menu" id="block-mainnavigation-2">
+              <!--THEME DEBUG-->
+              <!--THEME HOOK: 'superfish'-->
+              <!--BEGIN OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig'-->
+              <ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none sf-js-enabled">
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'superfish_menu_items'-->
+                <!--BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig'-->
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/home">Home</a>
+                </li>
+                <li id="" class="color__brand-dark-blue">
+                  <a href="/about-covid-19" class="menuparent sf-with-ul">COVID-19 in Colorado
+                    <span class="sf-sub-indicator">&#187;</span>
+                  </a>
+                  <ul class="sf-hidden">
+                    <!--THEME DEBUG-->
+                    <!--THEME HOOK: 'superfish_menu_items'-->
+                    <!--BEGIN OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig'-->
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/about-covid-19">About COVID-19</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/telehealth-and-nurselines">Telehealth and nurselines</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/testing">Testing</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/prevention-community-spread">Prevention &amp; community spread</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/isolation-and-quarantine" title="What's the difference between isolation &amp; quarantine?">Isolation &amp; quarantine</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/schools-workplaces-community">Schools, workplaces &amp; the community</a>
+                    </li>
+                    <li id="" class=" color__brand-dark-blue">
+                      <a href="/frequently-asked-questions-faq">Frequently asked questions</a>
+                    </li>
+                    <!--END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig'-->
+                  </ul>
+                </li>
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/covid-19-resources-health-care-providers-and-local-public-health-agencies">LPHAs &amp; healthcare providers</a>
+                </li>
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/data" title="COVID-19 data dashboards" class="is-active">Case Data</a>
+                </li>
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/news-0">News</a>
+                </li>
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/reducing-fear-and-taking-care-yourself">Reducing fear and stress</a>
+                </li>
+                <li id="" class=" color__brand-dark-blue">
+                  <a href="/state-recovery-assistance">State recovery &amp; assistance</a>
+                </li>
+                <!--END OUTPUT from 'themes/ci_xy/templates/menu/superfish-menu-items.html.twig'-->
+              </ul>
+              <!--END OUTPUT from 'modules/contrib/superfish/templates/superfish.html.twig'-->
             </nav>
-        </div>
-      
-
-         <div id="xyBackground">
-        
-  <div role="main" class="main-container container js-quickedit-main-content" >
-    <div class="row">
-                    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--ci-xy-breadcrumbs.html.twig
-   * block--system-breadcrumb-block.html.twig
-   x block--system.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
-  
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'breadcrumb' -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig' -->
-  <ol class="breadcrumb">
-          <li >
-                  <a href="/">Colorado COVID-19 Updates</a>
-              </li>
-          <li  class="active">
-                  Data
-              </li>
-      </ol>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig' -->
-
-
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
-
-
-                                                <div class="col-sm-12">
-                  
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--header.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-header">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--ci-xy-page-title.html.twig
-   x block--page-title-block.html.twig
-   * block--core.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
-  
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'page_title' -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
-  <h1 class="page-header">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--node--title--page.html.twig
-   x field--node--title.html.twig
-   * field--node--page.html.twig
-   * field--title.html.twig
-   * field--string.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
-<span property="schema:name">Data</span>
-
-<!-- END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
-
-</h1>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig' -->
-
-
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
-              </div>
-                              <div class="wrap">
-                                    <aside class="col-sm-3" role="complementary">
-                
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   x region--sidebar-first.html.twig
-   * region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/region--sidebar-first.html.twig' -->
-  <div class="region sidebar-nav region-sidebar-first">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--menureferenceleft.html.twig
-   * block--entity-field--node--field-menu-reference-left.html.twig
-   * block--entity-field--node.html.twig
-   * block--entity-field.html.twig
-   * block--ctools-block.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
-<section id="block-menureferenceleft" class="block block-ctools-block block-entity-fieldnodefield-menu-reference-left clearfix">
-  
-    
-
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--node--field-menu-reference-left--page.html.twig
-   * field--node--field-menu-reference-left.html.twig
-   * field--node--page.html.twig
-   * field--field-menu-reference-left.html.twig
-   * field--entity-reference.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-menu-reference-left field--type-entity-reference field--label-hidden field--item">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'menu__for_the_public' -->
-<!-- FILE NAME SUGGESTIONS:
-   * menu--for-the-public.html.twig
-   x menu.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/menu/menu.html.twig' -->
-
-  <nav>
-    <ul class="menu menu--for-the-public nav">
-                      <li class="first">
-                                        <a href="/home" data-drupal-link-system-path="node/9999">Home</a>
-              </li>
-                      <li class="expanded dropdown">
-                                                                    <a href="/about-covid-19" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10111">About COVID-19 <span class="chevron"></span></a>
-                    <nav>
-    <ul class="dropdown-menu">
-                      <li class="first last">
-                                        <a href="/reducing-fear-and-taking-care-yourself" data-drupal-link-system-path="node/10356">Reducing fear and stress</a>
-              </li>
-        </ul>
-</nav>
-  
-              </li>
-                      <li class="expanded dropdown">
-                                                                    <a href="/telehealth-and-nurselines" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10366">Telehealth and nurselines <span class="chevron"></span></a>
-                    <nav>
-    <ul class="dropdown-menu">
-                      <li class="first last">
-                                        <a href="/telehealth-nurselines-directory" data-drupal-link-system-path="node/10371">Telehealth and nurselines directory</a>
-              </li>
-        </ul>
-</nav>
-  
-              </li>
-                      <li>
-                                        <a href="/testing" data-drupal-link-system-path="node/10056">Testing</a>
-              </li>
-                      <li class="expanded dropdown">
-                                                                    <a href="/prevention-community-spread" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10276">Prevention &amp; community spread <span class="chevron"></span></a>
-                    <nav>
-    <ul class="dropdown-menu">
-                      <li class="expanded dropdown first last">
-                                        <a href="/isolation-and-quarantine" title="What&#039;s the difference between isolation &amp; quarantine?" data-drupal-link-system-path="node/10346">Isolation &amp; quarantine</a>
-                    <nav>
-    <ul class="dropdown-menu">
-                      <li class="first">
-                                        <a href="/how-to-isolate" title="How to isolate if you are sick or tested positive for COVID-19" data-drupal-link-system-path="node/10326">How to isolate</a>
-              </li>
-                      <li class="last">
-                                        <a href="/how-to-quarantine" title="How to quarantine if you were exposed to someone who may be sick with COVID-19" data-drupal-link-system-path="node/10341">How to quarantine</a>
-              </li>
-        </ul>
-</nav>
-  
-              </li>
-        </ul>
-</nav>
-  
-              </li>
-                      <li>
-                                        <a href="/schools-workplaces-community" data-drupal-link-system-path="node/10121">Schools, workplaces &amp; the community</a>
-              </li>
-                      <li>
-                                        <a href="/frequently-asked-questions-faq" data-drupal-link-system-path="node/10251">Frequently asked questions</a>
-              </li>
-                      <li>
-                                        <a href="/covid-19-resources-health-care-providers-and-local-public-health-agencies" data-drupal-link-system-path="node/10051">LPHAs and health care providers</a>
-              </li>
-                      <li class="expanded dropdown">
-                                                                    <a href="/communication-resources" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10101">Communication resources <span class="chevron"></span></a>
-                    <nav>
-    <ul class="dropdown-menu">
-                      <li class="first">
-                                        <a href="/social-media-graphics" data-drupal-link-system-path="node/10296">Social media graphics</a>
-              </li>
-                      <li class="last">
-                                        <a href="/print-materials" data-drupal-link-system-path="node/10301">Print materials</a>
-              </li>
-        </ul>
-</nav>
-  
-              </li>
-                      <li class="active active-trail">
-                                        <a href="/data" class="active-trail is-active" data-drupal-link-system-path="node/10081">Data</a>
-              </li>
-                      <li>
-                                        <a href="https://www.colorado.gov/pacific/cdphe/lab">Laboratory services (external link)</a>
-              </li>
-                      <li class="last">
-                                        <a href="/state-recovery-assistance" title="Resources for businesses and individuals affected by COVID-19" data-drupal-link-system-path="node/10311">State recovery &amp; assistance</a>
-              </li>
-        </ul>
-</nav>
-  
-<!-- END OUTPUT from 'themes/ci_xy/templates/menu/menu.html.twig' -->
-
-</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-  </section>
-
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/system/region--sidebar-first.html.twig' -->
-
-
-              </aside>
-                                                    <section class="col-sm-9">
-                                                      <div class="highlighted">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--highlighted.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-highlighted">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--ci-xy-messages.html.twig
-   x block--system-messages-block.html.twig
-   * block--system.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
-<div data-drupal-messages-fallback class="hidden"></div>
-
-<!-- END OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-</div>
-                                                                                                        
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--help.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
-                                                                <a id="main-content"></a>
-
-              
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   x region--content.html.twig
-   * region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig' -->
-
-
-  <div class="region region-content" >
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--ci-xy-content.html.twig
-   * block--system-main-block.html.twig
-   x block--system.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
-  
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'node' -->
-<!-- FILE NAME SUGGESTIONS:
-   * node--10081--full.html.twig
-   * node--10081.html.twig
-   * node--page--full.html.twig
-   * node--page.html.twig
-   * node--full.html.twig
-   x node.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/system/node.html.twig' -->
-
-<article role="article" about="/data" typeof="schema:WebPage" class="page full clearfix">
-
-  
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'rdf_metadata' -->
-<!-- BEGIN OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
-  <span property="schema:name" content="Data" class="hidden"></span>
-
-<!-- END OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig' -->
-
-
-
-  
-  <div>
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'links__node' -->
-<!-- FILE NAME SUGGESTIONS:
-   * links--node.html.twig
-   x links.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--node--field-rows--page.html.twig
-   * field--node--field-rows.html.twig
-   * field--node--page.html.twig
-   * field--field-rows.html.twig
-   x field--entity-reference-revisions.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
-
-      <div>
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--bp-columns--default.html.twig
-   x paragraph--bp-columns.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-
-
-
-
-
-
-
-
-<!-- Color Conditionals -->
- <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
-  <div class="paragraph__column">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--bp-column-content--bp-columns.html.twig
-   x field--paragraph--bp-column-content.html.twig
-   * field--paragraph--bp-columns.html.twig
-   * field--bp-column-content.html.twig
-   * field--entity-reference-revisions.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-<div class="paragraph__column--container-wrapper">
-  <div class="container"><div class="paragraph--type--bp-columns__1col">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--card-basic--default.html.twig
-   x paragraph--card-basic.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-
-    
-
-    
-    
-
-    
-    
-    
-    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
-        <div class="paragraph__column">
-            <div class="paragraph__title ">
-                <h3>
-                    
-                </h3>
-            </div>
-            
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-body--card-basic.html.twig
-   * field--paragraph--field-card-body.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-body.html.twig
-   * field--text-long.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p><span style="font-family:museo sans,sans-serif;">Data is updated daily by about 4 p.m. and may not reflect the number of cases in realtime. Due to high traffic, it may take a little longer to load. If this page remains blank for more than 5 seconds, please try hitting the refresh button on your browser. Thank you for your patience.</span></p>
-
-<p><strong>Colorado Case Summary (Updated 3/19/20 at 4:00 p.m.) <a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary_3_19.pdf" target="_blank">PDF version</a></strong><br />
-Note: This summary only includes data through yesterday, 3/18.  </p>
-
-<p>277 cases<br />
-38 hospitalized<br />
-22 counties<br />
-2,952 people tested<br />
-2 deaths</p>
-
-<p><a href="https://data-cdphe.opendata.arcgis.com/datasets/colorado-covid-19-positive-cases-and-rates-of-infection-by-county-of-identification" target="_blank">Find Colorado COVID-19 Data on CDPHE's Open Data Portal</a></p>
-</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-            
-        </div>
-    </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-    </div></div>
-</div>
-<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-
-
-  </div>
-</div>
-   
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-</div>
-      <div>
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--bp-columns--default.html.twig
-   x paragraph--bp-columns.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-
-
-
-
-
-
-
-
-<!-- Color Conditionals -->
- <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
-  <div class="paragraph__column">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--bp-column-content--bp-columns.html.twig
-   x field--paragraph--bp-column-content.html.twig
-   * field--paragraph--bp-columns.html.twig
-   * field--bp-column-content.html.twig
-   * field--entity-reference-revisions.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-<div class="paragraph__column--container-wrapper">
-  <div class="container"><div class="paragraph--type--bp-columns__1col">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--card-open-embed--default.html.twig
-   * paragraph--card-open-embed.html.twig
-   x paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
-
-
-
-    
-    
-
-    
-    
-    <div class="paragraph paragraph--type--card-open-embed paragraph--view-mode--default">
-        <div class="paragraph__column">
-            <div class="paragraph__title">
-                <h3>
-                    
-                </h3>
-            </div>            
-            
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-open-embed--card-open-embed.html.twig
-   * field--paragraph--field-open-embed.html.twig
-   * field--paragraph--card-open-embed.html.twig
-   * field--field-open-embed.html.twig
-   * field--text-long.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-  <div class="field field--name-field-open-embed field--type-text-long field--label-visually_hidden">
-    <div class="field--label sr-only">Open Embed</div>
-              <div class="field--item"><div class='tableauPlaceholder' id='viz1584564946854' style='position: relative'><noscript><a href='#'><img alt=' ' src='https://public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19_CaseSummary&#47;COVID-19CaseSummary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;COVID19_CaseSummary&#47;COVID-19CaseSummary?:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https://public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID19_CaseSummary&#47;COVID-19CaseSummary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1584564946854');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='892px';vizElement.style.height='3227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='892px';vizElement.style.height='3227px';} else { vizElement.style.width='100%';vizElement.style.height='2927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
+            <!--END OUTPUT from 'themes/ci_xy/templates/block/block--mainnavigation-2.html.twig'-->
           </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-        </div>
-    </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig' -->
-
-
-    </div></div>
-</div>
-<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-
-
-  </div>
-</div>
-   
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-</div>
-  
-<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--node--field-file--page.html.twig
-   * field--node--field-file.html.twig
-   * field--node--page.html.twig
-   * field--field-file.html.twig
-   * field--file.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-  <div class="field field--name-field-file field--type-file field--label-above">
-    <div class="field--label">File</div>
-          <div class="field--items">
-              <div class="field--item">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'file_link' -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig' -->
-<span class="file file--mime-application-pdf file--application-pdf icon-before"><span class="file-icon"><span class="icon glyphicon glyphicon-file text-primary" aria-hidden="true"></span></span><span class="file-link"><a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary_3_19.pdf" type="application/pdf; length=264270" title="Open file in new window" target="_blank" data-toggle="tooltip" data-placement="bottom">COVID-19 Case Summary 3_19_20</a></span><span class="file-size">258.08 KB</span></span>
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig' -->
-
-</div>
-          <div class="field--item">
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'file_link' -->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig' -->
-<span class="file file--mime-application-pdf file--application-pdf icon-before"><span class="file-icon"><span class="icon glyphicon glyphicon-file text-primary" aria-hidden="true"></span></span><span class="file-link"><a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary%20%281%29.pdf" type="application/pdf; length=465639" title="Open file in new window" target="_blank" data-toggle="tooltip" data-placement="bottom">COVID-19 Case Summary 3_18_20</a></span><span class="file-size">454.73 KB</span></span>
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig' -->
-
-</div>
-              </div>
+          <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+        </nav>
       </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-  </div>
-
-</article>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/system/node.html.twig' -->
-
-
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig' -->
-
-
-
-                      </section>
-                            </div>
-    </div>
-  </div>
-    </div>
-
-                  <footer class="footer__content-footer color__silver">
-            <div class="container">
-                
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'region' -->
-<!-- FILE NAME SUGGESTIONS:
-   * region--footer.html.twig
-   x region.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-  <div class="region region-footer">
-    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   x block--sharethis.html.twig
-   * block--sharethis-block.html.twig
-   * block.html.twig
--->
-<!-- BEGIN OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig' -->
-
-<!-- END OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig' -->
-
-
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'block' -->
-<!-- FILE NAME SUGGESTIONS:
-   * block--blockmainfooter.html.twig
-   * block--block-content--8e0f4fc5-1848-4e37-892d-08efb5472307.html.twig
-   * block--block-content.html.twig
-   x block.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
-<section id="block-blockmainfooter" class="block block-block-content block-block-content8e0f4fc5-1848-4e37-892d-08efb5472307 clearfix">
-  
-    
-
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--block-content--field-row--row-block.html.twig
-   * field--block-content--field-row.html.twig
-   * field--block-content--row-block.html.twig
-   * field--field-row.html.twig
-   x field--entity-reference-revisions.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
-
-      <div>
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--bp-columns--default.html.twig
-   x paragraph--bp-columns.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-
-
-
-    
-
-
-  
-
-<!-- Color Conditionals -->
-    <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default color__slate">
-     <div class="paragraph__column">
-       
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--bp-column-content--bp-columns.html.twig
-   x field--paragraph--bp-column-content.html.twig
-   * field--paragraph--bp-columns.html.twig
-   * field--bp-column-content.html.twig
-   * field--entity-reference-revisions.html.twig
-   * field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-<div class="paragraph__column--container-wrapper">
-  <div class="container"><div class="paragraph--type--bp-columns__3col">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--card-basic--default.html.twig
-   x paragraph--card-basic.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-
-    
-
-    
-        
-
-    
-    
-    
-    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
-        <div class="paragraph__column">
-            <div class="paragraph__title ">
-                <h3>
-                    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-title--card-basic.html.twig
-   * field--paragraph--field-card-title.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-title.html.twig
-   * field--string.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CO-HELP</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-                </h3>
+      <div id="xyBackground">
+        <div role="main" class="main-container container js-quickedit-main-content">
+          <div class="row">
+            <!--THEME DEBUG-->
+            <!--THEME HOOK: 'block'-->
+            <!--
+  FILE NAME SUGGESTIONS:
+     * block--ci-xy-breadcrumbs.html.twig
+     * block--system-breadcrumb-block.html.twig
+     x block--system.html.twig
+     * block.html.twig
+  -->
+            <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig'-->
+            <!--THEME DEBUG-->
+            <!--THEME HOOK: 'breadcrumb'-->
+            <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig'-->
+            <ol class="breadcrumb">
+              <li>
+                <a href="/">Colorado COVID-19 Updates</a>
+              </li>
+              <li class="active">Data</li>
+            </ol>
+            <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/breadcrumb.html.twig'-->
+            <!--END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig'-->
+            <div class="col-sm-12">
+              <!--THEME DEBUG-->
+              <!--THEME HOOK: 'region'-->
+              <!--
+  FILE NAME SUGGESTIONS:
+     * region--header.html.twig
+     x region.html.twig
+  -->
+              <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+              <div class="region region-header">
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'block'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     * block--ci-xy-page-title.html.twig
+     x block--page-title-block.html.twig
+     * block--core.html.twig
+     * block.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig'-->
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'page_title'-->
+                <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig'-->
+                <h1 class="page-header">
+                  <!--THEME DEBUG-->
+                  <!--THEME HOOK: 'field'-->
+                  <!--
+  FILE NAME SUGGESTIONS:
+     * field--node--title--page.html.twig
+     x field--node--title.html.twig
+     * field--node--page.html.twig
+     * field--title.html.twig
+     * field--string.html.twig
+     * field.html.twig
+  -->
+                  <!--BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig'-->
+                  <span property="schema:name">Data</span>
+                  <!--END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig'-->
+                </h1>
+                <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/page-title.html.twig'-->
+                <!--END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--page-title-block.html.twig'-->
+              </div>
+              <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
             </div>
-            
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-body--card-basic.html.twig
-   * field--paragraph--field-card-body.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-body.html.twig
-   * field--text-long.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p>Colorado’s call line for general questions about the novel coronavirus (COVID-19), providing answers in many languages including English, Spanish (Español), Mandarin (普通话) and more.</p>
-
-<p>303-389-1687 or<br />
-1-877-462-2911<br /><a href="mailto:COHELP@RMPDC.org">COHELP@RMPDC.org</a></p>
-</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-            
-        </div>
-    </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-    </div><div class="paragraph--type--bp-columns__3col">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--card-basic--default.html.twig
-   x paragraph--card-basic.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-
-    
-
-    
-        
-
-    
-    
-    
-    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
-        <div class="paragraph__column">
-            <div class="paragraph__title ">
-                <h3>
-                    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-title--card-basic.html.twig
-   * field--paragraph--field-card-title.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-title.html.twig
-   * field--string.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CDPHE Information</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-                </h3>
-            </div>
-            
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-body--card-basic.html.twig
-   * field--paragraph--field-card-body.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-body.html.twig
-   * field--text-long.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p>Media line (for media only): 303-691-7870 </p>
-
-<p><a href="https://colorado.gov/cdphe">CDPHE main website</a></p>
-
-<p><a href="http://www.coemergency.com/">Colorado Emergency Management</a></p>
-
-<p><a href="https://covolunteers.state.co.us/">Register to volunteer</a> </p>
-
-<p><a href="http://helpcoloradonow.org">Help Colorado Now</a>  <span class="fontawesome-icon-inline"><i class="fas fa-external-link-alt"></i> </span></p>
-
-<p><a href="https://forms.gle/PLiDz5cQ4tjA3Q2R9">Request a website change</a></p>
-
-<p>If you have symptoms and think you have been exposed, call a health care provider.</p>
-</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-            
-        </div>
-    </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-    </div><div class="paragraph--type--bp-columns__3col">
-      
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'paragraph' -->
-<!-- FILE NAME SUGGESTIONS:
-   * paragraph--card-basic--default.html.twig
-   x paragraph--card-basic.html.twig
-   * paragraph--default.html.twig
-   * paragraph.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-
-    
-
-    
-        
-
-    
-    
-    
-    <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
-        <div class="paragraph__column">
-            <div class="paragraph__title ">
-                <h3>
-                    
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-title--card-basic.html.twig
-   * field--paragraph--field-card-title.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-title.html.twig
-   * field--string.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">Follow us</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-                </h3>
-            </div>
-            
-
-<!-- THEME DEBUG -->
-<!-- THEME HOOK: 'field' -->
-<!-- FILE NAME SUGGESTIONS:
-   * field--paragraph--field-card-body--card-basic.html.twig
-   * field--paragraph--field-card-body.html.twig
-   * field--paragraph--card-basic.html.twig
-   * field--field-card-body.html.twig
-   * field--text-long.html.twig
-   x field.html.twig
--->
-<!-- BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-            <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item"><p><strong>CDPHE</strong> <a class="btn btn-link" href="https://www.facebook.com/CDPHE/"><span class="text"></span>     <i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook"> </i> </a> <a class="btn btn-link" href="https://twitter.com/CDPHE"><span class="text"></span>     <i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter"> </i> </a> <a class="btn btn-link" href="https://www.instagram.com/cdphe/"><span class="text"></span>     <i style="word-spacing: -1em;" class="fa fa-icon-right fa-instagram"> </i> </a> </p>
-
-<p><strong>Colorado Emergency Management</strong> <a class="btn btn-link" href="https://www.facebook.com/COEmergency/?__xts__[0]=68.ARAHzlPINUNeZ27ayQDMfbLehNYVIMrg7xfT8j-8aN98mdPRoBbPnmktcLMtTkL-wokLnQaemEUD3PdU-0DQcGtcfOugK42ccAs0yv41mGs59OoCAVg0S9C98Ausn-4USITeJddgI5K-ipewsdTqb3XlAv4xK7yjZnv4r7A8AG4dzw5rz_0eDuZ4_hf1ncWlyM50sLjBs8HDQLXZaGTioqMC58gY1_CEPaK-zEzkzQmU-zAMRHdUk7QegLVllNZey-pgfkbBa5UFDKWE6BJ7x4PFxqHb-LZZlI20VTjyd7FGnKKgnHJjwfhZ7HDmhMiqJBQU-Ji_sodLedjkigg4HFK8es8"><span class="text"></span>  <i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook"> </i> </a>  <a class="btn btn-link" href="https://twitter.com/COEmergency"><span class="text"></span>  <i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter"> </i> </a></p>
-</div>
-      
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig' -->
-
-
-            
-        </div>
-    </div>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig' -->
-
-
-    </div></div>
-</div>
-<!-- END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig' -->
-
-
-     </div>
-   </div>
-  
-<!-- END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig' -->
-
-</div>
-  
-<!-- END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig' -->
-
-
-  </section>
-
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig' -->
-
-
-            </div>
-        </footer>
-    
-    <div class="global__footer-color color__silver">
-        <div class="footer__global-footer" role="contentinfo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <ul class="footer__global-footer--links">
-                            <li>&#169; 2020 State of Colorado</li>
-                            <li><a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a></li>
-                            <li><a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a></li>
-                            <li><a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a></li>
-                            <li><a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a></li>
+            <div class="wrap">
+              <aside class="col-sm-3" role="complementary">
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'region'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     x region--sidebar-first.html.twig
+     * region.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/ci_xy/templates/system/region--sidebar-first.html.twig'-->
+                <div class="region sidebar-nav region-sidebar-first">
+                  <!--THEME DEBUG-->
+                  <!--THEME HOOK: 'block'-->
+                  <!--
+  FILE NAME SUGGESTIONS:
+     * block--menureferenceleft.html.twig
+     * block--entity-field--node--field-menu-reference-left.html.twig
+     * block--entity-field--node.html.twig
+     * block--entity-field.html.twig
+     * block--ctools-block.html.twig
+     x block.html.twig
+  -->
+                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig'-->
+                  <section id="block-menureferenceleft" class="block block-ctools-block block-entity-fieldnodefield-menu-reference-left clearfix">
+                    <!--THEME DEBUG-->
+                    <!--THEME HOOK: 'field'-->
+                    <!--
+  FILE NAME SUGGESTIONS:
+     * field--node--field-menu-reference-left--page.html.twig
+     * field--node--field-menu-reference-left.html.twig
+     * field--node--page.html.twig
+     * field--field-menu-reference-left.html.twig
+     * field--entity-reference.html.twig
+     x field.html.twig
+  -->
+                    <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                    <div class="field field--name-field-menu-reference-left field--type-entity-reference field--label-hidden field--item">
+                      <!--THEME DEBUG-->
+                      <!--THEME HOOK: 'menu__for_the_public'-->
+                      <!--
+  FILE NAME SUGGESTIONS:
+     * menu--for-the-public.html.twig
+     x menu.html.twig
+  -->
+                      <!--BEGIN OUTPUT from 'themes/ci_xy/templates/menu/menu.html.twig'-->
+                      <nav>
+                        <ul class="menu menu--for-the-public nav">
+                          <li class="first">
+                            <a href="/home" data-drupal-link-system-path="node/9999">Home</a>
+                          </li>
+                          <li class="expanded dropdown">
+                            <a href="/about-covid-19" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10111">About COVID-19
+                              <span class="chevron"></span>
+                            </a>
+                            <nav>
+                              <ul class="dropdown-menu">
+                                <li class="first last">
+                                  <a href="/reducing-fear-and-taking-care-yourself" data-drupal-link-system-path="node/10356">Reducing fear and stress</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                          <li class="expanded dropdown">
+                            <a href="/telehealth-and-nurselines" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10366">Telehealth and nurselines
+                              <span class="chevron"></span>
+                            </a>
+                            <nav>
+                              <ul class="dropdown-menu">
+                                <li class="first last">
+                                  <a href="/telehealth-nurselines-directory" data-drupal-link-system-path="node/10371">Telehealth and nurselines directory</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                          <li>
+                            <a href="/testing" data-drupal-link-system-path="node/10056">Testing</a>
+                          </li>
+                          <li class="expanded dropdown">
+                            <a href="/prevention-community-spread" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10276">Prevention &amp; community spread
+                              <span class="chevron"></span>
+                            </a>
+                            <nav>
+                              <ul class="dropdown-menu">
+                                <li class="expanded dropdown first last">
+                                  <a href="/isolation-and-quarantine" title="What's the difference between isolation &amp; quarantine?" data-drupal-link-system-path="node/10346">Isolation &amp; quarantine</a>
+                                  <nav>
+                                    <ul class="dropdown-menu">
+                                      <li class="first">
+                                        <a href="/how-to-isolate" title="How to isolate if you are sick or tested positive for COVID-19" data-drupal-link-system-path="node/10326">How to isolate</a>
+                                      </li>
+                                      <li class="last">
+                                        <a href="/how-to-quarantine" title="How to quarantine if you were exposed to someone who may be sick with COVID-19" data-drupal-link-system-path="node/10341">How to quarantine</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                          <li>
+                            <a href="/schools-workplaces-community" data-drupal-link-system-path="node/10121">Schools, workplaces &amp; the community</a>
+                          </li>
+                          <li>
+                            <a href="/frequently-asked-questions-faq" data-drupal-link-system-path="node/10251">Frequently asked questions</a>
+                          </li>
+                          <li>
+                            <a href="/covid-19-resources-health-care-providers-and-local-public-health-agencies" data-drupal-link-system-path="node/10051">LPHAs and health care providers</a>
+                          </li>
+                          <li class="expanded dropdown">
+                            <a href="/communication-resources" class="dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/10101">Communication resources
+                              <span class="chevron"></span>
+                            </a>
+                            <nav>
+                              <ul class="dropdown-menu">
+                                <li class="first">
+                                  <a href="/social-media-graphics" data-drupal-link-system-path="node/10296">Social media graphics</a>
+                                </li>
+                                <li class="last">
+                                  <a href="/print-materials" data-drupal-link-system-path="node/10301">Print materials</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                          <li class="active active-trail">
+                            <a href="/data" class="active-trail is-active" data-drupal-link-system-path="node/10081">Data</a>
+                          </li>
+                          <li>
+                            <a href="https://www.colorado.gov/pacific/cdphe/lab">Laboratory services (external link)</a>
+                          </li>
+                          <li class="last">
+                            <a href="/state-recovery-assistance" title="Resources for businesses and individuals affected by COVID-19" data-drupal-link-system-path="node/10311">State recovery &amp; assistance</a>
+                          </li>
                         </ul>
+                      </nav>
+                      <!--END OUTPUT from 'themes/ci_xy/templates/menu/menu.html.twig'-->
                     </div>
-                    <div class="col-md-3">
-                        <div class="footer__logo">
-                            <a class="logo--2020census" href="https://demography.dola.colorado.gov/census_2020/">Colorado Census 2020</a>
-                            <a class="logo--cogov" href="https://www.colorado.gov">Colorado Official State Web Portal</a>
-                        </div>
-                    </div>
+                    <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                  </section>
+                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig'-->
                 </div>
+                <!--END OUTPUT from 'themes/ci_xy/templates/system/region--sidebar-first.html.twig'-->
+              </aside>
+              <section class="col-sm-9">
+                <div class="highlighted">
+                  <!--THEME DEBUG-->
+                  <!--THEME HOOK: 'region'-->
+                  <!--
+  FILE NAME SUGGESTIONS:
+     * region--highlighted.html.twig
+     x region.html.twig
+  -->
+                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+                  <div class="region region-highlighted">
+                    <!--THEME DEBUG-->
+                    <!--THEME HOOK: 'block'-->
+                    <!--
+  FILE NAME SUGGESTIONS:
+     * block--ci-xy-messages.html.twig
+     x block--system-messages-block.html.twig
+     * block--system.html.twig
+     * block.html.twig
+  -->
+                    <!--BEGIN OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig'-->
+                    <div data-drupal-messages-fallback="" class="hidden"></div>
+                    <!--END OUTPUT from 'core/modules/system/templates/block--system-messages-block.html.twig'-->
+                  </div>
+                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+                </div>
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'region'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     * region--help.html.twig
+     x region.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+                <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+                <a id="main-content"></a>
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'region'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     x region--content.html.twig
+     * region.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig'-->
+                <div class="region region-content">
+                  <!--THEME DEBUG-->
+                  <!--THEME HOOK: 'block'-->
+                  <!--
+  FILE NAME SUGGESTIONS:
+     * block--ci-xy-content.html.twig
+     * block--system-main-block.html.twig
+     x block--system.html.twig
+     * block.html.twig
+  -->
+                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig'-->
+                  <!--THEME DEBUG-->
+                  <!--THEME HOOK: 'node'-->
+                  <!--
+  FILE NAME SUGGESTIONS:
+     * node--10081--full.html.twig
+     * node--10081.html.twig
+     * node--page--full.html.twig
+     * node--page.html.twig
+     * node--full.html.twig
+     x node.html.twig
+  -->
+                  <!--BEGIN OUTPUT from 'themes/ci_xy/templates/system/node.html.twig'-->
+                  <article role="article" about="/data" typeof="schema:WebPage" class="page full clearfix">
+                    <!--THEME DEBUG-->
+                    <!--THEME HOOK: 'rdf_metadata'-->
+                    <!--BEGIN OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig'-->
+                    <span property="schema:name" content="Data" class="hidden"></span>
+                    <!--END OUTPUT from 'core/modules/rdf/templates/rdf-metadata.html.twig'-->
+                    <div>
+                      <!--THEME DEBUG-->
+                      <!--THEME HOOK: 'links__node'-->
+                      <!--
+  FILE NAME SUGGESTIONS:
+     * links--node.html.twig
+     x links.html.twig
+  -->
+                      <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig'-->
+                      <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/links.html.twig'-->
+                      <!--THEME DEBUG-->
+                      <!--THEME HOOK: 'field'-->
+                      <!--
+  FILE NAME SUGGESTIONS:
+     * field--node--field-rows--page.html.twig
+     * field--node--field-rows.html.twig
+     * field--node--page.html.twig
+     * field--field-rows.html.twig
+     x field--entity-reference-revisions.html.twig
+     * field.html.twig
+  -->
+                      <!--BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig'-->
+                      <div>
+                        <!--THEME DEBUG-->
+                        <!--THEME HOOK: 'paragraph'-->
+                        <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--bp-columns--default.html.twig
+     x paragraph--bp-columns.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                        <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+                        <!--Color Conditionals-->
+                        <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+                          <div class="paragraph__column">
+                            <!--THEME DEBUG-->
+                            <!--THEME HOOK: 'field'-->
+                            <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--bp-column-content--bp-columns.html.twig
+     x field--paragraph--bp-column-content.html.twig
+     * field--paragraph--bp-columns.html.twig
+     * field--bp-column-content.html.twig
+     * field--entity-reference-revisions.html.twig
+     * field.html.twig
+  -->
+                            <!--BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                            <div class="paragraph__column--container-wrapper">
+                              <div class="container">
+                                <div class="paragraph--type--bp-columns__1col">
+                                  <!--THEME DEBUG-->
+                                  <!--THEME HOOK: 'paragraph'-->
+                                  <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--card-basic--default.html.twig
+     x paragraph--card-basic.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                                  <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                                  <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default">
+                                    <div class="paragraph__column">
+                                      <!--THEME DEBUG-->
+                                      <!--THEME HOOK: 'field'-->
+                                      <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-body--card-basic.html.twig
+     * field--paragraph--field-card-body.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-body.html.twig
+     * field--text-long.html.twig
+     x field.html.twig
+  -->
+                                      <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                      <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item">
+                                        <p>
+                                          <span style="font-family:museo sans,sans-serif;">Data is updated daily by about 4 p.m. and may not reflect&#160;the number of cases in realtime. Due to high traffic, it may take a little longer to load.&#160;If this page remains blank for more than 5 seconds, please try hitting the refresh button on your browser. Thank you for your patience.</span>
+                                        </p>
+                                        <p>
+                                          <strong>Colorado Case Summary (Updated 3/19/20 at 4:00 p.m.)
+                                            <a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary_3_19.pdf" target="_blank">PDF version</a>
+                                          </strong>
+                                          <br>
+                                        </p>
+                                        <p>277 cases
+                                          <br>38 hospitalized
+                                          <br>22 counties
+                                          <br>2,952 people tested
+                                          <br>
+                                        </p>
+                                        <p>
+                                          <a href="https://data-cdphe.opendata.arcgis.com/datasets/colorado-covid-19-positive-cases-and-rates-of-infection-by-county-of-identification" target="_blank">Find Colorado COVID-19 Data on CDPHE's Open Data&#160;Portal</a>
+                                        </p>
+                                      </div>
+                                      <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                    </div>
+                                  </div>
+                                  <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                                </div>
+                              </div>
+                            </div>
+                            <!--END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                          </div>
+                        </div>
+                        <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+                      </div>
+                      <div>
+                        <!--THEME DEBUG-->
+                        <!--THEME HOOK: 'paragraph'-->
+                        <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--bp-columns--default.html.twig
+     x paragraph--bp-columns.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                        <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+                        <!--Color Conditionals-->
+                        <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default" style="background-color:#FFFFFF;">
+                          <div class="paragraph__column">
+                            <!--THEME DEBUG-->
+                            <!--THEME HOOK: 'field'-->
+                            <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--bp-column-content--bp-columns.html.twig
+     x field--paragraph--bp-column-content.html.twig
+     * field--paragraph--bp-columns.html.twig
+     * field--bp-column-content.html.twig
+     * field--entity-reference-revisions.html.twig
+     * field.html.twig
+  -->
+                            <!--BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                            <div class="paragraph__column--container-wrapper">
+                              <div class="container">
+                                <div class="paragraph--type--bp-columns__1col">
+                                  <!--THEME DEBUG-->
+                                  <!--THEME HOOK: 'paragraph'-->
+                                  <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--card-open-embed--default.html.twig
+     * paragraph--card-open-embed.html.twig
+     x paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                                  <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig'-->
+                                  <div class="paragraph paragraph--type--card-open-embed paragraph--view-mode--default">
+                                    <div class="paragraph__column">
+                                      <!--THEME DEBUG-->
+                                      <!--THEME HOOK: 'field'-->
+                                      <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-open-embed--card-open-embed.html.twig
+     * field--paragraph--field-open-embed.html.twig
+     * field--paragraph--card-open-embed.html.twig
+     * field--field-open-embed.html.twig
+     * field--text-long.html.twig
+     x field.html.twig
+  -->
+                                      <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                      <div class="field field--name-field-open-embed field--type-text-long field--label-visually_hidden">
+                                        <div class="field--label sr-only">Open Embed</div>
+                                        <div class="field--item">
+                                          <div class="tableauPlaceholder" id="viz1584564946854" style="position: relative; width: 892px; height: 3227px; overflow: hidden; display: block;">
+                                            <noscript>
+                                              <a href="#">
+                                                <img alt=" " src="https://public.tableau.com/static/images/CO/COVID19_CaseSummary/COVID-19CaseSummary/1_rss.png" style="border: none">
+                                              </a>
+                                            </noscript>
+                                            <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+                                            <iframe marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 892px; height: 3227px; margin: 0px; padding: 0px; border: medium none;" src="https://public.tableau.com/views/COVID19_CaseSummary/COVID-19CaseSummary?:embed=y&amp;:display_count=y&amp;publish=yes?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:loadOrderID=0" frameborder="0"></iframe>
+                                          </div>
+                                          <script type="text/javascript">var divElement = document.getElementById('viz1584564946854');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='892px';vizElement.style.height='3227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='892px';vizElement.style.height='3227px';} else { vizElement.style.width='100%';vizElement.style.height='2927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                                        </div>
+                                      </div>
+                                      <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                    </div>
+                                  </div>
+                                  <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--default.html.twig'-->
+                                </div>
+                              </div>
+                            </div>
+                            <!--END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                          </div>
+                        </div>
+                        <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+                      </div>
+                      <!--END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig'-->
+                      <!--THEME DEBUG-->
+                      <!--THEME HOOK: 'field'-->
+                      <!--
+  FILE NAME SUGGESTIONS:
+     * field--node--field-file--page.html.twig
+     * field--node--field-file.html.twig
+     * field--node--page.html.twig
+     * field--field-file.html.twig
+     * field--file.html.twig
+     x field.html.twig
+  -->
+                      <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                      <div class="field field--name-field-file field--type-file field--label-above">
+                        <div class="field--label">File</div>
+                        <div class="field--items">
+                          <div class="field--item">
+                            <!--THEME DEBUG-->
+                            <!--THEME HOOK: 'file_link'-->
+                            <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig'-->
+                            <span class="file file--mime-application-pdf file--application-pdf icon-before">
+                              <span class="file-icon">
+                                <span class="icon glyphicon glyphicon-file text-primary" aria-hidden="true"></span>
+                              </span>
+                              <span class="file-link">
+                                <a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary_3_19.pdf" type="application/pdf; length=264270" title="" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Open file in new window">COVID-19 Case Summary 3_19_20</a>
+                              </span>
+                              <span class="file-size">258.08 KB</span>
+                            </span>
+                            <!--END OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig'-->
+                          </div>
+                          <div class="field--item">
+                            <!--THEME DEBUG-->
+                            <!--THEME HOOK: 'file_link'-->
+                            <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig'-->
+                            <span class="file file--mime-application-pdf file--application-pdf icon-before">
+                              <span class="file-icon">
+                                <span class="icon glyphicon glyphicon-file text-primary" aria-hidden="true"></span>
+                              </span>
+                              <span class="file-link">
+                                <a href="https://covid19.colorado.gov/sites/covid19/files/COVID%20-%2019%20Case%20Summary%20%281%29.pdf" type="application/pdf; length=465639" title="" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Open file in new window">COVID-19 Case Summary 3_18_20</a>
+                              </span>
+                              <span class="file-size">454.73 KB</span>
+                            </span>
+                            <!--END OUTPUT from 'themes/contrib/bootstrap/templates/file/file-link.html.twig'-->
+                          </div>
+                        </div>
+                      </div>
+                      <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                    </div>
+                  </article>
+                  <!--END OUTPUT from 'themes/ci_xy/templates/system/node.html.twig'-->
+                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/block/block--system.html.twig'-->
+                </div>
+                <!--END OUTPUT from 'themes/ci_xy/templates/system/region--content.html.twig'-->
+              </section>
             </div>
+          </div>
         </div>
+      </div>
+      <footer class="footer__content-footer color__silver">
+        <div class="container">
+          <!--THEME DEBUG-->
+          <!--THEME HOOK: 'region'-->
+          <!--
+  FILE NAME SUGGESTIONS:
+     * region--footer.html.twig
+     x region.html.twig
+  -->
+          <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+          <div class="region region-footer">
+            <!--THEME DEBUG-->
+            <!--THEME HOOK: 'block'-->
+            <!--
+  FILE NAME SUGGESTIONS:
+     x block--sharethis.html.twig
+     * block--sharethis-block.html.twig
+     * block.html.twig
+  -->
+            <!--BEGIN OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig'-->
+            <!--END OUTPUT from 'modules/contrib/sharethis_block/templates/block--sharethis.html.twig'-->
+            <!--THEME DEBUG-->
+            <!--THEME HOOK: 'block'-->
+            <!--
+  FILE NAME SUGGESTIONS:
+     * block--blockmainfooter.html.twig
+     * block--block-content--8e0f4fc5-1848-4e37-892d-08efb5472307.html.twig
+     * block--block-content.html.twig
+     x block.html.twig
+  -->
+            <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig'-->
+            <section id="block-blockmainfooter" class="block block-block-content block-block-content8e0f4fc5-1848-4e37-892d-08efb5472307 clearfix">
+              <!--THEME DEBUG-->
+              <!--THEME HOOK: 'field'-->
+              <!--
+  FILE NAME SUGGESTIONS:
+     * field--block-content--field-row--row-block.html.twig
+     * field--block-content--field-row.html.twig
+     * field--block-content--row-block.html.twig
+     * field--field-row.html.twig
+     x field--entity-reference-revisions.html.twig
+     * field.html.twig
+  -->
+              <!--BEGIN OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig'-->
+              <div>
+                <!--THEME DEBUG-->
+                <!--THEME HOOK: 'paragraph'-->
+                <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--bp-columns--default.html.twig
+     x paragraph--bp-columns.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+                <!--Color Conditionals-->
+                <div class="paragraph paragraph--type--bp-columns paragraph--view-mode--default color__slate">
+                  <div class="paragraph__column">
+                    <!--THEME DEBUG-->
+                    <!--THEME HOOK: 'field'-->
+                    <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--bp-column-content--bp-columns.html.twig
+     x field--paragraph--bp-column-content.html.twig
+     * field--paragraph--bp-columns.html.twig
+     * field--bp-column-content.html.twig
+     * field--entity-reference-revisions.html.twig
+     * field.html.twig
+  -->
+                    <!--BEGIN OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                    <div class="paragraph__column--container-wrapper">
+                      <div class="container">
+                        <div class="paragraph--type--bp-columns__3col">
+                          <!--THEME DEBUG-->
+                          <!--THEME HOOK: 'paragraph'-->
+                          <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--card-basic--default.html.twig
+     x paragraph--card-basic.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                          <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                          <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
+                            <div class="paragraph__column">
+                              <div class="paragraph__title ">
+                                <h3>
+                                  <!--THEME DEBUG-->
+                                  <!--THEME HOOK: 'field'-->
+                                  <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-title--card-basic.html.twig
+     * field--paragraph--field-card-title.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-title.html.twig
+     * field--string.html.twig
+     x field.html.twig
+  -->
+                                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                  <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CO-HELP</div>
+                                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                </h3>
+                              </div>
+                              <!--THEME DEBUG-->
+                              <!--THEME HOOK: 'field'-->
+                              <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-body--card-basic.html.twig
+     * field--paragraph--field-card-body.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-body.html.twig
+     * field--text-long.html.twig
+     x field.html.twig
+  -->
+                              <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                              <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item">
+                                <p>Colorado&#8217;s call line for general questions about the novel coronavirus (COVID-19), providing answers in many languages including English, Spanish (Espa&#241;ol), Mandarin (&#26222;&#36890;&#35805;) and more.</p>
+                                <p>303-389-1687 or
+                                  <br>1-877-462-2911
+                                  <br>
+                                  <a href="mailto:COHELP@RMPDC.org">COHELP@RMPDC.org</a>
+                                </p>
+                              </div>
+                              <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                            </div>
+                          </div>
+                          <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                        </div>
+                        <div class="paragraph--type--bp-columns__3col">
+                          <!--THEME DEBUG-->
+                          <!--THEME HOOK: 'paragraph'-->
+                          <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--card-basic--default.html.twig
+     x paragraph--card-basic.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                          <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                          <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
+                            <div class="paragraph__column">
+                              <div class="paragraph__title ">
+                                <h3>
+                                  <!--THEME DEBUG-->
+                                  <!--THEME HOOK: 'field'-->
+                                  <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-title--card-basic.html.twig
+     * field--paragraph--field-card-title.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-title.html.twig
+     * field--string.html.twig
+     x field.html.twig
+  -->
+                                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                  <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">CDPHE Information</div>
+                                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                </h3>
+                              </div>
+                              <!--THEME DEBUG-->
+                              <!--THEME HOOK: 'field'-->
+                              <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-body--card-basic.html.twig
+     * field--paragraph--field-card-body.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-body.html.twig
+     * field--text-long.html.twig
+     x field.html.twig
+  -->
+                              <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                              <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item">
+                                <p>Media line (for media only): 303-691-7870</p>
+                                <p>
+                                  <a href="https://colorado.gov/cdphe">CDPHE main website</a>
+                                </p>
+                                <p>
+                                  <a href="http://www.coemergency.com/">Colorado Emergency Management</a>
+                                </p>
+                                <p>
+                                  <a href="https://covolunteers.state.co.us/">Register to volunteer</a>
+                                </p>
+                                <p>
+                                  <a href="http://helpcoloradonow.org">Help Colorado Now</a>
+                                  <span class="fontawesome-icon-inline">
+                                    <svg class="svg-inline--fa fa-external-link-alt fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="external-link-alt" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"></path>
+                                    </svg>
+                                    <!--<i class="fas fa-external-link-alt"></i>-->
+                                  </span>
+                                </p>
+                                <p>
+                                  <a href="https://forms.gle/PLiDz5cQ4tjA3Q2R9">Request a website change</a>
+                                </p>
+                                <p>If you have symptoms and think you have been exposed, call a health care provider.</p>
+                              </div>
+                              <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                            </div>
+                          </div>
+                          <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                        </div>
+                        <div class="paragraph--type--bp-columns__3col">
+                          <!--THEME DEBUG-->
+                          <!--THEME HOOK: 'paragraph'-->
+                          <!--
+  FILE NAME SUGGESTIONS:
+     * paragraph--card-basic--default.html.twig
+     x paragraph--card-basic.html.twig
+     * paragraph--default.html.twig
+     * paragraph.html.twig
+  -->
+                          <!--BEGIN OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                          <div class="paragraph__card paragraph paragraph--type--card-basic card_no-border paragraph--view-mode--default color__slate">
+                            <div class="paragraph__column">
+                              <div class="paragraph__title ">
+                                <h3>
+                                  <!--THEME DEBUG-->
+                                  <!--THEME HOOK: 'field'-->
+                                  <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-title--card-basic.html.twig
+     * field--paragraph--field-card-title.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-title.html.twig
+     * field--string.html.twig
+     x field.html.twig
+  -->
+                                  <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                  <div class="field field--name-field-card-title field--type-string field--label-hidden field--item">Follow us</div>
+                                  <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                                </h3>
+                              </div>
+                              <!--THEME DEBUG-->
+                              <!--THEME HOOK: 'field'-->
+                              <!--
+  FILE NAME SUGGESTIONS:
+     * field--paragraph--field-card-body--card-basic.html.twig
+     * field--paragraph--field-card-body.html.twig
+     * field--paragraph--card-basic.html.twig
+     * field--field-card-body.html.twig
+     * field--text-long.html.twig
+     x field.html.twig
+  -->
+                              <!--BEGIN OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                              <div class="field field--name-field-card-body field--type-text-long field--label-hidden field--item">
+                                <p>
+                                  <strong>CDPHE</strong>
+                                  <a class="btn btn-link" href="https://www.facebook.com/CDPHE/">
+                                    <span class="text"></span>
+                                    <svg style="word-spacing: -1em;" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 264 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                                    </svg>
+                                    <!--<i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook">&nbsp;</i>-->
+                                  </a>
+                                  <a class="btn btn-link" href="https://twitter.com/CDPHE">
+                                    <span class="text"></span>
+                                    <svg style="word-spacing: -1em;" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                    </svg>
+                                    <!--<i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter">&nbsp;</i>-->
+                                  </a>
+                                  <a class="btn btn-link" href="https://www.instagram.com/cdphe/">
+                                    <span class="text"></span>
+                                    <svg style="word-spacing: -1em;" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                    </svg>
+                                    <!--<i style="word-spacing: -1em;" class="fa fa-icon-right fa-instagram">&nbsp;</i>-->
+                                  </a>
+                                </p>
+                                <p>
+                                  <strong>Colorado Emergency Management</strong>
+                                  <a class="btn btn-link" href="https://www.facebook.com/COEmergency/?__xts__%5B0%5D=68.ARAHzlPINUNeZ27ayQDMfbLehNYVIMrg7xfT8j-8aN98mdPRoBbPnmktcLMtTkL-wokLnQaemEUD3PdU-0DQcGtcfOugK42ccAs0yv41mGs59OoCAVg0S9C98Ausn-4USITeJddgI5K-ipewsdTqb3XlAv4xK7yjZnv4r7A8AG4dzw5rz_0eDuZ4_hf1ncWlyM50sLjBs8HDQLXZaGTioqMC58gY1_CEPaK-zEzkzQmU-zAMRHdUk7QegLVllNZey-pgfkbBa5UFDKWE6BJ7x4PFxqHb-LZZlI20VTjyd7FGnKKgnHJjwfhZ7HDmhMiqJBQU-Ji_sodLedjkigg4HFK8es8">
+                                    <span class="text"></span>
+                                    <svg style="word-spacing: -1em;" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 264 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                                    </svg>
+                                    <!--<i style="word-spacing: -1em;" class="fa fa-icon-right fa-facebook">&nbsp;</i>-->
+                                  </a>
+                                  <a class="btn btn-link" href="https://twitter.com/COEmergency">
+                                    <span class="text"></span>
+                                    <svg style="word-spacing: -1em;" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="presentation" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                    </svg>
+                                    <!--<i style="word-spacing: -1em;" class="fa fa-icon-right fa-twitter">&nbsp;</i>-->
+                                  </a>
+                                </p>
+                              </div>
+                              <!--END OUTPUT from 'themes/contrib/bootstrap/templates/field/field.html.twig'-->
+                            </div>
+                          </div>
+                          <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--card-basic.html.twig'-->
+                        </div>
+                      </div>
+                    </div>
+                    <!--END OUTPUT from 'themes/ci_xy/templates/field/field--paragraph--bp-column-content.html.twig'-->
+                  </div>
+                </div>
+                <!--END OUTPUT from 'themes/ci_xy/templates/paragraph--bp-columns.html.twig'-->
+              </div>
+              <!--END OUTPUT from 'modules/contrib/bootstrap_paragraphs/templates/field--entity-reference-revisions.html.twig'-->
+            </section>
+            <!--END OUTPUT from 'themes/contrib/bootstrap/templates/block/block.html.twig'-->
+          </div>
+          <!--END OUTPUT from 'themes/contrib/bootstrap/templates/system/region.html.twig'-->
+        </div>
+      </footer>
+      <div class="global__footer-color color__silver">
+        <div class="footer__global-footer" role="contentinfo">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9">
+                <ul class="footer__global-footer--links">
+                  <li>&#169; 2020 State of Colorado</li>
+                  <li>
+                    <a href="https://www.colorado.gov/apps/oit/transparency/index.html" target="_blank">Transparency Online</a>
+                  </li>
+                  <li>
+                    <a href="https://www.colorado.gov/accessibility-standards" target="_blank">Accessibility</a>
+                  </li>
+                  <li>
+                    <a href="https://www.colorado.gov/privacy-statement" target="_blank">Privacy Statement</a>
+                  </li>
+                  <li>
+                    <a href="https://www.colorado.gov/security-statement" target="_blank">Security Statement</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__logo">
+                  <a class="logo--2020census" href="https://demography.dola.colorado.gov/census_2020/">Colorado Census 2020</a>
+                  <a class="logo--cogov" href="https://www.colorado.gov">Colorado Official State Web Portal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OUTPUT from 'themes/ci_xy/templates/system/page.html.twig'-->
     </div>
-
-
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/system/page.html.twig' -->
-
-
-  </div>
-
-<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
-
-
-    
+    <!--END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig'-->
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/10081","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ckeditorAccordion":{"accordionStyle":{"collapseAll":null}},"bootstrap":{"forms_has_error_value_toggle":1,"popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"superfish":{"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","dropShadows":false},"plugins":{"smallscreen":{"mode":"window_width","breakpoint":1025,"title":"Menu"},"supposition":true}}},"user":{"uid":0,"permissionsHash":"3fb5c9c5e9de41ff8f713dcd6d91113c701193febd99a1ef9730590a4b5c80f6"}}</script>
-<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.4.1"></script>
-<script src="/core/assets/vendor/underscore/underscore-min.js?v=1.8.3"></script>
-<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
-<script src="/core/misc/drupalSettingsLoader.js?v=8.8.1"></script>
-<script src="/core/misc/drupal.js?v=8.8.1"></script>
-<script src="/core/misc/drupal.init.js?v=8.8.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/jquery-1-7-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/tabbable-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/escape-selector-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=1.12.1"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=1.12.1"></script>
-<script src="/modules/custom/ci_admin_tweaks/js/ci_at_actions.js?v=1.x"></script>
-<script src="/modules/custom/ci_article_setup/js/article_setup.js?v=1.x"></script>
-<script src="/modules/custom/ci_js/js/superfish_insert.js?v=1.x"></script>
-<script src="/modules/custom/ci_js/js/form_manipulations.js?v=1.x"></script>
-<script src="/core/assets/vendor/jquery.ui/ui/widgets/datepicker-min.js?v=1.12.1"></script>
-<script src="/modules/custom/ci_search_form/js/ci_search_forms.js?v=1.x"></script>
-<script src="/modules/custom/ci_views_tweaks/js/ci_reference_recent.js?v=1.x"></script>
-<script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.1.0/js/v4-shims.js"></script>
-<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.8.1"></script>
-<script src="/themes/contrib/bootstrap/js/drupal.bootstrap.js?q7f355"></script>
-<script src="/themes/contrib/bootstrap/js/attributes.js?q7f355"></script>
-<script src="/themes/contrib/bootstrap/js/theme.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/affix.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/alert.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/button.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/carousel.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/collapse.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/dropdown.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/modal.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tooltip.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/popover.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/scrollspy.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tab.js?q7f355"></script>
-<script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/transition.js?q7f355"></script>
-<script src="/core/misc/states.js?v=8.8.1"></script>
-<script src="/themes/contrib/bootstrap/js/misc/states.js?q7f355"></script>
-<script src="/modules/contrib/webform/js/webform.states.js?v=8.8.1"></script>
-<script src="/modules/contrib/webform/modules/webform_bootstrap/js/webform_bootstrap.states.js?v=8.8.1"></script>
-<script src="/themes/ci_xy/js/scripts.js?v=1.x"></script>
-<script src="/themes/contrib/bootstrap/js/popover.js?q7f355"></script>
-<script src="/themes/contrib/bootstrap/js/tooltip.js?q7f355"></script>
-<script src="//platform-api.sharethis.com/js/sharethis.js#property=5d07ef084351e90012651044&amp;product=sticky-share-button"></script>
-<script src="/modules/custom/ci_theme_options/js/ci_theme_options.js?v=1.x"></script>
-<script src="/libraries/superfish/superfish.js?q7f355"></script>
-<script src="/libraries/superfish/jquery.hoverIntent.minified.js?q7f355"></script>
-<script src="/libraries/superfish/sfsmallscreen.js?q7f355"></script>
-<script src="/libraries/superfish/supposition.js?q7f355"></script>
-<script src="/modules/contrib/superfish/js/superfish.js?v=2.0"></script>
-<script src="/core/misc/debounce.js?v=8.8.1"></script>
-<script src="/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
-<script src="/core/misc/form.js?v=8.8.1"></script>
-<script src="/themes/contrib/bootstrap/js/misc/form.js?q7f355"></script>
-
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6ac1f040bb","applicationID":"55470286","transactionName":"YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QWVVQCW0IJawgJUAZkIFNVAUdDOGMDBFIMSgx+WQBRcQdXAxVHTgYCWFMHX2cBVgAJRg5qBENDCEBDJVcFA0cQ","queueTime":0,"applicationTime":659,"atts":"T0FZQwpNGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-      document.querySelector('#google_translate_element') !== null ? document.querySelector('#google_translate_element') : '';
-    }
-    (function() {
-      var script = document.createElement('script');
-      script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      script.async = true;
-      element = document.getElementsByTagName('body')[0];
-      element.append(script);
-    })();
+    <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.4.1"></script>
+    <script src="/core/assets/vendor/underscore/underscore-min.js?v=1.8.3"></script>
+    <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+    <script src="/core/misc/drupalSettingsLoader.js?v=8.8.1"></script>
+    <script src="/core/misc/drupal.js?v=8.8.1"></script>
+    <script src="/core/misc/drupal.init.js?v=8.8.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/jquery-1-7-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/tabbable-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/escape-selector-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=1.12.1"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=1.12.1"></script>
+    <script src="/modules/custom/ci_admin_tweaks/js/ci_at_actions.js?v=1.x"></script>
+    <script src="/modules/custom/ci_article_setup/js/article_setup.js?v=1.x"></script>
+    <script src="/modules/custom/ci_js/js/superfish_insert.js?v=1.x"></script>
+    <script src="/modules/custom/ci_js/js/form_manipulations.js?v=1.x"></script>
+    <script src="/core/assets/vendor/jquery.ui/ui/widgets/datepicker-min.js?v=1.12.1"></script>
+    <script src="/modules/custom/ci_search_form/js/ci_search_forms.js?v=1.x"></script>
+    <script src="/modules/custom/ci_views_tweaks/js/ci_reference_recent.js?v=1.x"></script>
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/v4-shims.js"></script>
+    <script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.8.1"></script>
+    <script src="/themes/contrib/bootstrap/js/drupal.bootstrap.js?q7f355"></script>
+    <script src="/themes/contrib/bootstrap/js/attributes.js?q7f355"></script>
+    <script src="/themes/contrib/bootstrap/js/theme.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/affix.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/alert.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/button.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/carousel.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/collapse.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/dropdown.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/modal.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tooltip.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/popover.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/scrollspy.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/tab.js?q7f355"></script>
+    <script src="/themes/ci_xy/bootstrap/assets/javascripts/bootstrap/transition.js?q7f355"></script>
+    <script src="/core/misc/states.js?v=8.8.1"></script>
+    <script src="/themes/contrib/bootstrap/js/misc/states.js?q7f355"></script>
+    <script src="/modules/contrib/webform/js/webform.states.js?v=8.8.1"></script>
+    <script src="/modules/contrib/webform/modules/webform_bootstrap/js/webform_bootstrap.states.js?v=8.8.1"></script>
+    <script src="/themes/ci_xy/js/scripts.js?v=1.x"></script>
+    <script src="/themes/contrib/bootstrap/js/popover.js?q7f355"></script>
+    <script src="/themes/contrib/bootstrap/js/tooltip.js?q7f355"></script>
+    <script src="//platform-api.sharethis.com/js/sharethis.js#property=5d07ef084351e90012651044&amp;product=sticky-share-button"></script>
+    <script src="/modules/custom/ci_theme_options/js/ci_theme_options.js?v=1.x"></script>
+    <script src="/libraries/superfish/superfish.js?q7f355"></script>
+    <script src="/libraries/superfish/jquery.hoverIntent.minified.js?q7f355"></script>
+    <script src="/libraries/superfish/sfsmallscreen.js?q7f355"></script>
+    <script src="/libraries/superfish/supposition.js?q7f355"></script>
+    <script src="/modules/contrib/superfish/js/superfish.js?v=2.0"></script>
+    <script src="/core/misc/debounce.js?v=8.8.1"></script>
+    <script src="/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
+    <script src="/core/misc/form.js?v=8.8.1"></script>
+    <script src="/themes/contrib/bootstrap/js/misc/form.js?q7f355"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6ac1f040bb","applicationID":"55470286","transactionName":"YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QWVVQCW0IJawgJUAZkIFNVAUdDOGMDBFIMSgx+WQBRcQdXAxVHTgYCWFMHX2cBVgAJRg5qBENDCEBDJVcFA0cQ","queueTime":0,"applicationTime":1789,"atts":"T0FZQwpNGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script>
+  function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        document.querySelector('#google_translate_element') !== null ? document.querySelector('#google_translate_element') : '';
+      }
+      (function() {
+        var script = document.createElement('script');
+        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        element = document.getElementsByTagName('body')[0];
+        element.append(script);
+      })();
   </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async=""></script>
+    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+      <div style="padding: 8px;">
+        <div>
+          <div class="logo">
+            <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Google Translate" width="20" height="20">
+          </div>
+        </div>
+      </div>
+      <div class="top" style="padding: 8px; float: left; width: 100%;">
+        <h1 class="title gray">Original text</h1>
+      </div>
+      <div class="middle" style="padding: 8px;">
+        <div class="original-text"></div>
+      </div>
+      <div class="bottom" style="padding: 8px;">
+        <div class="activity-links">
+          <span class="activity-link">Contribute a better translation</span>
+          <span class="activity-link"></span>
+        </div>
+        <div class="started-activity-container">
+          <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+          <div class="activity-root"></div>
+        </div>
+      </div>
+      <div class="status-message" style="display: none;"></div>
+    </div>
+    <iframe src="https://c.sharethis.mgr.consensu.org/portal.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe>
+    <div class="goog-te-spinner-pos">
+      <div class="goog-te-spinner-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewbox="0 0 66 66">
+          <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </div>
+    <div id="st-el-1" class=" st-image-share-buttons st-center  st-inline-share-buttons st-animated st-hidden" style="position: absolute;">
+      <div class="st-btn st-first st-remove-label" data-network="facebook" style="display: inline-block;">
+        <img alt="Facebook" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+      </div>
+      <div class="st-btn st-remove-label" data-network="twitter" style="display: inline-block;">
+        <img alt="Twitter" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+      </div>
+      <div class="st-btn st-remove-label" data-network="pinterest" style="display: inline-block;">
+        <img alt="Pinterest" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+      </div>
+      <div class="st-btn st-last st-remove-label" data-network="email" style="display: none;">
+        <img alt="Email" src="https://platform-cdn.sharethis.com/img/email.svg">
+      </div>
+    </div>
+    <div id="st-3" class=" st-sticky-share-buttons st-right st-toggleable st-has-labels st-show-total ">
+      <div class="st-total ">
+        <span class="st-label">22.8k</span>
+        <span class="st-shares">Shares</span>
+      </div>
+      <div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+        <img alt="Facebook" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+        <span class="st-label">Share</span>
+      </div>
+      <div class="st-btn" data-network="twitter" style="display: inline-block;">
+        <img alt="Twitter" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+        <span class="st-label">Tweet</span>
+      </div>
+      <div class="st-btn" data-network="pinterest" style="display: inline-block;">
+        <img alt="Pinterest" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+        <span class="st-label">Pin</span>
+      </div>
+      <div class="st-btn" data-network="sharethis" style="display: inline-block;">
+        <img alt="Sharethis" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+        <span class="st-label">Share</span>
+      </div>
+      <div class="st-btn st-last" data-network="email" style="display: inline-block;">
+        <img alt="Email" src="https://platform-cdn.sharethis.com/img/email.svg">
+        <span class="st-label">Email</span>
+      </div>
+      <div class="st-toggle">
+        <div class="st-left">
+          <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+        </div>
+        <div class="st-right">
+          <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
-<!-- END OUTPUT from 'themes/ci_xy/templates/system/html.html.twig' -->
-

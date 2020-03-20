@@ -1,927 +1,1289 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> 
-
-
-<html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]> 
-
-
-<html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]> 
-
-
-<html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]> 
-
-
-<html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js">
-<!-- InstanceBegin template="/Templates/epidemiology.dwt" codeOutsideHTMLIsLocked="false" -->
-<!--<![endif]-->
-<head>
-<!-- Maine.gov | State Agency Website Template V2.05 -->
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Coronavirus | Airborne Disease Surveillance Epidemiology Program | MeCDC | Maine DHHS</title>
-<!-- InstanceEndEditable -->
-<link href="../../css/index.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="../../css/print.css" rel="stylesheet" type="text/css" media="print" />
-<link href="../../css/mobile.css" rel="stylesheet" type="text/css" media="screen" />
-<!--[if !IE]>-->
-<link type="text/css" rel="stylesheet" media="only screen and (max-width: 480px)" href="https://www.maine.gov/dhhs/mecdc/infectious-disease/css/sphone.css">
-<!-- must be absolute path -->
-<!--<![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="https://www.maine.gov/awt/js5/jquery-1.10.2.min.js"></script>
-<script src="https://www.maine.gov/awt/js5/maine.js"></script>
-<script src="https://www.maine.gov/awt/js/jquery.url.packed.js"></script>
-<!-- InstanceBeginEditable name="head" -->
-<meta name="Description" content="Information about the 2019 coronavirus, or COVID-19, including Maine CDC's response and resources for Maine people and health providers." />
-<meta name="Keywords" content="coronavirus, coronavirus disease 2019, COVID-19, airborne disease" />
-<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-<link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
-<script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery-1.11.1.min.js"></script>
-<script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
-<style>
-div.keyInfo, p.keyInfo {
-	margin: 0 0 18px;
-	padding: 8px;
-	background: #EAF4FF;
-	border: 1px solid #000000;
-}
-div.Blok {
-	min-height: 200px;
-	position: relative;
-}
-div.Blok ul li {
-	margin-left: 120px;
-}
-div.Blok img {
-	float: left;
-	display: block;
-	margin: 0 60px 20px 0;
-}
-.onmypage {
-	font-weight: 700;
-}
-body table.travelAdvisories {
-	width: 99%;
-	border: 1px solid #333;
-	border-collapse: collapse;
-	background: #ffffff;
-}
-table.travelAdvisories tr td {
-	border: 1px solid #333;
-	padding: 4px;
-	font-size: .9em;
-}
-thead tr th {
-	padding: .2em 0;
-}
-div#pageaside {
-	background: none;
-}
-div#pageaside h3 {
-	font-weight: 700;
-	background: #446CBD;
-	color: #fff;
-	padding: .3em;
-	border: none;
-	font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif !important;
-}
-body table.travelAdvisories thead .advisory {
-	text-align: center;
-	font-weight: 700;
-	background: #446CBD;
-	font-size: 1.5em;
-	color: #fff;
-}
-body table.travelAdvisories thead .advisoryDt {
-	background: #CAD5EB;
-	font-size: 1em;
-}
-/*NOT BEING USED TO BREAK LONG URLS IN TABLE
-BUT MAY BE USEFUL LATER */
-.dont-break-out {
-	-ms-word-break: break-all;
-	/* This is the dangerous one in WebKit, as it breaks things wherever */
-	word-break: break-all;
-	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
-}
-
-/* SHOWS THE FIRST 10 CORONAVIRUS NEWS ITEMS */
-div#covidIncWN li {display: none;}
-div#covidIncWN li:nth-child(-n+10) { display: list-item;}
-/* end*/
-
-
-a#covid-19 {display: none;}
-
-/* OVERRIDES FOR JQUERY ACCORDION */
-body .ui-state-default, body .ui-widget-content .ui-state-default, 
-body .ui-widget-header .ui-state-default, body .ui-widget-content  {background-image: none;}
-
-.ui-state-default, .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color: #446CBD;}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {color: #6B4000; border: 1px solid #6B4000;}
-
-
-#Accordion1 {margin-top: 1.7em;}
-
-</style>
-
-<!-- InstanceEndEditable -->
-<!-- InstanceParam name="crumbtrail" type="boolean" value="true" -->
-<!-- InstanceParam name="rightcol" type="boolean" value="true" -->
-<!-- InstanceParam name="firstLevelNav" type="boolean" value="true" -->
-<!-- InstanceParam name="leftcol" type="boolean" value="true" -->
-<!-- InstanceParam name="maincontent-id" type="text" value="maincontent3" -->
-<!-- InstanceParam name="maincontent-opt" type="boolean" value="true" -->
-<!-- InstanceParam name="sectionid" type="text" value="section" -->
-<!-- InstanceParam name="toptabs" type="boolean" value="true" -->
-<!-- InstanceParam name="secondlevelnav" type="boolean" value="false" -->
-<!-- InstanceParam name="sectionbanner" type="boolean" value="false" -->
-<!-- InstanceParam name="sectionbanner-id" type="text" value="sectionbanner2" -->
-<link rel="stylesheet" type="text/css" href="/dhhs/css/dhhs-style-mods.css">
-<!-- dhhs-style-mods.css required -->
-</head>
-<body id="section">
-<!-- Start Skip Navigation: Accessibility Requirement -->
-<ul class="offscreen">
-  <li><a href="#tabs" accesskey="S" title="Skip First Level Navigation: Alt+S">Skip First Level Navigation</a></li>
-  <li><a href="#page-body" accesskey="C" title="Skip All Navigation: Alt+C">Skip All Navigation</a></li>
-</ul>
-<!-- End Skip Navigation: Accessibility Requirement --> 
-<!-- Sliver Start --> 
- <!-- ##################################################################w11n -->
-<!-- insert citizen alert -->
-
-
-<div id="sliver_container"> 
-  <div class="sliver"> 
-    <h2><a href="http://www.maine.gov/">Maine.gov</a></h2>
-      <ul> 
-        <li><a href="http://www.maine.gov/portal/government/state-agencies.php">Agencies</a> |</li>
-        <li><a href="http://www.maine.gov/portal/online_services/index.html">Online Services</a> |</li>
-        <li><a href="http://www.maine.gov/portal/help/index.html">Help</a> |</li>
-        <li><a href="http://www.maine.gov/search/" class="state_search">Search Maine.gov</a></li>
-      </ul>
-
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </div>
-</div>
-
+<html class="no-js" style="height: 100%;" lang="en">
+  <!--InstanceBegin template="/Templates/epidemiology.dwt" codeOutsideHTMLIsLocked="false"-->
+  <!--<![endif]-->
+  <head>
+    <!--Maine.gov | State Agency Website Template V2.05-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--InstanceBeginEditable name="doctitle"-->
+    <title>Coronavirus | Airborne Disease Surveillance Epidemiology Program | MeCDC | Maine DHHS</title>
+    <!--InstanceEndEditable-->
+    <link href="../../css/index.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../../css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="../../css/mobile.css" rel="stylesheet" type="text/css" media="screen">
+    <!--[if !IE]>-->
+    <link type="text/css" rel="stylesheet" media="only screen and (max-width: 480px)" href="https://www.maine.gov/dhhs/mecdc/infectious-disease/css/sphone.css">
+    <!--must be absolute path-->
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script src="https://www.maine.gov/awt/js5/jquery-1.10.2.min.js"></script>
+    <script src="https://www.maine.gov/awt/js5/maine.js"></script>
+    <style type="text/css">.hide-label { position: absolute; left: -999px;}</style>
+    <script src="https://www.maine.gov/awt/js/jquery.url.packed.js"></script>
+    <!--InstanceBeginEditable name="head"-->
+    <meta name="Description" content="Information about the 2019 coronavirus, or COVID-19, including Maine CDC's response and resources for Maine people and health providers.">
+    <meta name="Keywords" content="coronavirus, coronavirus disease 2019, COVID-19, airborne disease">
+    <link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+    <script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="/dhhs/mecdc/infectious-disease/jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+    <style>
+  div.keyInfo, p.keyInfo {
+  	margin: 0 0 18px;
+  	padding: 8px;
+  	background: #EAF4FF;
+  	border: 1px solid #000000;
+  }
+  div.Blok {
+  	min-height: 200px;
+  	position: relative;
+  }
+  div.Blok ul li {
+  	margin-left: 120px;
+  }
+  div.Blok img {
+  	float: left;
+  	display: block;
+  	margin: 0 60px 20px 0;
+  }
+  .onmypage {
+  	font-weight: 700;
+  }
+  body table.travelAdvisories {
+  	width: 99%;
+  	border: 1px solid #333;
+  	border-collapse: collapse;
+  	background: #ffffff;
+  }
+  table.travelAdvisories tr td {
+  	border: 1px solid #333;
+  	padding: 4px;
+  	font-size: .9em;
+  }
+  thead tr th {
+  	padding: .2em 0;
+  }
+  div#pageaside {
+  	background: none;
+  }
+  div#pageaside h3 {
+  	font-weight: 700;
+  	background: #446CBD;
+  	color: #fff;
+  	padding: .3em;
+  	border: none;
+  	font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  body table.travelAdvisories thead .advisory {
+  	text-align: center;
+  	font-weight: 700;
+  	background: #446CBD;
+  	font-size: 1.5em;
+  	color: #fff;
+  }
+  body table.travelAdvisories thead .advisoryDt {
+  	background: #CAD5EB;
+  	font-size: 1em;
+  }
+  /*NOT BEING USED TO BREAK LONG URLS IN TABLE
+  BUT MAY BE USEFUL LATER */
+  .dont-break-out {
+  	-ms-word-break: break-all;
+  	/* This is the dangerous one in WebKit, as it breaks things wherever */
+  	word-break: break-all;
+  	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+  	-ms-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-webkit-hyphens: auto;
+  	hyphens: auto;
+  }
   
-<!-- Sliver End -->
-<div id="container"> 
-  <div class="header">
-  <div class='logo-replace'>
-    <h1>Division of Disease Surveillance</h1>
-    <p class="officeoftagline">Maine Center for Disease Control &amp; Prevention</p>
-    <p class="mcedtagline">A Division of the Maine Department of Health and Human Services</p>
-  </div>
-  <div class="header_nav_search">
-    <ul id="vtopnav" class="nav">
-      <li><a href="/dhhs/mecdc/infectious-disease/epi/contact.shtml">Contact EPI</a> |</li>
-      <li><a href="/dhhs/mecdc/press-releases.shtml">News</a> |</li>
-      <li><a href="/dhhs/mecdc/online.shtml">Online services</a> |</li>
-      <li><a href="/dhhs/mecdc/navtabs/data.shtml">Publications</a> |</li>
-      <li><a href="/dhhs/subject_index.shtml">Subject index</a></li>
+  /* SHOWS THE FIRST 10 CORONAVIRUS NEWS ITEMS */
+  div#covidIncWN li {display: none;}
+  div#covidIncWN li:nth-child(-n+10) { display: list-item;}
+  /* end*/
+  
+  
+  a#covid-19 {display: none;}
+  
+  /* OVERRIDES FOR JQUERY ACCORDION */
+  body .ui-state-default, body .ui-widget-content .ui-state-default, 
+  body .ui-widget-header .ui-state-default, body .ui-widget-content  {background-image: none;}
+  
+  .ui-state-default, .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color: #446CBD;}
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {color: #6B4000; border: 1px solid #6B4000;}
+  
+  
+  #Accordion1 {margin-top: 1.7em;}
+  </style>
+    <!--InstanceEndEditable-->
+    <!--InstanceParam name="crumbtrail" type="boolean" value="true"-->
+    <!--InstanceParam name="rightcol" type="boolean" value="true"-->
+    <!--InstanceParam name="firstLevelNav" type="boolean" value="true"-->
+    <!--InstanceParam name="leftcol" type="boolean" value="true"-->
+    <!--InstanceParam name="maincontent-id" type="text" value="maincontent3"-->
+    <!--InstanceParam name="maincontent-opt" type="boolean" value="true"-->
+    <!--InstanceParam name="sectionid" type="text" value="section"-->
+    <!--InstanceParam name="toptabs" type="boolean" value="true"-->
+    <!--InstanceParam name="secondlevelnav" type="boolean" value="false"-->
+    <!--InstanceParam name="sectionbanner" type="boolean" value="false"-->
+    <!--InstanceParam name="sectionbanner-id" type="text" value="sectionbanner2"-->
+    <link rel="stylesheet" type="text/css" href="/dhhs/css/dhhs-style-mods.css">
+    <!--dhhs-style-mods.css required-->
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
+  </head>
+  <body id="section" style="position: relative; min-height: 100%; top: 0px;">
+    <!--Start Skip Navigation: Accessibility Requirement-->
+    <ul class="offscreen">
+      <li>
+        <a href="#tabs" accesskey="S" title="Skip First Level Navigation: Alt+S">Skip First Level Navigation</a>
+      </li>
+      <li>
+        <a href="#page-body" accesskey="C" title="Skip All Navigation: Alt+C">Skip All Navigation</a>
+      </li>
     </ul>
-    <div class="header_search" role="search">
-      <form method="get" action="https://www.maine.gov/search">
-        <label for="inlabel" class="hide-label">Search EPI </label>
-        <input type="text" id="inlabel" name="q" size="24" />
-        <input type="submit" value="Search" />
-        <input type="hidden" name="as_sitesearch" value="https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/" />
-        <input type="hidden" name="site" value="test_collection" />
-        <input type="hidden" name="output" value="xml_no_dtd" />
-        <input type="hidden" name="client" value="test_collection" />
-        <input type="hidden" name="proxystylesheet" value="test_collection" />
-      </form>
-    </div>
-  </div>
-<!--CLOSING DIV IS ON THE TEMPLATE. OK TO LEAVE THIS UNBALANCED. -->
- 
-    
-  </div>
-  <!-- end header --> 
-  
-  <div id="top_nav" class="clearfix" role="navigation">
-<ul id="tabs">
-<li><a href="https://www.maine.gov/dhhs/mecdc/" id="tabhome">Maine CDC Home</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/topics.htm" id="tabtopic">Health Topics A-Z</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/data.shtml" id="tabdata">Data/Reports</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/providers.shtml" id="tabprovider">For Health Care Providers</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/business-work.shtml" id="tabwork">For Businesses</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/homes.shtml" id="homeowner">For Homeowners/Renters</a></li>
-<li><a href="https://www.maine.gov/dhhs/mecdc/navtabs/programs.shtml" id="tabprograms">Divisions/Programs</a></li>
-</ul>
-</div> 
-  <!-- end top_nav -->
-  
-  <div id="content" class="clearfix">
-    <div class="crumb_trail">
-      <div style="float:right"> 
-        <script src="https://www.maine.gov/dhhs/js/date.js"></script>
-        <noscript>
-        JavaScript that displays the current date.
-        </noscript>
-      </div>
-      <p><a href="https://www.maine.gov/dhhs/">DHHS</a> &rarr; <a href="https://www.maine.gov/dhhs/mecdc/">MeCDC</a> &rarr; <a href="https://www.maine.gov/dhhs/mecdc/infectious-disease/index.htm">Disease Surveillance</a> &rarr; <a href="https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/index.shtml">Epidemiology</a> &rarr; <!-- InstanceBeginEditable name="breadcrumbs" --><a href="index.shtml">Airborne and Direct Contact Diseases</a> &rarr; Coronavirus<!-- InstanceEndEditable --> </p>
-    </div>
-    <!-- end crumb_trail --> 
-    
-    <div id="sectionnav" class="nav" role="navigation">
-  <h3>EPI Information</h3>
-  <ul>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/disease/index.shtml">A - Z Index of Epidemiology Diseases</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/contact.shtml">Contact Us</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/disease-reporting/index.shtml">Disease Reporting</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/syndromic/index.shtml">Syndromic - drug overdose data</a></li>
-    
-    <li><a href="/dhhs/mecdc/infectious-disease/order-form-wn.shtml">Orderable Materials</a></li>
-    <li><a href="https://gateway.maine.gov/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2ffolder%5b%40name%3d%27CDC%20EOHP%20EPHT%20AVR%27%5d%2freportView%5b%40name%3d%27Maine%20Environmental%20Public%20Health%20Tracking%20%28EPHT%29%20Network%20-%20Public%20Data%20Portal%27%5d&cv.header=false&cv.toolbar=false" target="_blank">Maine Tracking Network: Tickborne Diseases</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/publications/index.shtml">Publications</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/data-request.shtml">Request for Data</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/school-curriculum/index.shtml">School Curricula</a></li>
-	<li><a href="/dhhs/mecdc/infectious-disease/epi/vector-borne/train-trainer/zoonotic-disease-train-the-trainer.shtml">Zoonotic Disease Train the Trainer</a></li>
-    <li><a href="https://maine.gov/dhhs/mecdc/infectious-disease/epi/shm/index.shtml">School Health</a></li>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/videos.shtml">Videos</a></li>
-  </ul>
-  <h3>Information for</h3>
-  <ul>
-    <li><a href="/dhhs/mecdc/infectious-disease/epi/providers/laborators.shtml">Laboratories</a></li>
-  </ul>
-  <ul>
-    <li>
-      <div style="text-align:center"><a href="https://www.211maine.org/"><img src="/dhhs/mecdc/infectious-disease/images/211logo.gif" alt="211 logo" width="75" height="40" /><br />
-        Social Services Help</a></div>
-    </li>
-  </ul>
-</div>
- 
-    
-    <!-- end sectionnav --> 
-    <span id="page-body"></span>
-    <div id="maincontent3" class="article" role="main"> <!-- InstanceBeginEditable name="maincontent2" -->
-      <h1>Novel Coronavirus 2019 (COVID-19)</h1>
-      <p style="padding: 4px; background: #F8E38D; font-style: italic;">Maine CDC will continue to regularly update this page. For additional resources and up-to-date information, please visit the <a href="https://www.cdc.gov/coronavirus/2019-nCoV/summary.html" style="color: #2F5EBC;" target="_blank">U.S. CDC's COVID-19 website</a>.</p>
-      <p>The Maine CDC is  responding to an outbreak of the respiratory illness called COVID-19, caused  by a novel (new) coronavirus. We urge Maine people to practice good hand hygiene, cover coughs and sneezes, and stay home if you are sick. If you are concerned that you have been exposed to COVID-19, call your health care provider, who will determine whether you should be tested and, as appropriate, submit a sample for testing.      </p>
-      <p>Read Maine CDC's COVID-19 Factsheet:</p>
-      <p> <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Acholi_Final.pdf">Acoli</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Arabic_Final.pdf"> عربي</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">English</a>,  
-        <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_French_Final.pdf">Français</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Haitian_Final.pdf">Kreyòl Ayisyen</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Khmer_Final.pdf">ខ្មែរ</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Kirundi_Final.pdf">Ikirundi</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Lingala_Final.pdf">Lingala</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Portuguese_Final.pdf">Português</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Somali_Final.pdf">Soomaali</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Spanish_Final.pdf">Español</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Swahili_Final.pdf">Kiswahili</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Vietnamese_Final.pdf">Tiếng Việt</a></p>
-	
- 
-      <h2 class="h1">Situation in Maine</h2>
-      <p>The table below is updated once each day Monday through Friday by 12:00 PM EDT. </p>
-      <table class="travelAdvisories">
-        <thead>
-          <tr>
-            <th colspan="7" class="advisory">Maine COVID-19  Testing Data</th>
-          </tr>
-          <tr>
-            <th colspan="7" class="advisoryDt">Updated: March 19, 2020 at 12:15 PM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="width: 33%;"><b> Confirmed Cases<sup>1</sup></b></td>
-            <td style="width: 33%;"><b> Presumptive Positive Cases<sup>2</sup></b></td>
-            <td style="width: 33%;"><b>Negative Tests<sup>3</sup></b></td>
-          </tr>
-          <tr>
-            <td style="width: 33%;">42</td>
-            <td style="width: 33%;">10</td>
-			  <td style="width: 33%;">2,004</td>
-          </tr>
-        </tbody>
-		  
-      </table>
-
-	  <div id="Accordion1">
-      
-         
-      
-<h3><a href="#">View  Cases  by County</a></h3>
-<div>
-  <table class="travelAdvisories">
-        <thead>
-          <tr>
-            <th colspan="5" class="advisoryDt">Confirmed, Presumptive and Recovered Case Counts by County</th>
-          </tr>
-        </thead>
-		
-        <tbody>
-          <tr>
-			  <td style="width: 25%;"><b>County</b></td>
-			  <td style="width: 25%;"><b>Confirmed</b></td>
-		    <td style="width: 25%;"><b>Presumptive Positive</b></td>
-			      <td style="width: 25%;"><b>Recovered</b></td>
-          </tr>
-			  <tr>
-			  <td style="width: 25%;">Androscoggin</td>
-			  <td style="width: 25%;">1</td>
-		    <td style="width: 25%;">2</td>
-				  <td style="width: 25%;">1</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Aroostook</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Cumberland</td>
-			  <td style="width: 25%;">21</td>
-		    <td style="width: 25%;">4</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Franklin</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Hancock</td>
-			  <td style="width: 25%;">1</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Kennebec</td>
-			  <td style="width: 25%;">3</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Knox</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Lincoln</td>
-			  <td style="width: 25%;">3</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Oxford</td>
-			  <td style="width: 25%;">1</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Penobscot</td>
-			  <td style="width: 25%;">1</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Piscataquis</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Sagadahoc</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Somerset</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Waldo</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Washington</td>
-			  <td style="width: 25%;">0</td>
-		    <td style="width: 25%;">0</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">York</td>
-			  <td style="width: 25%;">2</td>
-		    <td style="width: 25%;">1</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-				  <tr>
-			  <td style="width: 25%;">Unknown</td>
-			  <td style="width: 25%;">9</td>
-		    <td style="width: 25%;">3</td>
-					  <td style="width: 25%;">&nbsp;</td>
-          </tr>
-	    </tbody>
-      </table>
-</div>
-<h3><a href="#">View Confirmed and Presumptive Cases by Age</a></h3>
-<div>
-  <table class="travelAdvisories">
-    <thead>
-      <tr>
-        <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Age</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="width: 33%;"><b> Age Range<sup></sup></b></td>
-        <td style="width: 33%;"><b>Count<sup></sup></b></td>
-        <td style="width: 33%;"><b>Percentage<sup></sup></b></td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">&lt;20</td>
-        <td style="width: 33%;">2</td>
-        <td style="width: 33%;">3.8%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">20s</td>
-        <td style="width: 33%;">3</td>
-        <td style="width: 33%;">5.8%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">30s</td>
-        <td style="width: 33%;">6</td>
-        <td style="width: 33%;">11.5%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">40s</td>
-        <td style="width: 33%;">7</td>
-        <td style="width: 33%;">13.5%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">50s</td>
-        <td style="width: 33%;">11</td>
-        <td style="width: 33%;">21.2%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">60s</td>
-        <td style="width: 33%;">12</td>
-        <td style="width: 33%;">23.1%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">70s</td>
-        <td style="width: 33%;">5</td>
-        <td style="width: 33%;">9.6%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">80+</td>
-        <td style="width: 33%;">6</td>
-        <td style="width: 33%;">11.5%</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<h3><a href="#">View Confirmed and Presumptive Cases by Sex</a></h3>
-		  <div>
-		   
-			  <table class="travelAdvisories">
-    <thead>
-      <tr>
-        <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Sex</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="width: 33%;"><b> Sex<sup></sup></b></td>
-        <td style="width: 33%;"><b> Count<sup></sup></b></td>
-        <td style="width: 33%;"><b>Percentage<sup></sup></b></td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">Male</td>
-        <td style="width: 33%;">22</td>
-        <td style="width: 33%;">42.3%</td>
-      </tr>
-      <tr>
-        <td style="width: 33%;">Female</td>
-        <td style="width: 33%;">30</td>
-        <td style="width: 33%;">57.7%</td>
-      </tr>
-    </tbody>
-  </table>
-			 
-	    </div>
-	  </div>
-		&nbsp;
-
-				<p><sup>1</sup><b>Confirmed Cases:</b> This now includes cases formerly identified as presumptive positive. This classification applies to samples sent by a health provider directly to HETL that test positive and to samples from non-governmental labs for which HETL validates positive results. </p>
-	  <p><sup>2</sup><b>Presumptive Positive Cases:</b> These are samples that test positive at non-governmental labs and are sent to HETL for validation.      </p>
-      <p><sup>3</sup><b>Negative Tests: </b>This number represents negative tests from state, reference, or commerical laboratories, or at US CDC. </p>
-            
-      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-      <h2 class="h1">News Releases</h2>
-      <div id="covidIncWN">
-         <ul style="margin-left: 15px; padding: 5px; margin-top: 0"><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2227379">Maine DHHS Acts to Ensure Access to Health Care, Food, and Basic Necessities While Protecting the Health of the Public and Employees</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2223289">Maine CDC Announces More COVID-19 Results</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2223288">Maine CDC Reports Additional COVID-19 Results</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2220093">Preliminary Testing Indicates Two New Presumptive Positive COVID-19 Cases in Maine</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2220078">Governor Mills, Maine CDC Announce First Presumptive Positive Case and Additional Steps to Respond to COVID-19</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2218094">211 now available to answer general questions about COVID-19</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2208307">Maine CDC Lab Testing for COVID-19</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2204263">Maine to Begin Testing for COVID-19 at State Lab</a></li><li style="padding: 0; font-size:.9em;"><a href="https://www.maine.gov/dhhs/press-release.shtml?id=2177142">Maine continues to prepare for coronavirus</a></li></ul>
-
-      </div>
-      <!-- # inc lude virtual="/tools/whatsnew/index.php?topic=DHS+Press+Releases&v=dhhs_list&topic-content=coronavirus&orderby=date&desc=1"--> 
-      <!-- insert What's New link here -->
-      
-      
-      <h3>Office of Governor Janet T. Mills</h3>
- <li><a href="https://www.maine.gov/governor/mills/news/governor-mills-takes-further-steps-respond-covid-19-protect-health-and-safety-maine-people">Governor Mills Takes Further Steps to Respond to COVID-19, Protect Health and Safety of Maine People</a></li>
-		<li><a href="https://www.maine.gov/governor/mills/news/governor-mills-legislature-spearhead-emergency-legislative-package-respond-covid-19-2020-03-17">Governor Mills, Legislature Spearhead Emergency Legislative Package to Respond to COVID-19</a></li>
-		<li><a href="https://www.maine.gov/governor/mills/news/governor-mills-issues-declaration-protect-maine-people-against-price-gouging-2020-03-17">Governor Mills Issues Declaration to Protect Maine People Against Price-Gouging</a></li>
-		<h2 class="h1"></a>Travel</h2>
-      <table class="travelAdvisories">
-        <thead>
-          <tr>
-            <th colspan="2" class="advisory">Travel Advisories</th>
-          </tr>
-          <tr>
-            <th colspan="2" class="advisoryDt">Updated: March 19, 2020 at 12:00 PM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-			  <td style="width: 24%;"><b>Europe</b></td>
-			  <td style="width: 72%;"><b>Level 3:</b> avoid all nonessential travel</td>
-          </tr>
-          <tr>
-            <td style="width: 24%;"><b>China</b></td>
-            <td style="width: 72%;"><b>Level 3:</b> avoid all nonessential travel</td>
-          </tr>
-          <tr>
-            <td style="width: 24%;"><b>South Korea</b></td>
-            <td style="width: 72%;"><b>Level 3:</b> avoid all nonessential travel</td>
-          </tr>
-          <tr>
-           
-          </tr>
-          <tr>
-            <td style="width: 24%;"><b>Iran</b></td>
-            <td style="width: 72%;"><b>Level 3:</b> avoid all nonessential travel</td>
-          </tr>
-          <tr>
-            <td style="width: 24%;"><b>Global</b></td>
-            <td style="width: 72%;"><b>Level  2:</b> older adults or those who have chronic medical conditions consider postponing travel</td>
-          </tr>
-         
-          <tr>
-            <td style="width: 99%;" colspan="2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">U.S. CDC: Coronavirus Disease 2019 Information for Travel</a><br />
-              <span style="margin-top: .4em; display: inline-block;"><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html" target="_blank">U.S. State Department: Travel Advisories</a></span></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><b>Stay home for 14 days from the time you left an area with widespread, ongoing community spread (Level 3 countries) and practice social distancing.</b> <em>If you recently traveled to a country with a COVID-19 outbreak and feel sick with fever, cough, or difficulty breathing within 14 days after you left, visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/after-travel-precautions.html" target="_blank">U.S. CDC's travel information page</a> for guidance.</em></p>
-      <p><b>Healthcare Providers</b>: U.S. CDC updated the <a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/clinical-criteria.html" target="_blank">definition of persons under investigation</a> (PUI) on 3/4/2020. See further resources below. </p>
-      
-      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-      <h2 class="h1">Frequently Asked Questions</h2>
-      <p><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Read the full List of Frequently Asked Questions (PDF).</a></p>
-      
-
-
-<h3>What is COVID-19?</h3>
-      <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/index.html" target="_blank">COVID-19</a> is a novel (new) coronavirus which was first detected in December 2019 in Wuhan City, Hubei Province, China and has now been detected in <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html#map" target="_blank">other countries</a>, including the <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">United States</a>.</p>
-      <p>For some, the respiratory virus causes mild symptoms like the common cold or influenza (flu), for others it can cause severe pneumonia that requires medical care or hospitalization.</p>
-      <p>The virus is named "SARS-CoV-2" and the disease it causes is named "coronavirus disease 2019" (abbreviated "COVID-19").</p>
-      
-
-
-<h3>What are the Symptoms?</h3>
-      <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html" target="_blank">Symptoms of COVID-19</a> may include:</p>
-      <ul>
-        <li>Fever</li>
-        <li>Cough</li>
-        <li>Difficulty breathing </li>
-        <li>Sore throat (in some patients)</li>
-      </ul>
-      <p><i>Symptoms may appear <strong>2-14 days after exposure.</strong></i></p>
-      <p>Most patients experience mild symptoms and can recuperate at home, but others, particularly those with underlying medical conditions, may experience more severe respiratory illness.</p>
-      
-
-
-<h3>How does it spread? </h3>
-      <p>The <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html" target="_blank">virus appears to spread</a> in similar ways to influenza (flu) and the common cold. This may include spreading through:</p>
-      <ul>
-        <li>The air by coughing and sneezing</li>
-        <li>Close personal contact, such as touching or shaking hands</li>
-        <li>Touching an object or surface with the virus on it, then touching your mouth, nose, or eyes</li>
-      </ul>
-      <p>The virus can spread from person-to-person and in some locations there is apparent community spread, meaning some people are infected and are not sure how or where they became infected.</p>
-      
-
-
-<h3>How can I help to prevent the spread?</h3>
-      <p>There are simple steps you can take <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html" target="_blank">to reduce the possible spread</a> of COVID-19 and other illnesses such as influenza and the common cold:</p>
-      <ol>
-        <li>Wash your hands often with soap and water for at least 20 seconds or use alcohol-based hand sanitizer</li>
-        <li>Avoid close contact with people who are sick</li>
-        <li>Avoid touching your eyes, nose, and mouth with unwashed hands</li>
-        <li>Stay home while you're sick and avoid close contact with others</li>
-      </ol>
-      <p>Currently there is no vaccine available to prevent the spread of COVID-19.</p>
-      
-
-
-<h3>What should I do if I have symptoms?</h3>
-      <p>Call ahead to a health care professional if you develop a fever and symptoms of respiratory illness, such as cough or difficulty breathing. Tell your health care professional about <strong>any</strong> recent travel or contact <strong>with other COVID-19 cases</strong>. Your healthcare professional will work with Maine CDC to determine if you need to be tested for COVID-19. More information is available on the U.S. CDC's <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/steps-when-sick.html" target="_blank">What You Should Know page</a>.</p>
-      
-
-
-<h3>What is the situation in the U.S.?</h3>
-      <p>For the general American public, who are unlikely to be exposed to this virus at this time, the immediate health risk from COVID-19 is considered low.</p>
-      <ul>
-        <li>People in communities where ongoing community spread with the virus that causes COVID-19 has been reported are at elevated though still relatively low risk of exposure.</li>
-        <li>Health care workers caring for patients with COVID-19 are at elevated risk of exposure.</li>
-        <li>Close contacts of persons with COVID-19 also are at elevated risk of exposure.</li>
-        <li>Travelers returning from affected <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">international locations</a> where community spread is occurring also are at elevated risk of exposure.</li>
-      </ul>
-      <p>U.S. CDC has developed <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/assess-manage-risk.html" target="_blank">guidance to help in the risk assessment and management</a> of people with potential exposures to COVID-19 and provided an updated <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/care-booklet.html" target="_blank">Check And Report Everyday booklet</a> for China travelers.</p>
-      
-
-
-<h3>Additional Coronavirus Resources for the Public</h3>
-      <table class="travelAdvisories">
-        <thead>
-          <tr>
-            <th colspan="5" class="advisory">Additional Resources and Translated Materials</th>
-          </tr>
-          <tr>
-            <th colspan="5" class="advisoryDt">Updated: March 19, 2020 at 12:00 PM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="width: 80%;"><b>Document/Resource<sup></sup></b></td>
-            <td style="width: 10%;"><b>Source<sup></sup></b></td>
-            <td style="width: 10%;"><b>Type<sup></sup></b></td>
-          </tr>
-          <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Full List of Frequently Asked Questions</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-            <td style="width: 10%;">PDF</td>
-          </tr>
-          <tr>
-            <td style="width: 80%;">COVID-19 Factsheet: <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Acholi_Final.pdf">Acoli</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Arabic_Final.pdf"> عربي</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">English</a>,  
-      <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_French_Final.pdf">Français</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Haitian_Final.pdf">Kreyòl Ayisyen</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Khmer_Final.pdf">ខ្មែរ</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Kirundi_Final.pdf">Ikirundi</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Lingala_Final.pdf">Lingala</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Portuguese_Final.pdf">Português</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Somali_Final.pdf">Soomaali</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Spanish_Final.pdf">Español</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Swahili_Final.pdf">Kiswahili</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Vietnamese_Final.pdf">Tiếng Việt</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-            <td style="width: 10%;">PDF</td>
-          </tr>
-          <tr>
-            <td style="width: 80%;">Stop the Spread of Germs Factsheet: <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_arabic.pdf">عربي</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_english.pdf">English</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_farsi.pdf">فارسی</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_french.pdf">Français</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_pashto.pdf">پښتو</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_russian.pdf">pусский</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_spanish.pdf">Español</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_swahili.pdf">Kiswahili</a>, <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_ukrainian.pdf">Українська</a></td>
-            <td style="width: 10%;">U.S. CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-			   <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-AccessingTestingForUninsured-3-18-20.pdf" target="_blank">Accessing COVID-19 Testing and Care for People Who Are Uninsured</a></td>
-			   <td style="width: 10%;">Maine CDC</td>
-			   <td style="width: 10%;">PDF</td>
-	      </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-for-Large-Gatherings.pdf" target="_blank">Guidance on Non-Essential Large Gatherings</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-				 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-        </tbody>
-      </table>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-      <h2 class="h1">Interim   Guidance for Healthcare Professionals</h2>
-      <p>Healthcare providers should obtain a detailed travel history for patients with fever and acute respiratory illness. Healthcare providers <strong>no longer need to call Maine CDC about when they test a patient</strong> for COVID-19.  On February 28, U.S. CDC issued a Health Alert Network (HAN): <a href="https://emergency.cdc.gov/han/2020/han00428.asp" target="_blank">Update and Interim Guidance on Outbreak of COVID-19</a>.</p>
-      <p>Limited information is available to characterize the spectrum of clinical illness associated with COVID-2019. No vaccine or specific treatment for COVID-19 infection is available; care is supportive.</p>
-      <p>For more information, visit <a href="https://www.cdc.gov/coronavirus/2019-nCoV/clinical-criteria.html" target="_blank">U.S. CDC's webpage on evaluating and reporting a PUI</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control.html" target="_blank">U.S. CDC's webpage on infection control</a>.</p>
-      
-<h3>Additional Coronavirus Resources for Providers</h3>
- <table class="travelAdvisories">
-        <thead>
-          <tr>
-            <th colspan="5" class="advisory">Additional Resources for Providers</th>
-          </tr>
-          <tr>
-            <th colspan="5" class="advisoryDt">Updated: March 19, 2020 at 12:00 PM</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="width: 80%;"><b>Document/Resource<sup></sup></b></td>
-            <td style="width: 10%;"><b>Source<sup></sup></b></td>
-            <td style="width: 10%;"><b>Type<sup></sup></b></td>
-          </tr>
-          <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-Guidance-COIVD-19-Testing.pdf">Updated Guidance for COVID-19 Testing - Health Alert - March 16, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-            <td style="width: 10%;">PDF</td>
-          </tr>
-          <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/ActionsToTakeCommunityTransmission-15March.pdf">Actions to Take Now for Community Transmission of COVID-19 - Health Alert - March 15, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Guidance-CruiseShips-15March.pdf">Guidance About Global Travel on Cruise Ships - March 15, 2020</a></td>
-            <td style="width: 10%;">U.S. CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-				 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-Guidance-12March.pdf">Updated Guidance for COVID-19 - Health Alert - March 12, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-LTCF.pdf">First Presumptive COVID-19 Case in Maine - Health Alert - March 12, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-				 <tr>
-            <td style="width: 80%;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/php/risk-assessment.html" target="_blank">Interim US   Risk Assessment and Public Health Management of Persons with Potential 2019 Novel Coronavirus Exposure in Travel-Associated or Community Settings</a></td>
-            <td style="width: 10%;">U.S. CDC</td>
-		    <td style="width: 10%;">Web</td>
-          </tr>
-				 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-COVID-19-Testing-Criteria-Public-Health-Advisory-030520.pdf">Updated COVID-19 Testing Criteria Public - Health Alert - March 5, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Community-Spread-Public-Health-Advisory-030920.pdf">Preparing for Community Transmission of COVID-19 in Maine - Health Alert - March 9, 2020</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID19-Screening-Checklist-SNF-Visitors.pdf">Screening Checklist for Skilled Nursing Facilities</a></td>
-            <td style="width: 10%;">AHCA and NCAL</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/SNF-Guidance-Preventing-COVID19.pdf">Guidance for Preventing COVID-19 From Entering Your Skilled Nursing Center</a></td>
-            <td style="width: 10%;">AHCA and NCL</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/CMS-QSO-20-14-NH-Revised.pdf">Guidance for Infection Control and Prevention of COVID-19 in Nursing Homes</a></td>
-            <td style="width: 10%;">CMS</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-			 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/AL-Guidance-Preventing-COVID19.pdf">Guidance for Preventing COVID-19 From Entering Your Assisted Living Facility</a></td>
-            <td style="width: 10%;">AHCA and NCAL</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-				 <tr>
-            <td style="width: 80%;"><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-LTCF.pdf">Guidance for Long-Term Care Facilities</a></td>
-            <td style="width: 10%;">Maine CDC</td>
-		    <td style="width: 10%;">PDF</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- InstanceEndEditable --> </div>
-    <!-- end maincontent -->
-    
-    <div id="pageaside" class="aside"> <!-- InstanceBeginEditable name="rightnav" -->
-      
-
-
-<h3>More  Information</h3>
-      <ul>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">For travelers</a> </li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/guidance-for-schools.html" target="_blank">For schools</a> </li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-ihe-response.html" target="_blank">For higher ed institutions</a> (including <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/student-foreign-travel.html" target="_blank">foreign  exchange programs</a>)</li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/pregnant-women.html" target="_blank">For pregnant women and children</a></li>
-		<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html" target="_blank">For older adults</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/guidance-business-response.html" target="_blank">For  businesses</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-law-enforcement.html" target="_blank">For law  enforcement</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html" target="_blank">For communities</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/php/public-health-communicators-get-your-community-ready.html" target="_blank">For public  health communicators</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/guidance-community-faith-organizations.html" target="_blank">For faith-based organizations</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/homeless-shelters/index.html" target="_blank">For homeless shelters</a></li>
-        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-GuidanceList-03MAR20.pdf">COVID-19 - GuidanceList - 03/04/2020 (PDF)</a></li>
-      </ul>
-      
-
-
-<h3>Guidance for Healthcare Providers</h3>
-      <ul>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/index.html" target="_blank">Current  Interim Guidance</a> <br />
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/healthcare-facilities/index.html" target="_blank">For Health and Long-Term Care  Facilities</a></li>
-      </ul>
-      
-
-
-<h3>Maine Specific Resources </h3>
-      <ul>
-      <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-AccessingTestingForUninsured-3-18-20.pdf" target="_blank">Accessing COVID-19 Testing and Care for People Who Are Uninsured (PDF)</a></li>
-        <li><a href="https://www.maine.gov/doe/covid-19" target="_blank">Maine Department of Education Coronavirus Updates</a></li>
-        <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">Fact Sheet (PDF)</a></li>
-		     <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Full List of Frequently Asked Questions (PDF)</a></li>
-		   <li><a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a></li>
-      </ul>
-      <p>If you are a Maine health care professional and have questions about COVID-19, call: <b>1-800-821-5821</b></p>
-      <p>If you are a Maine school professional and have questions about COVID-19, call (207) 624-6694 or email <a href="mailto:DOESchoolandStudentSupports@maine.gov">DOESchoolandStudentSupports@maine.gov</a>.</p>
-      <script type="text/javascript">
-$(function() {
-	$( "#Accordion1" ).accordion({
-		heightStyle:"content",
-		collapsible:true,
-		icons:{activeHeader: "ui-icon-minus", header: "ui-icon-plus"},
-		animate:{easing: "swing"}
-	}); 
-});
-      </script>
-    <!-- InstanceEndEditable --> </div>
-    <!-- end pageaside --> 
-  </div>
-  <!-- end content id --> 
-  <!-- mecdc-footer-inc.shtml -->
-
-<div id="pagefooter" class="clearfix">
-  <div class="footer_column footCol1">
-  <p style="float:left;position:relative; text-align: center;"><a href="https://www.maine.gov/sos/bmv/donatelife/"> <img src="/dhhs/mecdc/images/donate.gif" alt="Maine donate life logo" style="width: 70px; margin-right:25px;border:none" /><br />
-    Register to be an Organ Donor</a></p>
-    <hr style="clear:both; color:#CCC" />
-    <p class="onmypage"><a href="/dhhs/"> <img src="/dhhs/images/dhhs-logo-footer_032619.png" alt="DHHS footer logo" /></a></p>
-    <p>Copyright &copy; <span id="theFullYear"></span>.<br />
-      All rights reserved.</p>
-  </div>
-  <div class="footer_column footCol2">
-    <h4>Information</h4>
-    <ul>
-      <li><a href="https://www.maine.gov/portal/">Maine.gov</a></li>
-      <li><a href="https://www.maine.gov/portal/policies/">Site Policies</a></li>
-      <li><a href="/dhhs/civil-rights-compliance/language-assistance-services.shtml">Language Assistance Services</a></li>
-      <li><a href="/dhhs/contactus.shtml#comments_questions">Comments/Questions</a></li>
-      <li><a href="https://www.maine.gov/portal/policies/accessibility.html">Accessibility Policy</a></li>
-      <li><a href="/dhhs/privacy/">Privacy</a></li>
-    </ul>
-  </div>
-  <div class="footer_column footCol3">
-    <h4>Tools</h4>
-    <ul>
-      <li>If content on this page is inaccessible, and you need the information in a different format, visit the <a href="/dhhs/tools.shtml" aria-label="Assistive tools" title="Assistive tools">DHHS Tools page</a> for assistance.</li>
-      <li><a href="https://public.govdelivery.com/accounts/MEHHS/subscriber/topics?qsp=MEHHS_2">Subscribe</a> to Public Health related topics.</li>
-    </ul>
-  </div>
-  <div class="footer_column footCol4">
-    <h4>DHHS</h4>
-    <ul>
-      <li><a href="/dhhs/">DHHS Home</a></li>
-      
-      <!-- NON-DESCRIMINATION NOTICE IS REQUIRED ON ALL PAGE FOOTERS. DO NOT DELETE -->
-      <li>Non-Discrimination Notice<br />
-        <a href="/dhhs/documents/Nondiscrimination_Notice_June%202017.docx" style="margin-left: 10px;">Word</a> | <a href="/dhhs/documents/Nondiscrimination_Notice_June%202017.pdf" aria-label="Non-discrimination Notice June 2017 (PDF)" title="Non-discrimination Notice June 2017 (PDF)">PDF</a> </li>
-      
-      
-    </ul>
-  </div>
-  <div class="footer_column footCol5">
-    <h4>MeCDC Offices/Divisions</h4>
-    <ul>
-      <li><a href="/dhhs/mecdc/infectious-disease/index.htm">Division of Disease Surveillance</a></li>
-      <li><a href="/dhhs/mecdc/public-health-systems/index.htm">Division of Public Health Systems</a></li>
-      <li><a href="/dhhs/mecdc/environmental-health/index.shtml">Division of Environmental Health</a></li>
-      <li><a href="/dhhs/mecdc/population-health/index.htm">Division of Disease Prevention</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- dhhs-all-footer-script.js is required. do not delete --> 
-<script src="/dhhs/js/dhhs-all-footer-script.js"></script> 
- 
-  <!-- end footer_column --> 
-  <!-- end pagefooter id --> 
-  <!-- end container id --></div>
-   <!-- Automatic GA insert w11 -->  
-  <script type="text/javascript">
-  
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31309917-1']);
-  _gaq.push(['_setDomainName', 'maine.gov']);
-  _gaq.push(['_trackPageview']);
-  
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  
+    <!--End Skip Navigation: Accessibility Requirement-->
+    <!--Sliver Start-->
+    <!--##################################################################w11n-->
+    <!--insert citizen alert-->
+    <div id="sliver_container">
+      <div class="sliver">
+        <h2>
+          <a href="http://www.maine.gov/">Maine.gov</a>
+        </h2>
+        <ul>
+          <li>
+            <a href="http://www.maine.gov/portal/government/state-agencies.php">Agencies</a>
+          </li>
+          <li>
+            <a href="http://www.maine.gov/portal/online_services/index.html">Online Services</a>
+          </li>
+          <li>
+            <a href="http://www.maine.gov/portal/help/index.html">Help</a>
+          </li>
+          <li>
+            <a href="http://www.maine.gov/search/" class="state_search">Search Maine.gov</a>
+          </li>
+        </ul>
+        <div id="google_translate_element">
+          <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
+            <div id=":0.targetLanguage" style="white-space: nowrap;" class="goog-te-gadget-simple">
+              <img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style='background-image: url("https://translate.googleapis.com/translate_static/img/te_ctrl3.gif"); background-position: -65px 0px;'>
+              <span style="vertical-align: middle;">
+                <a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)">
+                  <span>Select Language</span>
+                  <img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1">
+                  <span style="border-left: 1px solid rgb(187, 187, 187);">&#8203;</span>
+                  <img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1">
+                  <span style="color: rgb(118, 118, 118);" aria-hidden="true">&#9660;</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
   </script>
-</body>
-<!-- InstanceEnd -->
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </div>
+    <!--Sliver End-->
+    <div id="container">
+      <div class="header">
+        <div class="logo-replace">
+          <h1>Division of Disease Surveillance</h1>
+          <p class="officeoftagline">Maine Center for Disease Control &amp; Prevention</p>
+          <p class="mcedtagline">A Division of the Maine Department of Health and Human Services</p>
+        </div>
+        <div class="header_nav_search">
+          <ul id="vtopnav" class="nav">
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/contact.shtml">Contact EPI</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/press-releases.shtml">News</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/online.shtml">Online services</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/navtabs/data.shtml">Publications</a>
+            </li>
+            <li>
+              <a href="/dhhs/subject_index.shtml">Subject index</a>
+            </li>
+          </ul>
+          <div class="header_search" role="search">
+            <form method="get" action="https://www.maine.gov/search">
+              <label for="inlabel" class="hide-label">Search EPI</label>
+              <input type="text" id="inlabel" name="q" size="24">
+              <input type="submit" value="Search">
+              <input type="hidden" name="as_sitesearch" value="https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/">
+              <input type="hidden" name="site" value="test_collection">
+              <input type="hidden" name="output" value="xml_no_dtd">
+              <input type="hidden" name="client" value="test_collection">
+              <input type="hidden" name="proxystylesheet" value="test_collection">
+            </form>
+          </div>
+        </div>
+        <!--CLOSING DIV IS ON THE TEMPLATE. OK TO LEAVE THIS UNBALANCED.-->
+      </div>
+      <!--end header-->
+      <div id="top_nav" class="clearfix" role="navigation">
+        <ul id="tabs">
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/" id="tabhome">Maine CDC Home</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/topics.htm" id="tabtopic">Health Topics A-Z</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/data.shtml" id="tabdata">Data/Reports</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/providers.shtml" id="tabprovider">For Health Care Providers</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/business-work.shtml" id="tabwork">For Businesses</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/homes.shtml" id="homeowner">For Homeowners/Renters</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/dhhs/mecdc/navtabs/programs.shtml" id="tabprograms">Divisions/Programs</a>
+          </li>
+        </ul>
+      </div>
+      <!--end top_nav-->
+      <a href="/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml" id="covid-19">2019 Novel Coronavirus &#8211; (COVID-19) &#8211; Updates and Information</a>
+      <div id="content" class="clearfix">
+        <div class="crumb_trail">
+          <div style="float:right">
+            <script src="https://www.maine.gov/dhhs/js/date.js"></script>Fri 20 Mar 2020
+            <noscript>JavaScript that displays the current date.</noscript>
+          </div>
+          <p>
+            <a href="https://www.maine.gov/dhhs/">DHHS</a>&#8594;
+            <a href="https://www.maine.gov/dhhs/mecdc/">MeCDC</a>&#8594;
+            <a href="https://www.maine.gov/dhhs/mecdc/infectious-disease/index.htm">Disease Surveillance</a>&#8594;
+            <a href="https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/index.shtml">Epidemiology</a>&#8594;
+            <!--InstanceBeginEditable name="breadcrumbs"-->
+            <a href="index.shtml">Airborne and Direct Contact Diseases</a>&#8594; Coronavirus
+            <!--InstanceEndEditable-->
+          </p>
+        </div>
+        <!--end crumb_trail-->
+        <div id="sectionnav" class="nav" role="navigation">
+          <h3>EPI Information</h3>
+          <ul>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/disease/index.shtml">A - Z Index of Epidemiology Diseases</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/contact.shtml">Contact Us</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/disease-reporting/index.shtml">Disease Reporting</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/syndromic/index.shtml">Syndromic - drug overdose data</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/order-form-wn.shtml">Orderable Materials</a>
+            </li>
+            <li>
+              <a href="https://gateway.maine.gov/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&amp;ui.action=run&amp;ui.object=%2fcontent%2ffolder%5b%40name%3d%27CDC%20EOHP%20EPHT%20AVR%27%5d%2freportView%5b%40name%3d%27Maine%20Environmental%20Public%20Health%20Tracking%20%28EPHT%29%20Network%20-%20Public%20Data%20Portal%27%5d&amp;cv.header=false&amp;cv.toolbar=false" target="_blank">Maine Tracking Network: Tickborne Diseases</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/publications/index.shtml">Publications</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/data-request.shtml">Request for Data</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/school-curriculum/index.shtml">School Curricula</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/vector-borne/train-trainer/zoonotic-disease-train-the-trainer.shtml">Zoonotic Disease Train the Trainer</a>
+            </li>
+            <li>
+              <a href="https://maine.gov/dhhs/mecdc/infectious-disease/epi/shm/index.shtml">School Health</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/videos.shtml">Videos</a>
+            </li>
+          </ul>
+          <h3>Information for</h3>
+          <ul>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/providers/laborators.shtml">Laboratories</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div style="text-align:center">
+                <a href="https://www.211maine.org/">
+                  <img src="/dhhs/mecdc/infectious-disease/images/211logo.gif" alt="211 logo" width="75" height="40">
+                  <br>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--end sectionnav-->
+        <span id="page-body"></span>
+        <div id="maincontent3" class="article" role="main">
+          <!--InstanceBeginEditable name="maincontent2"-->
+          <h1>Novel Coronavirus 2019 (COVID-19)</h1>
+          <p style="padding: 4px; background: #F8E38D; font-style: italic;">Maine CDC will continue to regularly update this page. For additional resources and up-to-date information, please visit the
+            <a href="https://www.cdc.gov/coronavirus/2019-nCoV/summary.html" style="color: #2F5EBC;" target="_blank">U.S. CDC's COVID-19 website</a>
+          </p>
+          <p>The Maine CDC is  responding to an outbreak of the respiratory illness called COVID-19, caused  by a novel (new) coronavirus. We urge Maine people to practice good hand hygiene, cover coughs and sneezes, and stay home if you are sick. If you are concerned that you have been exposed to COVID-19, call your health care provider, who will determine whether you should be tested and, as appropriate, submit a sample for testing.</p>
+          <p>Read Maine CDC's COVID-19 Factsheet:</p>
+          <p>
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Acholi_Final.pdf">Acoli</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Arabic_Final.pdf">&#1593;&#1585;&#1576;&#1610;</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">English</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_French_Final.pdf">Fran&#231;ais</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Haitian_Final.pdf">Krey&#242;l Ayisyen</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Khmer_Final.pdf">&#6017;&#6098;&#6040;&#6082;&#6042;</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Kirundi_Final.pdf">Ikirundi</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Lingala_Final.pdf">Lingala</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Portuguese_Final.pdf">Portugu&#234;s</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Somali_Final.pdf">Soomaali</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Spanish_Final.pdf">Espa&#241;ol</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Swahili_Final.pdf">Kiswahili</a>,
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Vietnamese_Final.pdf">Ti&#7871;ng Vi&#7879;t</a>
+          </p>
+          <h2 class="h1">Situation in Maine</h2>
+          <p>The table below is updated once each day Monday through Friday by 12:00 PM EDT.</p>
+          <table class="travelAdvisories">
+            <thead>
+              <tr>
+                <th colspan="7" class="advisory">Maine COVID-19  Testing Data</th>
+              </tr>
+              <tr>
+                <th colspan="7" class="advisoryDt">Updated: March 19, 2020 at 12:15 PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 33%;">
+                  <b>Confirmed Cases
+                    <sup>1</sup>
+                  </b>
+                </td>
+                <td style="width: 33%;">
+                  <b>Presumptive Positive Cases
+                    <sup>2</sup>
+                  </b>
+                </td>
+                <td style="width: 33%;">
+                  <b>Negative Tests
+                    <sup>3</sup>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 33%;">42</td>
+                <td style="width: 33%;">10</td>
+                <td style="width: 33%;">2,004</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="Accordion1" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons" role="tab" id="ui-accordion-Accordion1-header-0" aria-controls="ui-accordion-Accordion1-panel-0" aria-selected="true" aria-expanded="true" tabindex="0">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-minus"></span>
+              <a href="#">View  Cases  by County</a>
+            </h3>
+            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: block;" id="ui-accordion-Accordion1-panel-0" aria-labelledby="ui-accordion-Accordion1-header-0" role="tabpanel" aria-hidden="false">
+              <table class="travelAdvisories">
+                <thead>
+                  <tr>
+                    <th colspan="5" class="advisoryDt">Confirmed, Presumptive and Recovered Case Counts by County</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 25%;">
+                      <b>County</b>
+                    </td>
+                    <td style="width: 25%;">
+                      <b>Confirmed</b>
+                    </td>
+                    <td style="width: 25%;">
+                      <b>Presumptive Positive</b>
+                    </td>
+                    <td style="width: 25%;">
+                      <b>Recovered</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Androscoggin</td>
+                    <td style="width: 25%;">1</td>
+                    <td style="width: 25%;">2</td>
+                    <td style="width: 25%;">1</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Aroostook</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Cumberland</td>
+                    <td style="width: 25%;">21</td>
+                    <td style="width: 25%;">4</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Franklin</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Hancock</td>
+                    <td style="width: 25%;">1</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Kennebec</td>
+                    <td style="width: 25%;">3</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Knox</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Lincoln</td>
+                    <td style="width: 25%;">3</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Oxford</td>
+                    <td style="width: 25%;">1</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Penobscot</td>
+                    <td style="width: 25%;">1</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Piscataquis</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Sagadahoc</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Somerset</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Waldo</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Washington</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;">0</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">York</td>
+                    <td style="width: 25%;">2</td>
+                    <td style="width: 25%;">1</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25%;">Unknown</td>
+                    <td style="width: 25%;">9</td>
+                    <td style="width: 25%;">3</td>
+                    <td style="width: 25%;"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-Accordion1-header-1" aria-controls="ui-accordion-Accordion1-panel-1" aria-selected="false" aria-expanded="false" tabindex="-1">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+              <a href="#">View Confirmed and Presumptive Cases by Age</a>
+            </h3>
+            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-Accordion1-panel-1" aria-labelledby="ui-accordion-Accordion1-header-1" role="tabpanel" aria-hidden="true">
+              <table class="travelAdvisories">
+                <thead>
+                  <tr>
+                    <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 33%;">
+                      <b>Age Range
+                        <sup></sup>
+                      </b>
+                    </td>
+                    <td style="width: 33%;">
+                      <b>Count
+                        <sup></sup>
+                      </b>
+                    </td>
+                    <td style="width: 33%;">
+                      <b>Percentage
+                        <sup></sup>
+                      </b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">&lt;20</td>
+                    <td style="width: 33%;">2</td>
+                    <td style="width: 33%;">3.8%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">20s</td>
+                    <td style="width: 33%;">3</td>
+                    <td style="width: 33%;">5.8%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">30s</td>
+                    <td style="width: 33%;">6</td>
+                    <td style="width: 33%;">11.5%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">40s</td>
+                    <td style="width: 33%;">7</td>
+                    <td style="width: 33%;">13.5%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">50s</td>
+                    <td style="width: 33%;">11</td>
+                    <td style="width: 33%;">21.2%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">60s</td>
+                    <td style="width: 33%;">12</td>
+                    <td style="width: 33%;">23.1%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">70s</td>
+                    <td style="width: 33%;">5</td>
+                    <td style="width: 33%;">9.6%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">80+</td>
+                    <td style="width: 33%;">6</td>
+                    <td style="width: 33%;">11.5%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-Accordion1-header-2" aria-controls="ui-accordion-Accordion1-panel-2" aria-selected="false" aria-expanded="false" tabindex="-1">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-plus"></span>
+              <a href="#">View Confirmed and Presumptive Cases by Sex</a>
+            </h3>
+            <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-Accordion1-panel-2" aria-labelledby="ui-accordion-Accordion1-header-2" role="tabpanel" aria-hidden="true">
+              <table class="travelAdvisories">
+                <thead>
+                  <tr>
+                    <th colspan="7" class="advisoryDt">Confirmed and Presumptive Cases by Sex</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 33%;">
+                      <b>Sex
+                        <sup></sup>
+                      </b>
+                    </td>
+                    <td style="width: 33%;">
+                      <b>Count
+                        <sup></sup>
+                      </b>
+                    </td>
+                    <td style="width: 33%;">
+                      <b>Percentage
+                        <sup></sup>
+                      </b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">Male</td>
+                    <td style="width: 33%;">22</td>
+                    <td style="width: 33%;">42.3%</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33%;">Female</td>
+                    <td style="width: 33%;">30</td>
+                    <td style="width: 33%;">57.7%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p>
+            <sup>1</sup>
+            <b>Confirmed Cases:</b>
+          </p>
+          <p>
+            <sup>2</sup>
+            <b>Presumptive Positive Cases:</b>
+          </p>
+          <p>
+            <sup>3</sup>
+            <b>Negative Tests:</b>
+          </p>
+          <!--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+          <h2 class="h1">News Releases</h2>
+          <div id="covidIncWN">
+            <ul style="margin-left: 15px; padding: 5px; margin-top: 0">
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2227379">Maine DHHS Acts to Ensure Access to Health Care, Food, and Basic Necessities While Protecting the Health of the Public and Employees</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2223289">Maine CDC Announces More COVID-19 Results</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2223288">Maine CDC Reports Additional COVID-19 Results</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2220093">Preliminary Testing Indicates Two New Presumptive Positive COVID-19 Cases in Maine</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2220078">Governor Mills, Maine CDC Announce First Presumptive Positive Case and Additional Steps to Respond to COVID-19</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2218094">211 now available to answer general questions about COVID-19</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2208307">Maine CDC Lab Testing for COVID-19</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2204263">Maine to Begin Testing for COVID-19 at State Lab</a>
+              </li>
+              <li style="padding: 0; font-size:.9em;">
+                <a href="https://www.maine.gov/dhhs/press-release.shtml?id=2177142">Maine continues to prepare for coronavirus</a>
+              </li>
+            </ul>
+          </div>
+          <!--# inc lude virtual="/tools/whatsnew/index.php?topic=DHS+Press+Releases&v=dhhs_list&topic-content=coronavirus&orderby=date&desc=1"-->
+          <!--insert What's New link here-->
+          <h3>Office of Governor Janet T. Mills</h3>
+          <li>
+            <a href="https://www.maine.gov/governor/mills/news/governor-mills-takes-further-steps-respond-covid-19-protect-health-and-safety-maine-people">Governor Mills Takes Further Steps to Respond to COVID-19, Protect Health and Safety of Maine People</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/governor/mills/news/governor-mills-legislature-spearhead-emergency-legislative-package-respond-covid-19-2020-03-17">Governor Mills, Legislature Spearhead Emergency Legislative Package to Respond to COVID-19</a>
+          </li>
+          <li>
+            <a href="https://www.maine.gov/governor/mills/news/governor-mills-issues-declaration-protect-maine-people-against-price-gouging-2020-03-17">Governor Mills Issues Declaration to Protect Maine People Against Price-Gouging</a>
+          </li>
+          <h2 class="h1">Travel</h2>
+          <table class="travelAdvisories">
+            <thead>
+              <tr>
+                <th colspan="2" class="advisory">Travel Advisories</th>
+              </tr>
+              <tr>
+                <th colspan="2" class="advisoryDt">Updated: March 19, 2020 at 12:00 PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 24%;">
+                  <b>Europe</b>
+                </td>
+                <td style="width: 72%;">
+                  <b>Level 3:</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 24%;">
+                  <b>China</b>
+                </td>
+                <td style="width: 72%;">
+                  <b>Level 3:</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 24%;">
+                  <b>South Korea</b>
+                </td>
+                <td style="width: 72%;">
+                  <b>Level 3:</b>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td style="width: 24%;">
+                  <b>Iran</b>
+                </td>
+                <td style="width: 72%;">
+                  <b>Level 3:</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 24%;">
+                  <b>Global</b>
+                </td>
+                <td style="width: 72%;">
+                  <b>Level  2:</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 99%;" colspan="2">
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">U.S. CDC: Coronavirus Disease 2019 Information for Travel</a>
+                  <br>
+                  <span style="margin-top: .4em; display: inline-block;">
+                    <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html" target="_blank">U.S. State Department: Travel Advisories</a>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <b>Stay home for 14 days from the time you left an area with widespread, ongoing community spread (Level 3 countries) and practice social distancing.</b>
+            <em>If you recently traveled to a country with a COVID-19 outbreak and feel sick with fever, cough, or difficulty breathing within 14 days after you left, visit the
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/after-travel-precautions.html" target="_blank">U.S. CDC's travel information page</a>
+            </em>
+          </p>
+          <p>
+            <b>Healthcare Providers</b>: U.S. CDC updated the
+            <a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/clinical-criteria.html" target="_blank">definition of persons under investigation</a>
+          </p>
+          <!--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+          <h2 class="h1">Frequently Asked Questions</h2>
+          <p>
+            <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Read the full List of Frequently Asked Questions (PDF).</a>
+          </p>
+          <h3>What is COVID-19?</h3>
+          <p>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/index.html" target="_blank">COVID-19</a>is a novel (new) coronavirus which was first detected in December 2019 in Wuhan City, Hubei Province, China and has now been detected in
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/locations-confirmed-cases.html#map" target="_blank">other countries</a>, including the
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">United States</a>
+          </p>
+          <p>For some, the respiratory virus causes mild symptoms like the common cold or influenza (flu), for others it can cause severe pneumonia that requires medical care or hospitalization.</p>
+          <p>The virus is named "SARS-CoV-2" and the disease it causes is named "coronavirus disease 2019" (abbreviated "COVID-19").</p>
+          <h3>What are the Symptoms?</h3>
+          <p>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html" target="_blank">Symptoms of COVID-19</a>
+          </p>
+          <ul>
+            <li>Fever</li>
+            <li>Cough</li>
+            <li>Difficulty breathing</li>
+            <li>Sore throat (in some patients)</li>
+          </ul>
+          <p>
+            <i>Symptoms may appear
+              <strong>2-14 days after exposure.</strong>
+            </i>
+          </p>
+          <p>Most patients experience mild symptoms and can recuperate at home, but others, particularly those with underlying medical conditions, may experience more severe respiratory illness.</p>
+          <h3>How does it spread?</h3>
+          <p>The
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html" target="_blank">virus appears to spread</a>
+          </p>
+          <ul>
+            <li>The air by coughing and sneezing</li>
+            <li>Close personal contact, such as touching or shaking hands</li>
+            <li>Touching an object or surface with the virus on it, then touching your mouth, nose, or eyes</li>
+          </ul>
+          <p>The virus can spread from person-to-person and in some locations there is apparent community spread, meaning some people are infected and are not sure how or where they became infected.</p>
+          <h3>How can I help to prevent the spread?</h3>
+          <p>There are simple steps you can take
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html" target="_blank">to reduce the possible spread</a>
+          </p>
+          <ol>
+            <li>Wash your hands often with soap and water for at least 20 seconds or use alcohol-based hand sanitizer</li>
+            <li>Avoid close contact with people who are sick</li>
+            <li>Avoid touching your eyes, nose, and mouth with unwashed hands</li>
+            <li>Stay home while you're sick and avoid close contact with others</li>
+          </ol>
+          <p>Currently there is no vaccine available to prevent the spread of COVID-19.</p>
+          <h3>What should I do if I have symptoms?</h3>
+          <p>Call ahead to a health care professional if you develop a fever and symptoms of respiratory illness, such as cough or difficulty breathing. Tell your health care professional about
+            <strong>any</strong>recent travel or contact
+            <strong>with other COVID-19 cases</strong>. Your healthcare professional will work with Maine CDC to determine if you need to be tested for COVID-19. More information is available on the U.S. CDC's
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/steps-when-sick.html" target="_blank">What You Should Know page</a>
+          </p>
+          <h3>What is the situation in the U.S.?</h3>
+          <p>For the general American public, who are unlikely to be exposed to this virus at this time, the immediate health risk from COVID-19 is considered low.</p>
+          <ul>
+            <li>People in communities where ongoing community spread with the virus that causes COVID-19 has been reported are at elevated though still relatively low risk of exposure.</li>
+            <li>Health care workers caring for patients with COVID-19 are at elevated risk of exposure.</li>
+            <li>Close contacts of persons with COVID-19 also are at elevated risk of exposure.</li>
+            <li>Travelers returning from affected
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">international locations</a>
+            </li>
+          </ul>
+          <p>U.S. CDC has developed
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/assess-manage-risk.html" target="_blank">guidance to help in the risk assessment and management</a>of people with potential exposures to COVID-19 and provided an updated
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/care-booklet.html" target="_blank">Check And Report Everyday booklet</a>
+          </p>
+          <h3>Additional Coronavirus Resources for the Public</h3>
+          <table class="travelAdvisories">
+            <thead>
+              <tr>
+                <th colspan="5" class="advisory">Additional Resources and Translated Materials</th>
+              </tr>
+              <tr>
+                <th colspan="5" class="advisoryDt">Updated: March 19, 2020 at 12:00 PM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 90%;">
+                  <b>Document/Resource
+                    <sup></sup>
+                  </b>
+                </td>
+                <td style="width: 10%;">
+                  <b>Source
+                    <sup></sup>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Full List of Frequently Asked Questions (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">COVID-19 Factsheet (PDF)</a>:
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Acholi_Final.pdf">Acoli</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Arabic_Final.pdf">&#1593;&#1585;&#1576;&#1610;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_French_Final.pdf">Fran&#231;ais</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Haitian_Final.pdf">Krey&#242;l Ayisyen</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Khmer_Final.pdf">&#6017;&#6098;&#6040;&#6082;&#6042;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Kirundi_Final.pdf">Ikirundi</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Lingala_Final.pdf">Lingala</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Portuguese_Final.pdf">Portugu&#234;s</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Somali_Final.pdf">Soomaali</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Spanish_Final.pdf">Espa&#241;ol</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Swahili_Final.pdf">Kiswahili</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS_Vietnamese_Final.pdf">Ti&#7871;ng Vi&#7879;t</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_english.pdf">Stop the Spread of Germs Factsheet (PDF):</a>
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_arabic.pdf">&#1593;&#1585;&#1576;&#1610;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_farsi.pdf">&#1601;&#1575;&#1585;&#1587;&#1740;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_french.pdf">Fran&#231;ais</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs_pashto.pdf">&#1662;&#1690;&#1578;&#1608;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_russian.pdf">p&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_spanish.pdf">Espa&#241;ol</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_swahili.pdf">Kiswahili</a>,
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/stop-the-spread-of-germs-poster_ukrainian.pdf">&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</a>
+                </td>
+                <td style="width: 10%;">U.S. CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-AccessingTestingForUninsured-3-18-20.pdf" target="_blank">Accessing COVID-19 Testing and Care for People Who Are Uninsured (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-for-Large-Gatherings.pdf" target="_blank">Guidance on Non-Essential Large Gatherings (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+          <h2 class="h1">Interim   Guidance for Healthcare Professionals</h2>
+          <p>Healthcare providers should obtain a detailed travel history for patients with fever and acute respiratory illness. Healthcare providers
+            <strong>no longer need to call Maine CDC about when they test a patient</strong>for COVID-19.  On February 28, U.S. CDC issued a Health Alert Network (HAN):
+            <a href="https://emergency.cdc.gov/han/2020/han00428.asp" target="_blank">Update and Interim Guidance on Outbreak of COVID-19</a>
+          </p>
+          <p>Limited information is available to characterize the spectrum of clinical illness associated with COVID-2019. No vaccine or specific treatment for COVID-19 infection is available; care is supportive.</p>
+          <p>For more information, visit
+            <a href="https://www.cdc.gov/coronavirus/2019-nCoV/clinical-criteria.html" target="_blank">U.S. CDC's webpage on evaluating and reporting a PUI</a>and
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control.html" target="_blank">U.S. CDC's webpage on infection control</a>
+          </p>
+          <h3>Additional Coronavirus Resources for Providers</h3>
+          <table class="travelAdvisories">
+            <thead>
+              <tr>
+                <th colspan="5" class="advisory">Additional Resources for Providers</th>
+              </tr>
+              <tr>
+                <th colspan="5" class="advisoryDt">Updated: March 20, 2020 at 9:00 AM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 90%;">
+                  <b>Document/Resource
+                    <sup></sup>
+                  </b>
+                </td>
+                <td style="width: 10%;">
+                  <b>Source
+                    <sup></sup>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/index.html">Strategies for Optimizing the Supply of PPE</a>
+                </td>
+                <td style="width: 10%;">U.S. CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-Prioritization-Of-Testing-And-Discontinuation-Of-Isolation.pdf">Updated Guidance for COVID-19: Prioritization of Testing And Discontinuation Of Isolation - Health Alert - March 19, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-Guidance-COIVD-19-Testing.pdf">Updated Guidance for COVID-19 Testing - Health Alert - March 16, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/ActionsToTakeCommunityTransmission-15March.pdf">Actions to Take Now for Community Transmission of COVID-19 - Health Alert - March 15, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Guidance-CruiseShips-15March.pdf">Guidance About Global Travel on Cruise Ships - March 15, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">U.S. CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-Guidance-12March.pdf">Updated Guidance for COVID-19 - Health Alert - March 12, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-LTCF.pdf">First Presumptive COVID-19 Case in Maine - Health Alert - March 12, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/risk-assessment.html" target="_blank">Interim US   Risk Assessment and Public Health Management of Persons with Potential 2019 Novel Coronavirus Exposure in Travel-Associated or Community Settings</a>
+                </td>
+                <td style="width: 10%;">U.S. CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Updated-COVID-19-Testing-Criteria-Public-Health-Advisory-030520.pdf">Updated COVID-19 Testing Criteria Public - Health Alert - March 5, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Community-Spread-Public-Health-Advisory-030920.pdf">Preparing for Community Transmission of COVID-19 in Maine - Health Alert - March 9, 2020 (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID19-Screening-Checklist-SNF-Visitors.pdf">Screening Checklist for Skilled Nursing Facilities (PDF)</a>
+                </td>
+                <td style="width: 10%;">AHCA and NCAL</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/SNF-Guidance-Preventing-COVID19.pdf">Guidance for Preventing COVID-19 From Entering Your Skilled Nursing Center (PDF)</a>
+                </td>
+                <td style="width: 10%;">AHCA and NCL</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/CMS-QSO-20-14-NH-Revised.pdf">Guidance for Infection Control and Prevention of COVID-19 in Nursing Homes (PDF)</a>
+                </td>
+                <td style="width: 10%;">CMS</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/AL-Guidance-Preventing-COVID19.pdf">Guidance for Preventing COVID-19 From Entering Your Assisted Living Facility (PDF)</a>
+                </td>
+                <td style="width: 10%;">AHCA and NCAL</td>
+              </tr>
+              <tr>
+                <td style="width: 90%;">
+                  <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Maine-CDC-Guidance-LTCF.pdf">Guidance for Long-Term Care Facilities (PDF)</a>
+                </td>
+                <td style="width: 10%;">Maine CDC</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--InstanceEndEditable-->
+        </div>
+        <!--end maincontent-->
+        <div id="pageaside" class="aside">
+          <!--InstanceBeginEditable name="rightnav"-->
+          <h3>More  Information</h3>
+          <ul>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html" target="_blank">For travelers</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/guidance-for-schools.html" target="_blank">For schools</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-ihe-response.html" target="_blank">For higher ed institutions</a>(including
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/student-foreign-travel.html" target="_blank">foreign  exchange programs</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/pregnant-women.html" target="_blank">For pregnant women and children</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html" target="_blank">For older adults</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/guidance-business-response.html" target="_blank">For  businesses</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/guidance-law-enforcement.html" target="_blank">For law  enforcement</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html" target="_blank">For communities</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/public-health-communicators-get-your-community-ready.html" target="_blank">For public  health communicators</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/guidance-community-faith-organizations.html" target="_blank">For faith-based organizations</a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/homeless-shelters/index.html" target="_blank">For homeless shelters</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-GuidanceList-03MAR20.pdf">COVID-19 - GuidanceList - 03/04/2020 (PDF)</a>
+            </li>
+          </ul>
+          <h3>Guidance for Healthcare Providers</h3>
+          <ul>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-nCoV/hcp/index.html" target="_blank">Current  Interim Guidance</a>
+              <br>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/healthcare-facilities/index.html" target="_blank">For Health and Long-Term Care  Facilities</a>
+            </li>
+          </ul>
+          <h3>Maine Specific Resources</h3>
+          <ul>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-AccessingTestingForUninsured-3-18-20.pdf" target="_blank">Accessing COVID-19 Testing and Care for People Who Are Uninsured (PDF)</a>
+            </li>
+            <li>
+              <a href="https://www.maine.gov/doe/covid-19" target="_blank">Maine Department of Education Coronavirus Updates</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/COVID-19-FS.pdf">Fact Sheet (PDF)</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/Public-COVID19-FAQ-18March2020.pdf">Full List of Frequently Asked Questions (PDF)</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/epi/airborne/documents/VirusControl-EatingEstablishments.pdf">Recommendations for Virus Control in Eating Establishments (PDF)</a>
+            </li>
+          </ul>
+          <p>If you are a Maine health care professional and have questions about COVID-19, call:
+            <b>1-800-821-5821</b>
+          </p>
+          <p>If you are a Maine school professional and have questions about COVID-19, call (207) 624-6694 or email
+            <a href="mailto:DOESchoolandStudentSupports@maine.gov">DOESchoolandStudentSupports@maine.gov</a>
+          </p>
+          <script type="text/javascript">
+  $(function() {
+  	$( "#Accordion1" ).accordion({
+  		heightStyle:"content",
+  		collapsible:true,
+  		icons:{activeHeader: "ui-icon-minus", header: "ui-icon-plus"},
+  		animate:{easing: "swing"}
+  	}); 
+  });
+  </script>
+          <!--InstanceEndEditable-->
+        </div>
+        <!--end pageaside-->
+      </div>
+      <!--end content id-->
+      <!--mecdc-footer-inc.shtml-->
+      <div id="pagefooter" class="clearfix">
+        <div class="footer_column footCol1">
+          <p style="float:left;position:relative; text-align: center;">
+            <a href="https://www.maine.gov/sos/bmv/donatelife/">
+              <img src="/dhhs/mecdc/images/donate.gif" alt="Maine donate life logo" style="width: 70px; margin-right:25px;border:none">
+              <br>
+            </a>
+          </p>
+          <hr style="clear:both; color:#CCC">
+          <p class="onmypage">
+            <a href="/dhhs/">
+              <img src="/dhhs/images/dhhs-logo-footer_032619.png" alt="DHHS footer logo">
+            </a>
+          </p>
+          <p>Copyright &#169;
+            <span id="theFullYear">2020</span>.
+            <br>
+          </p>
+        </div>
+        <div class="footer_column footCol2">
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="https://www.maine.gov/portal/">Maine.gov</a>
+            </li>
+            <li>
+              <a href="https://www.maine.gov/portal/policies/">Site Policies</a>
+            </li>
+            <li>
+              <a href="/dhhs/civil-rights-compliance/language-assistance-services.shtml">Language Assistance Services</a>
+            </li>
+            <li>
+              <a href="/dhhs/contactus.shtml#comments_questions">Comments/Questions</a>
+            </li>
+            <li>
+              <a href="https://www.maine.gov/portal/policies/accessibility.html">Accessibility Policy</a>
+            </li>
+            <li>
+              <a href="/dhhs/privacy/">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_column footCol3">
+          <h4>Tools</h4>
+          <ul>
+            <li>If content on this page is inaccessible, and you need the information in a different format, visit the
+              <a href="/dhhs/tools.shtml" aria-label="Assistive tools" title="Assistive tools">DHHS Tools page</a>
+            </li>
+            <li>
+              <a href="https://public.govdelivery.com/accounts/MEHHS/subscriber/topics?qsp=MEHHS_2">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_column footCol4">
+          <h4>DHHS</h4>
+          <ul>
+            <li>
+              <a href="/dhhs/">DHHS Home</a>
+            </li>
+            <!--NON-DESCRIMINATION NOTICE IS REQUIRED ON ALL PAGE FOOTERS. DO NOT DELETE-->
+            <li>Non-Discrimination Notice
+              <br>
+              <a href="/dhhs/documents/Nondiscrimination_Notice_June%202017.docx" style="margin-left: 10px;">Word</a>|
+              <a href="/dhhs/documents/Nondiscrimination_Notice_June%202017.pdf" aria-label="Non-discrimination Notice June 2017 (PDF)" title="Non-discrimination Notice June 2017 (PDF)">PDF</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_column footCol5">
+          <h4>MeCDC Offices/Divisions</h4>
+          <ul>
+            <li>
+              <a href="/dhhs/mecdc/infectious-disease/index.htm">Division of Disease Surveillance</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/public-health-systems/index.htm">Division of Public Health Systems</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/environmental-health/index.shtml">Division of Environmental Health</a>
+            </li>
+            <li>
+              <a href="/dhhs/mecdc/population-health/index.htm">Division of Disease Prevention</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--dhhs-all-footer-script.js is required. do not delete-->
+      <script src="/dhhs/js/dhhs-all-footer-script.js"></script>
+      <!--end footer_column-->
+      <!--end pagefooter id-->
+      <!--end container id-->
+    </div>
+    <!--Automatic GA insert w11-->
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31309917-1']);
+    _gaq.push(['_setDomainName', 'maine.gov']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+      <div style="padding: 8px;">
+        <div>
+          <div class="logo">
+            <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Google Translate" width="20" height="20">
+          </div>
+        </div>
+      </div>
+      <div class="top" style="padding: 8px; float: left; width: 100%;">
+        <h1 class="title gray">Original text</h1>
+      </div>
+      <div class="middle" style="padding: 8px;">
+        <div class="original-text"></div>
+      </div>
+      <div class="bottom" style="padding: 8px;">
+        <div class="activity-links">
+          <span class="activity-link">Contribute a better translation</span>
+          <span class="activity-link"></span>
+        </div>
+        <div class="started-activity-container">
+          <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+          <div class="activity-root"></div>
+        </div>
+      </div>
+      <div class="status-message" style="display: none;"></div>
+    </div>
+    <div class="goog-te-spinner-pos">
+      <div class="goog-te-spinner-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewbox="0 0 66 66">
+          <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+    </div>
+    <iframe class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 1045px; height: 266px; display: none;" frameborder="0"></iframe>
+  </body>
+  <!--InstanceEnd-->
 </html>
