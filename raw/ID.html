@@ -71,6 +71,7 @@
     <link rel="stylesheet" id="webmaster-bs4-print-css" href="https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/css/print-css.css?ver=5.3.2" type="text/css" media="all">
     <link rel="stylesheet" id="webmaster-bs4-style-css" href="https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/style.css?ver=5.3.2" type="text/css" media="all">
     <link rel="stylesheet" id="tablepress-default-css" href="https://coronavirus.idaho.gov/wp-content/plugins/tablepress/css/default.min.css?ver=1.10" type="text/css" media="all">
+    <style id="tablepress-default-inline-css" type="text/css">.tablepress-id-1 .column-3,.tablepress-id-1 .column-4,.tablepress-id-2 .column-2,.tablepress-id-3 .column-2,.tablepress-id-4 .column-2,.tablepress-id-5 .column-2{text-align:center}.tablepress-id-3,.tablepress-id-4{width:250px}</style>
     <link rel="stylesheet" id="tablepress-responsive-tables-css" href="https://coronavirus.idaho.gov/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive.min.css?ver=1.7" type="text/css" media="all">
     <link rel="stylesheet" id="sccss_style-css" href="https://coronavirus.idaho.gov/?sccss=1&amp;ver=5.3.2" type="text/css" media="all">
     <script async="" src="//cse.google.com/adsense/search/async-ads.js"></script>
@@ -100,13 +101,7 @@
   	text-decoration: line-through;
   }
   </style>
-    <style type="text/css">
-  #masthead .header-background {
-  		background-image: url(https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/img/header.jpg);
-  		background-repeat: no-repeat;
-  		 background-position: right top;
-  		}
-  </style>
+    <style type="text/css">#masthead .header-background {background-image: url(https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/img/header.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;</style>
     <style type="text/css">/** Mega Menu CSS: fs **/</style>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="apple-touch-icon" sizes="180x180" href="https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/apple-touch-icon.png">
@@ -134,7 +129,7 @@
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
-    <script src="https://www.google.com/cse/static/element/8b2252448421acb3/cse_element__en.js?usqp=CAI%3D" type="text/javascript"></script>
+    <script src="https://www.google.com/cse/static/element/8b2252448421acb3/cse_element__en.js?usqp=CAM%3D" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/element/8b2252448421acb3/default+en.css">
     <link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/style/look/v3/minimalist.css">
     <style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}</style>
@@ -153,32 +148,6 @@
     	</div>
   	<![endif]
   -->
-    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
-      <div style="padding: 8px;">
-        <div>
-          <div class="logo">
-            <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Google Translate" width="20" height="20">
-          </div>
-        </div>
-      </div>
-      <div class="top" style="padding: 8px; float: left; width: 100%;">
-        <h1 class="title gray">Original text</h1>
-      </div>
-      <div class="middle" style="padding: 8px;">
-        <div class="original-text"></div>
-      </div>
-      <div class="bottom" style="padding: 8px;">
-        <div class="activity-links">
-          <span class="activity-link">Contribute a better translation</span>
-          <span class="activity-link"></span>
-        </div>
-        <div class="started-activity-container">
-          <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
-          <div class="activity-root"></div>
-        </div>
-      </div>
-      <div class="status-message" style="display: none;"></div>
-    </div>
     <div class="content-wrapper">
       <a href="#main" class="skip-link">Skip to main content</a>
       <div class="top-navigation d-print-none">
@@ -398,7 +367,7 @@
           <div class="site-branding header-background">
             <div class="container">
               <div class="row align-items-center d-flex">
-                <div class="col-7 col-sm-8">
+                <div class="col-8">
                   <a itemprop="url" href="https://coronavirus.idaho.gov/" class="img-fluid logo" title="Novel Coronavirus (COVID-19)" rel="home">
                     <img itemprop="logo" src="https://coronavirus.idaho.gov/wp-content/themes/webmaster-v3/img/logo-white.svg" alt="Novel Coronavirus (COVID-19)" class="img-fluid logo-col wt-shadow">
                     <br>
@@ -510,7 +479,7 @@
                   </div>
                 </div>
                 <div id="toggle" class="toggle d-none d-print-none mobile-nav btn-group d-flex d-lg-none col-1">
-                  <button type="button" class="navbar-toggler btn btn-lg btn-primary" data-toggle="collapse" data-target="#main-navigation">
+                  <button type="button" class="navbar-toggler btn btn-lg btn-primary" data-toggle="collapse" data-target="#main-navigation" aria-label="Toggle navigation" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fas fa-bars"></i>
                   </button>
@@ -630,7 +599,7 @@
           <div class="bg-light">
             <div class="bg-light visible-md d-lg-none"></div>
             <nav class="navbar navbar-expand-lg">
-              <div class="mx-auto">
+              <div class="container">
                 <div id="main-navigation" class="collapse navbar-collapse">
                   <ul id="menu-main-menu" class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22 nav-item">
@@ -782,7 +751,7 @@
                           </figure>
                           <figure class="wp-block-embed-twitter wp-block-embed is-type-rich is-provider-twitter">
                             <div class="wp-block-embed__wrapper">
-                              <a class="twitter-timeline" data-width="500" data-height="750" data-dnt="true" href="https://twitter.com/IdahoCOVID19?ref_src=twsrc%5Etfw" data-twitter-extracted-i1584712386659425835="true">Tweets by IdahoCOVID19</a>
+                              <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 500px; height: 750px; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="profile:IdahoCOVID19" title="Twitter Timeline" frameborder="0"></iframe>
                               <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                           </figure>
@@ -911,6 +880,33 @@
         <script type="text/javascript" src="https://coronavirus.idaho.gov/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
       </div>
     </div>
+    <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+      <div style="padding: 8px;">
+        <div>
+          <div class="logo">
+            <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Google Translate" width="20" height="20">
+          </div>
+        </div>
+      </div>
+      <div class="top" style="padding: 8px; float: left; width: 100%;">
+        <h1 class="title gray">Original text</h1>
+      </div>
+      <div class="middle" style="padding: 8px;">
+        <div class="original-text"></div>
+      </div>
+      <div class="bottom" style="padding: 8px;">
+        <div class="activity-links">
+          <span class="activity-link">Contribute a better translation</span>
+          <span class="activity-link"></span>
+        </div>
+        <div class="started-activity-container">
+          <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+          <div class="activity-root"></div>
+        </div>
+      </div>
+      <div class="status-message" style="display: none;"></div>
+    </div>
+    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d0f13be8321eb432fba28cfc1c3351b1.html?origin=https%3A%2F%2Fcoronavirus.idaho.gov" title="Twitter settings iframe" style="display: none; overflow: hidden;" id="iFrameResizer1" frameborder="0"></iframe>
     <div class="goog-te-spinner-pos">
       <div class="goog-te-spinner-animation">
         <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewbox="0 0 66 66">
@@ -934,6 +930,6 @@
         </tr>
       </tbody>
     </table>
-    <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d0f13be8321eb432fba28cfc1c3351b1.html?origin=https%3A%2F%2Fcoronavirus.idaho.gov" title="Twitter settings iframe" style="display: none; overflow: hidden;" id="iFrameResizer1" frameborder="0"></iframe>
+    <iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe>
   </body>
 </html>
