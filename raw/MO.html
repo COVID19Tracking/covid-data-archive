@@ -49,8 +49,6 @@
   -->
     <link href="/css/footable.core.min.css" rel="stylesheet" type="text/css">
     <script src="/js/footable.min.js"></script>
-    <script src="/js/breadcrumbs.js"></script>
-    <script src="/js/jquery.placeholder.min.js"></script>
     <script type="text/javascript">
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-12671191-3', 'auto');
@@ -80,9 +78,10 @@
   .style2 {
       font-size: 26px
   }
-  .style3 {  font-family: Tahoma;
-    font-size: 15px;
-    color: #000000;
+  .style3 {
+      font-family: Tahoma;
+      font-size: 15px;
+      color: #000000;
   }
   -->
   </style>
@@ -226,41 +225,38 @@
         <section id="main-content" role="main" class="col-md-8">
           <div class="page-header">
             <h1>COVID-19  Outbreak</h1>
-            <div id="breadcrumbs">
-              <a href="./../../../../" title="Go Back one Directory">DHSS Home</a>&#187;
-              <a href="./../../../" title="Go Back one Directory">Healthy Living</a>&#187;
-              <a href="./../../" title="Go Back one Directory">Health Conditions &amp; Diseases</a>&#187;
-              <a href="./../" title="Go Back one Directory">Communicable Diseases</a>
-            </div>
+            <div id="breadcrumbs"></div>
           </div>
-          <p></p>
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <h3>
-                <span class="style2">24 hour hotline: 877-435-8411</span>
-              </h3>
-              <p>DHSS and the CDC are responding to an outbreak of respiratory disease caused by a novel (new) coronavirus that was first detected in many locations internationally, including in the  United States. The virus has been named &#8220;SARS-CoV-2&#8221; and the disease it causes has been named &#8220;coronavirus disease 2019&#8221; (abbreviated &#8220;COVID-19&#8221;).</p>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3 margin-top-25">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qzg1Gukeh30?rel=0" title="Missouri COVID-19 video"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix margin-top-15"></div>
-          <div class="col-sm-12 col-md-12">
+          <h3>
+            <span class="style2">24 hour hotline: 877-435-8411</span>
+          </h3>
+          <p>DHSS and the CDC are responding to an outbreak of respiratory disease caused by a novel (new) coronavirus that was first detected in many locations internationally, including in the  United States. The virus has been named &#8220;SARS-CoV-2&#8221; and the disease it causes has been named &#8220;coronavirus disease 2019&#8221; (abbreviated &#8220;COVID-19&#8221;).</p>
+          <div class="margin-top-20"></div>
+          <div class="mobile hidden-md hidden-sm hidden-lg">
             <p>
               <a href="https://info.mo.gov/covid/" target="_blank">
                 <img src="/img/covid-19-chat.png" class="img-responsive" alt="Have questions? chat about COVID-19">
               </a>
             </p>
           </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <a href="https://www.facebook.com/pg/GovMikeParson/videos/?ref=page_internal." title="Governor Parson's Latest Videos" class="external">
+                <img src="/living/healthcondiseases/communicable/novel-coronavirus/img/governor-daily-briefings.jpg" alt="Governor Parson's Latest Videos" class="img-responsive margin-top-25">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9 margin-top-25">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qzg1Gukeh30?rel=0" title="Missouri COVID-19 video"></iframe>
+              </div>
+            </div>
+          </div>
           <div class="clearfix margin-top-20"></div>
           <h2>COVID-19 Testing Reported to Missouri Department of Health and Senior Services</h2>
-          <p>As of 9:15 p.m. CT, March 19</p>
-          <p>As  commercial testing capacities increase, the coordination of patient and  associated contact investigations is paramount to preventing and mitigating the  spread of the virus. While performing public health priority activities,  including notifying the patient, raising awareness among our communities is  valuable. We will provide data as it is available, verified and pertinent.</p>
+          <p>As of 9:05 a.m. CT, March 20</p>
+          <p>As  commercial testing capacities increase, the coordination of patient and associated contact investigations is paramount to preventing and mitigating the spread of the virus. While performing public health priority activities, including notifying the patient, raising awareness among our communities is  valuable. We will provide data as it is available, verified and pertinent.</p>
           <h2>
-            <span class="text-danger">Confirmed cases in Missouri: 28</span>
+            <span class="text-danger">Confirmed cases in Missouri: 47</span>
           </h2>
           <h3 class="text-center">Patients Tested at Missouri State Public Health Laboratory and CDC*</h3>
           <div class="table-responsive">
@@ -286,8 +282,9 @@
             </table>
           </div>
           <div class="clearfix"></div>
+          <p>Labs are required by the Missouri Code of State Regulations to immediately report positive COVID-19 test results. It is important to note that results received from these labs are from patient samples taken over a period of time due to potential testing backlogs. As commercial labs increase their capacity for testing, we will continue to receive results from them requiring immediate verification of patient data for each result. Prompt efforts to protect the public&#8217;s health depends on this verification. Patient data from commercial labs is preliminary and subject to change following initial public health involvement.</p>
           <h3 class="text-center">Cases by County**</h3>
-          <div class="table-responsive">
+          <div class="table w-auto">
             <table class="table col-md-12 col-sm-12">
               <tbody>
                 <tr>
@@ -298,7 +295,7 @@
                 <tr>
                   <td>Boone</td>
                   <td class="text-center">1</td>
-                  <td></td>
+                  <td class="text-center">2</td>
                 </tr>
                 <tr>
                   <td>Cass</td>
@@ -313,12 +310,12 @@
                 <tr>
                   <td>Cole</td>
                   <td class="text-center">2</td>
-                  <td></td>
+                  <td class="text-center"></td>
                 </tr>
                 <tr>
                   <td>Greene</td>
                   <td class="text-center">6</td>
-                  <td></td>
+                  <td class="text-center"></td>
                 </tr>
                 <tr>
                   <td>Henry</td>
@@ -327,41 +324,51 @@
                 </tr>
                 <tr>
                   <td>Jackson</td>
-                  <td>
-                    <div align="center">1</div>
-                  </td>
+                  <td class="text-center">1</td>
+                  <td class="text-center">2</td>
+                </tr>
+                <tr>
+                  <td>Kansas City</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">7</td>
+                </tr>
+                <tr>
+                  <td>Pulaski</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">1</td>
+                </tr>
+                <tr>
+                  <td>Scott</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">1</td>
+                </tr>
+                <tr>
+                  <td>St. Charles</td>
+                  <td class="text-center"></td>
                   <td class="text-center">1</td>
                 </tr>
                 <tr>
                   <td>St. Louis City</td>
                   <td class="text-center">3</td>
-                  <td></td>
+                  <td class="text-center">2</td>
                 </tr>
                 <tr>
                   <td>St. Louis County</td>
-                  <td class="text-center">8</td>
-                  <td></td>
+                  <td class="text-center">7</td>
+                  <td class="text-center">2</td>
+                </tr>
+                <tr>
+                  <td>TBD</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">3</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="clearfix"></div>
-          <h3 class="text-center">Patients Tested by Commercial or Other Laboratories***</h3>
-          <div class="table-responsive">
-            <table class="table col-md-12 col-sm-12">
-              <tbody>
-                <tr>
-                  <th scope="row" class="col-md-4">Positive</th>
-                  <td class="col-md-8">2</td>
-                </tr>
-                <tr></tr>
-              </tbody>
-            </table>
-          </div>
           <p class="small">* Prior to the MSPHL&#8217;s approval to test for the virus that causes COVID-19 on Feb. 27, the CDC was performing testing for Missourians. The first 9 patients were tested by the CDC.
             <br>**
             <span class="table-responsive">Cases by county will be updated as information is verified and patients are notified. The breakdown may not match the total case count above.</span>
-            <br>
           </p>
           <ul class="margin-top-20">
             <li>
@@ -479,7 +486,13 @@
               <!--Related Links-->
             </div>
           </div>
-          <!--<p><a href="https://info.mo.gov/covid/" target="_blank"><img src="/img/covid-19-chat.png" class="img-responsive" alt="Have questions? chat about COVID-19"></a></p>-->
+          <div class="mobile hidden-xs">
+            <p>
+              <a href="https://info.mo.gov/covid/" target="_blank">
+                <img src="/img/covid-19-chat.png" class="img-responsive" alt="Have questions? chat about COVID-19">
+              </a>
+            </p>
+          </div>
           <div class="margin-bottom-20"></div>
           <div class="panel panel-default">
             <!--Default panel contents-->
@@ -694,6 +707,6 @@
     <!--Disables pinch zoom on mobile devices-->
     <!--<script>if ($(window).width() < 600) { $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'); }</script>-->
     <script type="text/javascript" src="/js/global.min.js"></script>
-    <script async="" type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=345185306"></script>
+    <script async="" type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=2114533498"></script>
   </body>
 </html>
