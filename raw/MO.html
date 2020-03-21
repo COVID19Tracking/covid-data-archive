@@ -50,6 +50,7 @@
     <link href="/css/footable.core.min.css" rel="stylesheet" type="text/css">
     <script src="/js/footable.min.js"></script>
     <script src="/js/breadcrumbs.js"></script>
+    <script src="/js/jquery.placeholder.min.js"></script>
     <script type="text/javascript">
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-12671191-3', 'auto');
@@ -226,7 +227,12 @@
         <section id="main-content" role="main" class="col-md-8">
           <div class="page-header">
             <h1>COVID-19  Outbreak</h1>
-            <div id="breadcrumbs"></div>
+            <div id="breadcrumbs">
+              <a href="./../../../../" title="Go Back one Directory">DHSS Home</a>&#187;
+              <a href="./../../../" title="Go Back one Directory">Healthy Living</a>&#187;
+              <a href="./../../" title="Go Back one Directory">Health Conditions &amp; Diseases</a>&#187;
+              <a href="./../" title="Go Back one Directory">Communicable Diseases</a>
+            </div>
           </div>
           <h3>
             <span class="style2">24 hour hotline: 877-435-8411</span>
@@ -254,123 +260,39 @@
           </div>
           <div class="clearfix margin-top-20"></div>
           <h2>COVID-19 Testing Reported to Missouri Department of Health and Senior Services</h2>
-          <p>As of 9:05 a.m. CT, March 20</p>
+          <p>As of 9:00 p.m. CT, March 20
+            <br>
+          </p>
           <p>As  commercial testing capacities increase, the coordination of patient and associated contact investigations is paramount to preventing and mitigating the spread of the virus. While performing public health priority activities, including notifying the patient, raising awareness among our communities is  valuable. We will provide data as it is available, verified and pertinent.</p>
           <h2>
-            <span class="text-danger">Confirmed cases in Missouri: 47</span>
+            <span class="text-danger">Confirmed cases in Missouri: 73</span>
           </h2>
-          <h3 class="text-center">Patients Tested at Missouri State Public Health Laboratory and CDC*</h3>
           <div class="table-responsive">
             <table class="table col-md-12 col-sm-12">
               <tbody>
                 <tr>
-                  <th scope="row" class="col-md-4">Negative</th>
-                  <td class="col-md-8 text-center">369</td>
-                </tr>
-                <tr>
                   <th scope="row" class="col-md-4">Deaths</th>
-                  <td class="col-md-8 text-center">1 (Boone County)</td>
+                  <td class="col-md-8 text-center">3
+                    <br>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row" class="col-md-4">Positive</th>
-                  <td class="col-md-8 text-center">26</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="col-md-4">Total Patients Tested</th>
-                  <td class="col-md-8 text-center">395</td>
+                  <td class="col-md-8 text-center">73</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="clearfix"></div>
+          <ul>
+            <li>
+              <h2>
+                <a href="/living/healthcondiseases/communicable/novel-coronavirus/results.php">
+                  <span class="text-danger">Click for Additional Data, Including County</span>
+                </a>
+              </h2>
+            </li>
+          </ul>
           <p>Labs are required by the Missouri Code of State Regulations to immediately report positive COVID-19 test results. It is important to note that results received from these labs are from patient samples taken over a period of time due to potential testing backlogs. As commercial labs increase their capacity for testing, we will continue to receive results from them requiring immediate verification of patient data for each result. Prompt efforts to protect the public&#8217;s health depends on this verification. Patient data from commercial labs is preliminary and subject to change following initial public health involvement.</p>
-          <h3 class="text-center">Cases by County**</h3>
-          <div class="table w-auto">
-            <table class="table col-md-12 col-sm-12">
-              <tbody>
-                <tr>
-                  <th>County</th>
-                  <th class="text-center">Positive by State Public Health Laboratory</th>
-                  <th class="text-center">Positive by Commercial or Other Laboratory</th>
-                </tr>
-                <tr>
-                  <td>Boone</td>
-                  <td class="text-center">1</td>
-                  <td class="text-center">2</td>
-                </tr>
-                <tr>
-                  <td>Cass</td>
-                  <td class="text-center">2</td>
-                  <td class="text-center">1</td>
-                </tr>
-                <tr>
-                  <td>Christian</td>
-                  <td class="text-center">2</td>
-                  <td class="text-center"></td>
-                </tr>
-                <tr>
-                  <td>Cole</td>
-                  <td class="text-center">2</td>
-                  <td class="text-center"></td>
-                </tr>
-                <tr>
-                  <td>Greene</td>
-                  <td class="text-center">6</td>
-                  <td class="text-center"></td>
-                </tr>
-                <tr>
-                  <td>Henry</td>
-                  <td class="text-center">1</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Jackson</td>
-                  <td class="text-center">1</td>
-                  <td class="text-center">2</td>
-                </tr>
-                <tr>
-                  <td>Kansas City</td>
-                  <td class="text-center"></td>
-                  <td class="text-center">7</td>
-                </tr>
-                <tr>
-                  <td>Pulaski</td>
-                  <td class="text-center"></td>
-                  <td class="text-center">1</td>
-                </tr>
-                <tr>
-                  <td>Scott</td>
-                  <td class="text-center"></td>
-                  <td class="text-center">1</td>
-                </tr>
-                <tr>
-                  <td>St. Charles</td>
-                  <td class="text-center"></td>
-                  <td class="text-center">1</td>
-                </tr>
-                <tr>
-                  <td>St. Louis City</td>
-                  <td class="text-center">3</td>
-                  <td class="text-center">2</td>
-                </tr>
-                <tr>
-                  <td>St. Louis County</td>
-                  <td class="text-center">7</td>
-                  <td class="text-center">2</td>
-                </tr>
-                <tr>
-                  <td>TBD</td>
-                  <td class="text-center"></td>
-                  <td class="text-center">3</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="clearfix"></div>
-          <p class="small">* Prior to the MSPHL&#8217;s approval to test for the virus that causes COVID-19 on Feb. 27, the CDC was performing testing for Missourians. The first 9 patients were tested by the CDC.
-            <br>**
-            <span class="table-responsive">Cases by county will be updated as information is verified and patients are notified. The breakdown may not match the total case count above.</span>
-          </p>
           <ul class="margin-top-20">
             <li>
               <a href="/living/healthcondiseases/communicable/novel-coronavirus/pdf/novel-coronavirus-factsheet.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Novel Coronavirus Fact Sheet
@@ -465,10 +387,13 @@
               </a>
               <a href="https://labor.mo.gov/coronavirus" class="btn btn-primary margin-top-5" title="Employment information and COVID-19">Read More</a>
             </div>
-            <!--
-  div class="col-xs-12 col-sm-4 col-md-4 text-center margin-bottom-15"> <a href="/living/healthcondiseases/communicable/novel-coronavirus/anxiety.php"><img src="/living/healthcondiseases/communicable/novel-coronavirus/img/anxiety.jpg" class="img-responsive center-block" alt="Handling COVID-19 Anxiety"></a><a href="/living/healthcondiseases/communicable/novel-coronavirus/anxiety.php" class="btn btn-primary margin-top-5" title="Handling COVID-19 Anxiety">Read More</a></div>
-          <div class="col-xs-12 col-sm-4 col-md-4 text-center margin-bottom-15"> <a href="/living/healthcondiseases/communicable/novel-coronavirus/businesses.php"><img src="/living/healthcondiseases/communicable/novel-coronavirus/img/businesses.jpg" class="img-responsive center-block" alt="Businesses"></a><a href="/living/healthcondiseases/communicable/novel-coronavirus/businesses.php" class="btn btn-primary margin-top-5" title="Read More COVID-19 and Businesses">Read More</a></div
-  -->
+            <div class="col-xs-12 col-sm-4 col-md-4 text-center margin-bottom-15">
+              <a href="/living/healthcondiseases/communicable/novel-coronavirus/education.php">
+                <img src="/living/healthcondiseases/communicable/novel-coronavirus/img/educational-institutions.jpg" class="img-responsive center-block" alt="Educational Institutions">
+              </a>
+              <a href="/living/healthcondiseases/communicable/novel-coronavirus/education.php" class="btn btn-primary margin-top-5" title="Educational Institutions">Read More</a>
+            </div>
+            <!--div class="col-xs-12 col-sm-4 col-md-4 text-center margin-bottom-15"> <a href="/living/healthcondiseases/communicable/novel-coronavirus/businesses.php"><img src="/living/healthcondiseases/communicable/novel-coronavirus/img/businesses.jpg" class="img-responsive center-block" alt="Businesses"></a><a href="/living/healthcondiseases/communicable/novel-coronavirus/businesses.php" class="btn btn-primary margin-top-5" title="Read More COVID-19 and Businesses">Read More</a></div-->
           </div>
           <!--end image-row 4-->
         </section>
@@ -698,5 +623,6 @@
     <!--Disables pinch zoom on mobile devices-->
     <!--<script>if ($(window).width() < 600) { $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'); }</script>-->
     <script type="text/javascript" src="/js/global.min.js"></script>
+    <script async="" type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=472058174"></script>
   </body>
 </html>
