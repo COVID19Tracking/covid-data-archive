@@ -2,7 +2,7 @@
   <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="https://bam.nr-data.net/1/b1bb1b892b?a=55445753&amp;v=1167.2a4546b&amp;to=b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF&amp;rst=2068&amp;ref=http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus&amp;ap=183&amp;be=404&amp;fe=2056&amp;dc=1405&amp;perf=%7B%22timing%22:%7B%22of%22:1584907649252,%22n%22:0,%22f%22:1,%22dn%22:6,%22dne%22:28,%22c%22:28,%22ce%22:98,%22rq%22:98,%22rp%22:367,%22rpe%22:367,%22dl%22:369,%22di%22:1392,%22ds%22:1401,%22de%22:1744,%22dc%22:2055,%22l%22:2055,%22le%22:2057%7D,%22navigation%22:%7B%7D%7D&amp;at=QxNSFQhCT0k%3D&amp;jsonp=NREUM.setToken"></script>
+    <script type="text/javascript" src="https://bam.nr-data.net/1/b1bb1b892b?a=55445753&amp;v=1167.2a4546b&amp;to=b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF&amp;rst=2364&amp;ref=http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus&amp;ap=286&amp;be=626&amp;fe=2351&amp;dc=1660&amp;perf=%7B%22timing%22:%7B%22of%22:1584909385824,%22n%22:0,%22f%22:1,%22dn%22:9,%22dne%22:135,%22c%22:135,%22ce%22:212,%22rq%22:212,%22rp%22:581,%22rpe%22:581,%22dl%22:593,%22di%22:1569,%22ds%22:1655,%22de%22:1976,%22dc%22:2350,%22l%22:2350,%22le%22:2352%7D,%22navigation%22:%7B%7D%7D&amp;at=QxNSFQhCT0k%3D&amp;jsonp=NREUM.setToken"></script>
     <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b1bb1b892b",applicationID:"55445753"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
@@ -40,17 +40,17 @@
     <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-64509648-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
     <script src="http://www.dph.illinois.gov/sites/default/files/js/js_4Bn1FHP0-cymhn72AeTIwKVvwp6nfSiB37Baj6OnuFw.js"></script>
     <script src="http://www.dph.illinois.gov/sites/default/files/js/js_uJza7YfnRR5NR2lF9vXzRt70RgakoNAHGXPPuruc5xQ.js"></script>
-    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"B1SeOHB0gVEpeNMm4ozqn3qBy7h6f5XuGAOSZdrelLQ","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
+    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"8RuIA4MFQaOT4DqDg7vyBjkwnFWEp7lq4tU9ISL9sZg","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
     <!--
   [if lt IE 9]>
       <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
       <![endif]
   -->
     <style id="plotly.js-style-global"></style>
-    <style id="plotly.js-style-modebar-b49f17"></style>
-    <style id="plotly.js-style-modebar-ca3210"></style>
+    <style id="plotly.js-style-modebar-9e0f03"></style>
+    <style id="plotly.js-style-modebar-73d1be"></style>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-    <style id="plotly.js-style-modebar-8550ea"></style>
+    <style id="plotly.js-style-modebar-bec128"></style>
   </head>
   <body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-22076 node-type-diseases-and-conditions section-topics-services">
     <p id="skip-link">
@@ -74,7 +74,7 @@
                     <div class="form-actions form-wrapper" id="edit-actions">
                       <input alt="Search IDPH" type="image" id="edit-submit" name="submit" src="/sites/all/themes/idph/images/icon_search.png" class="form-submit">
                     </div>
-                    <input type="hidden" name="form_build_id" value="form-9F-cnbgYgXWS_26Dx2W7EhOg4dY1K8GDqX2PlNyeJ_w">
+                    <input type="hidden" name="form_build_id" value="form-1nU6K0QqECgPHDqdPkeXjwjIvaNrkNQh7e2_VJ0zPT8">
                     <input type="hidden" name="form_id" value="search_block_form">
                   </div>
                 </div>
@@ -120,12 +120,12 @@
                 <a href="/topics-services" title="" class="sf-depth-1 menuparent sf-with-ul">Topics &amp; Services
                   <span class="sf-sub-indicator">&#187;</span>
                 </a>
-                <ul style="float: none; width: 22.8571em;" class="sf-hidden">
+                <ul style="float: none; width: 21.8571em;" class="sf-hidden">
                   <li id="menu-352-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-8 sf-parent-children-3 sf-single-children-5 menuparent" style="">
                     <a href="/topics-services/birth-death-other-records" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Birth, Death, Other Records
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 18.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 18.5em;" class="sf-hidden">
                       <li id="menu-1581-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style="">
                         <a href="/topics-services/birth-death-other-records/adoption" class="sf-depth-3 menuparent sf-with-ul" style="">Adoption
                           <span class="sf-sub-indicator">&#187;</span>
@@ -140,7 +140,7 @@
                         <a href="/topics-services/birth-death-other-records/birth-records" class="sf-depth-3 menuparent sf-with-ul" style="">Birth Records
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.3571em;" class="sf-hidden">
                           <li id="menu-1017-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/birth-death-other-records/birth-records/correct-birth-certificate" class="sf-depth-4" style="">Correct Birth Certificate</a>
                           </li>
@@ -168,7 +168,7 @@
                         <a href="/topics-services/birth-death-other-records/death-records" class="sf-depth-3 menuparent sf-with-ul" style="">Death Records
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
                           <li id="menu-1621-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/birth-death-other-records/death-records/correct-death-certificate" class="sf-depth-4" style="">Correct Death Certificate</a>
                           </li>
@@ -201,12 +201,12 @@
                     <a href="/topics-services/diseases-and-conditions" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Diseases and Conditions
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 19.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 19.5em;" class="sf-hidden">
                       <li id="menu-9616-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style="">
                         <a href="/topics-services/diseases-and-conditions/alzheimers" class="sf-depth-3 menuparent sf-with-ul" style="">Alzheimer's Disease
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 21.8571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 21.3571em;" class="sf-hidden">
                           <li id="menu-124866-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/alzheimers/alzheimers-services-curriculum" class="sf-depth-4" style="">Alzheimer's Disease Services Curriculum</a>
                           </li>
@@ -232,7 +232,7 @@
                         <a href="/topics-services/diseases-and-conditions/chronic-diseases" class="sf-depth-3 menuparent sf-with-ul" style="">Chronic Diseases
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17.8571em;" class="sf-hidden">
                           <li id="menu-29696-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/content/chronic-disease-burden-updates" class="sf-depth-4" style="">Chronic Disease Burden Updates</a>
                           </li>
@@ -248,7 +248,7 @@
                         <a href="/topics-services/diseases-and-conditions/diabetes" class="sf-depth-3 menuparent sf-with-ul" style="">Diabetes
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25em;" class="sf-hidden">
                           <li id="menu-2731-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/diabetes/il-prevention-control-program" class="sf-depth-4" style="">Illinois Diabetes Prevention and Control Program</a>
                           </li>
@@ -261,7 +261,7 @@
                         <a href="/topics-services/diseases-and-conditions/hiv-aids" title="" class="sf-depth-3 menuparent sf-with-ul" style="">HIV/AIDS
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25em;" class="sf-hidden">
                           <li id="menu-2956-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/hiv-aids/hiv-corrections-initiative" class="sf-depth-4" style="">HIV Corrections Initiative</a>
                           </li>
@@ -301,7 +301,7 @@
                         <a href="/topics-services/diseases-and-conditions/heart-stroke" class="sf-depth-3 menuparent sf-with-ul" style="">Heart Disease &amp; Stroke
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12.8571em;" class="sf-hidden">
                           <li id="menu-2776-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/heart-stroke/cholesterol" class="sf-depth-4" style="">Cholesterol</a>
                           </li>
@@ -341,7 +341,7 @@
                         <a href="/hepatitis" class="sf-depth-3 menuparent sf-with-ul" style="">Hepatitis
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 13.3571em;" class="sf-hidden">
                           <li id="menu-96921-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/hepatitisA" class="sf-depth-4" style="">Hepatitis A Outbreaks</a>
                           </li>
@@ -351,7 +351,7 @@
                         <a href="/topics-services/diseases-and-conditions/infectious-diseases" class="sf-depth-3 menuparent sf-with-ul" style="">Infectious Diseases
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 16.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.9286em;" class="sf-hidden">
                           <li id="menu-2666-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/infectious-diseases/infectious-disease-reporting" class="sf-depth-4" style="">Infectious Disease Reporting</a>
                           </li>
@@ -364,7 +364,7 @@
                         <a href="/topics-services/diseases-and-conditions/influenza" class="sf-depth-3 menuparent sf-with-ul" style="">Influenza (Flu)
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
                           <li id="menu-2736-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/influenza/cold-flu" class="sf-depth-4" style="">A Cold or the Flu?</a>
                           </li>
@@ -389,7 +389,7 @@
                         <a href="/topics-services/diseases-and-conditions/stds" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Sexually Transmitted Diseases (STD)
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18.4286em;" class="sf-hidden">
                           <li id="menu-68406-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/infectious-diseases/infectious-disease-reporting" title="" class="sf-depth-4" style="">STD Reporting</a>
                           </li>
@@ -419,12 +419,12 @@
                     <a href="/topics-services/emergency-preparedness-response" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Emergency Preparedness &amp; Response
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 26em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 25.4286em;" class="sf-hidden">
                       <li id="menu-397-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-9 sf-parent-children-3 sf-single-children-6 menuparent" style="">
                         <a href="/topics-services/emergency-preparedness-response/ems" class="sf-depth-3 menuparent sf-with-ul" style="">Emergency Medical Services
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 22.4286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 22.0714em;" class="sf-hidden">
                           <li id="menu-6681-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/emergency-preparedness-response/ems/assistance-recognition-promotion" class="sf-depth-4" style="">EMS Assistance, Recognition &amp; Promotion</a>
                           </li>
@@ -444,7 +444,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/preHospData" class="sf-depth-4 menuparent sf-with-ul" style="">Prehospital Data Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 16.9286em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                               <li id="menu-115526-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/Illinois-NEMSIS-Specifications" class="sf-depth-5" style="">Illinois NEMSIS Specifications</a>
                               </li>
@@ -454,7 +454,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/stroke-program" class="sf-depth-4 menuparent sf-with-ul" style="">Stroke Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 13.1429em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 13em;" class="sf-hidden">
                               <li id="menu-131611-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/stroke-program/stroke-centers" class="sf-depth-5" style="">Stroke Center Listing</a>
                               </li>
@@ -464,7 +464,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/trauma-program" class="sf-depth-4 menuparent sf-with-ul" style="">Trauma Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 14.8571em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 14.9286em;" class="sf-hidden">
                               <li id="menu-134316-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/trauma-program/trauma-registry-training" class="sf-depth-5" style="">Trauma Registry Training</a>
                               </li>
@@ -485,7 +485,7 @@
                         <a href="/topics-services/emergency-preparedness-response/volunteering-personal-preparedness" class="sf-depth-3 menuparent sf-with-ul" style="">Volunteering &amp; Personal Preparedness
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                           <li id="menu-6701-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/emergency-preparedness-response/volunteering-personal-preparedness/americorps-program" class="sf-depth-4" style="">AmeriCorps Program</a>
                           </li>
@@ -506,7 +506,7 @@
                     <a href="/topics-services/environmental-health-protection" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Environmental Health Protection
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 26.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 26.1429em;" class="sf-hidden">
                       <li id="menu-2171-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/environmental-health-protection/asbestos" class="sf-depth-3" style="">Asbestos Abatement</a>
                       </li>
@@ -523,7 +523,7 @@
                         <a href="/illinoislead" class="sf-depth-3 menuparent sf-with-ul" style="">Lead Poisoning Prevention
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 20.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 20.5714em;" class="sf-hidden">
                           <li id="menu-116886-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/lead-poisoning-prevention/families-of-lead-exposed-children" class="sf-depth-4" style="">Families of Lead Exposed Children</a>
                           </li>
@@ -573,7 +573,7 @@
                         <a href="/topics-services/environmental-health-protection/private-water" class="sf-depth-3 menuparent sf-with-ul" style="">Private Water &amp; Closed Loop Wells
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
                           <li id="menu-96896-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/private-water/methane-groundwater" class="sf-depth-4" style="">Methane in Groundwater</a>
                           </li>
@@ -583,7 +583,7 @@
                         <a href="/topics-services/environmental-health-protection/structural-pest-control" class="sf-depth-3 menuparent sf-with-ul" style="">Structural Pest Control
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 19.4286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18.9286em;" class="sf-hidden">
                           <li id="menu-2621-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/structural-pest-control/integrated-pest-management" class="sf-depth-4" style="">Integrated Pest Management (IPM)</a>
                           </li>
@@ -599,7 +599,7 @@
                         <a href="/topics-services/environmental-health-protection/toxicology" class="sf-depth-3 menuparent sf-with-ul" style="">Toxicology Program
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 27em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 26.2143em;" class="sf-hidden">
                           <li id="menu-1241-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/toxicology/fish-advisories" class="sf-depth-4" style="">Fish Advisories</a>
                           </li>
@@ -607,7 +607,7 @@
                             <a href="/topics-services/environmental-health-protection/toxicology/indoor-air-quality-healthy-homes" class="sf-depth-4 menuparent sf-with-ul" style="">Indoor Air Quality and Healthy Homes
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 24.1429em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 23.6429em;" class="sf-hidden">
                               <li id="menu-115531-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/environmental-health-protection/toxicology/indoor-air-quality-healthy-homes/flood-sewer-overflow-cleanup" class="sf-depth-5" style="">Cleaning Up After Flood and Sewer Overflows</a>
                               </li>
@@ -686,12 +686,12 @@
                     <a href="/topics-services/health-care-regulation" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Health Care Regulation
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 24.2857em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 24.4286em;" class="sf-hidden">
                       <li id="menu-402-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-17 sf-parent-children-0 sf-single-children-17 menuparent" style="">
                         <a href="/topics-services/health-care-regulation/facilities" class="sf-depth-3 menuparent sf-with-ul" style="">Health Care Facilities
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.2857em;" class="sf-hidden">
                           <li id="menu-8291-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/facilities/alternative-health-care-delivery" class="sf-depth-4" style="">Alternative Health Care Delivery</a>
                           </li>
@@ -749,7 +749,7 @@
                         <a href="/topics-services/health-care-regulation/health-care-worker-registry" class="sf-depth-3 menuparent sf-with-ul" style="">Health Care Worker Registry
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.7143em;" class="sf-hidden">
                           <li id="menu-2996-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/health-care-worker-registry/cna-facts" class="sf-depth-4" style="">CNA Facts</a>
                           </li>
@@ -762,7 +762,7 @@
                         <a href="/topics-services/health-care-regulation/nursing-homes" class="sf-depth-3 menuparent sf-with-ul" style="">Nursing Homes
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 23.3571em;" class="sf-hidden">
                           <li id="menu-3051-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/nursing-homes/advance-directives" class="sf-depth-4" style="">Advance Directives</a>
                           </li>
@@ -812,7 +812,7 @@
                         <a href="/topics-services/health-care-regulation/life-safety-construction" class="sf-depth-3 menuparent sf-with-ul" style="">Life Safety &amp; Construction
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 19.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 19.1429em;" class="sf-hidden">
                           <li id="menu-9651-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/life-safety-construction/astc-licensure" class="sf-depth-4" style="">ASTC Licensure</a>
                           </li>
@@ -839,7 +839,7 @@
                     <a href="/topics-services/lab-testing-services" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Lab Testing &amp; Services
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 21em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 20.7143em;" class="sf-hidden">
                       <li id="menu-390-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/lab-testing-services/emergency-procedures" title="" class="sf-depth-3" style="">Lab Emergency Procedures</a>
                       </li>
@@ -870,12 +870,12 @@
                     <a href="/topics-services/life-stages-populations" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Life Stages &amp; Populations
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 18.5714em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
                       <li id="menu-2891-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-9 sf-parent-children-0 sf-single-children-9 menuparent" style="">
                         <a href="/topics-services/life-stages-populations/genomics" class="sf-depth-3 menuparent sf-with-ul" style="">Genomics
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.5em;" class="sf-hidden">
                           <li id="menu-2921-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/genomics/brac1-2" class="sf-depth-4" style="">BRCA1 &amp; BRCA2</a>
                           </li>
@@ -909,7 +909,7 @@
                         <a href="/topics-services/life-stages-populations/disability-health-program" class="sf-depth-3 menuparent sf-with-ul" style="">Disability &amp; Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.2857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                           <li id="menu-6571-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/disability-health-program/disability-arthritis" title="Disability and Arthritis" class="sf-depth-4" style="">Disability and Arthritis</a>
                           </li>
@@ -928,7 +928,7 @@
                         <a href="/topics-services/life-stages-populations/mens-health" class="sf-depth-3 menuparent sf-with-ul" style="">Men&#8217;s Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17em;" class="sf-hidden">
                           <li id="menu-3116-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/mens-health/chronic-diseases" class="sf-depth-4" style="">Chronic Diseases and Men</a>
                           </li>
@@ -959,7 +959,7 @@
                         <a href="/topics-services/life-stages-populations/newborn-screening" class="sf-depth-3 menuparent sf-with-ul" style="">Newborn Screening
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 26.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.9286em;" class="sf-hidden">
                           <li id="menu-9486-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/newborn-screening/cchd" class="sf-depth-4" style="">Critical Congenital Heart Disease (CCHD)</a>
                           </li>
@@ -1012,7 +1012,7 @@
                         <a href="/topics-services/life-stages-populations/womens-health-services" class="sf-depth-3 menuparent sf-with-ul" style="">Women's Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 23.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.1429em;" class="sf-hidden">
                           <li id="menu-6836-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/womens-health-services/family-planning" class="sf-depth-4" style="">Family Planning</a>
                           </li>
@@ -1028,7 +1028,7 @@
                         <a href="/topics-services/life-stages-populations/lgbtq-health" class="sf-depth-3 menuparent sf-with-ul" style="">LGBTQ Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 12.2857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12em;" class="sf-hidden">
                           <li id="menu-66996-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="http://dph.illinois.gov/topics-services/diseases-and-conditions/hiv-aids" title="" class="sf-depth-4" style="">HIV/AIDS</a>
                           </li>
@@ -1041,7 +1041,7 @@
                         <a href="/topics-services/life-stages-populations/maternal-child-family-health-services" class="sf-depth-3 menuparent sf-with-ul" style="">Maternal, Child &amp; Family Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.2143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.0714em;" class="sf-hidden">
                           <li id="menu-13711-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/maternal-child-family-health-services/child-health" class="sf-depth-4" style="">Child Health</a>
                           </li>
@@ -1069,7 +1069,7 @@
                         <a href="/topics-services/life-stages-populations/infant-mortality" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Infant Mortality
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.2857em;" class="sf-hidden">
                           <li id="menu-3151-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/infant-mortality/sids" class="sf-depth-4" style="">Sudden Unexpected Infant Death (SUID) Program</a>
                           </li>
@@ -1085,7 +1085,7 @@
                         <a href="/topics-services/life-stages-populations/minority-health" class="sf-depth-3 menuparent sf-with-ul" style="">Minority Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 13.3571em;" class="sf-hidden">
                           <li id="menu-48866-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/minority-health/translated-documents" class="sf-depth-4" style="">Translated Documents</a>
                           </li>
@@ -1097,7 +1097,7 @@
                     <a href="/topics-services/prevention-wellness" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Prevention &amp; Wellness
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 23em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 22.6429em;" class="sf-hidden">
                       <li id="menu-76001-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/prevention-wellness/animal-population-control" class="sf-depth-3" style="">Animal Population Control</a>
                       </li>
@@ -1110,7 +1110,7 @@
                             <a href="/topics-services/prevention-wellness/medical-cannabis" class="sf-depth-4 menuparent sf-with-ul" style="">Medical Cannabis
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 21.0714em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 20.7143em;" class="sf-hidden">
                               <li id="menu-108891-1" class="first odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/prevention-wellness/medical-cannabis/opioid-alternative-pilot-program" class="sf-depth-5" style="">Opioid Alternative Pilot Program</a>
                               </li>
@@ -1179,7 +1179,7 @@
                         <a href="/topics-services/prevention-wellness/immunization" class="sf-depth-3 menuparent sf-with-ul" style="">Immunization
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.8571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18em;" class="sf-hidden">
                           <li id="menu-1771-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/immunization/icare" class="sf-depth-4" style="">I-CARE (Immunization Records)</a>
                           </li>
@@ -1204,7 +1204,7 @@
                         <a href="/topics-services/prevention-wellness/injury-violence-prevention" class="sf-depth-3 menuparent sf-with-ul" style="">Injury &amp; Violence Prevention
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.7857em;" class="sf-hidden">
                           <li id="menu-9621-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/injury-violence-prevention/carbon-monoxide" class="sf-depth-4" style="">Carbon Monoxide</a>
                           </li>
@@ -1221,7 +1221,7 @@
                             <a href="/topics-services/prevention-wellness/injury-violence-prevention/older-adult-falls" class="sf-depth-4 menuparent sf-with-ul" style="">Older Adult Falls
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 16.2857em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 16.0714em;" class="sf-hidden">
                               <li id="menu-96826-1" class="first odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/prevention-wellness/injury-violence-prevention/health-care-providers" title="" class="sf-depth-5" style="">Health Care Providers</a>
                               </li>
@@ -1248,7 +1248,7 @@
                         <a href="/topics-services/prevention-wellness/oral-health" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Oral Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17.3571em;" class="sf-hidden">
                           <li id="menu-68361-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/oral-health/oral-health-during-pregnancy" class="sf-depth-4" style="">Oral Health During Pregnancy</a>
                           </li>
@@ -1304,7 +1304,7 @@
                         <a href="/topics-services/prevention-wellness/tobacco" class="sf-depth-3 menuparent sf-with-ul" style="">Tobacco Prevention and Control
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 16em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.7857em;" class="sf-hidden">
                           <li id="menu-124861-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/tobacco/e-cigarettes-and-vapes" class="sf-depth-4" style="">E-cigarettes and Vapes</a>
                           </li>
@@ -1317,7 +1317,7 @@
                         <a href="/topics-services/prevention-wellness/vision-hearing" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Vision &amp; Hearing
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 26.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.7143em;" class="sf-hidden">
                           <li id="menu-6561-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/vision-hearing/hearing-instrument-consumer-protection-program" class="sf-depth-4" style="">Hearing Instrument Consumer Protection Program</a>
                           </li>
@@ -1329,7 +1329,7 @@
                     <a href="/topics-services/provider-partner-resources" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Provider and Partner Resources
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 23.1429em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 22.7143em;" class="sf-hidden">
                       <li id="menu-417-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/provider-partner-resources/grants-management" title="" class="sf-depth-3" style="">Grants Management</a>
                       </li>
@@ -1353,7 +1353,7 @@
                         <a href="/topics-services/provider-partner-resources/quality-improvement-strategic-planning" class="sf-depth-3 menuparent sf-with-ul" style="">Quality Improvement &amp; Strategic Planning
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 12.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12.5em;" class="sf-hidden">
                           <li id="menu-1951-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/provider-partner-resources/quality-improvement-strategic-planning/strategic-plan" class="sf-depth-4" style="">IDPH Strategic Plan</a>
                           </li>
@@ -1393,7 +1393,7 @@
                     <a href="/opioids" class="sf-depth-2 menuparent sf-with-ul" style="">Opioids
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 20em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 19.6429em;" class="sf-hidden">
                       <li id="menu-38226-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/opioids/home" class="sf-depth-3" style="">Opioids</a>
                       </li>
@@ -1429,7 +1429,7 @@
                 <a href="/data-statistics" title="" class="sf-depth-1 menuparent sf-with-ul">Data &amp; Statistics
                   <span class="sf-sub-indicator">&#187;</span>
                 </a>
-                <ul style="float: none; width: 24.7857em;" class="sf-hidden">
+                <ul style="float: none; width: 24em;" class="sf-hidden">
                   <li id="menu-1991-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style="">
                     <a href="http://www.idph.state.il.us/brfss/" title="" class="sf-depth-2" target="_blank" rel="noopener noreferrer" style="">Behavioral Risk Factor Surveillance System</a>
                   </li>
@@ -1443,7 +1443,7 @@
                     <a href="/data-statistics/epidemiology" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Epidemiology
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 25.2857em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 24.4286em;" class="sf-hidden">
                       <li id="menu-2016-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/data-statistics/epidemiology/apors" title="" class="sf-depth-3" style="">Adverse Pregnancy Outcomes Reporting System</a>
                       </li>
@@ -1477,7 +1477,7 @@
                     <a href="/data-statistics/vital-statistics" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Vital Statistics
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 16.0714em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 15.4286em;" class="sf-hidden">
                       <li id="menu-2076-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/data-statistics/vital-statistics/abortion-statistics" class="sf-depth-3" style="">Abortion Statistics</a>
                       </li>
@@ -1616,7 +1616,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 620px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="732.1" height="620" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-8550ea">
+                              <defs id="defs-bec128">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -1640,7 +1640,7 @@
                               <canvas class="gl-canvas gl-canvas-context" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="732.1" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-focus" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="732.1" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-pick" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="732.1" height="620"></canvas>
-                              <div id="8550ea-mapbox" style="position: absolute; width: 732px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
+                              <div id="bec128-mapbox" style="position: absolute; width: 732px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
                                 <div class="mapboxgl-canary" style="visibility: hidden;"></div>
                                 <div class="mapboxgl-canvas-container mapboxgl-interactive">
                                   <canvas class="mapboxgl-canvas" style="position: absolute; width: 732px; height: 620px;" tabindex="0" aria-label="Map" width="732" height="620"></canvas>
@@ -1654,7 +1654,7 @@
                               </div>
                             </div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="732.1" height="620">
-                              <defs id="topdefs-8550ea">
+                              <defs id="topdefs-bec128">
                                 <g class="clips"></g>
                               </defs>
                               <g class="indicatorlayer"></g>
@@ -1669,7 +1669,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-8550ea" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-bec128" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -1804,7 +1804,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 400px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="742" height="400" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-b49f17">
+                              <defs id="defs-9e0f03">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -1847,9 +1847,9 @@
                             </svg>
                             <div class="gl-container"></div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="742" height="400">
-                              <defs id="topdefs-b49f17">
+                              <defs id="topdefs-9e0f03">
                                 <g class="clips"></g>
-                                <clippath id="legendb49f17">
+                                <clippath id="legend9e0f03">
                                   <rect width="269" height="29" x="0" y="0"></rect>
                                 </clippath>
                               </defs>
@@ -1861,7 +1861,7 @@
                               <g class="infolayer">
                                 <g class="legend" pointer-events="all" transform="translate(112, 371)">
                                   <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="269" height="29" x="0" y="0"></rect>
-                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legendb49f17')">
+                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legend9e0f03')">
                                     <g class="groups">
                                       <g class="traces" style="opacity: 1;" transform="translate(0, 14.5)">
                                         <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positive (confirmed)" data-math="N">Positive (confirmed)</text>
@@ -1899,7 +1899,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-b49f17" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-9e0f03" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -2016,7 +2016,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 400px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="732.1" height="400" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-ca3210">
+                              <defs id="defs-73d1be">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -2059,9 +2059,9 @@
                             </svg>
                             <div class="gl-container"></div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="732.1" height="400">
-                              <defs id="topdefs-ca3210">
+                              <defs id="topdefs-73d1be">
                                 <g class="clips"></g>
-                                <clippath id="legendca3210">
+                                <clippath id="legend73d1be">
                                   <rect width="290" height="29" x="0" y="0"></rect>
                                 </clippath>
                               </defs>
@@ -2073,7 +2073,7 @@
                               <g class="infolayer">
                                 <g class="legend" pointer-events="all" transform="translate(108, 371)">
                                   <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="290" height="29" x="0" y="0"></rect>
-                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legendca3210')">
+                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legend73d1be')">
                                     <g class="groups">
                                       <g class="traces" style="opacity: 1;" transform="translate(0, 14.5)">
                                         <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positivo (confirmados)" data-math="N">Positivo (confirmados)</text>
@@ -2111,7 +2111,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-ca3210" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-73d1be" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -2451,7 +2451,7 @@
           </div>
           <div id="block-views-tweets-block" class="block block-views block-footer block-footer4 last even">
             <h2 class="block__title block-title">TRENDING TOPICS @IDPH</h2>
-            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-cb123661b3def0af5b66efd54cb51b48">
+            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-f4462f3b05a211b556abff340678e156">
               <div class="view-content">
                 <div class="item-list">
                   <ul>
@@ -2463,7 +2463,7 @@
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">1 hour 26 min</em>
+                          <em class="placeholder">1 hour 55 min</em>
                         </span>
                       </span>
                     </li>
@@ -2479,7 +2479,7 @@
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">3 hours 58 min</em>
+                          <em class="placeholder">4 hours 26 min</em>
                         </span>
                       </span>
                     </li>
@@ -2515,6 +2515,6 @@
       </div>
     </div>
     <script src="http://www.dph.illinois.gov/sites/all/libraries/respondjs/respond.min.js?q7ggba"></script>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":183,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":286,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
   </body>
 </html>
