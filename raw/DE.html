@@ -1,12 +1,12 @@
 <html lang="en-US">
   <base ref="https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html">
   <head>
-    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
-    <script src="https://connect.facebook.net/en_US/sdk.js?hash=6cc585401c660d7f6f1ad9efbc18b1b7" async="" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Global site tag (gtag.js) - Google Analytics-->
+    <script src="https://connect.facebook.net/en_US/sdk.js?hash=6cc585401c660d7f6f1ad9efbc18b1b7" async="" crossorigin="anonymous"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-39283013-20"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
@@ -36,6 +36,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!--Google recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Coronavirus - Delaware's Coronavirus Official Website</title>
     <!--This site is optimized with the Yoast SEO plugin v13.0 - https://yoast.com/wordpress/plugins/seo/-->
     <meta name="description" content="Find the lab-confirmed cases by county, learn what you can do, find resources for businesses, schools, health care, and more.">
@@ -149,7 +151,7 @@
                   }
   </style>
   </head>
-  <body class="home page-template-default page page-id-505 wp-embed-responsive" data-rsevent-id="rs_240297">
+  <body class="home page-template-default page page-id-505 wp-embed-responsive" data-rsevent-id="rs_169262">
     <!--BEGIN Fixed Main Nav Bar-->
     <!--Fixed navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -322,13 +324,13 @@
           <div class="container">
             <br>
             <div class="row">
-              <div class="col-md-12">
-                <h3 class="text-center">Watch a live coronavirus update from Governor Carney on March 22 at 5:00pm</h3>
-                <div class="center embed-responsive embed-responsive-16by9">
-                  <iframe id="ls_embed_1584906778" src="https://livestream.com/accounts/4090843/events/9052842/player?width=640&amp;height=360&amp;enableInfoAndActivity=true&amp;defaultDrawer=&amp;autoPlay=true&amp;mute=false" scrolling="no" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
-                  <script type="text/javascript" data-embed_id="ls_embed_1584906778" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>
-                </div>
-              </div>
+              <!--
+  <div class="col-md-12">
+  	<h3 class="text-center">Watch a live coronavirus update from Governor Carney on March 22 at 5:00pm</h3>
+  	  <div class="center embed-responsive embed-responsive-16by9">
+  		  <iframe id="ls_embed_1584906778" src="https://livestream.com/accounts/4090843/events/9052842/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe><script type="text/javascript" data-embed_id="ls_embed_1584906778" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>          </div>
+  	</div>
+  -->
               <br>
               <div class="row">
                 <div class="col-md-12">
@@ -344,11 +346,11 @@
                       </span>
                       <span class="rsbtn_right rsimg rsplay rspart"></span>
                     </a>
-                    <button type="button" class="rsbtn_tooltoggle" title="Open/close toolbar" style="display:none" aria-expanded="false" data-rs-container="readspeaker_button1" data-rsevent-id="rs_185188" accesskey="1">
+                    <button type="button" class="rsbtn_tooltoggle" title="Open/close toolbar" style="display:none" aria-expanded="false" data-rs-container="readspeaker_button1" data-rsevent-id="rs_302625" accesskey="1">
                       <i class="rsicn rsicn-arrow-down" aria-hidden="true"></i>
                       <span class="rsbtn_btnlabel" style="width: 0px; height: 0px;">Open/close toolbar</span>
                     </button>
-                    <button tabindex="-1" accesskey="k" class="rsbtn_focusforward" aria-hidden="true" data-rsevent-id="rs_272587">
+                    <button tabindex="-1" accesskey="k" class="rsbtn_focusforward" aria-hidden="true" data-rsevent-id="rs_167602">
                       <span class="">Focus</span>
                     </button>
                   </div>
@@ -370,8 +372,7 @@
                       </h3>
                       <!--<h3>Governor Carney declared a State of Emergency starting on March 13, 2020 and updated it on March 16, 18, and 20. <strong>If you are hosting an event with over 50 people, please review the <a href="https://news.delaware.gov/2020/03/18/governor-carney-issues-second-update-to-emergency-declaration/">news release</a> and <a href="https://governor.delaware.gov/wp-content/uploads/sites/24/2020/03/Second-Modification-to-the-State-of-Emergency.pdf">Governor's State of Emergency Declaration</a>.</strong></h3>-->
                       <h3></h3>
-                      <p>Delawareans who are feeling well should go about their daily lives but practice social distancing &#8211; staying six feet away from other people.</p>
-                      <p>Those who are feeling sick should stay home, and contact your primary health care provider if you have concerns about your symptoms, particularly those with fever and coughing or shortness of breath.</p>
+                      <p>Contact your primary health care provider if you have concerns about symptoms, particularly those with fever and coughing or shortness of breath.</p>
                       <p>Individuals with general questions about coronavirus can call DPH at
                         <a href="tel:1-866-408-1899">1-866-408-1899</a>
                         <span class="sr-only">1-866-408-1899</span>or email us at
@@ -611,7 +612,7 @@
                                 <div class="g-recaptcha" id="ctct_recaptcha_4" data-sitekey="6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr" data-size="invisible">
                                   <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
                                     <div class="grecaptcha-logo">
-                                      <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr&amp;co=aHR0cHM6Ly9jb3JvbmF2aXJ1cy5kZWxhd2FyZS5nb3Y6NDQz&amp;hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;size=invisible&amp;cb=p8bl90etu9kw" role="presentation" name="a-u5hgq3nqifjq" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe>
+                                      <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr&amp;co=aHR0cHM6Ly9jb3JvbmF2aXJ1cy5kZWxhd2FyZS5nb3Y6NDQz&amp;hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;size=invisible&amp;cb=mo9uajiw5nho" role="presentation" name="a-iz7a3ocgeijr" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe>
                                     </div>
                                     <div class="grecaptcha-error"></div>
                                     <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
