@@ -57,7 +57,7 @@
     <link rel="stylesheet" id="siteorigin-panels-front-css" href="https://hawaiicovid19.com/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.14" type="text/css" media="all">
     <link rel="stylesheet" id="sow-button-base-css" href="https://hawaiicovid19.com/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.16.0" type="text/css" media="all">
     <link rel="stylesheet" id="sow-button-flat-a64fe1e1a0da-css" href="https://hawaiicovid19.com/wp-content/uploads/siteorigin-widgets/sow-button-flat-a64fe1e1a0da.css?ver=5.3.2" type="text/css" media="all">
-    <link rel="stylesheet" id="rt-tpg-css" href="https://hawaiicovid19.com/wp-content/plugins/the-post-grid/assets/css/thepostgrid.css?ver=1584819380" type="text/css" media="all">
+    <link rel="stylesheet" id="rt-tpg-css" href="https://hawaiicovid19.com/wp-content/plugins/the-post-grid/assets/css/thepostgrid.css?ver=1584881345" type="text/css" media="all">
     <link rel="stylesheet" id="siteorigin-north-style-css" href="https://hawaiicovid19.com/wp-content/themes/siteorigin-north/style.min.css?ver=1.7.9" type="text/css" media="all">
     <link rel="stylesheet" id="siteorigin-north-icons-css" href="https://hawaiicovid19.com/wp-content/themes/siteorigin-north/css/north-icons.min.css?ver=1.7.9" type="text/css" media="all">
     <link rel="stylesheet" id="siteorigin-north-flexslider-css" href="https://hawaiicovid19.com/wp-content/themes/siteorigin-north/css/flexslider.min.css?ver=5.3.2" type="text/css" media="all">
@@ -2287,11 +2287,10 @@
     <script type="text/javascript">N2R('documentReady',function($){nextend.fontsDeferred=$.Deferred();if(nextend.fontsLoaded){nextend.fontsDeferred.resolve()}else{nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true;nextend.fontsDeferred.resolve()};var intercalCounter=0;nextend.fontInterval=setInterval(function(){if(intercalCounter>3||document.documentElement.className.indexOf('wf-active')!==-1){nextend.fontsLoadedActive();clearInterval(nextend.fontInterval)}intercalCounter++},1000)}N2R(["nextend-frontend","smartslider-frontend","smartslider-simple-type-frontend"],function(){new N2Classes.SmartSliderSimple('#n2-ss-2',{"admin":false,"translate3d":1,"callbacks":"","background.video.mobile":1,"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"desktop":1,"tablet":1,"mobile":1,"onResizeEnabled":true,"type":"auto","downscale":1,"upscale":1,"minimumHeight":0,"maximumHeight":3000,"maximumSlideWidth":3000,"maximumSlideWidthLandscape":3000,"maximumSlideWidthTablet":3000,"maximumSlideWidthTabletLandscape":3000,"maximumSlideWidthMobile":3000,"maximumSlideWidthMobileLandscape":3000,"maximumSlideWidthConstrainHeight":0,"forceFull":0,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","deviceModes":{"desktopPortrait":1,"desktopLandscape":0,"tabletPortrait":1,"tabletLandscape":0,"mobilePortrait":1,"mobileLandscape":0},"normalizedDeviceModes":{"unknownUnknown":["unknown","Unknown"],"desktopPortrait":["desktop","Portrait"],"desktopLandscape":["desktop","Portrait"],"tabletPortrait":["tablet","Portrait"],"tabletLandscape":["tablet","Portrait"],"mobilePortrait":["mobile","Portrait"],"mobileLandscape":["mobile","Portrait"]},"verticalRatioModifiers":{"unknownUnknown":1,"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"minimumFontSizes":{"desktopPortrait":4,"desktopLandscape":4,"tabletPortrait":4,"tabletLandscape":4,"mobilePortrait":4,"mobileLandscape":4},"ratioToDevice":{"Portrait":{"tablet":0.7,"mobile":0.5},"Landscape":{"tablet":0,"mobile":0}},"sliderWidthToDevice":{"desktopPortrait":1200,"desktopLandscape":1200,"tabletPortrait":840,"tabletLandscape":0,"mobilePortrait":600,"mobileLandscape":0},"basedOn":"combined","orientationMode":"width_and_height","overflowHiddenPage":0,"desktopPortraitScreenWidth":1200,"tabletPortraitScreenWidth":800,"mobilePortraitScreenWidth":440,"tabletLandscapeScreenWidth":800,"mobileLandscapeScreenWidth":440,"focus":{"offsetTop":"#wpadminbar","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"0","keyboard":1,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":1,"duration":8000,"autoplayToSlide":-1,"autoplayToSlideIndex":-1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0}},"perspective":1500,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"allowBGImageAttachmentFixed":false,"bgAnimationsColor":"RGBA(51,51,51,1)","bgAnimations":0,"mainanimation":{"type":"horizontal","duration":800,"delay":0,"ease":"easeOutQuad","parallax":0,"shiftedBackgroundAnimation":0},"carousel":1,"dynamicHeight":0,"initCallbacks":function($){N2D("SmartSliderWidgetArrowImage",function(i,e){function s(e,s,t,h){this.slider=e,this.slider.started(i.proxy(this.start,this,s,t,h))}return s.prototype.start=function(e,s,t){return this.slider.sliderElement.data("arrow")?!1:(this.slider.sliderElement.data("arrow",this),this.deferred=i.Deferred(),this.slider.sliderElement.on("SliderDevice",i.proxy(this.onDevice,this)).trigger("addWidget",this.deferred),this.previous=i("#"+this.slider.elementID+"-arrow-previous").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionPrevious()]()},this)),this.previousResize=this.previous.find(".n2-resize"),0===this.previousResize.length&&(this.previousResize=this.previous),this.next=i("#"+this.slider.elementID+"-arrow-next").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionNext()]()},this)),this.nextResize=this.next.find(".n2-resize"),0===this.nextResize.length&&(this.nextResize=this.next),this.desktopRatio=e,this.tabletRatio=s,this.mobileRatio=t,void i.when(this.previous.n2imagesLoaded(),this.next.n2imagesLoaded()).always(i.proxy(this.loaded,this)))},s.prototype.loaded=function(){this.previous.css("display","inline-block"),this.previousResize.css("display","inline-block"),this.previousWidth=this.previousResize.width(),this.previousHeight=this.previousResize.height(),this.previousResize.css("display",""),this.previous.css("display",""),this.next.css("display","inline-block"),this.nextResize.css("display","inline-block"),this.nextWidth=this.nextResize.width(),this.nextHeight=this.nextResize.height(),this.nextResize.css("display",""),this.next.css("display",""),this.previousResize.find("img").css("width","100%"),this.nextResize.find("img").css("width","100%"),this.onDevice(null,{device:this.slider.responsive.getDeviceMode()}),this.deferred.resolve()},s.prototype.onDevice=function(i,e){var s=1;switch(e.device){case"tablet":s=this.tabletRatio;break;case"mobile":s=this.mobileRatio;break;default:s=this.desktopRatio}this.previousResize.width(this.previousWidth*s),this.previousResize.height(this.previousHeight*s),this.nextResize.width(this.nextWidth*s),this.nextResize.height(this.nextHeight*s)},s});new N2Classes.SmartSliderWidgetArrowImage(this,0.8,0.7,0.5)}})})});</script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k820jgys"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
   </head>
-  <body data-rsssl="1" class="home page-template-default page page-id-8 siteorigin-panels  siteorigin-panels-home css3-animations responsive page-layout-full-width page-layout-menu-default wc-columns-3" style="position: relative; min-height: 100%; top: 0px;">
+  <body data-rsssl="1" class="home page-template-default page page-id-8 siteorigin-panels  siteorigin-panels-home group-blog css3-animations responsive page-layout-full-width page-layout-menu-default wc-columns-3" style="position: relative; min-height: 100%; top: 0px;">
     <div class="survey" id="newbutton">
       <p class="popp">?</p>
     </div>
@@ -2302,13 +2301,13 @@
           <div class="widgets widgets-1" aria-label="Top Bar Sidebar">
             <aside id="sticky-posts-2" class="widget widget_ultimate_posts">
               <div class="upw-posts hfeed">
-                <article class="post-1614 post type-post status-publish format-standard category-uncategorized">
+                <article class="post-1682 post type-post status-publish format-standard category-uncategorized">
                   <header>
                     <h4 class="entry-title">
-                      <a href="https://hawaiicovid19.com/march-20-covid-19-daily-update-the-importance-of-mental-health/" rel="bookmark">March 20 COVID-19 Daily Update: The Importance of Mental Health</a>
+                      <a href="https://hawaiicovid19.com/mandatory-14-day-quarantine-for-all-individuals-arriving-or-returning-to-the-state-of-hawai%ca%bbi/" rel="bookmark">Mandatory 14-Day Quarantine for all Individuals Arriving or Returning to the State of Hawai&#699;i</a>
                     </h4>
                     <div class="entry-meta">
-                      <time class="published" datetime="2020-03-20T18:18:36-10:00">March 20, 2020 6:18 pm</time>
+                      <time class="published" datetime="2020-03-21T16:36:48-10:00">March 21, 2020 4:36 pm</time>
                       <span style="color: black; position: relative; top: 10px; right: 109px;" class="title">COVID-19 Updates</span>
                       <span style="position:relative;float:right;color:black;bottom:15px;display:block;right:133px" class="getthefacts">READ MORE &gt;</span>
                     </div>
@@ -2404,6 +2403,9 @@
                           </a>
                           <a href="#" onclick="doGTranslate('en|ko');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Korean" class="nturl">
                             <img data-gt-lazy-src="//hawaiicovid19.com/wp-content/plugins/gtranslate/flags/16/ko.png" alt="ko" width="16" height="16">
+                          </a>
+                          <a href="#" onclick="doGTranslate('en|lo');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Lao" class="nturl">
+                            <img data-gt-lazy-src="//hawaiicovid19.com/wp-content/plugins/gtranslate/flags/16/lo.png" alt="lo" width="16" height="16">
                           </a>
                           <a href="#" onclick="doGTranslate('en|es');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Spanish" class="nturl">
                             <img data-gt-lazy-src="//hawaiicovid19.com/wp-content/plugins/gtranslate/flags/16/es.png" alt="es" width="16" height="16">
@@ -2660,9 +2662,9 @@
                                         <div class="siteorigin-widget-tinymce textwidget">
                                           <div class="n2-section-smartslider " role="region" aria-label="HomeSlider">
                                             <style>div#n2-ss-2{width:1200px;float:left;margin:0px 0px 0px 0px;}html[dir="rtl"] div#n2-ss-2{float:right;}div#n2-ss-2 .n2-ss-slider-1{position:relative;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;height:528px;border-style:solid;border-width:0px;border-color:#3e3e3e;border-color:RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;}div#n2-ss-2 .n2-ss-slider-background-video-container{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}div#n2-ss-2 .n2-ss-slider-2{position:relative;width:100%;height:100%;}.x-firefox div#n2-ss-2 .n2-ss-slider-2{opacity:0.99999;}div#n2-ss-2 .n2-ss-slider-3{position:relative;width:100%;height:100%;overflow:hidden;outline:1px solid rgba(0,0,0,0);z-index:10;}div#n2-ss-2 .n2-ss-slide-backgrounds,div#n2-ss-2 .n2-ss-slider-3 > .n-particles-js-canvas-el,div#n2-ss-2 .n2-ss-slider-3 > .n2-ss-divider{position:absolute;left:0;top:0;width:100%;height:100%;}div#n2-ss-2 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-2 .n2-ss-slider-3 > .n-particles-js-canvas-el{z-index:12;}div#n2-ss-2 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-2 .n2-ss-slide{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20;display:block;-webkit-backface-visibility:hidden;}div#n2-ss-2 .n2-ss-layers-container{position:relative;width:1200px;height:528px;}div#n2-ss-2 .n2-ss-parallax-clip > .n2-ss-layers-container{position:absolute;right:0;}div#n2-ss-2 .n2-ss-slide{perspective:1500px;}div#n2-ss-2[data-ie] .n2-ss-slide{perspective:none;transform:perspective(1500px);}div#n2-ss-2 .n2-ss-slide-active{z-index:21;}div#n2-ss-2 .n2-ss-button-container,div#n2-ss-2 .n2-ss-button-container a{display:inline-block;}div#n2-ss-2 .n2-ss-button-container.n2-ss-fullwidth,div#n2-ss-2 .n2-ss-button-container.n2-ss-fullwidth a{display:block;}div#n2-ss-2 .n2-ss-button-container.n2-ss-nowrap{white-space:nowrap;}div#n2-ss-2 .n2-ss-button-container a div{display:inline;font-size:inherit;text-decoration:inherit;color:inherit;line-height:inherit;font-family:inherit;font-weight:inherit;}div#n2-ss-2 .n2-ss-button-container a > div{display:inline-flex;align-items:center;vertical-align:top;}div#n2-ss-2 .n2-ss-button-container span{font-size:100%;vertical-align:baseline;}div#n2-ss-2 .n2-ss-button-container a[data-iconplacement="left"] span{margin-right:0.3em;}div#n2-ss-2 .n2-ss-button-container a[data-iconplacement="right"] span{margin-left:0.3em;}div#n2-ss-2 .nextend-arrow{cursor:pointer;overflow:hidden;line-height:0 !important;z-index:20;}div#n2-ss-2 .nextend-arrow img{position:relative;min-height:0;min-width:0;vertical-align:top;width:auto;height:auto;max-width:100%;max-height:100%;display:inline;}div#n2-ss-2 .nextend-arrow img.n2-arrow-hover-img{display:none;}div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-hover-img{display:inline;}div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-normal-img{display:none;}div#n2-ss-2 .nextend-arrow-animated{overflow:hidden;}div#n2-ss-2 .nextend-arrow-animated > div{position:relative;}div#n2-ss-2 .nextend-arrow-animated .n2-active{position:absolute;}div#n2-ss-2 .nextend-arrow-animated-fade{transition:background 0.3s, opacity 0.4s;}div#n2-ss-2 .nextend-arrow-animated-horizontal > div{transition:all 0.4s;left:0;}div#n2-ss-2 .nextend-arrow-animated-horizontal .n2-active{top:0;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:FOCUS > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal .n2-active{left:-100%;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal .n2-active,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:FOCUS > div{left:100%;}div#n2-ss-2 .nextend-arrow.nextend-arrow-animated-horizontal:HOVER .n2-active,div#n2-ss-2 .nextend-arrow.nextend-arrow-animated-horizontal:FOCUS .n2-active{left:0;}div#n2-ss-2 .nextend-arrow-animated-vertical > div{transition:all 0.4s;top:0;}div#n2-ss-2 .nextend-arrow-animated-vertical .n2-active{left:0;}div#n2-ss-2 .nextend-arrow-animated-vertical .n2-active{top:-100%;}div#n2-ss-2 .nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-2 .nextend-arrow-animated-vertical:FOCUS > div{top:100%;}div#n2-ss-2 .nextend-arrow-animated-vertical:HOVER .n2-active,div#n2-ss-2 .nextend-arrow-animated-vertical:FOCUS .n2-active{top:0;}div#n2-ss-2 .n-uc-1a5e6ca0e6d48-inner{transition:all .3s;transition-property:border,background-image,background-color,border-radius,box-shadow;background:RGBA(255,255,255,1);}div#n2-ss-2 .n2-font-b28f2c49fd9a70ab59645cc7350fe62f-hover{font-family: 'Lato';color: #876c44;font-size:137.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-2 .n2-font-bc10264e34bb09529151200aa63b6a9d-link a{font-family: 'Lato';color: #3ebcca;font-size:112.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: center;letter-spacing: 1px;word-spacing: normal;text-transform: none;font-weight: bold;}div#n2-ss-2 .n2-font-bc10264e34bb09529151200aa63b6a9d-link a:HOVER, div#n2-ss-2 .n2-font-bc10264e34bb09529151200aa63b6a9d-link a:ACTIVE, div#n2-ss-2 .n2-font-bc10264e34bb09529151200aa63b6a9d-link a:FOCUS{color: #ffffff;}div#n2-ss-2 .n2-style-22231baef0ae9ea6b8d070162638081a-heading{background: #f7f2ec;opacity:1;padding:12px 28px 12px 28px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #f7f2ec; border-color: RGBA(247,242,236,1);border-radius:10px;}div#n2-ss-2 .n2-style-22231baef0ae9ea6b8d070162638081a-heading:Hover, div#n2-ss-2 .n2-style-22231baef0ae9ea6b8d070162638081a-heading:ACTIVE, div#n2-ss-2 .n2-style-22231baef0ae9ea6b8d070162638081a-heading:FOCUS{border-width: 0px;border-style: solid;border-color: #3ebcca; border-color: RGBA(62,188,202,1);background: #3ebcca;box-shadow: 1px 1px 1px 1px RGBA(206,211,213,1);}div#n2-ss-2 .n-uc-1b9f3aa834264-inner{transition:all .3s;transition-property:border,background-image,background-color,border-radius,box-shadow;background:URL("//hawaiicovid19.com/wp-content/uploads/2020/03/resources-and-information-header.png") 5% 100% / cover no-repeat;}div#n2-ss-2 .n2-font-0a56a03812adbbf8ed209aab4c4325e6-paragraph{font-family: 'Lato';color: #00c1c4;font-size:262.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-font-0a56a03812adbbf8ed209aab4c4325e6-paragraph a, div#n2-ss-2 .n2-font-0a56a03812adbbf8ed209aab4c4325e6-paragraph a:FOCUS{font-family: 'Lato';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-font-0a56a03812adbbf8ed209aab4c4325e6-paragraph a:HOVER, div#n2-ss-2 .n2-font-0a56a03812adbbf8ed209aab4c4325e6-paragraph a:ACTIVE{font-family: 'Lato';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-style-35afda55887087efd6cf8ca8f68f25c3-heading{background: #ffffff;background: RGBA(255,255,255,0);opacity:1;padding:0px 0px 0px 60px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:0px;}div#n2-ss-2 .n2-font-66b3524eb6cd2eee5ae60039e44cd44a-paragraph{font-family: 'Lato';color: #1a7681;font-size:237.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-font-66b3524eb6cd2eee5ae60039e44cd44a-paragraph a, div#n2-ss-2 .n2-font-66b3524eb6cd2eee5ae60039e44cd44a-paragraph a:FOCUS{font-family: 'Lato';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-font-66b3524eb6cd2eee5ae60039e44cd44a-paragraph a:HOVER, div#n2-ss-2 .n2-font-66b3524eb6cd2eee5ae60039e44cd44a-paragraph a:ACTIVE{font-family: 'Lato';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 800;}div#n2-ss-2 .n2-style-7483fd4ddc966823f703a886978b4a45-heading{background: #000000;background: RGBA(0,0,0,0.67);opacity:1;padding:2px 2px 2px 2px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:3px;}div#n2-ss-2 .n2-style-7483fd4ddc966823f703a886978b4a45-heading:Hover, div#n2-ss-2 .n2-style-7483fd4ddc966823f703a886978b4a45-heading:ACTIVE, div#n2-ss-2 .n2-style-7483fd4ddc966823f703a886978b4a45-heading:FOCUS{background: #01add3;background: RGBA(1,173,211,0.85);}</style>
-                                            <div id="n2-ss-2-align" class="n2-ss-align">
+                                            <div id="n2-ss-2-align" class="n2-ss-align n2-ss-align-visible">
                                               <div class="n2-padding" style="margin-left: -0.483337px; margin-right: -0.483337px;">
-                                                <div id="n2-ss-2" data-creator="Smart Slider 3" class="n2-ss-slider n2-ow n2-has-hover n2notransition  n2-ss-load-fade n2-ss-desktop" data-minfontsizedesktopportrait="4" data-minfontsizedesktoplandscape="4" data-minfontsizetabletportrait="4" data-minfontsizetabletlandscape="4" data-minfontsizemobileportrait="4" data-minfontsizemobilelandscape="4" style="font-size: 1.0525rem; width: 1263px; margin: 0px;" data-fontsize="16">
+                                                <div id="n2-ss-2" data-creator="Smart Slider 3" class="n2-ss-slider n2-ow n2-has-hover  n2-ss-load-fade n2-ss-desktop n2-ss-loaded" data-minfontsizedesktopportrait="4" data-minfontsizedesktoplandscape="4" data-minfontsizetabletportrait="4" data-minfontsizetabletlandscape="4" data-minfontsizemobileportrait="4" data-minfontsizemobilelandscape="4" style="font-size: 1.0525rem; width: 1263px; margin: 0px;" data-fontsize="16">
                                                   <div class="n2-ss-slider-1 n2-ss-swipe-element n2-ow" style="width: 1263px; padding: 0px; border-width: 0px; height: 590px;">
                                                     <div class="n2-ss-slider-2 n2-ow">
                                                       <div class="n2-ss-slider-3 n2-ow" style="">
@@ -2672,7 +2674,7 @@
                                                               <div class="n2-ss-slide-background-color" style="background-color: #6e43bf;"></div>
                                                             </div>
                                                           </div>
-                                                          <div class="n2-ss-slide-background n2-ow" data-mode="fit">
+                                                          <div class="n2-ss-slide-background n2-ow" data-mode="fit" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100000, 0, 0, 1);">
                                                             <div class="n2-ss-slide-background-wrap n2-ow">
                                                               <div data-hash="95d7c6fb81bb665e9aa030ead7e134d5" data-desktop="//hawaiicovid19.com/wp-content/uploads/2020/03/Home_carouseL2-scaled.jpg" class="n2-ss-slide-background-image" data-blur="0" style='background-image: url("//hawaiicovid19.com/wp-content/uploads/2020/03/Home_carouseL2-scaled.jpg");'>
                                                                 <img src="//hawaiicovid19.com/wp-content/uploads/2020/03/Home_carouseL2-scaled.jpg" alt="Call 211 - Get Connected, Get Help">
@@ -2729,32 +2731,22 @@
                                                             </div>
                                                           </div>
                                                         </div>
-                                                        <div data-slide-duration="0" data-id="6" data-haslink="1" style="cursor: pointer; width: 1263px; height: 590px;" onclick="" data-href="http://auw211.org/" data-target="_blank" data-n2click="n2ss.openUrl(event);" data-n2middleclick="n2ss.openUrl(event, '_blank');" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-6">
+                                                        <div data-slide-duration="0" data-id="6" data-haslink="1" style="cursor: pointer; width: 1263px; height: 590px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100000, 0, 0, 1);" onclick="" data-href="http://auw211.org/" data-target="_blank" data-n2click="n2ss.openUrl(event);" data-n2middleclick="n2ss.openUrl(event, '_blank');" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-6">
                                                           <div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style="width: 1263px; height: 590px; margin: 0px;"></div>
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    <div data-ssleft="0+15" data-sstop="height/2-previousheight/2" id="n2-ss-2-arrow-previous" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile n2-style-7483fd4ddc966823f703a886978b4a45-heading nextend-arrow n2-ow nextend-arrow-previous  nextend-arrow-animated-fade n2-ib" style="position: absolute; width: 25.6px; height: 25.6px;" role="button" aria-label="previous arrow" tabindex="0">
+                                                    <div data-ssleft="0+15" data-sstop="height/2-previousheight/2" id="n2-ss-2-arrow-previous" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile n2-style-7483fd4ddc966823f703a886978b4a45-heading nextend-arrow n2-ow nextend-arrow-previous  nextend-arrow-animated-fade n2-ib" style="position: absolute; width: 25.6px; height: 25.6px; top: 295px; left: 15px;" role="button" aria-label="previous arrow" tabindex="0">
                                                       <img class="n2-arrow-normal-img n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxwYXRoIGZpbGw9IiNlNzlkMTkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjY1NCA5LjQzbC02LjMyNiA2LjUyNSA2LjMyNiA2LjZjLjI0Mi4yNTMuMzYuNTQ1LjM2Ljg4IDAgLjMzMy0uMTE4LjYyNS0uMzYuODc3bC0xLjI0NCAxLjNjLS4yNC4yNS0uNTIzLjM3NS0uODQuMzc1LS4zMiAwLS42LS4xMjQtLjg0LS4zNzZsLTguMzY3LTguNzJjLS4yNC0uMjUtLjM2My0uNTQtLjM2My0uODggMC0uMzM0LjEyMi0uNjMuMzYzLS44OGw4LjM2Ny04Ljc1Yy4yMy0uMjUyLjUxLS4zNzcuODMtLjM3Ny4zMjUgMCAuNjA3LjEyNi44NS4zNzhsMS4yNDIgMS4zMjZjLjI0Mi4yNTIuMzYuNTQuMzYuODY0IDAgLjMyLS4xMTguNjEtLjM2Ljg2eiIgb3BhY2l0eT0iMSIvPgo8L3N2Zz4K" alt="previous arrow" style="width: 100%;">
                                                       <img class="n2-arrow-hover-img n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjY1NCA5LjQzbC02LjMyNiA2LjUyNSA2LjMyNiA2LjZjLjI0Mi4yNTMuMzYuNTQ1LjM2Ljg4IDAgLjMzMy0uMTE4LjYyNS0uMzYuODc3bC0xLjI0NCAxLjNjLS4yNC4yNS0uNTIzLjM3NS0uODQuMzc1LS4zMiAwLS42LS4xMjQtLjg0LS4zNzZsLTguMzY3LTguNzJjLS4yNC0uMjUtLjM2My0uNTQtLjM2My0uODggMC0uMzM0LjEyMi0uNjMuMzYzLS44OGw4LjM2Ny04Ljc1Yy4yMy0uMjUyLjUxLS4zNzcuODMtLjM3Ny4zMjUgMCAuNjA3LjEyNi44NS4zNzhsMS4yNDIgMS4zMjZjLjI0Mi4yNTIuMzYuNTQuMzYuODY0IDAgLjMyLS4xMTguNjEtLjM2Ljg2eiIgb3BhY2l0eT0iMSIvPgo8L3N2Zz4K" alt="previous arrow" style="width: 100%;">
                                                     </div>
-                                                    <div data-ssright="0+15" data-sstop="height/2-nextheight/2" id="n2-ss-2-arrow-next" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile n2-style-7483fd4ddc966823f703a886978b4a45-heading nextend-arrow n2-ow nextend-arrow-next  nextend-arrow-animated-fade n2-ib" style="position: absolute; width: 25.6px; height: 25.6px;" role="button" aria-label="next arrow" tabindex="0">
+                                                    <div data-ssright="0+15" data-sstop="height/2-nextheight/2" id="n2-ss-2-arrow-next" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile n2-style-7483fd4ddc966823f703a886978b4a45-heading nextend-arrow n2-ow nextend-arrow-next  nextend-arrow-animated-fade n2-ib" style="position: absolute; width: 25.6px; height: 25.6px; top: 280px; right: 15px;" role="button" aria-label="next arrow" tabindex="0">
                                                       <img class="n2-arrow-normal-img n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuMjg2IDI1LjYxYy0uMjQuMjUzLS41Mi4zNzctLjg0LjM3Ny0uMzE4IDAtLjYtLjEyNC0uODQtLjM3NmwtMS4yNDUtMS4yOTdjLS4yNC0uMjUyLS4zNi0uNTQ0LS4zNi0uODc4IDAtLjMzNC4xMi0uNjI2LjM2LS44NzhsNi4zMjgtNi42TDEwLjM2IDkuNDNjLS4yNC0uMjUtLjM2LS41NC0uMzYtLjg2NCAwLS4zMjMuMTItLjYxMi4zNi0uODY0bDEuMjQ1LTEuMzI1Yy4yNC0uMjUyLjUyMy0uMzc3Ljg0OC0uMzc3LjMyMyAwIC42MDIuMTI1LjgzMy4zNzdsOC4zNjYgOC43NDZjLjI0LjI1LjM2My41NDYuMzYzLjg4MiAwIC4zNC0uMTIyLjYzNC0uMzYzLjg4NmwtOC4zNjYgOC43MnoiIGZpbGw9IiNlNzlkMTkiIG9wYWNpdHk9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="next arrow" style="width: 100%;">
                                                       <img class="n2-arrow-hover-img n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuMjg2IDI1LjYxYy0uMjQuMjUzLS41Mi4zNzctLjg0LjM3Ny0uMzE4IDAtLjYtLjEyNC0uODQtLjM3NmwtMS4yNDUtMS4yOTdjLS4yNC0uMjUyLS4zNi0uNTQ0LS4zNi0uODc4IDAtLjMzNC4xMi0uNjI2LjM2LS44NzhsNi4zMjgtNi42TDEwLjM2IDkuNDNjLS4yNC0uMjUtLjM2LS41NC0uMzYtLjg2NCAwLS4zMjMuMTItLjYxMi4zNi0uODY0bDEuMjQ1LTEuMzI1Yy4yNC0uMjUyLjUyMy0uMzc3Ljg0OC0uMzc3LjMyMyAwIC42MDIuMTI1LjgzMy4zNzdsOC4zNjYgOC43NDZjLjI0LjI1LjM2My41NDYuMzYzLjg4MiAwIC4zNC0uMTIyLjYzNC0uMzYzLjg4NmwtOC4zNjYgOC43MnoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="next arrow" style="width: 100%;">
                                                     </div>
                                                   </div>
                                                 </div>
                                                 <div class="n2-clear"></div>
-                                              </div>
-                                            </div>
-                                            <div id="n2-ss-2-placeholder" style="position: relative;z-index:2;background-color:RGBA(0,0,0,0);max-height:3000px; background-color:RGBA(255,255,255,0);">
-                                              <img style="width: 100%; max-width:3000px; display: block;opacity:0;margin:0px;" class="n2-ow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTI4IiA+PC9zdmc+" alt="Slider">
-                                              <div id="n2-ss-2-spinner" style="">
-                                                <div>
-                                                  <div class="n2-ss-spinner-simple-white-container">
-                                                    <div class="n2-ss-spinner-simple-white"></div>
-                                                  </div>
-                                                </div>
                                               </div>
                                             </div>
                                           </div>
@@ -3361,18 +3353,18 @@
                                   <table id="tablepress-1" class="tablepress tablepress-id-1 dataTable no-footer" role="grid" aria-describedby="tablepress-1_info">
                                     <thead>
                                       <tr class="row-1 odd" role="row">
-                                        <th class="column-1 sorting" tabindex="0" aria-controls="tablepress-1" rowspan="1" colspan="1" style="width: 641px;" aria-label="COUNTY: activate to sort column ascending">COUNTY</th>
-                                        <th class="column-2 sorting" tabindex="0" aria-controls="tablepress-1" rowspan="1" colspan="1" style="width: 584px;" aria-label="POSITIVE CASES*: activate to sort column ascending">POSITIVE CASES*</th>
+                                        <th class="column-1 sorting" tabindex="0" aria-controls="tablepress-1" rowspan="1" colspan="1" style="width: 629px;" aria-label="COUNTY: activate to sort column ascending">COUNTY</th>
+                                        <th class="column-2 sorting" tabindex="0" aria-controls="tablepress-1" rowspan="1" colspan="1" style="width: 596px;" aria-label="POSITIVE CASES*: activate to sort column ascending">POSITIVE CASES*</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr class="row-2 even" role="row">
                                         <td class="column-1">Hawai&#8216;i</td>
-                                        <td class="column-2">1</td>
+                                        <td class="column-2">3</td>
                                       </tr>
                                       <tr class="row-3 odd" role="row">
                                         <td class="column-1">Honolulu</td>
-                                        <td class="column-2">28</td>
+                                        <td class="column-2">35</td>
                                       </tr>
                                       <tr class="row-4 even" role="row">
                                         <td class="column-1">Kaua&#8216;i</td>
@@ -3380,11 +3372,11 @@
                                       </tr>
                                       <tr class="row-5 odd" role="row">
                                         <td class="column-1">Maui</td>
-                                        <td class="column-2">5</td>
+                                        <td class="column-2">7</td>
                                       </tr>
                                       <tr class="row-6 even" role="row">
                                         <td class="column-1">TOTAL STATEWIDE</td>
-                                        <td class="column-2">37</td>
+                                        <td class="column-2">48</td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -3394,7 +3386,7 @@
                                     <a class="paginate_button next disabled" aria-controls="tablepress-1" data-dt-idx="1" tabindex="-1" id="tablepress-1_next">Next</a>
                                   </div>
                                 </div>
-                                <span class="tablepress-table-description tablepress-table-description-id-1">*Cumulative totals as of 12:00pm on March 20, 2020, includes presumptive and confirmed</span>
+                                <span class="tablepress-table-description tablepress-table-description-id-1">*Cumulative totals as of 12:00pm on March 21, 2020, includes presumptive and confirmed</span>
                                 <!--#tablepress-1 from cache-->
                               </div>
                             </div>
@@ -3669,6 +3661,38 @@
   $('#tablepress-1').dataTable({"order":[],"orderClasses":false,"stripeClasses":["even","odd"],"pagingType":"simple"});
   });
   </script>
+    <!--start Simple Custom CSS and JS-->
+    <script type="text/javascript">
+  jQuery(document).ready(function( $ ){
+  if (window.location.href.indexOf("#kupuna") > -1) {
+    	
+    setTimeout(function(){ jQuery('#kupuna').click()}, 1000);
+  
+      }
+    
+    if (window.location.href.indexOf("#multigen-households") > -1) {
+        setTimeout(function(){ jQuery('#multigen-households').click()}, 1000);
+  
+      }
+    
+    if (window.location.href.indexOf("#women-and-children") > -1) {
+        setTimeout(function(){ jQuery('#women-and-children').click()}, 1000);
+  
+      }
+    
+    if (window.location.href.indexOf("#employers") > -1) {
+        setTimeout(function(){ jQuery('#panel-312-3-0-1 > div > div > button').click()}, 1000);
+  
+      }
+    
+    if (window.location.href.indexOf("#healthcare-providers") > -1) {
+        setTimeout(function(){ jQuery('#healthcare-providers').click()}, 1000);
+  
+      }
+  
+  });
+  </script>
+    <!--end Simple Custom CSS and JS-->
     <!--start Simple Custom CSS and JS-->
     <script type="text/javascript">
   jQuery(document).ready(function( $ ){
