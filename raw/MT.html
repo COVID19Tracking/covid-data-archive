@@ -33,11 +33,11 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/OverviewMap.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/BasemapGallery.js"></script>
     <script type="text/javascript" charset="utf-8" src="/apps/MapSeries/app/custom-scripts.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/filters.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svgext.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/VectorTileLayer.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/ArcGISImageServiceLayer.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/virtualearth/VETiledLayer.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/filters.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svgext.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
     <script type="text/javascript" charset="utf-8" src="/apps/MapSeries/resources/common/nls/webmap.js?v=1.17.0.js"></script>
@@ -175,6 +175,9 @@
               <div class="menu-title">Montana Situation Update</div>
             </div>
             <div class="menu-entry">
+              <div class="menu-title">Current Information</div>
+            </div>
+            <div class="menu-entry">
               <div class="menu-title">EOC Status</div>
             </div>
             <div class="menu-entry">
@@ -194,9 +197,6 @@
             </div>
             <div class="menu-entry">
               <div class="menu-title">Community Planning</div>
-            </div>
-            <div class="menu-entry">
-              <div class="menu-title">Information</div>
             </div>
           </div>
         </div>
@@ -252,28 +252,28 @@
               <button class="entryLbl" aria-label="Go to entry 2: Montana Situation Update">Montana Situation Update</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 3: EOC Status">EOC Status</button>
+              <button class="entryLbl" aria-label="Go to entry 3: Current Information">Current Information</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 4: MT Dept. of Public Health">MT Dept. of Public Health</button>
+              <button class="entryLbl" aria-label="Go to entry 4: EOC Status">EOC Status</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 5: Global Outbreak Dashboard">Global Outbreak Dashboard</button>
+              <button class="entryLbl" aria-label="Go to entry 5: MT Dept. of Public Health">MT Dept. of Public Health</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 6: CDC">CDC</button>
+              <button class="entryLbl" aria-label="Go to entry 6: Global Outbreak Dashboard">Global Outbreak Dashboard</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 7: Travel Info">Travel Info</button>
+              <button class="entryLbl" aria-label="Go to entry 7: CDC">CDC</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 8: WHO">WHO</button>
+              <button class="entryLbl" aria-label="Go to entry 8: Travel Info">Travel Info</button>
             </li>
             <li class="entry  visible" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 9: Community Planning">Community Planning</button>
+              <button class="entryLbl" aria-label="Go to entry 9: WHO">WHO</button>
             </li>
             <li class="entry" data-title="" role="presentation">
-              <button class="entryLbl" aria-label="Go to entry 10: Information">Information</button>
+              <button class="entryLbl" aria-label="Go to entry 10: Community Planning">Community Planning</button>
             </li>
             <li class="dropdown pull-right visible" style="">
               <!--tabindex="0"-->
@@ -293,28 +293,28 @@
                   <button class="entryLbl" aria-label="Go to entry 2: Montana Situation Update">Montana Situation Update</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 3: EOC Status">EOC Status</button>
+                  <button class="entryLbl" aria-label="Go to entry 3: Current Information">Current Information</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 4: MT Dept. of Public Health">MT Dept. of Public Health</button>
+                  <button class="entryLbl" aria-label="Go to entry 4: EOC Status">EOC Status</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 5: Global Outbreak Dashboard">Global Outbreak Dashboard</button>
+                  <button class="entryLbl" aria-label="Go to entry 5: MT Dept. of Public Health">MT Dept. of Public Health</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 6: CDC">CDC</button>
+                  <button class="entryLbl" aria-label="Go to entry 6: Global Outbreak Dashboard">Global Outbreak Dashboard</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 7: Travel Info">Travel Info</button>
+                  <button class="entryLbl" aria-label="Go to entry 7: CDC">CDC</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 8: WHO">WHO</button>
+                  <button class="entryLbl" aria-label="Go to entry 8: Travel Info">Travel Info</button>
                 </li>
                 <li class="entry" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 9: Community Planning">Community Planning</button>
+                  <button class="entryLbl" aria-label="Go to entry 9: WHO">WHO</button>
                 </li>
                 <li class="entry visible" data-title="" role="presentation">
-                  <button class="entryLbl" aria-label="Go to entry 10: Information">Information</button>
+                  <button class="entryLbl" aria-label="Go to entry 10: Community Planning">Community Planning</button>
                 </li>
               </ul>
             </li>
@@ -378,6 +378,14 @@
                       <div class="description textEditorContent"></div>
                     </div>
                   </div>
+                  <div class="mainMediaContainer" tabindex="0" aria-label="">
+                    <button class="visible-on-focus return-to-content top">Return to content</button>
+                    <iframe class="embedContainer" data-src="aHR0cHM6Ly9jb3ZpZDE5Lm10Lmdvdi9qb2ludC1pbmZvcm1hdGlvbi1jZW50ZXI=" data-unload="true" allowfullscreen="1"></iframe>
+                    <button class="visible-on-focus return-to-content bottom">Return to content</button>
+                    <div class="mobilePopup mobileInfo hideContent" style="color: rgb(0, 0, 0); background-color: rgb(219, 217, 218);">
+                      <div class="description textEditorContent"></div>
+                    </div>
+                  </div>
                   <div class="mainMediaContainer" tabindex="0" aria-label="Link to the Montana Department of Public Health &amp; Human Services Coronavirus Disease 2019 (COVID-19).">
                     <button class="visible-on-focus return-to-content top">Return to content</button>
                     <iframe class="embedContainer" data-src="aHR0cHM6Ly9kcGhocy5tdC5nb3YvcHVibGljaGVhbHRoL2NkZXBpL2Rpc2Vhc2VzL2Nvcm9uYXZpcnVzbXQ=" data-unload="true" allowfullscreen="1"></iframe>
@@ -413,14 +421,6 @@
                   <div class="mainMediaContainer" tabindex="0" aria-label="">
                     <button class="visible-on-focus return-to-content top">Return to content</button>
                     <iframe class="embedContainer" data-src="aHR0cHM6Ly9tb250YW5hLm1hcHMuYXJjZ2lzLmNvbS9hcHBzL1ZpZXcvaW5kZXguaHRtbD9hcHBpZD1iMjY2NTg1NGQ1ZTI0NTQxYWIzZDNjYWQ2ZmUwMjZjMQ==" data-unload="true" allowfullscreen="1"></iframe>
-                    <button class="visible-on-focus return-to-content bottom">Return to content</button>
-                    <div class="mobilePopup mobileInfo hideContent" style="color: rgb(0, 0, 0); background-color: rgb(219, 217, 218);">
-                      <div class="description textEditorContent"></div>
-                    </div>
-                  </div>
-                  <div class="mainMediaContainer" tabindex="0" aria-label="">
-                    <button class="visible-on-focus return-to-content top">Return to content</button>
-                    <iframe class="embedContainer" data-src="aHR0cHM6Ly9jb3ZpZDE5Lm10Lmdvdi9qb2ludC1pbmZvcm1hdGlvbi1jZW50ZXI=" data-unload="true" allowfullscreen="1"></iframe>
                     <button class="visible-on-focus return-to-content bottom">Return to content</button>
                     <div class="mobilePopup mobileInfo hideContent" style="color: rgb(0, 0, 0); background-color: rgb(219, 217, 218);">
                       <div class="description textEditorContent"></div>
@@ -566,6 +566,15 @@
   		<span class="glyphicon glyphicon-tower legend-btn" style="display: none;"></span>
   -->
             </div>
+            <div class="next">Next: Current Information</div>
+          </div>
+          <div class="entry swiper-slide" style="height: 70px;">
+            <div class="title">Current Information
+              <!--
+  <span class="glyphicon glyphicon-info-sign info-btn" style="display: none;"></span>
+  		<span class="glyphicon glyphicon-tower legend-btn" style="display: none;"></span>
+  -->
+            </div>
             <div class="next">Next: EOC Status</div>
           </div>
           <div class="entry swiper-slide" style="height: 70px;">
@@ -624,15 +633,6 @@
           </div>
           <div class="entry swiper-slide" style="height: 70px;">
             <div class="title">Community Planning
-              <!--
-  <span class="glyphicon glyphicon-info-sign info-btn" style="display: none;"></span>
-  		<span class="glyphicon glyphicon-tower legend-btn" style="display: none;"></span>
-  -->
-            </div>
-            <div class="next">Next: Information</div>
-          </div>
-          <div class="entry swiper-slide" style="height: 70px;">
-            <div class="title">Information
               <!--
   <span class="glyphicon glyphicon-info-sign info-btn" style="display: none;"></span>
   		<span class="glyphicon glyphicon-tower legend-btn" style="display: none;"></span>
