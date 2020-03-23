@@ -49,8 +49,6 @@
   -->
     <link href="/css/footable.core.min.css" rel="stylesheet" type="text/css">
     <script src="/js/footable.min.js"></script>
-    <script src="/js/breadcrumbs.js"></script>
-    <script src="/js/jquery.placeholder.min.js"></script>
     <script type="text/javascript">
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-12671191-3', 'auto');
@@ -227,12 +225,7 @@
         <section id="main-content" role="main" class="col-md-8">
           <div class="page-header">
             <h1>COVID-19  Outbreak</h1>
-            <div id="breadcrumbs">
-              <a href="./../../../../" title="Go Back one Directory">DHSS Home</a>&#187;
-              <a href="./../../../" title="Go Back one Directory">Healthy Living</a>&#187;
-              <a href="./../../" title="Go Back one Directory">Health Conditions &amp; Diseases</a>&#187;
-              <a href="./../" title="Go Back one Directory">Communicable Diseases</a>
-            </div>
+            <div id="breadcrumbs"></div>
           </div>
           <h3>
             <span class="style2">24 hour hotline: 877-435-8411</span>
@@ -283,115 +276,110 @@
               </tbody>
             </table>
           </div>
-          <ul>
-            <li>
-              <h2>
-                <a href="/living/healthcondiseases/communicable/novel-coronavirus/results.php">
-                  <span class="text-danger">Click for Additional Data, Including County</span>
-                </a>
-              </h2>
-            </li>
-          </ul>
+          <h2>
+            <a href="/living/healthcondiseases/communicable/novel-coronavirus/results.php">
+              <span class="text-danger">Click for Additional Data, Including County</span>
+            </a>
+          </h2>
           <p>Labs are required by the Missouri Code of State Regulations to immediately report positive COVID-19 test results. As commercial labs increase their capacity for testing, we will continue to receive results from them requiring immediate verification of patient data for each result. Prompt efforts to protect the public&#8217;s health depends on this verification. Patient data from commercial labs is preliminary and subject to change following initial public health involvement.</p>
-          <ul class="spaced-out margin-top-20">
-            <li>
-              <a href="/living/healthcondiseases/communicable/novel-coronavirus/pdf/novel-coronavirus-factsheet.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Novel Coronavirus Fact Sheet
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>
-              </a>
-              <br>
-              <a href="pdf/novel-coronavirus-factsheet-amharic.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Amharic
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-arabic.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Arabic
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-chinese%20simplified.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Chinese Simplified
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-chinese%20traditional.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Chinese Traditional
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">English
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-hindi.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Hindi
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-japanese.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Japanese
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-khmer.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Khmer
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-korean.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Korean
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-russian.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Russian
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-somali.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Somali
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-spanish.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Spanish
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-tagalog.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Tagalog
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>,
-              </a>,
-              <a href="pdf/novel-coronavirus-factsheet-thai.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Thai
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>, and
-              </a>, and
-              <a href="pdf/novel-coronavirus-factsheet-vietmanese.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Vietmanese
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="/living/healthcondiseases/communicable/novel-coronavirus/pdf/scripts.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Call Center Information/Script
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="pdf/visitor-announcement.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Signage for Visitors
-                <span class="pdf-label" aria-hidden="true">
-                  <b class="hide">PDF Document</b>
-                </span>
-              </a>
-            </li>
-          </ul>
+          <h3>
+            <a href="/living/healthcondiseases/communicable/novel-coronavirus/pdf/novel-coronavirus-factsheet.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Novel Coronavirus Fact Sheet
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>
+            </a>
+          </h3>
+          <p>
+            <a href="pdf/novel-coronavirus-factsheet-amharic.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Amharic
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-arabic.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Arabic
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-chinese%20simplified.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Chinese Simplified
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-chinese%20traditional.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Chinese Traditional
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">English
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-hindi.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Hindi
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-japanese.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Japanese
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-khmer.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Khmer
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-korean.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Korean
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-russian.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Russian
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-somali.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Somali
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-spanish.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Spanish
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-tagalog.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Tagalog
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>,
+            </a>,
+            <a href="pdf/novel-coronavirus-factsheet-thai.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Thai
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>, and
+            </a>, and
+            <a href="pdf/novel-coronavirus-factsheet-vietmanese.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Vietmanese
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>
+            </a>
+          </p>
+          <h3>
+            <a href="/living/healthcondiseases/communicable/novel-coronavirus/pdf/scripts.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Call Center Information/Script
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>
+            </a>
+          </h3>
+          <h3>
+            <a href="pdf/visitor-announcement.pdf" class="pdf" onclick="handleOutboundLinkClicks(event)">Signage for Visitors
+              <span class="pdf-label" aria-hidden="true">
+                <b class="hide">PDF Document</b>
+              </span>
+            </a>
+          </h3>
           <p></p>
           <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 text-center margin-bottom-15">
@@ -710,6 +698,5 @@
     <!--Disables pinch zoom on mobile devices-->
     <!--<script>if ($(window).width() < 600) { $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'); }</script>-->
     <script type="text/javascript" src="/js/global.min.js"></script>
-    <script async="" type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=201695765"></script>
   </body>
 </html>
