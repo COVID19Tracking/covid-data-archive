@@ -86,7 +86,7 @@
           function resolveCluster() {
               try {
                   var activityId = telemetrySessionId;
-                  var requestId = '47aef72a-4bb1-49f9-a47a-df7d7c9f6365';
+                  var requestId = 'a86e08b0-8816-45f1-947e-ade38904a99d';
   
                   var xhr = new XMLHttpRequest();
                   xhr.onreadystatechange = function() {
@@ -123,7 +123,7 @@
           function getModelsAndExploration() {
               try {
                   var activityId = telemetrySessionId;
-                  var requestId = '93ebf499-c478-4102-be66-366f1985d8ad';
+                  var requestId = 'c0a458ba-367c-4dd1-b172-8175f92ba638';
                   modelsAndExplorationResponse = loadingState;
   
                   if(!resolvedClusterUri) {
@@ -193,7 +193,7 @@
                   }
   
                   var activityId = telemetrySessionId;
-                  var requestId = '222bd51d-856e-45fc-9e49-7a4031cc6469';
+                  var requestId = '54b5c455-cfea-4267-9582-2e685d914d51';
                   conceptualSchemaResponse = loadingState;
   
                   var resolvedAPIMCluster = getAPIMUrl(resolvedClusterUri);
@@ -313,7 +313,7 @@
           var clusterUri =  'https://api.powerbigov.us';
           var cdnUrl = '';
           var previousTenantId = '';
-          var telemetrySessionId =  'a3a46c63-c1a3-43b9-aaef-761a4dd1fdc1';
+          var telemetrySessionId =  '9cd53e8f-00bc-4295-9a5f-b19dc46bce22';
           var sessionSource = "Embed";
           var allowTelemetry = true;
           var appInsightsV2InstrKey = '8adeeaf0-ca71-ff43-a91e-7afbce21a5f2';
@@ -352,6 +352,7 @@
   </style>
     <style></style>
     <script src="13.0.12661.186/scripts/ai.0.js"></script>
+    <script charset="utf-8" src="13.0.12661.186/scripts/reportEmbed.json-contracts.min.js"></script>
   </head>
   <body>
     <meta property="og:locale" content="en_US">
@@ -378,7 +379,30 @@
     </div>
     <div id="pbiAppPlaceHolder">
       <!---->
-      <ui-view></ui-view>
+      <ui-view>
+        <!---->
+        <!---->
+        <!---->
+        <div>
+          <div id="embedWrapperID" class="embedWrapper" tabindex="0" ng-keydown="keyDown($event)" localize-attr="{'aria-label': 'Embed_Wrapper_Hint'}" aria-label="Press Ctrl + Enter key to navigate into the report.">
+            <!---->
+            <div ng-if="!showErrorMessage &amp;&amp; !showPromptForLogin &amp;&amp; !optimizePublishToWeb &amp;&amp; !isUserUnauthorized" class="landingController fillAvailableSpace">
+              <div class="landingContainer">
+                <div id="reportLandingContainer" class="embeddedLandingRootContent reportContainerContent isActive embeddedPV embeddedLandingRootContentLogoHidden" ng-class="backgroundCssClass + (showLogoBar ? ' embeddedLandingRootContentLogoVisible' : ' embeddedLandingRootContentLogoHidden')">
+                  <div class="embeddedPV">
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <div class="logoBarWrapper" ng-keydown="keyDown($event)" tabindex="0">
+            <!---->
+          </div>
+        </div>
+      </ui-view>
       <root ng-version="8.2.6">
         <!---->
       </root>
