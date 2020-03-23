@@ -229,8 +229,17 @@
             </span>
           </ul>
           <div class="searchcontainer search" role="search">
-            <form name="search" action="https://www.ri.gov/search/" method="post" id="search_box">
-              <input title="search box" type="text" name="q" id="q" placeholder="Search" autocomplete="off">
+            <form name="search" action="https://www.ri.gov/search/" method="post">
+              <!--<label for="q2">Search:</label>-->
+              <label>
+                <input type="hidden" name="cx" value="013917984091258965719:nvskf5zps9c">
+              </label>
+              <label>
+                <input type="hidden" name="site" title="Search" value="https://health.ri.gov/">
+              </label>
+              <label>
+                <input type="text" name="q" placeholder="Search">
+              </label>
               <!--<input type="submit" name="Submit" value="Search"/>-->
               <button type="submit" name="submit" value="Go" title="Go">
                 <span aria-hidden="true" data-icon="0xe809" class="icon icon-search"></span>
@@ -349,59 +358,56 @@
           <div class="section-container accordion hide" data-section="accordion" style="">
             <section>
               <p class="maintitle">
-                <a href="/covid">COVID-19</a>
+                <a href="/covid">COVID-19 Home</a>
               </p>
             </section>
-            <section class="active" style="">
+            <section>
               <p class="title" data-section-title="" style="left: 0px;">
-                <a href="#">Topics</a>
+                <a href="/diseases/ncov2019/">About COVID-19 Disease</a>
               </p>
-              <div class="content" data-section-content="">
-                <h3>About</h3>
-                <ul>
-                  <li>
-                    <a href="/publications/instructions/COVID-19-Specimen-Collection-Kit.pdf" target="_blank">Specimen Collection Kit Instructions</a>
-                  </li>
-                  <li>
-                    <a href="/programs/laboratory/results.php?selectlabtestname=2019%20Novel%20Coronavirus%20(SARS-CoV-2)">Clinical Specimen Submission</a>
-                  </li>
-                  <!--
-  <li><a href="/disease/prevention">Prevention</a></li>
-          <li><a href="/disease/prevention/about/handwashing">Handwashing</a> </li>
-  -->
-                  <li>
-                    <a target="_blank" href="http://www.dlt.state.ri.us/pdfs/COVID-19%20Workplace%20Fact%20Sheet.pdf">Employment Related Issues</a>
-                  </li>
-                  <li>
-                    <a href="/diseases/ncov2019/about/foodsites/">Food Sites for  Children</a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html">Prevention in the Community</a>
-                  </li>
-                  <li>CDC Information in other languages
-                    <a target="_blank" title="Spanish COVID-19 information" href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html">(Spanish)</a>|
-                    <a title="Chinese COVID-19 Information" target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index-Chinese.html">(Chinese)</a>
-                  </li>
-                  <!--<li><a href="/diseases/about/reporting">Reporting</a></li>-->
-                </ul>
-                <h3>Information For</h3>
-                <ul>
-                  <li>
-                    <a href="/diseases/ncov2019/for/providers/">Healthcare Providers</a>
-                  </li>
-                  <li>
-                    <a target="_blank" title="information for travelers" href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html">Travelers</a>
-                  </li>
-                </ul>
-              </div>
             </section>
-            <section class="" style="">
+            <section>
               <p class="title" data-section-title="" style="left: 259px;">
-                <a href="/data/covid-19">Rhode Island Numbers</a>
+                <a href="/diseases/ncov2019/for/providers/">Healthcare Provider</a>
               </p>
             </section>
             <section>
               <p class="title" data-section-title="" style="left: 518px;">
+                <a href="/diseases/ncov2019/about/foodsites/">Food Sites for  Children</a>
+              </p>
+            </section>
+            <section>
+              <p class="title" data-section-title="" style="left: 777px;">
+                <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html">Prevention in the Community</a>
+              </p>
+            </section>
+            <section>
+              <p class="title" data-section-title="" style="left: 1036px;">
+                <a href="/data/covid-19">Rhode Island Data</a>
+              </p>
+            </section>
+            <section>
+              <p class="title" data-section-title="" style="left: 1295px;">
+                <a href="#">Emergency Regulations</a>
+              </p>
+              <div class="content" data-section-content="">
+                <ul>
+                  <li>
+                    <a href="/licenses/">Emergency Reciprocal Licensing Professions and Procedures</a>
+                  </li>
+                  <li>
+                    <a href="https://health.ri.gov/publications/legislation/Off-label-prescribing-ORR-Submission-03.21.2020.pdf" target="_blank">Off Label Prescribing for COVID-19</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <p class="title" data-section-title="" style="left: 1554px;">
+                <a href="/publications/bytopic.php?parm=Coronavirus%20Disease%202019">Publications &amp; Resources</a>
+              </p>
+            </section>
+            <section>
+              <p class="title" data-section-title="" style="left: 1813px;">
                 <a href="#">Programs</a>
               </p>
               <div class="content" data-section-content="">
@@ -414,16 +420,6 @@
                   </li>
                 </ul>
               </div>
-            </section>
-            <section>
-              <p class="title" data-section-title="" style="left: 777px;">
-                <a href="https://rules.sos.ri.gov/regulations/index/active?search=&amp;keywords=infectious%20disease&amp;agencies=216&amp;sortby=relevance&amp;order=desc">Regulations</a>
-              </p>
-            </section>
-            <section>
-              <p class="title" data-section-title="" style="left: 1036px;">
-                <a href="/publications/bytopic.php?parm=Coronavirus%20Disease%202019">Publications &amp; Resources</a>
-              </p>
             </section>
           </div>
           <div class="show">
@@ -441,71 +437,53 @@
                         <a href="/covid">COVID-19</a>
                       </p>
                     </section>
-                    <section class="active" style="">
+                    <section>
                       <p class="title" data-section-title="" style="left: 0px;">
-                        <a href="#">Topics</a>
+                        <a href="/diseases/ncov2019/">About COVID-19 Disease</a>
                       </p>
-                      <div class="content" data-section-content="">
-                        <h3>About</h3>
-                        <ul>
-                          <li>
-                            <a href="/publications/instructions/COVID-19-Specimen-Collection-Kit.pdf" target="_blank">Specimen Collection Kit Instructions</a>
-                          </li>
-                          <li>
-                            <a href="/programs/laboratory/results.php?selectlabtestname=2019%20Novel%20Coronavirus%20(SARS-CoV-2)">Clinical Specimen Submission</a>
-                          </li>
-                          <!--
-  <li><a href="/disease/prevention">Prevention</a></li>
-          <li><a href="/disease/prevention/about/handwashing">Handwashing</a> </li>
-  -->
-                          <li>
-                            <a target="_blank" href="http://www.dlt.state.ri.us/pdfs/COVID-19%20Workplace%20Fact%20Sheet.pdf">Employment Related Issues</a>
-                          </li>
-                          <li>
-                            <a href="/diseases/ncov2019/about/foodsites/">Food Sites for Children</a>
-                          </li>
-                          <li>
-                            <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html">Prevention in the Community</a>
-                          </li>
-                          <li>Information in other languages
-                            <a target="_blank" title="Spanish COVID-19 information" href="https://www.cdc.gov/coronavirus/2019-ncov/index-sp.html">(Spanish)</a>|
-                            <a title="Chinese COVID-19 Information" target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index-Chinese.html">(Chinese)</a>
-                          </li>
-                          <!--<li><a href="/diseases/about/reporting">Reporting</a></li>-->
-                        </ul>
-                        <h3>Information For</h3>
-                        <ul>
-                          <li>
-                            <a href="/diseases/ncov2019/for/providers/">Healthcare Providers</a>
-                          </li>
-                          <li>
-                            <a target="_blank" title="information for travelers" href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html">Travelers</a>
-                          </li>
-                        </ul>
-                      </div>
                     </section>
-                    <section class="" style="">
+                    <section>
                       <p class="title" data-section-title="" style="left: 100px;">
-                        <a href="#">Information  for</a>
+                        <a href="/diseases/ncov2019/for/providers/">Healthcare Provider</a>
                       </p>
-                      <div class="content" data-section-content="">
-                        <ul>
-                          <li>
-                            <a href="/diseases/ncov2019/for/providers/">Healthcare Providers</a>
-                          </li>
-                          <li>
-                            <a target="_blank" title="information for travelers" href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html">Travelers</a>
-                          </li>
-                        </ul>
-                      </div>
                     </section>
-                    <section class="" style="">
+                    <section>
                       <p class="title" data-section-title="" style="left: 200px;">
-                        <a href="/data/covid-19">Rhode Island Numbers</a>
+                        <a href="/diseases/ncov2019/about/foodsites/">Food Sites for  Children</a>
                       </p>
                     </section>
                     <section>
                       <p class="title" data-section-title="" style="left: 300px;">
+                        <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html">Prevention in the Community</a>
+                      </p>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title="" style="left: 400px;">
+                        <a href="/data/covid-19">Rhode Island Data</a>
+                      </p>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title="" style="left: 500px;">
+                        <a href="#">Emergency Regulations</a>
+                      </p>
+                      <div class="content" data-section-content="">
+                        <ul>
+                          <li>
+                            <a href="/licenses/">Emergency Reciprocal Licensing Professions and Procedures</a>
+                          </li>
+                          <li>
+                            <a href="https://health.ri.gov/publications/legislation/Off-label-prescribing-ORR-Submission-03.21.2020.pdf" target="_blank">Off Label Prescribing for COVID-19</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title="" style="left: 600px;">
+                        <a href="/publications/bytopic.php?parm=Coronavirus%20Disease%202019">Publications &amp; Resources</a>
+                      </p>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title="" style="left: 700px;">
                         <a href="#">Programs</a>
                       </p>
                       <div class="content" data-section-content="">
@@ -518,16 +496,6 @@
                           </li>
                         </ul>
                       </div>
-                    </section>
-                    <section>
-                      <p class="title" data-section-title="" style="left: 400px;">
-                        <a href="https://rules.sos.ri.gov/regulations/index/active?search=&amp;keywords=infectious%20disease&amp;agencies=216&amp;sortby=relevance&amp;order=desc">Regulations</a>
-                      </p>
-                    </section>
-                    <section>
-                      <p class="title" data-section-title="" style="left: 500px;">
-                        <a href="/publications/bytopic.php?parm=Coronavirus%20Disease%202019">Publications &amp; Resources</a>
-                      </p>
                     </section>
                   </div>
                   <!--Content End-->
