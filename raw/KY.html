@@ -247,7 +247,7 @@
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k84yn96d"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k84zpxct"></script>
   </head>
   <body class="content-center" style="position: relative; min-height: 100%; top: 0px;">
     <!--Masthead-->
@@ -400,13 +400,13 @@
         </div>
         <div class="col-md-4">
           <p class="alert alert-success">
-            <b>Current as of March 23, 2020 at 9 a.m. Eastern time</b>
+            <b>Current as of March 23, 2020 at 5 p.m. Eastern time</b>
             <br>&#65279;
             <b>
               <br>
             </b>
             <br>Number Tested: 1866
-            <br>Positive: 104
+            <br>Positive: 124
             <br>
             <br>
             <b>Note:</b>
@@ -1034,7 +1034,7 @@
       </div>
       <div class="row mt-5 mb-3" id="updated-date">
         <div class="col-sm-12 text-center">
-          <small class="text-muted">Updated on March 23rd, 2020 05:00PM</small>
+          <small class="text-muted">Updated on March 23rd, 2020 05:13PM</small>
         </div>
       </div>
     </div>
@@ -1059,9 +1059,11 @@
   </script>
     <script>
   function onSubmitEmail(token) {
+  	     grecaptcha.execute();
            document.getElementById("email-form").submit();
          }
          function onSubmitSms(token) {
+  	     grecaptcha.execute();
            document.getElementById("sms-form").submit();
          }
   </script>
