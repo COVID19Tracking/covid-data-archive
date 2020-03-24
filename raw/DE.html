@@ -1,12 +1,12 @@
 <html lang="en-US">
   <base ref="https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html">
   <head>
+    <script src="https://connect.facebook.net/en_US/sdk.js?hash=d78591c8c2c9659e34d438b1917fdfea" async="" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Global site tag (gtag.js) - Google Analytics-->
-    <script src="https://connect.facebook.net/en_US/sdk.js?hash=179a94092761b028a1b3aa2ea15a02e4" async="" crossorigin="anonymous"></script>
-    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-39283013-20"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
@@ -38,6 +38,8 @@
     <meta name="theme-color" content="#ffffff">
     <!--Google recaptcha-->
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--lightbox css library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <title>Coronavirus - Delaware's Coronavirus Official Website</title>
     <!--This site is optimized with the Yoast SEO plugin v13.0 - https://yoast.com/wordpress/plugins/seo/-->
     <meta name="description" content="Find the lab-confirmed cases by county, learn what you can do, find resources for businesses, schools, health care, and more.">
@@ -151,7 +153,7 @@
                   }
   </style>
   </head>
-  <body class="home page-template-default page page-id-505 wp-embed-responsive" data-rsevent-id="rs_260144">
+  <body class="home page-template-default page page-id-505 wp-embed-responsive" data-rsevent-id="rs_71667">
     <!--BEGIN Fixed Main Nav Bar-->
     <!--Fixed navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -349,11 +351,11 @@
                       </span>
                       <span class="rsbtn_right rsimg rsplay rspart"></span>
                     </a>
-                    <button type="button" class="rsbtn_tooltoggle" title="Open/close toolbar" style="display:none" aria-expanded="false" data-rs-container="readspeaker_button1" data-rsevent-id="rs_425389" accesskey="1">
+                    <button type="button" class="rsbtn_tooltoggle" title="Open/close toolbar" style="display:none" aria-expanded="false" data-rs-container="readspeaker_button1" data-rsevent-id="rs_39923" accesskey="1">
                       <i class="rsicn rsicn-arrow-down" aria-hidden="true"></i>
                       <span class="rsbtn_btnlabel" style="width: 0px; height: 0px;">Open/close toolbar</span>
                     </button>
-                    <button tabindex="-1" accesskey="k" class="rsbtn_focusforward" aria-hidden="true" data-rsevent-id="rs_629346">
+                    <button tabindex="-1" accesskey="k" class="rsbtn_focusforward" aria-hidden="true" data-rsevent-id="rs_565759">
                       <span class="">Focus</span>
                     </button>
                   </div>
@@ -655,7 +657,7 @@
                         <div class="g-recaptcha" id="ctct_recaptcha_4" data-sitekey="6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr" data-size="invisible">
                           <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
                             <div class="grecaptcha-logo">
-                              <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr&amp;co=aHR0cHM6Ly9jb3JvbmF2aXJ1cy5kZWxhd2FyZS5nb3Y6NDQz&amp;hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;size=invisible&amp;cb=q64f4hpnnma1" role="presentation" name="a-xbatdry9vjck" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe>
+                              <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfHrSkUAAAAAPnKk5cT6JuKlKPzbwyTYuO8--Vr&amp;co=aHR0cHM6Ly9jb3JvbmF2aXJ1cy5kZWxhd2FyZS5nb3Y6NDQz&amp;hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;size=invisible&amp;cb=ebako524rnqf" role="presentation" name="a-h20ouiafi9rq" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe>
                             </div>
                             <div class="grecaptcha-error"></div>
                             <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
@@ -1290,6 +1292,37 @@
   		jQuery("#odometer").html();
   	 }, 100);
   </script>
+    <!--lightbox JS library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+    <div id="lightbox" class="lightbox" style="display: none;">
+      <div class="lb-outerContainer">
+        <div class="lb-container">
+          <img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+          <div class="lb-nav">
+            <a class="lb-prev" href=""></a>
+            <a class="lb-next" href=""></a>
+          </div>
+          <div class="lb-loader">
+            <a class="lb-cancel"></a>
+          </div>
+        </div>
+      </div>
+      <div class="lb-dataContainer">
+        <div class="lb-data">
+          <div class="lb-details">
+            <span class="lb-caption"></span>
+            <span class="lb-number"></span>
+          </div>
+          <div class="lb-closeContainer">
+            <a class="lb-close"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-shims.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-font-face.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" media="all">
     <div class="swiftype-widget">
       <div class="autocomplete" style="position: absolute; z-index: 9999; top: 53.85px; left: 1146.5px; width: 113px; display: none;">
         <ul></ul>
@@ -1300,8 +1333,5 @@
         <ul></ul>
       </div>
     </div>
-    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-shims.min.css" media="all">
-    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-font-face.min.css" media="all">
-    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" media="all">
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <!--Global site tag (gtag.js) - Google Analytics-->
     <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159925580-1"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
@@ -1719,7 +1720,7 @@
       </p>
       <div class="row mt-5 mb-3" id="updated-date">
         <div class="col-sm-12 text-center">
-          <small class="text-muted">Updated on March 23rd, 2020 08:42PM</small>
+          <small class="text-muted">Updated on March 24th, 2020 10:46AM</small>
         </div>
       </div>
     </div>
@@ -1744,9 +1745,11 @@
   </script>
     <script>
   function onSubmitEmail(token) {
+  	     grecaptcha.execute();
            document.getElementById("email-form").submit();
          }
          function onSubmitSms(token) {
+  	     grecaptcha.execute();
            document.getElementById("sms-form").submit();
          }
   </script>
@@ -1766,6 +1769,15 @@
   margin:5px}
   </style>
     <script src="https://content.govdelivery.com/overlay/js/8537.js"></script>
+    <!--Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3724630-25"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-3724630-25');
+  </script>
     <div style="width: 500px; position: fixed; top: 50%; left: 50%; margin-top: -111px; margin-left: -250px; z-index: 3;" id="scopedByScopedPolyfill_1">
       <style scoped="">
   /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
