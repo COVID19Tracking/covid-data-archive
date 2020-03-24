@@ -1,124 +1,914 @@
-<html lang="en-us">
+<html dir="ltr" class="en-us en dj_gecko dj_ff74 dj_contentbox">
   <base ref="https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign In</title>
-    <script src="/sharing/files/scripts/detector.min.js"></script>
-    <link rel="stylesheet" href="/sharing/files/css/site.min.css">
-    <script src="/sharing/files/scripts/oauth2.js?v=192A1CC"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="/sharing/files/scripts/domReady.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard for COVID-19 Confirmed Cases in Alabama</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="assets/images/favicon.ico?" type="image/x-icon">
+    <link href="https://js.arcgis.com/3.31/dijit/themes/claro/claro.css" rel="stylesheet" type="text/css">
+    <link href="https://js.arcgis.com/3.31/esri/css/esri.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/vendor-36211ead39d5c1e27a4b693f05e3f1af.css">
+    <link rel="stylesheet" href="assets/app-dark-dd6454a58079327545744cd073434747.css">
+    <style>.cke{visibility:hidden;}</style>
   </head>
-  <body>
-    <div class="content-container">
-      <div>
-        <div id="appInfo">
-          <div class="app-info">
-            <section class="app-banner text-center font-size--3">
-              <span class="avenir-demi">Operations Dashboard for ArcGIS</span>wants to access your ArcGIS Online account information
-              <a class="js-modal-toggle help-toggle" data-modal="appinfo" tabindex="0">
-                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="svg-icon svg-icon-light-blue svg-icon-live svg-icon-large" focusable="false">
-                  <path d="M7.5 0A7.5 7.5 0 1 0 15 7.5 7.509 7.509 0 0 0 7.5 0zm.001 14.1A6.6 6.6 0 1 1 14.1 7.5a6.608 6.608 0 0 1-6.599 6.6zM7.5 10.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1zM8 9H7a3.046 3.046 0 0 1 1.282-2.51c.47-.462.736-.746.732-1.217a1.324 1.324 0 0 0-1.46-1.27 1.418 1.418 0 0 0-1.548 1.394h-1c0-3.09 5.009-3.154 5.008-.128a2.617 2.617 0 0 1-1.032 1.935C8.462 7.715 8 7.995 8 9z"></path>
-                </svg>
-              </a>
-            </section>
-            <div class="js-modal modal-overlay" data-modal="appinfo">
-              <div class="modal-content" role="dialog" aria-labelledby="modal">
-                <h4>Operations Dashboard for ArcGIS</h4>
-                <a class="js-modal-toggle right modal-close" aria-label="Close modal" tabindex="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="svg-icon svg-icon-gray svg-icon-live" width="24" height="24" focusable="false">
-                    <path d="M13.207 12.5l7.778 7.778-.707.707-7.778-7.778-7.778 7.778-.707-.707 7.778-7.778-7.778-7.778.707-.707 7.778 7.778 7.778-7.778.707.707z"></path>
-                  </svg>
-                </a>
-                <div class="clearfix trailer-half flex flex-justify">
-                  <img class="left app-logo" src="https://alpublichealth.maps.arcgis.com/sharing/oauth2/apps/opsdashboard/vendorinfo/thumbnail.jpg">
-                  <div>
-                    <div class="text-dark-gray font-size--2">Developed by</div>
-                    <div class="font-size-0">Esri</div>
-                  </div>
+  <body class="claro ember-application">
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/nls/jsapi_en-us.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker/HexPalette.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/DateTextBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/TimeTextBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/color.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/Legend.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/Scalebar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/BasemapGallery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/LayerList.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/Search.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/locator.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/toolbars/draw.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/plugins/FeatureLayerStatistics.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/geometry/geometryEngineAsync.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/geometry/geometryEngine.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/fx/easing.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/arcgis/Portal.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/colors.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svg.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/_TimePicker.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_DateTimeTextBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/Calendar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/color/_base.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/_Tooltip.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker/colorUtil.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/HorizontalSlider.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RadioButton.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/toolbars/_toolbar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/GenerateRendererTask.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/UniqueValueDefinition.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassBreaksDefinition.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/GenerateRendererParameters.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/generateRenderer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ProjectParameters.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/heatmapCalculator.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/filters.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svgext.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/colors.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalRuleLabels.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalSlider.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/CheckBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_RadioButtonMixin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListMouseMixin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RangeBoundTextBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/CalendarLite.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalRule.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_CheckBoxMixin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/selector/lite.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/dnd/move.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListBase.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/MappedTextBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="assets/vendor-b294ef434e8ecd8fc0671169898118d0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="assets/nickel-3a9fdff2fead41c28df9eeaf949f145b.js"></script>
+    <script type="text/javascript" charset="utf-8" src="assets/moment-timezone-with-data.min-f71eb5eba513b3ab182b567941a82ef5.js"></script>
+    <script>
+  window.dojoConfig = {
+        async: true
+      };
+  
+      var cookieName = 'esri_auth';
+  
+      var browserCulture = navigator.languages ? navigator.languages[0] : navigator.language || navigator.userLanguage;
+      var culture = browserCulture && browserCulture.toLowerCase() || 'en';
+      var _rtl = false;
+  
+      var cookie = JSON.parse(decodeURIComponent(document.cookie.replace(new RegExp('(?:(?:^|.*;\\s*)' + cookieName + '\\s*\\=\\s*([^;]*).*$)|^.*$'), '$1')) || null);
+      if (cookie && cookie.culture) {
+        culture = cookie.culture.toLowerCase();
+      }
+  
+      var queryParams = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for (var i = 0; i < queryParams.length; i++) {
+        var queryParam = queryParams[i].split('=');
+        if (queryParam[0] === 'locale' && queryParam[1]) {
+          culture = queryParam[1].toLowerCase();
+        }
+        if (queryParam[0] === '_rtl' && queryParam[1] === 'true') {
+          _rtl = true;
+        }
+      }
+  
+      var isRTL = culture.toLowerCase() === 'ar' || culture.toLowerCase() === 'he' || _rtl;
+  
+      window.dojoConfig.locale = culture;
+      window.dojoConfig.isRTL = isRTL;
+  
+      var dirNode = document.querySelector('html');
+      dirNode.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+      dirNode.className += ' ' + culture;
+      dirNode.className += culture.indexOf('-') !== -1 ? ' ' + culture.split('-')[0] : '';
+  
+      window.CKEDITOR_BASEPATH = window.location.pathname.replace('index.html', '') + 'assets/ckeditor/';
+  </script>
+    <script src="https://js.arcgis.com/3.31/init.js" data-amd="true"></script>
+    <script>
+  require([
+        'esri/request', 'esri/moment', 'dojo/_base/config', 'dojo/Deferred', 'esri/dijit/ColorPicker', 'dojo/promise/all', 'esri/tasks/query', 'dojo/_base/Color', 'dojo/io-query', 'esri/IdentityManager', 'dojo/i18n!dojo/cldr/nls/gregorian', 'esri/dijit/ColorPicker/HexPalette', 'dijit/form/DateTextBox', 'dijit/form/TimeTextBox', 'dojo/number', 'dojox/color', 'esri/dijit/Legend', 'dojo/dom-geometry', 'dojox/gfx', 'esri/symbols/jsonUtils', 'esri/dijit/Scalebar', 'dojo/on', 'esri/dijit/BasemapGallery', 'esri/geometry/Extent', 'esri/arcgis/utils', 'esri/dijit/LayerList', 'esri/dijit/Search', 'esri/tasks/locator', 'esri/symbols/SimpleMarkerSymbol', 'esri/Color', 'esri/toolbars/draw', 'esri/graphic', 'esri/symbols/PictureMarkerSymbol', 'esri/symbols/SimpleLineSymbol', 'esri/symbols/SimpleFillSymbol', 'esri/geometry/ScreenPoint', 'dojo/date/locale', 'esri/geometry/Point', 'esri/SpatialReference', 'esri/dijit/PopupTemplate', 'esri/plugins/FeatureLayerStatistics', 'esri/tasks/QueryTask', 'esri/geometry/geometryEngineAsync', 'esri/geometry/jsonUtils', 'esri/layers/FeatureLayer', 'dojo/_base/lang', 'esri/geometry/geometryEngine', 'esri/layers/GridLayout', 'esri/renderers/jsonUtils', 'dojo/_base/fx', 'dojo/fx/easing', 'esri/renderers/UniqueValueRenderer', 'esri/renderers/SimpleRenderer', 'esri/layers/GraphicsLayer', 'esri/config', 'esri/geometry/scaleUtils', 'esri/tasks/StatisticDefinition', 'esri/arcgis/OAuthInfo', 'esri/arcgis/Portal', 'esri/tasks/GeometryService', 'dojo/_base/Deferred', 'dojo/json', 'dojo/cookie', 'esri/styles/colors', 'esri/lang', 'esri/geometry/webMercatorUtils'
+      ], function(mod0, mod1, mod2, mod3, mod4, mod5, mod6, mod7, mod8, mod9, mod10, mod11, mod12, mod13, mod14, mod15, mod16, mod17, mod18, mod19, mod20, mod21, mod22, mod23, mod24, mod25, mod26, mod27, mod28, mod29, mod30, mod31, mod32, mod33, mod34, mod35, mod36, mod37, mod38, mod39, mod40, mod41, mod42, mod43, mod44, mod45, mod46, mod47, mod48, mod49, mod50, mod51, mod52, mod53, mod54, mod55, mod56, mod57, mod58, mod59, mod60, mod61, mod62, mod63, mod64, mod65) {
+        var adoptables = [{
+          name: 'esri/request',
+          obj: mod0
+        }, {
+          name: 'esri/moment',
+          obj: mod1
+        }, {
+          name: 'dojo/_base/config',
+          obj: mod2
+        }, {
+          name: 'dojo/Deferred',
+          obj: mod3
+        }, {
+          name: 'esri/dijit/ColorPicker',
+          obj: mod4
+        }, {
+          name: 'dojo/promise/all',
+          obj: mod5
+        }, {
+          name: 'esri/tasks/query',
+          obj: mod6
+        }, {
+          name: 'dojo/_base/Color',
+          obj: mod7
+        }, {
+          name: 'dojo/io-query',
+          obj: mod8
+        }, {
+          name: 'esri/IdentityManager',
+          obj: mod9
+        }, {
+          name: 'dojo/i18n!dojo/cldr/nls/gregorian',
+          obj: mod10
+        }, {
+          name: 'esri/dijit/ColorPicker/HexPalette',
+          obj: mod11
+        }, {
+          name: 'dijit/form/DateTextBox',
+          obj: mod12
+        }, {
+          name: 'dijit/form/TimeTextBox',
+          obj: mod13
+        }, {
+          name: 'dojo/number',
+          obj: mod14
+        }, {
+          name: 'dojox/color',
+          obj: mod15
+        }, {
+          name: 'esri/dijit/Legend',
+          obj: mod16
+        }, {
+          name: 'dojo/dom-geometry',
+          obj: mod17
+        }, {
+          name: 'dojox/gfx',
+          obj: mod18
+        }, {
+          name: 'esri/symbols/jsonUtils',
+          obj: mod19
+        }, {
+          name: 'esri/dijit/Scalebar',
+          obj: mod20
+        }, {
+          name: 'dojo/on',
+          obj: mod21
+        }, {
+          name: 'esri/dijit/BasemapGallery',
+          obj: mod22
+        }, {
+          name: 'esri/geometry/Extent',
+          obj: mod23
+        }, {
+          name: 'esri/arcgis/utils',
+          obj: mod24
+        }, {
+          name: 'esri/dijit/LayerList',
+          obj: mod25
+        }, {
+          name: 'esri/dijit/Search',
+          obj: mod26
+        }, {
+          name: 'esri/tasks/locator',
+          obj: mod27
+        }, {
+          name: 'esri/symbols/SimpleMarkerSymbol',
+          obj: mod28
+        }, {
+          name: 'esri/Color',
+          obj: mod29
+        }, {
+          name: 'esri/toolbars/draw',
+          obj: mod30
+        }, {
+          name: 'esri/graphic',
+          obj: mod31
+        }, {
+          name: 'esri/symbols/PictureMarkerSymbol',
+          obj: mod32
+        }, {
+          name: 'esri/symbols/SimpleLineSymbol',
+          obj: mod33
+        }, {
+          name: 'esri/symbols/SimpleFillSymbol',
+          obj: mod34
+        }, {
+          name: 'esri/geometry/ScreenPoint',
+          obj: mod35
+        }, {
+          name: 'dojo/date/locale',
+          obj: mod36
+        }, {
+          name: 'esri/geometry/Point',
+          obj: mod37
+        }, {
+          name: 'esri/SpatialReference',
+          obj: mod38
+        }, {
+          name: 'esri/dijit/PopupTemplate',
+          obj: mod39
+        }, {
+          name: 'esri/plugins/FeatureLayerStatistics',
+          obj: mod40
+        }, {
+          name: 'esri/tasks/QueryTask',
+          obj: mod41
+        }, {
+          name: 'esri/geometry/geometryEngineAsync',
+          obj: mod42
+        }, {
+          name: 'esri/geometry/jsonUtils',
+          obj: mod43
+        }, {
+          name: 'esri/layers/FeatureLayer',
+          obj: mod44
+        }, {
+          name: 'dojo/_base/lang',
+          obj: mod45
+        }, {
+          name: 'esri/geometry/geometryEngine',
+          obj: mod46
+        }, {
+          name: 'esri/layers/GridLayout',
+          obj: mod47
+        }, {
+          name: 'esri/renderers/jsonUtils',
+          obj: mod48
+        }, {
+          name: 'dojo/_base/fx',
+          obj: mod49
+        }, {
+          name: 'dojo/fx/easing',
+          obj: mod50
+        }, {
+          name: 'esri/renderers/UniqueValueRenderer',
+          obj: mod51
+        }, {
+          name: 'esri/renderers/SimpleRenderer',
+          obj: mod52
+        }, {
+          name: 'esri/layers/GraphicsLayer',
+          obj: mod53
+        }, {
+          name: 'esri/config',
+          obj: mod54
+        }, {
+          name: 'esri/geometry/scaleUtils',
+          obj: mod55
+        }, {
+          name: 'esri/tasks/StatisticDefinition',
+          obj: mod56
+        }, {
+          name: 'esri/arcgis/OAuthInfo',
+          obj: mod57
+        }, {
+          name: 'esri/arcgis/Portal',
+          obj: mod58
+        }, {
+          name: 'esri/tasks/GeometryService',
+          obj: mod59
+        }, {
+          name: 'dojo/_base/Deferred',
+          obj: mod60
+        }, {
+          name: 'dojo/json',
+          obj: mod61
+        }, {
+          name: 'dojo/cookie',
+          obj: mod62
+        }, {
+          name: 'esri/styles/colors',
+          obj: mod63
+        }, {
+          name: 'esri/lang',
+          obj: mod64
+        }, {
+          name: 'esri/geometry/webMercatorUtils',
+          obj: mod65
+        }];
+        var isVendor = new RegExp('vendor(.*js)');
+  
+        function recursiveRequire(i, scripts) {
+          if (i >= scripts.length) {
+            return;
+          }
+          require([scripts[i]], function() {
+            if (isVendor.test(scripts[i])) {
+              adoptables.forEach(function(adoptable) {
+                enifed(adoptable.name, [], function() {
+                  return adoptable.obj;
+                });
+              });
+            }
+            recursiveRequire(++i, scripts);
+          });
+        }
+        recursiveRequire(0, ["assets/vendor-b294ef434e8ecd8fc0671169898118d0.js", "assets/nickel-3a9fdff2fead41c28df9eeaf949f145b.js", "assets/moment-timezone-with-data.min-f71eb5eba513b3ab182b567941a82ef5.js"]);
+      });
+  </script>
+    <!---->
+    <div id="ember6" class="dashboard-page flex-vertical full panel panel-no-border panel-no-padding position-relative ember-view">
+      <!---->
+      <!---->
+      <!---->
+      <div style="" id="ember8" class="flex-fluid flex-vertical overflow-hidden dashboard-container ember-view">
+        <div id="ember9" class="flex-fix panel-container flex-vertical top-panel-container ember-view">
+          <div class="margin-container" style="color:#ffffff;border-color:#c2c2c2;">
+            <!---->
+            <div class="full-container">
+              <div style="" id="ember10" class="header-panel flex-horizontal large ember-view">
+                <div class="flex-fix flex-align-center margin-left-1">
+                  <a target="_blank" class="logo-img-btn no-pointer-events">
+                    <img src="https://alabamapublichealth.gov/images/arcgis-logo.png">
+                  </a>
                 </div>
-                <div>Esri publishes a set of ready-to-use maps and apps that are available as part of ArcGIS.  ArcGIS is a mapping platform that enables you to create interactive maps and apps to share within your organization or publicly.</div>
+                <div class="flex-fix flex-align-center allow-shrink margin-left-1 flex-vertical">
+                  <div class="title no-pointer-events text-ellipsis">Alabama's COVID-19 Data and Surveillance Dashboard</div>
+                  <div class="subtitle text-ellipsis no-pointer-events">Alabama Department of Public Health  |  Division of Infectious Diseases &amp; Outbreaks</div>
+                </div>
+                <div class="selectors-container flex-fluid flex-align-center flex-horizontal flex-justify-end padding-right-half">
+                  <!---->
+                </div>
+                <!---->
               </div>
             </div>
+            <!---->
+            <!---->
           </div>
         </div>
-        <div class="content">
-          <div class="content-wrap">
-            <div class="js-header header-bar flex flex-justify">
-              <div class="font-size-1 page-title width-full">
-                <span class="js-orgname">Sign in to ADPH Public GIS with</span>
-              </div>
-              <svg id="gnav-dist-esri-Australia-tm" xmlns="http://www.w3.org/2000/svg" width="84" height="30" viewbox="0 0 84 30" focusable="false">
-                <title>Esri</title>
-                <g>
-                  <path d="M77.377.695a2.51615,2.51615,0,0,0-2.5536,2.4884,2.58969,2.58969,0,0,0,5.1756,0A2.512,2.512,0,0,0,77.377.695ZM75.4635,24.12065h3.892V8.5485h-3.892ZM40.615,8.1597c-4.7019,0-8.4646,3.2749-8.4646,8.1744,0,4.89828,3.7627,8.17661,8.4646,8.17661a8.08656,8.08656,0,0,0,5.8516-2.31047L44.0102,19.7439a4.96654,4.96654,0,0,1-3.781,1.65148,4.03745,4.03745,0,0,1-4.1869-3.69818H47.9167V16.6269C47.9167,11.2076,44.9662,8.1597,40.615,8.1597Zm-4.5727,6.6168a3.87339,3.87339,0,0,1,4.023-3.6991c2.4334,0,3.9261,1.4292,3.9603,3.6991Zm17.3044-1.8482c0-1.1689,1.2333-1.655,2.2729-1.655a3.53132,3.53132,0,0,1,3.0376,1.5764l2.476-2.4735a6.83011,6.83011,0,0,0-5.418-2.2165c-3.1469,0-6.2621,1.5555-6.2621,5.0284,0,5.9379,8.4026,3.4059,8.4026,6.6172,0,1.23253-1.4594,1.78384-2.5946,1.78384a4.75239,4.75239,0,0,1-3.6905-1.905l-2.5144,2.5136a7.64753,7.64753,0,0,0,5.9779,2.313c3.1784,0,6.717-1.29823,6.717-4.99731C61.7511,13.4459,53.3467,15.7175,53.3467,12.9283Zm14.151-1.9166h-.0623V8.5485H63.5426V24.12065h3.8928V15.7815a3.91438,3.91438,0,0,1,4.1848-3.9252,7.452,7.452,0,0,1,1.7181.253l.1519-3.7259a5.03109,5.03109,0,0,0-1.3826-.2237A4.96277,4.96277,0,0,0,67.4977,11.0117ZM14.782,2.9606a10.41336,10.41336,0,0,0-2.651.2599.49091.49091,0,0,0-.6431.4729.65358.65358,0,0,0,.2394.5615,20.045,20.045,0,0,1,2.4735,2.1423c-.4694.0517-.9807.1379-1.5039.2462-.5847-1.264-2.4653-.1147-3.71354-.0648-.14639.006-.28684.0252-.43149.035A20.32772,20.32772,0,0,1,8.3415,3.6934a17.20722,17.20722,0,0,1,6.875-1.6255l.3721-.0098c.3124-.0027.3371-.2514.0435-.2915A13.53793,13.53793,0,0,0,8.35348,2.9124,14.41291,14.41291,0,0,0,.89854,10.791c-.44337,1.2475-2.21826,7.1947.935,12.29948a13.20182,13.20182,0,0,0,9.88737,6.6769,14.15347,14.15347,0,0,0,8.7522-1.05577c5.9511-2.64154,10.4956-12.55841,5.9499-19.747C24.6289,5.6461,19.9278,2.7361,14.782,2.9606ZM12.5233,7.6083a17.75423,17.75423,0,0,1,2.3616-.3686,15.74087,15.74087,0,0,1,1.7479,2.5404c-.8053.3896-1.8781.6879-2.3146,1.3123a1.78056,1.78056,0,0,0-.2318.9943,23.589,23.589,0,0,0-3.8774,1.2862c-.45286-1.3319-.85009-2.659-1.12365-3.8421C10.3814,8.2941,11.8985,8.0927,12.5233,7.6083Zm6.6103,15.87993c-.3546.03749-.7071.08277-1.0169.13057a14.62456,14.62456,0,0,0-2.6843.72209,43.94209,43.94209,0,0,1-2.6676-4.43649A15.48586,15.48586,0,0,1,18.54,18.4602a4.61747,4.61747,0,0,0,.6909.9559C19.9871,20.1902,18.7892,21.299,19.1336,23.48823ZM10.5303,14.3485a19.29324,19.29324,0,0,1,3.5604-1.2862,2.03511,2.03511,0,0,1-.1827.903,2.50151,2.50151,0,0,0,.1336,1.7748c.7549,1.0985,2.0083.4882,2.9518.8834a2.15739,2.15739,0,0,1,.9633.8389,16.049,16.049,0,0,0-5.7053,1.4109A41.82526,41.82526,0,0,1,10.5303,14.3485Zm.8321,4.9371c-.0699.0333-.145.0742-.2171.1101-1.1019-.3073-1.78517-.478-3.25617-.7801a3.08944,3.08944,0,0,0-2.15123.1758c-.15959.0461-.3128.0879-.46173.1323-.14893-.3815-.29663-.7768-.44556-1.2018a27.12084,27.12084,0,0,1,4.82187-2.9851C10.1514,16.2283,10.8665,18.2204,11.3624,19.2856Zm.7674,4.52863a9.48665,9.48665,0,0,0,.6047-1.88965c.5692.95763,1.2487,1.9989,1.7744,2.814A17.3346,17.3346,0,0,0,11.837,26.4243,11.23781,11.23781,0,0,1,12.1298,23.81423ZM17.4642,9.1779c-.0102.0145-.0282.0261-.0393.0401a23.04534,23.04534,0,0,0-1.3771-2.1111,21.90906,21.90906,0,0,1,3.3743.1084C18.4082,7.5781,17.9609,8.4687,17.4642,9.1779Zm-9.028,1.0938c.01836-.0256.03837-.0465.05716-.0717.23344,1.1821.51294,2.1606.88552,3.5178a33.49783,33.49783,0,0,0-4.976,2.9723,17.18753,17.18753,0,0,1-.5889-1.9465,1.77168,1.77168,0,0,1,1.47617-1.325C6.51758,13.2957,7.57083,11.4696,8.43624,10.2717ZM3.0267,8.4883A15.96075,15.96075,0,0,1,7.74876,3.9686a26.225,26.225,0,0,0,.21806,2.6928q-.85463.0852-1.69211.2109a12.08231,12.08231,0,0,0-3.11438,4.0878A14.926,14.926,0,0,1,3.0267,8.4883ZM2.16984,9.9256s.06188,1.0601.1131,1.8329a11.90283,11.90283,0,0,0-1.17919,1.5914A9.53467,9.53467,0,0,1,2.16984,9.9256Zm7.664,18.35671A12.62638,12.62638,0,0,1,1.72131,20.029a17.47511,17.47511,0,0,1-.65164-6.473.65293.65293,0,0,0,.38018.0167c.13486-.0922.61581-.4302.95763-.7277.00472.0393.01241.0892.01792.1314a12.04271,12.04271,0,0,0-.40064,2.7099,19.25881,19.25881,0,0,1,1.28616,1.7062c-.31061.2304-.9051.6418-1.04468.7417a.62859.62859,0,0,0-.114,1.0148.56565.56565,0,0,0,.6124-.0103,10.69141,10.69141,0,0,1,1.06609-.769c.151.3926.29182.7468.43052,1.0848a1.34447,1.34447,0,0,0-.34269.79893,2.46079,2.46079,0,0,0,1.91875,2.35994c.035.01022.06057.01363.09388.02307.0499.07508.09517.14674.14761.22357A5.74221,5.74221,0,0,0,5.03032,23.9226c-.13189.17244-.28125.43018-.15959.48139a2.1227,2.1227,0,0,0,.71824-.03408c.46644-.08967.82618-.606,1.14833-.7955a17.99721,17.99721,0,0,0,1.67159,1.87942c.02866.11947.05506.24576.08792.3516a7.47254,7.47254,0,0,0,.495,1.19578A12.16213,12.16213,0,0,0,10.456,27.562,8.34474,8.34474,0,0,0,9.83383,28.28231Zm.98917.31236a4.36881,4.36881,0,0,1,.5054-.6256c.4672.30983.9682.66493,1.3677.89366A9.59947,9.59947,0,0,1,10.823,28.59467Zm3.1128.30983a22.07987,22.07987,0,0,1-2.0088-1.47057,14.04631,14.04631,0,0,1,3.1281-1.88878c.4016.63076,1.7267,2.50678,2.2575,3.11184A17.30216,17.30216,0,0,1,13.9358,28.9045Zm6.7055-1.50806a16.58869,16.58869,0,0,1-2.2045.98742,23.42994,23.42994,0,0,1-2.4402-3.20141,13.9527,13.9527,0,0,1,3.3466-.82111,7.49493,7.49493,0,0,0,.4438,1.09423,2.51925,2.51925,0,0,0,.6486.85345c.0853-.05287.1644-.11519.2484-.16981C20.678,26.55828,20.6665,26.98505,20.6413,27.39644ZM20.3106,5.9188c-.2702-.1719-.6068-.1079-.4669.1933a4.06966,4.06966,0,0,0,.4272.5122,19.53821,19.53821,0,0,0-4.856-.3645,15.62334,15.62334,0,0,0-2.8614-2.7649c4.999-.3111,9.4897,1.7565,11.4737,4.1856a15.42616,15.42616,0,0,0-2.6677-.9628A5.95374,5.95374,0,0,0,20.3106,5.9188Zm1.0946,21.06538c.023-.40711.0402-.92267.0529-1.39637a12.11693,12.11693,0,0,0,1.3695-1.23757,12.42379,12.42379,0,0,1,1.4275.23895A11.02525,11.02525,0,0,1,21.4052,26.98418Zm3.8245-3.72467a4.1318,4.1318,0,0,1-.6328.89444,9.77165,9.77165,0,0,0-1.2722-.37468c.0786-.09387.1635-.18267.2395-.27915.2688-1.7957-.3376-2.371.4211-4.01392.053-.1144.111-.2407.1716-.3713a11.3497,11.3497,0,0,1,1.1526.3858A30.26049,30.26049,0,0,1,25.2297,23.25951Zm-.7079-4.91621c.1959-.4072.4118-.8399.6456-1.2708.0607.5479.1042,1.0813.1307,1.5635C25.0578,18.5302,24.7936,18.4346,24.5218,18.3433Zm2.2178,1.1257-.1937.75629a18.08656,18.08656,0,0,1-.8318,2.22245,25.61647,25.61647,0,0,0,.1481-2.72944.59489.59489,0,0,0,.5586-.3414c.0568-.1946-.5637-.495-.5637-.495a20.74328,20.74328,0,0,0-.1725-2.7001c.1426-.2292.2869-.452.4341-.6551a12.095,12.095,0,0,0-.1852-1.5743,1.21486,1.21486,0,0,0,.323.0747c.2825.0043.2817-.1899.1912-.2978a3.78494,3.78494,0,0,0-.6423-.4195,12.02044,12.02044,0,0,0-2.7811-5.3203,14.9875,14.9875,0,0,1,1.7548.7732,9.39245,9.39245,0,0,1,2.2114,4.9204A12.16755,12.16755,0,0,1,26.7396,19.469Z"></path>
-                  <path d="M80.9857,8.7917V8.5528h1.2188v.2389H81.736V9.9832h-.2835V8.7917Zm1.87-.2389L83.221,9.577l.3679-1.0242h.4062V9.9832h-.262V8.8293l-.396,1.1539h-.2287l-.3995-1.1539V9.9832h-.262V8.5528Z"></path>
-                </g>
-              </svg>
-            </div>
-            <div id="loginComponents">
-              <div tabindex="0" class="alert alert-red js-message" id="errMessage"></div>
-              <section class="arcgis-login">
-                <div class=" accordion">
-                  <div class="js-flat-section flat-section is-active">
-                    <div class="flat-title font-size--1 trailer-quarter" id="loginTitle" aria-expanded="true" role="heading" aria-level="4">
-                      <span>ArcGIS login</span>
+        <div class="flex-fluid flex-horizontal position-relative overflow-hidden">
+          <!---->
+          <div class="flex-fluid position-relative overflow-hidden">
+            <div class="position-absolute full margin-container">
+              <div id="ember11" class="dock-container ember-view">
+                <margin-container class="left top right bottom">
+                  <full-container class="layout-reference">
+                    <div style="left:0px;top:0px;width:216.896624482512px;height:254.24949552748433px;" id="ember12" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember13" class="widget flex-vertical full-height embedded-content-widget ember-view">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="external-html widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <iframe marginwidth="0" marginheight="0" id="ember17" class="flex-fluid ember-view" width="100%" height="100%" frameborder="0"></iframe>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
                     </div>
-                    <div class="flat-content" role="region" aria-labelledby="loginTitle" id="loginPanel">
-                      <form class="container" id="oauth" name="f" method="POST" action="https://alpublichealth.maps.arcgis.com/sharing/oauth2/signin" novalidate="" autocomplete="off">
-                        <input type="hidden" id="oauth_state" name="oauth_state" value="Y6MqwhD99aRjqgGCsLaz-8lp5ROaPU_kVjSt9gI17dQHy_QiNP2ubj96d1s3CuEgkXQfe5-xiN0w_3-WWUHvjA5CEVA67UpTEZ1HU-kjdXrFoYzPtn4_9eTw4dVP4noFT3v8wzCbxRV3cEnT1gHwZVOymYoM0RkC3_r3Nq9uy2MO2z1Qmo6Kz5krgOWXo13LcdYayb4rRhHXooNxeBqseUdKEouzPhzWPTCOX3A-eXPJxkb9_CjEVygLdzvheZcA1P_WiP8Js29SCBOro2iCfrNu3JvA_otdo6vfQ24zh_IdJnUo47d4nrPgB7ew2W1cdL1ideWmC-tyoctdieqO7wc5b36ZX-cLU5R6YSPs1fyeGt7fJFe77g9JEqAYKneiAdkuo5DmzZBg6ffqkuwD3fRaPn5-xfCyaAitcxFDjHunJqsKJVp4LIXxPEvXfBiKs0KZQ76RUEwlGXVXnlWopSdIZ-wAjgndxG2KTHQFz3fREmg3EcZYgMpBbYgU2kqwuqXcaYeElFTfTmSM7rX4_ems4UGGnZ8qGfv1352-IFM.">
-                        <input type="hidden" id="authorize" name="authorize" value="true">
-                        <label class="field-icon">
-                          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" focusable="false">
-                            <path d="M11 3a3 3 0 1 0-3 3 3 3 0 0 0 3-3zM8 5a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm3 1H5a2 2 0 0 0-2 2v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1h1a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2zm1 3v5h-1V9h-1v6H6V9H5v5H4V8a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"></path>
-                          </svg>
-                          <input type="text" name="username" id="user_username" placeholder="Username" aria-label="Username" class="padding-left-2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required="">
-                          <div class="input-error-message js-username-error"></div>
-                        </label>
-                        <label class="field-icon">
-                          <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" focusable="false">
-                            <path d="M13 7V5A5 5 0 0 0 3 5v2a1.003 1.003 0 0 0-1 1v7a1.003 1.003 0 0 0 1 1h10a1.003 1.003 0 0 0 1-1V8a1.003 1.003 0 0 0-1-1zM4 5a4 4 0 0 1 8 0v2h-1V5a3 3 0 0 0-6 0v2H4zm6 2H6V5a2 2 0 0 1 4 0zm3 8H3V8h10zm-5-1H7V9h1v1h1v1H8v1h1v1H8z"></path>
-                          </svg>
-                          <input required="" type="password" name="password" id="user_password" placeholder="Password" aria-label="Password" class="padding-left-2">
-                          <div class="input-error-message js-password-error"></div>
-                        </label>
-                        <label id="persistUserLabel" class="">
-                          <input type="checkbox" name="persist" id="persistUser">
-                        </label>
-                        <div class="flex">
-                          <button id="signIn" type="submit" class="btn btn-small btn-fill margin-right-half">Sign In</button>
-                          <button id="cancel" type="button" class="btn btn-small btn-fill btn-clear margin-left-half">Cancel</button>
-                        </div>
-                      </form>
-                      <div class="leader-quarter btn-fill font-size--3">
-                        <a href="https://alpublichealth.maps.arcgis.com/sharing/oauth2/troubleshoot?oauth_state=Y6MqwhD99aRjqgGCsLaz-8lp5ROaPU_kVjSt9gI17dQHy_QiNP2ubj96d1s3CuEgkXQfe5-xiN0w_3-WWUHvjA5CEVA67UpTEZ1HU-kjdXrFoYzPtn4_9eTw4dVP4noFT3v8wzCbxRV3cEnT1gHwZVOymYoM0RkC3_r3Nq9uy2MO2z1Qmo6Kz5krgOWXo13LcdYayb4rRhHXooNxeBqseUdKEouzPhzWPTCOX3A-eXPJxkb9_CjEVygLdzvheZcA1P_WiP8Js29SCBOro2iCfrNu3JvA_otdo6vfQ24zh_IdJnUo47d4nrPgB7ew2W1cdL1ideWmC-tyoctdieqO7wc5b36ZX-cLU5R6YSPs1fyeGt7fJFe77g9JEqAYKneiAdkuo5DmzZBg6ffqkuwD3fRaPn5-xfCyaAitcxFDjHunJqsKJVp4LIXxPEvXfBiKs0KZQ76RUEwlGXVXnlWopSdIZ-wAjgndxG2KTHQFz3fREmg3EcZYgMpBbYgU2kqwuqXcaYeElFTfTmSM7rX4_ems4UGGnZ8qGfv1352-IFM.&amp;forgotMy=username">Forgot username?</a>or
-                        <a href="https://alpublichealth.maps.arcgis.com/sharing/oauth2/troubleshoot?oauth_state=Y6MqwhD99aRjqgGCsLaz-8lp5ROaPU_kVjSt9gI17dQHy_QiNP2ubj96d1s3CuEgkXQfe5-xiN0w_3-WWUHvjA5CEVA67UpTEZ1HU-kjdXrFoYzPtn4_9eTw4dVP4noFT3v8wzCbxRV3cEnT1gHwZVOymYoM0RkC3_r3Nq9uy2MO2z1Qmo6Kz5krgOWXo13LcdYayb4rRhHXooNxeBqseUdKEouzPhzWPTCOX3A-eXPJxkb9_CjEVygLdzvheZcA1P_WiP8Js29SCBOro2iCfrNu3JvA_otdo6vfQ24zh_IdJnUo47d4nrPgB7ew2W1cdL1ideWmC-tyoctdieqO7wc5b36ZX-cLU5R6YSPs1fyeGt7fJFe77g9JEqAYKneiAdkuo5DmzZBg6ffqkuwD3fRaPn5-xfCyaAitcxFDjHunJqsKJVp4LIXxPEvXfBiKs0KZQ76RUEwlGXVXnlWopSdIZ-wAjgndxG2KTHQFz3fREmg3EcZYgMpBbYgU2kqwuqXcaYeElFTfTmSM7rX4_ems4UGGnZ8qGfv1352-IFM.&amp;forgotMy=password">Forgot password?</a>
-                      </div>
+                    <div style="left:0px;top:254.24949552748433px;width:216.896624482512px;height:1987.7505044725156px;" id="ember18" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember19" class="widget flex-vertical full-height list-widget ember-view">
+                            <!---->
+                            <div class="flex-fix widget-header">
+                              <div class="caption">
+                                <p style="text-align:center">
+                                  <span style="font-size:12px">Click a county on the map or from the list below to see more.</span>
+                                </p>
+                              </div>
+                            </div>
+                            <!---->
+                            <div class="widget-body flex-fluid full-width flex-vertical overflow-y-auto overflow-x-hidden">
+                              <nav class="feature-list">
+                                <span style="" id="ember91" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Baldwin (
+                                        <span style="color:#ffffbe">3</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember93" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Calhoun (
+                                        <span style="color:#ffffbe">2</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember95" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Chambers (
+                                        <span style="color:#ffffbe">3</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember97" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Cullman (
+                                        <span style="color:#ffffbe">2</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember99" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Elmore (
+                                        <span style="color:#ffffbe">8</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember101" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Franklin (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember103" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Houston (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember105" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Jackson (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember107" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Jefferson (
+                                        <span style="color:#ffffbe">90</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember109" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Lamar (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember111" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Lauderdale (
+                                        <span style="color:#ffffbe">3</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember113" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Lee (
+                                        <span style="color:#ffffbe">21</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember115" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Limestone (
+                                        <span style="color:#ffffbe">2</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember117" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Madison (
+                                        <span style="color:#ffffbe">21</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember119" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Marion (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember121" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Mobile (
+                                        <span style="color:#ffffbe">3</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember123" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Montgomery (
+                                        <span style="color:#ffffbe">8</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember125" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Morgan (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember127" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>St. Clair (
+                                        <span style="color:#ffffbe">4</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember129" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Shelby (
+                                        <span style="color:#ffffbe">24</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember131" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Talladega (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember133" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Tallapoosa (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember135" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Tuscaloosa (
+                                        <span style="color:#ffffbe">9</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember137" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Walker (
+                                        <span style="color:#ffffbe">3</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember139" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>Washington (
+                                        <span style="color:#ffffbe">1</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                              </nav>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
                     </div>
-                  </div>
-                </div>
-              </section>
-              <div class="privacy-link">
-                <div class="font-size--3 text-right">
-                  <a href="https://trust.arcgis.com/en/privacy/privacy-tab-intro.htm" target="_blank">Privacy</a>
-                </div>
+                    <div style="left:216.896624482512px;top:0px;width:852.1178381565828px;height:1985.7754479097546px;" id="ember25" class="dock-element ember-view">
+                      <margin-container class="left right top" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember26" class="widget flex-vertical full-height map-container dropdownBorder map-widget ember-view">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="position-relative widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="map flex-fluid">
+                                <div id="esri.Map_0_root" style="width: 840px; height: 1980px; direction: ltr;" class="esriMapContainer">
+                                  <div id="esri.Map_0_container" style="position: absolute; cursor: default; user-select: none;" class="esriMapContainer">
+                                    <div id="esri.Map_0_layers" class="esriMapLayers"></div>
+                                  </div>
+                                  <div class="esriControlsBR">
+                                    <span class="esriAttribution" style="max-width: 378px;">
+                                      <span class="esriAttributionList"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:216.896624482512px;top:0px;width:852.1178381565828px;height:1985.7754479097546px;" id="ember30" class="dock-element invisible ember-view">
+                      <margin-container class="left right top" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember31" class="widget flex-vertical full-height map-container dropdownBorder map-widget ember-view">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="position-relative widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="map flex-fluid">
+                                <div id="esri.Map_1_root" style="width: 840px; height: 1980px; direction: ltr;" class="esriMapContainer">
+                                  <div id="esri.Map_1_container" style="position: absolute; cursor: default; user-select: none;" class="esriMapContainer">
+                                    <div id="esri.Map_1_layers" class="esriMapLayers"></div>
+                                  </div>
+                                  <div class="esriControlsBR">
+                                    <span class="esriAttribution" style="max-width: 378px;">
+                                      <span class="esriAttributionList"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:216.896624482512px;top:2020.7754479097546px;width:852.1178381565828px;height:221.22455209024557px;" id="ember35" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember36" class="widget flex-vertical full-height rich-text-widget ember-view">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="external-html panel-padding-quarter widget-body flex-fluid full-width flex-vertical overflow-y-auto overflow-x-hidden">
+                              <p>
+                                <span style="font-size:11px">Note: At this time, we are updating case counts twice a day. Cases confirmed after 4 p.m. will be added the next day.</span>
+                              </p>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:1069.0144626390947px;top:0px;width:286.98553736090497px;height:704.7700871948842px;" id="ember40" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="color:#ff5500;" id="ember41" class="widget flex-vertical full-height indicator-widget ember-view">
+                            <!---->
+                            <div class="flex-fix widget-header">
+                              <div class="caption">
+                                <h2 style="text-align:center">
+                                  <span style="color:#ffffff">CONFIRMED</span>
+                                </h2>
+                              </div>
+                            </div>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <!---->
+                                <div id="ember141" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.16062164306640625 242.74998474121094 160" width="233" height="153.57364508073266">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -153 292.79998779296875 193" height="160" width="242.73574117551811">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 85, 0); stroke-width: 2px; font-size: 160px; line-height: normal;">215</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <!---->
+                              </div>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:1069.0144626390947px;top:704.7700871948842px;width:286.98553736090497px;height:693.2579945799457px;" id="ember47" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="" id="ember48" class="widget flex-vertical full-height rich-text-widget ember-view">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div class="external-html panel-padding-quarter widget-body flex-fluid full-width flex-vertical overflow-y-auto overflow-x-hidden">
+                              <h1 style="text-align:center">
+                                <span style="color:#ffffff">
+                                  <span style="font-size:28px">TOTAL TESTED</span>
+                                </span>
+                                <br>
+                                <span style="color:#ff5500">
+                                  <span style="font-size:48px">
+                                    <strong>2,321</strong>
+                                  </span>
+                                </span>
+                              </h1>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:1069.0144626390947px;top:1398.02808177483px;width:286.98553736090497px;height:843.97191822517px;" id="ember52" class="dock-element ember-view">
+                      <margin-container class="left right top bottom" style="border-color: #c2c2c2;">
+                        <full-container>
+                          <div style="color:#ff0000;" id="ember53" class="widget flex-vertical full-height indicator-widget ember-view">
+                            <!---->
+                            <div class="flex-fix widget-header">
+                              <div class="caption">
+                                <p style="text-align:center">
+                                  <span style="font-size:14px">
+                                    <span style="color:#ffffff">DIED FROM</span>
+                                  </span>
+                                </p>
+                                <p style="text-align:center">
+                                  <span style="font-size:14px">
+                                    <span style="color:#ffffff">THIS ILLNESS</span>
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <!---->
+                                <div id="ember140" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.16062164306640625 80.91666412353516 160" width="233" height="193">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -153 97.5999984741211 193" height="160" width="80.91191583346826">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 0, 0); stroke-width: 2px; font-size: 160px; line-height: normal;">0</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <!---->
+                              </div>
+                            </div>
+                            <!---->
+                            <!---->
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <div style="left:216.896624482512px;top:1985.7754479097546px;width:852.1178381565828px;height:35px" id="ember60" class="dock-tabs ember-view">
+                      <margin-container class="left right " style="border-color: #ffffff;">
+                        <full-container>
+                          <div class="tabs-container">
+                            <!---->
+                            <nav id="ember61" class="tab-nav sortable-collection disabled ember-view">
+                              <span style="border-left-color:#ffffff;border-right-color:#ffffff;border-bottom-color:#004da8;" id="ember63" class="tab-title is-active ember-view">
+                                <a id="ember64" class="ember-view">
+                                  <div id="ember65" class="ember-view">CONFIRMED CASES</div>
+                                </a>
+                                <!---->
+                              </span>
+                              <span style="border-left-color:#ffffff;border-right-color:#ffffff;border-top-color:#ffffff;border-bottom-color:#c2c2c2;" id="ember67" class="tab-title ember-view">
+                                <a id="ember68" class="ember-view">
+                                  <div id="ember69" class="ember-view">TEST SITES</div>
+                                </a>
+                                <!---->
+                              </span>
+                            </nav>
+                          </div>
+                        </full-container>
+                      </margin-container>
+                    </div>
+                    <a style="visibility: hidden;" id="ember70" class="dock-expand ember-view">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16" width="12px" height="12px">
+                        <path vector-effect="non-scaling-stroke" d="M9.645 5.648L13.244 2h-3.205V1h4.9v5h-1V2.719l-3.584 3.633zm-4 4L2.06 13.281V10h-1v5h4.9v-1H2.756l3.6-3.648zM14 10.04v3.205l-3.648-3.6-.704.711 3.633 3.584H10v1h5v-4.9zM2 2.756l3.648 3.6.704-.711L2.719 2.06H6v-1H1v4.9h1z"></path>
+                      </svg>
+                    </a>
+                    <!---->
+                    <!---->
+                  </full-container>
+                </margin-container>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!---->
     </div>
-    <script>
-  var oAuthInfo = {"oauth_state":"Y6MqwhD99aRjqgGCsLaz-8lp5ROaPU_kVjSt9gI17dQHy_QiNP2ubj96d1s3CuEgkXQfe5-xiN0w_3-WWUHvjA5CEVA67UpTEZ1HU-kjdXrFoYzPtn4_9eTw4dVP4noFT3v8wzCbxRV3cEnT1gHwZVOymYoM0RkC3_r3Nq9uy2MO2z1Qmo6Kz5krgOWXo13LcdYayb4rRhHXooNxeBqseUdKEouzPhzWPTCOX3A-eXPJxkb9_CjEVygLdzvheZcA1P_WiP8Js29SCBOro2iCfrNu3JvA_otdo6vfQ24zh_IdJnUo47d4nrPgB7ew2W1cdL1ideWmC-tyoctdieqO7wc5b36ZX-cLU5R6YSPs1fyeGt7fJFe77g9JEqAYKneiAdkuo5DmzZBg6ffqkuwD3fRaPn5-xfCyaAitcxFDjHunJqsKJVp4LIXxPEvXfBiKs0KZQ76RUEwlGXVXnlWopSdIZ-wAjgndxG2KTHQFz3fREmg3EcZYgMpBbYgU2kqwuqXcaYeElFTfTmSM7rX4_ems4UGGnZ8qGfv1352-IFM.","client_id":"opsdashboard","appTitle":"Operations Dashboard for ArcGIS","locale":"en-us","orgName":"ADPH Public GIS","persistOption":true,"showSocialLogins":true,"contextPath":"/sharing","appOrgInfo":{"id":"P3ePLMYs2RVChkJx","name":"Esri","description":"Esri publishes a set of ready-to-use maps and apps that are available as part of ArcGIS.  ArcGIS is a mapping platform that enables you to create interactive maps and apps to share within your organization or publicly.","thumbnail":"thumbnail.jpg"},"orgUrlBase":"maps.arcgis.com","helpBase":"https://doc.arcgis.com/en/arcgis-online/","hideCrossOrgSigninLink":true}
-      oAuthInfo.locale = ((oAuthInfo.locale && oAuthInfo.locale === "iw") ? "he" : oAuthInfo.locale);
-      require.config({
-          baseUrl: "/sharing/files/scripts/",
-          locale: oAuthInfo.locale && oAuthInfo.locale.toLowerCase() || ""
-      });
-      require(["signIn", "domReady!"], function (signIn) {
-          signIn.startup(oAuthInfo);
-      });
-  </script>
+    <!---->
   </body>
 </html>
