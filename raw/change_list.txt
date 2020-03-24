@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-24 12:35:16 EDT
-  end	2020-03-24 12:39:18 EDT
-  previous	2020-03-24 12:05:06 EDT
-  lapsed	0:04:02.619887
+  start	2020-03-24 13:05:08 EDT
+  end	2020-03-24 13:08:18 EDT
+  previous	2020-03-24 12:35:16 EDT
+  lapsed	0:03:09.718407
 
 STATUS COUNTS:
-  CHANGED	36
+  CHANGED	31
   FAILED	17
   duplicate	30
   skip	1
-  unchanged	50
+  unchanged	55
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -20,13 +20,13 @@ AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/op
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
 AR_data.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -36,7 +36,7 @@ FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96d
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 HI_data.html	unchanged	google-states-csv	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
@@ -48,7 +48,7 @@ IN.html	CHANGED	google-states-csv	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states-csv	duplicate of IN	
 KS.html	unchanged	google-states-csv	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states-csv	duplicate of KS	
-KY.html	CHANGED	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	unchanged	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states-csv	duplicate of KY	
 LA.html	unchanged	google-states-csv	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states-csv	duplicate of LA	
@@ -60,15 +60,15 @@ ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-di
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/	
-MN.html	CHANGED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	CHANGED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
 MO_data.html	duplicate	google-states-csv	duplicate of MO	
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -82,9 +82,9 @@ NM.html	unchanged	google-states-csv	https://cv.nmhealth.org/
 NM_data.html	duplicate	google-states-csv	duplicate of NM	
 NV.html	unchanged	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	
 NV_data.html	CHANGED	google-states-csv	http://dpbh.nv.gov/coronavirus/	
-NY.html	CHANGED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
+NY.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 NY_data.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
-OH.html	CHANGED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
+OH.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OH_data.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OK.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
 OK_data.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
@@ -156,13 +156,13 @@ AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/op
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
 AR_data.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -172,7 +172,7 @@ FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96d
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 HI_data.html	unchanged	google-states-csv	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
@@ -184,7 +184,7 @@ IN.html	CHANGED	google-states-csv	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states-csv	duplicate of IN	
 KS.html	unchanged	google-states-csv	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states-csv	duplicate of KS	
-KY.html	CHANGED	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	unchanged	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states-csv	duplicate of KY	
 LA.html	unchanged	google-states-csv	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states-csv	duplicate of LA	
@@ -196,15 +196,15 @@ ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-di
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/	
-MN.html	CHANGED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	CHANGED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
 MO_data.html	duplicate	google-states-csv	duplicate of MO	
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -218,9 +218,9 @@ NM.html	unchanged	google-states-csv	https://cv.nmhealth.org/
 NM_data.html	duplicate	google-states-csv	duplicate of NM	
 NV.html	unchanged	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	
 NV_data.html	CHANGED	google-states-csv	http://dpbh.nv.gov/coronavirus/	
-NY.html	CHANGED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
+NY.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 NY_data.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
-OH.html	CHANGED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
+OH.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OH_data.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OK.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
 OK_data.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
@@ -292,13 +292,13 @@ AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/op
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
 AR_data.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -308,7 +308,7 @@ FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96d
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 HI_data.html	unchanged	google-states-csv	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
@@ -320,7 +320,7 @@ IN.html	CHANGED	google-states-csv	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states-csv	duplicate of IN	
 KS.html	unchanged	google-states-csv	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states-csv	duplicate of KS	
-KY.html	CHANGED	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	unchanged	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states-csv	duplicate of KY	
 LA.html	unchanged	google-states-csv	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states-csv	duplicate of LA	
@@ -332,15 +332,15 @@ ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-di
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/	
-MN.html	CHANGED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	CHANGED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
 MO_data.html	duplicate	google-states-csv	duplicate of MO	
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -354,9 +354,9 @@ NM.html	unchanged	google-states-csv	https://cv.nmhealth.org/
 NM_data.html	duplicate	google-states-csv	duplicate of NM	
 NV.html	unchanged	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	
 NV_data.html	CHANGED	google-states-csv	http://dpbh.nv.gov/coronavirus/	
-NY.html	CHANGED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
+NY.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 NY_data.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
-OH.html	CHANGED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
+OH.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OH_data.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OK.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
 OK_data.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
@@ -428,13 +428,13 @@ AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/op
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
 AR_data.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -444,7 +444,7 @@ FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96d
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 HI_data.html	unchanged	google-states-csv	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
@@ -456,7 +456,7 @@ IN.html	CHANGED	google-states-csv	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states-csv	duplicate of IN	
 KS.html	unchanged	google-states-csv	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states-csv	duplicate of KS	
-KY.html	CHANGED	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	unchanged	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states-csv	duplicate of KY	
 LA.html	unchanged	google-states-csv	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states-csv	duplicate of LA	
@@ -468,15 +468,15 @@ ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-di
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/	
-MN.html	CHANGED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	CHANGED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
 MO_data.html	duplicate	google-states-csv	duplicate of MO	
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -490,9 +490,9 @@ NM.html	unchanged	google-states-csv	https://cv.nmhealth.org/
 NM_data.html	duplicate	google-states-csv	duplicate of NM	
 NV.html	unchanged	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	
 NV_data.html	CHANGED	google-states-csv	http://dpbh.nv.gov/coronavirus/	
-NY.html	CHANGED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
+NY.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 NY_data.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
-OH.html	CHANGED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
+OH.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OH_data.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OK.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
 OK_data.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
@@ -564,13 +564,13 @@ AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/op
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
 AR_data.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
-AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -580,7 +580,7 @@ FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96d
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
-HI.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 HI_data.html	unchanged	google-states-csv	https://health.hawaii.gov/news/covid-19-updates/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
@@ -592,7 +592,7 @@ IN.html	CHANGED	google-states-csv	https://www.in.gov/isdh/28470.htm
 IN_data.html	duplicate	google-states-csv	duplicate of IN	
 KS.html	unchanged	google-states-csv	http://www.kdheks.gov/coronavirus/	
 KS_data.html	duplicate	google-states-csv	duplicate of KS	
-KY.html	CHANGED	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
+KY.html	unchanged	google-states-csv	https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx	
 KY_data.html	duplicate	google-states-csv	duplicate of KY	
 LA.html	unchanged	google-states-csv	http://ldh.la.gov/Coronavirus/	
 LA_data.html	duplicate	google-states-csv	duplicate of LA	
@@ -604,15 +604,15 @@ ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-di
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/	
-MN.html	CHANGED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
+MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
-MO.html	CHANGED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
+MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/	
 MO_data.html	duplicate	google-states-csv	duplicate of MO	
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -626,9 +626,9 @@ NM.html	unchanged	google-states-csv	https://cv.nmhealth.org/
 NM_data.html	duplicate	google-states-csv	duplicate of NM	
 NV.html	unchanged	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	
 NV_data.html	CHANGED	google-states-csv	http://dpbh.nv.gov/coronavirus/	
-NY.html	CHANGED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
+NY.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
 NY_data.html	unchanged	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	
-OH.html	CHANGED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
+OH.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OH_data.html	unchanged	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	
 OK.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
 OK_data.html	unchanged	google-states-csv	https://coronavirus.health.ok.gov/	
