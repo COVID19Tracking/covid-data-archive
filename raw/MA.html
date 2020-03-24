@@ -3,11 +3,12 @@
   <head>
     <!--DEPLOYMENT IDENTIFIER: e4e4ae7e7de76d2254e28a2b1ef1da6921b3c459-->
     <meta charset="utf-8">
+    <script type="text/javascript" src="https://bam.nr-data.net/1/23b062ec87?a=46704875&amp;v=1167.2a4546b&amp;to=bgcGbUZVXkMCUEZcXldNJ0xHQF9dTFZcQVhNG0pXW1BVHgBSXFpfUAEFVQ5dXlYMbFZQRVgLCEo%3D&amp;rst=1063&amp;ref=https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring&amp;ap=1493&amp;be=411&amp;fe=980&amp;dc=676&amp;perf=%7B%22timing%22:%7B%22of%22:1585017446149,%22n%22:0,%22f%22:1,%22dn%22:55,%22dne%22:185,%22c%22:185,%22s%22:225,%22ce%22:279,%22rq%22:280,%22rp%22:355,%22rpe%22:355,%22dl%22:357,%22di%22:641,%22ds%22:672,%22de%22:689,%22dc%22:980,%22l%22:980,%22le%22:982%7D,%22navigation%22:%7B%7D%7D&amp;at=QkARGw5PTRxBUhAPSkQf&amp;jsonp=NREUM.setToken"></script>
     <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl8MasJD/www-widgetapi.js" async=""></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-TBBFWGN&amp;cid=897138666.1585014058"></script>
     <script src="//www.youtube.com/iframe_api"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-TBBFWGN&amp;cid=897138666.1585014058"></script>
     <script src="//www.googletagmanager.com/gtm.js?id=GTM-MPHNMQ" type="text/javascript" async=""></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"23b062ec87",applicationID:"46704875"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
@@ -105,8 +106,8 @@
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async=""></script>
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
     <script src="//gateway.foresee.com/sites/mass-gov/production/gateway.min.js" type="text/javascript" async="true" data-vendor="fs" data-role="gateway"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//gateway.foresee.com/code/19.8.1/fs.utils.js" data-vendor="fs" src="//gateway.foresee.com/code/19.8.1/fs.utils.js"></script>
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//gateway.foresee.com/code/19.8.1/fs.trigger.js" data-vendor="fs" src="//gateway.foresee.com/code/19.8.1/fs.trigger.js"></script>
   </head>
@@ -165,59 +166,7 @@
       <![endif]
   -->
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
-      <div class="ma__ajax-pattern js-ajax-site-alerts-jsonapi" data-ma-ajax-endpoint="/jsonapi/node/alert?page[limit]=250&amp;sort=-changed&amp;include=field_target_pages_para_ref,field_alert&amp;filter[status][value]=1&amp;fields[node--alert]=title,changed,entity_url,field_alert_severity,field_alert,field_target_pages_para_ref,field_alert_display&amp;fields[paragraph--emergency_alert]=id,changed,field_emergency_alert_timestamp,field_emergency_alert_message,field_emergency_alert_link,field_emergency_alert_content&amp;fields[paragraph--target_pages]=field_target_content_ref" data-ma-ajax-render-pattern="@organisms/by-template/emergency-alerts.twig">
-        <section class="ma__emergency-alerts js-accordion js-emergency-alerts is-open" data-id="dcc69aa9-e3c9-4440-b647-800fba55e0e2__1585001871">
-          <div class="ma__emergency-alerts__header">
-            <div class="ma__emergency-alerts__container">
-              <h2 class="ma__emergency-header">
-                <span class="ma__emergency-header__label">
-                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 48 44">
-                    <path d="M257.158 3852.23C256.846 3852.55 256.846 3853.05 257.158 3853.37C258.60400000000004 3854.81 259.40000000000003 3856.74 259.40000000000003 3858.79C259.40000000000003 3860.84 258.60400000000004 3862.7599999999998 257.158 3864.21C256.846 3864.52 256.846 3865.03 257.158 3865.34C257.315 3865.5 257.519 3865.57 257.724 3865.57C257.929 3865.57 258.134 3865.5 258.28999999999996 3865.34C260.03799999999995 3863.59 260.99999999999994 3861.26 260.99999999999994 3858.79C260.99999999999994 3856.31 260.03799999999995 3853.98 258.28999999999996 3852.23C257.97799999999995 3851.92 257.47099999999995 3851.92 257.15799999999996 3852.23ZM215.71 3852.23C213.96200000000002 3853.98 213 3856.31 213 3858.79C213 3861.2599999999998 213.962 3863.59 215.71 3865.34C215.866 3865.5 216.071 3865.57 216.276 3865.57C216.48100000000002 3865.57 216.685 3865.5 216.842 3865.34C217.15400000000002 3865.03 217.15400000000002 3864.52 216.842 3864.21C215.39600000000002 3862.76 214.60000000000002 3860.84 214.60000000000002 3858.79C214.60000000000002 3856.74 215.39600000000002 3854.81 216.842 3853.37C217.15400000000002 3853.0499999999997 217.15400000000002 3852.5499999999997 216.842 3852.23C216.52900000000002 3851.92 216.02200000000002 3851.92 215.71 3852.23ZM253.79 3853.83C253.47799999999998 3854.15 253.47799999999998 3854.65 253.79 3854.97C255.83599999999998 3857.0099999999998 255.83599999999998 3860.3399999999997 253.79 3862.39C253.47799999999998 3862.7 253.47799999999998 3863.21 253.79 3863.52C253.946 3863.67 254.15099999999998 3863.75 254.356 3863.75C254.561 3863.75 254.766 3863.67 254.922 3863.52C257.591 3860.85 257.591 3856.5 254.922 3853.83C254.609 3853.52 254.102 3853.52 253.79 3853.83C253.47799999999998 3854.15 253.79 3853.83 253.79 3853.83ZM219.644 3863.75C219.84900000000002 3863.75 220.054 3863.67 220.21 3863.52C220.52200000000002 3863.21 220.52200000000002 3862.7 220.21 3862.39C218.16400000000002 3860.3399999999997 218.16400000000002 3857.0099999999998 220.21 3854.97C220.52200000000002 3854.6499999999996 220.52200000000002 3854.1499999999996 220.21 3853.83C219.898 3853.52 219.39100000000002 3853.52 219.078 3853.83C216.409 3856.5 216.409 3860.85 219.078 3863.52C219.234 3863.67 219.439 3863.75 219.644 3863.75C219.84900000000002 3863.75 219.644 3863.75 219.644 3863.75ZM258.29 3852.23C258.29 3852.23 256.54200000000003 3850.4900000000002 258.29 3852.23ZM250.62 3852C250.654 3846.52 246.965 3842.88 243.79500000000002 3841.43C242.90200000000002 3841.02 241.96 3840.72 241.00000000000003 3840.49L241.00000000000003 3840C241.00000000000003 3837.79 239.20600000000002 3836 237.00000000000003 3836C234.79400000000004 3836 233.00000000000003 3837.79 233.00000000000003 3840L233.00000000000003 3840.56C232.13700000000003 3840.79 231.28900000000002 3841.07 230.48300000000003 3841.44C226.98100000000002 3843.05 223.43200000000004 3846.9500000000003 223.40000000000003 3852L223.40000000000003 3859.2C223.40000000000003 3864.31 221.59500000000003 3868.7 218.03600000000003 3872.23C217.82400000000004 3872.44 217.74700000000004 3872.76 217.83800000000002 3873.04C217.92700000000002 3873.33 218.17000000000002 3873.54 218.46400000000003 3873.59L226.05700000000002 3874.9C227.49 3875.15 228.78900000000002 3875.34 230.01200000000003 3875.51C231.40800000000002 3878.2400000000002 234.15000000000003 3880 237.14600000000002 3880C240.14300000000003 3880 242.88600000000002 3878.24 244.282 3875.5C245.49900000000002 3875.34 246.792 3875.15 248.217 3874.9L255.80900000000003 3873.59C256.10400000000004 3873.54 256.346 3873.33 256.43600000000004 3873.04C256.526 3872.7599999999998 256.45000000000005 3872.44 256.23800000000006 3872.23C252.51000000000005 3868.53 250.62000000000006 3864.14 250.62000000000006 3859.2ZM228.195 3852.8C227.753 3852.8 227.398 3852.44 227.4 3852C227.424 3848.25 230.40200000000002 3845.88 232.15800000000002 3845.07C235.23800000000003 3843.65 239.03400000000002 3843.65 242.13400000000001 3845.07C242.53500000000003 3845.25 242.71200000000002 3845.73 242.52800000000002 3846.13C242.34400000000002 3846.53 241.87000000000003 3846.71 241.46800000000002 3846.52C238.78600000000003 3845.3 235.49300000000002 3845.3 232.82800000000003 3846.52C231.41500000000002 3847.18 229.01900000000003 3849.06 229.00000000000003 3852C228.99800000000002 3852.45 228.63900000000004 3852.8 228.20000000000002 3852.8ZM237.146 3878.4C235.119 3878.4 233.225 3877.39 232.009 3875.7400000000002L232.01 3875.7400000000002C232.32399999999998 3875.78 232.628 3875.8 232.932 3875.8300000000004C233.082 3875.8400000000006 233.23499999999999 3875.8600000000006 233.38299999999998 3875.8700000000003C233.493 3875.8800000000006 233.59799999999998 3875.8800000000006 233.706 3875.8900000000003C236.03099999999998 3876.0600000000004 238.173 3876.0600000000004 240.49499999999998 3875.9000000000005C240.63099999999997 3875.8900000000003 240.765 3875.8800000000006 240.902 3875.8700000000003C241.07399999999998 3875.8500000000004 241.25099999999998 3875.84 241.42499999999998 3875.82C241.69899999999998 3875.8 241.97199999999998 3875.77 242.254 3875.7400000000002L242.284 3875.7400000000002C241.07 3877.3900000000003 239.17399999999998 3878.4 237.146 3878.4ZM237 3837.6C238.323 3837.6 239.4 3838.68 239.4 3840L239.4 3840.15C237.806 3839.9300000000003 236.181 3839.94 234.6 3840.19L234.6 3840C234.6 3838.68 235.677 3837.6 237 3837.6Z " fill-opacity="1" transform="matrix(1,0,0,1,-213,-3836)"></path>
-                  </svg>
-                  <span>Emergency Alerts</span>
-                </span>
-                <span class="ma__emergency-header__title">Coronavirus Update</span>
-              </h2>
-              <div class="ma__emergency-alerts__header-interface js-accordion-link" aria-expanded="true" aria-controls="accordion101">
-                <button class="ma__button-alert " type="button">
-                  <span class="ma__button-alert__hide">Hide</span>
-                  <span class="ma__button-alert__show">Show</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ma__emergency-alerts__content js-accordion-content" id="accordion101" style="display: block; overflow: hidden; height: 21.4358px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
-            <div class="ma__emergency-alerts__container">
-              <p class="ma__emergency-alert" tabindex="0">
-                <span class="ma__emergency-alert__message">Stay informed about coronavirus &#8211; COVID-19. Learn more.
-                  <span class="ma__emergency-alert__time-stamp">Mar. 23rd, 2020, 9:00 am</span>
-                </span>
-                <span class="ma__emergency-alert__link">
-                  <a class="ma__content-link ma__content-link--chevron" href="/resource/information-on-the-outbreak-of-coronavirus-disease-2019-covid-19">
-                    <span>Read more</span>
-                  </a>
-                </span>
-              </p>
-              <p class="ma__emergency-alert" tabindex="0">
-                <span class="ma__emergency-alert__message">COVID-19 Essential Services: Details on Governor's Order
-                  <span class="ma__emergency-alert__time-stamp">Mar. 23rd, 2020, 10:00 am</span>
-                </span>
-                <span class="ma__emergency-alert__link">
-                  <a class="ma__content-link ma__content-link--chevron" href="/info-details/covid-19-essential-services">
-                    <span>Read more</span>
-                  </a>
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="ma__emergency-alerts__interface js-accordion-link" aria-expanded="true" aria-controls="accordion101">
-            <button class="ma__button-alert " type="button">
-              <span class="ma__button-alert__hide">Hide</span>
-              <span class="ma__button-alert__show">Show</span>
-            </button>
-          </div>
-        </section>
-      </div>
+      <div class="ma__ajax-pattern js-ajax-site-alerts-jsonapi" data-ma-ajax-endpoint="/jsonapi/node/alert?page[limit]=250&amp;sort=-changed&amp;include=field_target_pages_para_ref,field_alert&amp;filter[status][value]=1&amp;fields[node--alert]=title,changed,entity_url,field_alert_severity,field_alert,field_target_pages_para_ref,field_alert_display&amp;fields[paragraph--emergency_alert]=id,changed,field_emergency_alert_timestamp,field_emergency_alert_message,field_emergency_alert_link,field_emergency_alert_content&amp;fields[paragraph--target_pages]=field_target_content_ref" data-ma-ajax-render-pattern="@organisms/by-template/emergency-alerts.twig"></div>
       <header id="header" class="ma__header" role="banner">
         <a href="#main-content" class="ma__header__skip-nav visually-hidden focusable">Skip to main content</a>
         <div class="ma__header__container">
@@ -733,7 +682,7 @@
                   <span class="show" aria-label="click to show table of contents">+</span>
                 </button>
               </div>
-              <div class="ma__toc--overlay__container js-inline-overlay" id="overlay-76595">
+              <div class="ma__toc--overlay__container js-inline-overlay" id="overlay-55370">
                 <div class="ma__toc__toc__title js-inline-overlay-title" tab-index="-1">
                   <span class="ma__toc__subtitle">This is a part of:</span>
                   <span class="ma__decorative-link">
@@ -986,11 +935,11 @@
                       </table>
                       <div class="sticky-thead" style="position: fixed; left: 54.5px; top: 70px; opacity: 0; height: 55px; width: 820px;">
                         <div class="sticky-thead-wrapper">
-                          <table style="width: 820px; margin: 0px;" class="sticky-enabled">
+                          <table style="width: 820px;">
                             <thead>
                               <tr>
-                                <th style="width: 762.367px;">COVID-19 cases in Massachusetts&#160;as of March 23, 2020</th>
-                                <th style="width: 57.6333px;"></th>
+                                <th style="width: 763.333px;">COVID-19 cases in Massachusetts&#160;as of March 23, 2020</th>
+                                <th style="width: 56.6667px;"></th>
                               </tr>
                             </thead>
                           </table>
@@ -1054,11 +1003,11 @@
                       </table>
                       <div class="sticky-thead" style="position: fixed; left: 54.5px; top: 70px; opacity: 0; height: 89px; width: 820px;">
                         <div class="sticky-thead-wrapper">
-                          <table style="width: 820px; margin: 0px;" class="sticky-enabled">
+                          <table style="width: 820px;">
                             <thead>
                               <tr>
-                                <th style="width: 758.167px;">Massachusetts residents subject to COVID-19 quarantine by current status as of March 17, 2020*</th>
-                                <th style="width: 61.8333px;"></th>
+                                <th style="width: 755.533px;">Massachusetts residents subject to COVID-19 quarantine by current status as of March 17, 2020*</th>
+                                <th style="width: 64.4667px;"></th>
                               </tr>
                             </thead>
                           </table>
@@ -1216,7 +1165,7 @@
                   <input type="hidden" id="field47056299" name="field47056299" value="https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring" class="fsField">
                   <input type="hidden" id="field58154059" name="field58154059" value="512446" class="fsField">
                   <input type="hidden" id="field57432673" name="field57432673" value="512446" class="fsField">
-                  <input type="hidden" id="field68798989" name="field68798989" value="1585015645777" class="fsField">
+                  <input type="hidden" id="field68798989" name="field68798989" value="1585017447703" class="fsField">
                   <input type="hidden" id="form2521317" name="form" value="2521317" class="">
                   <input type="hidden" id="viewkeyvx39GBYJhi" name="viewkey" value="vx39GBYJhi" class="">
                   <input type="hidden" id="hidden_fields2521317" name="hidden_fields" value="" class="">
@@ -1393,7 +1342,7 @@
                   <fieldset class="ma_feedback-fieldset">
                     <input id="" class="submitButton ma__button ma__button--small" type="submit" value="Submit">
                   </fieldset>
-                  <input type="hidden" id="field68557708" name="field68557708" value="1585015645777" class="fsField">
+                  <input type="hidden" id="field68557708" name="field68557708" value="1585017447703" class="fsField">
                   <input type="hidden" id="form3184363" name="form" value="3184363" class="">
                   <input type="hidden" id="viewkeymLaeYhDMyl" name="viewkey" value="mLaeYhDMyl" class="">
                   <input type="hidden" id="hidden_fields3184363" name="hidden_fields" value="" class="">
@@ -1536,6 +1485,16 @@
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"mayflower":{"namespaces":{"@base":"\/libraries\/mayflower-artifacts\/twig\/00-base\/","@atoms":"\/libraries\/mayflower-artifacts\/twig\/01-atoms\/","@molecules":"\/libraries\/mayflower-artifacts\/twig\/02-molecules\/","@organisms":"\/libraries\/mayflower-artifacts\/twig\/03-organisms\/","@templates":"\/libraries\/mayflower-artifacts\/twig\/04-templates\/","@pages":"\/libraries\/mayflower-artifacts\/twig\/05-pages\/","@meta":"\/libraries\/mayflower-artifacts\/twig\/07-meta\/"},"assets":"\/libraries\/mayflower-artifacts\/assets","utcOffsetString":"-04:00"},"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/512446","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"user":{"uid":0,"permissionsHash":"6acb81958910e27b6479a04e826610e213e60f99ed19bae8eee9f8da10cd8713"}}</script>
     <script src="/files/js/js_Y4avKw5Ioxqdzf0pC6hxv-gt9PCrjxJbHqeEbFw6SMQ.js"></script>
     <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"23b062ec87","applicationID":"46704875","transactionName":"bgcGbUZVXkMCUEZcXldNJ0xHQF9dTFZcQVhNG0pXW1BVHgBSXFpfUAEFVQ5dXlYMbFZQRVgLCEo=","queueTime":0,"applicationTime":1493,"atts":"QkARGw5PTRxBUhAPSkQf","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript" id="gtm-youtube-tracking">
+  (function(h,f,k){function m(){var b=[].slice.call(h.getElementsByTagName("iframe")).concat([].slice.call(h.getElementsByTagName("embed"))),a;for(a=0;a<b.length;a++){var d=n(b[a]);if(d){d=b[a];var e=f.location,c=h.createElement("a");c.href=d.src;c.hostname="www.youtube.com";c.protocol=e.protocol;var g="/"===c.pathname.charAt(0)?c.pathname:"/"+c.pathname;-1<c.search.indexOf("enablejsapi")||(c.search=(0<c.search.length?c.search+"\x26":"")+"enablejsapi\x3d1");if(!(-1<c.search.indexOf("origin"))&&-1===
+  e.hostname.indexOf("localhost")){var w=e.port?":"+e.port:"";e=e.protocol+"%2F%2F"+e.hostname+w;c.search=c.search+"\x26origin\x3d"+e}"application/x-shockwave-flash"===d.type&&(e=h.createElement("iframe"),e.height=d.height,e.width=d.width,g=g.replace("/v/","/embed/"),d.parentNode.parentNode.replaceChild(e,d.parentNode),d=e);c.pathname=g;d.src!==c.href+c.hash&&(d.src=c.href+c.hash);p(d)}}"addEventListener"in h&&h.addEventListener("load",x,!0)}function n(b){b=b.src||"";return-1<b.indexOf("youtube.com/embed/")||
+  -1<b.indexOf("youtube.com/v/")?!0:!1}function p(b){var a=YT.get(b.id);a||(a=new YT.Player(b,{}));"undefined"===typeof b.pauseFlag&&(b.pauseFlag=!1,a.addEventListener("onStateChange",function(a){y(a,b)}))}function z(b){var a={};g.events["Watch to End"]&&(a["Watch to End"]=Math.min(b-3,Math.floor(.99*b)));if(g.percentageTracking){var d=[],e;g.percentageTracking.each&&(d=d.concat(g.percentageTracking.each));if(g.percentageTracking.every){var c=parseInt(g.percentageTracking.every,10),f=100/c;for(e=1;e<
+  f;e++)d.push(e*c)}for(e=0;e<d.length;e++)f=d[e],c=f+"%",f=b*f/100,a[c]=Math.floor(f)}return a}function y(b,a){var d=b.data,e=b.target,c=e.getVideoUrl();c=c.match(/[?&]v=([^&#]*)/)[1];var f=e.getPlayerState(),g=Math.floor(e.getDuration()),h=z(g);g={1:"Play",2:"Pause"};g=g[d];a.playTracker=a.playTracker||{};1!==f||a.timer?(clearInterval(a.timer),a.timer=!1):(clearInterval(a.timer),a.timer=setInterval(function(){var b=e,d=h,c=a.videoId,g=b.getCurrentTime(),f;b[c]=b[c]||{};for(f in d)d[f]<=g&&!b[c][f]&&
+  (b[c][f]=!0,q(c,f))},1E3));1===d&&(a.playTracker[c]=!0,a.videoId=c,a.pauseFlag=!1);if(!a.playTracker[a.videoId])return!1;if(2===d){if(a.pauseFlag)return!1;a.pauseFlag=!0}r[g]&&q(a.videoId,g)}function q(b,a){var d="https://www.youtube.com/watch?v\x3d"+b,e=f.GoogleAnalyticsObject;if("undefined"===typeof f[t]||g.forceSyntax)if("function"===typeof f[e]&&"function"===typeof f[e].getAll&&2!==g.forceSyntax)f[e]("send","event","Videos",a,d);else"undefined"!==typeof f._gaq&&1!==A&&f._gaq.push(["_trackEvent",
+  "Videos",a,d]);else f[t].push({event:"youTubeTrack",attributes:{videoUrl:d,videoAction:a}})}function u(b,a,d){if(b.addEventListener)b.addEventListener(a,d);else if(b.attachEvent)b.attachEvent("on"+a,function(a){a.target=a.target||a.srcElement;d.call(b,a)});else if("undefined"===typeof b["on"+a]||null===b["on"+a])b["on"+a]=function(a){a.target=a.target||a.srcElement;d.call(b,a)}}function x(b){b=b.target||b.srcElement;var a=n(b);"IFRAME"===b.tagName&&a&&-1<b.src.indexOf("enablejsapi")&&-1<b.src.indexOf("origin")&&
+  p(b)}var g=k||{},A=g.forceSyntax||0,t=g.dataLayerName||"dataLayer",r={Play:!0,Pause:!0,"Watch to End":!0},l;k=h.createElement("script");k.src="//www.youtube.com/iframe_api";var v=h.getElementsByTagName("script")[0];v.parentNode.insertBefore(k,v);for(l in g.events)g.events.hasOwnProperty(l)&&(r[l]=g.events[l]);f.onYouTubeIframeAPIReady=function(){var b=f.onYouTubeIframeAPIReady;return function(){b&&b.apply(this,arguments);navigator.userAgent.match(/MSIE [67]\./gi)||("loading"!==h.readyState?m():h.addEventListener?
+  u(h,"DOMContentLoaded",m):u(f,"load",m))}}()})(document,window,{events:{Play:!0,Pause:!0,"Watch to End":!0},percentageTracking:{every:25,each:[10,90]}});
+  </script>
     <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
       <div style="padding: 8px;">
         <div>
@@ -1562,6 +1521,7 @@
       </div>
       <div class="status-message" style="display: none;"></div>
     </div>
+    <script type="text/javascript" id="">(function(b){var a=document,d=a.createElement("script");a=a.head||a.getElementsByTagName("head")[0];var e="fsReady",f={src:"//gateway.foresee.com/sites/mass-gov/production/gateway.min.js",type:"text/javascript",async:"true","data-vendor":"fs","data-role":"gateway"},c;for(c in f)d.setAttribute(c,f[c]);a.appendChild(d);b[e]=function(){var a="__"+e+"_stk__";b[a]=b[a]||[];b[a].push(arguments)}})(window);</script>
     <div class="goog-te-spinner-pos">
       <div class="goog-te-spinner-animation">
         <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewbox="0 0 66 66">
@@ -1570,16 +1530,5 @@
       </div>
     </div>
     <iframe class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 231px; height: 274px; display: none;" frameborder="0"></iframe>
-    <script type="text/javascript" id="gtm-youtube-tracking">
-  (function(h,f,k){function m(){var b=[].slice.call(h.getElementsByTagName("iframe")).concat([].slice.call(h.getElementsByTagName("embed"))),a;for(a=0;a<b.length;a++){var d=n(b[a]);if(d){d=b[a];var e=f.location,c=h.createElement("a");c.href=d.src;c.hostname="www.youtube.com";c.protocol=e.protocol;var g="/"===c.pathname.charAt(0)?c.pathname:"/"+c.pathname;-1<c.search.indexOf("enablejsapi")||(c.search=(0<c.search.length?c.search+"\x26":"")+"enablejsapi\x3d1");if(!(-1<c.search.indexOf("origin"))&&-1===
-  e.hostname.indexOf("localhost")){var w=e.port?":"+e.port:"";e=e.protocol+"%2F%2F"+e.hostname+w;c.search=c.search+"\x26origin\x3d"+e}"application/x-shockwave-flash"===d.type&&(e=h.createElement("iframe"),e.height=d.height,e.width=d.width,g=g.replace("/v/","/embed/"),d.parentNode.parentNode.replaceChild(e,d.parentNode),d=e);c.pathname=g;d.src!==c.href+c.hash&&(d.src=c.href+c.hash);p(d)}}"addEventListener"in h&&h.addEventListener("load",x,!0)}function n(b){b=b.src||"";return-1<b.indexOf("youtube.com/embed/")||
-  -1<b.indexOf("youtube.com/v/")?!0:!1}function p(b){var a=YT.get(b.id);a||(a=new YT.Player(b,{}));"undefined"===typeof b.pauseFlag&&(b.pauseFlag=!1,a.addEventListener("onStateChange",function(a){y(a,b)}))}function z(b){var a={};g.events["Watch to End"]&&(a["Watch to End"]=Math.min(b-3,Math.floor(.99*b)));if(g.percentageTracking){var d=[],e;g.percentageTracking.each&&(d=d.concat(g.percentageTracking.each));if(g.percentageTracking.every){var c=parseInt(g.percentageTracking.every,10),f=100/c;for(e=1;e<
-  f;e++)d.push(e*c)}for(e=0;e<d.length;e++)f=d[e],c=f+"%",f=b*f/100,a[c]=Math.floor(f)}return a}function y(b,a){var d=b.data,e=b.target,c=e.getVideoUrl();c=c.match(/[?&]v=([^&#]*)/)[1];var f=e.getPlayerState(),g=Math.floor(e.getDuration()),h=z(g);g={1:"Play",2:"Pause"};g=g[d];a.playTracker=a.playTracker||{};1!==f||a.timer?(clearInterval(a.timer),a.timer=!1):(clearInterval(a.timer),a.timer=setInterval(function(){var b=e,d=h,c=a.videoId,g=b.getCurrentTime(),f;b[c]=b[c]||{};for(f in d)d[f]<=g&&!b[c][f]&&
-  (b[c][f]=!0,q(c,f))},1E3));1===d&&(a.playTracker[c]=!0,a.videoId=c,a.pauseFlag=!1);if(!a.playTracker[a.videoId])return!1;if(2===d){if(a.pauseFlag)return!1;a.pauseFlag=!0}r[g]&&q(a.videoId,g)}function q(b,a){var d="https://www.youtube.com/watch?v\x3d"+b,e=f.GoogleAnalyticsObject;if("undefined"===typeof f[t]||g.forceSyntax)if("function"===typeof f[e]&&"function"===typeof f[e].getAll&&2!==g.forceSyntax)f[e]("send","event","Videos",a,d);else"undefined"!==typeof f._gaq&&1!==A&&f._gaq.push(["_trackEvent",
-  "Videos",a,d]);else f[t].push({event:"youTubeTrack",attributes:{videoUrl:d,videoAction:a}})}function u(b,a,d){if(b.addEventListener)b.addEventListener(a,d);else if(b.attachEvent)b.attachEvent("on"+a,function(a){a.target=a.target||a.srcElement;d.call(b,a)});else if("undefined"===typeof b["on"+a]||null===b["on"+a])b["on"+a]=function(a){a.target=a.target||a.srcElement;d.call(b,a)}}function x(b){b=b.target||b.srcElement;var a=n(b);"IFRAME"===b.tagName&&a&&-1<b.src.indexOf("enablejsapi")&&-1<b.src.indexOf("origin")&&
-  p(b)}var g=k||{},A=g.forceSyntax||0,t=g.dataLayerName||"dataLayer",r={Play:!0,Pause:!0,"Watch to End":!0},l;k=h.createElement("script");k.src="//www.youtube.com/iframe_api";var v=h.getElementsByTagName("script")[0];v.parentNode.insertBefore(k,v);for(l in g.events)g.events.hasOwnProperty(l)&&(r[l]=g.events[l]);f.onYouTubeIframeAPIReady=function(){var b=f.onYouTubeIframeAPIReady;return function(){b&&b.apply(this,arguments);navigator.userAgent.match(/MSIE [67]\./gi)||("loading"!==h.readyState?m():h.addEventListener?
-  u(h,"DOMContentLoaded",m):u(f,"load",m))}}()})(document,window,{events:{Play:!0,Pause:!0,"Watch to End":!0},percentageTracking:{every:25,each:[10,90]}});
-  </script>
-    <script type="text/javascript" id="">(function(b){var a=document,d=a.createElement("script");a=a.head||a.getElementsByTagName("head")[0];var e="fsReady",f={src:"//gateway.foresee.com/sites/mass-gov/production/gateway.min.js",type:"text/javascript",async:"true","data-vendor":"fs","data-role":"gateway"},c;for(c in f)d.setAttribute(c,f[c]);a.appendChild(d);b[e]=function(){var a="__"+e+"_stk__";b[a]=b[a]||[];b[a].push(arguments)}})(window);</script>
   </body>
 </html>
