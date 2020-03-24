@@ -5,6 +5,13 @@
     </head><body>
     <alert>
       <div>
+        <h5>AMBER ALERT</h5>
+        <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+        <button type="button">
+          <span>&#215;</span>
+        </button>
+      </div>
+      <div>
         <p>GLOBAL MESSAGE</p>
         <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
         <button type="button">
@@ -14,15 +21,6 @@
     </alert>
     <header>
       <div>
-        <div>
-          <h5>Information about novel coronavirus (COVID-19)</h5>
-          <p>Get the latest information about coronavirus and the Indiana Department of Health preparations here -
-            <a href="/coronavirus/">in.gov/coronavirus</a>
-          </p>
-          <button type="button">
-            <span>&#215;</span>
-          </button>
-        </div>
         <h1>Header</h1>
         <div>
           <div>
@@ -43,18 +41,6 @@
                       </span>
                       <span id="agency-name">Novel Coronavirus (COVID-19)</span>
                     </div></a>
-                </li>
-                <li>
-                  <a href="/coronavirus/2393.htm">Indiana Novel Coronavirus Map</a>
-                </li>
-                <li>
-                  <a href="/coronavirus/2400.htm">Public Resources</a>
-                </li>
-                <li>
-                  <a href="/coronavirus/2399.htm">Professional Resources</a>
-                </li>
-                <li>
-                  <a href="/coronavirus/2397.htm">Contact ISDH</a>
                 </li>
                 <li id="agency-search-btn" title="Search">
                   <div>
@@ -86,13 +72,71 @@
         </div>
       </div>
     </header>
+    <div id="submenu-modal-search">
+      <div>
+        <div>
+          <h3>
+            </h3>
+          <div>
+            <span>&#215;</span>
+          </div>
+        </div>
+        <div id="search-modal-content">
+          <div id="main-search-area">
+            <div id="agency-search-wrap" dir="ltr">
+              <form id="agency-fb-search" method="get">
+                </form>
+            </div>
+            <div id="frequent-search-wrap">
+              <a href="#">Frequent Search</a>
+              <a href="#">Another Search</a>
+              <a href="#">Different Search</a>
+              <a href="#">Random Search</a>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div id="submenu-modal-find">
+      <div>
+        <div>
+          <h3>
+            </h3>
+          <div>
+            <label for="slide-out-filter">Menu Filter</label>
+            </div>
+          <div>
+            <span>&#215;</span>
+          </div>
+        </div>
+        <div>
+          <div id="find-agency-nav">
+            <ul id="drilldown-list">
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="faqs-dropdown">
+      <div>
+        <h3>Top FAQs</h3>
+      </div>
+    </div>
+    <div id="gov-dropdown">
+      <div>
+        <img src="https://www.in.gov/core/img/top_nav-gov-pic.png" alt="Eric J. Holcomb">
+        <div>Governor</div>
+        <div>Eric J. Holcomb</div>
+        <a href="https://www.in.gov/gov/">Visit Homepage &#187;</a>
+      </div>
+    </div>
     <div id="overlay">
       <nav>
         <div id="main-nav">
           <ul>
             <div>
               <li>
-                <a href="/coronavirus/"></a>
+                <a href="/coronavirus/index.htm">Novel Coronavirus (COVID-19)</a>
               </li>
               <li>
                 <a href="/coronavirus/2393.htm">Indiana Novel Coronavirus Map</a>
@@ -116,23 +160,6 @@
           </ul>
         </div>
       </nav>
-      <div id="menu-spotlights-container">
-        <a href="/coronavirus/2393.htm">
-          <img src="/coronavirus/images/map-info-icon.svg" alt="Agency Spotlight Icon">
-          <h4>Indiana Novel Coronavirus Map</h4></a>
-        <a href="/coronavirus/2400.htm">
-          <img src="/coronavirus/images/resources-icon.svg" alt="Agency Spotlight Icon">
-          <h4>Public Resources</h4></a>
-        <a href="/coronavirus/2399.htm">
-          <img src="/coronavirus/images/professional-resources-icon.svg" alt="Agency Spotlight Icon">
-          <h4>Professional Resources</h4></a>
-        <a href="/coronavirus/2397.htm">
-          <img src="/coronavirus/images/contact-icon.svg" alt="Agency Spotlight Icon">
-          <h4>Contact ISDH COVID-19 Resources</h4></a>
-        <a href="/coronavirus/2396.htm">
-          <img src="/coronavirus/images/faqs-icon.svg" alt="Agency Spotlight Icon">
-          <h4>Novel Coronavirus FAQs</h4></a>
-      </div>
       </div>
     <div id="main">
       <article>
@@ -178,8 +205,8 @@
               <p>Click on the topic to view the list of updates.</p>
               <ul>
                 <li>
-                  <a href="#" id="q8xbh6-accordion-label">Recent Public Updates</a>
-                  <div id="q8xbh6-accordion">
+                  <a href="#">Recent Public Updates</a>
+                  <div>
                     <ul>
                       <li>
                         <a href="/coronavirus/2496.htm">Essential Businesses and Operations</a>
@@ -207,8 +234,8 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#" id="noz394-accordion-label">Recent Professional Updates</a>
-                  <div id="noz394-accordion">
+                  <a href="#">Recent Professional Updates</a>
+                  <div>
                     <ul>
                       <li>
                         <a href="/coronavirus/files/IN_COVID-19%20LTC%20checklist%203.23.20.pdf">Long-term Care Checklist</a>
@@ -370,19 +397,6 @@
       <a href="/coronavirus/2399.htm">Professional Resources</a>
       <a href="/coronavirus/2400.htm">Public Resources</a>
       <a href="/coronavirus/2393.htm">Indiana Novel Coronavirus Map</a>
-    </div>
-    <div id="faqs-dropdown">
-      <div>
-        <h3>Top FAQs</h3>
-      </div>
-    </div>
-    <div id="gov-dropdown">
-      <div>
-        <img src="https://www.in.gov/core/img/top_nav-gov-pic.png" alt="Eric J. Holcomb">
-        <div>Governor</div>
-        <div>Eric J. Holcomb</div>
-        <a href="https://www.in.gov/gov/">Visit Homepage &#187;</a>
-      </div>
     </div>
     <footer id="agency-footer">
       <div id="desktop-container">
@@ -630,832 +644,5 @@
           </svg>
       </div>
     </div>
-    <div id="submenu-modal-search">
-      <div>
-        <div>
-          <h3>
-            </h3>
-          <div>
-            <span>&#215;</span>
-          </div>
-        </div>
-        <div id="search-modal-content">
-          <div id="main-search-area">
-            <div id="agency-search-wrap" dir="ltr">
-              <form id="agency-fb-search" method="get">
-                <span>
-                  <pre></pre>
-                  </span>
-                </form>
-            </div>
-            <div id="frequent-search-wrap">
-              <a href="#">Frequent Search</a>
-              <a href="#">Another Search</a>
-              <a href="#">Different Search</a>
-              <a href="#">Random Search</a>
-            </div>
-          </div>
-          <div id="search-spotlights-container">
-            <a href="/coronavirus/2393.htm">
-              <img src="/coronavirus/images/map-info-icon.svg" alt="Agency Spotlight Icon">
-              <h4>Indiana Novel Coronavirus Map</h4></a>
-            <a href="/coronavirus/2400.htm">
-              <img src="/coronavirus/images/resources-icon.svg" alt="Agency Spotlight Icon">
-              <h4>Public Resources</h4></a>
-            <a href="/coronavirus/2399.htm">
-              <img src="/coronavirus/images/professional-resources-icon.svg" alt="Agency Spotlight Icon">
-              <h4>Professional Resources</h4></a>
-            <a href="/coronavirus/2397.htm">
-              <img src="/coronavirus/images/contact-icon.svg" alt="Agency Spotlight Icon">
-              <h4>Contact ISDH COVID-19 Resources</h4></a>
-            <a href="/coronavirus/2396.htm">
-              <img src="/coronavirus/images/faqs-icon.svg" alt="Agency Spotlight Icon">
-              <h4>Novel Coronavirus FAQs</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="submenu-modal-find">
-      <div>
-        <div>
-          <h3>
-            </h3>
-          <div>
-            <label for="slide-out-filter">Menu Filter</label>
-            </div>
-          <div>
-            <span>&#215;</span>
-          </div>
-        </div>
-        <div>
-          <div id="find-agency-nav">
-            <ul id="drilldown-list">
-              <div>
-                <li id="navBus">
-                  <a href="#">Business &amp; Agriculture</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Business</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/idoa/" title="IDOA">Administration, Department of
-                                <span>(IDOA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/atc/2331.htm" title="Alcohol Rules &amp; Laws">Alcohol Rules &amp; Laws</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/core/business_guide.html" title="Business Owner's Guide to State Government">Business Owner's Guide to State Government</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iedc" title="IEDC">Economic Development Corporation, Indiana
-                                <span>(IEDC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://film.in.gov/" title="Film Indiana">Film Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dfi/" title="DFI">Financial Institutions, Department of
-                                <span>(DFI)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/hrc/" title="HRC">Horse Racing Commission
-                                <span>(HRC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://iedc.in.gov/programs-initiatives/skills-enhancement-fund" title="IEDC Skills Enhancement Training">IEDC Skills Enhancement Training</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dol/" title="DOL">Labor, Department of
-                                <span>(DOL)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ilrc/" title="ILRC">Lobby Registration Commission, Indiana
-                                <span>(ILRC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/sos/business/2428.htm" title="Secretary of State's Guide to Starting a Business">Secretary of State's Guide to Starting a Business</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/rda/" title="RDA">Northwest Indiana Regional Development Authority
-                                <span>(RDA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/spd/" title="SPD">Personnel, State Department of
-                                <span>(SPD)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/indiana-ptac/" title="Indiana-PTAC">Procurement Technical Assistance Center
-                                <span>(Indiana-PTAC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/pla/" title="PLA">Professional Licensing Agency
-                                <span>(PLA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/sos/" title="SOS">Secretary of State
-                                <span>(SOS)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.isbdc.org/" title="ISBDC">Small Business Development Center, Indiana
-                                <span>(ISBDC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/wcb/" title="WCB">Worker's Compensation Board of Indiana
-                                <span>(WCB)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Agriculture</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/isda/" title="ISDA">Agriculture, Indiana State Department of
-                                <span>(ISDA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/boah/" title="BOAH">Animal Health, Board of
-                                <span>(BOAH)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idem/algae/" title="Blue-Green Algae">Blue-Green Algae
-                                <span>(Blue-Green Algae)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.oisc.purdue.edu/index.html" title="Chemist &amp; Seed Commissioner, Office of">Chemist &amp; Seed Commissioner, Office of</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ocra/" title="OCRA">Community &amp; Rural Affairs, Indiana Office of
-                                <span>(OCRA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/oed/" title="OED">Energy Development, Office of
-                                <span>(OED)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/oea/" title="OEA">Environmental Adjudication, Office of
-                                <span>(OEA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idem/" title="IDEM">Environmental Management, Department of
-                                <span>(IDEM)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isda/2351.htm" title="Grain Buyers &amp; Warehouse Licensing Agency, Indiana">Grain Buyers &amp; Warehouse Licensing Agency, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/nrc/" title="NRC">Natural Resources Commission
-                                <span>(NRC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/wrhcc/" title="WRHCC">Wabash River Heritage Corridor Commission
-                                <span>(WRHCC)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navRes">
-                  <a href="#">Residents</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Residential Services</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="https://indianavoters.in.gov/" title="Register to Vote">Register to Vote</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/bmv/" title="BMV">Bureau of Motor Vehicles
-                                <span>(BMV)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dva/" title="DVA">Veteran Affairs, Department of
-                                <span>(DVA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/itp/" title="ITP">Transparency Portal, Indiana
-                                <span>(ITP)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/indot/" title="INDOT">Transportation, Department of
-                                <span>(INDOT)</span></a>
-                            </li>
-                            <li>
-                              <a href="https://www.hoosierlottery.com/games/hoosier-lotto" title="Hoosier Lottery">Hoosier Lottery</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ombudsman/" title="Ombudsman">Ombudsman</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Law Enforcement &amp; Government</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/ilea/index.htm" title="ILEA">Law Enforcement Academy, Indiana
-                                <span>(ILEA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/atc/isep/" title="ISEP">State Excise Police, Indiana
-                                <span>(ISEP)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isp/" title="ISP">State Police
-                                <span>(ISP)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/cji/" title="CJI">Criminal Justice Institute
-                                <span>(CJI)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dhs/" title="DHS">Homeland Security, Department of
-                                <span>(DHS)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idoc/" title="IDOC">Corrections, Indiana Department of
-                                <span>(IDOC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dnr/lawenfor/" title="Conservation Officers, Natural Resources">Conservation Officers, Natural Resources</a>
-                            </li>
-                            <li>
-                              <a href="http://state.nationalguard.com/indiana" title="National Guard, Indiana">National Guard, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="https://www.in.gov/ago/" title="AGO">Adjutant General's Office
-                                <span>(AGO)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Jobs &amp; Marketplace</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="https://www.indianacareerconnect.com/vosnet/Default.aspx" title="Indiana Career Connect">Indiana Career Connect</a>
-                            </li>
-                            <li>
-                              <a href="http://workforindiana.in.gov/" title="State Jobs">State Jobs</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/attorneygeneral/2336.htm" title="Indiana Consumer">Indiana Consumer</a>
-                            </li>
-                            <li>
-                              <a href="https://indianaunclaimed.gov/" title="Unclaimed Property">Unclaimed Property</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/attorneygeneral/2409.htm" title="ID Theft Victim Assistance">ID Theft Victim Assistance</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dwd/" title="DWD">Workforce Development, Department of
-                                <span>(DWD)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navGov">
-                  <a href="#">Government</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Board &amp; Commissions</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/sboa/" title="SBOA">Accounts, State Board of
-                                <span>(SBOA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/icrc/" title="ICRC">Civil Rights Commission, Indiana
-                                <span>(ICRC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ig/2335.htm" title="Ethics Commission, Indiana State">Ethics Commission, Indiana State</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/atc/" title="ATC">Alcohol &amp; Tobacco Commission
-                                <span>(ATC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ipsc/" title="IPSC">Integrated Public Safety Commission
-                                <span>(IPSC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/inaiac/" title="INAIAC">Native American Indian Affairs Commission, Indiana
-                                <span>(INAIAC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/seac/" title="SEAC">Employees' Appeals Commission, State
-                                <span>(SEAC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/oucc/" title="OUCC">Utility Consumer Counselor, Office of
-                                <span>(OUCC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ichla/" title="ICHLA">Hispanic/Latino Affairs, Commission on
-                                <span>(ICHLA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/children/" title="Children">Improving the Status of Children in Indiana, Commission on
-                                <span>(Children)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/icssbm/" title="ICSSBM">Social Status of Black Males, Indiana Commission on
-                                <span>(ICSSBM)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/icw/" title="ICW">Women, Indiana Commission for
-                                <span>(ICW)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iurc/" title="IURC">Utility Regulatory Commission
-                                <span>(IURC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ctb/" title="CTB">Coroner's Training Board
-                                <span>(CTB)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ilea/2382.htm" title="Law Enforcement Training Board, Indiana">Law Enforcement Training Board, Indiana</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Courts &amp; Legal</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/cofc/" title="Appellate Clerk">Appellate Clerk</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/appeals/" title="Court of Appeals">Court of Appeals</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/" title="Judicial Branch">Judicial Branch</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ipac/" title="Prosecuting Attorneys Council">Prosecuting Attorneys Council</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/supreme/" title="Supreme Court">Supreme Court</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/tax" title="Tax Court">Tax Court</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/judiciary/2808.htm" title="Trial Courts &amp; Clerks">Trial Courts &amp; Clerks</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="http://iga.in.gov/" title="General Assembly">General Assembly</a>
-                      </li>
-                      <li>
-                        <a href="#">Officials</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/attorneygeneral/" title="ATG">Attorney General
-                                <span>(ATG)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/gov/firstlady/" title="First Lady">First Lady</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/gov/" title="GOV">Governor
-                                <span>(GOV)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ig/" title="IG">Inspector General
-                                <span>(IG)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/lg/index.htm" title="LG">Lieutenant Governor
-                                <span>(LG)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/pac/" title="PAC">Public Access Counselor
-                                <span>(PAC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/tos/" title="TOS">Treasurer of State
-                                <span>(TOS)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Resources &amp; Records</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/sos/elections/" title="Election Division">Election Division</a>
-                            </li>
-                            <li>
-                              <a href="http://iga.in.gov/legislative/laws/const/articles/001/" title="Laws &amp; Administrative Code">Laws &amp; Administrative Code</a>
-                            </li>
-                            <li>
-                              <a href="http://iga.in.gov/" title="IGA">Legislative Services Agency
-                                <span>(IGA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iara/" title="IARA">Archives and Records Administration, Indiana
-                                <span>(IARA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/cutredtape/index.htm" title="IRM">Regulatory Moratorium
-                                <span>(IRM)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/core/help.html" title="State Information Center">State Information Center</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Support</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/sab/" title="SAB">Armory Board, State
-                                <span>(SAB)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idacs/" title="IDACS">Data &amp; Communication System
-                                <span>(IDACS)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idoc/penproducts/" title="PEN Products">PEN Products</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iot/" title="IOT">Technology, Office of
-                                <span>(IOT)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isdt/" title="ISDT">Toxicology, Indiana State Department of
-                                <span>(ISDT)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navEdu">
-                  <a href="#">Education</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Higher Education</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/che/4502.htm" title="Colleges &amp; Universities Eligible to Receive State Financial Aid">Colleges &amp; Universities Eligible to Receive State Financial Aid</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/tos/iesa/" title="IESA">Education Savings Authority
-                                <span>(IESA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/che/4497.htm" title="Financial Aid Information">Financial Aid Information</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/che/" title="CHE">Higher Education, Commission for
-                                <span>(CHE)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://ilight.net/" title="I-Light">I-Light</a>
-                            </li>
-                            <li>
-                              <a href="https://scholars.in.gov/" title="Indiana's 21st Century Scholars">Indiana's 21st Century Scholars
-                                <span>(Indiana's 21st Century Scholars)</span></a>
-                            </li>
-                            <li>
-                              <a href="https://learnmoreindiana.org/" title="Learn More Indiana">Learn More Indiana
-                                <span>(Learn More Indiana)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/bpe/" title="BPE">Proprietary Education, Board of
-                                <span>(BPE)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">K-12</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.doe.in.gov/cte/alternative-education" title="Alternative Learning Programs">Alternative Learning Programs</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/icsb/" title="ICSB">Charter School Board, Indiana
-                                <span>(ICSB)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.doe.in.gov/" title="IDOE">Education, Department of
-                                <span>(IDOE)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/sboe/" title="SBOE">Education, State Board of
-                                <span>(SBOE)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ieerb/" title="IEERB">Education Employment Relations Board
-                                <span>(IEERB)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.doe.in.gov/licensing" title="Educator Licensing &amp; Development">Educator Licensing &amp; Development</a>
-                            </li>
-                            <li>
-                              <a href="https://learnmoreindiana.org/" title="Learn More Indiana">Learn More Indiana
-                                <span>(Learn More Indiana)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/library/" title="Library, Indiana State">Library, Indiana State</a>
-                            </li>
-                            <li>
-                              <a href="http://www.isbvik12.org/" title="School for the Blind, Indiana">School for the Blind, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.deafhoosiers.com/" title="School for the Deaf, Indiana">School for the Deaf, Indiana</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navTax">
-                  <a href="#">Taxes &amp; Finance</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Finance</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/auditor/" title="Auditor of State">Auditor of State</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/tos/bond/" title="Bond">Bond Bank, Indiana
-                                <span>(Bond)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/sba/" title="SBA">Budget Agency, State
-                                <span>(SBA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/tos/deposit/" title="Depositories, Indiana Board of">Depositories, Indiana Board of</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ifa/" title="IFA">Finance Authority, Indiana
-                                <span>(IFA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ihcda/" title="IHCDA">Housing &amp; Community Development Authority, Indiana
-                                <span>(IHCDA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dlgf/" title="DLGF">Local Government Finance, Department of
-                                <span>(DLGF)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/omb/" title="OMB">Management &amp; Budget, Office of
-                                <span>(OMB)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/inprs/" title="INPRS">Public Retirement System, Indiana
-                                <span>(INPRS)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Regulatory</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/idoi/" title="IDOI">Insurance, Department of
-                                <span>(IDOI)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Tax</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/dor/" title="DOR">Revenue, Department of
-                                <span>(DOR)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ibtr/" title="IBTR">Tax Review, Board of
-                                <span>(IBTR)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navVis">
-                  <a href="#">Visiting &amp; Playing</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Information</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/iara/" title="IARA">Archives and Records Administration, Indiana
-                                <span>(IARA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/arts/" title="IAC">Arts Commission, Indiana
-                                <span>(IAC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/ibc/" title="IBC">Bicentennial Commission, Indiana
-                                <span>(IBC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/igc/" title="IGC">Gaming Commission
-                                <span>(IGC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/history/" title="Historical Bureau, Indiana">Historical Bureau, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/visitindiana/blog" title="Insider Blog, Indiana">Insider Blog, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dnr/" title="DNR">Natural Resources, Department of
-                                <span>(DNR)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/visitindiana/" title="Tourism Development, Indiana Office of">Tourism Development, Indiana Office of</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/sfc/" title="SFC">State Fair Commission
-                                <span>(SFC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iscba/" title="ISCBA">Stadium Convention Building Authority, Indiana
-                                <span>(ISCBA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idoa/2371.htm" title="State House Tour Office">State House Tour Office</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Locations</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/igc/2586.htm" title="IGC">Casino Locations &amp; Information, Indiana
-                                <span>(IGC)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isdh/22865.htm" title="Inns &amp; Campgrounds">Inns &amp; Campgrounds</a>
-                            </li>
-                            <li>
-                              <a href="http://www.indianamuseum.org/" title="ISM">Museum, Indiana State
-                                <span>(ISM)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/statefair/" title="State Fair, Indiana">State Fair, Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iwm/" title="IWM">War Memorials, Indiana
-                                <span>(IWM)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://inwhiteriver.wrsp.in.gov/" title="WRSP">White River State Park Commission
-                                <span>(WRSP)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dnr/parklake/" title="DNR">State Parks
-                                <span>(DNR)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li id="navFam">
-                  <a href="#">Family &amp; Health</a>
-                  <ul>
-                    <div>
-                      <li>
-                        <a href="#">Family</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/dcs/2730.htm" title="Adoption">Adoption</a>
-                            </li>
-                            <li>
-                              <a href="https://secure.in.gov/apps/fssa/carefinder/index.html" title="Child Care Finder">Child Care Finder</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dcs/" title="DCS">Child Services, Department of
-                                <span>(DCS)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/idr/" title="IDR">Disability Rights, Indiana
-                                <span>(IDR)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/fssa/" title="FSSA">Family &amp; Social Services Administration
-                                <span>(FSSA)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/gpcpd/" title="GPCPD">Governor's Planning Council for People with Disabilities
-                                <span>(GPCPD)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/children/" title="Improving the Status of Children in Indiana, Commission on">Improving the Status of Children in Indiana, Commission on</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/serveindiana/" title="Serve Indiana">Serve Indiana</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dva/2381.htm" title="Soldiers &amp; Sailors Children's Home">Soldiers &amp; Sailors Children's Home</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/dva/2352.htm" title="Veterans Home, Indiana">Veterans Home, Indiana</a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Health</a>
-                        <ul>
-                          <div>
-                            <li>
-                              <a href="http://www.in.gov/isdh/" title="ISDH">Health, State Department of
-                                <span>(ISDH)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/healthcarereform/index.htm" title="ISDH">Healthcare Reform
-                                <span>(ISDH)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/fssa/hip/" title="HIP">Healthy Indiana Plan
-                                <span>(HIP)</span></a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isdh/25462.htm" title="Influenza">Influenza</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/iltcp/" title="ILTCP">Indiana Long Term Care Partnership Program
-                                <span>(ILTCP)</span></a>
-                            </li>
-                            <li>
-                              <a href="https://www.in.gov/medicaid/" title="Medicaid">Medicaid</a>
-                            </li>
-                            <li>
-                              <a href="http://www.in.gov/isdh/tpc/index.htm" title="ITPC">Tobacco Prevention &amp; Cessation Commission
-                                <span>(ITPC)</span></a>
-                            </li>
-                          </div>
-                        </ul>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li>
-                  <a href="/core/info_employees.html" title="State Employees">State Employees</a>
-                </li>
-                <li>
-                  <a href="/core/help-resources.html" title="Help &amp; Resources">Help &amp; Resources</a>
-                </li>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
