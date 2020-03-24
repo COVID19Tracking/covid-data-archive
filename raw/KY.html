@@ -3,8 +3,8 @@
   <head>
     <!--Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://buttons-config.sharethis.com/js/5e618931a54e4f0012855212.js"></script>
-    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159925580-1"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
@@ -247,7 +247,7 @@
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k863de9q"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k864hi6f"></script>
   </head>
   <body class="content-center" style="position: relative; min-height: 100%; top: 0px;">
     <!--Masthead-->
@@ -1014,6 +1014,9 @@
         <div class="column col-sm-4">
           <p></p>
           <h3>COVID-19 Announcements</h3>
+          <p>To combat guideline noncompliance, Gov. Beshear announced the COVID-19 Reporting Hotline. To report an incident, call
+            <b>1-833-597-2337</b>
+          </p>
           <p>If anyone has information regarding possible price gouging, contact the Office of the Attorney General Consumer Protection hotline at
             <strong>888-432-9257</strong>or fill out the
             <a href="https://secure.kentucky.gov/formservices/AttorneyGeneral/PriceGougingComplaintForm" target="_blank">complaint form online</a>
@@ -1034,7 +1037,7 @@
       </div>
       <div class="row mt-5 mb-3" id="updated-date">
         <div class="col-sm-12 text-center">
-          <small class="text-muted">Updated on March 24th, 2020 08:42AM</small>
+          <small class="text-muted">Updated on March 24th, 2020 12:15PM</small>
         </div>
       </div>
     </div>
@@ -1059,9 +1062,11 @@
   </script>
     <script>
   function onSubmitEmail(token) {
+  	     grecaptcha.execute();
            document.getElementById("email-form").submit();
          }
          function onSubmitSms(token) {
+  	     grecaptcha.execute();
            document.getElementById("sms-form").submit();
          }
   </script>
