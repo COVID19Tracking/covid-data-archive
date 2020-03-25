@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-25T04:05:01.105401+00:00",
-  "end_date": "2020-03-25T04:05:03.637236+00:00",
-  "previous_date": "2020-03-25T03:35:13.563476+00:00",
-  "time_lapsed": "0:00:02.531835",
+  "start_date": "2020-03-25T04:35:02.247210+00:00",
+  "end_date": "2020-03-25T04:35:04.837748+00:00",
+  "previous_date": "2020-03-25T04:05:01.105401+00:00",
+  "time_lapsed": "0:00:02.590538",
   "complete": true,
   "error_message": null,
   "items": [
@@ -14,7 +14,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-25T04:05:01.881911+00:00",
+      "checked": "2020-03-25T04:35:03.252284+00:00",
       "updated": "2020-03-25T03:35:14.452364+00:00",
       "failed": null
     },
@@ -26,20 +26,20 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-25T04:05:02.523087+00:00",
+      "checked": "2020-03-25T04:35:03.582127+00:00",
       "updated": "2020-03-25T00:35:14.470535+00:00",
       "failed": null
     },
     {
       "name": "cds",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "http://blog.lazd.net/coronadatascraper/data.json",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-25T04:05:03.628589+00:00",
-      "updated": "2020-03-24T05:35:06.490760+00:00",
+      "checked": "2020-03-25T04:35:04.829748+00:00",
+      "updated": "2020-03-25T04:35:04.829748+00:00",
       "failed": null
     }
   ]
