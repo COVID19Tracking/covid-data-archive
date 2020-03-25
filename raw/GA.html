@@ -2,9 +2,9 @@
   <base ref="https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report">
   <head>
     <meta charset="utf-8">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script src="https://js-agent.newrelic.com/nr-1167.min.js"></script>
     <script type="text/javascript" async="" src="//siteimproveanalytics.com/js/siteanalyze_637444.js"></script>
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5360c08ecf",applicationID:"99788169"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2982645-7"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-2982645-7", {"groups":"default","anonymize_ip":true});gtag("config", "UA-24934301-1", {"groups":"default","anonymize_ip":true});</script>
@@ -13,20 +13,26 @@
     <meta property="og:site_name" content="Georgia Department of Public Health">
     <link rel="shortlink" href="https://dph.georgia.gov/node/30571">
     <meta name="twitter:card" content="summary">
-    <meta name="description" content="Today&#8217;s significant increase in cases is in part reflective of&#160;improvement in electronic reporting efficiency from commercial laboratories. These reports often have sparse patient data and DPH will be working to complete these records, so data will change over time.
-Report For: 03/24/2020 (7:00 pm)
-*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*">
+    <meta name="description" content="Report For: 03/25/2020 (12:00 pm)
+*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*
+To ensure that the numbers being provided through the COVID-19 data tool&#160;are the most current numbers available, the updates are&#160;done at&#160;NOON&#160;and 7:00&#160;pm every day.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00pm 03/25/2020.&#160;A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.
+&#160;">
     <meta name="twitter:title" content="Georgia Department of Public Health COVID-19 Daily Status Report">
     <meta name="twitter:site" content="@GaDPH">
-    <meta name="twitter:description" content="Today&#8217;s significant increase in cases is in part reflective of&#160;improvement in electronic reporting efficiency from commercial laboratories. These reports often have sparse patient data and DPH will be working to complete these records, so data will change over time.
-Report For: 03/24/2020 (7:00 pm)
-*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*">
+    <meta name="twitter:description" content="Report For: 03/25/2020 (12:00 pm)
+*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*
+To ensure that the numbers being provided through the COVID-19 data tool&#160;are the most current numbers available, the updates are&#160;done at&#160;NOON&#160;and 7:00&#160;pm every day.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00pm 03/25/2020.&#160;A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.
+&#160;">
     <meta property="og:url" content="https://dph.georgia.gov/covid-19-daily-status-report">
     <meta property="og:title" content="Georgia Department of Public Health COVID-19 Daily Status Report">
     <meta name="twitter:url" content="https://dph.georgia.gov/covid-19-daily-status-report">
-    <meta property="og:description" content="Today&#8217;s significant increase in cases is in part reflective of&#160;improvement in electronic reporting efficiency from commercial laboratories. These reports often have sparse patient data and DPH will be working to complete these records, so data will change over time.
-Report For: 03/24/2020 (7:00 pm)
-*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*">
+    <meta property="og:description" content="Report For: 03/25/2020 (12:00 pm)
+*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*
+To ensure that the numbers being provided through the COVID-19 data tool&#160;are the most current numbers available, the updates are&#160;done at&#160;NOON&#160;and 7:00&#160;pm every day.
+These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00pm 03/25/2020.&#160;A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.
+&#160;">
     <meta name="twitter:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png">
     <meta property="og:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png">
     <meta property="og:image:width" content="1201">
@@ -35,7 +41,7 @@ Report For: 03/24/2020 (7:00 pm)
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="ga:citation:metadata" last_updated="1585091261" internal_url="node/30571">
+    <meta property="ga:citation:metadata" last_updated="1585152374" internal_url="node/30571">
     <script type="application/ld+json">
   {
       "@context": "https://schema.org",
@@ -46,7 +52,7 @@ Report For: 03/24/2020 (7:00 pm)
               "name": "Georgia Department of Public Health COVID-19 Daily Status Report",
               "description": "These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health.",
               "datePublished": "2020-03-13T14:23:00-0400",
-              "dateModified": "2020-03-24T19:07:41-0400",
+              "dateModified": "2020-03-25T12:06:14-0400",
               "author": {
                   "@type": "Organization",
                   "name": "Georgia Department of Public Health",
@@ -701,7 +707,7 @@ Report For: 03/24/2020 (7:00 pm)
                         <span class="header-site-nav__menu-item-link-text">Vital Records</span>
                       </a>
                       <ul class="header-site-nav__menu-item-list
-      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--medium">
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--narrow">
                         <li class="header-site-nav__menu-item
       header-site-nav__menu-item--level-1 ">
                           <a class="header-site-nav__menu-item-link" href="/about-vital-records">
@@ -716,20 +722,14 @@ Report For: 03/24/2020 (7:00 pm)
                         </li>
                         <li class="header-site-nav__menu-item
       header-site-nav__menu-item--level-1 ">
+                          <a class="header-site-nav__menu-item-link" href="/VitalRecords/partners">
+                            <span class="header-site-nav__menu-item-link-text">SOVR Partners and Stakeholders</span>
+                          </a>
+                        </li>
+                        <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 ">
                           <a class="header-site-nav__menu-item-link" href="/VR-Resources">
                             <span class="header-site-nav__menu-item-link-text">Resources</span>
-                          </a>
-                        </li>
-                        <li class="header-site-nav__menu-item
-      header-site-nav__menu-item--level-1 ">
-                          <a class="header-site-nav__menu-item-link" href="/vrupcoming-meetings">
-                            <span class="header-site-nav__menu-item-link-text">Upcoming Meetings</span>
-                          </a>
-                        </li>
-                        <li class="header-site-nav__menu-item
-      header-site-nav__menu-item--level-1 ">
-                          <a class="header-site-nav__menu-item-link" href="/upcoming-webinars-0">
-                            <span class="header-site-nav__menu-item-link-text">Upcoming Webinars</span>
                           </a>
                         </li>
                         <li class="header-site-nav__menu-item
@@ -1079,23 +1079,20 @@ Report For: 03/24/2020 (7:00 pm)
                       <h1 class="page-title__topic">Georgia Department of Public Health COVID-19 Daily Status Report</h1>
                     </div>
                     <div class="body-content body-content--offset">
-                      <p>
-                        <strong>Today&#8217;s significant increase in cases is in part reflective of&#160;improvement in electronic reporting efficiency from commercial laboratories. These reports often have sparse patient data and DPH will be working to complete these records, so data will change over time.</strong>
-                      </p>
-                      <p>Report For: 03/24/2020
-                        <strong>(7:00 pm)</strong>
+                      <p>Report For: 03/25/2020
+                        <strong>(12:00 pm)</strong>
                       </p>
                       <p>*Note: To ensure the most updated version of this webpage, please&#160;refresh your browser.*</p>
                       <p>To ensure that the numbers being provided through the COVID-19 data tool&#160;are the most current numbers available, the updates are&#160;done at
                         <strong>NOON&#160;and 7:00&#160;pm</strong>
                       </p>
                       <p>
-                        <em>These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 7:00pm 03/24/2020.&#160;A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.</em>
+                        <em>These data represent confirmed cases of COVID-19 reported to the Georgia Department of Public Health as of 12:00pm 03/25/2020.&#160;A confirmed case is defined as a person who has tested positive for 2019 novel coronavirus.</em>
                         <br>
                       </p>
                       <p></p>
                       <article data-embed-button="image_media" data-entity-embed-display="view_mode:media.embedded" data-entity-embed-display-settings="full" data-entity-type="media" data-entity-uuid="009893ee-cfa4-489c-9706-03e3812bc978" data-langcode="en" class="embedded-entity embed embed--align-center embedded-entity--image">
-                        <img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/Screen%20Shot%202020-03-24%20at%206.49.09%20PM.png?itok=MmTCd_A_" alt="This map of Georgia shows the distribution of confirmed COVID-19 cases by county. The highest rates are in and around the metro Atlanta area, with 191 confirmed cases in Fulton County, 107 confirmed cases in DeKalb County and 90 confirmed cases in Cobb County. " typeof="foaf:Image" width="824" height="924">
+                        <img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/Screen%20Shot%202020-03-25%20at%2011.44.10%20AM.png?itok=-QQ4rgTt" alt="This map of Georgia shows the distribution of confirmed COVID-19 cases by county. The highest rates are in and around the metro Atlanta area, with 198 confirmed cases in Fulton County, 116 confirmed cases in DeKalb County and 101 confirmed cases in Cobb County. " typeof="foaf:Image" width="393" height="462">
                       </article>
                       <br>
                       <p></p>
@@ -1110,21 +1107,21 @@ Report For: 03/24/2020 (7:00 pm)
                         <tbody>
                           <tr>
                             <td>Total</td>
-                            <td>1097 (100%)</td>
+                            <td>1247 (100%)</td>
                           </tr>
                           <tr>
                             <td>Hospitalized</td>
-                            <td>361(32.91%)</td>
+                            <td>394(31.6%)</td>
                           </tr>
                           <tr>
                             <td>Deaths</td>
-                            <td>38 (3.46%)</td>
+                            <td>40 (3.21%)</td>
                           </tr>
                         </tbody>
                       </table>
                       <p></p>
                       <article data-embed-button="image_media" data-entity-embed-display="view_mode:media.embedded" data-entity-embed-display-settings="full" data-entity-type="media" data-entity-uuid="fa08c718-6fb1-4cb3-8f02-5256b3186027" data-langcode="en" class="embedded-entity embed embed--align-center embedded-entity--image">
-                        <img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/Screen%20Shot%202020-03-24%20at%206.49.21%20PM.png?itok=KTXxKtXT" alt="This chart shows confirmed cases by age group: ages 0-17 make up 1% of cases, ages 18-59 make up 56% of cases, ages 60+ make up 35% of cases, and the remaining 8% of cases are of an unknown age. By sex: females make up 50% of cases, and males make up 49% of cases; 1% of cases are of an unknown sex." typeof="foaf:Image" width="796" height="868">
+                        <img src="https://dph.georgia.gov/sites/dph.georgia.gov/files/styles/flexheight/public/2020-03/Screen%20Shot%202020-03-25%20at%2011.44.23%20AM.png?itok=r31v1vzX" alt="This chart shows confirmed cases by age group: ages 0-17 make up 1% of cases, ages 18-59 make up 60% of cases, ages 60+ make up 35% of cases, and the remaining 4% of cases are of an unknown age. By sex: females make up 51% of cases, and males make up 48% of cases; 1% of cases are of an unknown sex." typeof="foaf:Image" width="397" height="432">
                       </article>
                       <br>
                       <p></p>
@@ -1140,13 +1137,13 @@ Report For: 03/24/2020 (7:00 pm)
                         <tbody>
                           <tr>
                             <td>Commercial Lab</td>
-                            <td>907</td>
-                            <td>4106</td>
+                            <td>1041</td>
+                            <td>4697</td>
                           </tr>
                           <tr>
                             <td>GPHL</td>
-                            <td>190</td>
-                            <td>1378</td>
+                            <td>206</td>
+                            <td>1482</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1162,66 +1159,66 @@ Report For: 03/24/2020 (7:00 pm)
                         <tbody>
                           <tr>
                             <td>Fulton</td>
-                            <td>191</td>
+                            <td>198</td>
                           </tr>
                           <tr>
                             <td>Dekalb</td>
-                            <td>107</td>
+                            <td>116</td>
                           </tr>
                           <tr>
                             <td>Dougherty</td>
-                            <td>101</td>
+                            <td>109</td>
                           </tr>
                           <tr>
                             <td>Cobb</td>
-                            <td>90</td>
+                            <td>101</td>
                           </tr>
                           <tr>
                             <td>Bartow</td>
-                            <td>76</td>
+                            <td>78</td>
                           </tr>
                           <tr>
                             <td>Gwinnett</td>
-                            <td>46</td>
+                            <td>48</td>
                           </tr>
                           <tr>
                             <td>Cherokee</td>
-                            <td>30</td>
+                            <td>31</td>
                           </tr>
                           <tr>
                             <td>Carroll</td>
-                            <td>26</td>
+                            <td>27</td>
                           </tr>
                           <tr>
                             <td>Lee</td>
-                            <td>24</td>
+                            <td>25</td>
                           </tr>
                           <tr>
                             <td>Clayton</td>
-                            <td>21</td>
+                            <td>22</td>
                           </tr>
                           <tr>
                             <td>Clarke</td>
-                            <td>17</td>
+                            <td>19</td>
                           </tr>
                           <tr>
                             <td>Hall</td>
-                            <td>16</td>
-                          </tr>
-                          <tr>
-                            <td>Henry</td>
-                            <td>13</td>
+                            <td>19</td>
                           </tr>
                           <tr>
                             <td>Douglas</td>
-                            <td>12</td>
+                            <td>17</td>
+                          </tr>
+                          <tr>
+                            <td>Floyd</td>
+                            <td>14</td>
                           </tr>
                           <tr>
                             <td>Fayette</td>
                             <td>12</td>
                           </tr>
                           <tr>
-                            <td>Floyd</td>
+                            <td>Henry</td>
                             <td>12</td>
                           </tr>
                           <tr>
@@ -1238,7 +1235,11 @@ Report For: 03/24/2020 (7:00 pm)
                           </tr>
                           <tr>
                             <td>Forsyth</td>
-                            <td>8</td>
+                            <td>9</td>
+                          </tr>
+                          <tr>
+                            <td>Rockdale</td>
+                            <td>9</td>
                           </tr>
                           <tr>
                             <td>Gordon</td>
@@ -1249,12 +1250,16 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>8</td>
                           </tr>
                           <tr>
-                            <td>Rockdale</td>
-                            <td>8</td>
-                          </tr>
-                          <tr>
                             <td>Chatham</td>
                             <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>Newton</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>Bibb</td>
+                            <td>6</td>
                           </tr>
                           <tr>
                             <td>Columbia</td>
@@ -1265,11 +1270,11 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>6</td>
                           </tr>
                           <tr>
-                            <td>Newton</td>
+                            <td>Paulding</td>
                             <td>6</td>
                           </tr>
                           <tr>
-                            <td>Paulding</td>
+                            <td>Spalding</td>
                             <td>6</td>
                           </tr>
                           <tr>
@@ -1293,19 +1298,19 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>5</td>
                           </tr>
                           <tr>
-                            <td>Spalding</td>
+                            <td>Sumter</td>
                             <td>5</td>
                           </tr>
                           <tr>
-                            <td>Bibb</td>
-                            <td>4</td>
+                            <td>Tift</td>
+                            <td>5</td>
                           </tr>
                           <tr>
                             <td>Mitchell</td>
                             <td>4</td>
                           </tr>
                           <tr>
-                            <td>Muscogee</td>
+                            <td>Peach</td>
                             <td>4</td>
                           </tr>
                           <tr>
@@ -1313,15 +1318,7 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>4</td>
                           </tr>
                           <tr>
-                            <td>Sumter</td>
-                            <td>4</td>
-                          </tr>
-                          <tr>
-                            <td>Tift</td>
-                            <td>4</td>
-                          </tr>
-                          <tr>
-                            <td>Worth</td>
+                            <td>Whitfield</td>
                             <td>4</td>
                           </tr>
                           <tr>
@@ -1349,11 +1346,15 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>3</td>
                           </tr>
                           <tr>
-                            <td>Peach</td>
+                            <td>Muscogee</td>
                             <td>3</td>
                           </tr>
                           <tr>
                             <td>Terrell</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Worth</td>
                             <td>3</td>
                           </tr>
                           <tr>
@@ -1377,16 +1378,36 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>2</td>
                           </tr>
                           <tr>
+                            <td>Greene</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>Irwin</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>Jasper</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>Miller</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
                             <td>Seminole</td>
                             <td>2</td>
                           </tr>
                           <tr>
-                            <td>Stephens</td>
+                            <td>Twiggs</td>
                             <td>2</td>
                           </tr>
                           <tr>
-                            <td>Whitfield</td>
+                            <td>Washington</td>
                             <td>2</td>
+                          </tr>
+                          <tr>
+                            <td>Appling</td>
+                            <td>1</td>
                           </tr>
                           <tr>
                             <td>Ben Hill</td>
@@ -1425,11 +1446,15 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Fannin</td>
+                            <td>Decatur</td>
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Greene</td>
+                            <td>Dodge</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Fannin</td>
                             <td>1</td>
                           </tr>
                           <tr>
@@ -1441,11 +1466,11 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Irwin</td>
+                            <td>Jackson</td>
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Jasper</td>
+                            <td>Jones</td>
                             <td>1</td>
                           </tr>
                           <tr>
@@ -1469,10 +1494,6 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Miller</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
                             <td>Morgan</td>
                             <td>1</td>
                           </tr>
@@ -1489,11 +1510,19 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>1</td>
                           </tr>
                           <tr>
+                            <td>Stephens</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
                             <td>Tattnall</td>
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Telfair</td>
+                            <td>Taylor</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Thomas</td>
                             <td>1</td>
                           </tr>
                           <tr>
@@ -1501,26 +1530,26 @@ Report For: 03/24/2020 (7:00 pm)
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Twiggs</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
                             <td>Walton</td>
                             <td>1</td>
                           </tr>
                           <tr>
-                            <td>Washington</td>
+                            <td>White</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Wilkes</td>
                             <td>1</td>
                           </tr>
                           <tr>
                             <td>Unknown</td>
-                            <td>79</td>
+                            <td>153</td>
                           </tr>
                         </tbody>
                       </table>
                       <p>*Based on patient county of residence when known</p>
                       <p>
-                        <em>Report generated on: 03/24/2020 18:38:59</em>
+                        <em>Report generated on: 03/25/2020 11:41:14</em>
                       </p>
                     </div>
                   </main>
@@ -1729,7 +1758,7 @@ Report For: 03/24/2020 (7:00 pm)
           })();
           /*]]>*/
   </script>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5360c08ecf","applicationID":"99788169,308637395","transactionName":"NQFQMhAADBZRUBFYCwxLcwUWCA0LH3cXRBQDCG4lDRMHOX1WC0Q4JgFUBxcNFihVXRB9DQwPZhQHBC8EXloVRAgDEF0UEUxcAlVdAEMFFgF7CAYEGiReVzZeFhY=","queueTime":0,"applicationTime":552,"atts":"GUZTRFgaHxg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5360c08ecf","applicationID":"99788169,308637395","transactionName":"NQFQMhAADBZRUBFYCwxLcwUWCA0LH3cXRBQDCG4lDRMHOX1WC0Q4JgFUBxcNFihVXRB9DQwPZhQHBC8EXloVRAgDEF0UEUxcAlVdAEMFFgF7CAYEGiReVzZeFhY=","queueTime":0,"applicationTime":2586,"atts":"GUZTRFgaHxg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
     <div id="drupal-live-announce" class="visually-hidden" aria-live="polite" aria-busy="false"></div>
   </body>
 </html>

@@ -1,46 +1,46 @@
 {
-  "start_date": "2020-03-25T22:05:05.231828+00:00",
-  "end_date": "2020-03-25T22:06:36.497217+00:00",
-  "previous_date": "2020-03-25T21:35:03.100744+00:00",
-  "time_lapsed": "0:01:31.265389",
+  "start_date": "2020-03-25T22:14:16.598001+00:00",
+  "end_date": "2020-03-25T22:14:47.454814+00:00",
+  "previous_date": "2020-03-25T22:05:05.231828+00:00",
+  "time_lapsed": "0:00:30.856813",
   "complete": true,
   "error_message": null,
   "items": [
     {
       "name": "google-states-csv",
       "source": "source",
-      "status": "FAILED",
+      "status": "unchanged",
       "url": "https://covid.cape.io/states/info.csv",
-      "msg": "no local cache",
+      "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-25T21:35:03.835456+00:00",
+      "checked": "2020-03-25T22:14:46.048339+00:00",
       "updated": "2020-03-25T21:05:05.779101+00:00",
-      "failed": "2020-03-25T22:05:35.430443+00:00"
+      "failed": null
     },
     {
       "name": "urlwatch",
       "source": "source",
-      "status": "FAILED",
+      "status": "CHANGED",
       "url": "https://covidtracking.com/api/urls",
-      "msg": "no local cache",
+      "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-25T21:35:04.125604+00:00",
-      "updated": "2020-03-25T18:35:02.715384+00:00",
-      "failed": "2020-03-25T22:06:05.664720+00:00"
+      "checked": "2020-03-25T22:14:46.369107+00:00",
+      "updated": "2020-03-25T22:14:46.369107+00:00",
+      "failed": null
     },
     {
       "name": "cds",
       "source": "source",
-      "status": "FAILED",
+      "status": "unchanged",
       "url": "http://blog.lazd.net/coronadatascraper/data.json",
-      "msg": "no local cache",
+      "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-25T21:35:05.309337+00:00",
+      "checked": "2020-03-25T22:14:47.445818+00:00",
       "updated": "2020-03-25T05:05:06.588303+00:00",
-      "failed": "2020-03-25T22:06:36.493219+00:00"
+      "failed": null
     }
   ]
 }
