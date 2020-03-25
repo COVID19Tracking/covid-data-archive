@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-25T00:35:12.997805+00:00",
-  "end_date": "2020-03-25T00:35:15.955805+00:00",
-  "previous_date": "2020-03-25T00:05:00.484748+00:00",
-  "time_lapsed": "0:00:02.958000",
+  "start_date": "2020-03-25T01:21:01.658123+00:00",
+  "end_date": "2020-03-25T01:21:04.748431+00:00",
+  "previous_date": "2020-03-25T00:35:12.997805+00:00",
+  "time_lapsed": "0:00:03.090308",
   "complete": true,
   "error_message": null,
   "items": [
@@ -14,19 +14,19 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-25T00:35:13.955196+00:00",
+      "checked": "2020-03-25T01:21:02.680309+00:00",
       "updated": "2020-03-24T21:05:14.829153+00:00",
       "failed": null
     },
     {
       "name": "urlwatch",
       "source": "source",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://covidtracking.com/api/urls",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-25T00:35:14.470535+00:00",
+      "checked": "2020-03-25T01:21:03.022618+00:00",
       "updated": "2020-03-25T00:35:14.470535+00:00",
       "failed": null
     },
@@ -38,7 +38,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-25T00:35:15.942506+00:00",
+      "checked": "2020-03-25T01:21:04.729419+00:00",
       "updated": "2020-03-24T05:35:06.490760+00:00",
       "failed": null
     }
