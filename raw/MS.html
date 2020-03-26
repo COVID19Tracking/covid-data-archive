@@ -150,7 +150,7 @@
           </div>
         </div>
         <!--end assetNow_navMenuItems-->
-        <div id="navFiller" style="height: 7805px;">
+        <div id="navFiller" style="height: 7816px;">
           <div id="sidebarSubscriptionForm">
             <p style="font-size: 18px; color:indigo; text-align: center; margin: 0; font-weight: bold">E-Newsletter</p>
             <!--<script src="https://public.govdelivery.com/javascripts/cache/snippet.js" type="text/javascript"></script>-->
@@ -225,6 +225,103 @@
    + '<select id="subscribe_county"><option>Optional: county of residence</option><option>Adams</option><option>Adams</option><option>Alcorn</option><option>Amite</option><option>Attala</option><option>Benton</option><option>Bolivar</option><option>Calhoun</option><option>Carroll</option><option>Chickasaw</option><option>Choctaw</option><option>Claiborne</option><option>Clarke</option><option>Clay</option><option>Coahoma</option><option>Copiah</option><option>Covington</option><option>Desoto</option><option>Forrest</option><option>Franklin</option><option>George</option><option>Greene</option><option>Grenada</option><option>Hancock</option><option>Harrison</option><option>Hinds</option><option>Holmes</option><option>Humphrey</option><option>Issaquena</option><option>Itawamba</option><option>Jackson</option><option>Jasper</option><option>Jefferson</option><option>Jefferson Davis</option><option>Jones</option><option>Kemper</option><option>Lafayette</option><option>Lamar</option><option>Lauderdale</option><option>Lawrence</option><option>Leake</option><option>Lee</option><option>Leflore</option><option>Lincoln</option><option>Lowndes</option><option>Madison</option><option>Marion</option><option>Marshall</option><option>Monroe</option><option>Montgomery</option><option>Neshoba</option><option>Newton</option><option>Noxubee</option><option>Oktibbeha</option><option>Panola</option><option>Pearl River</option><option>Perry</option><option>Pike</option><option>Pontotoc</option><option>Prentiss</option><option>Quitman</option><option>Rankin</option><option>Scott</option><option>Sharkey</option><option>Simpson</option><option>Smith</option><option>Stone</option><option>Sunflower</option><option>Tallahatchie</option><option>Tate</option><option>Tippah</option><option>Tishomingo</option><option>Tunica</option><option>Union</option><option>Walthall</option><option>Warren</option><option>Washington</option><option>Wayne</option><option>Webster</option><option>Wilkinson</option><option>Winston</option><option>Yalobusha</option><option>Yazoo</option>'
    + '</select></div>');
   </script>
+        <div id="newsletterSignup">
+          <p>Get the public health news you need.</p>
+          <p class="smaller light">Disease updates
+            <span class="colored">&#8226;</span>Facility inspections
+            <span class="colored">&#8226;</span>
+          </p>
+          <span class="smaller emphasized">Subscribe to our e-newsletter:</span>
+          <input id="subscribe_email" type="email" value="&#160;email address" onfocus="if ((this.value).indexOf ('.') &lt; 0) this.value =''">
+          <button type="submit" id="submitSubscription" name="commit" onclick="sendNewsletterSubscriptionData(); setCookie ('alreadySubscribed', 'Y', 999); ga('send', 'event', 'SignupForm', 'Clicked', 'MobilePageTopSignup');">+</button>
+          <br>
+          <select id="subscribe_county">
+            <option>Optional: county of residence</option>
+            <option>Adams</option>
+            <option>Adams</option>
+            <option>Alcorn</option>
+            <option>Amite</option>
+            <option>Attala</option>
+            <option>Benton</option>
+            <option>Bolivar</option>
+            <option>Calhoun</option>
+            <option>Carroll</option>
+            <option>Chickasaw</option>
+            <option>Choctaw</option>
+            <option>Claiborne</option>
+            <option>Clarke</option>
+            <option>Clay</option>
+            <option>Coahoma</option>
+            <option>Copiah</option>
+            <option>Covington</option>
+            <option>Desoto</option>
+            <option>Forrest</option>
+            <option>Franklin</option>
+            <option>George</option>
+            <option>Greene</option>
+            <option>Grenada</option>
+            <option>Hancock</option>
+            <option>Harrison</option>
+            <option>Hinds</option>
+            <option>Holmes</option>
+            <option>Humphrey</option>
+            <option>Issaquena</option>
+            <option>Itawamba</option>
+            <option>Jackson</option>
+            <option>Jasper</option>
+            <option>Jefferson</option>
+            <option>Jefferson Davis</option>
+            <option>Jones</option>
+            <option>Kemper</option>
+            <option>Lafayette</option>
+            <option>Lamar</option>
+            <option>Lauderdale</option>
+            <option>Lawrence</option>
+            <option>Leake</option>
+            <option>Lee</option>
+            <option>Leflore</option>
+            <option>Lincoln</option>
+            <option>Lowndes</option>
+            <option>Madison</option>
+            <option>Marion</option>
+            <option>Marshall</option>
+            <option>Monroe</option>
+            <option>Montgomery</option>
+            <option>Neshoba</option>
+            <option>Newton</option>
+            <option>Noxubee</option>
+            <option>Oktibbeha</option>
+            <option>Panola</option>
+            <option>Pearl River</option>
+            <option>Perry</option>
+            <option>Pike</option>
+            <option>Pontotoc</option>
+            <option>Prentiss</option>
+            <option>Quitman</option>
+            <option>Rankin</option>
+            <option>Scott</option>
+            <option>Sharkey</option>
+            <option>Simpson</option>
+            <option>Smith</option>
+            <option>Stone</option>
+            <option>Sunflower</option>
+            <option>Tallahatchie</option>
+            <option>Tate</option>
+            <option>Tippah</option>
+            <option>Tishomingo</option>
+            <option>Tunica</option>
+            <option>Union</option>
+            <option>Walthall</option>
+            <option>Warren</option>
+            <option>Washington</option>
+            <option>Wayne</option>
+            <option>Webster</option>
+            <option>Wilkinson</option>
+            <option>Winston</option>
+            <option>Yalobusha</option>
+            <option>Yazoo</option>
+          </select>
+        </div>
         <!--category handler 2-->
         <div id="assetNow_pageTitle">
           <h1>Coronavirus Disease 2019 (COVID-19)</h1>
@@ -254,8 +351,11 @@
         <div id="article">
           <!--PAGEWATCH CODE="14-0-420"-->
           <div class="msdh">
-            <img alt="" class="leadImageFixed" src="images/photos/Coronavirus_light.jpg">
-            <p class="leadParagraph">The national Centers for Disease Control and Prevention (CDC) and the Mississippi State Department of Health (MSDH) continue to closely monitor the outbreak of respiratory illnesses caused by the novel (new) coronavirus COVID-19, and are working to limit the spread of cases nationally and in Mississippi. MSDH is actively working with doctors and hospitals on responding safely and effectively to COVID-19.</p>
+            <img src="images/photos/Coronavirus_light.jpg" alt="" class="leadImageFixed">
+            <p class="leadParagraph">
+  The national Centers for Disease Control and Prevention (CDC) and the Mississippi State Department of Health (MSDH) continue to closely monitor the outbreak of respiratory illnesses
+  caused by the novel (new) coronavirus COVID-19, and are working to limit the spread of cases nationally and in Mississippi. MSDH is actively working with doctors and hospitals on responding safely and effectively to COVID-19.
+  </p>
             <div class="threeColumnLeft">
               <div class="card">
                 <div class="cardHeader">
@@ -272,8 +372,9 @@
                 <div class="cardHeader">
                   <a href="#Mississippi">Current Cases
                     <br>and Statistics
-                    <br>
-                    <span>County and state data</span>
+                    <span>
+                      <br>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -283,8 +384,9 @@
                 <div class="cardHeader">
                   <a href="14,21866,420.html">Prevention
                     <br>and Preparation
-                    <br>
-                    <span>Personal and community</span>
+                    <span>
+                      <br>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -308,10 +410,12 @@
             <p>Mississippians are advised to take health precautions to prevent the possible transmission of disease, and stay in touch for the latest information on the situation in Mississippi.</p>
             <h3>Mississippi COVID-19 Case Map</h3>
             <div class="centered">
-              <img alt="" src="images/graphics/covid19-ms-2020-03-25-3.png">
+              <img src="images/graphics/covid19-ms-2020-03-25-5.png" alt="">
             </div>
             <p>An interactive version of this case map is also available:
-              <a href="14,21882,420,873.html">View interactive Mississippi case map</a>
+              <a href="14,21882,420,873.html">
+                <strong>View interactive Mississippi case map</strong>
+              </a>
             </p>
             <!--
   <div class="centered">
@@ -329,7 +433,7 @@
               <strong>57</strong>
             </p>
             <h4>All Mississippi cases</h4>
-            <table class="simpleTable" id="msdhTotalCovid-19Cases">
+            <table id="msdhTotalCovid-19Cases" class="simpleTable">
               <thead>
                 <tr>
                   <td>County</td>
@@ -659,16 +763,16 @@
             <div class="clearFloats"></div>
             <h3>Trends and Summary Data</h3>
             <p>
-              <img alt="" src="images/graphics/covid19-chart-age.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-age.png" alt="" style="max-width: 100%">
             </p>
             <p>
-              <img alt="" src="images/graphics/covid19-chart-onset.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-onset.png" alt="" style="max-width: 100%">
             </p>
             <p>
-              <img alt="" src="images/graphics/covid19-chart-hospitalized.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-hospitalized.png" alt="" style="max-width: 100%">
             </p>
             <p>
-              <img alt="" src="images/graphics/covid19-chart-sex.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-sex.png" alt="" style="max-width: 100%">
             </p>
             <h3>U.S. and World Cases</h3>
             <ul class="links">
@@ -690,11 +794,15 @@
               </ul>
             </div>
             <div class="leftColumn">
-              <p>The MSDH Public Health Laboratory is testing samples submitted by Mississippi physicians and healthcare providers around the state in cases where COVID-19 is determined to be a risk. Anyone with symptoms of fever, severe cough or severe chest pains &#8211; especially those who are older or in poor health &#8211; should call their doctor or healthcare provider for instructions on safely being examined. Healthcare providers can assess your health history and symptoms, and perform testing for COVID-19 as needed.</p>
+              <p>
+  The MSDH Public Health Laboratory is testing samples submitted by Mississippi physicians and healthcare providers around the state in cases where COVID-19 is determined to be a risk.
+   Anyone with symptoms of fever, severe cough or severe chest pains &#8211; especially those who are older or in poor health &#8211; should call their doctor or healthcare provider for instructions on safely being examined.
+   Healthcare providers can assess your health history and symptoms, and perform testing for COVID-19 as needed.
+  </p>
             </div>
             <div class="rightColumn">
               <p class="centered">
-                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="flexibleFrame" src="https://www.youtube.com/embed/adnA2N0h2A4?rel=0" width="280" height="159" frameborder="0"></iframe>
+                <iframe class="flexibleFrame" src="https://www.youtube.com/embed/adnA2N0h2A4?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="280" height="159" frameborder="0"></iframe>
               </p>
               <ul class="links">
                 <li>
@@ -712,7 +820,10 @@
               </li>
             </ul>
             <h2>What MSDH Is Doing</h2>
-            <p>The Mississippi State Department of Health is aggressively responding to the rapidly evolving COVID-19 situation. With other state agencies, it has activated emergency operations in order to slow the spread of COVID-19 in Mississippi.</p>
+            <p>
+  The Mississippi State Department of Health is aggressively responding to the rapidly evolving COVID-19 situation. With other state agencies, it has activated emergency operations
+  in order to slow the spread of COVID-19 in Mississippi.
+  </p>
             <p>Other steps that MSDH is taking include:</p>
             <ul>
               <li>
@@ -796,8 +907,8 @@
         </ul>
         <div style="clear: both"></div>
         <div class="footerPromotion">
-          <a href="/msdhsite/_static/14,21866,420.html" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'CoronavirusPrevention_cover');">
-            <img src="/msdhsite/theme/slides/covid19-cover_slide.jpg" alt="" style="border: 0">
+          <a href="/msdhsite/_static/14,6459,330.html" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'Handwashing');">
+            <img src="/msdhsite/theme/slides/Handwashing_prevent_boy2_slide.jpg" alt="" style="border: 0">
           </a>
         </div>
       </div>
