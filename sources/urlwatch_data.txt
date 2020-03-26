@@ -1,6 +1,6 @@
 	location	main_page	data_page	error_msg	source_name	comment
 0	AK	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx			urlwatch	
-1	AL	http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html			urlwatch	
+1	AL	https://services7.arcgis.com/4RQmZZ0yaZkGR1zy/arcgis/rest/services/COV19_Public_Dashboard_ReadOnly/FeatureServer/0/query?f=json&where=CONFIRMED%20%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22CONFIRMED%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true			urlwatch	
 2	AR	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus			urlwatch	
 3	AZ	https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Ftableau.azdhs.gov%2Fviews%2FCOVID-19Dashboard%2FCOVID-19table%3F%3Aembed%3Dy%26%3AshowVizHome%3Dno%26%3Ahost_url%3Dhttps%253A%252F%252Ftableau.azdhs.gov%252F%26%3Aembed_code_version%3D3%26%3Atabs%3Dno%26%3Atoolbar%3Dno%26%3AshowAppBanner%3Dfalse%26%3Adisplay_spinner%3Dno%26iframeSizedToWindow%3Dtrue%26%3AloadOrderID%3D0%27%2C%20renderType%3A%20%27jpg%27%7D			urlwatch	
 4	CA	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx			urlwatch	
