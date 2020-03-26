@@ -1,33 +1,33 @@
 {
-  "start_date": "2020-03-26T00:05:03.572302+00:00",
-  "end_date": "2020-03-26T00:05:05.981570+00:00",
-  "previous_date": "2020-03-25T23:35:00.935955+00:00",
-  "time_lapsed": "0:00:02.409268",
+  "start_date": "2020-03-26T00:35:09.402464+00:00",
+  "end_date": "2020-03-26T00:35:12.044966+00:00",
+  "previous_date": "2020-03-26T00:05:03.572302+00:00",
+  "time_lapsed": "0:00:02.642502",
   "complete": true,
   "error_message": null,
   "items": [
     {
       "name": "google-states-csv",
       "source": "source",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://covid.cape.io/states/info.csv",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-26T00:05:04.291798+00:00",
+      "checked": "2020-03-26T00:35:10.145134+00:00",
       "updated": "2020-03-26T00:05:04.291798+00:00",
       "failed": null
     },
     {
       "name": "urlwatch",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://covidtracking.com/api/urls",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-26T00:05:04.703870+00:00",
-      "updated": "2020-03-25T22:14:46.369107+00:00",
+      "checked": "2020-03-26T00:35:10.609518+00:00",
+      "updated": "2020-03-26T00:35:10.609518+00:00",
       "failed": null
     },
     {
@@ -38,7 +38,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-26T00:05:05.970366+00:00",
+      "checked": "2020-03-26T00:35:12.036952+00:00",
       "updated": "2020-03-25T05:05:06.588303+00:00",
       "failed": null
     }
