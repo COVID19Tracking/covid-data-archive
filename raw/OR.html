@@ -322,17 +322,17 @@
           <div class="card">
             <div class="card-header" id="headingCases">
               <h3 autocomplete="off">
-                <button class="btn btn-block btn-link text-left collapsed" aria-expanded="false" aria-controls="collapseCases" style="color: rgb(34, 34, 34); font-size: 0.7em; font-weight: bold;" autocomplete="off" data-toggle="collapse" data-target="#collapseCases">COVID-19 Cases in Oregon
+                <button class="btn btn-block btn-link text-left" aria-expanded="true" aria-controls="collapseCases" style="color: rgb(34, 34, 34); font-size: 0.7em; font-weight: bold;" autocomplete="off" data-toggle="collapse" data-target="#collapseCases">COVID-19 Cases in Oregon
                   <i class="fas fa-plus float-right" aria-hidden="true"></i>
                 </button>
               </h3>
             </div>
-            <div class="collapse show" id="collapseCases" aria-labelledby="headingCases">
+            <div class="collapse show" id="collapseCases" aria-labelledby="headingCases" style="">
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead class="thead-light">
                     <tr>
-                      <th colspan="2" autocomplete="off">&#65279;Oregon Test Results as of 3/25/2020, 9:00 a.m. Updated daily.
+                      <th colspan="2" autocomplete="off">&#65279;As of 3/26/2020, 8:00 a.m. Updated daily.
                         <!--EndFragment-->
                       </th>
                     </tr>
@@ -341,19 +341,22 @@
                     <tr>
                       <td autocomplete="off">Positive</td>
                       <td class="table-warning" style="text-align: center;" autocomplete="off">
-                        <b>266</b>
+                        <b>316</b>
                       </td>
                     </tr>
                     <tr>
                       <td autocomplete="off">Negative</td>
-                      <td style="text-align: center;">5,476</td>
+                      <td style="text-align: center;">6953</td>
                     </tr>
                     <tr>
                       <td>Total Completed Tests
-                        <i>(cumulative since January 24, 2020)</i>
                         <!--EndFragment-->
                       </td>
-                      <td style="text-align: center;" autocomplete="off">5,742</td>
+                      <td style="text-align: center;" autocomplete="off">7269</td>
+                    </tr>
+                    <tr>
+                      <td>Total Deaths</td>
+                      <td class="text-center">11</td>
                     </tr>
                   </tbody>
                 </table>
@@ -364,7 +367,7 @@
           <div class="card">
             <div class="card-header" id="headingOne">
               <h3 autocomplete="off">
-                <button class="btn btn-block btn-link text-left collapsed" aria-expanded="false" aria-controls="collapseOne" style="color: rgb(34, 34, 34); font-size: 0.7em; font-weight: bold;" data-toggle="collapse" data-target="#collapseOne">Demographic Information
+                <button class="btn btn-block btn-link text-left collapsed" aria-expanded="false" aria-controls="collapseOne" style="color: rgb(34, 34, 34); font-size: 0.7em; font-weight: bold;" data-toggle="collapse" data-target="#collapseOne">Demographic and Hospital Information
                   <i class="fas fa-plus float-right" aria-hidden="true"></i>
                 </button>
               </h3>
@@ -375,9 +378,9 @@
                   <thead class="thead-light">
                     <tr>
                       <th>County</th>
-                      <th style="text-align: center;">Number of cases</th>
-                      <th style="text-align: center;">Deaths</th>
-                      <th style="text-align: center;">Negative test results</th>
+                      <th style="text-align: center;">Positive</th>
+                      <th style="text-align: center;">Deaths*</th>
+                      <th style="text-align: center;">Negative</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -394,31 +397,31 @@
                       </td>
                       <td style="text-align: center;">6</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">163</td>
+                      <td style="text-align: center;">216</td>
                     </tr>
                     <tr>
                       <td>Clackamas</td>
                       <td style="text-align: center;">21</td>
                       <td style="text-align: center;">2</td>
-                      <td style="text-align: center;">593</td>
+                      <td style="text-align: center;">669</td>
                     </tr>
                     <tr>
                       <td>Clatsop</td>
-                      <td style="text-align: center;">1</td>
+                      <td style="text-align: center;">2</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">55</td>
+                      <td style="text-align: center;">59</td>
                     </tr>
                     <tr>
                       <td>Columbia</td>
                       <td class="text-center">0</td>
                       <td class="text-center">0</td>
-                      <td class="text-center">62</td>
+                      <td class="text-center">73</td>
                     </tr>
                     <tr>
                       <td>Coos</td>
                       <td class="text-center">0</td>
                       <td class="text-center">0</td>
-                      <td class="text-center">75</td>
+                      <td class="text-center">96</td>
                     </tr>
                     <tr>
                       <td>Crook</td>
@@ -430,16 +433,16 @@
                       <td>Curry</td>
                       <td class="text-center">0</td>
                       <td class="text-center">0</td>
-                      <td class="text-center">14</td>
+                      <td class="text-center">17</td>
                     </tr>
                     <tr>
                       <td>Deschutes</td>
-                      <td style="text-align: center;">10</td>
+                      <td style="text-align: center;">15</td>
                       <td style="text-align: center;">
                         <!--StartFragment-->0
                         <!--EndFragment-->
                       </td>
-                      <td style="text-align: center;">106</td>
+                      <td style="text-align: center;">130</td>
                     </tr>
                     <tr>
                       <td>Douglas</td>
@@ -448,13 +451,13 @@
                         <!--StartFragment-->0
                         <!--EndFragment-->
                       </td>
-                      <td style="text-align: center;">68</td>
+                      <td style="text-align: center;">121</td>
                     </tr>
                     <tr>
                       <td>Gilliam</td>
                       <td style="text-align: center;">0</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">2</td>
+                      <td style="text-align: center;">3</td>
                     </tr>
                     <tr>
                       <td>Grant</td>
@@ -466,19 +469,19 @@
                       <td>Harney</td>
                       <td style="text-align: center;">0</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">12</td>
+                      <td style="text-align: center;">19</td>
                     </tr>
                     <tr>
                       <td>Hood River</td>
                       <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">60</td>
+                      <td style="text-align: center;">69</td>
                     </tr>
                     <tr>
                       <td>Jackson</td>
                       <td style="text-align: center;">4</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">335</td>
+                      <td style="text-align: center;">681</td>
                     </tr>
                     <tr>
                       <td>Jefferson</td>
@@ -488,15 +491,15 @@
                     </tr>
                     <tr>
                       <td>Josephine</td>
-                      <td style="text-align: center;">2</td>
+                      <td style="text-align: center;">4</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">60</td>
+                      <td style="text-align: center;">74</td>
                     </tr>
                     <tr>
                       <td>Klamath</td>
                       <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">65</td>
+                      <td style="text-align: center;">68</td>
                     </tr>
                     <tr>
                       <td>Lake</td>
@@ -506,21 +509,21 @@
                     </tr>
                     <tr>
                       <td>Lane</td>
-                      <td style="text-align: center;" autocomplete="off">5</td>
+                      <td style="text-align: center;" autocomplete="off">7</td>
                       <td style="text-align: center;" autocomplete="off">1</td>
-                      <td style="text-align: center;">224</td>
+                      <td style="text-align: center;">354</td>
                     </tr>
                     <tr>
                       <td>Lincoln</td>
                       <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">31</td>
+                      <td style="text-align: center;">48</td>
                     </tr>
                     <tr>
                       <td>Linn</td>
-                      <td style="text-align: center;">25</td>
+                      <td style="text-align: center;">26</td>
                       <td style="text-align: center;">1</td>
-                      <td style="text-align: center;">386</td>
+                      <td style="text-align: center;">456</td>
                     </tr>
                     <tr>
                       <td>Malheur</td>
@@ -530,51 +533,51 @@
                     </tr>
                     <tr>
                       <td>Marion</td>
-                      <td style="text-align: center;">43</td>
+                      <td style="text-align: center;">57</td>
                       <td style="text-align: center;">2</td>
-                      <td style="text-align: center;">438</td>
+                      <td style="text-align: center;">559</td>
                     </tr>
                     <tr>
                       <td>Morrow</td>
                       <td style="text-align: center;">0</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">12</td>
+                      <td style="text-align: center;">15</td>
                     </tr>
                     <tr>
                       <td>Multnomah</td>
-                      <td style="text-align: center;">33</td>
+                      <td style="text-align: center;">45</td>
                       <td style="text-align: center;">2</td>
-                      <td style="text-align: center;">1371</td>
+                      <td style="text-align: center;">1684</td>
                     </tr>
                     <tr>
                       <td>Polk</td>
-                      <td style="text-align: center;">3</td>
+                      <td style="text-align: center;">6</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">106</td>
+                      <td style="text-align: center;">133</td>
                     </tr>
                     <tr>
                       <td>Sherman</td>
                       <td style="text-align: center;">0</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">1</td>
+                      <td style="text-align: center;">2</td>
                     </tr>
                     <tr>
                       <td>Tillamook</td>
+                      <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">28</td>
+                      <td style="text-align: center;">29</td>
                     </tr>
                     <tr>
                       <td>Umatilla</td>
                       <td style="text-align: center;">2</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">54</td>
+                      <td style="text-align: center;">71</td>
                     </tr>
                     <tr>
                       <td>Union</td>
                       <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">14</td>
+                      <td style="text-align: center;">15</td>
                     </tr>
                     <tr>
                       <td>Wallowa</td>
@@ -584,15 +587,15 @@
                     </tr>
                     <tr>
                       <td>Wasco</td>
+                      <td style="text-align: center;">1</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">31</td>
+                      <td style="text-align: center;">34</td>
                     </tr>
                     <tr>
                       <td>Washington</td>
-                      <td style="text-align: center;">96</td>
-                      <td style="text-align: center;">2</td>
-                      <td style="text-align: center;">855</td>
+                      <td style="text-align: center;">104</td>
+                      <td style="text-align: center;">3</td>
+                      <td style="text-align: center;">979</td>
                     </tr>
                     <tr>
                       <td>Wheeler</td>
@@ -604,20 +607,20 @@
                       <td>Yamhill</td>
                       <td style="text-align: center;">7</td>
                       <td style="text-align: center;">0</td>
-                      <td style="text-align: center;">207</td>
+                      <td style="text-align: center;">231</td>
                     </tr>
                     <tr>
                       <td>
                         <b>Total</b>
                       </td>
                       <td style="text-align: center;">
-                        <b>266</b>
+                        <b>316</b>
                       </td>
                       <td style="text-align: center;">
-                        <b>10</b>
+                        <b>11</b>
                       </td>
                       <td style="text-align: center;">
-                        <b>5476</b>
+                        <b>6953</b>
                       </td>
                     </tr>
                   </tbody>
@@ -626,52 +629,80 @@
                   <thead class="thead-light">
                     <tr>
                       <th>Age group</th>
-                      <th style="text-align: center;">Number of cases</th>
+                      <th style="text-align: center;">Cases</th>
+                      <th style="text-align: center;">Ever hospitalized
+                        <sup>&#8225;</sup>
+                      </th>
+                      <th style="text-align: center;">Deaths*</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>0 to 19</td>
                       <td style="text-align: center;">5</td>
+                      <td style="text-align: center;">0</td>
+                      <td style="text-align: center;">0</td>
                     </tr>
                     <tr>
                       <td>20 to 29</td>
-                      <td style="text-align: center;">15</td>
+                      <td style="text-align: center;">19</td>
+                      <td style="text-align: center;">3</td>
+                      <td style="text-align: center;">0</td>
                     </tr>
                     <tr>
                       <td>30 to 39</td>
-                      <td style="text-align: center;">32</td>
+                      <td style="text-align: center;">39</td>
+                      <td style="text-align: center;">4</td>
+                      <td style="text-align: center;">0</td>
                     </tr>
                     <tr>
                       <td>40 to 49</td>
-                      <td style="text-align: center;">55</td>
+                      <td style="text-align: center;">63</td>
+                      <td style="text-align: center;">14</td>
+                      <td style="text-align: center;">0</td>
                     </tr>
                     <tr>
                       <td>50 to 59</td>
-                      <td style="text-align: center;" autocomplete="off">42</td>
+                      <td style="text-align: center;" autocomplete="off">52</td>
+                      <td style="text-align: center;" autocomplete="off">12</td>
+                      <td style="text-align: center;" autocomplete="off">0</td>
                     </tr>
                     <tr>
                       <td>60 to 69</td>
-                      <td class="text-center">57</td>
+                      <td class="text-center">70</td>
+                      <td class="text-center">28</td>
+                      <td class="text-center">3</td>
                     </tr>
                     <tr>
                       <td>70 to 79</td>
-                      <td class="text-center">34</td>
+                      <td class="text-center">40</td>
+                      <td class="text-center">21</td>
+                      <td class="text-center">5</td>
                     </tr>
                     <tr>
                       <td>80 and over</td>
-                      <td class="text-center">25</td>
+                      <td class="text-center">27</td>
+                      <td class="text-center">8</td>
+                      <td class="text-center">3</td>
                     </tr>
                     <tr>
                       <td>Not available</td>
                       <td class="text-center">1</td>
+                      <td class="text-center">-</td>
+                      <td class="text-center">-</td>
                     </tr>
                     <tr>
                       <td>
                         <b>Total</b>
                       </td>
                       <td style="text-align: center;" autocomplete="off">
-                        <b>266</b>
+                        <b>316</b>
+                      </td>
+                      <td style="text-align: center;" autocomplete="off">
+                        <b>90</b>
+                      </td>
+                      <td style="text-align: center;" autocomplete="off">
+                        <b>11</b>
                       </td>
                     </tr>
                   </tbody>
@@ -679,18 +710,57 @@
                 <table class="table table-bordered">
                   <thead class="thead-light">
                     <tr>
-                      <th>Hospitalized*</th>
-                      <th style="text-align: center;">Number of cases</th>
+                      <th>Sex</th>
+                      <th style="text-align: center;">Cases</th>
+                      <th style="text-align: center;">Deaths*</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Female</td>
+                      <td style="text-align: center;">170</td>
+                      <td style="text-align: center;">6</td>
+                    </tr>
+                    <tr>
+                      <td>Male</td>
+                      <td style="text-align: center;">144</td>
+                      <td style="text-align: center;">5</td>
+                    </tr>
+                    <tr>
+                      <td>Not available</td>
+                      <td style="text-align: center;">2</td>
+                      <td style="text-align: center;">-</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Total</b>
+                      </td>
+                      <td style="text-align: center;" autocomplete="off">
+                        <b>316</b>
+                      </td>
+                      <td style="text-align: center;" autocomplete="off">
+                        <b>11</b>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Hospitalized
+                        <sup>&#8225;</sup>
+                      </th>
+                      <th style="text-align: center;">Cases</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Yes</td>
-                      <td style="text-align: center;">75</td>
+                      <td style="text-align: center;">90</td>
                     </tr>
                     <tr>
                       <td>No</td>
-                      <td style="text-align: center;">135</td>
+                      <td style="text-align: center;">170</td>
                     </tr>
                     <tr>
                       <td>Not provided</td>
@@ -701,7 +771,7 @@
                         <b>Total</b>
                       </td>
                       <td style="text-align: center;" autocomplete="off">
-                        <b>266</b>
+                        <b>316</b>
                       </td>
                     </tr>
                   </tbody>
@@ -709,36 +779,31 @@
                 <table class="table table-bordered">
                   <thead class="thead-light">
                     <tr>
-                      <th>Sex</th>
-                      <th style="text-align: center;">Number of cases</th>
+                      <th>Hospital Capacity</th>
+                      <th style="text-align: center;">Number</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Female</td>
-                      <td style="text-align: center;">142</td>
+                      <td>Available ICU beds</td>
+                      <td style="text-align: center;">362</td>
                     </tr>
                     <tr>
-                      <td>Male</td>
-                      <td style="text-align: center;">123</td>
+                      <td>Available non-ICU beds</td>
+                      <td style="text-align: center;">2193</td>
                     </tr>
                     <tr>
-                      <td>Not available</td>
-                      <td style="text-align: center;">1</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <b>Total</b>
-                      </td>
-                      <td style="text-align: center;" autocomplete="off">
-                        <b>266</b>
-                      </td>
+                      <td>Available ventilators</td>
+                      <td style="text-align: center;">684</td>
                     </tr>
                   </tbody>
                 </table>
                 <div class="alert alert-info">
+                  <p>*For additional details on individuals who have died from COVID-19 in Oregon, please
+                    <a href="https://www.oregon.gov/oha/erd/pages/covid-19-news.aspx" target="_blank">refer to our press releases</a>
+                  </p>
                   <p autocomplete="off">
-                    <b>OHA updates this data daily. Updates include:</b>
+                    <sup>&#8225;</sup>
                   </p>
                   <p>Notes:</p>
                   <ol>
@@ -747,7 +812,10 @@
                     </li>
                     <li>Confirmation by CDC of laboratory results from the Oregon State Public Health Laboratory is no longer required; therefore as of March 15, 2020, we no longer note the number of CDC-confirmed cases.</li>
                     <li>Reporting of travel history is not available for cases reported to OHA by commercial laboratories; therefore as of March 15, 2020, we no longer include information about travel history.</li>
-                    <li>As of March 22, 2020, we no longer include the number of pending test results. Those numbers are only available from the Oregon State Public Health Laboratory (OSPHL). The OSPHL serves as the first source of testing during an outbreak and as commercial labs come online, OSPHL increases focus on priority testing. Commercial labs have the ability to conduct testing on an industrial scale, but do not report pending results, so this number would not accurately reflect the number of pending results.</li>
+                    <li>As of March 26, 2020,&#160;OHA is releasing the
+                      <a href="https://govsite-assets.s3.amazonaws.com/SLdyToaAQ2i1P0EsaL7t_Oregon-COVID-19-SitStat-03-26-2020-FINAL.pdf" target="_blank">daily situational status report</a>, which is produced jointly with
+                      <a href="https://storymaps.arcgis.com/stories/6c96b225a8424992b56e59400a30dab4" target="_blank">Oregon Office of Emergency Management</a>
+                    </li>
                   </ol>
                 </div>
               </div>
@@ -774,25 +842,49 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td autocomplete="off">Specimens received on 3/24/2020</td>
-                      <td style="text-align: center;" autocomplete="off">100</td>
+                      <td autocomplete="off">Specimens received at OSPHL on 3/25/2020</td>
+                      <td style="text-align: center;" autocomplete="off">78</td>
                     </tr>
                     <tr>
-                      <td autocomplete="off">Specimens resulted on 3/24/2020</td>
-                      <td style="text-align: center;">91</td>
+                      <td autocomplete="off">Test results released by OSPHL&#160;on 3/25/2020</td>
+                      <td style="text-align: center;">121</td>
                     </tr>
                     <tr>
-                      <td>Specimens pending as of 8:30 p.m. 3/24/2020
+                      <td>Specimens pending at OSPHL as of 8:30 p.m. 3/25/2020
                         <!--EndFragment-->
                       </td>
-                      <td style="text-align: center;" autocomplete="off">21</td>
+                      <td style="text-align: center;" autocomplete="off">32</td>
                     </tr>
                     <tr>
                       <td>Total persons tested for COVID-19 at OSPHL since 2/28/2020</td>
-                      <td class="text-center">1,499</td>
+                      <td class="text-center">1620</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i>Total persons tested at other laboratories</i>
+                      </td>
+                      <td class="text-center">
+                        <i>5649</i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i>Total completed tests in Oregon</i>
+                      </td>
+                      <td class="text-center">
+                        <i>7269</i>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
+                <div class="alert alert-info">
+                  <p>Notes:
+                    <br>
+                  </p>
+                  <ol>
+                    <li>As of March 25, 2020, we are including the number of pending test results available from the Oregon State Public Health Laboratory (OSPHL). The OSPHL serves as the first source of testing during an outbreak and as commercial labs come online, OSPHL increases focus on priority testing. Commercial labs have the ability to conduct testing on an industrial scale, but do not report pending results, therefore we only include pending results from OSPHL.</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
@@ -990,6 +1082,16 @@
                   <h4>Social Distancing</h4>
                   <p>
                     <a title="Social Distancing- English" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2268.pdf" target="_blank">English</a>
+                    <a title="Social Distancing Spanish" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ls2268.pdf" target="_blank">Espa&#241;ol / Spanish</a>
+                    <a title="Social Distancing Arabic" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/la2268.pdf" target="_blank">&#1575;&#1604;&#1604;&#1594;&#1577; &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577; / Arabic</a>
+                    <a title="Social Distancing Simplified Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/ln2268.pdf" target="_blank">&#31616;&#20307;&#20013;&#25991; / Simplified Chinese</a>
+                    <a title="Social Distancing Traditional Chinese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l4-2268.pdf" target="_blank">&#32321;&#39636;&#20013;&#25991; / Traditional Chinese</a>
+                    <a title="Social Distancing Hmong" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lh2268.pdf" target="_blank">Lus Hmoob / Hmong</a>
+                    <a title="Social Distancing Marshallese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/l33-2268.pdf" target="_blank">Kajin Majol / Marshallese</a>
+                    <a title="Social Distancing Korean" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lk2268.pdf" target="_blank">&#54620;&#44397;&#50612; / Korean</a>
+                    <a title="Social Distancing Russian" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lr2268.pdf" target="_blank">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; / Russian</a>
+                    <a title="Social Distancing Somali" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/li2268.pdf" target="_blank">Af Soomaali / Somali</a>
+                    <a title="Social Distancing Vietnamese" class="btn btn-primary" href="https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/lv2268.pdf" target="_blank">Ti&#7871;ng Vi&#7879;t / Vietnamese</a>
                   </p>
                 </div>
                 <div class="alert alert-info">
@@ -1396,7 +1498,7 @@
       </p>
       <div class="row mt-5 mb-3" id="updated-date">
         <div class="col-sm-12 text-center">
-          <small class="text-muted">Updated on March 26th, 2020 08:08AM</small>
+          <small class="text-muted">Updated on March 26th, 2020 01:31PM</small>
         </div>
       </div>
     </div>
