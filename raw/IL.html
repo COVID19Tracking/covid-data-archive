@@ -6,7 +6,7 @@
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b1bb1b892b",applicationID:"55445753"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
     <link rel="shortcut icon" href="http://www.dph.illinois.gov/sites/all/themes/idph/favicon.ico" type="image/vnd.microsoft.icon">
-    <meta name="description" content="English Daily COVID-19 Press Conferences Coronavirus Disease 2019 (COVID-19) in Illinois Test Results Positive (Confirmed) # Negative # Deaths # Total Persons Tested* # *Total # of persons reported electronically for testing of COVID-19 at IDPH, commercial or hospital laboratories. All numbers displayed are provisional and subject to change. Information regarding the number of">
+    <meta name="description" content="English Daily COVID-19 Press Conferences Coronavirus Disease 2019 (COVID-19) in Illinois Test Results Positive # Negative # Deaths # Total Persons Tested* # *Total number of people reported electronically for testing of COVID-19 at IDPH, commercial or hospital laboratories. Deaths are included in the number of positive cases All numbers displayed are provisional and subject to">
     <meta name="generator" content="Drupal 7 (https://www.drupal.org)">
     <link rel="canonical" href="http://www.dph.illinois.gov/covid19">
     <link rel="shortlink" href="http://www.dph.illinois.gov/node/22076">
@@ -90,7 +90,7 @@
     <script src="http://www.dph.illinois.gov/sites/all/libraries/superfish/supersubs.js?q7rrwx"></script>
     <script src="http://www.dph.illinois.gov/sites/all/modules/superfish/superfish.js?q7rrwx"></script>
     <script src="http://www.dph.illinois.gov/sites/all/themes/idph/js/idph.js?q7rrwx"></script>
-    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"Pa_xDPzRAPR-CWuU_5WuF95j5rULcEfwasYPgkHoE5U","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
+    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"Y1bigRtIWCUZadtDSTuimDujHmL0Sb9CkOsq7lyzzA8","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
     <!--
   [if lt IE 9]>
       <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
@@ -98,9 +98,9 @@
   -->
     <style id="plotly.js-style-global"></style>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-    <style id="plotly.js-style-modebar-4ebde8"></style>
-    <style id="plotly.js-style-modebar-5f4ed7"></style>
-    <style id="plotly.js-style-modebar-50e386"></style>
+    <style id="plotly.js-style-modebar-d4f47f"></style>
+    <style id="plotly.js-style-modebar-b76004"></style>
+    <style id="plotly.js-style-modebar-d50755"></style>
   </head>
   <body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-22076 node-type-diseases-and-conditions section-topics-services">
     <p id="skip-link">
@@ -124,7 +124,7 @@
                     <div class="form-actions form-wrapper" id="edit-actions">
                       <input alt="Search IDPH" type="image" id="edit-submit" name="submit" src="/sites/all/themes/idph/images/icon_search.png" class="form-submit">
                     </div>
-                    <input type="hidden" name="form_build_id" value="form-tOx5pzjOlrOXvc_pDLIWNGs4DKsD0KfZnRKF3NnLi84">
+                    <input type="hidden" name="form_build_id" value="form-u9gfkgDDuGzLITWHkKK8KrOq8M3kFZICKtHOHMDxMdI">
                     <input type="hidden" name="form_id" value="search_block_form">
                   </div>
                 </div>
@@ -1666,7 +1666,7 @@
                       <h2 style="text-align: center;" align="center">Coronavirus Disease 2019 (COVID-19) in Illinois Test Results</h2>
                       <div class="flex-container">
                         <div class="NumberHighlight" style="background:#ff7800;">
-                          <h2>Positive (Confirmed)</h2>
+                          <h2>Positive</h2>
                           <h3 id="covid19positive">1,865</h3>
                         </div>
                         <div class="NumberHighlight" style="background:#1f77b4;display:none;">
@@ -1682,9 +1682,11 @@
                           <h3 id="covid19totaltest">14,209</h3>
                         </div>
                       </div>
-                      <p style="text-align:center;">*Total # of persons reported electronically for testing of COVID-19 at IDPH, commercial or hospital laboratories.
-                        <br>All numbers displayed are provisional and subject to change.
-                        <br>Information regarding the number of persons under investigation updated on
+                      <p style="text-align:center;">
+                        <sub>*Total number of people reported electronically for testing of COVID-19 at IDPH, commercial or hospital laboratories. Deaths are included in the number of positive cases
+                          <br>
+                        </sub>
+                        <br>Information regarding the number of people under investigation updated on
                         <span id="updatedDate">3/25/2020</span>.
                         <br>
                       </p>
@@ -1693,7 +1695,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 620px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-4ebde8">
+                              <defs id="defs-d4f47f">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -1717,7 +1719,7 @@
                               <canvas class="gl-canvas gl-canvas-context" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-focus" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-pick" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
-                              <div id="4ebde8-mapbox" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
+                              <div id="d4f47f-mapbox" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
                                 <div class="mapboxgl-canary" style="visibility: hidden;"></div>
                                 <div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate">
                                   <canvas class="mapboxgl-canvas" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" tabindex="0" aria-label="Map" width="1089" height="930"></canvas>
@@ -1726,20 +1728,24 @@
                                   <div class="mapboxgl-ctrl-top-left"></div>
                                   <div class="mapboxgl-ctrl-top-right"></div>
                                   <div class="mapboxgl-ctrl-bottom-left">
-                                    <div class="mapboxgl-ctrl" style="display: none;">
+                                    <div class="mapboxgl-ctrl" style="display: block;">
                                       <a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a>
                                     </div>
                                   </div>
                                   <div class="mapboxgl-ctrl-bottom-right">
-                                    <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-compact mapboxgl-attrib-empty">
-                                      <div class="mapboxgl-ctrl-attrib-inner"></div>
+                                    <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-compact">
+                                      <div class="mapboxgl-ctrl-attrib-inner">
+                                        <a href="https://www.mapbox.com/about/maps/" target="_blank">&#169; Mapbox</a>
+                                        <a href="http://www.openstreetmap.org/about/" target="_blank">&#169; OpenStreetMap</a>
+                                        <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=basic-v9&amp;access_token=pk.eyJ1Ijoia2Jvbm92aWNoIiwiYSI6ImNrMm05YmdwOTBmbHozaHBoaGdtNWQyY3IifQ.hX16cd6AxvUMsfWt25bVUw" target="_blank" rel="noopener nofollow">Improve this map</a>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620">
-                              <defs id="topdefs-4ebde8">
+                              <defs id="topdefs-d4f47f">
                                 <g class="clips"></g>
                               </defs>
                               <g class="indicatorlayer"></g>
@@ -1754,7 +1760,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-4ebde8" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-d4f47f" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -1841,7 +1847,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 400px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="400" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-5f4ed7">
+                              <defs id="defs-b76004">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -1861,8 +1867,8 @@
                                   <g class="slice">
                                     <path class="surface" style="pointer-events: all; stroke-width: 0px; fill: rgb(255, 120, 0); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1;" d="M363,188.5l0,-152.5a152.5,152.5 0 1 1 -9.656766873749886,0.3060551350808396Z"></path>
                                     <g class="slicetext">
-                                      <text data-notex="1" class="slicetext" transform="translate(436.6764460802569,353.35801671856024)" text-anchor="middle" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="Positive (confirmed)&lt;br&gt;1865" data-math="N" x="0" y="0">
-                                        <tspan class="line" dy="0em" x="0" y="0">Positive (confirmed)</tspan>
+                                      <text data-notex="1" class="slicetext" transform="translate(399.0934382677569,353.35801671856024)" text-anchor="middle" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="Positive&lt;br&gt;1865" data-math="N" x="0" y="0">
+                                        <tspan class="line" dy="0em" x="0" y="0">Positive</tspan>
                                         <tspan class="line" dy="1.3em" x="0" y="0">1865</tspan>
                                       </text>
                                     </g>
@@ -1884,10 +1890,10 @@
                             </svg>
                             <div class="gl-container"></div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="400">
-                              <defs id="topdefs-5f4ed7">
+                              <defs id="topdefs-b76004">
                                 <g class="clips"></g>
-                                <clippath id="legend5f4ed7">
-                                  <rect width="256" height="29" x="0" y="0"></rect>
+                                <clippath id="legendb76004">
+                                  <rect width="181" height="29" x="0" y="0"></rect>
                                 </clippath>
                               </defs>
                               <g class="indicatorlayer"></g>
@@ -1897,11 +1903,11 @@
                               </g>
                               <g class="infolayer">
                                 <g class="legend" pointer-events="all" transform="translate(108, 371)">
-                                  <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="256" height="29" x="0" y="0"></rect>
-                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legend5f4ed7')">
+                                  <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="181" height="29" x="0" y="0"></rect>
+                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legendb76004')">
                                     <g class="groups">
                                       <g class="traces" style="opacity: 1;" transform="translate(0, 14.5)">
-                                        <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positive (confirmed)" data-math="N">Positive (confirmed)</text>
+                                        <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positive" data-math="N">Positive</text>
                                         <g class="layers" style="opacity: 1;">
                                           <g class="legendfill"></g>
                                           <g class="legendlines"></g>
@@ -1911,9 +1917,9 @@
                                             </g>
                                           </g>
                                         </g>
-                                        <rect class="legendtoggle" style="cursor: pointer; fill: rgb(0, 0, 0); fill-opacity: 0;" pointer-events="all" x="0" y="-9.5" width="164.5833282470703" height="19"></rect>
+                                        <rect class="legendtoggle" style="cursor: pointer; fill: rgb(0, 0, 0); fill-opacity: 0;" pointer-events="all" x="0" y="-9.5" width="89.39999389648438" height="19"></rect>
                                       </g>
-                                      <g class="traces" style="opacity: 1;" transform="translate(167.0833282470703, 14.5)">
+                                      <g class="traces" style="opacity: 1;" transform="translate(91.89999389648438, 14.5)">
                                         <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Deaths" data-math="N">Deaths</text>
                                         <g class="layers" style="opacity: 1;">
                                           <g class="legendfill"></g>
@@ -1936,7 +1942,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-5f4ed7" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-b76004" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -2029,7 +2035,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 700px; height: 400px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="400" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-50e386">
+                              <defs id="defs-d50755">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -2049,8 +2055,8 @@
                                   <g class="slice">
                                     <path class="surface" style="pointer-events: all; stroke-width: 0px; fill: rgb(255, 120, 0); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1;" d="M350,188.5l0,-152.5a152.5,152.5 0 1 1 -9.656766873749886,0.3060551350808396Z"></path>
                                     <g class="slicetext">
-                                      <text data-notex="1" class="slicetext" transform="translate(430.5436335802569,353.35801671856024)" text-anchor="middle" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="Positivo (confirmados)&lt;br&gt;1865" data-math="N" x="0" y="0">
-                                        <tspan class="line" dy="0em" x="0" y="0">Positivo (confirmados)</tspan>
+                                      <text data-notex="1" class="slicetext" transform="translate(386.1598445177569,353.35801671856024)" text-anchor="middle" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="Positivo&lt;br&gt;1865" data-math="N" x="0" y="0">
+                                        <tspan class="line" dy="0em" x="0" y="0">Positivo</tspan>
                                         <tspan class="line" dy="1.3em" x="0" y="0">1865</tspan>
                                       </text>
                                     </g>
@@ -2072,10 +2078,10 @@
                             </svg>
                             <div class="gl-container"></div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="400">
-                              <defs id="topdefs-50e386">
+                              <defs id="topdefs-d50755">
                                 <g class="clips"></g>
-                                <clippath id="legend50e386">
-                                  <rect width="275" height="29" x="0" y="0"></rect>
+                                <clippath id="legendd50755">
+                                  <rect width="187" height="29" x="0" y="0"></rect>
                                 </clippath>
                               </defs>
                               <g class="indicatorlayer"></g>
@@ -2085,11 +2091,11 @@
                               </g>
                               <g class="infolayer">
                                 <g class="legend" pointer-events="all" transform="translate(101, 371)">
-                                  <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="275" height="29" x="0" y="0"></rect>
-                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legend50e386')">
+                                  <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="187" height="29" x="0" y="0"></rect>
+                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legendd50755')">
                                     <g class="groups">
                                       <g class="traces" style="opacity: 1;" transform="translate(0, 14.5)">
-                                        <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positivo (confirmados)" data-math="N">Positivo (confirmados)</text>
+                                        <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Positivo" data-math="N">Positivo</text>
                                         <g class="layers" style="opacity: 1;">
                                           <g class="legendfill"></g>
                                           <g class="legendlines"></g>
@@ -2099,9 +2105,9 @@
                                             </g>
                                           </g>
                                         </g>
-                                        <rect class="legendtoggle" style="cursor: pointer; fill: rgb(0, 0, 0); fill-opacity: 0;" pointer-events="all" x="0" y="-9.5" width="178.3000030517578" height="19"></rect>
+                                        <rect class="legendtoggle" style="cursor: pointer; fill: rgb(0, 0, 0); fill-opacity: 0;" pointer-events="all" x="0" y="-9.5" width="89.51666259765625" height="19"></rect>
                                       </g>
-                                      <g class="traces" style="opacity: 1;" transform="translate(180.8000030517578, 14.5)">
+                                      <g class="traces" style="opacity: 1;" transform="translate(92.01666259765625, 14.5)">
                                         <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Muertos" data-math="N">Muertos</text>
                                         <g class="layers" style="opacity: 1;">
                                           <g class="legendfill"></g>
@@ -2124,7 +2130,7 @@
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-50e386" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-d50755" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -2193,19 +2199,6 @@
                       </p>
                     </dd>
                   </dl>
-                  <h2>
-                    <strong>
-                      <u>Governor Issues Disaster Proclamation</u>
-                    </strong>
-                  </h2>
-                  <p>JB Pritzker, Governor of the State of Illinois, in the interest of aiding the people of Illinois and the local governments responsible for ensuring public health and safety issues a Gubernatorial Disaster Proclamation in response to the ongoing coronavirus (COVID-19) situation.</p>
-                  <p>This proclamation will assist Illinois agencies in coordinating State and Federal resources, including the Strategic National Stockpile of medicines and protective equipment, to support local governments in preparation for any action that may be necessary related to the potential impact of COVID-19 in the State of Illinois.</p>
-                  <p>
-                    <a href="https://www2.illinois.gov/sites/coronavirus/Documents/APPROVED%20-%20Coronavirus%20Disaster%20Proc%20WORD.pdf" starget="_blank">Read proclamation</a>
-                  </p>
-                  <h3>
-                    <a href="/covid19/governor-pritzkers-executive-orders-and-rules">View all Executive Orders and Rules related to COVID-19</a>
-                  </h3>
                   <script>
   <!--//--><![CDATA[// ><!--
   
@@ -2268,7 +2261,7 @@
   
           var dataCoronaviruspie = [{
               type: 'pie',
-              labels: ['Positive (confirmed)', 'Deaths'],
+              labels: ['Positive', 'Deaths'],
               values: [rows.characteristics_by_county.values.filter(function (r) { return r.County == 'Illinois' })[0].confirmed_cases, rows.characteristics_by_county.values.filter(function (r) { return r.County == 'Illinois' })[0].deaths],
               marker: { colors: ['rgb(255,120,0)', 'rgb(255,0,0)'], },
               textposition: 'outside',
@@ -2279,7 +2272,7 @@
   
           var dataCoronaviruspiees = [{
               type: 'pie',
-              labels: ['Positivo (confirmados)', 'Muertos'],
+              labels: ['Positivo', 'Muertos'],
               values: [rows.characteristics_by_county.values.filter(function (r) { return r.County == 'Illinois' })[0].confirmed_cases, rows.characteristics_by_county.values.filter(function (r) { return r.County == 'Illinois' })[0].deaths],
               marker: { colors: ['rgb(255,120,0)', 'rgb(255,0,0)'], },
               textposition: 'outside',
@@ -2512,7 +2505,7 @@
           </div>
           <div id="block-views-tweets-block" class="block block-views block-footer block-footer4 last even">
             <h2 class="block__title block-title">TRENDING TOPICS @IDPH</h2>
-            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-ee5c3fc2f1ad27a7336e49fed046a4e3">
+            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-5a28868be87a0800c096f41913fa9f65">
               <div class="view-content">
                 <div class="item-list">
                   <ul>
@@ -2525,7 +2518,7 @@
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">46 min 2 sec</em>
+                          <em class="placeholder">1 hour 16 min</em>
                         </span>
                       </span>
                     </li>
@@ -2539,7 +2532,7 @@
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">1 hour 6 min</em>
+                          <em class="placeholder">1 hour 36 min</em>
                         </span>
                       </span>
                     </li>
@@ -2572,7 +2565,7 @@
       </div>
     </div>
     <script src="http://www.dph.illinois.gov/sites/all/libraries/respondjs/respond.min.js?q7rrwx"></script>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":268,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":178,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
     <svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;">
       <path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0px; fill: black;"></path>
     </svg>
