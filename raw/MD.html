@@ -6,6 +6,7 @@
     <meta http-equiv="Expires" content="0">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
     <script type="text/javascript">
   // <![CDATA[
@@ -29,7 +30,8 @@
     <script type="text/javascript" src="/ScriptResource.axd?d=GZZwqxhr4AGqAxm-vzbNNte4h-tgDSwBkAKlk_3UGEOvOHo4OofNWfc1RFuv1Y2Uqhh6g4AI6TEr3of6A97BP2MtH_3d_BJEtR9qmCM_DSuPLninclz_3QTRTBixcx0f09LhWhsOR49zmGm4_73ePMysDGgfPmjJ4CAv3O1RjFo-StrR0&amp;t=3f4a792d"></script>
     <!--_lcid="1033" _version="14.0.7006" _dal="1"-->
     <!--_LocalBinding-->
-    <script id="yui_3_1_1_1_15851992542032" type="text/javascript" charset="utf-8" src="https://www.maryland.gov/branding/statewideNavigationDefer2017.js"></script>
+    <script id="yui_3_1_1_1_15852010441682" type="text/javascript" charset="utf-8" src="https://www.maryland.gov/branding/statewideNavigationDefer2017.js"></script>
+    <style type="text/css">#mdgov_sliverRight a:focus img, img:hover{ border-bottom: 1px solid white; }#overlay {visibility: hidden;position:absolute;left:0px;right: 0px; top: 0px; z-index: 21000; margin-left: auto; margin-right: auto; max-width: 900px;}#overlay #languages {width:100%;margin: 20px;background-color: #fff;border:3px solid #000;border-radius: 25px;padding: 20px;}#overlay:hover #languages { opacity:1}#overlay #translateMessage {display: none;margin: 20px;background-color: #fff;border:3px solid #000;border-radius:25px;padding: 20px;} #overlay:hover #translateMessage { opacity:1}#overlay-background{height:100%;width:100%;position:fixed;top:0;left:0;opacity: 0.65;background-color:#000;z-index:20100;visibility:hidden;-ms-filter:"alpha(opacity=65)";filter: alpha(opacity=65);}.Disclaimer { }.LangDesc {position:absolute;left:-10000px;top:auto;width:1px;height:1px; overflow:hidden;}#translateLanguageSelect {height:30px;} #dislclaimerLanguageSelect {height:30px;}@media (max-width: 767px) { #overlay {width: 80%;} #overlay #translateMessage {margin: 20px 0;} }@media (max-width: 480px) { }#overlay #languages {margin: 20px 0; box-sizing: border-box;}#dislclaimerLanguageSelect {margin-bottom: 20px;}</style>
     <script type="text/javascript" src="/_layouts/1033/core.js?rev=bewW9rgjZqv0mAB2FcLYLw%3D%3D"></script>
     <script type="text/javascript" src="/_layouts/sp.core.js?rev=7ByNlH%2BvcgRJg%2BRCctdC0w%3D%3D"></script>
     <script type="text/javascript" src="/_layouts/ScriptResx.ashx?culture=en%2Dus&amp;name=SP%2ERes&amp;rev=b6%2FcRx1a6orhAQ%2FcF%2B0ytQ%3D%3D"></script>
@@ -199,19 +201,15 @@
                       </div>
                     </div>
                     <div id="mdgov_sliverRight">
-                      <!--STEP 4: displays statewide nav bar-->
-                      <script type="text/javascript">
-  YUI().use(function (Y) {
-                                                   var url = "https://www.maryland.gov/branding/statewideNavigationDefer2017.js",
-  	             						                obj = Y.Get.script(url, {
-  	             						                    onSuccess: function () {
-  	             						                        document.getElementById('mdgov_sliverRight').innerHTML = showStatewideNavigationWithTranslate("white");
-  	             						                    }
-  	             						                });
-                                               });
-  </script>
-                      <noscript>You must have Javascript enabled to see this menu.</noscript>
-                      <!--END statewide nav bar-->
+                      <div style="font-family: arial,verdana,helvetica,sans-serif; font-size: xx-small; color: #FFFFFF;">
+                        <a class="hidden-phone" href="https://www.maryland.gov" target="_blank" style="padding: 0px 5px 0px 0px;">Maryland.gov</a>
+                        <a href="https://www.doit.state.md.us/phonebook/" target="_blank" style="padding: 0px 5px 0px 5px;">Phone Directory</a>
+                        <a href="https://www.maryland.gov/pages/agency_directory.aspx" target="_blank" style="padding: 0px 5px 0px 5px;">State Agencies</a>
+                        <a class="hidden-phone" href="https://www.maryland.gov/pages/online_services.aspx" target="_blank" style="padding: 0px 0px 0px 5px;">Online Services</a>
+                        <a href="#" style="padding: 0px 0px 0px 10px;" onclick="showLanguages();">
+                          <img src="https://www.maryland.gov/branding/translate_button.png" alt="Translate">
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1338,5 +1336,382 @@
     </form>
     <script type="text/javascript" src="/_layouts/MDResponsiveToolKit/egov/js/base.js"></script>
     <script type="text/javascript" src="/Style%20Library/egov/js/DoIT-FAQ.js"></script>
+    <div id="overlay-background"></div>
+    <div id="overlay" class="container-fluid">
+      <div class="overlay-background"></div>
+      <div id="languages" class="row-fluid">
+        <a href="#" onclick="showLanguages()">
+          <img src="https://www.maryland.gov/branding/close-icon.png" style="float:right;height: 30px;width:30px;margin-right:10px;margin-top:10px;" alt="Close window">
+        </a>
+        <div class="span4">
+          <div class="LangDesc" id="BeginLink" tabindex="0">Using the translate feature with screen reading software requires having the synthesizer for the foreign language you request already installed on your screen reader.  NVDA users should use the e-Speak NG synthesizer. JAWS users should download and install Vocalizer Expressive voices. VoiceOver and Narrator users should download the appropriate voices directly from Apple and Microsoft.  To view the disclaimer, press down arrow until you hear the words &#8220;view disclaimer&#8221; and press enter.</div>
+          <ul style="list-style:none;">
+            <li>
+              <a href="#" onclick="showDisclaimer();">View Disclaimer</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=es" class="translateLink">Spanish</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=zh-CN" class="translateLink">Chinese - Simplified</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=zh-TW" class="translateLink">Chinese - Traditional</a>
+            </li>
+            <hr>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=af" class="mdgov_iaLink translateLink" style="font-size: small;">Afrikaans</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sq" class="mdgov_iaLink translateLink" style="font-size: small;">Albanian - shqiptar</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=am" class="mdgov_iaLink translateLink" style="font-size: small;">Amharic - &#4768;&#4635;&#4653;&#4763;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ar" class="mdgov_iaLink translateLink" style="font-size: small;">Arabic -  &#1593;&#1585;&#1576;&#1609;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=hy" class="mdgov_iaLink translateLink" style="font-size: small;">Armenian -&#1344;&#1377;&#1397;&#1381;&#1408;&#1383;&#1398;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=az" class="mdgov_iaLink translateLink" style="font-size: small;">Azerbaijani - Az&#601;rbaycan</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=eu" class="mdgov_iaLink translateLink" style="font-size: small;">Basque - Euskal</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=be" class="mdgov_iaLink translateLink" style="font-size: small;">Belarusian -&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=bn" class="mdgov_iaLink translateLink" style="font-size: small;">Bengali - &#2476;&#2494;&#2457;&#2494;&#2482;&#2495;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=bs" class="mdgov_iaLink translateLink" style="font-size: small;">Bosnian -  bBosanski</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=bg" class="mdgov_iaLink translateLink" style="font-size: small;">Bulgarian - &#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ca" class="mdgov_iaLink translateLink" style="font-size: small;">Catalan - Catal&#224;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ceb" class="mdgov_iaLink translateLink" style="font-size: small;">Cebuano</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ny" class="mdgov_iaLink translateLink" style="font-size: small;">Chichewa</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=co" class="mdgov_iaLink translateLink" style="font-size: small;">Corsican - Corsu</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=hr" class="mdgov_iaLink translateLink" style="font-size: small;">Croatian - hrvatski</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=cs" class="mdgov_iaLink translateLink" style="font-size: small;">Czech - &#269;e&#353;tina</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=da" class="mdgov_iaLink translateLink" style="font-size: small;">Danish - dansk</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=nl" class="mdgov_iaLink translateLink" style="font-size: small;">Dutch - Nederlands</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=eo" class="mdgov_iaLink translateLink" style="font-size: small;">Esperanto</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=et" class="mdgov_iaLink translateLink" style="font-size: small;">Estonian - Eesti keel</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=tl" class="mdgov_iaLink translateLink" style="font-size: small;">Filipino</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=fi" class="mdgov_iaLink translateLink" style="font-size: small;">Finnish - Suomalainen</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=fr" class="mdgov_iaLink translateLink" style="font-size: small;">French - fran&#231;ais</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=fy" class="mdgov_iaLink translateLink" style="font-size: small;">Frisian - Frysk</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=gl" class="mdgov_iaLink translateLink" style="font-size: small;">Galician - Galego</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ka" class="mdgov_iaLink translateLink" style="font-size: small;">Georgian - &#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=de" class="mdgov_iaLink translateLink" style="font-size: small;">German - Deutsche</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=el" class="mdgov_iaLink translateLink" style="font-size: small;">Greek - &#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=gu" class="mdgov_iaLink translateLink" style="font-size: small;">Gujarati - &#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span4">
+          <ul style="list-style:none;">
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ht" class="mdgov_iaLink translateLink" style="font-size: small;">Haitian Creole - Krey&#242;l Ayisyen</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ha" class="mdgov_iaLink translateLink" style="font-size: small;">Hausa</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=haw" class="mdgov_iaLink translateLink" style="font-size: small;">Hawaiian - &#699;&#332;lelo Hawai&#699;i</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=iw" class="mdgov_iaLink translateLink" style="font-size: small;">Hebrew - &#1506;&#1460;&#1489;&#1512;&#1460;&#1497;&#1514;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=hi" class="mdgov_iaLink translateLink" style="font-size: small;">Hindi - &#2361;&#2367;&#2306;&#2342;&#2368;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=hmn" class="mdgov_iaLink translateLink" style="font-size: small;">Hmong - Hmoob</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=hu" class="mdgov_iaLink translateLink" style="font-size: small;">Hungarian - Magyar</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=is" class="mdgov_iaLink translateLink" style="font-size: small;">Icelandic - &#205;slensku</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ig" class="mdgov_iaLink translateLink" style="font-size: small;">Igbo</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=id" class="mdgov_iaLink translateLink" style="font-size: small;">Indonesian - bahasa Indonesia</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ga" class="mdgov_iaLink translateLink" style="font-size: small;">Irish - Gaeilge</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=it" class="mdgov_iaLink translateLink" style="font-size: small;">Italian - italiano</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ja" class="mdgov_iaLink translateLink" style="font-size: small;">Japanese - &#26085;&#26412;&#35486;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=jw" class="mdgov_iaLink translateLink" style="font-size: small;">Javanese - Wong Jawa</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=kn" class="mdgov_iaLink translateLink" style="font-size: small;">Kannada - &#3221;&#3240;&#3277;&#3240;&#3233;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=kk" class="mdgov_iaLink translateLink" style="font-size: small;">Kazakh - &#1178;&#1072;&#1079;&#1072;&#1179;&#1096;&#1072;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=km" class="mdgov_iaLink translateLink" style="font-size: small;">Khmer - &#6039;&#6070;&#6047;&#6070;&#6017;&#6098;&#6040;&#6082;&#6042;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ko" class="mdgov_iaLink translateLink" style="font-size: small;">Korean - &#54620;&#44397;&#50612;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ku" class="mdgov_iaLink translateLink" style="font-size: small;">Kurdish (Kurmanji) - Kurd&#238;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ky" class="mdgov_iaLink translateLink" style="font-size: small;">Kyrgyz - &#1050;&#1099;&#1088;&#1075;&#1099;&#1079;&#1095;&#1072;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=lo" class="mdgov_iaLink translateLink" style="font-size: small;">Lao - &#3749;&#3762;&#3751;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=la" class="mdgov_iaLink translateLink" style="font-size: small;">Latin - Latine</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=lv" class="mdgov_iaLink translateLink" style="font-size: small;">Latvian - Latvie&#353;u</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=lt" class="mdgov_iaLink translateLink" style="font-size: small;">Lithuanian - Lietuvi&#353;kai</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=lb" class="mdgov_iaLink translateLink" style="font-size: small;">Luxembourgish - l&#235;tzebuergesch</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mk" class="mdgov_iaLink translateLink" style="font-size: small;">Macedonian - &#1052;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mg" class="mdgov_iaLink translateLink" style="font-size: small;">Malagasy</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ms" class="mdgov_iaLink translateLink" style="font-size: small;">Malay - Melayu</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ml" class="mdgov_iaLink translateLink" style="font-size: small;">Malayalam - &#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mt" class="mdgov_iaLink translateLink" style="font-size: small;">Maltese - Malti</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mi" class="mdgov_iaLink translateLink" style="font-size: small;">Maori</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mr" class="mdgov_iaLink translateLink" style="font-size: small;">Marathi - &#2350;&#2352;&#2366;&#2336;&#2368;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=mn" class="mdgov_iaLink translateLink" style="font-size: small;">Mongolian - &#1052;&#1086;&#1085;&#1075;&#1086;&#1083; &#1093;&#1101;&#1083;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=my" class="mdgov_iaLink translateLink" style="font-size: small;">Myanmar (Burmese)</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ne" class="mdgov_iaLink translateLink" style="font-size: small;">Nepali - &#2344;&#2375;&#2346;&#2366;&#2354;&#2368;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=no" class="mdgov_iaLink translateLink" style="font-size: small;">Norwegian - norsk</a>
+            </li>
+          </ul>
+        </div>
+        <div class="span3">
+          <ul style="list-style:none;">
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ps" class="mdgov_iaLink translateLink" style="font-size: small;">Pashto - &#1662;&#1690;&#1578;&#1608;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=fa" class="mdgov_iaLink translateLink" style="font-size: small;">Persian - &#1601;&#1575;&#1585;&#1587;&#1740;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=pl" class="mdgov_iaLink translateLink" style="font-size: small;">Polish - Polskie</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=pt" class="mdgov_iaLink translateLink" style="font-size: small;">Portuguese - Portugu&#234;s</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=pa" class="mdgov_iaLink translateLink" style="font-size: small;">Punjabi - &#2602;&#2672;&#2588;&#2622;&#2604;&#2624;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ro" class="mdgov_iaLink translateLink" style="font-size: small;">Romanian - Rom&#226;n&#259;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ru" class="mdgov_iaLink translateLink" style="font-size: small;">Russian - &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sm" class="mdgov_iaLink translateLink" style="font-size: small;">Samoan - Samoa</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=gd" class="mdgov_iaLink translateLink" style="font-size: small;">Scots Gaelic - G&#224;idhlig na h-Alba</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sr" class="mdgov_iaLink translateLink" style="font-size: small;">Serbian - &#1057;&#1088;&#1087;&#1089;&#1082;&#1080;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=st" class="mdgov_iaLink translateLink" style="font-size: small;">Sesotho</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sn" class="mdgov_iaLink translateLink" style="font-size: small;">Shona</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sd" class="mdgov_iaLink translateLink" style="font-size: small;">Sindhi - &#1587;&#1606;&#1676;&#1610;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=si" class="mdgov_iaLink translateLink" style="font-size: small;">Sinhala - &#3523;&#3538;&#3458;&#3524;&#3517;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sk" class="mdgov_iaLink translateLink" style="font-size: small;">Slovak - slovensk&#253;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sl" class="mdgov_iaLink translateLink" style="font-size: small;">Slovenian - Sloven&#353;&#269;ina</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=so" class="mdgov_iaLink translateLink" style="font-size: small;">Somali</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=su" class="mdgov_iaLink translateLink" style="font-size: small;">Sundanese - Sunda</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sw" class="mdgov_iaLink translateLink" style="font-size: small;">Swahili - Kiswahili</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=sv" class="mdgov_iaLink translateLink" style="font-size: small;">Swedish - svenska</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=tg" class="mdgov_iaLink translateLink" style="font-size: small;">Tajik - &#1058;&#1086;&#1207;&#1080;&#1082;&#1251;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ta" class="mdgov_iaLink translateLink" style="font-size: small;">Tamil - &#2980;&#2990;&#3007;&#2996;&#3021;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=te" class="mdgov_iaLink translateLink" style="font-size: small;">Telugu - &#3108;&#3142;&#3122;&#3137;&#3095;&#3137;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=th" class="mdgov_iaLink translateLink" style="font-size: small;">Thai - &#3652;&#3607;&#3618;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=tr" class="mdgov_iaLink translateLink" style="font-size: small;">Turkish - T&#252;rk</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=uk" class="mdgov_iaLink translateLink" style="font-size: small;">Ukrainian - &#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=ur" class="mdgov_iaLink translateLink" style="font-size: small;">Urdu - &#1575;&#1585;&#1583;&#1608;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=uz" class="mdgov_iaLink translateLink" style="font-size: small;">Uzbek - O"zbek</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=vi" class="mdgov_iaLink translateLink" style="font-size: small;">Vietnamese - Ti&#7871;ng Vi&#7879;t</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=cy" class="mdgov_iaLink translateLink" style="font-size: small;">Welsh - Cymraeg</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=xh" class="mdgov_iaLink translateLink" style="font-size: small;">Xhosa - isiXhosa</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=yi" class="mdgov_iaLink translateLink" style="font-size: small;">Yiddish - &#1497;&#1497;&#1460;&#1491;&#1497;&#1513;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=yo" class="mdgov_iaLink translateLink" style="font-size: small;">Yoruba - Yor&#249;b&#225;</a>
+            </li>
+            <li>
+              <a href="https://translate.google.com/translate?hl=en&amp;sl=en&amp;u=https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx&amp;tl=zu" class="mdgov_iaLink translateLink" style="font-size: small;">Zulu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="translateMessage">
+        <a href="#" onclick="showDisclaimer()">
+          <img src="https://www.maryland.gov/branding/close-icon.png" style="float: right;height: 30px;width: 30px;" alt="Close Disclaimer">
+        </a>
+        <form id="translateForm">
+          <label for="dislclaimerLanguageSelect">View Disclaimer in:</label>
+          <select id="dislclaimerLanguageSelect" name="dislclaimerLanguageSelect" onchange="selectDisclaimerLanguage(this);">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="ChineseS">Chinese - Simplified</option>
+            <option value="ChineseT">Chinese - Traditional</option>
+          </select>
+          <div id="English" class="Disclaimer">
+            <h2>Google Translate Disclaimer</h2>
+            <p>The Maryland Department of Information Technology (&#8220;DoIT&#8221;) offers translations of the content through Google Translate. Because Google Translate is an external website, DoIT does not control the quality or accuracy of translated content. All DoIT content is filtered through Google Translate which may result in unexpected and unpredictable degradation of portions of text, images and the general appearance on translated pages. Google Translate may maintain unique privacy and use policies. These policies are not controlled by DoIT and are not associated with DoIT&#8217;s privacy and use policies. After selecting a translation option, users will be notified that they are leaving DoIT&#8217;s website. Users should consult the original English content on DoIT&#8217;s website if there are any questions about the translated content.</p>
+            <p>DoIT uses Google Translate to provide language translations of its content. Google Translate is a free, automated service that relies on data and technology &#8203;&#8203;&#8203;to provide its translations. The Google Translate feature is provided for informational purposes only. Translations cannot be guaranteed as exact or without the inclusion of incorrect or inappropriate language. Google Translate is a third-party service and site users will be leaving DoIT to utilize translated content. As such, DoIT does not guarantee and does not accept responsibility for, the accuracy, reliability, or performance of this service nor the limitations provided by this service, such as the inability to translate specific files like PDFs and graphics (e.g. .jpgs, .gifs, etc.).</p>
+            <p>DoIT provides Google Translate as an online tool for its users, but DoIT does not directly endorse the website or imply that it is the only solution available to users. All site visitors may choose to use alternate tools for their translation needs. Any individuals or parties that use DoIT content in translated form, whether by Google Translate or by any other translation services, do so at their own risk. DoIT is not liable for any loss or damages arising out of, or issues related to, the use of or reliance on translated content. DoIT assumes no liability for any site visitor&#8217;s activities in connection with use of the Google Translate functionality or content.</p>
+            <p>The Google Translate service is a means by which DoIT offers translations of content and is meant solely for the convenience of non-English speaking users of the website. The translated content is provided directly and dynamically by Google; DoIT has no direct control over the translated content as it appears using this tool. Therefore, in all contexts, the English content, as directly provided by DoIT is to be held authoritative.</p>
+          </div>
+          <div id="Spanish" class="Disclaimer" style="display:none;">
+            <h2>Exenci&#243;n de Responsabilidad del Traductor Google</h2>
+            <p>El Departamento de Tecnolog&#237;a de la Informaci&#243;n de Maryland (DoIT, siglas en ingl&#233;s) ofrece traducciones del contenido a trav&#233;s del Traductor Google (Google Translate). Debido a que el Traductor Google es un sitio web externo, el DoIT no controla la calidad o exactitud del contenido traducido. Todo el contenido del DoIT es filtrado a trav&#233;s del Traductor Google lo que puede resultar en una degradaci&#243;n inesperada o impredecible de porciones del texto, im&#225;genes y la apariencia general de las p&#225;ginas traducidas. El Traductor Google puede mantener una pol&#237;tica de uso y privacidad &#250;nicas. Estas pol&#237;ticas no son controladas por el DoIT y no est&#225;n asociadas con las pol&#237;ticas de privacidad y uso del DoIT. Despu&#233;s de seleccionar una opci&#243;n de traducci&#243;n, los usuarios ser&#225;n notificados de que est&#225;n abandonando el sitio web del DoIT. Los usuarios deben consultar el contenido original en ingl&#233;s en el sitio web del DoIT si tienen alguna pregunta acerca del contenido traducido.</p>
+            <p>El DoIT usa el Traductor Google para proporcionar traducciones ling&#252;&#237;sticas de su contenido. El Traductor Google es un servicio gratis y automatizado que se basa en datos y tecnolog&#237;a para proporcionar sus traducciones. La funci&#243;n del Traductor Google es proporcionada solamente para prop&#243;sitos informativos. Las traducciones no pueden ser garantizadas como exactas o sin la inclusi&#243;n de lenguaje incorrecto o inapropiado. El Traductor Google es un servicio de terceros y los usuarios del sitio dejar&#225;n al DoIT para utilizar el contenido traducido. Como tal, el DoIT no garantiza y no acepta responsabilidad por la exactitud, confiabilidad o desempe&#241;o de este servicio o de las limitaciones proporcionadas por este servicio, tales como la inhabilidad de traducir archivos espec&#237;ficos como PDF y gr&#225;ficos (p.e. .jpgs, .gifs, etc.).</p>
+            <p>El DoIT proporciona el Traductor Google como una herramienta en l&#237;nea para sus usuarios, pero el DoIT no endosa directamente el sitio web o implica que es la &#250;nica soluci&#243;n disponible para los usuarios. Todos los visitantes al sitio pueden escoger usar herramientas alternativas para sus necesidades de traducci&#243;n. Cualquier persona que utilice el contenido del DoIT en su forma traducida, ya sea por el Traductor Google o por cualquier otro servicio de traducci&#243;n, lo hace bajo su propio riesgo. El DoIT no es responsable por ninguna p&#233;rdida o da&#241;o que surja de, o problemas relacionados con el uso o dependencia del contenido traducido. El DoIT no asume ninguna responsabilidad por las actividades de los visitantes del sitio en conexi&#243;n con el uso de la funcionalidad o contenido del Traductor Google.</p>
+            <p>El servicio del Traductor Google es un medio por el cual el DoIT ofrece traducciones de contenido y est&#225; destinado solamente para la conveniencia de los usuarios del sitio web que no hablan ingl&#233;s. El contenido traducido es proporcionado directa y din&#225;micamente por Google; el DoIT no tiene control directo sobre el contenido traducido tal y como aparece utilizando esta herramienta. Por lo tanto, en todos los contextos, el contenido en ingl&#233;s, tal y como se proporciona por el DoIT ser&#225; considerado como el autorizado.</p>
+          </div>
+          <div id="ChineseS" class="Disclaimer" style="display:none;">
+            <h2>Google&#32763;&#35793;&#20813;&#36131;&#22768;&#26126;</h2>
+            <p>&#39532;&#37324;&#20848;&#24030;&#20449;&#24687;&#25216;&#26415;&#37096;&#65288;DoIT&#65289;&#36890;&#36807;Google&#32763;&#35793;&#65288;Google Translate&#65289;&#20026;&#20854;&#32593;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#32593;&#31449;&#20869;&#23481;&#32763;&#35793;&#12290;&#30001;&#20110;Google&#32763;&#35793;&#26159;&#19968;&#20010;&#22806;&#37096;&#32593;&#31449;&#65292;&#22240;&#27492;DoIT&#26080;&#27861;&#25511;&#21046;&#32763;&#35793;&#20869;&#23481;&#30340;&#36136;&#37327;&#25110;&#20934;&#30830;&#24615;&#12290;&#25152;&#26377;&#32463;&#32763;&#35793;&#30340;DoIT&#32593;&#31449;&#20869;&#23481;&#36890;&#36807;Google&#32763;&#35793;&#36807;&#28388;&#65292;&#22240;&#27492;&#26377;&#21487;&#33021;&#20986;&#29616;&#26080;&#27861;&#39044;&#26399;&#30340;&#26576;&#20123;&#25991;&#26412;&#20869;&#23481;&#12289;&#22270;&#20687;&#20197;&#21450;&#32763;&#35793;&#39029;&#38754;&#34987;&#30772;&#22351;&#30340;&#24773;&#20917;&#12290;Google&#32763;&#35793;&#26377;&#21487;&#33021;&#20445;&#30041;&#29420;&#29305;&#30340;&#38544;&#31169;&#26435;&#21644;&#20351;&#29992;&#25919;&#31574;&#12290;DoIT&#24182;&#19981;&#25511;&#21046;&#36825;&#20123;&#25919;&#31574;&#65292;&#19988;&#23427;&#20204;&#19982;DoIT&#26412;&#36523;&#30340;&#38544;&#31169;&#26435;&#21644;&#20351;&#29992;&#25919;&#31574;&#26080;&#20851;&#12290;&#22312;&#20570;&#38656;&#35201;&#32763;&#35793;&#30340;&#36873;&#25321;&#21518;&#65292;&#20351;&#29992;&#32773;&#23558;&#34987;&#21578;&#30693;&#20854;&#23558;&#31163;&#24320;DoIT&#32593;&#31449;&#12290;&#22914;&#26524;&#20351;&#29992;&#32773;&#23545;&#32763;&#35793;&#21518;&#30340;&#20869;&#23481;&#26377;&#20219;&#20309;&#30097;&#38382;&#65292;&#24212;&#20197;DoIT&#32593;&#31449;&#19978;&#30340;&#33521;&#25991;&#21407;&#25991;&#20026;&#20934;&#12290;</p>
+            <p>DoIT&#20351;&#29992;Google&#32763;&#35793;&#20026;&#20854;&#32593;&#31449;&#20869;&#23481;&#25552;&#20379;&#35821;&#35328;&#32763;&#35793;&#26381;&#21153;&#12290;Google&#32763;&#35793;&#26159;&#19968;&#39033;&#20813;&#36153;&#30340;&#33258;&#21160;&#26381;&#21153;&#65292;&#20854;&#20381;&#38752;&#30456;&#20851;&#25968;&#25454;&#21644;&#25216;&#26415;&#26469;&#25552;&#20379;&#32763;&#35793;&#26381;&#21153;&#12290;&#25552;&#20379;Google&#32763;&#35793;&#26381;&#21153;&#30340;&#30446;&#30340;&#20165;&#20026;&#25552;&#20379;&#30456;&#20851;&#20449;&#24687;&#65292;&#22240;&#27492;DoIT&#26080;&#27861;&#20445;&#35777;&#32763;&#35793;&#21518;&#30340;&#20869;&#23481;&#19982;&#21407;&#25991;&#23436;&#20840;&#30456;&#21516;&#25110;&#19981;&#21253;&#21547;&#20219;&#20309;&#19981;&#27491;&#30830;&#25110;&#19981;&#36866;&#23452;&#30340;&#35821;&#35328;&#12290;Google&#32763;&#35793;&#26159;&#19968;&#39033;&#31532;&#19977;&#26041;&#26381;&#21153;&#65292;&#32780;DoIT&#32593;&#31449;&#20351;&#29992;&#32773;&#23558;&#31163;&#24320;DoIT&#32593;&#31449;&#20197;&#20415;&#26597;&#38405;&#32763;&#35793;&#21518;&#30340;&#20869;&#23481;&#12290;&#22240;&#27492;&#65292;DoIT&#24182;&#19981;&#20445;&#35777;&#36825;&#39033;&#26381;&#21153;&#30340;&#20934;&#30830;&#24615;&#12289;&#21487;&#38752;&#24615;&#12289;&#36136;&#37327;&#21644;&#23616;&#38480;&#24615;&#65288;&#22914;&#36825;&#39033;&#26381;&#21153;&#26080;&#27861;&#32763;&#35793;PDF&#12289;&#22270;&#24418;&#65288;&#22914;jpgs&#12289;gifs&#31561;&#65289;&#26684;&#24335;&#30340;&#25991;&#20214;&#65289;&#65292;&#20063;&#19981;&#23545;&#27492;&#36127;&#36131;&#12290;</p>
+            <p>Google&#32763;&#35793;&#26159;DoIT&#20026;&#20854;&#32593;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#30340;&#19968;&#31181;&#32593;&#19978;&#24037;&#20855;&#12290;&#23613;&#31649;&#22914;&#27492;&#65292;DoIT&#24182;&#19981;&#30452;&#25509;&#20026;&#35813;&#32593;&#31449;&#26381;&#21153;&#25552;&#20379;&#25285;&#20445;&#65292;&#20063;&#19981;&#34920;&#26126;&#20351;&#29992;&#32773;&#21482;&#33021;&#20351;&#29992;Google&#32763;&#35793;&#25552;&#20379;&#30340;&#26381;&#21153;&#12290;&#25152;&#26377;DoIT&#32593;&#31449;&#35775;&#38382;&#32773;&#21487;&#20197;&#36873;&#25321;&#20351;&#29992;&#20854;&#23427;&#24037;&#20855;&#20197;&#28385;&#36275;&#20854;&#32763;&#35793;&#38656;&#35201;&#12290;&#20219;&#20309;&#20351;&#29992;&#32763;&#35793;&#21518;&#65288;&#26080;&#35770;&#26159;&#36890;&#36807;Google&#32763;&#35793;&#36824;&#26159;&#36890;&#36807;&#20854;&#23427;&#32763;&#35793;&#26381;&#21153;&#65289;&#30340;DoIT&#32593;&#31449;&#20869;&#23481;&#30340;&#20010;&#20154;&#25110;&#26426;&#26500;&#24212;&#33258;&#34892;&#25215;&#25285;&#39118;&#38505;&#12290;DoIT&#19981;&#23545;&#22240;&#20351;&#29992;&#25110;&#20381;&#36182;&#32763;&#35793;&#21518;&#30340;&#20869;&#23481;&#25152;&#36896;&#25104;&#30340;&#25439;&#22833;&#12289;&#25439;&#23475;&#25110;&#38382;&#39064;&#36127;&#36131;&#12290;DoIT&#19981;&#23545;&#20219;&#20309;&#32593;&#31449;&#35775;&#38382;&#32773;&#19982;&#20351;&#29992;Google&#32763;&#35793;&#21151;&#33021;&#25110;&#20869;&#23481;&#30456;&#20851;&#30340;&#27963;&#21160;&#36127;&#36131;&#12290;</p>
+            <p>Google&#32763;&#35793;&#26381;&#21153;&#26159;DoIT&#20026;&#20854;&#32593;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#30340;&#19968;&#31181;&#32763;&#35793;&#24037;&#20855;&#65292;&#20854;&#21807;&#19968;&#30340;&#30446;&#30340;&#26159;&#20026;&#33521;&#35821;&#38750;&#27597;&#35821;&#30340;&#32593;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#26041;&#20415;&#12290;Google&#30452;&#25509;&#25552;&#20379;&#21160;&#24577;&#30340;&#20869;&#23481;&#32763;&#35793;&#26381;&#21153;&#65292;&#32780;DoIT&#19981;&#30452;&#25509;&#25511;&#21046;&#32763;&#35793;&#21518;&#30340;&#20869;&#23481;&#65292;&#21363;&#20351;&#20854;&#20351;&#29992;&#35813;&#24037;&#20855;&#12290;&#22240;&#27492;&#65292;&#22312;&#21508;&#31181;&#24773;&#20917;&#19979;&#65292;&#20351;&#29992;&#32773;&#24212;&#20197;DoIT&#20026;&#20854;&#30452;&#25509;&#25552;&#20379;&#30340;&#33521;&#25991;&#20869;&#23481;&#20026;&#20934;&#12290;</p>
+          </div>
+          <div id="ChineseT" class="Disclaimer" style="display:none;">
+            <h2>Google&#32763;&#35695;&#20813;&#36012;&#32882;&#26126;</h2>
+            <p>&#39340;&#37324;&#34349;&#24030;&#20449;&#24687;&#25216;&#34899;&#37096;&#65288;DoIT&#65289;&#36890;&#36942;Google&#32763;&#35695;&#65288;Google Translate&#65289;&#28858;&#20854;&#32178;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#32178;&#31449;&#20839;&#23481;&#32763;&#35695;&#12290;&#30001;&#26044;Google&#32763;&#35695;&#26159;&#19968;&#20491;&#22806;&#37096;&#32178;&#31449;&#65292;&#22240;&#27492;DoIT&#28961;&#27861;&#25511;&#21046;&#32763;&#35695;&#20839;&#23481;&#30340;&#36074;&#37327;&#25110;&#28310;&#30906;&#24615;&#12290;&#25152;&#26377;&#32147;&#32763;&#35695;&#30340;DoIT&#32178;&#31449;&#20839;&#23481;&#36890;&#36942;Google&#32763;&#35695;&#36942;&#28670;&#65292;&#22240;&#27492;&#26377;&#21487;&#33021;&#20986;&#29694;&#28961;&#27861;&#38928;&#26399;&#30340;&#26576;&#20123;&#25991;&#26412;&#20839;&#23481;&#12289;&#22294;&#20687;&#20197;&#21450;&#32763;&#35695;&#38913;&#38754;&#34987;&#30772;&#22750;&#30340;&#24773;&#27841;&#12290; Google&#32763;&#35695;&#26377;&#21487;&#33021;&#20445;&#30041;&#29305;&#23450;&#30340;&#38577;&#31169;&#27402;&#21644;&#20351;&#29992;&#25919;&#31574;&#12290;&#36889;&#20123;&#25919;&#31574;&#19981;&#21463;DoIT&#25511;&#21046;&#65292;&#19988;&#33287;DoIT&#26412;&#36523;&#30340;&#38577;&#31169;&#27402;&#21644;&#20351;&#29992;&#25919;&#31574;&#28961;&#38364;&#12290;&#22312;&#36984;&#25799;&#38656;&#35201;&#32763;&#35695;&#30340;&#20869;&#23481;&#24460;&#65292;&#20351;&#29992;&#32773;&#23559;&#34987;&#21578;&#30693;&#20854;&#23559;&#38626;&#38283;DoIT&#32178;&#31449;&#12290;&#22914;&#26524;&#20351;&#29992;&#32773;&#23565;&#32763;&#35695;&#24460;&#30340;&#20839;&#23481;&#26377;&#20219;&#20309;&#30097;&#21839;&#65292;&#25033;&#20197;DoIT&#32178;&#31449;&#19978;&#30340;&#33521;&#25991;&#21407;&#25991;&#28858;&#28310;&#12290;</p>
+            <p>DoIT&#20351;&#29992;Google&#32763;&#35695;&#28858;&#20854;&#32178;&#31449;&#20839;&#23481;&#25552;&#20379;&#35486;&#35328;&#32763;&#35695;&#26381;&#21209;&#12290; Google&#32763;&#35695;&#20381;&#38752;&#30456;&#38364;&#25976;&#25818;&#21644;&#25216;&#34899;&#25552;&#20379;&#20813;&#36027;&#30340;&#33258;&#21205;&#21270;&#32763;&#35695;&#26381;&#21209;&#12290;&#25552;&#20379;Google&#32763;&#35695;&#26381;&#21209;&#30340;&#30446;&#30340;&#20677;&#28858;&#25552;&#20379;&#30456;&#38364;&#20449;&#24687;&#65292;&#22240;&#27492;DoIT&#28961;&#27861;&#20445;&#35657;&#32763;&#35695;&#24460;&#30340;&#20839;&#23481;&#33287;&#21407;&#25991;&#23436;&#20840;&#30456;&#21516;&#25110;&#19981;&#21253;&#21547;&#20219;&#20309;&#19981;&#27491;&#30906;&#25110;&#19981;&#36969;&#23452;&#30340;&#35486;&#35328;&#12290; Google&#32763;&#35695;&#26159;&#19968;&#38917;&#31532;&#19977;&#26041;&#26381;&#21209;&#65292;&#19988;DoIT&#32178;&#31449;&#20351;&#29992;&#32773;&#23559;&#38626;&#38283;DoIT&#32178;&#31449;&#25165;&#33021;&#26597;&#38321;&#32763;&#35695;&#24460;&#30340;&#20839;&#23481;&#12290;&#22240;&#27492;&#65292;DoIT&#20006;&#19981;&#20445;&#35657;&#36889;&#38917;&#26381;&#21209;&#30340;&#28310;&#30906;&#24615;&#12289;&#21487;&#38752;&#24615;&#12289;&#36074;&#37327;&#25110;&#23616;&#38480;&#24615;&#65288;&#27604;&#22914;&#65292;&#36889;&#38917;&#26381;&#21209;&#28961;&#27861;&#32763;&#35695;PDF&#12289;&#22294;&#24418;&#65288;&#22914;jpgs&#12289;gifs&#31561;&#65289;&#31561;&#26684;&#24335;&#30340;&#25991;&#20214;&#65289;&#65292;&#20063;&#19981;&#23565;&#27492;&#36000;&#36012;&#12290;</p>
+            <p>Google&#32763;&#35695;&#26159;DoIT&#28858;&#20854;&#32178;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#30340;&#19968;&#38917;&#32178;&#19978;&#24037;&#20855;&#12290;&#20760;&#31649;&#22914;&#27492;&#65292;DoIT&#20006;&#19981;&#30452;&#25509;&#28858;&#35442;&#32178;&#31449;&#26381;&#21209;&#25552;&#20379;&#25812;&#20445;&#65292;&#20063;&#19981;&#34920;&#26126;&#20351;&#29992;&#32773;&#21482;&#33021;&#20351;&#29992;Google&#32763;&#35695;&#25552;&#20379;&#30340;&#26381;&#21209;&#12290;&#25152;&#26377;DoIT&#32178;&#31449;&#35370;&#21839;&#32773;&#21487;&#20197;&#36984;&#25799;&#20351;&#29992;&#20854;&#23427;&#24037;&#20855;&#20197;&#28415;&#36275;&#20854;&#32763;&#35695;&#38656;&#35201;&#12290;&#20219;&#20309;&#20351;&#29992;&#32763;&#35695;&#24460;&#65288;&#28961;&#35542;&#26159;&#36890;&#36942;Google&#32763;&#35695;&#36996;&#26159;&#36890;&#36942;&#20854;&#23427;&#32763;&#35695;&#26381;&#21209;&#65289;&#30340;DoIT&#32178;&#31449;&#20839;&#23481;&#30340;&#20491;&#20154;&#25110;&#27231;&#27083;&#25033;&#33258;&#34892;&#25215;&#25812;&#39080;&#38570;&#12290; DoIT&#19981;&#23565;&#22240;&#20351;&#29992;&#25110;&#20381;&#36084;&#32763;&#35695;&#24460;&#30340;&#20839;&#23481;&#25152;&#36896;&#25104;&#30340;&#25613;&#22833;&#12289;&#25613;&#23475;&#25110;&#21839;&#38988;&#36000;&#36012;&#12290; DoIT&#19981;&#23565;&#20219;&#20309;&#32178;&#31449;&#35370;&#21839;&#32773;&#33287;&#20351;&#29992;Google&#32763;&#35695;&#21151;&#33021;&#25110;&#20839;&#23481;&#30456;&#38364;&#30340;&#27963;&#21205;&#36000;&#36012;&#12290;</p>
+            <p>Google&#32763;&#35695;&#26381;&#21209;&#26159;DoIT&#28858;&#20854;&#32178;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#30340;&#19968;&#38917;&#32763;&#35695;&#24037;&#20855;&#65292;&#20854;&#21807;&#19968;&#30340;&#30446;&#30340;&#26159;&#28858;&#33521;&#35486;&#38750;&#27597;&#35486;&#30340;&#32178;&#31449;&#20351;&#29992;&#32773;&#25552;&#20379;&#26041;&#20415;&#12290; Google&#30452;&#25509;&#25552;&#20379;&#21205;&#24907;&#30340;&#20839;&#23481;&#32763;&#35695;&#26381;&#21209;&#65292;&#32780;DoIT&#19981;&#30452;&#25509;&#25511;&#21046;&#32763;&#35695;&#24460;&#30340;&#20839;&#23481;&#65292;&#21363;&#20351;&#20854;&#20351;&#29992;&#35442;&#24037;&#20855;&#12290;&#22240;&#27492;&#65292;&#22312;&#21508;&#31278;&#24773;&#27841;&#19979;&#65292;&#20351;&#29992;&#32773;&#25033;&#20197;DoIT&#28858;&#20854;&#30452;&#25509;&#25552;&#20379;&#30340;&#33521;&#25991;&#20839;&#23481;&#28858;&#28310;&#12290;</p>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
