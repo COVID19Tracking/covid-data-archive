@@ -1,45 +1,45 @@
 {
-  "start_date": "2020-03-27T01:05:01.164992+00:00",
-  "end_date": "2020-03-27T01:05:04.574754+00:00",
-  "previous_date": "2020-03-27T00:35:14.174260+00:00",
-  "time_lapsed": "0:00:03.409762",
+  "start_date": "2020-03-27T07:57:02.179464+00:00",
+  "end_date": "2020-03-27T07:57:07.927913+00:00",
+  "previous_date": "2020-03-27T01:05:01.164992+00:00",
+  "time_lapsed": "0:00:05.748449",
   "complete": true,
   "error_message": null,
   "items": [
     {
       "name": "google-states-csv",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://covid.cape.io/states/info.csv",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-27T01:05:02.017280+00:00",
-      "updated": "2020-03-26T22:05:07.043433+00:00",
+      "checked": "2020-03-27T07:57:05.039880+00:00",
+      "updated": "2020-03-27T07:57:05.039880+00:00",
       "failed": null
     },
     {
       "name": "urlwatch",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://covidtracking.com/api/urls",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-27T01:05:02.673942+00:00",
-      "updated": "2020-03-26T21:05:03.107929+00:00",
+      "checked": "2020-03-27T07:57:06.332878+00:00",
+      "updated": "2020-03-27T07:57:06.332878+00:00",
       "failed": null
     },
     {
       "name": "cds",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "http://blog.lazd.net/coronadatascraper/data.json",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-27T01:05:04.561762+00:00",
-      "updated": "2020-03-26T06:35:12.904042+00:00",
+      "checked": "2020-03-27T07:57:07.906974+00:00",
+      "updated": "2020-03-27T07:57:07.906974+00:00",
       "failed": null
     }
   ]
