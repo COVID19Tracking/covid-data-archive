@@ -1,21 +1,21 @@
 {
-  "start_date": "2020-03-27T17:05:11.932858+00:00",
-  "end_date": "2020-03-27T17:05:14.785560+00:00",
-  "previous_date": "2020-03-27T16:35:00.559136+00:00",
-  "time_lapsed": "0:00:02.852702",
+  "start_date": "2020-03-27T17:35:05.437346+00:00",
+  "end_date": "2020-03-27T17:35:07.978137+00:00",
+  "previous_date": "2020-03-27T17:05:11.932858+00:00",
+  "time_lapsed": "0:00:02.540791",
   "complete": true,
   "error_message": null,
   "items": [
     {
       "name": "google-states-csv",
       "source": "source",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://covid.cape.io/states/info.csv",
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.596149+00:00",
-      "checked": "2020-03-27T17:05:12.838031+00:00",
-      "updated": "2020-03-27T14:35:04.169711+00:00",
+      "checked": "2020-03-27T17:35:06.273612+00:00",
+      "updated": "2020-03-27T17:35:06.273612+00:00",
       "failed": null
     },
     {
@@ -26,7 +26,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:34.941000+00:00",
-      "checked": "2020-03-27T17:05:13.205293+00:00",
+      "checked": "2020-03-27T17:35:06.756576+00:00",
       "updated": "2020-03-27T07:57:06.332878+00:00",
       "failed": null
     },
@@ -38,7 +38,7 @@
       "msg": null,
       "complete": true,
       "added": "2020-03-19T20:41:35.783554+00:00",
-      "checked": "2020-03-27T17:05:14.779561+00:00",
+      "checked": "2020-03-27T17:35:07.972139+00:00",
       "updated": "2020-03-27T07:57:07.906974+00:00",
       "failed": null
     }
