@@ -8,24 +8,25 @@
     <meta name="theme-color" content="#ffffff">
     <!--[if IE]><![endif]-->
     
-    <link rel="apple-touch-icon" href="/apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/apple-icon-76x76.png" sizes="76x76">
     <link rel="icon" href="/favicon-96x96.png" sizes="96x96">
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="/favicon-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/apple-icon-180x180.png" sizes="180x180">
     <link rel="apple-touch-icon" href="/apple-icon-152x152.png" sizes="152x152">
     <link rel="apple-touch-icon" href="/apple-icon-144x144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/apple-icon-120x120.png" sizes="120x120">
     <link rel="apple-touch-icon" href="/apple-icon-114x114.png" sizes="114x114">
     <link rel="apple-touch-icon" href="/apple-icon-72x72.png" sizes="72x72">
     <link rel="apple-touch-icon" href="/apple-icon-60x60.png" sizes="60x60">
     <link rel="apple-touch-icon" href="/apple-icon-57x57.png" sizes="57x57">
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16">
+    <meta name="description" content="Updated regularly as information becomes available. Presumptive Positive - A positive COVID-19 test that still must be confirmed by another testing laboratory. NCDHHS is responding to presumptive positive cases by following Centers for Disease Control and Prevention (CDC) guidelines to protect public health and limit the spread of infection. Confirmed Positive - A confirmed positive case means the test has been confirmed by the CDC lab.">
     <meta name="generator" content="Drupal 7 (http://drupal.org)">
-    <link rel="canonical" href="https://www.ncdhhs.gov/">
-    <link rel="shortlink" href="https://www.ncdhhs.gov/">
+    <link rel="canonical" href="https://www.ncdhhs.gov/covid-19-case-count-north-carolina">
+    <link rel="shortlink" href="https://www.ncdhhs.gov/node/3132">
     <meta http-equiv="cleartype" content="on">
-    <title>Access denied | NCDHHS</title>
+    <title>NCDHHS: COVID-19 Case Count in North Carolina</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <style type="text/css" media="all">
   @import url("//www.ncdhhs.gov/modules/system/system.base.css?q7uxu9");
@@ -99,6 +100,10 @@
     <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/modules/colorbox/styles/default/colorbox_style.js?q7uxu9"></script>
     <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/modules/colorbox/js/colorbox_load.js?q7uxu9"></script>
     <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/modules/contrib/jcaption/jcaption.js?q7uxu9"></script>
+    <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/libraries/datatables/media/js/jquery.dataTables.min.js?q7uxu9"></script>
+    <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/libraries/datatables_responsive/js/dataTables.responsive.min.js?q7uxu9"></script>
+    <script type="text/javascript" src="//www.ncdhhs.gov/profiles/north_carolina/modules/apps/nc_tabular_data/js/nc_tabular_data.js?q7uxu9"></script>
+    <script type="text/javascript" src="//www.ncdhhs.gov/misc/tableheader.js?q7uxu9"></script>
     <script type="text/javascript">
   <!--//--><![CDATA[//><!--
   window.CKEDITOR_BASEPATH = '/sites/all/libraries/ckeditor/'
@@ -107,7 +112,7 @@
     <script type="text/javascript" src="//www.ncdhhs.gov/sites/all/modules/contrib/google_analytics/googleanalytics.js?q7uxu9"></script>
     <script type="text/javascript">
   <!--//--><![CDATA[//><!--
-  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-64719732-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "page", "/403.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);ga("send", "pageview");
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-64719732-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
   //--><!]]>
   </script>
     <script type="text/javascript" src="//www.ncdhhs.gov/profiles/north_carolina/modules/custom/nc_gtranslate/js/nc_gtranslate.js?q7uxu9"></script>
@@ -134,15 +139,16 @@
     <script type="text/javascript" src="//www.ncdhhs.gov/profiles/north_carolina/themes/nc_base_theme/js/modules/abt.ajaxErrorScroll.js?q7uxu9"></script>
     <script type="text/javascript">
   <!--//--><![CDATA[//><!--
-  jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dhhs_base_theme","theme_token":"MMrkJW1qFnWQ_Q0oIMQxR5g8RTdqhHYzqL7ALNMpBHw","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_user\/ldap_user.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/css\/nc_gtranslate.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/video_filter\/video_filter.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"profiles\/openpublic\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/css\/nc_gtranslate_block.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/contextual-links.css":1,"profiles\/dhhs\/themes\/dhhs_base_theme\/css\/dhhs.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/print.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/style-ncdhhs.css":1},"js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"profiles\/north_carolina\/modules\/apps\/nc_alerts\/js\/nc_alerts_handler.js":1,"profiles\/north_carolina\/modules\/apps\/nc_alerts\/js\/nc_alerts.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/owl.carousel.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1.2.1\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/north_carolina\/modules\/custom\/nc_extlink\/nc_extlink.js":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"profiles\/openpublic\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/jcaption\/jcaption.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/js\/nc_gtranslate.js":1,"\/\/translate.google.com\/translate_a\/element.js?cb=googleTranslateElementInit":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/match.media.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/enquire.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.autosize.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.easing.1.3.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.fitvids.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.magnific-popup.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.maskedinput.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/modernizr.custom.min.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/respond.src.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/scrollmagic.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.overflow.menu.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.matchHeight.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/script.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.anchor.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.ui.accordion.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.ui.tabs.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.accordion.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.ajaxErrorScroll.js":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"jcaption":{"jcaption_selectors":["img.caption"],"jcaption_alt_title":"title","jcaption_requireText":1,"jcaption_copyStyle":0,"jcaption_removeStyle":0,"jcaption_removeClass":1,"jcaption_removeAlign":1,"jcaption_copyAlignmentToClass":1,"jcaption_copyFloatToClass":1,"jcaption_copyClassToClass":1,"jcaption_autoWidth":1,"jcaption_keepLink":0,"jcaption_styleMarkup":"","jcaption_animate":0,"jcaption_showDuration":"200","jcaption_hideDuration":"200"},"extlink":{"extTarget":"_blank","extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"nav, .social-links","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"nc_gtranslate":{"languages":"am,ar,zh-CN,zh-TW,en,hi,hmn,km,lo,pl,pt,ru,sr,so,es,th,ur,vi","color":"397AAC"},"urlIsAjaxTrusted":{"\/advanced-search":true,"\/covid-19-case-count-nc-03272020":true},"nc_alerts":{"options":{"transitionStyle":"goDown","navigation":true,"slideSpeed":500,"paginationSpeed":500,"singleItem":true,"mouseDrag":false,"callbacks":true,"addClassActive":true,"autoHeight":true,"navigationText":["\u003Ci class=\u0022icon-chevron-left\u0022\u003E\u003C\/i\u003E","\u003Ci class=\u0022icon-chevron-right\u0022\u003E\u003C\/i\u003E"]}},"currentUser":0,"collapseAccordions":1});
+  jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dhhs_base_theme","theme_token":"UDs5fEtvebIgWeRad05t8EXc2z4cVi_xQ5SZgEGUilo","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_user\/ldap_user.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/css\/nc_gtranslate.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/video_filter\/video_filter.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"profiles\/openpublic\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/css\/nc_gtranslate_block.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/contextual-links.css":1,"profiles\/dhhs\/themes\/dhhs_base_theme\/css\/dhhs.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/print.css":1,"profiles\/north_carolina\/themes\/nc_base_theme\/css\/style-ncdhhs.css":1},"js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"profiles\/north_carolina\/modules\/apps\/nc_alerts\/js\/nc_alerts_handler.js":1,"profiles\/north_carolina\/modules\/apps\/nc_alerts\/js\/nc_alerts.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/owl.carousel.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1.2.1\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/north_carolina\/modules\/custom\/nc_extlink\/nc_extlink.js":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"profiles\/openpublic\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/jcaption\/jcaption.js":1,"sites\/all\/libraries\/datatables\/media\/js\/jquery.dataTables.min.js":1,"sites\/all\/libraries\/datatables_responsive\/js\/dataTables.responsive.min.js":1,"profiles\/north_carolina\/modules\/apps\/nc_tabular_data\/js\/nc_tabular_data.js":1,"misc\/tableheader.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"profiles\/north_carolina\/modules\/custom\/nc_gtranslate\/js\/nc_gtranslate.js":1,"\/\/translate.google.com\/translate_a\/element.js?cb=googleTranslateElementInit":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/match.media.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/enquire.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.autosize.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.easing.1.3.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.fitvids.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.magnific-popup.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/jquery.maskedinput.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/modernizr.custom.min.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/libs\/respond.src.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/scrollmagic.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.overflow.menu.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.matchHeight.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/script.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.anchor.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.ui.accordion.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/vendors\/jquery.ui.tabs.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.accordion.js":1,"profiles\/north_carolina\/themes\/nc_base_theme\/js\/modules\/abt.ajaxErrorScroll.js":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"jcaption":{"jcaption_selectors":["img.caption"],"jcaption_alt_title":"title","jcaption_requireText":1,"jcaption_copyStyle":0,"jcaption_removeStyle":0,"jcaption_removeClass":1,"jcaption_removeAlign":1,"jcaption_copyAlignmentToClass":1,"jcaption_copyFloatToClass":1,"jcaption_copyClassToClass":1,"jcaption_autoWidth":1,"jcaption_keepLink":0,"jcaption_styleMarkup":"","jcaption_animate":0,"jcaption_showDuration":"200","jcaption_hideDuration":"200"},"extlink":{"extTarget":"_blank","extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"nav, .social-links","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"nc_gtranslate":{"languages":"am,ar,zh-CN,zh-TW,en,hi,hmn,km,lo,pl,pt,ru,sr,so,es,th,ur,vi","color":"397AAC"},"urlIsAjaxTrusted":{"\/advanced-search":true,"\/covid-19-case-count-north-carolina":true},"nc_alerts":{"options":{"transitionStyle":"goDown","navigation":true,"slideSpeed":500,"paginationSpeed":500,"singleItem":true,"mouseDrag":false,"callbacks":true,"addClassActive":true,"autoHeight":true,"navigationText":["\u003Ci class=\u0022icon-chevron-left\u0022\u003E\u003C\/i\u003E","\u003Ci class=\u0022icon-chevron-right\u0022\u003E\u003C\/i\u003E"]}},"currentUser":0,"collapseAccordions":1});
   //--><!]]>
   </script>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_a/l?client=te&amp;alpha=true&amp;hl=en&amp;cb=_callbacks____0k8aet4db"></script>
     <script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.99ce5e0e4617985354c5c426d7e1b9f4.js"></script>
     <script charset="utf-8" src="https://platform.twitter.com/js/timeline.d228dcf3573461f298b082c9a5c0a42c.js"></script>
   </head>
-  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3152 i18n-en footer-columns enterprise-core-dark initMenuClickHandlers-processed initstickyheader-processed initoverflowmenu-processed apply-ajax-scroll-listener-processed" style="position: relative; min-height: 100%; top: 0px;">
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3132 node-type-data-table i18n-en footer-columns enterprise-core-dark initMenuClickHandlers-processed initstickyheader-processed initoverflowmenu-processed apply-ajax-scroll-listener-processed" style="position: relative; min-height: 100%; top: 0px;">
     <!--
   [if lt IE 9]>
   <div class="alert-box breaking outdated-browser">
@@ -193,7 +199,7 @@
                     <input type="search" placeholder="Search All DHHS Websites..." name="s" id="nc_search_block_form">
                     <input type="submit" value="Submit">
                     <span class="icon-search" aria-hidden="true"></span>
-                    <input type="hidden" name="form_build_id" value="form-ROCcVGzlqZRzqZTqwo0rx_kk83V8xX8M3X6Xjb7ZC_E">
+                    <input type="hidden" name="form_build_id" value="form-Etm9V-u5E5wm6kDZVey2nhAj7V3Ee-IIRdtkytaVhoE">
                     <input type="hidden" name="form_id" value="nc_search_block_form">
                   </form>
                 </div>
@@ -2130,26 +2136,431 @@
                         <li class="first leaf  home">
                           <a href="/">Home</a>
                         </li>
-                        <li class="collapsed ">
-                          <a href="/assistance">Assistance</a>
+                        <li class="expanded has-dropdown has-mega ">
+                          <a href="/assistance">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -184.417px;">
+                            <a href="/assistance" class="parent-title wrapper" aria-hidden="true">
+                              <span>Assistance</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first leaf">
+                                <a href="/assistance/aging-and-adult-services">Aging and Adult Services</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/childrens-services">Children's Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/divisions/dsb/deaf-blind-services">Deaf-Blind Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/assistance/disability-services">Disability Services</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/disaster-preparation-and-recovery">Disaster Preparation and Recovery</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/guardianship">Guardianship</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/assistance/hearing-loss">Hearing Loss</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/low-income-services">Low-Income Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/assistance/medicaid">Medicaid</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="https://medicaid.ncdhhs.gov/medicaid-transformation">Medicaid Transformation</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/mental-health-and-substance-abuse">Mental Health and Substance Abuse</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/divisions/vocational-rehabilitation-services/north-carolina-assistive-technology-program">NC Assistive Technology</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/assistance/pregnancy-services">Pregnancy Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/assistance/veterans-services">Veteran's Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/assistance/vision-loss">Vision Loss</a>
+                              </li>
+                              <li class="last leaf">
+                                <a href="/assistance/vital-records">Vital Records</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
-                        <li class="collapsed ">
-                          <a href="/divisions">Divisions</a>
+                        <li class="expanded has-dropdown has-mega ">
+                          <a href="/divisions">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -336.067px;">
+                            <a href="/divisions" class="parent-title wrapper" aria-hidden="true">
+                              <span>Divisions</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first collapsed">
+                                <a href="/divisions/daas">Aging and Adult Services</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="https://ncchildcare.ncdhhs.gov/">Child Development and Early Education</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/dds">Disability Determination Services</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="https://medicaid.ncdhhs.gov/">Health Benefits (NC Medicaid)</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dhsr">Health Service Regulation</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/mhddsas">Mental Health, Developmental Disabilities, and Substance Abuse</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/divisions/office-economic-opportunity">Office of Economic Opportunity</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="https://www.ncminorityhealth.org/">Office of Minority Health and Health Disparities</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/orh">Office of Rural Health</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dph">Public Health</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dsb">Services for the Blind</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dsdhh">Services for the Deaf and the Hard of Hearing</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dss">Social Services</a>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/divisions/dsohf">State Operated Healthcare Facilities</a>
+                              </li>
+                              <li class="last collapsed">
+                                <a href="/divisions/dvrs">Vocational Rehabilitation Services</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li class="leaf ">
                           <a href="/documents">Documents</a>
                         </li>
-                        <li class="collapsed ">
-                          <a href="/providers">Providers</a>
+                        <li class="expanded has-dropdown has-mega ">
+                          <a href="/providers">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -602.717px;">
+                            <a href="/providers" class="parent-title wrapper" aria-hidden="true">
+                              <span>Providers</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first expanded has-dropdown">
+                                <a href="/providers/licensure">
+                                  <span class="icon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                                <div aria-label="Third level" class="third-level">
+                                  <a href="/providers/licensure" class="parent-title" aria-hidden="true">Licensure</a>
+                                  <ul class="wrapper">
+                                    <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                      <button href="#">
+                                        <span class="icon-chevron-left" aria-hidden="true"></span>
+                                      </button>
+                                    </li>
+                                    <li class="first leaf">
+                                      <a href="/providers/licensure/professional-licensure">Professional Licensure</a>
+                                    </li>
+                                    <li class="expanded">
+                                      <a href="/providers/licensure/facility-licensure">Facility Licensure</a>
+                                    </li>
+                                    <li class="last leaf">
+                                      <a href="/providers/licensure/facility-ratings-stats">Facility Ratings &amp; Stats</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="expanded has-dropdown">
+                                <a href="/providers/provider-info">
+                                  <span class="icon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                                <div aria-label="Third level" class="third-level">
+                                  <a href="/providers/provider-info" class="parent-title" aria-hidden="true">Provider Info</a>
+                                  <ul class="wrapper">
+                                    <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                      <button href="#">
+                                        <span class="icon-chevron-left" aria-hidden="true"></span>
+                                      </button>
+                                    </li>
+                                    <li class="first leaf">
+                                      <a href="/providers/provider-info/child-care">Child Care</a>
+                                    </li>
+                                    <li class="expanded">
+                                      <a href="/providers/provider-info/health-care">Health Care</a>
+                                    </li>
+                                    <li class="expanded">
+                                      <a href="/providers/provider-info/mh-dd-sas">Mental Health, Development Disabilities and Substance Abuse Services</a>
+                                    </li>
+                                    <li class="last leaf">
+                                      <a href="/providers/provider-info/prevention-provider-guidance-documents">Prevention- Guidance Documents</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="leaf">
+                                <a href="/providers/lme-mco-directory">LME/MCO Directory</a>
+                              </li>
+                              <li class="last leaf">
+                                <a href="/providers/dhhs-policies-manuals-and-forms">Policies, Manuals and Forms</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
-                        <li class="collapsed ">
-                          <a href="/news">News</a>
+                        <li class="expanded has-dropdown has-mega ">
+                          <a href="/news">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -742.3px;">
+                            <a href="/news" class="parent-title wrapper" aria-hidden="true">
+                              <span>News</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first leaf">
+                                <a href="/press-releases">Press Releases</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/about/administrative-divisions-offices/office-of-communications">Media Contacts</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/events">Events</a>
+                              </li>
+                              <li class="last leaf">
+                                <a href="/news/newsletter-articles">Newsletter Articles</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
-                        <li class="collapsed ">
-                          <a href="/about">About</a>
+                        <li class="expanded has-dropdown has-mega ">
+                          <a href="/about">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -851.783px;">
+                            <a href="/about" class="parent-title wrapper" aria-hidden="true">
+                              <span>About</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first expanded has-dropdown">
+                                <a href="/about/administrative-divisions-offices">
+                                  <span class="icon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                                <div aria-label="Third level" class="third-level">
+                                  <a href="/about/administrative-divisions-offices" class="parent-title" aria-hidden="true">Administrative Offices</a>
+                                  <ul class="wrapper">
+                                    <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                      <button href="#">
+                                        <span class="icon-chevron-left" aria-hidden="true"></span>
+                                      </button>
+                                    </li>
+                                    <li class="first collapsed">
+                                      <a href="/about/administrative-divisions-offices/division-budget-analysis">Budget and Analysis</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/hr">DHHS Human Resources</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/general-counsel">General Counsel</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/information-technology">Information Technology Division</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/internal-audit">Internal Audit</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/administrative-divisions-offices/office-nctracks">NCTracks</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/office-of-communications">Office of Communications</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/intergovernmental-relations">Office of Government Affairs</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/office-of-procurement-contract-services">Office of Procurement, Contracts and Grants</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-divisions-offices/office-of-controller">Office of the Controller</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/administrative-offices/office-secretary">Office of the Secretary</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/administrative-divisions-offices/office-privacy-security">Privacy and Security</a>
+                                    </li>
+                                    <li class="last collapsed">
+                                      <a href="/about/administrative-divisions-offices/property-and-construction">Property and Construction</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/about/dhhs-mission-vision-values-and-goals">DHHS Mission, Vision, Values and Goals</a>
+                              </li>
+                              <li class="expanded has-dropdown">
+                                <a href="/about/department-initiatives">
+                                  <span class="icon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                                <div aria-label="Third level" class="third-level">
+                                  <a href="/about/department-initiatives" class="parent-title" aria-hidden="true">Department Initiatives</a>
+                                  <ul class="wrapper">
+                                    <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                      <button href="#">
+                                        <span class="icon-chevron-left" aria-hidden="true"></span>
+                                      </button>
+                                    </li>
+                                    <li class="first leaf">
+                                      <a href="/about/department-initiatives/ada-grievance-procedure">ADA and Civil Rights Grievance Procedure</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/department-initiatives/children-complex-needs">Children with Complex Behavioral Health Needs</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/department-initiatives/climate-change-and-clean-energy-plans-and-progress">Climate Change and Clean Energy: Plans and Progress</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="https://www.ncdhhs.gov/about/department-initiatives/early-childhood">Early Childhood</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/department-initiatives/healthy-opportunities">Healthy Opportunities</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/department-initiatives/home-and-community-based-services-final-rule">Home and Community Based Services Final Rule</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/department-initiatives/ncdhhs-google-translate-disclaimer">NCDHHS Google Translate Disclaimer</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/department-initiatives/opioid-epidemic">Opioid Epidemic</a>
+                                    </li>
+                                    <li class="last collapsed">
+                                      <a href="/about/department-initiatives/transitions-community-living-initiative">Transitions to Community Living Initiative</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="expanded has-dropdown">
+                                <a href="/about/grant-opportunities">
+                                  <span class="icon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                                <div aria-label="Third level" class="third-level">
+                                  <a href="/about/grant-opportunities" class="parent-title" aria-hidden="true">Grant Opportunities</a>
+                                  <ul class="wrapper">
+                                    <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                      <button href="#">
+                                        <span class="icon-chevron-left" aria-hidden="true"></span>
+                                      </button>
+                                    </li>
+                                    <li class="first leaf">
+                                      <a href="/about/grant-opportunities/deaf-and-hard-of-hearing-grant-opportunities">Deaf and Hard of Hearing Grant Opportunities</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/grant-opportunities/department-wide-grant-opportunities">Department Wide Grant Opportunities</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/grant-opportunities/division-of-medical-assistance">Division of Health Benefits (NC Medicaid) Grant Opportunities</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/grant-opportunities/mental-health-developmental-disabilities-substance-abuse-services-grant-opportunities">Mental Health, Developmental Disabilities and Substance Abuse Services Grant Opportunities</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/grant-opportunities/public-health-grant-opportunities">Public Health Grant Opportunities</a>
+                                    </li>
+                                    <li class="collapsed">
+                                      <a href="/about/grant-opportunities/rural-health-grant-opportunities">Rural Health Grant Opportunities</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/grant-opportunities/services-for-the-blind-grant-opportunities">Services for the Blind Grant Opportunities</a>
+                                    </li>
+                                    <li class="leaf">
+                                      <a href="/about/grant-opportunities/social-services-grant-opportunities">Social Services Grant Opportunities</a>
+                                    </li>
+                                    <li class="last leaf">
+                                      <a href="/about/grant-opportunities/vocational-rehabilitation-grant-opportunities">Vocational Rehabilitation Grant Opportunities</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="collapsed">
+                                <a href="/leadership">Leadership</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/about/overview">Overview</a>
+                              </li>
+                              <li class="last leaf">
+                                <a href="/about/site-glossary">Site Glossary</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
-                        <li class="last collapsed ">
-                          <a href="/contact">Contact</a>
+                        <li class="last expanded has-dropdown has-mega ">
+                          <a href="/contact">
+                            <span class="icon-chevron-right" aria-hidden="true"></span>
+                          </a>
+                          <div aria-label="Second level" style="width: 1337px; left: -964.267px;">
+                            <a href="/contact" class="parent-title wrapper" aria-hidden="true">
+                              <span>Contact</span>
+                            </a>
+                            <ul class="wrapper">
+                              <li class="flyout-trigger back-trigger" aria-hidden="true">
+                                <button href="#">
+                                  <span class="icon-chevron-left" aria-hidden="true"></span>
+                                </button>
+                              </li>
+                              <li class="first leaf">
+                                <a href="/contact/division-contacts">Division Contacts</a>
+                              </li>
+                              <li class="leaf">
+                                <a href="/contact/hotlines">Hotlines</a>
+                              </li>
+                              <li class="last leaf">
+                                <a href="/contact/report-fraud">Report Fraud</a>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                       </ul>
                       <div class="jb-overflowmenu-container jb-overflowmenu-helper-postion">
@@ -2220,15 +2631,137 @@
             </div>
           </div>
           <!--/.section, /#alert-box-->
-          <main id="main" class="wrapper group no-breadcrumbs">
+          <div id="breadcrumb">
+            <div class="breadcrumbs">
+              <div class="wrapper" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <a href="/" itemprop="url" title="NCDHHS">
+                  <span itemprop="title">NCDHHS</span>&#187;
+                </a>&#187;
+                <div itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span itemprop="title">COVID-19 Case Count in North Carolina</span>
+                </div>
+                <button data-toggle="breadcrumbs icon-add" aria-hidden="true">
+                  <span class="visuallyhidden">Expand</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <main id="main" class="wrapper group ">
             <article id="primary-content content">
               <div class="section">
                 <a id="main-content"></a>
-                <h1 class="page-title" id="page-title">Access denied</h1>
+                <h1 class="page-title" id="page-title">COVID-19 Case Count in North Carolina</h1>
                 <div class="tabs"></div>
                 <div class="region region-content">
                   <div id="block-system-main" class="block block-system">
-                    <div class="content">You are not authorized to access this page.</div>
+                    <div class="content">
+                      <div id="node-3132" class="node node-data-table node-full clearfix">
+                        <div class="content clearfix">
+                          <div class="field field-name-body field-type-text-with-summary field-label-hidden ">
+                            <div class="field-items">
+                              <div class="field-item">
+                                <h3>Updated regularly as information becomes available.</h3>
+                                <p>
+                                  <strong>Presumptive Positive</strong>
+                                </p>
+                                <p>
+                                  <strong>Confirmed Positive</strong>
+                                </p>
+                                <p>
+                                  <em>One of North Carolina's presumptive positive cases is a Durham resident who tested positive in another state.</em>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="field field-name-field-data-table field-type-tablefield field-label-hidden ">
+                            <div class="field-items">
+                              <div class="field-item">
+                                <div id="tablefield-wrapper-0" class="tablefield-wrapper">
+                                  <div id="tablefield-0_wrapper" class="dataTables_wrapper no-footer">
+                                    <div class="dataTables_length" id="tablefield-0_length">
+                                      <label>Show
+                                        <select name="tablefield-0_length" aria-controls="tablefield-0" class="">
+                                          <option value="10">10</option>
+                                          <option value="25">25</option>
+                                          <option value="50">50</option>
+                                          <option value="100">100</option>
+                                          <option value="-1">All</option>entries
+                                        </select>
+                                      </label>
+                                    </div>
+                                    <div id="tablefield-0_filter" class="dataTables_filter">
+                                      <label>Search:
+                                        <input type="search" class="" placeholder="" aria-controls="tablefield-0">
+                                      </label>
+                                    </div>
+                                    <table class="sticky-header" style="position: fixed; top: 0px; left: 107px; visibility: hidden;">
+                                      <thead style="">
+                                        <tr role="row">
+                                          <th class="row_0 col_0 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 446.667px;" aria-label="Presumptive Positive
+: activate to sort column ascending">
+                                            <p>Presumptive Positive</p>
+                                          </th>
+                                          <th class="row_0 col_1 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 408.667px;" aria-label="Confirmed Positive
+: activate to sort column ascending">
+                                            <p>Confirmed Positive</p>
+                                          </th>
+                                          <th class="row_0 col_2 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 149.667px;" aria-label="Total
+: activate to sort column ascending">
+                                            <p>Total</p>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                    </table>
+                                    <table id="tablefield-0" class="tablefield sticky-enabled dataTable no-footer dtr-inline tableheader-processed sticky-table" role="grid" aria-describedby="tablefield-0_info" style="width: 1141px;">
+                                      <thead>
+                                        <tr role="row">
+                                          <th class="row_0 col_0 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 446.667px;" aria-label="Presumptive Positive
+: activate to sort column ascending">
+                                            <p>Presumptive Positive</p>
+                                          </th>
+                                          <th class="row_0 col_1 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 408.667px;" aria-label="Confirmed Positive
+: activate to sort column ascending">
+                                            <p>Confirmed Positive</p>
+                                          </th>
+                                          <th class="row_0 col_2 sorting" tabindex="0" aria-controls="tablefield-0" rowspan="1" colspan="1" style="width: 149.667px;" aria-label="Total
+: activate to sort column ascending">
+                                            <p>Total</p>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="odd" role="row">
+                                          <td class="row_1 col_0" tabindex="0">
+                                            <p>14</p>
+                                          </td>
+                                          <td class="row_1 col_1">
+                                            <p>1</p>
+                                          </td>
+                                          <td class="row_1 col_2">
+                                            <p>15</p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <div class="dataTables_info" id="tablefield-0_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div>
+                                    <div class="dataTables_paginate paging_simple_numbers" id="tablefield-0_paginate">
+                                      <a class="paginate_button previous disabled" aria-controls="tablefield-0" data-dt-idx="0" tabindex="0" id="tablefield-0_previous">Previous</a>
+                                      <span>
+                                        <a class="paginate_button current" aria-controls="tablefield-0" data-dt-idx="1" tabindex="0">1</a>
+                                      </span>
+                                      <a class="paginate_button next disabled" aria-controls="tablefield-0" data-dt-idx="2" tabindex="0" id="tablefield-0_next">Next</a>
+                                    </div>
+                                  </div>
+                                  <div id="tablefield-export-link-0" class="tablefield-export-link">
+                                    <a href="/tablefield/export/node/3132/field_data_table/und/0" rel="nofollow">Export Table Data</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2248,13 +2781,13 @@
                   </p>
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ncdhhs.gov%2Fcovid-19-case-count-nc-03272020" target="_blank">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ncdhhs.gov%2Fcovid-19-case-count-north-carolina" target="_blank">
                         <span class="icon-facebook" aria-hidden="true"></span>
                         <span>Facebook</span>
                       </a>
                     </li>
                     <li>
-                      <a href="http://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ncdhhs.gov%2Fcovid-19-case-count-nc-03272020" target="_blank">
+                      <a href="http://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ncdhhs.gov%2Fcovid-19-case-count-north-carolina" target="_blank">
                         <span class="icon-twitter" aria-hidden="true"></span>
                         <span>Twitter</span>
                       </a>
@@ -2280,7 +2813,7 @@
           <div class="region region-band-accent">
             <div id="block-bean-newsletter-signup-mailchimp-bloc" class="block block-bean">
               <div class="content">
-                <form action="/covid-19-case-count-nc-03272020" method="post" id="nc-signup-form" accept-charset="UTF-8">
+                <form action="/covid-19-case-count-north-carolina" method="post" id="nc-signup-form" accept-charset="UTF-8">
                   <section class="band pad-small email-signup">
                     <div class="wrapper group">
                       <header>
@@ -2303,7 +2836,7 @@
                       </section>
                     </div>
                   </section>
-                  <input type="hidden" name="form_build_id" value="form-WDNJLjfFqTCUTs_N6oRbNzX3YlqjW9O_tf1YyOoQRzM">
+                  <input type="hidden" name="form_build_id" value="form-w9amtvEi0YY855E9plCFsEk6nAzl3WzWc182e0Yti10">
                   <input type="hidden" name="form_id" value="nc_signup_form">
                 </form>
               </div>
@@ -2382,8 +2915,7 @@
                       <div id="boxes-box-recent_tweets" class="boxes-box">
                         <div class="boxes-box-content">
                           <p>
-                            <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: absolute; visibility: hidden; display: block; width: 0px; height: 0px; padding: 0px; border: medium none;" frameborder="0"></iframe>
-                            <a class="twitter-timeline ext" data-chrome="nofooter transparent noheader noborders" data-link-color="#ffffff" data-theme="dark" data-widget-id="601414977614946304" href="https://twitter.com/ncdhhs" target="_blank" data-twitter-extracted-i1585323479783534645="true">Tweets by @ncdhhs</a>
+                            <a class="twitter-timeline ext" data-chrome="nofooter transparent noheader noborders" data-link-color="#ffffff" data-theme="dark" data-widget-id="601414977614946304" href="https://twitter.com/ncdhhs" target="_blank" data-twitter-extracted-i1585327075552310875="true">Tweets by @ncdhhs</a>
                           </p>
                           <script>
   <!--//--><![CDATA[// ><!--
