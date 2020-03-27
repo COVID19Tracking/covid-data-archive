@@ -43,10 +43,11 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker/colorUtil.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RadioButton.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/VectorTileLayerImpl.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/toolbars/_toolbar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/VectorTileLayerImpl.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/GenerateRendererTask.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/UniqueValueDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassBreaksDefinition.js"></script>
@@ -54,7 +55,6 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/generateRenderer.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ProjectParameters.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/heatmapCalculator.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/filters.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svgext.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/main.js"></script>
@@ -63,16 +63,16 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/CheckBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_RadioButtonMixin.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/CalendarLite.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RangeBoundTextBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListMouseMixin.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/nls/VectorTileLayerImpl_en-us.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalRule.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_CheckBoxMixin.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/selector/lite.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/MappedTextBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListBase.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/MappedTextBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/dnd/move.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/vendor-b294ef434e8ecd8fc0671169898118d0.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/nickel-3a9fdff2fead41c28df9eeaf949f145b.js"></script>
@@ -405,7 +405,7 @@
                             <!---->
                             <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
                               <div class="flex-vertical flex-fix allow-shrink">
-                                <div id="ember78" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                <div id="ember80" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
                                   <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.19608372449874878 500.61669921875 80" width="142" height="22.692011708215354">
                                     <g class="responsive-text-icon">
                                       <!---->
@@ -417,7 +417,7 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <div id="ember79" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                <div id="ember81" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
                                   <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.03160727024078369 161.3333282470703 160" width="142" height="140.8264507207461">
                                     <g class="responsive-text-icon">
                                       <!---->
@@ -447,7 +447,7 @@
                             <!---->
                             <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
                               <div class="flex-vertical flex-fix allow-shrink">
-                                <div id="ember75" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                <div id="ember77" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
                                   <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.66667240858078 851 80" width="142" height="13.34900117508813">
                                     <g class="responsive-text-icon">
                                       <!---->
@@ -459,7 +459,7 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <div id="ember76" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                <div id="ember78" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
                                   <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -1.0175412893295288 358.3833312988281 160.6666717529297" width="142" height="63.65995680165334">
                                     <g class="responsive-text-icon">
                                       <!---->
@@ -471,7 +471,7 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <div id="ember77" class="flex-fix allow-shrink indicator-bottom-text responsive-text flex-vertical ember-view">
+                                <div id="ember79" class="flex-fix allow-shrink indicator-bottom-text responsive-text flex-vertical ember-view">
                                   <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 1.9999980926513672 1134.75 78.66666412353516" width="142" height="9.844165063266791">
                                     <g class="responsive-text-icon">
                                       <!---->
@@ -500,25 +500,25 @@
                             <!---->
                             <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
                               <div class="flex-vertical flex-fix allow-shrink">
-                                <div id="ember106" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
-                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.11655360460281372 386.29998779296875 80" width="142" height="29.407197408683867">
+                                <div id="ember75" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.30302876234054565 386.8833312988281 80" width="142" height="29.362857174183997">
                                     <g class="responsive-text-icon">
                                       <!---->
                                     </g>
                                     <g class="responsive-text-label">
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -75.33333587646484 460.3500061035156 95.33333587646484" height="80" width="386.3076871243007">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -75.72435760498047 460.4040832519531 95.19633483886719" height="80" width="386.9090834484332">
                                         <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">Tested: Total</text>
                                       </svg>
                                     </g>
                                   </svg>
                                 </div>
-                                <div id="ember107" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
-                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.22989022731781006 357.5 160" width="142" height="63.55244755244755">
+                                <div id="ember76" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -1.0175412893295288 358.3833312988281 160.6666717529297" width="142" height="63.65995680165334">
                                     <g class="responsive-text-icon">
                                       <!---->
                                     </g>
                                     <g class="responsive-text-label">
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -153.33334350585938 432 193.3333282470703" height="160" width="357.5172507849661">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -152.27352905273438 432.05072021484375 192.87979125976562" height="160" width="358.39998987387435">
                                         <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 200, 67); stroke-width: 2px; font-size: 160px; line-height: normal;">1,664</text>
                                       </svg>
                                     </g>
@@ -591,10 +591,10 @@
                                         <canvas class="esri-display-object" width="1341" height="2834" style="width: 894px; height: 1889px; display: block; opacity: 1;"></canvas>
                                       </div>
                                       <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 0.72; transform: translate3d(0px, 0px, 0px); display: block;" id="esri.Map_0_CityCountyState_1779">
-                                        <img decoding="sync" id="esri.Map_0_CityCountyState_1779_1585318144304" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/Enterprise/rest/services/CityCountyState/MapServer/export?dynamicLayers=%5B%7B%22id%22%3A1%2C%22name%22%3A%22County%22%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22color%22%3A%5B194%2C194%2C194%2C25%5D%2C%22outline%22%3A%7B%22color%22%3A%5B178%2C178%2C178%2C255%5D%2C%22width%22%3A0.75%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%7D%2C%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3Anull%2C%22labelExpressionInfo%22%3A%7B%22expression%22%3A%22%24feature%5B%5C%22Cnty_Name%5C%22%5D%22%2C%22value%22%3A%22%7BCnty_Name%7D%22%7D%2C%22useCodedValues%22%3Atrue%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPolygonPlacementAlwaysHorizontal%22%2C%22symbol%22%3A%7B%22color%22%3A%5B128%2C128%2C128%2C255%5D%2C%22type%22%3A%22esriTS%22%2C%22backgroundColor%22%3Anull%2C%22borderLineColor%22%3Anull%2C%22haloSize%22%3A0%2C%22haloColor%22%3Anull%2C%22horizontalAlignment%22%3A%22center%22%2C%22rightToLeft%22%3Afalse%2C%22angle%22%3A0%2C%22xoffset%22%3A0%2C%22yoffset%22%3A0%2C%22text%22%3A%22%22%2C%22rotated%22%3Afalse%2C%22kerning%22%3Atrue%2C%22font%22%3A%7B%22size%22%3A5.25%2C%22style%22%3A%22normal%22%2C%22decoration%22%3A%22none%22%2C%22weight%22%3A%22normal%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%2C%22minScale%22%3A0%2C%22maxScale%22%3A0%7D%5D&amp;dpi=96&amp;transparent=true&amp;format=png32&amp;bbox=-12184639.321931424%2C2777708.6889402745%2C-9997928.816749347%2C7398174.174722091&amp;bboxSR=102100&amp;imageSR=102100&amp;size=894%2C1889&amp;f=image">
+                                        <img decoding="sync" id="esri.Map_0_CityCountyState_1779_1585319927616" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/Enterprise/rest/services/CityCountyState/MapServer/export?dynamicLayers=%5B%7B%22id%22%3A1%2C%22name%22%3A%22County%22%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22color%22%3A%5B194%2C194%2C194%2C25%5D%2C%22outline%22%3A%7B%22color%22%3A%5B178%2C178%2C178%2C255%5D%2C%22width%22%3A0.75%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%7D%2C%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3Anull%2C%22labelExpressionInfo%22%3A%7B%22expression%22%3A%22%24feature%5B%5C%22Cnty_Name%5C%22%5D%22%2C%22value%22%3A%22%7BCnty_Name%7D%22%7D%2C%22useCodedValues%22%3Atrue%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPolygonPlacementAlwaysHorizontal%22%2C%22symbol%22%3A%7B%22color%22%3A%5B128%2C128%2C128%2C255%5D%2C%22type%22%3A%22esriTS%22%2C%22backgroundColor%22%3Anull%2C%22borderLineColor%22%3Anull%2C%22haloSize%22%3A0%2C%22haloColor%22%3Anull%2C%22horizontalAlignment%22%3A%22center%22%2C%22rightToLeft%22%3Afalse%2C%22angle%22%3A0%2C%22xoffset%22%3A0%2C%22yoffset%22%3A0%2C%22text%22%3A%22%22%2C%22rotated%22%3Afalse%2C%22kerning%22%3Atrue%2C%22font%22%3A%7B%22size%22%3A5.25%2C%22style%22%3A%22normal%22%2C%22decoration%22%3A%22none%22%2C%22weight%22%3A%22normal%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%2C%22minScale%22%3A0%2C%22maxScale%22%3A0%7D%5D&amp;dpi=96&amp;transparent=true&amp;format=png32&amp;bbox=-12184639.321931424%2C2777708.6889402745%2C-9997928.816749347%2C7398174.174722091&amp;bboxSR=102100&amp;imageSR=102100&amp;size=894%2C1889&amp;f=image">
                                       </div>
                                       <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 0.73; transform: translate3d(0px, 0px, 0px); display: block;" id="esri.Map_0_COVID19_County_Layer_5119">
-                                        <img decoding="sync" id="esri.Map_0_COVID19_County_Layer_5119_1585318144310" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/agency/rest/directories/arcgisoutput/COVID19_County_Layer_MapServer/_ags_map937a767e274a44919a88021b45d53291.png">
+                                        <img decoding="sync" id="esri.Map_0_COVID19_County_Layer_5119_1585319927620" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/agency/rest/directories/arcgisoutput/COVID19_County_Layer_MapServer/_ags_mapdf661d1f90654b4faa43b0736c3e5680.png">
                                       </div>
                                       <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 1; display: block;" data-vectortiles="true" data-reference="true" id="esri.Map_0_VectorTile_7117">
                                         <canvas class="esri-display-object" width="1341" height="2834" style="width: 894px; height: 1889px; display: block; opacity: 1;"></canvas>
@@ -661,44 +661,44 @@
                               </div>
                               <div class="flex-vertical no-pointer-events map-toolbar-left">
                                 <div class="flex-fix flex-horizontal">
-                                  <span style="display: none;" id="ember80" class="identify-tool ember-view">
-                                    <span id="ember81" class="icon-element ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember82" class="ember-view">
+                                  <span style="display: none;" id="ember82" class="identify-tool ember-view">
+                                    <span id="ember83" class="icon-element ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember84" class="ember-view">
                                         <path d="M10 3H6l2-3zM8 16l2-3H6zm8-8l-3-2v4zM0 8l3 2V6zm11-3v6H5V5zm-1 1H6v4h4z"></path>
                                       </svg>
                                     </span>
                                   </span>
                                   <!---->
-                                  <nav id="ember84" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
-                                    <a class="flex-fluid btn btn-transparent btn-clear" data-ember-action="" data-ember-action-87="87">
-                                      <span id="ember85" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember86" class="ember-view">
+                                  <nav id="ember86" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
+                                    <a class="flex-fluid btn btn-transparent btn-clear" data-ember-action="" data-ember-action-89="89">
+                                      <span id="ember87" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember88" class="ember-view">
                                           <path d="M13 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM3 3h1.963v.001a9.396 9.396 0 0 0 .26 2.327 4.861 4.861 0 0 0 1.548 2.763 4.616 4.616 0 0 1 .996 1.248 3.885 3.885 0 0 1 .481 1.638A5.683 5.683 0 0 0 8.826 13H3zm10 10H9.961l-.03-.05a4.739 4.739 0 0 1-.69-2.095 4.846 4.846 0 0 0-.6-2.002L8.608 8.8a4.628 4.628 0 0 1 2.27-1.81 8.464 8.464 0 0 1 2.034-.494L13 6.485zm0-7.52l-.111.012a9.554 9.554 0 0 0-2.373.565 5.673 5.673 0 0 0-2.518 1.866 7.438 7.438 0 0 0-.543-.562 3.927 3.927 0 0 1-1.267-2.296A8.41 8.41 0 0 1 5.963 3H13z"></path>
                                         </svg>0
                                       </span>
                                     </a>
                                     <div class="flex-fix separator"></div>
-                                    <a class="flex-fix btn btn-small btn-transparent btn-clear" data-ember-action="" data-ember-action-90="90">
-                                      <span id="ember88" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember89" class="ember-view">
+                                    <a class="flex-fix btn btn-small btn-transparent btn-clear" data-ember-action="" data-ember-action-92="92">
+                                      <span id="ember90" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember91" class="ember-view">
                                           <path d="M8.718 8l5.303 5.303-.707.707L8.01 8.707 2.707 14.01 2 13.303 7.303 8 2 2.697l.707-.707L8.01 7.293l5.304-5.303.707.707z"></path>
                                         </svg>
                                       </span>
                                     </a>
                                   </nav>
-                                  <nav id="ember92" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
-                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-95="95">
-                                      <span id="ember93" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember94" class="ember-view">
+                                  <nav id="ember94" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
+                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-97="97">
+                                      <span id="ember95" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember96" class="ember-view">
                                           <path d="M5 1H2a1.003 1.003 0 0 0-1 1v11a1.003 1.003 0 0 0 1 1h3a1.003 1.003 0 0 0 1-1V2a1.003 1.003 0 0 0-1-1zm0 12H2V2h3zm8-12h-3a1.003 1.003 0 0 0-1 1v11a1.003 1.003 0 0 0 1 1h3a1.003 1.003 0 0 0 1-1V2a1.003 1.003 0 0 0-1-1zm0 12h-3V2h3z"></path>
                                         </svg>
                                       </span>
                                     </a>
                                     <!---->
                                     <div class="flex-fix border-right-light"></div>
-                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-98="98">
-                                      <span id="ember96" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember97" class="ember-view">
+                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-100="100">
+                                      <span id="ember98" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember99" class="ember-view">
                                           <path d="M8.718 8l5.303 5.303-.707.707L8.01 8.707 2.707 14.01 2 13.303 7.303 8 2 2.697l.707-.707L8.01 7.293l5.304-5.303.707.707z"></path>
                                         </svg>
                                       </span>
@@ -709,7 +709,7 @@
                               </div>
                               <div class="flex-vertical map-toolbar-right no-pointer-events flex-wrapping">
                                 <nav class="flex-fix auto-pointer-events panel panel-white panel-no-padding flex-horizontal map-tool-right trailer-quarter">
-                                  <span id="ember99" class="btn-clear ember-view">
+                                  <span id="ember101" class="btn-clear ember-view">
                                     <div role="presentation" class="arcgisSearch" id="esri_dijit_Search_0" widgetid="esri_dijit_Search_0" style="display: block;">
                                       <div role="presentation" class="searchGroup hasMultipleSources searchCollapsed hasButtonMode" data-dojo-attach-point="containerNode">
                                         <div data-dojo-attach-point="expandNode" class="searchExpandContainer">
@@ -746,16 +746,16 @@
                                       </div>
                                     </div>
                                   </span>
-                                  <a id="ember100" class="btn-clear btn ember-view">
-                                    <span id="ember101" class="icon-element ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember102" class="ember-view">
+                                  <a id="ember102" class="btn-clear btn ember-view">
+                                    <span id="ember103" class="icon-element ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember104" class="ember-view">
                                         <path d="M8 0L6 2V0H3v5L0 8h1v8h5v-6h4v6h5V7.978h1zm6 15h-3V9H5v6H2V7.414l2-2V1h1v3.414l3.001-3L14 7.395z"></path>
                                       </svg>
                                     </span>
                                   </a>
-                                  <a id="ember103" class="btn-clear btn ember-view">
-                                    <span id="ember104" class="icon-element rtl-mirror ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember105" class="ember-view">
+                                  <a id="ember105" class="btn-clear btn ember-view">
+                                    <span id="ember106" class="icon-element rtl-mirror ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember107" class="ember-view">
                                         <path d="M4 5.5A1.5 1.5 0 1 1 2.5 4 1.502 1.502 0 0 1 4 5.5zm-1 0a.5.5 0 1 0-.5.5.5.5 0 0 0 .5-.5zM15 2V1H6v1zm0 4V5H6v1zm0 4V9H6v1zm0 4v-1H6v1zM.708 15l1.78-3.3L4.292 15zm2.333-.821l-.545-1-.538 1zM1 0h3v3H1zm2 2V1H2v1zM1 8h3v3H1zm2 2V9H2v1z"></path>
                                       </svg>
                                     </span>
@@ -2094,7 +2094,7 @@
                                             <path cs="100,100" d="M111.5,1013.5 L111.5,1013.5 L111.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#b9c8d3" class="amcharts-axis-grid"></path>
                                           </g>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585318146629" transform="translate(49,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585319929286" transform="translate(49,20)" visibility="visible">
                                           <g>
                                             <path cs="100,100" d="M0.5,1013.5 L6.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
                                             <path cs="100,100" d="M0.5,1013.5 L0.5,1013.5 L141.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
@@ -2186,57 +2186,57 @@
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(49,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630">
+                                        <g transform="translate(49,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286">
                                           <g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(1,1013)" aria-label=" Mar 08, 2020 2">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(1,1013)" aria-label=" Mar 08, 2020 2">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-151.5 L6.5,-151.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(15,1013)" aria-label=" Mar 10, 2020 1">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(15,1013)" aria-label=" Mar 10, 2020 1">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-50.5 L6.5,-50.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(30,1013)" aria-label=" Mar 12, 2020 5">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(30,1013)" aria-label=" Mar 12, 2020 5">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-455.5 L6.5,-455.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(38,1013)" aria-label=" Mar 13, 2020 4">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(38,1013)" aria-label=" Mar 13, 2020 4">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-354.5 L6.5,-354.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(45,1013)" aria-label=" Mar 14, 2020 3">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(45,1013)" aria-label=" Mar 14, 2020 3">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-252.5 L6.5,-252.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(52,1013)" aria-label=" Mar 15, 2020 1">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(52,1013)" aria-label=" Mar 15, 2020 1">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-50.5 L6.5,-50.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(60,1013)" aria-label=" Mar 16, 2020 1">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(60,1013)" aria-label=" Mar 16, 2020 1">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-50.5 L6.5,-50.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(67,1013)" aria-label=" Mar 17, 2020 5">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(67,1013)" aria-label=" Mar 17, 2020 5">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-455.5 L6.5,-455.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(75,1013)" aria-label=" Mar 18, 2020 4">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(75,1013)" aria-label=" Mar 18, 2020 4">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-354.5 L6.5,-354.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(82,1013)" aria-label=" Mar 19, 2020 6">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(82,1013)" aria-label=" Mar 19, 2020 6">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-556.5 L6.5,-556.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(90,1013)" aria-label=" Mar 20, 2020 4">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(90,1013)" aria-label=" Mar 20, 2020 4">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-354.5 L6.5,-354.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(97,1013)" aria-label=" Mar 21, 2020 6">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(97,1013)" aria-label=" Mar 21, 2020 6">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-556.5 L6.5,-556.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(105,1013)" aria-label=" Mar 22, 2020 4">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(105,1013)" aria-label=" Mar 22, 2020 4">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-354.5 L6.5,-354.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(112,1013)" aria-label=" Mar 23, 2020 5">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(112,1013)" aria-label=" Mar 23, 2020 5">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-455.5 L6.5,-455.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(119,1013)" aria-label=" Mar 24, 2020 10">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(119,1013)" aria-label=" Mar 24, 2020 10">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-961.5 L6.5,-961.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(127,1013)" aria-label=" Mar 25, 2020 8">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(127,1013)" aria-label=" Mar 25, 2020 8">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-759.5 L6.5,-759.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
-                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630" transform="translate(134,1013)" aria-label=" Mar 26, 2020 4">
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286" transform="translate(134,1013)" aria-label=" Mar 26, 2020 4">
                                               <path cs="100,100" d="M0.5,0.5 L0.5,-354.5 L6.5,-354.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
                                             </g>
                                           </g>
@@ -2247,14 +2247,14 @@
                                         <g class="amcharts-category-axis">
                                           <path cs="100,100" d="M0.5,0.5 L141.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(49,1033)" class="amcharts-axis-line"></path>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585318146629">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585319929286">
                                           <path cs="100,100" d="M0.5,0.5 L0.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(49,20)" class="amcharts-axis-line" visibility="visible"></path>
                                         </g>
                                       </g>
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(49,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585318146630"></g>
+                                        <g transform="translate(49,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585319929286"></g>
                                       </g>
                                       <g>
                                         <g></g>
@@ -2271,7 +2271,7 @@
                                             <tspan y="6" x="0">Mar 23</tspan>
                                           </text>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585318146629" transform="translate(49,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585319929286" transform="translate(49,20)" visibility="visible">
                                           <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,1011.833333492279)" class="amcharts-axis-label">
                                             <tspan y="6" x="0">0.5</tspan>
                                           </text>
