@@ -43,10 +43,10 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker/colorUtil.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RadioButton.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/VectorTileLayerImpl.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/toolbars/_toolbar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/GenerateRendererTask.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/UniqueValueDefinition.js"></script>
@@ -63,17 +63,17 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/CheckBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_RadioButtonMixin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/CalendarLite.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RangeBoundTextBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListMouseMixin.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/nls/VectorTileLayerImpl_en-us.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalRule.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_CheckBoxMixin.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/selector/lite.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/dnd/move.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/MappedTextBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListBase.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojo/dnd/move.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/vendor-b294ef434e8ecd8fc0671169898118d0.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/nickel-3a9fdff2fead41c28df9eeaf949f145b.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/moment-timezone-with-data.min-f71eb5eba513b3ab182b567941a82ef5.js"></script>
@@ -402,14 +402,36 @@
                           <div style="background-color:#00607f;color:#b9c8d3;" id="ember20" class="widget flex-vertical full-height indicator-widget ember-view">
                             <!---->
                             <!---->
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <div id="ember75" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.19608372449874878 500.61669921875 80" width="142" height="22.692011708215354">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -75.63130187988281 595.66650390625 95.23941040039062" height="80" width="500.3529538051881">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">Tested: Positives</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
                                 </div>
+                                <div id="ember76" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.03160727024078369 161.3333282470703 160" width="142" height="140.8264507207461">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -153.20596313476562 195.1770477294922 193.5716094970703" height="160" width="161.32700305512202">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 200, 67); stroke-width: 2px; font-size: 160px; line-height: normal;">85</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <!---->
                               </div>
                             </div>
-                            <!---->
                             <!---->
                             <!---->
                           </div>
@@ -422,14 +444,47 @@
                           <div style="background-color:#00607f;color:#b9c8d3;" id="ember27" class="widget flex-vertical full-height indicator-widget ember-view">
                             <!---->
                             <!---->
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <div id="ember79" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.66667240858078 851 80" width="142" height="13.34900117508813">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -76.32099914550781 1015.427001953125 95.40123748779297" height="80" width="851.5000674560882">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">Tested: Virus Not Detected*</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <div id="ember80" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -1.0175412893295288 358.3833312988281 160.6666717529297" width="142" height="63.65995680165334">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -152.27352905273438 432.05072021484375 192.87979125976562" height="160" width="358.39998987387435">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 200, 67); stroke-width: 2px; font-size: 160px; line-height: normal;">1,761</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <div id="ember81" class="flex-fix allow-shrink indicator-bottom-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 1.9999980926513672 1134.75 78.66666412353516" width="142" height="9.844165063266791">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -77.93209075927734 1381.3463134765625 97.41510772705078" height="80" width="1134.400070549207">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">*Does not include inconclusive results</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
                                 </div>
                               </div>
                             </div>
-                            <!---->
                             <!---->
                             <!---->
                           </div>
@@ -442,14 +497,36 @@
                           <div style="background-color:#00607f;color:#b9c8d3;" id="ember34" class="widget flex-vertical full-height indicator-widget ember-view">
                             <!---->
                             <!---->
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <div id="ember77" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.30302876234054565 386.8833312988281 80" width="142" height="29.362857174183997">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -75.72435760498047 460.4040832519531 95.19633483886719" height="80" width="386.9090834484332">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">Tested: Total</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
                                 </div>
+                                <div id="ember78" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -1.0175412893295288 358.3833312988281 160.6666717529297" width="142" height="63.65995680165334">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -152.27352905273438 432.05072021484375 192.87979125976562" height="160" width="358.39998987387435">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 200, 67); stroke-width: 2px; font-size: 160px; line-height: normal;">1,851</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <!---->
                               </div>
                             </div>
-                            <!---->
                             <!---->
                             <!---->
                           </div>
@@ -462,14 +539,36 @@
                           <div style="background-color:#00607f;color:#b9c8d3;" id="ember41" class="widget flex-vertical full-height indicator-widget ember-view">
                             <!---->
                             <!---->
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
+                            <!---->
+                            <div class="flex-justify-center widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
+                              <div class="flex-vertical flex-fix allow-shrink">
+                                <div id="ember73" class="flex-fix allow-shrink indicator-top-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0.22830647230148315 233.1999969482422 80" width="142" height="48.71355123783002">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -76.12940216064453 279.2505187988281 95.81803894042969" height="80" width="233.15068593498464">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(185, 200, 211); stroke-width: 2px; font-size: 80px; line-height: normal;">Deaths:</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
                                 </div>
+                                <div id="ember74" class="flex-fix allow-shrink indicator-center-text responsive-text flex-vertical ember-view">
+                                  <svg class="responsive-text-group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -0.08888876438140869 80.76667022705078 160" width="142" height="193.3333282470703">
+                                    <g class="responsive-text-icon">
+                                      <!---->
+                                    </g>
+                                    <g class="responsive-text-label">
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -152.94815063476562 97.59037017822266 193.3333282470703" height="160" width="80.76444641019746">
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(255, 200, 67); stroke-width: 2px; font-size: 160px; line-height: normal;">0</text>
+                                      </svg>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <!---->
                               </div>
                             </div>
-                            <!---->
                             <!---->
                             <!---->
                           </div>
@@ -492,7 +591,10 @@
                                         <canvas class="esri-display-object" width="1341" height="2834" style="width: 894px; height: 1889px; display: block; opacity: 1;"></canvas>
                                       </div>
                                       <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 0.72; transform: translate3d(0px, 0px, 0px); display: block;" id="esri.Map_0_CityCountyState_1779">
-                                        <img decoding="sync" id="esri.Map_0_CityCountyState_1779_1585332510041" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/Enterprise/rest/services/CityCountyState/MapServer/export?dynamicLayers=%5B%7B%22id%22%3A1%2C%22name%22%3A%22County%22%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22color%22%3A%5B194%2C194%2C194%2C25%5D%2C%22outline%22%3A%7B%22color%22%3A%5B178%2C178%2C178%2C255%5D%2C%22width%22%3A0.75%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%7D%2C%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3Anull%2C%22labelExpressionInfo%22%3A%7B%22expression%22%3A%22%24feature%5B%5C%22Cnty_Name%5C%22%5D%22%2C%22value%22%3A%22%7BCnty_Name%7D%22%7D%2C%22useCodedValues%22%3Atrue%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPolygonPlacementAlwaysHorizontal%22%2C%22symbol%22%3A%7B%22color%22%3A%5B128%2C128%2C128%2C255%5D%2C%22type%22%3A%22esriTS%22%2C%22backgroundColor%22%3Anull%2C%22borderLineColor%22%3Anull%2C%22haloSize%22%3A0%2C%22haloColor%22%3Anull%2C%22horizontalAlignment%22%3A%22center%22%2C%22rightToLeft%22%3Afalse%2C%22angle%22%3A0%2C%22xoffset%22%3A0%2C%22yoffset%22%3A0%2C%22text%22%3A%22%22%2C%22rotated%22%3Afalse%2C%22kerning%22%3Atrue%2C%22font%22%3A%7B%22size%22%3A5.25%2C%22style%22%3A%22normal%22%2C%22decoration%22%3A%22none%22%2C%22weight%22%3A%22normal%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%2C%22minScale%22%3A0%2C%22maxScale%22%3A0%7D%5D&amp;dpi=96&amp;transparent=true&amp;format=png32&amp;bbox=-12184639.321931424%2C2777708.6889402745%2C-9997928.816749347%2C7398174.174722091&amp;bboxSR=102100&amp;imageSR=102100&amp;size=894%2C1889&amp;f=image">
+                                        <img decoding="sync" id="esri.Map_0_CityCountyState_1779_1585334294345" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/Enterprise/rest/services/CityCountyState/MapServer/export?dynamicLayers=%5B%7B%22id%22%3A1%2C%22name%22%3A%22County%22%2C%22source%22%3A%7B%22type%22%3A%22mapLayer%22%2C%22mapLayerId%22%3A1%7D%2C%22drawingInfo%22%3A%7B%22renderer%22%3A%7B%22type%22%3A%22simple%22%2C%22symbol%22%3A%7B%22color%22%3A%5B194%2C194%2C194%2C25%5D%2C%22outline%22%3A%7B%22color%22%3A%5B178%2C178%2C178%2C255%5D%2C%22width%22%3A0.75%2C%22type%22%3A%22esriSLS%22%2C%22style%22%3A%22esriSLSSolid%22%7D%2C%22type%22%3A%22esriSFS%22%2C%22style%22%3A%22esriSFSSolid%22%7D%7D%2C%22showLabels%22%3Atrue%2C%22labelingInfo%22%3A%5B%7B%22labelExpression%22%3Anull%2C%22labelExpressionInfo%22%3A%7B%22expression%22%3A%22%24feature%5B%5C%22Cnty_Name%5C%22%5D%22%2C%22value%22%3A%22%7BCnty_Name%7D%22%7D%2C%22useCodedValues%22%3Atrue%2C%22maxScale%22%3A0%2C%22minScale%22%3A0%2C%22where%22%3Anull%2C%22labelPlacement%22%3A%22esriServerPolygonPlacementAlwaysHorizontal%22%2C%22symbol%22%3A%7B%22color%22%3A%5B128%2C128%2C128%2C255%5D%2C%22type%22%3A%22esriTS%22%2C%22backgroundColor%22%3Anull%2C%22borderLineColor%22%3Anull%2C%22haloSize%22%3A0%2C%22haloColor%22%3Anull%2C%22horizontalAlignment%22%3A%22center%22%2C%22rightToLeft%22%3Afalse%2C%22angle%22%3A0%2C%22xoffset%22%3A0%2C%22yoffset%22%3A0%2C%22text%22%3A%22%22%2C%22rotated%22%3Afalse%2C%22kerning%22%3Atrue%2C%22font%22%3A%7B%22size%22%3A5.25%2C%22style%22%3A%22normal%22%2C%22decoration%22%3A%22none%22%2C%22weight%22%3A%22normal%22%2C%22family%22%3A%22Arial%22%7D%7D%7D%5D%7D%2C%22minScale%22%3A0%2C%22maxScale%22%3A0%7D%5D&amp;dpi=96&amp;transparent=true&amp;format=png32&amp;bbox=-12184639.321931424%2C2777708.6889402745%2C-9997928.816749347%2C7398174.174722091&amp;bboxSR=102100&amp;imageSR=102100&amp;size=894%2C1889&amp;f=image">
+                                      </div>
+                                      <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 0.73; transform: translate3d(0px, 0px, 0px); display: block;" id="esri.Map_0_COVID19_County_Layer_5119">
+                                        <img decoding="sync" id="esri.Map_0_COVID19_County_Layer_5119_1585334294351" style="position: absolute; width: 894px; height: 1889px; transform: translate3d(0px, 0px, 0px); transition: transform 500ms ease 0s;" src="https://gis.ne.gov/agency/rest/directories/arcgisoutput/COVID19_County_Layer_MapServer/_ags_map66e56470b70e4a54a4fc4df449734fc5.png">
                                       </div>
                                       <div style="position: absolute; width: 894px; height: 1889px; overflow: visible; opacity: 1; display: block;" data-vectortiles="true" data-reference="true" id="esri.Map_0_VectorTile_7117">
                                         <canvas class="esri-display-object" width="1341" height="2834" style="width: 894px; height: 1889px; display: block; opacity: 1;"></canvas>
@@ -559,44 +661,44 @@
                               </div>
                               <div class="flex-vertical no-pointer-events map-toolbar-left">
                                 <div class="flex-fix flex-horizontal">
-                                  <span style="display: none;" id="ember73" class="identify-tool ember-view">
-                                    <span id="ember74" class="icon-element ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember75" class="ember-view">
+                                  <span style="display: none;" id="ember82" class="identify-tool ember-view">
+                                    <span id="ember83" class="icon-element ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember84" class="ember-view">
                                         <path d="M10 3H6l2-3zM8 16l2-3H6zm8-8l-3-2v4zM0 8l3 2V6zm11-3v6H5V5zm-1 1H6v4h4z"></path>
                                       </svg>
                                     </span>
                                   </span>
                                   <!---->
-                                  <nav id="ember77" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
-                                    <a class="flex-fluid btn btn-transparent btn-clear" data-ember-action="" data-ember-action-80="80">
-                                      <span id="ember78" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember79" class="ember-view">
+                                  <nav id="ember86" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
+                                    <a class="flex-fluid btn btn-transparent btn-clear" data-ember-action="" data-ember-action-89="89">
+                                      <span id="ember87" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember88" class="ember-view">
                                           <path d="M13 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM3 3h1.963v.001a9.396 9.396 0 0 0 .26 2.327 4.861 4.861 0 0 0 1.548 2.763 4.616 4.616 0 0 1 .996 1.248 3.885 3.885 0 0 1 .481 1.638A5.683 5.683 0 0 0 8.826 13H3zm10 10H9.961l-.03-.05a4.739 4.739 0 0 1-.69-2.095 4.846 4.846 0 0 0-.6-2.002L8.608 8.8a4.628 4.628 0 0 1 2.27-1.81 8.464 8.464 0 0 1 2.034-.494L13 6.485zm0-7.52l-.111.012a9.554 9.554 0 0 0-2.373.565 5.673 5.673 0 0 0-2.518 1.866 7.438 7.438 0 0 0-.543-.562 3.927 3.927 0 0 1-1.267-2.296A8.41 8.41 0 0 1 5.963 3H13z"></path>
                                         </svg>0
                                       </span>
                                     </a>
                                     <div class="flex-fix separator"></div>
-                                    <a class="flex-fix btn btn-small btn-transparent btn-clear" data-ember-action="" data-ember-action-83="83">
-                                      <span id="ember81" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember82" class="ember-view">
+                                    <a class="flex-fix btn btn-small btn-transparent btn-clear" data-ember-action="" data-ember-action-92="92">
+                                      <span id="ember90" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember91" class="ember-view">
                                           <path d="M8.718 8l5.303 5.303-.707.707L8.01 8.707 2.707 14.01 2 13.303 7.303 8 2 2.697l.707-.707L8.01 7.293l5.304-5.303.707.707z"></path>
                                         </svg>
                                       </span>
                                     </a>
                                   </nav>
-                                  <nav id="ember85" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
-                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-88="88">
-                                      <span id="ember86" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember87" class="ember-view">
+                                  <nav id="ember94" style="display: none;" class="flex-fix auto-pointer-events panel panel-white panel-no-padding  margin-right-half  trailer-quarter flex-horizontal ember-view">
+                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-97="97">
+                                      <span id="ember95" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember96" class="ember-view">
                                           <path d="M5 1H2a1.003 1.003 0 0 0-1 1v11a1.003 1.003 0 0 0 1 1h3a1.003 1.003 0 0 0 1-1V2a1.003 1.003 0 0 0-1-1zm0 12H2V2h3zm8-12h-3a1.003 1.003 0 0 0-1 1v11a1.003 1.003 0 0 0 1 1h3a1.003 1.003 0 0 0 1-1V2a1.003 1.003 0 0 0-1-1zm0 12h-3V2h3z"></path>
                                         </svg>
                                       </span>
                                     </a>
                                     <!---->
                                     <div class="flex-fix border-right-light"></div>
-                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-91="91">
-                                      <span id="ember89" class="icon-element ember-view">
-                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember90" class="ember-view">
+                                    <a class="flex-fix btn btn-transparent btn-clear" data-ember-action="" data-ember-action-100="100">
+                                      <span id="ember98" class="icon-element ember-view">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember99" class="ember-view">
                                           <path d="M8.718 8l5.303 5.303-.707.707L8.01 8.707 2.707 14.01 2 13.303 7.303 8 2 2.697l.707-.707L8.01 7.293l5.304-5.303.707.707z"></path>
                                         </svg>
                                       </span>
@@ -607,7 +709,7 @@
                               </div>
                               <div class="flex-vertical map-toolbar-right no-pointer-events flex-wrapping">
                                 <nav class="flex-fix auto-pointer-events panel panel-white panel-no-padding flex-horizontal map-tool-right trailer-quarter">
-                                  <span id="ember92" class="btn-clear ember-view">
+                                  <span id="ember101" class="btn-clear ember-view">
                                     <div role="presentation" class="arcgisSearch" id="esri_dijit_Search_0" widgetid="esri_dijit_Search_0" style="display: block;">
                                       <div role="presentation" class="searchGroup hasMultipleSources searchCollapsed hasButtonMode" data-dojo-attach-point="containerNode">
                                         <div data-dojo-attach-point="expandNode" class="searchExpandContainer">
@@ -644,16 +746,16 @@
                                       </div>
                                     </div>
                                   </span>
-                                  <a id="ember93" class="btn-clear btn ember-view">
-                                    <span id="ember94" class="icon-element ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember95" class="ember-view">
+                                  <a id="ember102" class="btn-clear btn ember-view">
+                                    <span id="ember103" class="icon-element ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember104" class="ember-view">
                                         <path d="M8 0L6 2V0H3v5L0 8h1v8h5v-6h4v6h5V7.978h1zm6 15h-3V9H5v6H2V7.414l2-2V1h1v3.414l3.001-3L14 7.395z"></path>
                                       </svg>
                                     </span>
                                   </a>
-                                  <a id="ember96" class="btn-clear btn ember-view">
-                                    <span id="ember97" class="icon-element rtl-mirror ember-view">
-                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember98" class="ember-view">
+                                  <a id="ember105" class="btn-clear btn ember-view">
+                                    <span id="ember106" class="icon-element rtl-mirror ember-view">
+                                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewbox="0 0 16 16" id="ember107" class="ember-view">
                                         <path d="M4 5.5A1.5 1.5 0 1 1 2.5 4 1.502 1.502 0 0 1 4 5.5zm-1 0a.5.5 0 1 0-.5.5.5.5 0 0 0 .5-.5zM15 2V1H6v1zm0 4V5H6v1zm0 4V9H6v1zm0 4v-1H6v1zM.708 15l1.78-3.3L4.292 15zm2.333-.821l-.545-1-.538 1zM1 0h3v3H1zm2 2V1H2v1zM1 8h3v3H1zm2 2V9H2v1z"></path>
                                       </svg>
                                     </span>
@@ -734,14 +836,1220 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
-                                </div>
-                              </div>
-                            </div>
                             <!---->
+                            <div class="widget-body flex-fluid full-width flex-vertical overflow-y-auto overflow-x-hidden">
+                              <nav class="feature-list">
+                                <span style="" id="ember109" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>46
+                                          <span style="color:#b9c8d3">Douglas</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember111" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>9
+                                          <span style="color:#b9c8d3">Sarpy</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember113" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>5
+                                          <span style="color:#b9c8d3">Washington</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember115" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>4
+                                          <span style="color:#b9c8d3">Buffalo</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember117" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>3
+                                          <span style="color:#b9c8d3">Lincoln</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember119" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>3
+                                          <span style="color:#b9c8d3">Lancaster</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember121" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>2
+                                          <span style="color:#b9c8d3">Adams</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember123" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>2
+                                          <span style="color:#b9c8d3">Cass</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember125" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>2
+                                          <span style="color:#b9c8d3">Saunders</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember127" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>2
+                                          <span style="color:#b9c8d3">Hall</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember129" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>2
+                                          <span style="color:#b9c8d3">Knox</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember131" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>1
+                                          <span style="color:#b9c8d3">Dodge</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember133" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>1
+                                          <span style="color:#b9c8d3">Nemaha</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember135" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>1
+                                          <span style="color:#b9c8d3">Dawson</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember137" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>1
+                                          <span style="color:#b9c8d3">Kearney</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember139" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>1
+                                          <span style="color:#b9c8d3">Madison</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember141" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">McPherson</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember143" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Red Willow</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember145" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Rock</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember147" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Gosper</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember149" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Gage</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember151" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Pierce</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember153" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Platte</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember155" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Box Butte</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember157" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Thurston</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember159" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Boone</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember161" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Hitchcock</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember163" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Kimball</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember165" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Otoe</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember167" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Polk</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember169" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Dawes</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember171" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Wayne</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember173" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Garfield</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember175" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Nuckolls</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember177" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Keith</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember179" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Phelps</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember181" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Webster</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember183" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Dakota</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember185" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Boyd</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember187" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Thomas</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember189" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Holt</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember191" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Brown</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember193" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Keya Paha</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember195" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Banner</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember197" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Greeley</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember199" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Jefferson</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember201" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Saline</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember203" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Dundy</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember205" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Scotts Bluff</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember207" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Arthur</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember209" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Hayes</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember211" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Johnson</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember213" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Antelope</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember215" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Sioux</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember217" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Sherman</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember219" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Logan</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember221" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Merrick</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember223" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Sheridan</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember225" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Pawnee</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember227" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Custer</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember229" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Grant</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember231" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Burt</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember233" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Blaine</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember235" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Dixon</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember237" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Stanton</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember239" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Wheeler</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember241" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Franklin</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember243" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Fillmore</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember245" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">York</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember247" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Seward</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember249" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Clay</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember251" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Cheyenne</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember253" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Garden</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember255" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Harlan</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember257" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Hooker</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember259" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Richardson</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember261" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Furnas</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember263" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Howard</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember265" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Valley</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember267" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Cedar</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember269" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Thayer</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember271" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Deuel</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember273" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Morrill</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember275" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Chase</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember277" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Cuming</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember279" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Perkins</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember281" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Colfax</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember283" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Butler</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember285" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Cherry</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember287" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Hamilton</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember289" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Loup</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember291" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Frontier</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                                <span style="" id="ember293" class="flex-horizontal feature-list-item ember-view">
+                                  <!---->
+                                  <!---->
+                                  <div class="flex-fluid list-item-content overflow-hidden ">
+                                    <div class="external-html">
+                                      <p>
+                                        <strong>0
+                                          <span style="color:#b9c8d3">Nance</span>
+                                        </strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </span>
+                              </nav>
+                            </div>
                             <!---->
                             <!---->
                           </div>
@@ -760,35 +2068,225 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="flex-fluid flex-vertical overflow-y-auto flex-justify-center">
-                              <div class="widget-body-state">
-                                <div class="flex-fix no-data-label">
-                                  <p style="text-align:center">Not fully configured</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="position-relative widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden hide">
+                            <!---->
+                            <div class="position-relative widget-body flex-fluid full-width flex-vertical overflow-y-hidden overflow-x-hidden">
                               <div id="ember71" class="flex-fluid am-chart ember-view" style="overflow: hidden; text-align: left;">
                                 <div style="position: relative;" class="amcharts-main-div">
-                                  <div style="overflow: hidden; position: relative; text-align: left;" class="amcharts-chart-div">
-                                    <svg version="1.1" style="position: absolute; width: 10px; height: 10px;">
+                                  <div style="overflow: hidden; position: relative; text-align: left; width: 211px; height: 1064px; padding: 0px;" class="amcharts-chart-div">
+                                    <svg version="1.1" style="position: absolute; width: 211px; height: 1064px; top: 0.166626px; left: 0.416626px;">
                                       <desc>JavaScript chart by amCharts 3.21.14</desc>
+                                      <g>
+                                        <path cs="100,100" d="M0.5,0.5 L210.5,0.5 L210.5,1063.5 L0.5,1063.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" class="amcharts-bg"></path>
+                                        <path cs="100,100" d="M0.5,0.5 L150.5,0.5 L150.5,1013.5 L0.5,1013.5 L0.5,0.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" class="amcharts-plot-area" transform="translate(40,20)"></path>
+                                      </g>
+                                      <g>
+                                        <g class="amcharts-category-axis" transform="translate(40,20)">
+                                          <g>
+                                            <path cs="100,100" d="M7.5,0.5 L7.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(0,1013)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M7.5,1013.5 L7.5,1013.5 L7.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#b9c8d3" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M60.5,0.5 L60.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(0,1013)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M60.5,1013.5 L60.5,1013.5 L60.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#b9c8d3" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M112.5,0.5 L112.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(0,1013)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M112.5,1013.5 L112.5,1013.5 L112.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" stroke="#b9c8d3" class="amcharts-axis-grid"></path>
+                                          </g>
+                                        </g>
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585334296380" transform="translate(40,20)" visibility="visible">
+                                          <g>
+                                            <path cs="100,100" d="M0.5,1013.5 L6.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,1013.5 L0.5,1013.5 L150.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,929.5 L6.5,929.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,929.5 L0.5,929.5 L150.5,929.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,844.5 L6.5,844.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,844.5 L0.5,844.5 L150.5,844.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,760.5 L6.5,760.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,760.5 L0.5,760.5 L150.5,760.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,675.5 L6.5,675.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,675.5 L0.5,675.5 L150.5,675.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,591.5 L6.5,591.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,591.5 L0.5,591.5 L150.5,591.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,507.5 L6.5,507.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,507.5 L0.5,507.5 L150.5,507.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,422.5 L6.5,422.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,422.5 L0.5,422.5 L150.5,422.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,338.5 L6.5,338.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,338.5 L0.5,338.5 L150.5,338.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,253.5 L6.5,253.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,253.5 L0.5,253.5 L150.5,253.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,169.5 L6.5,169.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,169.5 L0.5,169.5 L150.5,169.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,84.5 L6.5,84.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,84.5 L0.5,84.5 L150.5,84.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                          <g>
+                                            <path cs="100,100" d="M0.5,0.5 L6.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
+                                            <path cs="100,100" d="M0.5,0.5 L0.5,0.5 L150.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
+                                          </g>
+                                        </g>
+                                      </g>
                                       <g></g>
                                       <g></g>
                                       <g></g>
                                       <g></g>
+                                      <g>
+                                        <g transform="translate(40,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380">
+                                          <g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(1,1013)" aria-label=" Mar 08, 2020 2">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-168.5 L6.5,-168.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(15,1013)" aria-label=" Mar 10, 2020 1">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-83.5 L6.5,-83.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(31,1013)" aria-label=" Mar 12, 2020 5">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-421.5 L6.5,-421.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(38,1013)" aria-label=" Mar 13, 2020 4">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-337.5 L6.5,-337.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(46,1013)" aria-label=" Mar 14, 2020 3">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-252.5 L6.5,-252.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(53,1013)" aria-label=" Mar 15, 2020 1">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-83.5 L6.5,-83.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(61,1013)" aria-label=" Mar 16, 2020 1">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-83.5 L6.5,-83.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(68,1013)" aria-label=" Mar 17, 2020 5">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-421.5 L6.5,-421.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(76,1013)" aria-label=" Mar 18, 2020 4">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-337.5 L6.5,-337.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(83,1013)" aria-label=" Mar 19, 2020 6">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-505.5 L6.5,-505.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(91,1013)" aria-label=" Mar 20, 2020 4">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-337.5 L6.5,-337.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(98,1013)" aria-label=" Mar 21, 2020 6">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-505.5 L6.5,-505.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(106,1013)" aria-label=" Mar 22, 2020 4">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-337.5 L6.5,-337.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(113,1013)" aria-label=" Mar 23, 2020 5">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-421.5 L6.5,-421.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(121,1013)" aria-label=" Mar 24, 2020 11">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-928.5 L6.5,-928.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(128,1013)" aria-label=" Mar 25, 2020 8">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-674.5 L6.5,-674.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(136,1013)" aria-label=" Mar 26, 2020 4">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-337.5 L6.5,-337.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                            <g class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380" transform="translate(143,1013)" aria-label=" Mar 27, 2020 11">
+                                              <path cs="100,100" d="M0.5,0.5 L0.5,-928.5 L6.5,-928.5 L6.5,0.5 L0.5,0.5 Z" fill="#ffc843" stroke="#ffc843" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-graph-column-front amcharts-graph-column-element"></path>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g></g>
+                                      <g>
+                                        <path cs="100,100" d="M0.5,1013.5 L150.5,1013.5 L150.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(40,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585334296380 amcharts-axis-zero-grid"></path>
+                                        <g class="amcharts-category-axis">
+                                          <path cs="100,100" d="M0.5,0.5 L150.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(40,1033)" class="amcharts-axis-line"></path>
+                                        </g>
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585334296380">
+                                          <path cs="100,100" d="M0.5,0.5 L0.5,1013.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(40,20)" class="amcharts-axis-line" visibility="visible"></path>
+                                        </g>
+                                      </g>
                                       <g></g>
                                       <g></g>
+                                      <g>
+                                        <g transform="translate(40,20)" class="amcharts-graph-column amcharts-graph-graphAuto0_1585334296380"></g>
+                                      </g>
+                                      <g>
+                                        <g></g>
+                                      </g>
+                                      <g>
+                                        <g class="amcharts-category-axis" transform="translate(40,20)" visibility="visible">
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="start" transform="translate(10,1025.5)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">Mar 9</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="start" transform="translate(63,1025.5)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">Mar 16</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="start" transform="translate(115,1025.5)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">Mar 23</tspan>
+                                          </text>
+                                        </g>
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585334296380" transform="translate(40,20)" visibility="visible">
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,1011.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">0</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,927.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">1</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,842.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">2</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,758.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">3</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,673.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">4</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,589.833333492279)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">5</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,505.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">6</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,420.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">7</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,336.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">8</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,251.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">9</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,167.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">10</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,82.83333349227905)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">11</tspan>
+                                          </text>
+                                          <text y="6" fill="#b9c8d3" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,-1.1666665077209473)" class="amcharts-axis-label">
+                                            <tspan y="6" x="0">12</tspan>
+                                          </text>
+                                        </g>
+                                      </g>
                                       <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g></g>
-                                      <g transform="translate(0,20)"></g>
+                                      <g transform="translate(40,20)"></g>
                                       <g></g>
                                       <g></g>
                                     </svg>
