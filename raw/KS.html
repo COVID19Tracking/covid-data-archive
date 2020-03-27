@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KDHE Kansas COVID Dashboard</title>
+    <title>KDHE Kansas COVID-19 Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,9 +43,9 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/ColorPicker/colorUtil.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/dijit/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RadioButton.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/VectorTileLayerImpl.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/styles/basic.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/GenerateRendererTask.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/UniqueValueDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassBreaksDefinition.js"></script>
@@ -53,8 +53,8 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/generateRenderer.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ProjectParameters.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/heatmapCalculator.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/AddressCandidate.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/toolbars/_toolbar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/workers/WorkerClient.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/filters.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/gfx/svgext.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dojox/main.js"></script>
@@ -63,9 +63,9 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalSlider.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/CheckBox.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_RadioButtonMixin.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/CalendarLite.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/RangeBoundTextBox.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/tasks/ClassificationDefinition.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/_ListMouseMixin.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/esri/layers/nls/VectorTileLayerImpl_en-us.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/3.31/dijit/form/HorizontalRule.js"></script>
@@ -1341,7 +1341,7 @@
                                             <path cs="100,100" d="M737.5,569.5 L737.5,569.5 L737.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
                                           </g>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632137" transform="translate(46,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438473" transform="translate(46,20)" visibility="visible">
                                           <g>
                                             <path cs="100,100" d="M0.5,569.5 L6.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
                                             <path cs="100,100" d="M0.5,569.5 L0.5,569.5 L737.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
@@ -1397,22 +1397,22 @@
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632137">
+                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438474">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-15)">
+                                          <g clip-path="url(#AmChartsEl-7)">
                                             <path cs="100,100" d="M46.5,455.7 L138.5,427.25 L230.5,403.97273 L322.5,365.17727 L415.5,316.03636 L507.5,243.61818 L599.5,134.99091 L691.5,47.05455" fill="none" stroke-width="1" stroke-opacity="1" stroke="#004da8" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-15">
+                                          <clippath id="AmChartsEl-7">
                                             <rect x="0" y="0" width="737" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
                                         </g>
-                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632138">
+                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438475">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-16)">
+                                          <g clip-path="url(#AmChartsEl-8)">
                                             <path cs="100,100" d="M46.5,543.63636 L138.5,541.05 L230.5,546.22273 L322.5,530.70455 L415.5,541.05 L507.5,497.08182 L599.5,460.87273 L691.5,481.56364" fill="none" stroke-width="1" stroke-opacity="1" stroke="#38a800" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-16">
+                                          <clippath id="AmChartsEl-8">
                                             <rect x="0" y="0" width="737" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
@@ -1420,18 +1420,18 @@
                                       </g>
                                       <g></g>
                                       <g>
-                                        <path cs="100,100" d="M0.5,569.5 L737.5,569.5 L737.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(46,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585339632137 amcharts-axis-zero-grid"></path>
+                                        <path cs="100,100" d="M0.5,569.5 L737.5,569.5 L737.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(46,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585341438473 amcharts-axis-zero-grid"></path>
                                         <g class="amcharts-category-axis">
                                           <path cs="100,100" d="M0.5,0.5 L737.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(46,589)" class="amcharts-axis-line"></path>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632137">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438473">
                                           <path cs="100,100" d="M0.5,0.5 L0.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(46,20)" class="amcharts-axis-line" visibility="visible"></path>
                                         </g>
                                       </g>
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632137">
+                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438474">
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(46,455)" aria-label="Total Cases Mar 20, 2020 44" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(138,427)" aria-label="Total Cases Mar 21, 2020 55" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(230,403)" aria-label="Total Cases Mar 22, 2020 64" class="amcharts-graph-bullet"></circle>
@@ -1441,7 +1441,7 @@
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(599,134)" aria-label="Total Cases Mar 26, 2020 168" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(691,47)" aria-label="Total Cases Mar 27, 2020 202" class="amcharts-graph-bullet"></circle>
                                         </g>
-                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632138">
+                                        <g transform="translate(46,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438475">
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(46,543)" aria-label="New Cases Mar 20, 2020 10" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(138,541)" aria-label="New Cases Mar 21, 2020 11" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(230,546)" aria-label="New Cases Mar 22, 2020 9" class="amcharts-graph-bullet"></circle>
@@ -1482,7 +1482,7 @@
                                             <tspan y="6" x="0">Mar 27</tspan>
                                           </text>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632137" transform="translate(46,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438473" transform="translate(46,20)" visibility="visible">
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,567.833333492279)" class="amcharts-axis-label">
                                             <tspan y="6" x="0">0</tspan>
                                           </text>
@@ -1602,7 +1602,7 @@
                                             <path cs="100,100" d="M740.5,569.5 L740.5,569.5 L740.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
                                           </g>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632251" transform="translate(43,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438481" transform="translate(43,20)" visibility="visible">
                                           <g>
                                             <path cs="100,100" d="M0.5,569.5 L6.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
                                             <path cs="100,100" d="M0.5,569.5 L0.5,569.5 L740.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
@@ -1666,22 +1666,22 @@
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632252">
+                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438482">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-13)">
+                                          <g clip-path="url(#AmChartsEl-1)">
                                             <path cs="100,100" d="M53.5,481.96154 L160.5,481.96154 L261.5,481.96154 L368.5,481.96154 L474.5,481.96154 L580.5,219.34615 L687.5,44.26923" fill="none" stroke-width="1" stroke-opacity="1" stroke="#004da8" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-13">
+                                          <clippath id="AmChartsEl-1">
                                             <rect x="0" y="0" width="740" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
                                         </g>
-                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632252">
+                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438482">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-14)">
+                                          <g clip-path="url(#AmChartsEl-2)">
                                             <path cs="100,100" d="M53.5,481.96154 L160.5,569.5 L261.5,569.5 L368.5,569.5 L474.5,569.5 L580.5,306.88462 L687.5,394.42308" fill="none" stroke-width="1" stroke-opacity="1" stroke="#38a800" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-14">
+                                          <clippath id="AmChartsEl-2">
                                             <rect x="0" y="0" width="740" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
@@ -1689,18 +1689,18 @@
                                       </g>
                                       <g></g>
                                       <g>
-                                        <path cs="100,100" d="M0.5,569.5 L740.5,569.5 L740.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(43,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585339632251 amcharts-axis-zero-grid"></path>
+                                        <path cs="100,100" d="M0.5,569.5 L740.5,569.5 L740.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(43,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585341438481 amcharts-axis-zero-grid"></path>
                                         <g class="amcharts-category-axis">
                                           <path cs="100,100" d="M0.5,0.5 L740.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(43,589)" class="amcharts-axis-line"></path>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632251">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438481">
                                           <path cs="100,100" d="M0.5,0.5 L0.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(43,20)" class="amcharts-axis-line" visibility="visible"></path>
                                         </g>
                                       </g>
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632252">
+                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438482">
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(53,481)" aria-label="Total Cases Mar 07, 2020 1" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(160,481)" aria-label="Total Cases Mar 08, 2020 1" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(261,481)" aria-label="Total Cases Mar 09, 2020 1" class="amcharts-graph-bullet"></circle>
@@ -1709,7 +1709,7 @@
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(580,219)" aria-label="Total Cases Mar 12, 2020 4" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(687,44)" aria-label="Total Cases Mar 13, 2020 6" class="amcharts-graph-bullet"></circle>
                                         </g>
-                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632252">
+                                        <g transform="translate(43,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438482">
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(53,481)" aria-label="New Cases Mar 07, 2020 1" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(160,569)" aria-label="New Cases Mar 08, 2020 0" class="amcharts-graph-bullet"></circle>
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(261,569)" aria-label="New Cases Mar 09, 2020 0" class="amcharts-graph-bullet"></circle>
@@ -1746,7 +1746,7 @@
                                             <tspan y="6" x="0">Mar 13</tspan>
                                           </text>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632251" transform="translate(43,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438481" transform="translate(43,20)" visibility="visible">
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,567.833333492279)" class="amcharts-axis-label">
                                             <tspan y="6" x="0">0</tspan>
                                           </text>
@@ -1872,7 +1872,7 @@
                                             <path cs="100,100" d="M743.5,569.5 L743.5,569.5 L743.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
                                           </g>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632345" transform="translate(40,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438491" transform="translate(40,20)" visibility="visible">
                                           <g>
                                             <path cs="100,100" d="M0.5,569.5 L6.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
                                             <path cs="100,100" d="M0.5,569.5 L0.5,569.5 L743.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
@@ -1920,22 +1920,22 @@
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632346">
+                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438491">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-11)">
+                                          <g clip-path="url(#AmChartsEl-5)">
                                             <path cs="100,100" d="M53.5,468.34444 L159.5,468.34444 L265.5,430.41111 L372.5,379.83333 L478.5,303.96667 L584.5,139.58889 L690.5,13.14444" fill="none" stroke-width="1" stroke-opacity="1" stroke="#004da8" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-11">
+                                          <clippath id="AmChartsEl-5">
                                             <rect x="0" y="0" width="743" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
                                         </g>
-                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632346">
+                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438491">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-12)">
+                                          <g clip-path="url(#AmChartsEl-6)">
                                             <path cs="100,100" d="M53.5,544.21111 L159.5,569.5 L265.5,531.56667 L372.5,506.27778 L478.5,480.98889 L584.5,405.12222 L690.5,443.05556" fill="none" stroke-width="1" stroke-opacity="1" stroke="#38a800" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-12">
+                                          <clippath id="AmChartsEl-6">
                                             <rect x="0" y="0" width="743" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
@@ -1943,18 +1943,18 @@
                                       </g>
                                       <g></g>
                                       <g>
-                                        <path cs="100,100" d="M0.5,569.5 L743.5,569.5 L743.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(40,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585339632345 amcharts-axis-zero-grid"></path>
+                                        <path cs="100,100" d="M0.5,569.5 L743.5,569.5 L743.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(40,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585341438491 amcharts-axis-zero-grid"></path>
                                         <g class="amcharts-category-axis">
                                           <path cs="100,100" d="M0.5,0.5 L743.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(40,589)" class="amcharts-axis-line"></path>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632345">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438491">
                                           <path cs="100,100" d="M0.5,0.5 L0.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(40,20)" class="amcharts-axis-line" visibility="visible"></path>
                                         </g>
                                       </g>
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632346">
+                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438491">
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(53,468)" aria-label="Total Cases Mar 14, 2020 8" class="amcharts-graph-bullet"></circle>
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="middle" style="pointer-events: none;" class="amcharts-graph-label" transform="translate(53,454)">
                                             <tspan y="6" x="0">8</tspan>
@@ -1981,7 +1981,7 @@
                                           </text>
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(690,13)" aria-label="Total Cases Mar 20, 2020 44" class="amcharts-graph-bullet"></circle>
                                         </g>
-                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632346">
+                                        <g transform="translate(40,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438491">
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(53,544)" aria-label="New Cases Mar 14, 2020 2" class="amcharts-graph-bullet"></circle>
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="middle" style="pointer-events: none;" class="amcharts-graph-label" transform="translate(53,530)">
                                             <tspan y="6" x="0">2</tspan>
@@ -2039,7 +2039,7 @@
                                             <tspan y="6" x="0">Mar 20</tspan>
                                           </text>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632345" transform="translate(40,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438491" transform="translate(40,20)" visibility="visible">
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,567.833333492279)" class="amcharts-axis-label">
                                             <tspan y="6" x="0">0</tspan>
                                           </text>
@@ -2153,7 +2153,7 @@
                                             <path cs="100,100" d="M768.5,569.5 L768.5,569.5 L768.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
                                           </g>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632434" transform="translate(15,20)" visibility="visible">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438496" transform="translate(15,20)" visibility="visible">
                                           <g>
                                             <path cs="100,100" d="M0.5,569.5 L6.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(-6,0)" class="amcharts-axis-tick"></path>
                                             <path cs="100,100" d="M0.5,569.5 L0.5,569.5 L768.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.15" class="amcharts-axis-grid"></path>
@@ -2209,22 +2209,22 @@
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632434">
+                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438496">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-9)">
+                                          <g clip-path="url(#AmChartsEl-3)">
                                             <path cs="100,100" d="M55.5,427.25 L165.5,403.97273 L274.5,365.17727 L384.5,316.03636 L494.5,243.61818 L603.5,134.99091 L713.5,47.05455" fill="none" stroke-width="1" stroke-opacity="1" stroke="#004da8" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-9">
+                                          <clippath id="AmChartsEl-3">
                                             <rect x="0" y="0" width="768" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
                                         </g>
-                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632434">
+                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438496">
                                           <g></g>
-                                          <g clip-path="url(#AmChartsEl-10)">
+                                          <g clip-path="url(#AmChartsEl-4)">
                                             <path cs="100,100" d="M55.5,541.05 L165.5,546.22273 L274.5,530.70455 L384.5,541.05 L494.5,497.08182 L603.5,460.87273 L713.5,481.56364" fill="none" stroke-width="1" stroke-opacity="1" stroke="#38a800" stroke-linejoin="round" class="amcharts-graph-stroke"></path>
                                           </g>
-                                          <clippath id="AmChartsEl-10">
+                                          <clippath id="AmChartsEl-4">
                                             <rect x="0" y="0" width="768" height="569" rx="0" ry="0" stroke-width="0"></rect>
                                           </clippath>
                                           <g></g>
@@ -2232,18 +2232,18 @@
                                       </g>
                                       <g></g>
                                       <g>
-                                        <path cs="100,100" d="M0.5,569.5 L768.5,569.5 L768.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(15,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585339632434 amcharts-axis-zero-grid"></path>
+                                        <path cs="100,100" d="M0.5,569.5 L768.5,569.5 L768.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.3" transform="translate(15,20)" class="amcharts-axis-zero-grid-valueAxisAuto0_1585341438496 amcharts-axis-zero-grid"></path>
                                         <g class="amcharts-category-axis">
                                           <path cs="100,100" d="M0.5,0.5 L768.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(15,589)" class="amcharts-axis-line"></path>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632434">
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438496">
                                           <path cs="100,100" d="M0.5,0.5 L0.5,569.5" fill="none" stroke-width="1" stroke-opacity="0.5" transform="translate(15,20)" class="amcharts-axis-line" visibility="visible"></path>
                                         </g>
                                       </g>
                                       <g></g>
                                       <g></g>
                                       <g>
-                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585339632434">
+                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto0_1585341438496">
                                           <circle r="4" cx="0" cy="0" fill="#004da8" stroke="#004da8" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(55,427)" aria-label="Total Cases Mar 21, 2020 55" class="amcharts-graph-bullet"></circle>
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="middle" style="pointer-events: none;" class="amcharts-graph-label" transform="translate(55,413)">
                                             <tspan y="6" x="0">55</tspan>
@@ -2273,7 +2273,7 @@
                                             <tspan y="6" x="0">202</tspan>
                                           </text>
                                         </g>
-                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585339632434">
+                                        <g transform="translate(15,20)" class="amcharts-graph-line amcharts-graph-graphAuto1_1585341438496">
                                           <circle r="4" cx="0" cy="0" fill="#38a800" stroke="#38a800" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(55,541)" aria-label="New Cases Mar 21, 2020 11" class="amcharts-graph-bullet"></circle>
                                           <text y="6" fill="" font-family="inherit" font-size="11px" opacity="1" text-anchor="middle" style="pointer-events: none;" class="amcharts-graph-label" transform="translate(55,527)">
                                             <tspan y="6" x="0">11</tspan>
@@ -2331,7 +2331,7 @@
                                             <tspan y="6" x="0">Mar 27</tspan>
                                           </text>
                                         </g>
-                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585339632434" transform="translate(15,20)" visibility="visible"></g>
+                                        <g class="amcharts-value-axis value-axis-valueAxisAuto0_1585341438496" transform="translate(15,20)" visibility="visible"></g>
                                       </g>
                                       <g></g>
                                       <g transform="translate(15,20)"></g>
@@ -2827,7 +2827,7 @@
                                     </g>
                                     <g class="responsive-text-label">
                                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -76.66667175292969 264.79998779296875 96.66666412353516" height="80" width="219.14482324915454">
-                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(168, 0, 0); stroke-width: 2px; font-size: 80px; line-height: normal;">97,028</text>
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(168, 0, 0); stroke-width: 2px; font-size: 80px; line-height: normal;">97,226</text>
                                       </svg>
                                     </g>
                                   </svg>
@@ -2869,7 +2869,7 @@
                                     </g>
                                     <g class="responsive-text-label">
                                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 -76.66667175292969 216 96.66666412353516" height="80" width="178.75862539248305">
-                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(168, 0, 0); stroke-width: 2px; font-size: 80px; line-height: normal;">1,475</text>
+                                        <text vector-effect="non-scaling-stroke" style="fill: rgb(168, 0, 0); stroke-width: 2px; font-size: 80px; line-height: normal;">1,478</text>
                                       </svg>
                                     </g>
                                   </svg>
