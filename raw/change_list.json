@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T18:58:59.694475+00:00",
-  "end_date": "2020-03-30T18:59:35.743770+00:00",
-  "previous_date": "2020-03-30T18:57:57.868846+00:00",
-  "time_lapsed": "0:00:36.049295",
+  "start_date": "2020-03-30T19:00:28.214812+00:00",
+  "end_date": "2020-03-30T19:01:38.858965+00:00",
+  "previous_date": "2020-03-30T18:58:59.694475+00:00",
+  "time_lapsed": "0:01:10.644153",
   "complete": true,
   "error_message": null,
   "items": [
@@ -26,7 +26,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.550545+00:00",
-      "checked": "2020-03-30T18:44:05.509434+00:00",
+      "checked": "2020-03-30T19:00:38.359120+00:00",
       "updated": "2020-03-30T04:39:12.639985+00:00",
       "failed": null
     },
@@ -38,7 +38,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.844758+00:00",
-      "checked": "2020-03-30T18:44:07.744567+00:00",
+      "checked": "2020-03-30T19:00:40.718624+00:00",
       "updated": "2020-03-30T17:15:02.495408+00:00",
       "failed": null
     },
@@ -50,8 +50,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:51.159916+00:00",
-      "checked": "2020-03-30T18:44:18.590736+00:00",
-      "updated": "2020-03-30T18:44:18.590736+00:00",
+      "checked": "2020-03-30T19:00:53.666477+00:00",
+      "updated": "2020-03-30T19:00:53.666477+00:00",
       "failed": null
     },
     {
@@ -74,7 +74,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:52.889297+00:00",
-      "checked": "2020-03-30T18:44:22.563565+00:00",
+      "checked": "2020-03-30T19:01:00.452351+00:00",
       "updated": "2020-03-30T18:03:22.013557+00:00",
       "failed": null
     },
@@ -86,8 +86,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:53.966411+00:00",
-      "checked": "2020-03-30T18:44:32.789624+00:00",
-      "updated": "2020-03-30T18:44:32.789624+00:00",
+      "checked": "2020-03-30T19:01:13.564759+00:00",
+      "updated": "2020-03-30T19:01:13.564759+00:00",
       "failed": null
     },
     {
@@ -98,8 +98,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:54.199791+00:00",
-      "checked": "2020-03-30T18:44:46.211093+00:00",
-      "updated": "2020-03-30T18:44:46.211093+00:00",
+      "checked": "2020-03-30T19:01:29.284041+00:00",
+      "updated": "2020-03-30T19:01:29.284041+00:00",
       "failed": null
     },
     {
@@ -122,8 +122,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:56.363003+00:00",
-      "checked": "2020-03-30T18:45:26.576566+00:00",
-      "updated": "2020-03-30T18:45:26.576566+00:00",
+      "checked": "2020-03-30T19:01:37.434369+00:00",
+      "updated": "2020-03-30T19:01:37.434369+00:00",
       "failed": null
     },
     {
@@ -1127,7 +1127,7 @@
       "source": "google-states-csv",
       "status": "CHANGED",
       "url": "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.494606+00:00",
       "checked": "2020-03-30T18:59:11.393168+00:00",
@@ -1151,7 +1151,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.513555+00:00",
       "checked": "2020-03-30T18:59:14.950490+00:00",
@@ -1175,7 +1175,7 @@
       "source": "google-states-csv",
       "status": "CHANGED",
       "url": "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.520537+00:00",
       "checked": "2020-03-30T18:59:31.574012+00:00",
@@ -1199,7 +1199,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.527519+00:00",
       "checked": "2020-03-30T18:59:33.976592+00:00",
@@ -1223,7 +1223,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.535506+00:00",
       "checked": "2020-03-30T18:59:35.618778+00:00",
@@ -1442,7 +1442,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.298528+00:00",
-      "checked": "2020-03-30T18:44:34.380227+00:00",
+      "checked": "2020-03-30T19:01:15.516671+00:00",
       "updated": "2020-03-30T00:56:38.300821+00:00",
       "failed": null
     },
@@ -1454,8 +1454,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.300531+00:00",
-      "checked": "2020-03-30T18:44:38.930864+00:00",
-      "updated": "2020-03-30T18:44:38.930864+00:00",
+      "checked": "2020-03-30T19:01:20.412607+00:00",
+      "updated": "2020-03-30T19:01:20.412607+00:00",
       "failed": null
     },
     {
