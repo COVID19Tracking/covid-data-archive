@@ -1,13 +1,13 @@
 CHANGE LIST
 
-  start	2020-03-29 22:07:57 EDT
-  end	2020-03-29 22:10:49 EDT
-  previous	2020-03-29 22:04:40 EDT
-  lapsed	0:02:51.264016
+  start	2020-03-29 22:11:32 EDT
+  end	2020-03-29 22:12:32 EDT
+  previous	2020-03-29 22:07:57 EDT
+  lapsed	0:00:59.432587
 
 STATUS COUNTS:
   CHANGED	37
-  FAILED	19
+  FAILED	22
   duplicate	27
   skip	1
   unchanged	52
@@ -149,6 +149,9 @@ CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
 DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 TX	FAILED	google-states-csv	https://dshs.texas.gov/news/updates.shtm#coronavirus	Exception in code
 PR	FAILED	google-states-csv	https://estadisticas.pr/en/covid-19	Exception in code
+NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
+NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
+NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -287,6 +290,9 @@ CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
 DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 TX	FAILED	google-states-csv	https://dshs.texas.gov/news/updates.shtm#coronavirus	Exception in code
 PR	FAILED	google-states-csv	https://estadisticas.pr/en/covid-19	Exception in code
+NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
+NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
+NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -425,6 +431,9 @@ CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
 DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 TX	FAILED	google-states-csv	https://dshs.texas.gov/news/updates.shtm#coronavirus	Exception in code
 PR	FAILED	google-states-csv	https://estadisticas.pr/en/covid-19	Exception in code
+NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
+NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
+NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -563,6 +572,9 @@ CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
 DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 TX	FAILED	google-states-csv	https://dshs.texas.gov/news/updates.shtm#coronavirus	Exception in code
 PR	FAILED	google-states-csv	https://estadisticas.pr/en/covid-19	Exception in code
+NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
+NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
+NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -701,4 +713,7 @@ CT	FAILED	google-states-csv	https://portal.ct.gov/Coronavirus	Exception in code
 DC	FAILED	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	Exception in code
 TX	FAILED	google-states-csv	https://dshs.texas.gov/news/updates.shtm#coronavirus	Exception in code
 PR	FAILED	google-states-csv	https://estadisticas.pr/en/covid-19	Exception in code
+NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
+NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
+NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 
