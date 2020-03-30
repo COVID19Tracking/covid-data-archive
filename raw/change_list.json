@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T01:59:59.696388+00:00",
-  "end_date": "2020-03-30T02:00:32.281391+00:00",
-  "previous_date": "2020-03-30T01:58:15.965915+00:00",
-  "time_lapsed": "0:00:32.585003",
+  "start_date": "2020-03-30T02:01:44.462444+00:00",
+  "end_date": "2020-03-30T02:03:39.742650+00:00",
+  "previous_date": "2020-03-30T01:59:59.696388+00:00",
+  "time_lapsed": "0:01:55.280206",
   "complete": true,
   "error_message": null,
   "items": [
@@ -38,7 +38,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.844758+00:00",
-      "checked": "2020-03-30T01:45:00.893171+00:00",
+      "checked": "2020-03-30T02:01:58.600779+00:00",
       "updated": "2020-03-30T01:11:34.165606+00:00",
       "failed": null
     },
@@ -50,8 +50,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:51.159916+00:00",
-      "checked": "2020-03-30T01:45:16.497150+00:00",
-      "updated": "2020-03-30T01:45:16.497150+00:00",
+      "checked": "2020-03-30T02:02:16.292009+00:00",
+      "updated": "2020-03-30T02:02:16.292009+00:00",
       "failed": null
     },
     {
@@ -74,7 +74,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:52.889297+00:00",
-      "checked": "2020-03-30T01:45:22.254445+00:00",
+      "checked": "2020-03-30T02:02:22.542928+00:00",
       "updated": "2020-03-30T00:56:24.155248+00:00",
       "failed": null
     },
@@ -86,20 +86,20 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:53.966411+00:00",
-      "checked": "2020-03-30T01:45:32.491630+00:00",
-      "updated": "2020-03-30T01:45:32.491630+00:00",
+      "checked": "2020-03-30T02:02:40.492324+00:00",
+      "updated": "2020-03-30T02:02:40.492324+00:00",
       "failed": null
     },
     {
       "name": "AZ.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:54.199791+00:00",
-      "checked": "2020-03-30T01:45:48.675857+00:00",
-      "updated": "2020-03-30T01:29:15.406693+00:00",
+      "checked": "2020-03-30T02:03:00.787572+00:00",
+      "updated": "2020-03-30T02:03:00.787572+00:00",
       "failed": null
     },
     {
@@ -122,8 +122,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:56.363003+00:00",
-      "checked": "2020-03-30T01:45:54.466416+00:00",
-      "updated": "2020-03-30T01:45:54.466416+00:00",
+      "checked": "2020-03-30T02:03:08.584595+00:00",
+      "updated": "2020-03-30T02:03:08.584595+00:00",
       "failed": null
     },
     {
@@ -134,8 +134,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:57.059143+00:00",
-      "checked": "2020-03-30T01:45:59.472225+00:00",
-      "updated": "2020-03-30T01:45:59.472225+00:00",
+      "checked": "2020-03-30T02:03:12.316785+00:00",
+      "updated": "2020-03-30T02:03:12.316785+00:00",
       "failed": null
     },
     {
@@ -146,8 +146,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:57.590720+00:00",
-      "checked": "2020-03-30T01:46:07.031007+00:00",
-      "updated": "2020-03-30T01:46:07.031007+00:00",
+      "checked": "2020-03-30T02:03:23.589695+00:00",
+      "updated": "2020-03-30T02:03:23.589695+00:00",
       "failed": null
     },
     {
@@ -170,7 +170,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:58.601017+00:00",
-      "checked": "2020-03-30T01:46:14.242553+00:00",
+      "checked": "2020-03-30T02:03:36.851327+00:00",
       "updated": "2020-03-30T00:57:09.378395+00:00",
       "failed": null
     },
@@ -1127,7 +1127,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.494606+00:00",
       "checked": "2020-03-30T02:00:21.707658+00:00",
@@ -1151,7 +1151,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.513555+00:00",
       "checked": "2020-03-30T02:00:25.506853+00:00",
@@ -1175,7 +1175,7 @@
       "source": "google-states-csv",
       "status": "CHANGED",
       "url": "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.520537+00:00",
       "checked": "2020-03-30T02:00:30.174902+00:00",
@@ -1199,7 +1199,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.527519+00:00",
       "checked": "2020-03-30T02:00:32.187685+00:00",
@@ -1223,10 +1223,10 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/",
-      "msg": "",
+      "msg": null,
       "complete": true,
       "added": "2020-03-13T11:18:02.535506+00:00",
-      "checked": "2020-03-30T01:46:16.979511+00:00",
+      "checked": "2020-03-30T02:03:39.539539+00:00",
       "updated": "2020-03-30T01:06:27.326351+00:00",
       "failed": null
     },
@@ -1442,7 +1442,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.298528+00:00",
-      "checked": "2020-03-30T01:45:34.103959+00:00",
+      "checked": "2020-03-30T02:02:42.324122+00:00",
       "updated": "2020-03-30T00:56:38.300821+00:00",
       "failed": null
     },
@@ -1454,8 +1454,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.300531+00:00",
-      "checked": "2020-03-30T01:45:38.104234+00:00",
-      "updated": "2020-03-30T01:45:38.104234+00:00",
+      "checked": "2020-03-30T02:02:49.901219+00:00",
+      "updated": "2020-03-30T02:02:49.901219+00:00",
       "failed": null
     },
     {
