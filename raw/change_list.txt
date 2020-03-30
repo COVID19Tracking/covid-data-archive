@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-30 14:49:58 EDT
-  end	2020-03-30 14:50:26 EDT
-  previous	2020-03-30 14:43:56 EDT
-  lapsed	0:00:27.755203
+  start	2020-03-30 14:51:14 EDT
+  end	2020-03-30 14:52:28 EDT
+  previous	2020-03-30 14:49:58 EDT
+  lapsed	0:01:13.060215
 
 STATUS COUNTS:
-  CHANGED	40
+  CHANGED	42
   FAILED	40
   duplicate	27
   skip	1
-  unchanged	49
+  unchanged	47
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -56,7 +56,7 @@ MA.html	CHANGED	google-states-csv	https://www.mass.gov/info-details/covid-19-cas
 MA_data.html	unchanged	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states-csv	https://coronavirus.maryland.gov/	
 MD_data.html	duplicate	google-states-csv	duplicate of MD	
-ME.html	unchanged	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a	
@@ -68,7 +68,7 @@ MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -215,7 +215,7 @@ MA.html	CHANGED	google-states-csv	https://www.mass.gov/info-details/covid-19-cas
 MA_data.html	unchanged	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states-csv	https://coronavirus.maryland.gov/	
 MD_data.html	duplicate	google-states-csv	duplicate of MD	
-ME.html	unchanged	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a	
@@ -227,7 +227,7 @@ MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -374,7 +374,7 @@ MA.html	CHANGED	google-states-csv	https://www.mass.gov/info-details/covid-19-cas
 MA_data.html	unchanged	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states-csv	https://coronavirus.maryland.gov/	
 MD_data.html	duplicate	google-states-csv	duplicate of MD	
-ME.html	unchanged	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a	
@@ -386,7 +386,7 @@ MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -533,7 +533,7 @@ MA.html	CHANGED	google-states-csv	https://www.mass.gov/info-details/covid-19-cas
 MA_data.html	unchanged	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states-csv	https://coronavirus.maryland.gov/	
 MD_data.html	duplicate	google-states-csv	duplicate of MD	
-ME.html	unchanged	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a	
@@ -545,7 +545,7 @@ MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -692,7 +692,7 @@ MA.html	CHANGED	google-states-csv	https://www.mass.gov/info-details/covid-19-cas
 MA_data.html	unchanged	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring	
 MD.html	unchanged	google-states-csv	https://coronavirus.maryland.gov/	
 MD_data.html	duplicate	google-states-csv	duplicate of MD	
-ME.html	unchanged	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
+ME.html	CHANGED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	
 ME_data.html	duplicate	google-states-csv	duplicate of ME	
 MI.html	unchanged	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	
 MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a	
@@ -704,7 +704,7 @@ MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
