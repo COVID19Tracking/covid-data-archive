@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T17:49:35.540704+00:00",
-  "end_date": "2020-03-30T17:51:24.642083+00:00",
-  "previous_date": "2020-03-30T17:48:10.745132+00:00",
-  "time_lapsed": "0:01:49.101379",
+  "start_date": "2020-03-30T17:52:15.428159+00:00",
+  "end_date": "2020-03-30T17:55:52.674759+00:00",
+  "previous_date": "2020-03-30T17:49:35.540704+00:00",
+  "time_lapsed": "0:03:37.246600",
   "complete": true,
   "error_message": null,
   "items": [
@@ -386,8 +386,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.236296+00:00",
-      "checked": "2020-03-30T17:34:36.776076+00:00",
-      "updated": "2020-03-30T17:34:36.776076+00:00",
+      "checked": "2020-03-30T17:52:30.168978+00:00",
+      "updated": "2020-03-30T17:52:30.168978+00:00",
       "failed": null
     },
     {
@@ -410,8 +410,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.241283+00:00",
-      "checked": "2020-03-30T17:34:45.263357+00:00",
-      "updated": "2020-03-30T17:34:45.263357+00:00",
+      "checked": "2020-03-30T17:52:39.432038+00:00",
+      "updated": "2020-03-30T17:52:39.432038+00:00",
       "failed": null
     },
     {
@@ -422,20 +422,20 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.245272+00:00",
-      "checked": "2020-03-30T17:34:46.107046+00:00",
+      "checked": "2020-03-30T17:52:40.291353+00:00",
       "updated": "2020-03-30T02:32:07.627045+00:00",
       "failed": null
     },
     {
       "name": "KY.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.248264+00:00",
-      "checked": "2020-03-30T17:34:49.226449+00:00",
-      "updated": "2020-03-30T17:17:23.554938+00:00",
+      "checked": "2020-03-30T17:54:17.141914+00:00",
+      "updated": "2020-03-30T17:54:17.141914+00:00",
       "failed": null
     },
     {
@@ -453,13 +453,13 @@
     {
       "name": "LA.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "http://ldh.la.gov/Coronavirus/",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.258239+00:00",
-      "checked": "2020-03-30T17:34:58.104409+00:00",
-      "updated": "2020-03-30T02:49:26.651688+00:00",
+      "checked": "2020-03-30T17:54:26.012863+00:00",
+      "updated": "2020-03-30T17:54:26.012863+00:00",
       "failed": null
     },
     {
@@ -477,12 +477,12 @@
     {
       "name": "MA.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.266217+00:00",
-      "checked": "2020-03-30T17:34:59.812111+00:00",
+      "checked": "2020-03-30T17:54:29.255207+00:00",
       "updated": "2020-03-30T17:34:59.812111+00:00",
       "failed": null
     },
@@ -506,7 +506,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.283171+00:00",
-      "checked": "2020-03-30T17:35:01.366349+00:00",
+      "checked": "2020-03-30T17:54:30.804470+00:00",
       "updated": "2020-03-30T00:58:40.706101+00:00",
       "failed": null
     },
@@ -530,7 +530,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.292149+00:00",
-      "checked": "2020-03-30T17:35:04.040214+00:00",
+      "checked": "2020-03-30T17:54:33.408212+00:00",
       "updated": "2020-03-30T17:17:38.471675+00:00",
       "failed": null
     },
@@ -554,31 +554,31 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.299165+00:00",
-      "checked": "2020-03-30T17:35:05.725247+00:00",
+      "checked": "2020-03-30T17:54:35.157160+00:00",
       "updated": "2020-03-30T17:17:40.621378+00:00",
       "failed": null
     },
     {
       "name": "MI_data.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "http://emhsd.maps.arcgis.com/apps/opsdashboard/index.html#/ea9fb6d9caaa4937995113dbd5d0a87a",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.302121+00:00",
-      "checked": "2020-03-30T17:35:16.022813+00:00",
-      "updated": "2020-03-30T17:17:51.081924+00:00",
+      "checked": "2020-03-30T17:54:45.053598+00:00",
+      "updated": "2020-03-30T17:54:45.053598+00:00",
       "failed": null
     },
     {
       "name": "MN.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://www.health.state.mn.us/diseases/coronavirus/situation.html",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.304139+00:00",
-      "checked": "2020-03-30T17:35:19.772530+00:00",
+      "checked": "2020-03-30T17:54:49.125984+00:00",
       "updated": "2020-03-30T17:35:19.772530+00:00",
       "failed": null
     },
@@ -602,32 +602,32 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.311096+00:00",
-      "checked": "2020-03-30T17:36:24.397028+00:00",
+      "checked": "2020-03-30T17:55:06.186563+00:00",
       "updated": "2020-03-30T00:59:08.893818+00:00",
       "failed": null
     },
     {
       "name": "MO_data.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.313091+00:00",
-      "checked": "2020-03-30T17:36:32.942694+00:00",
+      "checked": "2020-03-30T17:55:12.711954+00:00",
       "updated": "2020-03-30T17:36:32.942694+00:00",
       "failed": null
     },
     {
       "name": "MS.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://msdh.ms.gov/msdhsite/_static/14,0,420.html",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.316083+00:00",
-      "checked": "2020-03-30T17:36:39.389905+00:00",
-      "updated": "2020-03-30T17:18:25.083535+00:00",
+      "checked": "2020-03-30T17:55:18.586524+00:00",
+      "updated": "2020-03-30T17:55:18.586524+00:00",
       "failed": null
     },
     {
@@ -650,7 +650,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.323064+00:00",
-      "checked": "2020-03-30T17:36:49.274413+00:00",
+      "checked": "2020-03-30T17:55:28.965549+00:00",
       "updated": "2020-03-26T04:06:07.064052+00:00",
       "failed": null
     },
@@ -674,8 +674,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.329083+00:00",
-      "checked": "2020-03-30T17:36:54.195915+00:00",
-      "updated": "2020-03-30T17:36:54.195915+00:00",
+      "checked": "2020-03-30T17:55:33.076939+00:00",
+      "updated": "2020-03-30T17:55:33.076939+00:00",
       "failed": null
     },
     {
@@ -698,8 +698,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.334126+00:00",
-      "checked": "2020-03-30T17:36:57.398235+00:00",
-      "updated": "2020-03-30T17:36:57.398235+00:00",
+      "checked": "2020-03-30T17:55:36.730446+00:00",
+      "updated": "2020-03-30T17:55:36.730446+00:00",
       "failed": null
     },
     {
@@ -722,8 +722,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.342053+00:00",
-      "checked": "2020-03-30T17:37:05.939480+00:00",
-      "updated": "2020-03-30T17:37:05.939480+00:00",
+      "checked": "2020-03-30T17:55:47.091296+00:00",
+      "updated": "2020-03-30T17:55:47.091296+00:00",
       "failed": null
     },
     {
@@ -746,7 +746,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.346044+00:00",
-      "checked": "2020-03-30T17:37:08.069487+00:00",
+      "checked": "2020-03-30T17:55:49.144768+00:00",
       "updated": "2020-03-30T00:59:51.711957+00:00",
       "failed": null
     },
@@ -765,13 +765,13 @@
     {
       "name": "NJ.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://www.nj.gov/health",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.362958+00:00",
-      "checked": "2020-03-30T17:37:09.949283+00:00",
-      "updated": "2020-03-30T17:18:59.570146+00:00",
+      "checked": "2020-03-30T17:55:52.354430+00:00",
+      "updated": "2020-03-30T17:55:52.354430+00:00",
       "failed": null
     },
     {
@@ -1418,7 +1418,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:35.033344+00:00",
-      "checked": "2020-03-30T17:36:36.489320+00:00",
+      "checked": "2020-03-30T17:55:16.399193+00:00",
       "updated": "2020-03-30T17:18:22.985930+00:00",
       "failed": null
     },
