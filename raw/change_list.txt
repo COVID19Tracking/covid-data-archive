@@ -1,30 +1,30 @@
 CHANGE LIST
 
-  start	2020-03-29 23:42:43 EDT
-  end	2020-03-29 23:43:34 EDT
-  previous	2020-03-29 23:41:13 EDT
-  lapsed	0:00:51.321213
+  start	2020-03-29 23:44:35 EDT
+  end	2020-03-29 23:46:39 EDT
+  previous	2020-03-29 23:42:43 EDT
+  lapsed	0:02:03.983214
 
 STATUS COUNTS:
-  CHANGED	36
-  FAILED	24
+  CHANGED	35
+  FAILED	30
   duplicate	27
   skip	1
-  unchanged	52
+  unchanged	53
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AL.html	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Response is 0 bytes
+AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
-AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -153,20 +153,26 @@ NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
 NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
 NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	Exception in code
+FL	FAILED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	Exception in code
+GA	FAILED	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	Exception in code
+GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception in code
+HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
+IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
+ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AL.html	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Response is 0 bytes
+AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
-AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -295,20 +301,26 @@ NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
 NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
 NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	Exception in code
+FL	FAILED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	Exception in code
+GA	FAILED	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	Exception in code
+GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception in code
+HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
+IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
+ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AL.html	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Response is 0 bytes
+AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
-AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -437,20 +449,26 @@ NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
 NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
 NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	Exception in code
+FL	FAILED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	Exception in code
+GA	FAILED	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	Exception in code
+GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception in code
+HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
+IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
+ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AL.html	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Response is 0 bytes
+AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
-AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -579,20 +597,26 @@ NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
 NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
 NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	Exception in code
+FL	FAILED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	Exception in code
+GA	FAILED	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	Exception in code
+GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception in code
+HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
+IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
+ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
 AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
-AL.html	FAILED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	Response is 0 bytes
+AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	CHANGED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
 AR_data.html	CHANGED	google-states-csv	https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647	
-AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
+AZ.html	unchanged	google-states-csv	https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home	
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -721,4 +745,10 @@ NJ	FAILED	google-states-csv	https://www.nj.gov/health	Exception in code
 NM	FAILED	google-states-csv	https://cv.nmhealth.org/	Exception in code
 NV	FAILED	google-states-csv	https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9	Exception in code
 OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx	Exception in code
+FL	FAILED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	Exception in code
+GA	FAILED	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	Exception in code
+GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception in code
+HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
+IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
+ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 
