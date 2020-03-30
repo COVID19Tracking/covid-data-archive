@@ -1,13 +1,13 @@
 CHANGE LIST
 
-  start	2020-03-30 14:07:45 EDT
-  end	2020-03-30 14:09:09 EDT
-  previous	2020-03-30 14:05:40 EDT
-  lapsed	0:01:24.856730
+  start	2020-03-30 14:10:07 EDT
+  end	2020-03-30 14:10:22 EDT
+  previous	2020-03-30 14:07:45 EDT
+  lapsed	0:00:15.028676
 
 STATUS COUNTS:
   CHANGED	44
-  FAILED	38
+  FAILED	40
   duplicate	27
   skip	1
   unchanged	45
@@ -168,6 +168,8 @@ MA	FAILED	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-qua
 MD	FAILED	google-states-csv	https://coronavirus.maryland.gov/	Exception in code
 ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	Exception in code
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
+MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
+MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -325,6 +327,8 @@ MA	FAILED	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-qua
 MD	FAILED	google-states-csv	https://coronavirus.maryland.gov/	Exception in code
 ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	Exception in code
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
+MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
+MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -482,6 +486,8 @@ MA	FAILED	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-qua
 MD	FAILED	google-states-csv	https://coronavirus.maryland.gov/	Exception in code
 ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	Exception in code
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
+MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
+MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -639,6 +645,8 @@ MA	FAILED	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-qua
 MD	FAILED	google-states-csv	https://coronavirus.maryland.gov/	Exception in code
 ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	Exception in code
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
+MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
+MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -796,4 +804,6 @@ MA	FAILED	google-states-csv	https://www.mass.gov/info-details/covid-19-cases-qua
 MD	FAILED	google-states-csv	https://coronavirus.maryland.gov/	Exception in code
 ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml	Exception in code
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
+MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
+MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
 
