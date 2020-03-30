@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-30 15:06:27 EDT
-  end	2020-03-30 15:08:36 EDT
-  previous	2020-03-30 15:05:21 EDT
-  lapsed	0:02:08.130371
+  start	2020-03-30 15:09:29 EDT
+  end	2020-03-30 15:11:44 EDT
+  previous	2020-03-30 15:06:27 EDT
+  lapsed	0:02:14.818482
 
 STATUS COUNTS:
-  CHANGED	40
-  FAILED	41
+  CHANGED	38
+  FAILED	43
   duplicate	27
   skip	1
-  unchanged	48
+  unchanged	49
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -63,12 +63,12 @@ MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsda
 MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	
-MO_data.html	CHANGED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	
+MO_data.html	FAILED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	Response is 220 bytes
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -122,7 +122,7 @@ main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHm
 google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states-csv	https://coronavirus.health.ok.gov/	Exception in code
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
-NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
+NY	FAILED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	Exception in code
 AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19	
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
@@ -170,6 +170,7 @@ ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
 MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
 MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
+OH	FAILED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -222,12 +223,12 @@ MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsda
 MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	
-MO_data.html	CHANGED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	
+MO_data.html	FAILED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	Response is 220 bytes
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -281,7 +282,7 @@ main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHm
 google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states-csv	https://coronavirus.health.ok.gov/	Exception in code
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
-NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
+NY	FAILED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	Exception in code
 AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19	
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
@@ -329,6 +330,7 @@ ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
 MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
 MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
+OH	FAILED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -381,12 +383,12 @@ MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsda
 MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	
-MO_data.html	CHANGED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	
+MO_data.html	FAILED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	Response is 220 bytes
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -440,7 +442,7 @@ main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHm
 google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states-csv	https://coronavirus.health.ok.gov/	Exception in code
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
-NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
+NY	FAILED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	Exception in code
 AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19	
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
@@ -488,6 +490,7 @@ ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
 MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
 MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
+OH	FAILED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -540,12 +543,12 @@ MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsda
 MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	
-MO_data.html	CHANGED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	
+MO_data.html	FAILED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	Response is 220 bytes
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -599,7 +602,7 @@ main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHm
 google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states-csv	https://coronavirus.health.ok.gov/	Exception in code
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
-NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
+NY	FAILED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	Exception in code
 AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19	
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
@@ -647,6 +650,7 @@ ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
 MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
 MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
+OH	FAILED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -699,12 +703,12 @@ MI_data.html	unchanged	google-states-csv	http://emhsd.maps.arcgis.com/apps/opsda
 MN.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MN_data.html	unchanged	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	
 MO.html	unchanged	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	
-MO_data.html	CHANGED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	
+MO_data.html	FAILED	google-states-csv	https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/	Response is 220 bytes
 MS.html	CHANGED	google-states-csv	https://msdh.ms.gov/msdhsite/_static/14,0,420.html	
 MS_data.html	duplicate	google-states-csv	duplicate of MS	
 MT.html	unchanged	google-states-csv	https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b	
 MT_data.html	duplicate	google-states-csv	duplicate of MT	
-NC.html	CHANGED	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
+NC.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-nc	
 NC_data.html	unchanged	google-states-csv	https://www.ncdhhs.gov/covid-19-case-count-north-carolina	
 ND.html	CHANGED	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
 ND_data.html	unchanged	google-states-csv	https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases	
@@ -758,7 +762,7 @@ main_sheet.html	CHANGED		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHm
 google-states.html	CHANGED	google-states	https://covid.cape.io/states/info.csv	
 OK	FAILED	google-states-csv	https://coronavirus.health.ok.gov/	Exception in code
 OK_data	FAILED	google-states	https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html	HTTP status 404
-NY	FAILED	google-states	https://www.health.ny.gov/diseases/communicable/coronavirus/	HTTP status 500
+NY	FAILED	google-states-csv	https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases	Exception in code
 AR	FAILED	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	Exception in code
 PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19	
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
@@ -806,4 +810,5 @@ ME	FAILED	google-states-csv	https://www.maine.gov/dhhs/mecdc/infectious-disease/
 MI	FAILED	google-states-csv	https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html	Exception in code
 MN	FAILED	google-states-csv	https://www.health.state.mn.us/diseases/coronavirus/situation.html	Exception in code
 MO	FAILED	google-states-csv	https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php	Exception in code
+OH	FAILED	google-states-csv	https://coronavirus.ohio.gov/wps/portal/gov/covid-19/	Exception in code
 
