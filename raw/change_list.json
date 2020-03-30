@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T03:32:01.046652+00:00",
-  "end_date": "2020-03-30T03:32:15.999218+00:00",
-  "previous_date": "2020-03-30T03:31:05.319321+00:00",
-  "time_lapsed": "0:00:14.952566",
+  "start_date": "2020-03-30T03:33:14.047219+00:00",
+  "end_date": "2020-03-30T03:33:49.883578+00:00",
+  "previous_date": "2020-03-30T03:32:01.046652+00:00",
+  "time_lapsed": "0:00:35.836359",
   "complete": true,
   "error_message": null,
   "items": [
@@ -45,14 +45,14 @@
     {
       "name": "AL.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "FAILED",
       "url": "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7",
-      "msg": "",
+      "msg": "Response is 0 bytes",
       "complete": true,
       "added": "2020-03-13T11:17:51.159916+00:00",
       "checked": "2020-03-30T03:17:37.337229+00:00",
       "updated": "2020-03-30T03:17:37.337229+00:00",
-      "failed": null
+      "failed": "2020-03-30T03:33:45.782590+00:00"
     },
     {
       "name": "AL_data.html",
@@ -72,7 +72,7 @@
       "status": "unchanged",
       "url": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus",
       "msg": "",
-      "complete": true,
+      "complete": false,
       "added": "2020-03-13T11:17:52.889297+00:00",
       "checked": "2020-03-30T03:17:41.869402+00:00",
       "updated": "2020-03-30T00:56:24.155248+00:00",
@@ -1332,7 +1332,7 @@
       "status": "FAILED",
       "url": "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus",
       "msg": "Exception in code",
-      "complete": false,
+      "complete": true,
       "added": "2020-03-16T22:05:38.151307+00:00",
       "checked": null,
       "updated": null,
