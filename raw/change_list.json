@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T01:40:39.265238+00:00",
-  "end_date": "2020-03-30T01:43:50.920568+00:00",
-  "previous_date": "2020-03-30T01:39:27.524823+00:00",
-  "time_lapsed": "0:03:11.655330",
+  "start_date": "2020-03-30T01:44:48.397038+00:00",
+  "end_date": "2020-03-30T01:46:17.069461+00:00",
+  "previous_date": "2020-03-30T01:40:39.265238+00:00",
+  "time_lapsed": "0:01:28.672423",
   "complete": true,
   "error_message": null,
   "items": [
@@ -26,7 +26,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.550545+00:00",
-      "checked": "2020-03-30T01:27:28.197778+00:00",
+      "checked": "2020-03-30T01:44:58.154883+00:00",
       "updated": "2020-03-30T01:11:31.920739+00:00",
       "failed": null
     },
@@ -38,7 +38,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.844758+00:00",
-      "checked": "2020-03-30T01:27:30.386014+00:00",
+      "checked": "2020-03-30T01:45:00.893171+00:00",
       "updated": "2020-03-30T01:11:34.165606+00:00",
       "failed": null
     },
@@ -50,8 +50,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:51.159916+00:00",
-      "checked": "2020-03-30T01:27:44.594434+00:00",
-      "updated": "2020-03-30T01:27:44.594434+00:00",
+      "checked": "2020-03-30T01:45:16.497150+00:00",
+      "updated": "2020-03-30T01:45:16.497150+00:00",
       "failed": null
     },
     {
@@ -74,7 +74,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:52.889297+00:00",
-      "checked": "2020-03-30T01:28:47.976454+00:00",
+      "checked": "2020-03-30T01:45:22.254445+00:00",
       "updated": "2020-03-30T00:56:24.155248+00:00",
       "failed": null
     },
@@ -86,19 +86,19 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:53.966411+00:00",
-      "checked": "2020-03-30T01:29:00.923094+00:00",
-      "updated": "2020-03-30T01:29:00.923094+00:00",
+      "checked": "2020-03-30T01:45:32.491630+00:00",
+      "updated": "2020-03-30T01:45:32.491630+00:00",
       "failed": null
     },
     {
       "name": "AZ.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:54.199791+00:00",
-      "checked": "2020-03-30T01:29:15.406693+00:00",
+      "checked": "2020-03-30T01:45:48.675857+00:00",
       "updated": "2020-03-30T01:29:15.406693+00:00",
       "failed": null
     },
@@ -122,8 +122,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:56.363003+00:00",
-      "checked": "2020-03-30T01:29:20.064073+00:00",
-      "updated": "2020-03-30T01:29:20.064073+00:00",
+      "checked": "2020-03-30T01:45:54.466416+00:00",
+      "updated": "2020-03-30T01:45:54.466416+00:00",
       "failed": null
     },
     {
@@ -134,8 +134,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:57.059143+00:00",
-      "checked": "2020-03-30T01:29:23.486834+00:00",
-      "updated": "2020-03-30T01:29:23.486834+00:00",
+      "checked": "2020-03-30T01:45:59.472225+00:00",
+      "updated": "2020-03-30T01:45:59.472225+00:00",
       "failed": null
     },
     {
@@ -146,8 +146,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:57.590720+00:00",
-      "checked": "2020-03-30T01:29:31.362523+00:00",
-      "updated": "2020-03-30T01:29:31.362523+00:00",
+      "checked": "2020-03-30T01:46:07.031007+00:00",
+      "updated": "2020-03-30T01:46:07.031007+00:00",
       "failed": null
     },
     {
@@ -170,7 +170,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:58.601017+00:00",
-      "checked": "2020-03-30T01:29:37.205846+00:00",
+      "checked": "2020-03-30T01:46:14.242553+00:00",
       "updated": "2020-03-30T00:57:09.378395+00:00",
       "failed": null
     },
@@ -1127,7 +1127,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.494606+00:00",
       "checked": "2020-03-30T01:43:44.794840+00:00",
@@ -1151,7 +1151,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://www.doh.wa.gov/Emergencies/Coronavirus",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.513555+00:00",
       "checked": "2020-03-30T01:43:46.493132+00:00",
@@ -1175,7 +1175,7 @@
       "source": "google-states-csv",
       "status": "CHANGED",
       "url": "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.520537+00:00",
       "checked": "2020-03-30T01:43:49.433854+00:00",
@@ -1199,7 +1199,7 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx",
-      "msg": null,
+      "msg": "",
       "complete": true,
       "added": "2020-03-13T11:18:02.527519+00:00",
       "checked": "2020-03-30T01:43:50.843614+00:00",
@@ -1223,10 +1223,10 @@
       "source": "google-states-csv",
       "status": "unchanged",
       "url": "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/",
-      "msg": "",
+      "msg": null,
       "complete": true,
       "added": "2020-03-13T11:18:02.535506+00:00",
-      "checked": "2020-03-30T01:25:40.860293+00:00",
+      "checked": "2020-03-30T01:46:16.979511+00:00",
       "updated": "2020-03-30T01:06:27.326351+00:00",
       "failed": null
     },
@@ -1442,7 +1442,7 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.298528+00:00",
-      "checked": "2020-03-30T01:29:02.597390+00:00",
+      "checked": "2020-03-30T01:45:34.103959+00:00",
       "updated": "2020-03-30T00:56:38.300821+00:00",
       "failed": null
     },
@@ -1454,8 +1454,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-16T22:06:37.300531+00:00",
-      "checked": "2020-03-30T01:29:06.531646+00:00",
-      "updated": "2020-03-30T01:29:06.531646+00:00",
+      "checked": "2020-03-30T01:45:38.104234+00:00",
+      "updated": "2020-03-30T01:45:38.104234+00:00",
       "failed": null
     },
     {
