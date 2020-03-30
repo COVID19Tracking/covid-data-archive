@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-29 21:28:38 EDT
-  end	2020-03-29 21:29:37 EDT
-  previous	2020-03-29 21:27:19 EDT
-  lapsed	0:00:59.596233
+  start	2020-03-29 21:30:29 EDT
+  end	2020-03-29 21:31:39 EDT
+  previous	2020-03-29 21:28:38 EDT
+  lapsed	0:01:09.720057
 
 STATUS COUNTS:
-  CHANGED	33
+  CHANGED	34
   FAILED	19
   duplicate	27
   skip	1
-  unchanged	56
+  unchanged	55
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -37,10 +37,10 @@ FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experienc
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	
-HI_data.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI_data.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
-ID.html	unchanged	google-states-csv	https://coronavirus.idaho.gov/	
+ID.html	CHANGED	google-states-csv	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states-csv	duplicate of ID	
 IL.html	CHANGED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	duplicate	google-states-csv	duplicate of IL	
@@ -128,7 +128,7 @@ PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states-csv	duplicate of VI	
-GU.html	CHANGED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
+GU.html	unchanged	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states-csv	duplicate of GU	
 MP.html	CHANGED	google-states-csv	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states-csv	duplicate of MP	
@@ -175,10 +175,10 @@ FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experienc
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	
-HI_data.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI_data.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
-ID.html	unchanged	google-states-csv	https://coronavirus.idaho.gov/	
+ID.html	CHANGED	google-states-csv	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states-csv	duplicate of ID	
 IL.html	CHANGED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	duplicate	google-states-csv	duplicate of IL	
@@ -266,7 +266,7 @@ PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states-csv	duplicate of VI	
-GU.html	CHANGED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
+GU.html	unchanged	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states-csv	duplicate of GU	
 MP.html	CHANGED	google-states-csv	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states-csv	duplicate of MP	
@@ -313,10 +313,10 @@ FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experienc
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	
-HI_data.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI_data.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
-ID.html	unchanged	google-states-csv	https://coronavirus.idaho.gov/	
+ID.html	CHANGED	google-states-csv	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states-csv	duplicate of ID	
 IL.html	CHANGED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	duplicate	google-states-csv	duplicate of IL	
@@ -404,7 +404,7 @@ PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states-csv	duplicate of VI	
-GU.html	CHANGED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
+GU.html	unchanged	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states-csv	duplicate of GU	
 MP.html	CHANGED	google-states-csv	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states-csv	duplicate of MP	
@@ -451,10 +451,10 @@ FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experienc
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	
-HI_data.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI_data.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
-ID.html	unchanged	google-states-csv	https://coronavirus.idaho.gov/	
+ID.html	CHANGED	google-states-csv	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states-csv	duplicate of ID	
 IL.html	CHANGED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	duplicate	google-states-csv	duplicate of IL	
@@ -542,7 +542,7 @@ PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states-csv	duplicate of VI	
-GU.html	CHANGED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
+GU.html	unchanged	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states-csv	duplicate of GU	
 MP.html	CHANGED	google-states-csv	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states-csv	duplicate of MP	
@@ -589,10 +589,10 @@ FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experienc
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 HI.html	unchanged	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	
-HI_data.html	unchanged	google-states-csv	https://hawaiicovid19.com/	
+HI_data.html	CHANGED	google-states-csv	https://hawaiicovid19.com/	
 IA.html	CHANGED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	
 IA_data.html	duplicate	google-states-csv	duplicate of IA	
-ID.html	unchanged	google-states-csv	https://coronavirus.idaho.gov/	
+ID.html	CHANGED	google-states-csv	https://coronavirus.idaho.gov/	
 ID_data.html	duplicate	google-states-csv	duplicate of ID	
 IL.html	CHANGED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	
 IL_data.html	duplicate	google-states-csv	duplicate of IL	
@@ -680,7 +680,7 @@ PR.html	unchanged	google-states-csv	https://estadisticas.pr/en/covid-19
 PR_data.html	CHANGED	google-states-csv	http://www.salud.gov.pr/Pages/coronavirus.aspx	
 VI.html	CHANGED	google-states-csv	https://doh.vi.gov/	
 VI_data.html	duplicate	google-states-csv	duplicate of VI	
-GU.html	CHANGED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
+GU.html	unchanged	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	
 GU_data.html	duplicate	google-states-csv	duplicate of GU	
 MP.html	CHANGED	google-states-csv	https://www.chcc.gov.mp/coronavirusinformation.php	
 MP_data.html	duplicate	google-states-csv	duplicate of MP	
