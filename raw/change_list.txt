@@ -1,21 +1,21 @@
 CHANGE LIST
 
-  start	2020-03-29 22:59:26 EDT
-  end	2020-03-29 22:59:27 EDT
-  previous	2020-03-29 22:58:39 EDT
-  lapsed	0:00:00.690405
+  start	2020-03-29 23:00:15 EDT
+  end	2020-03-29 23:00:28 EDT
+  previous	2020-03-29 22:59:26 EDT
+  lapsed	0:00:13.088843
 
 STATUS COUNTS:
-  CHANGED	32
+  CHANGED	33
   FAILED	23
   duplicate	27
   skip	1
-  unchanged	57
+  unchanged	56
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	unchanged	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
@@ -157,7 +157,7 @@ OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DIS
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	unchanged	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
@@ -299,7 +299,7 @@ OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DIS
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	unchanged	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
@@ -441,7 +441,7 @@ OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DIS
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	unchanged	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
@@ -583,7 +583,7 @@ OR	FAILED	google-states-csv	https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DIS
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
 AK.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx	
-AK_data.html	unchanged	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
+AK_data.html	CHANGED	google-states-csv	http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx	
 AL.html	CHANGED	google-states-csv	https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7	
 AL_data.html	duplicate	google-states-csv	duplicate of AL	
 AR.html	unchanged	google-states-csv	https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus	
