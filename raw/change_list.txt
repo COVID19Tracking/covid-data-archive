@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-29 23:47:42 EDT
-  end	2020-03-29 23:48:31 EDT
-  previous	2020-03-29 23:44:35 EDT
-  lapsed	0:00:49.046763
+  start	2020-03-29 23:49:31 EDT
+  end	2020-03-29 23:50:10 EDT
+  previous	2020-03-29 23:47:42 EDT
+  lapsed	0:00:39.069255
 
 STATUS COUNTS:
-  CHANGED	36
-  FAILED	29
+  CHANGED	35
+  FAILED	31
   duplicate	27
   skip	1
-  unchanged	53
+  unchanged	54
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -26,7 +26,7 @@ CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Page
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -159,6 +159,8 @@ GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception 
 HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
 IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
+IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
+IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -174,7 +176,7 @@ CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Page
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -307,6 +309,8 @@ GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception 
 HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
 IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
+IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
+IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -322,7 +326,7 @@ CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Page
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -455,6 +459,8 @@ GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception 
 HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
 IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
+IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
+IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -470,7 +476,7 @@ CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Page
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -603,6 +609,8 @@ GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception 
 HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
 IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
+IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
+IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -618,7 +626,7 @@ CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Page
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
 CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
-CT.html	CHANGED	google-states-csv	https://portal.ct.gov/Coronavirus	
+CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
 DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
@@ -751,4 +759,6 @@ GU	FAILED	google-states-csv	https://ghs.guam.gov/coronavirus-covid-19	Exception 
 HI	FAILED	google-states-csv	https://health.hawaii.gov/coronavirusdisease2019/	Exception in code
 IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus	Exception in code
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
+IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
+IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
 
