@@ -1,16 +1,16 @@
 CHANGE LIST
 
-  start	2020-03-29 23:55:43 EDT
-  end	2020-03-29 23:56:18 EDT
-  previous	2020-03-29 23:54:07 EDT
-  lapsed	0:00:34.655126
+  start	2020-03-29 23:57:13 EDT
+  end	2020-03-29 23:57:57 EDT
+  previous	2020-03-29 23:55:43 EDT
+  lapsed	0:00:44.034046
 
 STATUS COUNTS:
-  CHANGED	35
-  FAILED	31
+  CHANGED	36
+  FAILED	32
   duplicate	27
   skip	1
-  unchanged	54
+  unchanged	53
 
 ====== CHANGED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -32,7 +32,7 @@ DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	CHANGED	google-states-csv	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states-csv	duplicate of DE	
-FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
+FL.html	CHANGED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
@@ -161,6 +161,7 @@ IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-C
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
 IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
+KS	FAILED	google-states-csv	https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134	Exception in code
 
 ====== FAILED ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -182,7 +183,7 @@ DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	CHANGED	google-states-csv	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states-csv	duplicate of DE	
-FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
+FL.html	CHANGED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
@@ -311,6 +312,7 @@ IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-C
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
 IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
+KS	FAILED	google-states-csv	https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134	Exception in code
 
 ====== duplicate ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -332,7 +334,7 @@ DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	CHANGED	google-states-csv	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states-csv	duplicate of DE	
-FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
+FL.html	CHANGED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
@@ -461,6 +463,7 @@ IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-C
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
 IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
+KS	FAILED	google-states-csv	https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134	Exception in code
 
 ====== skip ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -482,7 +485,7 @@ DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	CHANGED	google-states-csv	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states-csv	duplicate of DE	
-FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
+FL.html	CHANGED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
@@ -611,6 +614,7 @@ IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-C
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
 IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
+KS	FAILED	google-states-csv	https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134	Exception in code
 
 ====== unchanged ======
 main_sheet	unchanged		https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/htmlview?sle=true#	
@@ -632,7 +636,7 @@ DC.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-
 DC_data.html	unchanged	google-states-csv	https://coronavirus.dc.gov/page/coronavirus-surveillance-data	
 DE.html	CHANGED	google-states-csv	https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html	
 DE_data.html	duplicate	google-states-csv	duplicate of DE	
-FL.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
+FL.html	CHANGED	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 FL_data.html	unchanged	google-states-csv	https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/	
 GA.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
 GA_data.html	unchanged	google-states-csv	https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report	
@@ -761,4 +765,5 @@ IA	FAILED	google-states-csv	https://idph.iowa.gov/Emerging-Health-Issues/Novel-C
 ID	FAILED	google-states-csv	https://coronavirus.idaho.gov/	Exception in code
 IL	FAILED	google-states-csv	http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus	Exception in code
 IN	FAILED	google-states-csv	https://www.in.gov/isdh/28470.htm	Exception in code
+KS	FAILED	google-states-csv	https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134	Exception in code
 

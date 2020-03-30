@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T03:55:43.561898+00:00",
-  "end_date": "2020-03-30T03:56:18.217024+00:00",
-  "previous_date": "2020-03-30T03:54:07.146149+00:00",
-  "time_lapsed": "0:00:34.655126",
+  "start_date": "2020-03-30T03:57:13.936817+00:00",
+  "end_date": "2020-03-30T03:57:57.970863+00:00",
+  "previous_date": "2020-03-30T03:55:43.561898+00:00",
+  "time_lapsed": "0:00:44.034046",
   "complete": true,
   "error_message": null,
   "items": [
@@ -216,10 +216,10 @@
       "status": "CHANGED",
       "url": "https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html",
       "msg": "",
-      "complete": false,
+      "complete": true,
       "added": "2020-03-13T11:18:00.387241+00:00",
-      "checked": "2020-03-30T03:21:35.288962+00:00",
-      "updated": "2020-03-30T03:21:35.288962+00:00",
+      "checked": "2020-03-30T03:57:43.189207+00:00",
+      "updated": "2020-03-30T03:57:43.189207+00:00",
       "failed": null
     },
     {
@@ -237,13 +237,13 @@
     {
       "name": "FL.html",
       "source": "google-states-csv",
-      "status": "unchanged",
+      "status": "CHANGED",
       "url": "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/",
       "msg": "",
-      "complete": false,
+      "complete": true,
       "added": "2020-03-13T11:18:01.190094+00:00",
-      "checked": "2020-03-30T03:21:42.480666+00:00",
-      "updated": "2020-03-21T00:07:48.416810+00:00",
+      "checked": "2020-03-30T03:57:50.361295+00:00",
+      "updated": "2020-03-30T03:57:50.361295+00:00",
       "failed": null
     },
     {
@@ -1476,7 +1476,7 @@
       "status": "FAILED",
       "url": "https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html",
       "msg": "Exception in code",
-      "complete": true,
+      "complete": false,
       "added": "2020-03-18T18:27:37.752386+00:00",
       "checked": null,
       "updated": null,
@@ -1692,7 +1692,7 @@
       "status": "FAILED",
       "url": "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/",
       "msg": "Exception in code",
-      "complete": true,
+      "complete": false,
       "added": "2020-03-30T03:46:38.486197+00:00",
       "checked": null,
       "updated": null,
@@ -1778,6 +1778,18 @@
       "msg": "Exception in code",
       "complete": true,
       "added": "2020-03-30T03:50:09.972307+00:00",
+      "checked": null,
+      "updated": null,
+      "failed": null
+    },
+    {
+      "name": "KS",
+      "source": "google-states-csv",
+      "status": "FAILED",
+      "url": "https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134",
+      "msg": "Exception in code",
+      "complete": true,
+      "added": "2020-03-30T03:57:57.408403+00:00",
       "checked": null,
       "updated": null,
       "failed": null
