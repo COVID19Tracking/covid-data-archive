@@ -1,21 +1,21 @@
 CHANGE LIST
 
-  start	2020-03-29 20:55:53 EDT
-  end	2020-03-29 20:55:56 EDT
-  previous	2020-03-27 18:05:02 EDT
-  lapsed	0:00:02.917365
+  start	2020-03-29 21:07:19 EDT
+  end	2020-03-29 21:07:21 EDT
+  previous	2020-03-29 20:55:53 EDT
+  lapsed	0:00:02.494145
 
 STATUS COUNTS:
-  CHANGED	1
   FAILED	2
+  unchanged	1
 
-====== CHANGED ======
-google-states-csv	CHANGED	source	https://covid.cape.io/states/info.csv	
+====== FAILED ======
+google-states-csv	unchanged	source	https://covid.cape.io/states/info.csv	
 urlwatch	FAILED	source	https://covidtracking.com/api/urls	no local cache
 cds	FAILED	source	http://blog.lazd.net/coronadatascraper/data.json	no local cache
 
-====== FAILED ======
-google-states-csv	CHANGED	source	https://covid.cape.io/states/info.csv	
+====== unchanged ======
+google-states-csv	unchanged	source	https://covid.cape.io/states/info.csv	
 urlwatch	FAILED	source	https://covidtracking.com/api/urls	no local cache
 cds	FAILED	source	http://blog.lazd.net/coronadatascraper/data.json	no local cache
 
