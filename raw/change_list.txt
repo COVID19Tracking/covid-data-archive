@@ -1,13 +1,13 @@
 CHANGE LIST
 
-  start	2020-03-30 00:03:11 EDT
-  end	2020-03-30 00:09:59 EDT
-  previous	2020-03-30 00:01:08 EDT
-  lapsed	0:06:47.873132
+  start	2020-03-30 00:11:01 EDT
+  end	2020-03-30 00:11:46 EDT
+  previous	2020-03-30 00:03:11 EDT
+  lapsed	0:00:44.206210
 
 STATUS COUNTS:
-  CHANGED	36
-  FAILED	38
+  CHANGED	35
+  FAILED	39
   duplicate	27
   skip	1
   unchanged	53
@@ -24,7 +24,7 @@ AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiolog
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -181,7 +181,7 @@ AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiolog
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -338,7 +338,7 @@ AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiolog
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -495,7 +495,7 @@ AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiolog
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
@@ -652,7 +652,7 @@ AZ.html	CHANGED	google-states-csv	https://www.azdhs.gov/preparedness/epidemiolog
 AZ_data.html	duplicate	google-states-csv	duplicate of AZ	
 CA.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx	
 CA_data.html	CHANGED	google-states-csv	https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx	
-CO.html	CHANGED	google-states-csv	https://covid19.colorado.gov/data	
+CO.html	FAILED	google-states-csv	https://covid19.colorado.gov/data	Response is 0 bytes
 CO_data.html	unchanged	google-states-csv	https://covid19.colorado.gov/data	
 CT.html	unchanged	google-states-csv	https://portal.ct.gov/Coronavirus	
 CT_data.html	duplicate	google-states-csv	duplicate of CT	
