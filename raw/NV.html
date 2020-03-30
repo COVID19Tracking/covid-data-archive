@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge;">
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="./13.0.12661.192/externals/jquery-ui.min.js"></script>
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="powerbi-models" src="./13.0.12661.192/externals/powerbi-models.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsonFilter" src="./13.0.12661.192/scripts/jsonfilter.min.js"></script>
     <base href="/">
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -88,7 +87,7 @@
           function resolveCluster() {
               try {
                   var activityId = telemetrySessionId;
-                  var requestId = 'e64ad04f-c6eb-4660-9f83-4bc287addafd';
+                  var requestId = '73bf900c-ca27-44aa-8981-531ae1241ff2';
   
                   var xhr = new XMLHttpRequest();
                   xhr.onreadystatechange = function() {
@@ -125,7 +124,7 @@
           function getModelsAndExploration() {
               try {
                   var activityId = telemetrySessionId;
-                  var requestId = '54b383f0-4b35-4c59-a2bf-eaaa21952e90';
+                  var requestId = 'd2487467-e62d-45ff-bac1-f21dd4ba69ff';
                   modelsAndExplorationResponse = loadingState;
   
                   if(!resolvedClusterUri) {
@@ -195,7 +194,7 @@
                   }
   
                   var activityId = telemetrySessionId;
-                  var requestId = 'ffb7093b-2ce2-4008-9648-7a7b719c857e';
+                  var requestId = '49b976f9-3d22-4288-826a-41bb0368a290';
                   conceptualSchemaResponse = loadingState;
   
                   var resolvedAPIMCluster = getAPIMUrl(resolvedClusterUri);
@@ -315,7 +314,7 @@
           var clusterUri =  'https://api.powerbigov.us';
           var cdnUrl = '';
           var previousTenantId = '';
-          var telemetrySessionId =  'fdeaeca7-de83-4319-a8d9-d34e15e25404';
+          var telemetrySessionId =  'cfaf09cb-9fb6-49c5-9156-d20fa5c46b81';
           var sessionSource = "Embed";
           var allowTelemetry = true;
           var appInsightsV2InstrKey = '8adeeaf0-ca71-ff43-a91e-7afbce21a5f2';
@@ -355,24 +354,6 @@
     <style></style>
     <script src="13.0.12661.192/scripts/ai.0.js"></script>
     <script charset="utf-8" src="13.0.12661.192/scripts/reportEmbed.json-contracts.min.js"></script>
-    <style>
-  .logoBar[_ngcontent-pwf-c2]   .logo[_ngcontent-pwf-c2]   button[_ngcontent-pwf-c2] {
-    border: transparent;
-    background: none;
-    padding: 0;
-    margin-left: 24px;
-  }
-  .logoBar[_ngcontent-pwf-c2]   .logo[_ngcontent-pwf-c2]   button[_ngcontent-pwf-c2]:focus {
-    box-shadow: 0 0 5px #51caee;
-    outline: 1px solid #51cbee;
-  }
-  .logoBar[_ngcontent-pwf-c2]   .logo[_ngcontent-pwf-c2]   button[_ngcontent-pwf-c2]   .icon[_ngcontent-pwf-c2] {
-    margin: 0;
-  }
-  .logoBar[_ngcontent-pwf-c2]   .logo[_ngcontent-pwf-c2]   .socialSharing[_ngcontent-pwf-c2] {
-    float: right;
-  }
-  </style>
   </head>
   <body>
     <meta property="og:locale" content="en_US">
@@ -408,7 +389,7 @@
             <!---->
             <div ng-if="!showErrorMessage &amp;&amp; !showPromptForLogin &amp;&amp; !optimizePublishToWeb &amp;&amp; !isUserUnauthorized" class="landingController fillAvailableSpace">
               <div class="landingContainer">
-                <div id="reportLandingContainer" class="embeddedLandingRootContent reportContainerContent isActive embeddedPV embeddedLandingRootContentLogoVisible" ng-class="backgroundCssClass + (showLogoBar ? ' embeddedLandingRootContentLogoVisible' : ' embeddedLandingRootContentLogoHidden')">
+                <div id="reportLandingContainer" class="embeddedLandingRootContent reportContainerContent isActive embeddedPV embeddedLandingRootContentLogoHidden" ng-class="backgroundCssClass + (showLogoBar ? ' embeddedLandingRootContentLogoVisible' : ' embeddedLandingRootContentLogoHidden')">
                   <div class="embeddedPV">
                     <!---->
                   </div>
@@ -419,65 +400,6 @@
             <!---->
           </div>
           <div class="logoBarWrapper" ng-keydown="keyDown($event)" tabindex="0">
-            <!---->
-            <logo-bar ng-if="showLogoBar" _nghost-pwf-c2="" ng-version="8.2.6">
-              <div _ngcontent-pwf-c2="" class="unselectable">
-                <div _ngcontent-pwf-c2="" class="logoBar">
-                  <div _ngcontent-pwf-c2="" class="logo">
-                    <!---->
-                    <!---->
-                    <a _ngcontent-pwf-c2="" tab-order-child="" target="_blank" href="https://go.microsoft.com/fwlink/?LinkID=722383&amp;clcid=0x409">
-                      <span _ngcontent-pwf-c2="" class="text" localize="Embed_Logobar_MarketingText">Microsoft Power BI</span>
-                    </a>
-                    <logo-bar-navigation _ngcontent-pwf-c2="" is-full-screen="isFullScreen()" is-small-screen="isSmallScreen" mail-to-link="mailToLink" show-about-dialog="showAboutDialog()" show-full-screen="showFullScreen" toggle-full-screen-mode="toggleFullScreenMode()">
-                      <span class="navigation-wrapper navigation-wrapper-big" keyboard-shortcuts="ctrl-F6">
-                        <a>
-                          <i class="glyphicon glyph-small pbi-glyph-chevronleftmedium middleIcon inactive pbi-focus-outline" focus-element="" tabindex="0" title="Previous Page" hidden=""></i>
-                        </a>
-                        <!---->
-                        <a class="middleText" hidden="">
-                          <!---->
-                          <span>
-                            <span class="innerText">1</span>
-                            <span class="innerText" localize="Of">of</span>
-                            <span class="innerText">0</span>
-                          </span>
-                          <!---->
-                        </a>
-                        <a>
-                          <i class="glyphicon glyph-small pbi-glyph-chevronrightmedium middleIcon active pbi-focus-outline" focus-element="" tabindex="0" title="Next Page" hidden=""></i>
-                        </a>
-                        <!---->
-                      </span>
-                      <!---->
-                      <!---->
-                      <section class="navFlyout" flyout-visible="false" id="flyoutElement" style="height: 40px;">
-                        <div class="wrapper">
-                          <div class="textContainer">
-                            <div class="flyoutSections">
-                              <ul class="list">
-                                <!---->
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="arrow"></div>
-                      </section>
-                    </logo-bar-navigation>
-                    <span _ngcontent-pwf-c2="" class="socialSharing">
-                      <!---->
-                      <!---->
-                      <i _ngcontent-pwf-c2="" class="glyphicon pbi-glyph-info glyph-small icon" localizetooltip="ReportEmbed_Logobar_AboutPowerBI" title="About Power BI"></i>
-                      <!---->
-                      <a _ngcontent-pwf-c2="" localizetooltip="ReportEmbed_Logobar_InappropriateContent" title="Flag this content as inappropriate" href="mailto:pbicontentconcern@microsoft.com?subject=Inappropriate%20Content&amp;body=(Fill%20in%20the%20reason%20for%20your%20concern%20below)%0A%0APower%20BI%20Team%2C%0AI%20am%20reporting%20a%20concern%20with%20content%20linked%20below.%0A%0A%3CProvide%20your%20reason%3E%0A%0AURL%20to%20embedded%20content%3A%0Ahttps%3A%2F%2Fapp.powerbigov.us%2Fview%3Fr%3DeyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9%0A%0A---------------------%0AWe%20aim%20to%20review%20all%20concerns%20within%2048%20hours.%20We%20will%20contact%20you%20if%20we%20have%20additional%20questions%20related%20to%20your%20concern.">
-                        <i _ngcontent-pwf-c2="" class="glyphicon pbi-glyph-flag glyph-small icon"></i>
-                      </a>
-                      <!---->
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </logo-bar>
             <!---->
           </div>
         </div>
