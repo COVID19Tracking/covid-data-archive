@@ -1,8 +1,8 @@
 {
-  "start_date": "2020-03-30T01:26:31.055109+00:00",
-  "end_date": "2020-03-30T01:26:31.763273+00:00",
-  "previous_date": "2020-03-30T01:23:59.830412+00:00",
-  "time_lapsed": "0:00:00.708164",
+  "start_date": "2020-03-30T01:27:19.352945+00:00",
+  "end_date": "2020-03-30T01:27:46.585480+00:00",
+  "previous_date": "2020-03-30T01:26:31.055109+00:00",
+  "time_lapsed": "0:00:27.232535",
   "complete": true,
   "error_message": null,
   "items": [
@@ -21,24 +21,24 @@
     {
       "name": "AK.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.550545+00:00",
-      "checked": "2020-03-30T01:11:31.920739+00:00",
+      "checked": "2020-03-30T01:27:28.197778+00:00",
       "updated": "2020-03-30T01:11:31.920739+00:00",
       "failed": null
     },
     {
       "name": "AK_data.html",
       "source": "google-states-csv",
-      "status": "CHANGED",
+      "status": "unchanged",
       "url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx",
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:50.844758+00:00",
-      "checked": "2020-03-30T01:11:34.165606+00:00",
+      "checked": "2020-03-30T01:27:30.386014+00:00",
       "updated": "2020-03-30T01:11:34.165606+00:00",
       "failed": null
     },
@@ -50,8 +50,8 @@
       "msg": "",
       "complete": true,
       "added": "2020-03-13T11:17:51.159916+00:00",
-      "checked": "2020-03-30T01:11:47.677669+00:00",
-      "updated": "2020-03-30T01:11:47.677669+00:00",
+      "checked": "2020-03-30T01:27:44.594434+00:00",
+      "updated": "2020-03-30T01:27:44.594434+00:00",
       "failed": null
     },
     {
