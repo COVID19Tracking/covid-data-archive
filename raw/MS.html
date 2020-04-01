@@ -153,7 +153,7 @@
           </div>
         </div>
         <!--end assetNow_navMenuItems-->
-        <div id="navFiller" style="height: 9054px;">
+        <div id="navFiller" style="height: 9288px;">
           <div id="sidebarSubscriptionForm">
             <p style="font-size: 18px; color:indigo; text-align: center; margin: 0; font-weight: bold">E-Newsletter</p>
             <!--<script src="https://public.govdelivery.com/javascripts/cache/snippet.js" type="text/javascript"></script>-->
@@ -221,13 +221,113 @@
         </div>
         <script type="text/javascript">
   if (getCookie ("alreadySubscribed") != "Y" && Math.random() > 0.6) document.write ('<div id="newsletterSignup">'
+   + '<p class="smaller emphasized">Subscribe to our e-newsletter for COVID-19 updates and health news:</p>'
+   + '<input id="subscribe_email" type="email" value="&nbsp;email address" onfocus="if ((this.value).indexOf (\'.\') < 0) this.value =\'\'">'
+   + '<button type="submit" id="submitSubscription" name="commit" onClick="sendNewsletterSubscriptionData(); setCookie (\'alreadySubscribed\', \'Y\', 999); ga(\'send\', \'event\', \'SignupForm\', \'Clicked\', \'MobilePageTopSignup\');">+</button><br>'
+   + '<select id="subscribe_county"><option>Optional: county of residence</option><option>Adams</option><option>Adams</option><option>Alcorn</option><option>Amite</option><option>Attala</option><option>Benton</option><option>Bolivar</option><option>Calhoun</option><option>Carroll</option><option>Chickasaw</option><option>Choctaw</option><option>Claiborne</option><option>Clarke</option><option>Clay</option><option>Coahoma</option><option>Copiah</option><option>Covington</option><option>Desoto</option><option>Forrest</option><option>Franklin</option><option>George</option><option>Greene</option><option>Grenada</option><option>Hancock</option><option>Harrison</option><option>Hinds</option><option>Holmes</option><option>Humphrey</option><option>Issaquena</option><option>Itawamba</option><option>Jackson</option><option>Jasper</option><option>Jefferson</option><option>Jefferson Davis</option><option>Jones</option><option>Kemper</option><option>Lafayette</option><option>Lamar</option><option>Lauderdale</option><option>Lawrence</option><option>Leake</option><option>Lee</option><option>Leflore</option><option>Lincoln</option><option>Lowndes</option><option>Madison</option><option>Marion</option><option>Marshall</option><option>Monroe</option><option>Montgomery</option><option>Neshoba</option><option>Newton</option><option>Noxubee</option><option>Oktibbeha</option><option>Panola</option><option>Pearl River</option><option>Perry</option><option>Pike</option><option>Pontotoc</option><option>Prentiss</option><option>Quitman</option><option>Rankin</option><option>Scott</option><option>Sharkey</option><option>Simpson</option><option>Smith</option><option>Stone</option><option>Sunflower</option><option>Tallahatchie</option><option>Tate</option><option>Tippah</option><option>Tishomingo</option><option>Tunica</option><option>Union</option><option>Walthall</option><option>Warren</option><option>Washington</option><option>Wayne</option><option>Webster</option><option>Wilkinson</option><option>Winston</option><option>Yalobusha</option><option>Yazoo</option>'
+   + '</select></div>');
+  /*
+   if (getCookie ("alreadySubscribed") != "Y" && Math.random() > 0.6) document.write ('<div id="newsletterSignup">'
    + '<p>Get the public health news you need.</p><p class="smaller light">Disease updates <span class="colored">&bull;</span> Facility inspections <span class="colored">&bull;</span> Health news</p>'
    + '<span class="smaller emphasized">Subscribe to our e-newsletter:</span>'
    + '<input id="subscribe_email" type="email" value="&nbsp;email address" onfocus="if ((this.value).indexOf (\'.\') < 0) this.value =\'\'">'
    + '<button type="submit" id="submitSubscription" name="commit" onClick="sendNewsletterSubscriptionData(); setCookie (\'alreadySubscribed\', \'Y\', 999); ga(\'send\', \'event\', \'SignupForm\', \'Clicked\', \'MobilePageTopSignup\');">+</button><br>'
    + '<select id="subscribe_county"><option>Optional: county of residence</option><option>Adams</option><option>Adams</option><option>Alcorn</option><option>Amite</option><option>Attala</option><option>Benton</option><option>Bolivar</option><option>Calhoun</option><option>Carroll</option><option>Chickasaw</option><option>Choctaw</option><option>Claiborne</option><option>Clarke</option><option>Clay</option><option>Coahoma</option><option>Copiah</option><option>Covington</option><option>Desoto</option><option>Forrest</option><option>Franklin</option><option>George</option><option>Greene</option><option>Grenada</option><option>Hancock</option><option>Harrison</option><option>Hinds</option><option>Holmes</option><option>Humphrey</option><option>Issaquena</option><option>Itawamba</option><option>Jackson</option><option>Jasper</option><option>Jefferson</option><option>Jefferson Davis</option><option>Jones</option><option>Kemper</option><option>Lafayette</option><option>Lamar</option><option>Lauderdale</option><option>Lawrence</option><option>Leake</option><option>Lee</option><option>Leflore</option><option>Lincoln</option><option>Lowndes</option><option>Madison</option><option>Marion</option><option>Marshall</option><option>Monroe</option><option>Montgomery</option><option>Neshoba</option><option>Newton</option><option>Noxubee</option><option>Oktibbeha</option><option>Panola</option><option>Pearl River</option><option>Perry</option><option>Pike</option><option>Pontotoc</option><option>Prentiss</option><option>Quitman</option><option>Rankin</option><option>Scott</option><option>Sharkey</option><option>Simpson</option><option>Smith</option><option>Stone</option><option>Sunflower</option><option>Tallahatchie</option><option>Tate</option><option>Tippah</option><option>Tishomingo</option><option>Tunica</option><option>Union</option><option>Walthall</option><option>Warren</option><option>Washington</option><option>Wayne</option><option>Webster</option><option>Wilkinson</option><option>Winston</option><option>Yalobusha</option><option>Yazoo</option>'
    + '</select></div>');
+  */
   </script>
+        <div id="newsletterSignup">
+          <p class="smaller emphasized">Subscribe to our e-newsletter for COVID-19 updates and health news:</p>
+          <input id="subscribe_email" type="email" value="&#160;email address" onfocus="if ((this.value).indexOf ('.') &lt; 0) this.value =''">
+          <button type="submit" id="submitSubscription" name="commit" onclick="sendNewsletterSubscriptionData(); setCookie ('alreadySubscribed', 'Y', 999); ga('send', 'event', 'SignupForm', 'Clicked', 'MobilePageTopSignup');">+</button>
+          <br>
+          <select id="subscribe_county">
+            <option>Optional: county of residence</option>
+            <option>Adams</option>
+            <option>Adams</option>
+            <option>Alcorn</option>
+            <option>Amite</option>
+            <option>Attala</option>
+            <option>Benton</option>
+            <option>Bolivar</option>
+            <option>Calhoun</option>
+            <option>Carroll</option>
+            <option>Chickasaw</option>
+            <option>Choctaw</option>
+            <option>Claiborne</option>
+            <option>Clarke</option>
+            <option>Clay</option>
+            <option>Coahoma</option>
+            <option>Copiah</option>
+            <option>Covington</option>
+            <option>Desoto</option>
+            <option>Forrest</option>
+            <option>Franklin</option>
+            <option>George</option>
+            <option>Greene</option>
+            <option>Grenada</option>
+            <option>Hancock</option>
+            <option>Harrison</option>
+            <option>Hinds</option>
+            <option>Holmes</option>
+            <option>Humphrey</option>
+            <option>Issaquena</option>
+            <option>Itawamba</option>
+            <option>Jackson</option>
+            <option>Jasper</option>
+            <option>Jefferson</option>
+            <option>Jefferson Davis</option>
+            <option>Jones</option>
+            <option>Kemper</option>
+            <option>Lafayette</option>
+            <option>Lamar</option>
+            <option>Lauderdale</option>
+            <option>Lawrence</option>
+            <option>Leake</option>
+            <option>Lee</option>
+            <option>Leflore</option>
+            <option>Lincoln</option>
+            <option>Lowndes</option>
+            <option>Madison</option>
+            <option>Marion</option>
+            <option>Marshall</option>
+            <option>Monroe</option>
+            <option>Montgomery</option>
+            <option>Neshoba</option>
+            <option>Newton</option>
+            <option>Noxubee</option>
+            <option>Oktibbeha</option>
+            <option>Panola</option>
+            <option>Pearl River</option>
+            <option>Perry</option>
+            <option>Pike</option>
+            <option>Pontotoc</option>
+            <option>Prentiss</option>
+            <option>Quitman</option>
+            <option>Rankin</option>
+            <option>Scott</option>
+            <option>Sharkey</option>
+            <option>Simpson</option>
+            <option>Smith</option>
+            <option>Stone</option>
+            <option>Sunflower</option>
+            <option>Tallahatchie</option>
+            <option>Tate</option>
+            <option>Tippah</option>
+            <option>Tishomingo</option>
+            <option>Tunica</option>
+            <option>Union</option>
+            <option>Walthall</option>
+            <option>Warren</option>
+            <option>Washington</option>
+            <option>Wayne</option>
+            <option>Webster</option>
+            <option>Wilkinson</option>
+            <option>Winston</option>
+            <option>Yalobusha</option>
+            <option>Yazoo</option>
+          </select>
+        </div>
         <!--category handler 2-->
         <div id="assetNow_pageTitle">
           <h1>Coronavirus Disease 2019 (COVID-19)</h1>
@@ -249,7 +349,7 @@
               </div>
             </div>
           </div>
-          <div id="assetNow_pageSubtitle">Updated March 30, 2020</div>
+          <div id="assetNow_pageSubtitle">Updated March 31, 2020</div>
           <span style="clear: both"></span>
         </div>
         <div id="translationDisclaimer">This page has been automatically translated from English. MSDH has not reviewed this translation and is not responsible for any inaccuracies.</div>
@@ -257,8 +357,11 @@
         <div id="article">
           <!--PAGEWATCH CODE="14-0-420"-->
           <div class="msdh">
-            <img alt="" class="leadImageFixed" src="images/photos/Coronavirus_light.jpg">
-            <p class="leadParagraph">The national Centers for Disease Control and Prevention (CDC) and the Mississippi State Department of Health continue to closely monitor the outbreak of respiratory illnesses caused by the novel (new) coronavirus COVID-19, and are working to limit the spread of cases nationally and in Mississippi. MSDH is actively working with doctors and hospitals on responding safely and effectively to this outbreak.</p>
+            <img src="images/photos/Coronavirus_light.jpg" alt="" class="leadImageFixed">
+            <p class="leadParagraph">
+  The national Centers for Disease Control and Prevention (CDC) and the Mississippi State Department of Health continue to closely monitor the outbreak of respiratory illnesses
+  caused by the novel (new) coronavirus COVID-19, and are working to limit the spread of cases nationally and in Mississippi. MSDH is actively working with doctors and hospitals to quickly identify cases and respond effectively to limit this outbreak.
+  </p>
             <div class="threeColumnLeft">
               <div class="card">
                 <div class="cardHeader">
@@ -268,6 +371,26 @@
                     <span>Guidances and more</span>
                   </a>
                 </div>
+                <div class="cardContent">
+                  <ul class="links bulletleft">
+                    <li>
+                      <a href="14,0,420,694.html#guidance" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'HCP_msdh_guidance');">MSDH guidances</a>
+                    </li>
+                    <li>
+                      <a href="14,0,420,694.html#specimens" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'HCP_specimens');">Specimens</a>
+                    </li>
+                    <li>
+                      <a href="14,0,420,694.html#map" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'HCP_lab_dropoff');">Lab dropoff</a>
+                    </li>
+                    <li>
+                      <a href="14,0,420,694.html#cdc" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'HCP_cdc_guidance');">CDC guidances</a>
+                    </li>
+                  </ul>
+                  <p class="cardFooter">
+                    <a href="14,0,420,694.html" class="cardLink">All healthcare</a>
+                    <!--<a href="#" class="cardLink2">Pay permit fee</a>-->
+                  </p>
+                </div>
               </div>
             </div>
             <div class="threeColumnCenter">
@@ -275,9 +398,29 @@
                 <div class="cardHeader">
                   <a href="#Mississippi">Current Cases
                     <br>and Statistics
-                    <br>
-                    <span>County and state data</span>
+                    <span>
+                      <br>
+                    </span>
                   </a>
+                </div>
+                <div class="cardContent">
+                  <ul class="links bulletleft">
+                    <li>
+                      <a href="#map" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Data_map');">Case map</a>
+                    </li>
+                    <li>
+                      <a href="#caseTable" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Data_counties');">County table</a>
+                    </li>
+                    <li>
+                      <a href="#charts" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Data_charts');">Charts</a>
+                    </li>
+                    <li>
+                      <a href="#tests" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Data_tests');">Lab testing</a>
+                    </li>
+                  </ul>
+                  <p class="cardFooter">
+                    <a href="#Mississippi" class="cardLink">All statistics</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -286,41 +429,57 @@
                 <div class="cardHeader">
                   <a href="14,21866,420.html">Prevention
                     <br>and Preparation
-                    <br>
-                    <span>Personal and community</span>
+                    <span>
+                      <br>
+                    </span>
                   </a>
+                </div>
+                <div class="cardContent">
+                  <ul class="links bulletleft">
+                    <li>
+                      <a href="14,21912,420,874.html" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Prevent_testing');">Testing locations</a>
+                    </li>
+                    <li>
+                      <a href="14,21866,420.html#prevention" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Prevent_individual');">For individuals</a>
+                    </li>
+                    <li>
+                      <a href="14,21866,420.html#community" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Prevent_community');">For the community</a>
+                    </li>
+                    <li>
+                      <a href="14,21866,420.html#overview" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Prevent_info');">General information</a>
+                    </li>
+                  </ul>
+                  <p class="cardFooter">
+                    <a href="14,21866,420.html" class="cardLink">All prevention</a>
+                  </p>
                 </div>
               </div>
             </div>
             <!--end columns-->
             <div class="clearFloats" id="public"></div>
-            <div class="shadedBox" style="margin-top: 1em">
-              <p>
-                <strong>Local COVID-19 testing:</strong>We now have a list of local COVID-19 testing providers for you to contact if you have symptoms:
-                <a href="14,21912,420,874.html">
-                  <strong>View local testing providers &#187;</strong>
-                </a>
-              </p>
-            </div>
             <!--<p><strong class="bright">Note:</strong> Testing for COVID-19 is <strong>not </strong>performed at county health departments. Please contact your physician or a healthcare provider.</p>-->
             <p class="highlighted" style="padding: 1em">Mississippi Coronavirus Hotline (available 24/7):
               <strong>877-978-6453</strong>
             </p>
+            <p>
+              <i>Local COVID-19 testing:</i>We now have a list of local COVID-19 testing providers for you to contact if you have symptoms:
+              <a href="14,21912,420,874.html" onclick="ga('send', 'event', 'WebPage', 'COVID-19', 'Local_testing_link');">View local testing providers &#187;</a>
+            </p>
             <h2 id="Mississippi">COVID-19 in Mississippi and the U.S.</h2>
             <p>Cases of COVID-19 continue to be identified in U.S. states and in Mississippi. This is a rapidly changing situation that is continually being monitored by the CDC and MSDH as new cases are identified.</p>
             <p>Mississippians are advised to take health precautions to prevent the transmission of disease, and stay in touch for the latest information on the situation in Mississippi.</p>
-            <h3>Mississippi COVID-19 Case Map</h3>
-            <p>This map and the following table show total cases in Mississippi as of 6 p.m. March 29, 2020, and include all reported cases since March 11, 2020.</p>
+            <h3 id="map">Mississippi COVID-19 Case Map</h3>
+            <p>This map and the following table show total cases in Mississippi as of 6 p.m. March 30, 2020, and include all reported cases since March 11, 2020.</p>
             <ul>
               <li>New cases reported today:
-                <strong>89</strong>
+                <strong>90</strong>
               </li>
               <li>New deaths reported today:
-                <strong>2</strong>
+                <strong>4</strong>
               </li>
             </ul>
             <div class="centered">
-              <img alt="" src="images/graphics/covid19-ms-2020-03-30.png">
+              <img src="images/graphics/covid19-ms-2020-03-31.png" alt="">
             </div>
             <p>An interactive version of this case map is also available:
               <a href="14,21882,420,873.html">
@@ -335,7 +494,7 @@
             </div>
             <!--Please remember that county case numbers and deaths are subject to change if new or additional information is discovered.-->
             <h3 id="caseTable">Mississippi COVID-19 Cases to Date</h3>
-            <table class="simpleTable" id="msdhTotalCovid-19Cases">
+            <table id="msdhTotalCovid-19Cases" class="simpleTable">
               <thead>
                 <tr>
                   <td>County</td>
@@ -346,12 +505,12 @@
               <tbody>
                 <tr>
                   <td>Adams</td>
-                  <td>8</td>
+                  <td>10</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Alcorn</td>
-                  <td>1</td>
+                  <td>3</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -371,8 +530,8 @@
                 </tr>
                 <tr>
                   <td>Bolivar</td>
-                  <td>16</td>
-                  <td></td>
+                  <td>22</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Calhoun</td>
@@ -386,7 +545,7 @@
                 </tr>
                 <tr>
                   <td>Chickasaw</td>
-                  <td>12</td>
+                  <td>13</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -401,7 +560,7 @@
                 </tr>
                 <tr>
                   <td>Clarke</td>
-                  <td>1</td>
+                  <td>4</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -411,12 +570,12 @@
                 </tr>
                 <tr>
                   <td>Coahoma</td>
-                  <td>20</td>
+                  <td>21</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Copiah</td>
-                  <td>8</td>
+                  <td>9</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -426,7 +585,7 @@
                 </tr>
                 <tr>
                   <td>Desoto</td>
-                  <td>77</td>
+                  <td>84</td>
                   <td>1</td>
                 </tr>
                 <tr>
@@ -451,27 +610,27 @@
                 </tr>
                 <tr>
                   <td>Hancock</td>
-                  <td>15</td>
+                  <td>16</td>
                   <td>1</td>
                 </tr>
                 <tr>
                   <td>Harrison</td>
-                  <td>44</td>
+                  <td>45</td>
                   <td>1</td>
                 </tr>
                 <tr>
                   <td>Hinds</td>
-                  <td>74</td>
+                  <td>90</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Holmes</td>
-                  <td>14</td>
+                  <td>15</td>
                   <td>1</td>
                 </tr>
                 <tr>
                   <td>Humphreys</td>
-                  <td>2</td>
+                  <td>3</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -481,7 +640,7 @@
                 </tr>
                 <tr>
                   <td>Jackson</td>
-                  <td>39</td>
+                  <td>40</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -501,17 +660,17 @@
                 </tr>
                 <tr>
                   <td>Lafayette</td>
-                  <td>14</td>
-                  <td></td>
+                  <td>15</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Lamar</td>
-                  <td>4</td>
+                  <td>5</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Lauderdale</td>
-                  <td>23</td>
+                  <td>35</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -526,12 +685,12 @@
                 </tr>
                 <tr>
                   <td>Lee</td>
-                  <td>23</td>
+                  <td>24</td>
                   <td>1</td>
                 </tr>
                 <tr>
                   <td>Leflore</td>
-                  <td>18</td>
+                  <td>19</td>
                   <td>1</td>
                 </tr>
                 <tr>
@@ -541,33 +700,33 @@
                 </tr>
                 <tr>
                   <td>Lowndes</td>
-                  <td>10</td>
+                  <td>11</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Madison</td>
-                  <td>38</td>
+                  <td>42</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Marion</td>
-                  <td>4</td>
+                  <td>5</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Marshall</td>
-                  <td>13</td>
+                  <td>14</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Monroe</td>
-                  <td>5</td>
+                  <td>6</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Montgomery</td>
                   <td>7</td>
-                  <td></td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Neshoba</td>
@@ -586,17 +745,17 @@
                 </tr>
                 <tr>
                   <td>Oktibbeha</td>
-                  <td>15</td>
+                  <td>17</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Panola</td>
-                  <td>6</td>
-                  <td></td>
+                  <td>7</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                   <td>Pearl River</td>
-                  <td>27</td>
+                  <td>30</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -606,12 +765,12 @@
                 </tr>
                 <tr>
                   <td>Pike</td>
-                  <td>16</td>
+                  <td>17</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Pontotoc</td>
-                  <td>4</td>
+                  <td>5</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -621,17 +780,17 @@
                 </tr>
                 <tr>
                   <td>Quitman</td>
-                  <td>4</td>
+                  <td>3</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Rankin</td>
-                  <td>37</td>
+                  <td>40</td>
                   <td>1</td>
                 </tr>
                 <tr>
                   <td>Scott</td>
-                  <td>9</td>
+                  <td>10</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -666,8 +825,13 @@
                 </tr>
                 <tr>
                   <td>Tippah</td>
-                  <td>23</td>
+                  <td>26</td>
                   <td>2</td>
+                </tr>
+                <tr>
+                  <td>Tishomingo</td>
+                  <td>1</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td>Tunica</td>
@@ -691,7 +855,7 @@
                 </tr>
                 <tr>
                   <td>Washington</td>
-                  <td>18</td>
+                  <td>20</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -701,22 +865,22 @@
                 </tr>
                 <tr>
                   <td>Wilkinson</td>
-                  <td>13</td>
+                  <td>14</td>
                   <td>2</td>
                 </tr>
                 <tr>
                   <td>Winston</td>
-                  <td>6</td>
+                  <td>7</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Yalobusha</td>
-                  <td>5</td>
+                  <td>6</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Yazoo</td>
-                  <td>7</td>
+                  <td>9</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -724,35 +888,35 @@
                     <strong>Total</strong>
                   </td>
                   <td class="shadedBlue">
-                    <strong>847</strong>
+                    <strong>937</strong>
                   </td>
                   <td class="shadedBlue">
-                    <strong>16</strong>
+                    <strong>20</strong>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div class="clearFloats"></div>
-            <h3>Trends and Summary Data</h3>
+            <h3 id="charts">Trends and Summary Data</h3>
             <p>The charts below are based on available data at the time of publication. Charts do not include cases where insufficient details of the case are known.</p>
             <p style="padding-bottom: 3em">
-              <img alt="" src="images/graphics/covid19-chart-age-29.png" style="max-width: 100%;">
+              <img src="images/graphics/covid19-chart-age-30.png" alt="" style="max-width: 100%;">
             </p>
             <hr>
             <p style="padding-bottom: 3em">
-              <img alt="" src="images/graphics/covid19-chart-hospitalized-age-29.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-hospitalized-age-30.png" alt="" style="max-width: 100%">
             </p>
             <hr>
             <p style="padding-bottom: 3em">
-              <img alt="" src="images/graphics/covid19-chart-onset-29.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-onset-30.png" alt="" style="max-width: 100%">
             </p>
             <hr>
             <p style="padding-bottom: 3em">
-              <img alt="" src="images/graphics/covid19-chart-hospitalized-29.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-hospitalized-30.png" alt="" style="max-width: 100%">
             </p>
             <hr>
             <p style="padding-bottom: 3em">
-              <img alt="" src="images/graphics/covid19-chart-sex-29.png" style="max-width: 100%">
+              <img src="images/graphics/covid19-chart-sex-30.png" alt="" style="max-width: 100%">
             </p>
             <h3>U.S. and World Cases</h3>
             <ul class="links">
@@ -763,13 +927,17 @@
                 <a href="https://coronavirus.jhu.edu/map.html" target="_blank" rel="noopener noreferrer">COVID-19 Global Case Map (Johns Hopkins University)</a>
               </li>
             </ul>
-            <h3>COVID-19 Testing</h3>
+            <h3 id="tests">COVID-19 Testing</h3>
             <div class="leftColumn">
-              <p>The MSDH Public Health Laboratory is testing samples submitted by Mississippi physicians and healthcare providers around the state in cases where COVID-19 is determined to be a risk. Anyone with symptoms of fever, severe cough or severe chest pains &#8211; especially those who are older or in poor health &#8211; should call their doctor or healthcare provider for instructions on safely being examined. Healthcare providers can assess your health history and symptoms, and perform testing for COVID-19 as needed.</p>
+              <p>
+  The MSDH Public Health Laboratory is testing samples submitted by Mississippi physicians and healthcare providers around the state in cases where COVID-19 is determined to be a risk.
+   Anyone with symptoms of fever, severe cough or severe chest pains &#8211; especially those who are older or in poor health &#8211; should call their doctor or healthcare provider for instructions on safely being examined.
+   Healthcare providers can assess your health history and symptoms, and perform testing for COVID-19 as needed.
+  </p>
             </div>
             <div class="rightColumn">
               <p class="centered">
-                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="flexibleFrame" src="https://www.youtube.com/embed/adnA2N0h2A4?rel=0" width="280" height="159" frameborder="0"></iframe>
+                <iframe class="flexibleFrame" src="https://www.youtube.com/embed/adnA2N0h2A4?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="280" height="159" frameborder="0"></iframe>
               </p>
               <ul class="links">
                 <li>
@@ -780,13 +948,13 @@
             <!--end columns-->
             <div class="clearFloats"></div>
             <h4>Testing Totals</h4>
-            <p>MSDH Public Health Laboratory (MPHL) testing totals as of 6 p.m., March 29, 2020. These totals are for tests performed at the MPHL only.</p>
+            <p>MSDH Public Health Laboratory (MPHL) testing totals as of 6 p.m., March 30, 2020. These totals are for tests performed at the MPHL only.</p>
             <ul>
               <li>Total individuals tested:
-                <strong>3,836</strong>
+                <strong>4,454</strong>
               </li>
               <li>Total positive individuals:
-                <strong>326</strong>
+                <strong>407</strong>
               </li>
             </ul>
             <h3>Local Testing Providers</h3>
@@ -797,7 +965,10 @@
               </li>
             </ul>
             <h2>What MSDH Is Doing</h2>
-            <p>The Mississippi State Department of Health is aggressively responding to the rapidly evolving COVID-19 situation. With other state agencies, it has activated emergency operations in order to slow the spread of COVID-19 in Mississippi.</p>
+            <p>
+  The Mississippi State Department of Health is aggressively responding to the rapidly evolving COVID-19 situation. With other state agencies, it has activated emergency operations
+  in order to slow the spread of COVID-19 in Mississippi.
+  </p>
             <p>Other steps that MSDH is taking include:</p>
             <ul>
               <li>
@@ -829,7 +1000,7 @@
         <!--end article (main content of page)-->
         <div style="margin-top: 10px">
           <div id="signup">
-            <span id="signupCaption">Our free newsletter includes monthly disease updates:</span>
+            <span id="signupCaption">Subscribe to our free newsletter and health alerts:</span>
             <form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/MSDH/subscribers/qualify" method="post" target="_blank" style="margin: 0; padding: 0; display: inline">
               <input type="hidden" name="subscription_type" value="email">
               <input name="utf8" type="hidden" value="&#226;&#339;&#8220;">
@@ -883,8 +1054,8 @@
         </ul>
         <div style="clear: both"></div>
         <div class="footerPromotion">
-          <a href="/msdhsite/_static/14,0,420.html" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'Coronavirus2019');">
-            <img src="/msdhsite/theme/slides/Coronavirus2019_slide.jpg" alt="" style="border: 0">
+          <a href="/msdhsite/_static/14,21866,420.html" onclick="ga('send', 'event', 'FooterSlides', 'Clicked', 'CoronavirusPrevention_cover');">
+            <img src="/msdhsite/theme/slides/covid19-cover_slide.jpg" alt="" style="border: 0">
           </a>
         </div>
       </div>

@@ -6,7 +6,7 @@
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b1bb1b892b",applicationID:"55445753"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
     <link rel="shortcut icon" href="http://www.dph.illinois.gov/sites/all/themes/idph/favicon.ico" type="image/vnd.microsoft.icon">
-    <meta name="description" content="In response to the COVID-19 pandemic, Gov. JB Pritzker has ordered Illinois residents to stay at home. Executive Order No. 10 requires all residents to stay home, with exceptions for essential needs or business activities. Gatherings of 10 people or more are prohibited. The order extends through April 7, 2020. English Coronavirus Disease 2019 (COVID-19) in Illinois Test">
+    <meta name="description" content="In response to the COVID-19 pandemic, Gov. JB Pritzker has ordered Illinois residents to stay at home. Executive Order No. 10 requires all residents to stay home, with exceptions for essential needs or business activities. Gatherings of 10 people or more are prohibited. The order extends through April 30, 2020. English Coronavirus Disease 2019 (COVID-19) in Illinois Test">
     <meta name="generator" content="Drupal 7 (https://www.drupal.org)">
     <link rel="canonical" href="http://www.dph.illinois.gov/covid19">
     <link rel="shortlink" href="http://www.dph.illinois.gov/node/22076">
@@ -90,7 +90,7 @@
     <script src="http://www.dph.illinois.gov/sites/all/libraries/superfish/supersubs.js?q7rrwx"></script>
     <script src="http://www.dph.illinois.gov/sites/all/modules/superfish/superfish.js?q7rrwx"></script>
     <script src="http://www.dph.illinois.gov/sites/all/themes/idph/js/idph.js?q7rrwx"></script>
-    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"qaYgJm0MKcEtZifoOZU91wAwxiIkRRGu_SZ0P2SLXlM","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
+    <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"FOPmrZPD9rr-jC5-nkmZUzZNJ8Drode48dZcNpgcweA","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"http:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/topics-services\/diseases-and-conditions\/diseases-a-z-list\/coronavirus":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"touchscreen":{"behaviour":"0","mode":"window_width","breakpointUnit":"px"},"smallscreen":{"mode":"window_width","breakpointUnit":"px","accordionButton":"2","title":"Main menu"},"supposition":true,"supersubs":true}}}});</script>
     <!--
   [if lt IE 9]>
       <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
@@ -98,8 +98,8 @@
   -->
     <style id="plotly.js-style-global"></style>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-    <style id="plotly.js-style-modebar-ca8b7d"></style>
-    <style id="plotly.js-style-modebar-fe6e46"></style>
+    <style id="plotly.js-style-modebar-ba16c2"></style>
+    <style id="plotly.js-style-modebar-76ccb2"></style>
   </head>
   <body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-22076 node-type-diseases-and-conditions section-topics-services">
     <p id="skip-link">
@@ -123,7 +123,7 @@
                     <div class="form-actions form-wrapper" id="edit-actions">
                       <input alt="Search IDPH" type="image" id="edit-submit" name="submit" src="/sites/all/themes/idph/images/icon_search.png" class="form-submit">
                     </div>
-                    <input type="hidden" name="form_build_id" value="form-4-SnfsjFWmAQJD7bH5FmFerHDwiBHntDQ0xhlXMjkb0">
+                    <input type="hidden" name="form_build_id" value="form-LC3B2AsIiepRfeP_sbu44SAAd83ezL9AR8XurEpC-To">
                     <input type="hidden" name="form_id" value="search_block_form">
                   </div>
                 </div>
@@ -163,7 +163,7 @@
       </header>
       <div class="region region-landingpagealert">
         <div id="block-views-landing-page-alerts-block" class="block block-views first last odd">
-          <div class="view view-landing-page-alerts view-id-landing_page_alerts view-display-id-block homepageAlert view-dom-id-7515dd07fdf13636a224e5b4073da1c9">
+          <div class="view view-landing-page-alerts view-id-landing_page_alerts view-display-id-block homepageAlert view-dom-id-d63e5270ae2465a1bb63df9d9f35d2f2">
             <div class="view-content">
               <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
                 <div class="views-field views-field-body">
@@ -182,16 +182,16 @@
         <div class="region region-navigation">
           <div id="block-superfish-1" class="block block-superfish nav-collapsed first last odd">
             <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-default sf-total-items-7 sf-parent-items-3 sf-single-items-4 superfish-processed sf-js-enabled sf-shadow">
-              <li id="menu-351-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-11 sf-single-children-1 menuparent">
+              <li id="menu-351-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-11 sf-single-children-1 menuparent">
                 <a href="/topics-services" title="" class="sf-depth-1 menuparent sf-with-ul">Topics &amp; Services
                   <span class="sf-sub-indicator">&#187;</span>
                 </a>
-                <ul style="float: none; width: 22.8571em;" class="sf-hidden">
+                <ul style="float: none; width: 21.8571em;" class="sf-hidden">
                   <li id="menu-352-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-8 sf-parent-children-3 sf-single-children-5 menuparent" style="">
                     <a href="/topics-services/birth-death-other-records" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Birth, Death, Other Records
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 18.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 18.5em;" class="sf-hidden">
                       <li id="menu-1581-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style="">
                         <a href="/topics-services/birth-death-other-records/adoption" class="sf-depth-3 menuparent sf-with-ul" style="">Adoption
                           <span class="sf-sub-indicator">&#187;</span>
@@ -206,7 +206,7 @@
                         <a href="/topics-services/birth-death-other-records/birth-records" class="sf-depth-3 menuparent sf-with-ul" style="">Birth Records
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.3571em;" class="sf-hidden">
                           <li id="menu-1017-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/birth-death-other-records/birth-records/correct-birth-certificate" class="sf-depth-4" style="">Correct Birth Certificate</a>
                           </li>
@@ -234,7 +234,7 @@
                         <a href="/topics-services/birth-death-other-records/death-records" class="sf-depth-3 menuparent sf-with-ul" style="">Death Records
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
                           <li id="menu-1621-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/birth-death-other-records/death-records/correct-death-certificate" class="sf-depth-4" style="">Correct Death Certificate</a>
                           </li>
@@ -263,16 +263,16 @@
                   <li id="menu-6556-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style="">
                     <a href="http://www.idph.state.il.us/vitalrecords_sp/default.htm" title="" class="sf-depth-2" target="_blank" rel="noopener noreferrer" style="">Nacimientos, Defunciones, Otros Registros</a>
                   </li>
-                  <li id="menu-361-1" class="active-trail middle odd sf-item-3 sf-depth-2 sf-total-children-14 sf-parent-children-10 sf-single-children-4 menuparent" style="">
+                  <li id="menu-361-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-14 sf-parent-children-10 sf-single-children-4 menuparent" style="">
                     <a href="/topics-services/diseases-and-conditions" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Diseases and Conditions
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 19.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 19.5em;" class="sf-hidden">
                       <li id="menu-9616-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style="">
                         <a href="/topics-services/diseases-and-conditions/alzheimers" class="sf-depth-3 menuparent sf-with-ul" style="">Alzheimer's Disease
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 21.8571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 21.3571em;" class="sf-hidden">
                           <li id="menu-124866-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/alzheimers/alzheimers-services-curriculum" class="sf-depth-4" style="">Alzheimer's Disease Services Curriculum</a>
                           </li>
@@ -298,7 +298,7 @@
                         <a href="/topics-services/diseases-and-conditions/chronic-diseases" class="sf-depth-3 menuparent sf-with-ul" style="">Chronic Diseases
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17.8571em;" class="sf-hidden">
                           <li id="menu-29696-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/content/chronic-disease-burden-updates" class="sf-depth-4" style="">Chronic Disease Burden Updates</a>
                           </li>
@@ -314,20 +314,20 @@
                         <a href="/topics-services/diseases-and-conditions/diabetes" class="sf-depth-3 menuparent sf-with-ul" style="">Diabetes
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25em;" class="sf-hidden">
                           <li id="menu-2731-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/diabetes/il-prevention-control-program" class="sf-depth-4" style="">Illinois Diabetes Prevention and Control Program</a>
                           </li>
                         </ul>
                       </li>
-                      <li id="menu-368-1" class="active-trail middle even sf-item-6 sf-depth-3 sf-no-children" style="">
+                      <li id="menu-368-1" class="middle even sf-item-6 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/diseases-and-conditions/diseases-a-z-list" title="" class="sf-depth-3" style="">Diseases A-Z</a>
                       </li>
                       <li id="menu-2136-1" class="middle odd sf-item-7 sf-depth-3 sf-total-children-11 sf-parent-children-0 sf-single-children-11 menuparent" style="">
                         <a href="/topics-services/diseases-and-conditions/hiv-aids" title="" class="sf-depth-3 menuparent sf-with-ul" style="">HIV/AIDS
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25em;" class="sf-hidden">
                           <li id="menu-2956-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/hiv-aids/hiv-corrections-initiative" class="sf-depth-4" style="">HIV Corrections Initiative</a>
                           </li>
@@ -367,7 +367,7 @@
                         <a href="/topics-services/diseases-and-conditions/heart-stroke" class="sf-depth-3 menuparent sf-with-ul" style="">Heart Disease &amp; Stroke
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12.8571em;" class="sf-hidden">
                           <li id="menu-2776-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/heart-stroke/cholesterol" class="sf-depth-4" style="">Cholesterol</a>
                           </li>
@@ -407,7 +407,7 @@
                         <a href="/hepatitis" class="sf-depth-3 menuparent sf-with-ul" style="">Hepatitis
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 13.3571em;" class="sf-hidden">
                           <li id="menu-96921-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/hepatitisA" class="sf-depth-4" style="">Hepatitis A Outbreaks</a>
                           </li>
@@ -417,7 +417,7 @@
                         <a href="/topics-services/diseases-and-conditions/infectious-diseases" class="sf-depth-3 menuparent sf-with-ul" style="">Infectious Diseases
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 16.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.9286em;" class="sf-hidden">
                           <li id="menu-2666-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/infectious-diseases/infectious-disease-reporting" class="sf-depth-4" style="">Infectious Disease Reporting</a>
                           </li>
@@ -430,7 +430,7 @@
                         <a href="/topics-services/diseases-and-conditions/influenza" class="sf-depth-3 menuparent sf-with-ul" style="">Influenza (Flu)
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
                           <li id="menu-2736-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/influenza/cold-flu" class="sf-depth-4" style="">A Cold or the Flu?</a>
                           </li>
@@ -455,7 +455,7 @@
                         <a href="/topics-services/diseases-and-conditions/stds" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Sexually Transmitted Diseases (STD)
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18.4286em;" class="sf-hidden">
                           <li id="menu-68406-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/diseases-and-conditions/infectious-diseases/infectious-disease-reporting" title="" class="sf-depth-4" style="">STD Reporting</a>
                           </li>
@@ -485,12 +485,12 @@
                     <a href="/topics-services/emergency-preparedness-response" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Emergency Preparedness &amp; Response
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 26em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 25.4286em;" class="sf-hidden">
                       <li id="menu-397-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-9 sf-parent-children-3 sf-single-children-6 menuparent" style="">
                         <a href="/topics-services/emergency-preparedness-response/ems" class="sf-depth-3 menuparent sf-with-ul" style="">Emergency Medical Services
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 22.4286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 22.0714em;" class="sf-hidden">
                           <li id="menu-6681-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/emergency-preparedness-response/ems/assistance-recognition-promotion" class="sf-depth-4" style="">EMS Assistance, Recognition &amp; Promotion</a>
                           </li>
@@ -510,7 +510,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/preHospData" class="sf-depth-4 menuparent sf-with-ul" style="">Prehospital Data Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 16.9286em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                               <li id="menu-115526-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/Illinois-NEMSIS-Specifications" class="sf-depth-5" style="">Illinois NEMSIS Specifications</a>
                               </li>
@@ -520,7 +520,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/stroke-program" class="sf-depth-4 menuparent sf-with-ul" style="">Stroke Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 13.1429em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 13em;" class="sf-hidden">
                               <li id="menu-131611-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/stroke-program/stroke-centers" class="sf-depth-5" style="">Stroke Center Listing</a>
                               </li>
@@ -530,7 +530,7 @@
                             <a href="/topics-services/emergency-preparedness-response/ems/trauma-program" class="sf-depth-4 menuparent sf-with-ul" style="">Trauma Program
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 14.8571em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 14.9286em;" class="sf-hidden">
                               <li id="menu-134316-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/emergency-preparedness-response/ems/trauma-program/trauma-registry-training" class="sf-depth-5" style="">Trauma Registry Training</a>
                               </li>
@@ -551,7 +551,7 @@
                         <a href="/topics-services/emergency-preparedness-response/volunteering-personal-preparedness" class="sf-depth-3 menuparent sf-with-ul" style="">Volunteering &amp; Personal Preparedness
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                           <li id="menu-6701-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/emergency-preparedness-response/volunteering-personal-preparedness/americorps-program" class="sf-depth-4" style="">AmeriCorps Program</a>
                           </li>
@@ -572,7 +572,7 @@
                     <a href="/topics-services/environmental-health-protection" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Environmental Health Protection
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 26.8571em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 26.1429em;" class="sf-hidden">
                       <li id="menu-2171-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/environmental-health-protection/asbestos" class="sf-depth-3" style="">Asbestos Abatement</a>
                       </li>
@@ -589,7 +589,7 @@
                         <a href="/illinoislead" class="sf-depth-3 menuparent sf-with-ul" style="">Lead Poisoning Prevention
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 20.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 20.5714em;" class="sf-hidden">
                           <li id="menu-116886-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/lead-poisoning-prevention/families-of-lead-exposed-children" class="sf-depth-4" style="">Families of Lead Exposed Children</a>
                           </li>
@@ -639,7 +639,7 @@
                         <a href="/topics-services/environmental-health-protection/private-water" class="sf-depth-3 menuparent sf-with-ul" style="">Private Water &amp; Closed Loop Wells
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.6429em;" class="sf-hidden">
                           <li id="menu-96896-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/private-water/methane-groundwater" class="sf-depth-4" style="">Methane in Groundwater</a>
                           </li>
@@ -649,7 +649,7 @@
                         <a href="/topics-services/environmental-health-protection/structural-pest-control" class="sf-depth-3 menuparent sf-with-ul" style="">Structural Pest Control
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 19.4286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18.9286em;" class="sf-hidden">
                           <li id="menu-2621-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/structural-pest-control/integrated-pest-management" class="sf-depth-4" style="">Integrated Pest Management (IPM)</a>
                           </li>
@@ -665,7 +665,7 @@
                         <a href="/topics-services/environmental-health-protection/toxicology" class="sf-depth-3 menuparent sf-with-ul" style="">Toxicology Program
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 27em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 26.2143em;" class="sf-hidden">
                           <li id="menu-1241-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/environmental-health-protection/toxicology/fish-advisories" class="sf-depth-4" style="">Fish Advisories</a>
                           </li>
@@ -673,7 +673,7 @@
                             <a href="/topics-services/environmental-health-protection/toxicology/indoor-air-quality-healthy-homes" class="sf-depth-4 menuparent sf-with-ul" style="">Indoor Air Quality and Healthy Homes
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 24.1429em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 23.6429em;" class="sf-hidden">
                               <li id="menu-115531-1" class="firstandlast odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/environmental-health-protection/toxicology/indoor-air-quality-healthy-homes/flood-sewer-overflow-cleanup" class="sf-depth-5" style="">Cleaning Up After Flood and Sewer Overflows</a>
                               </li>
@@ -752,12 +752,12 @@
                     <a href="/topics-services/health-care-regulation" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Health Care Regulation
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 24.2857em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 24.4286em;" class="sf-hidden">
                       <li id="menu-402-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-17 sf-parent-children-0 sf-single-children-17 menuparent" style="">
                         <a href="/topics-services/health-care-regulation/facilities" class="sf-depth-3 menuparent sf-with-ul" style="">Health Care Facilities
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.2857em;" class="sf-hidden">
                           <li id="menu-8291-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/facilities/alternative-health-care-delivery" class="sf-depth-4" style="">Alternative Health Care Delivery</a>
                           </li>
@@ -815,7 +815,7 @@
                         <a href="/topics-services/health-care-regulation/health-care-worker-registry" class="sf-depth-3 menuparent sf-with-ul" style="">Health Care Worker Registry
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.1429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.7143em;" class="sf-hidden">
                           <li id="menu-2996-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/health-care-worker-registry/cna-facts" class="sf-depth-4" style="">CNA Facts</a>
                           </li>
@@ -828,7 +828,7 @@
                         <a href="/topics-services/health-care-regulation/nursing-homes" class="sf-depth-3 menuparent sf-with-ul" style="">Nursing Homes
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 23.3571em;" class="sf-hidden">
                           <li id="menu-3051-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/nursing-homes/advance-directives" class="sf-depth-4" style="">Advance Directives</a>
                           </li>
@@ -878,7 +878,7 @@
                         <a href="/topics-services/health-care-regulation/life-safety-construction" class="sf-depth-3 menuparent sf-with-ul" style="">Life Safety &amp; Construction
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 19.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 19.1429em;" class="sf-hidden">
                           <li id="menu-9651-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/health-care-regulation/life-safety-construction/astc-licensure" class="sf-depth-4" style="">ASTC Licensure</a>
                           </li>
@@ -905,7 +905,7 @@
                     <a href="/topics-services/lab-testing-services" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Lab Testing &amp; Services
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 21em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 20.7143em;" class="sf-hidden">
                       <li id="menu-390-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/lab-testing-services/emergency-procedures" title="" class="sf-depth-3" style="">Lab Emergency Procedures</a>
                       </li>
@@ -936,12 +936,12 @@
                     <a href="/topics-services/life-stages-populations" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Life Stages &amp; Populations
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 18.5714em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 18.3571em;" class="sf-hidden">
                       <li id="menu-2891-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-9 sf-parent-children-0 sf-single-children-9 menuparent" style="">
                         <a href="/topics-services/life-stages-populations/genomics" class="sf-depth-3 menuparent sf-with-ul" style="">Genomics
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 24.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.5em;" class="sf-hidden">
                           <li id="menu-2921-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/genomics/brac1-2" class="sf-depth-4" style="">BRCA1 &amp; BRCA2</a>
                           </li>
@@ -975,7 +975,7 @@
                         <a href="/topics-services/life-stages-populations/disability-health-program" class="sf-depth-3 menuparent sf-with-ul" style="">Disability &amp; Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.2857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 16.8571em;" class="sf-hidden">
                           <li id="menu-6571-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/disability-health-program/disability-arthritis" title="Disability and Arthritis" class="sf-depth-4" style="">Disability and Arthritis</a>
                           </li>
@@ -994,7 +994,7 @@
                         <a href="/topics-services/life-stages-populations/mens-health" class="sf-depth-3 menuparent sf-with-ul" style="">Men&#8217;s Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17em;" class="sf-hidden">
                           <li id="menu-3116-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/mens-health/chronic-diseases" class="sf-depth-4" style="">Chronic Diseases and Men</a>
                           </li>
@@ -1025,7 +1025,7 @@
                         <a href="/topics-services/life-stages-populations/newborn-screening" class="sf-depth-3 menuparent sf-with-ul" style="">Newborn Screening
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 26.9286em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.9286em;" class="sf-hidden">
                           <li id="menu-9486-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/newborn-screening/cchd" class="sf-depth-4" style="">Critical Congenital Heart Disease (CCHD)</a>
                           </li>
@@ -1078,7 +1078,7 @@
                         <a href="/topics-services/life-stages-populations/womens-health-services" class="sf-depth-3 menuparent sf-with-ul" style="">Women's Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 23.6429em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 24.1429em;" class="sf-hidden">
                           <li id="menu-6836-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/womens-health-services/family-planning" class="sf-depth-4" style="">Family Planning</a>
                           </li>
@@ -1094,7 +1094,7 @@
                         <a href="/topics-services/life-stages-populations/lgbtq-health" class="sf-depth-3 menuparent sf-with-ul" style="">LGBTQ Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 12.2857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12em;" class="sf-hidden">
                           <li id="menu-66996-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="http://dph.illinois.gov/topics-services/diseases-and-conditions/hiv-aids" title="" class="sf-depth-4" style="">HIV/AIDS</a>
                           </li>
@@ -1107,7 +1107,7 @@
                         <a href="/topics-services/life-stages-populations/maternal-child-family-health-services" class="sf-depth-3 menuparent sf-with-ul" style="">Maternal, Child &amp; Family Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 14.2143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.0714em;" class="sf-hidden">
                           <li id="menu-13711-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/maternal-child-family-health-services/child-health" class="sf-depth-4" style="">Child Health</a>
                           </li>
@@ -1135,7 +1135,7 @@
                         <a href="/topics-services/life-stages-populations/infant-mortality" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Infant Mortality
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 25.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.2857em;" class="sf-hidden">
                           <li id="menu-3151-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/infant-mortality/sids" class="sf-depth-4" style="">Sudden Unexpected Infant Death (SUID) Program</a>
                           </li>
@@ -1151,7 +1151,7 @@
                         <a href="/topics-services/life-stages-populations/minority-health" class="sf-depth-3 menuparent sf-with-ul" style="">Minority Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 13.7857em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 13.3571em;" class="sf-hidden">
                           <li id="menu-48866-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/life-stages-populations/minority-health/translated-documents" class="sf-depth-4" style="">Translated Documents</a>
                           </li>
@@ -1163,7 +1163,7 @@
                     <a href="/topics-services/prevention-wellness" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Prevention &amp; Wellness
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 23em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 22.6429em;" class="sf-hidden">
                       <li id="menu-76001-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/prevention-wellness/animal-population-control" class="sf-depth-3" style="">Animal Population Control</a>
                       </li>
@@ -1176,7 +1176,7 @@
                             <a href="/topics-services/prevention-wellness/medical-cannabis" class="sf-depth-4 menuparent sf-with-ul" style="">Medical Cannabis
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 21.0714em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 20.7143em;" class="sf-hidden">
                               <li id="menu-108891-1" class="first odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/prevention-wellness/medical-cannabis/opioid-alternative-pilot-program" class="sf-depth-5" style="">Opioid Alternative Pilot Program</a>
                               </li>
@@ -1245,7 +1245,7 @@
                         <a href="/topics-services/prevention-wellness/immunization" class="sf-depth-3 menuparent sf-with-ul" style="">Immunization
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.8571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 18em;" class="sf-hidden">
                           <li id="menu-1771-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/immunization/icare" class="sf-depth-4" style="">I-CARE (Immunization Records)</a>
                           </li>
@@ -1270,7 +1270,7 @@
                         <a href="/topics-services/prevention-wellness/injury-violence-prevention" class="sf-depth-3 menuparent sf-with-ul" style="">Injury &amp; Violence Prevention
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 15.0714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 14.7857em;" class="sf-hidden">
                           <li id="menu-9621-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/injury-violence-prevention/carbon-monoxide" class="sf-depth-4" style="">Carbon Monoxide</a>
                           </li>
@@ -1287,7 +1287,7 @@
                             <a href="/topics-services/prevention-wellness/injury-violence-prevention/older-adult-falls" class="sf-depth-4 menuparent sf-with-ul" style="">Older Adult Falls
                               <span class="sf-sub-indicator">&#187;</span>
                             </a>
-                            <ul style="left: 100%; float: none; width: 16.2857em;" class="sf-hidden">
+                            <ul style="left: 100%; float: none; width: 16.0714em;" class="sf-hidden">
                               <li id="menu-96826-1" class="first odd sf-item-1 sf-depth-5 sf-no-children" style="">
                                 <a href="/topics-services/prevention-wellness/injury-violence-prevention/health-care-providers" title="" class="sf-depth-5" style="">Health Care Providers</a>
                               </li>
@@ -1314,7 +1314,7 @@
                         <a href="/topics-services/prevention-wellness/oral-health" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Oral Health
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 17.7143em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 17.3571em;" class="sf-hidden">
                           <li id="menu-68361-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/oral-health/oral-health-during-pregnancy" class="sf-depth-4" style="">Oral Health During Pregnancy</a>
                           </li>
@@ -1370,7 +1370,7 @@
                         <a href="/topics-services/prevention-wellness/tobacco" class="sf-depth-3 menuparent sf-with-ul" style="">Tobacco Prevention and Control
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 16em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 15.7857em;" class="sf-hidden">
                           <li id="menu-124861-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/tobacco/e-cigarettes-and-vapes" class="sf-depth-4" style="">E-cigarettes and Vapes</a>
                           </li>
@@ -1383,7 +1383,7 @@
                         <a href="/topics-services/prevention-wellness/vision-hearing" title="" class="sf-depth-3 menuparent sf-with-ul" style="">Vision &amp; Hearing
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 26.3571em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 25.7143em;" class="sf-hidden">
                           <li id="menu-6561-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/prevention-wellness/vision-hearing/hearing-instrument-consumer-protection-program" class="sf-depth-4" style="">Hearing Instrument Consumer Protection Program</a>
                           </li>
@@ -1395,7 +1395,7 @@
                     <a href="/topics-services/provider-partner-resources" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Provider and Partner Resources
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 23.1429em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 22.7143em;" class="sf-hidden">
                       <li id="menu-417-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/topics-services/provider-partner-resources/grants-management" title="" class="sf-depth-3" style="">Grants Management</a>
                       </li>
@@ -1419,7 +1419,7 @@
                         <a href="/topics-services/provider-partner-resources/quality-improvement-strategic-planning" class="sf-depth-3 menuparent sf-with-ul" style="">Quality Improvement &amp; Strategic Planning
                           <span class="sf-sub-indicator">&#187;</span>
                         </a>
-                        <ul style="left: 100%; float: none; width: 12.5714em;" class="sf-hidden">
+                        <ul style="left: 100%; float: none; width: 12.5em;" class="sf-hidden">
                           <li id="menu-1951-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children" style="">
                             <a href="/topics-services/provider-partner-resources/quality-improvement-strategic-planning/strategic-plan" class="sf-depth-4" style="">IDPH Strategic Plan</a>
                           </li>
@@ -1459,7 +1459,7 @@
                     <a href="/opioids" class="sf-depth-2 menuparent sf-with-ul" style="">Opioids
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 20em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 19.6429em;" class="sf-hidden">
                       <li id="menu-38226-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/opioids/home" class="sf-depth-3" style="">Opioids</a>
                       </li>
@@ -1495,7 +1495,7 @@
                 <a href="/data-statistics" title="" class="sf-depth-1 menuparent sf-with-ul">Data &amp; Statistics
                   <span class="sf-sub-indicator">&#187;</span>
                 </a>
-                <ul style="float: none; width: 24.7857em;" class="sf-hidden">
+                <ul style="float: none; width: 24em;" class="sf-hidden">
                   <li id="menu-1991-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style="">
                     <a href="http://www.idph.state.il.us/brfss/" title="" class="sf-depth-2" target="_blank" rel="noopener noreferrer" style="">Behavioral Risk Factor Surveillance System</a>
                   </li>
@@ -1509,7 +1509,7 @@
                     <a href="/data-statistics/epidemiology" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Epidemiology
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 25.2857em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 24.4286em;" class="sf-hidden">
                       <li id="menu-2016-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/data-statistics/epidemiology/apors" title="" class="sf-depth-3" style="">Adverse Pregnancy Outcomes Reporting System</a>
                       </li>
@@ -1543,7 +1543,7 @@
                     <a href="/data-statistics/vital-statistics" title="" class="sf-depth-2 menuparent sf-with-ul" style="">Vital Statistics
                       <span class="sf-sub-indicator">&#187;</span>
                     </a>
-                    <ul style="left: 100%; float: none; width: 16.0714em;" class="sf-hidden">
+                    <ul style="left: 100%; float: none; width: 15.4286em;" class="sf-hidden">
                       <li id="menu-2076-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style="">
                         <a href="/data-statistics/vital-statistics/abortion-statistics" class="sf-depth-3" style="">Abortion Statistics</a>
                       </li>
@@ -1687,7 +1687,7 @@
                       <div class="flex-container">
                         <div class="NumberHighlight" style="background:#ff7800;">
                           <h2>Positive</h2>
-                          <h3 id="covid19positive">4,596</h3>
+                          <h3 id="covid19positive">5,994</h3>
                         </div>
                         <div class="NumberHighlight" style="background:#1f77b4;display:none;">
                           <h2>Negative</h2>
@@ -1695,11 +1695,11 @@
                         </div>
                         <div class="NumberHighlight" style="background:#ff0000;">
                           <h2>Deaths</h2>
-                          <h3 id="covid19deaths">65</h3>
+                          <h3 id="covid19deaths">99</h3>
                         </div>
                         <div class="NumberHighlight" style="background:#5f5f5f; flex-grow:3;">
                           <h2>Total Persons Tested*</h2>
-                          <h3 id="covid19totaltest">27,762</h3>
+                          <h3 id="covid19totaltest">35,225</h3>
                         </div>
                       </div>
                       <p style="text-align:center;">
@@ -1707,7 +1707,7 @@
                           <br>
                         </sub>
                         <br>Information regarding the number of people under investigation updated on
-                        <span id="updatedDate">3/29/2020</span>.
+                        <span id="updatedDate">3/31/2020</span>.
                         <br>
                       </p>
                       <h2 style="text-align:center;">COVID-19 Illinois Positive Cases</h2>
@@ -1715,7 +1715,7 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 620px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-ca8b7d">
+                              <defs id="defs-ba16c2">
                                 <g class="clips"></g>
                                 <g class="gradients"></g>
                               </defs>
@@ -1739,7 +1739,7 @@
                               <canvas class="gl-canvas gl-canvas-context" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-focus" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
                               <canvas class="gl-canvas gl-canvas-pick" style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none;" width="725.933" height="620"></canvas>
-                              <div id="ca8b7d-mapbox" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
+                              <div id="ba16c2-mapbox" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" class="mapboxgl-map">
                                 <div class="mapboxgl-canary" style="visibility: hidden;"></div>
                                 <div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate">
                                   <canvas class="mapboxgl-canvas" style="position: absolute; width: 726px; height: 620px; left: 0px; top: 0px;" tabindex="0" aria-label="Map" width="1089" height="930"></canvas>
@@ -1761,7 +1761,7 @@
                               </div>
                             </div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620">
-                              <defs id="topdefs-ca8b7d">
+                              <defs id="topdefs-ba16c2">
                                 <g class="clips"></g>
                               </defs>
                               <g class="indicatorlayer"></g>
@@ -1775,29 +1775,35 @@
                               <g class="menulayer"></g>
                               <g class="zoomlayer"></g>
                             </svg>
-                            <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-ca8b7d" class="modebar modebar--hover ease-bg">
+                            <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; height: 620px;">
+                              <div id="modebar-ba16c2" class="modebar modebar--hover ease-bg vertical">
                                 <div class="modebar-group">
-                                  <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
-                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
-                                      <path d="m500 450c-83 0-150-67-150-150 0-83 67-150 150-150 83 0 150 67 150 150 0 83-67 150-150 150z m400 150h-120c-16 0-34 13-39 29l-31 93c-6 15-23 28-40 28h-340c-16 0-34-13-39-28l-31-94c-6-15-23-28-40-28h-120c-55 0-100-45-100-100v-450c0-55 45-100 100-100h800c55 0 100 45 100 100v450c0 55-45 100-100 100z m-400-550c-138 0-250 112-250 250 0 138 112 250 250 250 138 0 250-112 250-250 0-138-112-250-250-250z m365 380c-19 0-35 16-35 35 0 19 16 35 35 35 19 0 35-16 35-35 0-19-16-35-35-35z" transform="matrix(1 0 0 -1 0 850)"></path>
+                                  <a href="https://plotly.com/" target="_blank" data-title="Produced with Plotly" class="modebar-btn plotlyjsicon modebar-btn--logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 132" height="1em" width="1em">
+                                      <defs>
+                                        <style>.cls-1 {fill: #3f4f75;} .cls-2 {fill: #80cfbe;} .cls-3 {fill: #fff;}</style>
+                                      </defs>
+                                      <title>plotly-logomark</title>
+                                      <g id="symbol">
+                                        <rect class="cls-1" width="132" height="132" rx="6" ry="6"></rect>
+                                        <circle class="cls-2" cx="78" cy="54" r="6"></circle>
+                                        <circle class="cls-2" cx="102" cy="30" r="6"></circle>
+                                        <circle class="cls-2" cx="78" cy="30" r="6"></circle>
+                                        <circle class="cls-2" cx="54" cy="30" r="6"></circle>
+                                        <circle class="cls-2" cx="30" cy="30" r="6"></circle>
+                                        <circle class="cls-2" cx="30" cy="54" r="6"></circle>
+                                        <path class="cls-3" d="M30,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,30,72Z"></path>
+                                        <path class="cls-3" d="M78,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,78,72Z"></path>
+                                        <path class="cls-3" d="M54,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,54,48Z"></path>
+                                        <path class="cls-3" d="M102,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,102,48Z"></path>
+                                      </g>
                                     </svg>
                                   </a>
                                 </div>
                                 <div class="modebar-group">
-                                  <a rel="tooltip" class="modebar-btn active" data-title="Pan" data-attr="dragmode" data-val="pan" data-toggle="false" data-gravity="n">
-                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
-                                      <path d="m1000 350l-187 188 0-125-250 0 0 250 125 0-188 187-187-187 125 0 0-250-250 0 0 125-188-188 186-187 0 125 252 0 0-250-125 0 187-188 188 188-125 0 0 250 250 0 0-126 187 188z" transform="matrix(1 0 0 -1 0 850)"></path>
-                                    </svg>
-                                  </a>
-                                  <a rel="tooltip" class="modebar-btn" data-title="Box Select" data-attr="dragmode" data-val="select" data-toggle="false" data-gravity="n">
-                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
-                                      <path d="m0 850l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m285 0l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m-857-286l0-143 143 0 0 143-143 0z m857 0l0-143 143 0 0 143-143 0z m-857-285l0-143 143 0 0 143-143 0z m857 0l0-143 143 0 0 143-143 0z m-857-286l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m285 0l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z" transform="matrix(1 0 0 -1 0 850)"></path>
-                                    </svg>
-                                  </a>
-                                  <a rel="tooltip" class="modebar-btn" data-title="Lasso Select" data-attr="dragmode" data-val="lasso" data-toggle="false" data-gravity="n">
-                                    <svg viewbox="0 0 1031 1000" class="icon" height="1em" width="1em">
-                                      <path d="m1018 538c-36 207-290 336-568 286-277-48-473-256-436-463 10-57 36-108 76-151-13-66 11-137 68-183 34-28 75-41 114-42l-55-70 0 0c-2-1-3-2-4-3-10-14-8-34 5-45 14-11 34-8 45 4 1 1 2 3 2 5l0 0 113 140c16 11 31 24 45 40 4 3 6 7 8 11 48-3 100 0 151 9 278 48 473 255 436 462z m-624-379c-80 14-149 48-197 96 42 42 109 47 156 9 33-26 47-66 41-105z m-187-74c-19 16-33 37-39 60 50-32 109-55 174-68-42-25-95-24-135 8z m360 75c-34-7-69-9-102-8 8 62-16 128-68 170-73 59-175 54-244-5-9 20-16 40-20 61-28 159 121 317 333 354s407-60 434-217c28-159-121-318-333-355z" transform="matrix(1 0 0 -1 0 850)"></path>
+                                  <a rel="tooltip" class="modebar-btn active" data-title="Toggle show closest data on hover" data-attr="hovermode" data-val="null" data-toggle="true" data-gravity="ne">
+                                    <svg viewbox="0 0 1500 1000" class="icon" height="1em" width="1em">
+                                      <path d="m375 725l0 0-375-375 375-374 0-1 1125 0 0 750-1125 0z" transform="matrix(1 0 0 -1 0 850)"></path>
                                     </svg>
                                   </a>
                                 </div>
@@ -1819,32 +1825,26 @@
                                   </a>
                                 </div>
                                 <div class="modebar-group">
-                                  <a rel="tooltip" class="modebar-btn active" data-title="Toggle show closest data on hover" data-attr="hovermode" data-val="null" data-toggle="true" data-gravity="ne">
-                                    <svg viewbox="0 0 1500 1000" class="icon" height="1em" width="1em">
-                                      <path d="m375 725l0 0-375-375 375-374 0-1 1125 0 0 750-1125 0z" transform="matrix(1 0 0 -1 0 850)"></path>
+                                  <a rel="tooltip" class="modebar-btn active" data-title="Pan" data-attr="dragmode" data-val="pan" data-toggle="false" data-gravity="n">
+                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
+                                      <path d="m1000 350l-187 188 0-125-250 0 0 250 125 0-188 187-187-187 125 0 0-250-250 0 0 125-188-188 186-187 0 125 252 0 0-250-125 0 187-188 188 188-125 0 0 250 250 0 0-126 187 188z" transform="matrix(1 0 0 -1 0 850)"></path>
+                                    </svg>
+                                  </a>
+                                  <a rel="tooltip" class="modebar-btn" data-title="Box Select" data-attr="dragmode" data-val="select" data-toggle="false" data-gravity="n">
+                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
+                                      <path d="m0 850l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m285 0l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m-857-286l0-143 143 0 0 143-143 0z m857 0l0-143 143 0 0 143-143 0z m-857-285l0-143 143 0 0 143-143 0z m857 0l0-143 143 0 0 143-143 0z m-857-286l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z m285 0l0-143 143 0 0 143-143 0z m286 0l0-143 143 0 0 143-143 0z" transform="matrix(1 0 0 -1 0 850)"></path>
+                                    </svg>
+                                  </a>
+                                  <a rel="tooltip" class="modebar-btn" data-title="Lasso Select" data-attr="dragmode" data-val="lasso" data-toggle="false" data-gravity="n">
+                                    <svg viewbox="0 0 1031 1000" class="icon" height="1em" width="1em">
+                                      <path d="m1018 538c-36 207-290 336-568 286-277-48-473-256-436-463 10-57 36-108 76-151-13-66 11-137 68-183 34-28 75-41 114-42l-55-70 0 0c-2-1-3-2-4-3-10-14-8-34 5-45 14-11 34-8 45 4 1 1 2 3 2 5l0 0 113 140c16 11 31 24 45 40 4 3 6 7 8 11 48-3 100 0 151 9 278 48 473 255 436 462z m-624-379c-80 14-149 48-197 96 42 42 109 47 156 9 33-26 47-66 41-105z m-187-74c-19 16-33 37-39 60 50-32 109-55 174-68-42-25-95-24-135 8z m360 75c-34-7-69-9-102-8 8 62-16 128-68 170-73 59-175 54-244-5-9 20-16 40-20 61-28 159 121 317 333 354s407-60 434-217c28-159-121-318-333-355z" transform="matrix(1 0 0 -1 0 850)"></path>
                                     </svg>
                                   </a>
                                 </div>
                                 <div class="modebar-group">
-                                  <a href="https://plot.ly/" target="_blank" data-title="Produced with Plotly" class="modebar-btn plotlyjsicon modebar-btn--logo">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 132" height="1em" width="1em">
-                                      <defs>
-                                        <style>.cls-1 {fill: #119dff;} .cls-2 {fill: #25fefd;} .cls-3 {fill: #fff;}</style>
-                                      </defs>
-                                      <title>plotly-logomark</title>
-                                      <g id="symbol">
-                                        <rect class="cls-1" width="132" height="132" rx="6" ry="6"></rect>
-                                        <circle class="cls-2" cx="78" cy="54" r="6"></circle>
-                                        <circle class="cls-2" cx="102" cy="30" r="6"></circle>
-                                        <circle class="cls-2" cx="78" cy="30" r="6"></circle>
-                                        <circle class="cls-2" cx="54" cy="30" r="6"></circle>
-                                        <circle class="cls-2" cx="30" cy="30" r="6"></circle>
-                                        <circle class="cls-2" cx="30" cy="54" r="6"></circle>
-                                        <path class="cls-3" d="M30,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,30,72Z"></path>
-                                        <path class="cls-3" d="M78,72a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V78A6,6,0,0,0,78,72Z"></path>
-                                        <path class="cls-3" d="M54,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,54,48Z"></path>
-                                        <path class="cls-3" d="M102,48a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V54A6,6,0,0,0,102,48Z"></path>
-                                      </g>
+                                  <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
+                                    <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
+                                      <path d="m500 450c-83 0-150-67-150-150 0-83 67-150 150-150 83 0 150 67 150 150 0 83-67 150-150 150z m400 150h-120c-16 0-34 13-39 29l-31 93c-6 15-23 28-40 28h-340c-16 0-34-13-39-28l-31-94c-6-15-23-28-40-28h-120c-55 0-100-45-100-100v-450c0-55 45-100 100-100h800c55 0 100 45 100 100v450c0 55-45 100-100 100z m-400-550c-138 0-250 112-250 250 0 138 112 250 250 250 138 0 250-112 250-250 0-138-112-250-250-250z m365 380c-19 0-35 16-35 35 0 19 16 35 35 35 19 0 35-16 35-35 0-19-16-35-35-35z" transform="matrix(1 0 0 -1 0 850)"></path>
                                     </svg>
                                   </a>
                                 </div>
@@ -1864,27 +1864,18 @@
                         <div class="plot-container plotly">
                           <div class="svg-container" style="position: relative; width: 100%; height: 620px;">
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-                              <defs id="defs-fe6e46">
+                              <defs id="defs-76ccb2">
                                 <g class="clips">
-                                  <clippath id="clipfe6e46xyplot" class="plotclip">
+                                  <clippath id="clip76ccb2xyplot" class="plotclip">
                                     <rect width="566" height="440"></rect>
                                   </clippath>
-                                  <clippath id="clipfe6e46xy2plot" class="plotclip">
-                                    <rect width="566" height="440"></rect>
-                                  </clippath>
-                                  <clippath class="axesclip" id="clipfe6e46x">
+                                  <clippath class="axesclip" id="clip76ccb2x">
                                     <rect x="80" y="0" width="566" height="620"></rect>
                                   </clippath>
-                                  <clippath class="axesclip" id="clipfe6e46y">
+                                  <clippath class="axesclip" id="clip76ccb2y">
                                     <rect x="0" y="100" width="725.933" height="440"></rect>
                                   </clippath>
-                                  <clippath class="axesclip" id="clipfe6e46xy">
-                                    <rect x="80" y="100" width="566" height="440"></rect>
-                                  </clippath>
-                                  <clippath class="axesclip" id="clipfe6e46y2">
-                                    <rect x="0" y="100" width="725.933" height="440"></rect>
-                                  </clippath>
-                                  <clippath class="axesclip" id="clipfe6e46xy2">
+                                  <clippath class="axesclip" id="clip76ccb2xy">
                                     <rect x="80" y="100" width="566" height="440"></rect>
                                   </clippath>
                                 </g>
@@ -1905,11 +1896,6 @@
                                   <rect class="sdrag drag cursor-s-resize" style="fill: transparent; stroke-width: 0px; pointer-events: all;" data-subplot="xy" x="59.5" y="496" width="20" height="44"></rect>
                                   <rect class="ndrag drag cursor-n-resize" style="fill: transparent; stroke-width: 0px; pointer-events: all;" data-subplot="xy" x="59.5" y="100" width="20" height="44"></rect>
                                 </g>
-                                <g class="xy2">
-                                  <rect class="nsdrag drag cursor-ns-resize" style="fill: transparent; stroke-width: 0px; pointer-events: all;" data-subplot="xy2" x="646.5" y="144" width="20" height="352"></rect>
-                                  <rect class="sdrag drag cursor-s-resize" style="fill: transparent; stroke-width: 0px; pointer-events: all;" data-subplot="xy2" x="646.5" y="496" width="20" height="44"></rect>
-                                  <rect class="ndrag drag cursor-n-resize" style="fill: transparent; stroke-width: 0px; pointer-events: all;" data-subplot="xy2" x="646.5" y="100" width="20" height="44"></rect>
-                                </g>
                               </g>
                               <g class="layer-below">
                                 <g class="imagelayer"></g>
@@ -1924,104 +1910,94 @@
                                   <g class="gridlayer">
                                     <g class="x"></g>
                                     <g class="y">
-                                      <path class="ygrid crisp" transform="translate(0,494.53)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,449.05)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,403.58)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,358.1)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,312.63)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,267.15)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,221.68)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,176.20999999999998)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                      <path class="ygrid crisp" transform="translate(0,130.73)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,471.4)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,402.79)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,334.19)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,265.59000000000003)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,196.98000000000002)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                      <path class="ygrid crisp" transform="translate(0,128.38)" d="M80,0h566" style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
                                     </g>
-                                    <g class="y2"></g>
                                   </g>
                                   <g class="zerolinelayer">
                                     <path class="yzl zl crisp" transform="translate(0,540)" d="M80,0h566" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path>
-                                    <path class="y2zl zl crisp" transform="translate(0,540)" d="M80,0h566" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path>
                                   </g>
                                   <path class="xlines-below"></path>
                                   <path class="ylines-below"></path>
-                                  <g class="overlines-below">
-                                    <path class="xy2-x"></path>
-                                    <path class="xy2-y"></path>
-                                  </g>
+                                  <g class="overlines-below"></g>
                                   <g class="xaxislayer-below"></g>
                                   <g class="yaxislayer-below"></g>
-                                  <g class="overaxes-below">
-                                    <g class="xy2-x"></g>
-                                    <g class="xy2-y"></g>
-                                  </g>
-                                  <g class="plot" transform="translate(80, 100)" clip-path="url('#clipfe6e46xyplot')">
+                                  <g class="overaxes-below"></g>
+                                  <g class="plot" transform="translate(80, 100)" clip-path="url('#clip76ccb2xyplot')">
                                     <g class="barlayer mlayer">
-                                      <g class="trace bars" style="opacity: 1;">
+                                      <g class="trace bars" style="opacity: 1;" shape-rendering="crispEdges">
                                         <g class="points">
                                           <g class="point">
-                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M11.32,440V270.38H101.88V440Z"></path>
-                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="1865" data-math="N" x="0" y="0" transform="translate(56.60833129882812,285.8301953125)">1865</text>
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M11.32,440V232.41H101.88V440Z"></path>
+                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="3026" data-math="N" x="0" y="0" transform="translate(56.60833129882812,247.8601953125)">3026</text>
                                           </g>
                                           <g class="point">
-                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M124.52,440V209.17H215.08V440Z"></path>
-                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="2538" data-math="N" x="0" y="0" transform="translate(169.80833129882814,224.6201953125)">2538</text>
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M124.52,440V200.51H215.08V440Z"></path>
+                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="3491" data-math="N" x="0" y="0" transform="translate(169.80833129882814,215.9601953125)">3491</text>
                                           </g>
                                           <g class="point">
-                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M237.72,440V164.79H328.28V440Z"></path>
-                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="3026" data-math="N" x="0" y="0" transform="translate(283.0083312988281,180.2401953125)">3026</text>
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M237.72,440V124.7H328.28V440Z"></path>
+                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="4596" data-math="N" x="0" y="0" transform="translate(283.0083312988281,140.1501953125)">4596</text>
                                           </g>
                                           <g class="point">
-                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M350.92,440V122.5H441.48V440Z"></path>
-                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="3491" data-math="N" x="0" y="0" transform="translate(396.20833129882817,137.9501953125)">3491</text>
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M350.92,440V93.14H441.48V440Z"></path>
+                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="5056" data-math="N" x="0" y="0" transform="translate(396.20833129882817,108.5901953125)">5056</text>
                                           </g>
                                           <g class="point">
-                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M464.12,440V22H554.68V440Z"></path>
-                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="4596" data-math="N" x="0" y="0" transform="translate(509.4083312988281,37.4501953125)">4596</text>
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(31, 119, 180); fill-opacity: 1;" d="M464.12,440V28.79H554.68V440Z"></path>
+                                            <text class="bartext bartext-inside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(255, 255, 255); fill-opacity: 1; white-space: pre;' data-unformatted="5994" data-math="N" x="0" y="0" transform="translate(509.4083312988281,44.2401953125)">5994</text>
+                                          </g>
+                                        </g>
+                                      </g>
+                                      <g class="trace bars" style="opacity: 1;" shape-rendering="crispEdges">
+                                        <g class="points">
+                                          <g class="point">
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M11.32,232.41V230.07H101.88V232.41Z"></path>
+                                            <text class="bartext bartext-outside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="34" data-math="N" x="0" y="0" transform="translate(56.607942199707026,223.92020446777343)">34</text>
+                                          </g>
+                                          <g class="point">
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M124.52,200.51V197.28H215.08V200.51Z"></path>
+                                            <text class="bartext bartext-outside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="47" data-math="N" x="0" y="0" transform="translate(169.80794219970704,191.13020446777344)">47</text>
+                                          </g>
+                                          <g class="point">
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M237.72,124.7V120.24H328.28V124.7Z"></path>
+                                            <text class="bartext bartext-outside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="65" data-math="N" x="0" y="0" transform="translate(283.00794219970703,114.09020446777343)">65</text>
+                                          </g>
+                                          <g class="point">
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M350.92,93.14V88.2H441.48V93.14Z"></path>
+                                            <text class="bartext bartext-outside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="72" data-math="N" x="0" y="0" transform="translate(396.2079421997071,82.05020446777344)">72</text>
+                                          </g>
+                                          <g class="point">
+                                            <path style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M464.12,28.79V22H554.68V28.79Z"></path>
+                                            <text class="bartext bartext-outside" text-anchor="middle" data-notex="1" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="99" data-math="N" x="0" y="0" transform="translate(509.407942199707,15.850204467773438)">99</text>
                                           </g>
                                         </g>
                                       </g>
                                     </g>
                                   </g>
-                                  <g class="overplot">
-                                    <g class="xy2" transform="translate(80, 100)" clip-path="url('#clipfe6e46xy2plot')">
-                                      <g class="scatterlayer mlayer">
-                                        <g class="trace scatter tracecf02f3" style="stroke-miterlimit: 2; opacity: 1;">
-                                          <g class="fills"></g>
-                                          <g class="errorbars"></g>
-                                          <g class="lines">
-                                            <path class="js-line" style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(255, 127, 14); stroke-opacity: 1; stroke-width: 2px; opacity: 1;" d="M56.6,328.53L169.8,287.47L283,240.53L396.2,164.27L509.4,58.67"></path>
-                                          </g>
-                                          <g class="points">
-                                            <path class="point" transform="translate(56.6,328.53)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
-                                            <path class="point" transform="translate(169.8,287.47)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
-                                            <path class="point" transform="translate(283,240.53)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
-                                            <path class="point" transform="translate(396.2,164.27)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
-                                            <path class="point" transform="translate(509.4,58.67)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
-                                          </g>
-                                          <g class="text"></g>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </g>
+                                  <g class="overplot"></g>
                                   <path class="xlines-above crisp" style="fill: none;" d="M0,0"></path>
                                   <path class="ylines-above crisp" style="fill: none;" d="M0,0"></path>
-                                  <g class="overlines-above">
-                                    <path class="xy2-x crisp" style="fill: none;" d="M0,0"></path>
-                                    <path class="xy2-y crisp" style="fill: none;" d="M0,0"></path>
-                                  </g>
+                                  <g class="overlines-above"></g>
                                   <g class="xaxislayer-above">
                                     <g class="xtick">
-                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/25/2020" data-math="N" transform="translate(136.6,0)">3/25/2020</text>
+                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/27/2020" data-math="N" transform="translate(136.6,0)">3/27/2020</text>
                                     </g>
                                     <g class="xtick">
-                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/26/2020" data-math="N" transform="translate(249.8,0)">3/26/2020</text>
+                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/28/2020" data-math="N" transform="translate(249.8,0)">3/28/2020</text>
                                     </g>
                                     <g class="xtick">
-                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/27/2020" data-math="N" transform="translate(363,0)">3/27/2020</text>
+                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/29/2020" data-math="N" transform="translate(363,0)">3/29/2020</text>
                                     </g>
                                     <g class="xtick">
-                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/28/2020" data-math="N" transform="translate(476.2,0)">3/28/2020</text>
+                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/30/2020" data-math="N" transform="translate(476.2,0)">3/30/2020</text>
                                     </g>
                                     <g class="xtick">
-                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/29/2020" data-math="N" transform="translate(589.4,0)">3/29/2020</text>
+                                      <text text-anchor="middle" x="0" y="553" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3/31/2020" data-math="N" transform="translate(589.4,0)">3/31/2020</text>
                                     </g>
                                   </g>
                                   <g class="yaxislayer-above">
@@ -2029,64 +2005,26 @@
                                       <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="0" data-math="N" transform="translate(0,540)">0</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="500" data-math="N" transform="translate(0,494.53)">500</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="1000" data-math="N" transform="translate(0,471.4)">1000</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="1000" data-math="N" transform="translate(0,449.05)">1000</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="2000" data-math="N" transform="translate(0,402.79)">2000</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="1500" data-math="N" transform="translate(0,403.58)">1500</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3000" data-math="N" transform="translate(0,334.19)">3000</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="2000" data-math="N" transform="translate(0,358.1)">2000</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="4000" data-math="N" transform="translate(0,265.59000000000003)">4000</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="2500" data-math="N" transform="translate(0,312.63)">2500</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="5000" data-math="N" transform="translate(0,196.98000000000002)">5000</text>
                                     </g>
                                     <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3000" data-math="N" transform="translate(0,267.15)">3000</text>
-                                    </g>
-                                    <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="3500" data-math="N" transform="translate(0,221.68)">3500</text>
-                                    </g>
-                                    <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="4000" data-math="N" transform="translate(0,176.20999999999998)">4000</text>
-                                    </g>
-                                    <g class="ytick">
-                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="4500" data-math="N" transform="translate(0,130.73)">4500</text>
+                                      <text text-anchor="end" x="79" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="6000" data-math="N" transform="translate(0,128.38)">6000</text>
                                     </g>
                                   </g>
-                                  <g class="overaxes-above">
-                                    <g class="xy2-x"></g>
-                                    <g class="xy2-y">
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="0" data-math="N" transform="translate(0,540)">0</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="10" data-math="N" transform="translate(0,481.33)">10</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="20" data-math="N" transform="translate(0,422.67)">20</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="30" data-math="N" transform="translate(0,364)">30</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="40" data-math="N" transform="translate(0,305.33000000000004)">40</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="50" data-math="N" transform="translate(0,246.67)">50</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="60" data-math="N" transform="translate(0,188)">60</text>
-                                      </g>
-                                      <g class="y2tick">
-                                        <text text-anchor="start" x="647" y="4.199999999999999" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' data-unformatted="70" data-math="N" transform="translate(0,129.32999999999998)">70</text>
-                                      </g>
-                                    </g>
-                                  </g>
+                                  <g class="overaxes-above"></g>
                                 </g>
-                                <g class="subplot xy2"></g>
                               </g>
                               <g class="polarlayer"></g>
                               <g class="ternarylayer"></g>
@@ -2099,9 +2037,9 @@
                             </svg>
                             <div class="gl-container"></div>
                             <svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="725.933" height="620">
-                              <defs id="topdefs-fe6e46">
+                              <defs id="topdefs-76ccb2">
                                 <g class="clips"></g>
-                                <clippath id="legendfe6e46">
+                                <clippath id="legend76ccb2">
                                   <rect width="148" height="48" x="0" y="0"></rect>
                                 </clippath>
                               </defs>
@@ -2113,18 +2051,16 @@
                               <g class="infolayer">
                                 <g class="legend" pointer-events="all" transform="translate(80, 100)">
                                   <rect class="bg" shape-rendering="crispEdges" style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;" width="148" height="48" x="0" y="0"></rect>
-                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legendfe6e46')">
+                                  <g class="scrollbox" transform="translate(0, 0)" clip-path="url('#legend76ccb2')">
                                     <g class="groups">
                                       <g class="traces" style="opacity: 1;" transform="translate(0, 14.5)">
                                         <text class="legendtext user-select-none" text-anchor="start" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;' x="40" y="4.680000000000001" data-unformatted="Deaths" data-math="N">Deaths</text>
                                         <g class="layers" style="opacity: 1;">
                                           <g class="legendfill"></g>
-                                          <g class="legendlines">
-                                            <path class="js-line" d="M5,0h30" style="fill: none; stroke: rgb(255, 127, 14); stroke-opacity: 1; stroke-width: 2px;"></path>
-                                          </g>
+                                          <g class="legendlines"></g>
                                           <g class="legendsymbols">
                                             <g class="legendpoints">
-                                              <path class="scatterpts" transform="translate(20,0)" style="opacity: 1; stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;" d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"></path>
+                                              <path class="legendundefined" d="M6,6H-6V-6H6Z" transform="translate(20,0)" style="stroke-width: 0px; fill: rgb(255, 127, 14); fill-opacity: 1;"></path>
                                             </g>
                                           </g>
                                         </g>
@@ -2152,15 +2088,12 @@
                                 <g class="g-ytitle">
                                   <text class="ytitle" transform="rotate(-90,42,320)" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 14px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre;' x="42" y="320" text-anchor="middle" data-unformatted="Test Results" data-math="N">Test Results</text>
                                 </g>
-                                <g class="g-y2title">
-                                  <text class="y2title" transform="rotate(-90,691,320)" style='font-family: "Open Sans", verdana, arial, sans-serif; font-size: 14px; fill: rgb(68, 68, 68); opacity: 1; font-weight: normal; white-space: pre;' x="691" y="320" text-anchor="middle" data-unformatted="Deaths" data-math="N">Deaths</text>
-                                </g>
                               </g>
                               <g class="menulayer"></g>
                               <g class="zoomlayer"></g>
                             </svg>
                             <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;">
-                              <div id="modebar-fe6e46" class="modebar modebar--hover ease-bg">
+                              <div id="modebar-76ccb2" class="modebar modebar--hover ease-bg">
                                 <div class="modebar-group">
                                   <a rel="tooltip" class="modebar-btn" data-title="Download plot as a png" data-toggle="false" data-gravity="n">
                                     <svg viewbox="0 0 1000 1000" class="icon" height="1em" width="1em">
@@ -2230,10 +2163,10 @@
                                   </a>
                                 </div>
                                 <div class="modebar-group">
-                                  <a href="https://plot.ly/" target="_blank" data-title="Produced with Plotly" class="modebar-btn plotlyjsicon modebar-btn--logo">
+                                  <a href="https://plotly.com/" target="_blank" data-title="Produced with Plotly" class="modebar-btn plotlyjsicon modebar-btn--logo">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 132" height="1em" width="1em">
                                       <defs>
-                                        <style>.cls-1 {fill: #119dff;} .cls-2 {fill: #25fefd;} .cls-3 {fill: #fff;}</style>
+                                        <style>.cls-1 {fill: #3f4f75;} .cls-2 {fill: #80cfbe;} .cls-3 {fill: #fff;}</style>
                                       </defs>
                                       <title>plotly-logomark</title>
                                       <g id="symbol">
@@ -2299,19 +2232,19 @@
                       <div class="flex-container">
                         <div class="NumberHighlight" style="background:#ff7800;">
                           <h2>Positivo (confirmados)</h2>
-                          <h3 id="covid19positivees">4,596</h3>
+                          <h3 id="covid19positivees">5,994</h3>
                         </div>
                         <div class="NumberHighlight" style="background:#ff0000;">
                           <h2>Muertos</h2>
-                          <h3 id="covid19deathses">65</h3>
+                          <h3 id="covid19deathses">99</h3>
                         </div>
                         <div class="NumberHighlight" style="background:#5f5f5f; flex-grow:3;">
                           <h2>PUI Total</h2>
-                          <h3 id="covid19totaltestes">27,762</h3>
+                          <h3 id="covid19totaltestes">35,225</h3>
                         </div>
                       </div>
                       <p style="text-align:center;">Informaci&#243;n sobre el numero de personas abajo investigaci&#243;n actualizado el
-                        <span id="updatedDatees">3/29/2020</span>.
+                        <span id="updatedDatees">3/31/2020</span>.
                         <br>
                       </p>
                       <div id="myDives" style="text-align:center;min-height:420px"></div>
@@ -2350,7 +2283,7 @@
       function unpackMarkers(rows, key) {
           return rows.map(function (row) { return (row.deaths == 0 ? 0 : Math.min(Math.max(row.deaths, 10), 40)) });
       }
-      function getFileLocation() { return '/sites/default/files/COVID19/COVID19CountyResults20200329.json'; }
+      function getFileLocation() { return '/sites/default/files/COVID19/COVID19CountyResults20200331.json'; }
       function populateTestedChart(rowsIncluded) {
           Plotly.d3.json(getFileLocation(), function (err, rows) {
               var dataTestedTotal = {
@@ -2382,14 +2315,15 @@
                   marker: { color: 'rgba(115,155,183,.5)' },
               };
               var dataTestedD = {
-                  type: 'line',
+                  type: 'bar',
                   x: unpack(rows.state_testing_results.values.filter(function (r, index) { return rowsIncluded == 0 || index >= rows.state_testing_results.values.length - rowsIncluded; }), 'testDate'),
                   y: unpack(rows.state_testing_results.values.filter(function (r, index) { return rowsIncluded == 0 || index >= rows.state_testing_results.values.length - rowsIncluded; }), 'deaths'),
                   text: unpack(rows.state_testing_results.values.filter(function (r, index) { return rowsIncluded == 0 || index >= rows.state_testing_results.values.length - rowsIncluded; }), 'deaths'),
                   hoverinfo: 'name+text',
+                  textposition: 'auto',
                   automargin: true,
                   name: 'Deaths',
-                  yaxis: 'y2'
+  //                yaxis: 'y2'
               };
               var layoutTested = {
                   height: 620,
@@ -2399,7 +2333,7 @@
                       title: 'Deaths',
                       overlaying: 'y',
                       side: 'right',
-                      range: [0, 75],
+                      range: [0, 100],
                       showgrid: false,
                   },
                   legend: {
@@ -2408,7 +2342,7 @@
                   }
               };
   
-              var dataTested = [dataTestedPos, dataTestedD];
+              var dataTested = [dataTestedPos,dataTestedD];
               console.log(dataTested);
               Plotly.newPlot("testingGraph", dataTested, layoutTested, { responsive: true });
               document.getElementById('identifiervalue').innerHTML = rowsIncluded == 0 ? 'All Time' : 'Last ' + rowsIncluded + ' days';
@@ -2444,6 +2378,7 @@
           var layout = {
               margin: { "t": 0, "b": 0, "l": 0, "r": 0 },
               height: 620,
+  modebar: {orientation:'v'},
               mapbox: {
                   center: {
                       lat: 39.839888,
@@ -2650,8 +2585,8 @@
               <li class="menu__item is-leaf first leaf">
                 <a href="/topics-services/health-care-regulation/complaints" title="" class="menu__link">File a Health Care Complaint</a>
               </li>
-              <li class="menu__item is-leaf is-active-trail leaf active-trail">
-                <a href="/topics-services/diseases-and-conditions/diseases-a-z-list" title="" class="menu__link is-active-trail active-trail">Diseases A-Z List</a>
+              <li class="menu__item is-leaf leaf">
+                <a href="/topics-services/diseases-and-conditions/diseases-a-z-list" title="" class="menu__link">Diseases A-Z List</a>
               </li>
               <li class="menu__item is-leaf leaf">
                 <a href="/foia" title="" class="menu__link">FOIA Requests</a>
@@ -2678,37 +2613,38 @@
           </div>
           <div id="block-views-tweets-block" class="block block-views block-footer block-footer4 last even">
             <h2 class="block__title block-title">TRENDING TOPICS @IDPH</h2>
-            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-6a85e156f5cf7b6cb66fa0ea1286b215">
+            <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-5f95437c36a8a105ddf75f55f63b725a">
               <div class="view-content">
                 <div class="item-list">
                   <ul>
                     <li class="views-row views-row-1 views-row-odd views-row-first">
                       <span class="views-field views-field-text">
-                        <span class="field-content">
-                              Health Check:
-                              &#9989;Wash your hands for 20 seconds
-                              &#9989;Stay home as much as possible 
-                              &#9989;Disinfect frequently touched surface&#8230;
-                              <a href="https://t.co/i6JJo5esjb" target="_blank" rel="noopener noreferrer">https://t.co/i6JJo5esjb</a>
+                        <span class="field-content">RT
+                          <a target="_blank" rel="nofollow noopener noreferrer" class="twitter-timeline-link" href="http://twitter.com/NonviolenceChi">@NonviolenceChi</a>:
+                          <a target="_blank" rel="nofollow noopener noreferrer" class="twitter-timeline-link" href="https://twitter.com//search?q=%23SocialDistancing">#SocialDistancing</a>is vital to help stop the spread of
+                          <a target="_blank" rel="nofollow noopener noreferrer" class="twitter-timeline-link" href="https://twitter.com//search?q=%23COVID19">#COVID19</a>but we must remember WE ARE NOT ALONE! Supporting on&#8230;
+                          <a href="https://t.co/TpJ8m1Ws7o" target="_blank" rel="noopener noreferrer">https://t.co/TpJ8m1Ws7o</a>
                         </span>
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">4 hours 35 min</em>
+                          <em class="placeholder">12 hours 5 min</em>
                         </span>
                       </span>
                     </li>
                     <li class="views-row views-row-2 views-row-even views-row-last">
                       <span class="views-field views-field-text">
-                        <span class="field-content">RT
-                          <a target="_blank" rel="nofollow noopener noreferrer" class="twitter-timeline-link" href="http://twitter.com/GovPritzker">@GovPritzker</a>: Today I want to talk about
-                          <a target="_blank" rel="nofollow noopener noreferrer" class="twitter-timeline-link" href="https://twitter.com//search?q=%23COVID19">#COVID19</a>testing here in Illinois &#8211; where we were, where we are, and where we&#8217;re going.
-                          <a href="https://t.co/HYtZ2KAkeM" target="_blank" rel="noopener noreferrer">https://t.co/HYtZ2KAkeM</a>
+                        <span class="field-content">
+                              Thinking of heading to the grocery store today? &#129370;&#127838;&#129361;&#129382;&#129364;&#129366;
+                              Consider the following:
+                              &#9989;Maintain social distancing&#8212;
+                              6ft. ap&#8230;
+                              <a href="https://t.co/ArwaidUMf2" target="_blank" rel="noopener noreferrer">https://t.co/ArwaidUMf2</a>
                         </span>
                       </span>
                       <span class="views-field views-field-created-time">
                         <span class="field-content">-
-                          <em class="placeholder">17 hours 19 min</em>
+                          <em class="placeholder">12 hours 29 min</em>
                         </span>
                       </span>
                     </li>
@@ -2741,7 +2677,7 @@
       </div>
     </div>
     <script src="http://www.dph.illinois.gov/sites/all/libraries/respondjs/respond.min.js?q7rrwx"></script>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":266,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":190,"atts":"QxNSFQhCT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
     <svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;">
       <path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0px; fill: black;"></path>
     </svg>
